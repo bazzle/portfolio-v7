@@ -1,0 +1,11 @@
+.container{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: var(--gutter-padding--mobile);
+	padding-right: var(--gutter-padding--mobile);
+}
+
+.container{
+	padding:0 var(--block-spacing);
+}
