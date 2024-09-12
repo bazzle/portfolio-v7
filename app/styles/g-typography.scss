@@ -1,49 +1,46 @@
+@import url("https://use.typekit.net/sqv3apk.css");
+
+// Eventually replace std with DM sans
 :root{
-	--font-std: "Rubik", sans-serif;
-	--font-mono: "DM Mono", monospace;
+	--font-std: "degular-text", sans-serif;
+	--font-medium: "degular-text", sans-serif;
+	--font-display: "degular-display", sans-serif;
+	--font-blocky: "DM Mono", monospace;
 	--font-size-regular: 1.6rem;
 	--font-size-small: 1.4rem;
 	--font-size-display: 6.4rem;
 	--font-size-display-small: 4rem;
 	--font-size-display-responsive: clamp(2.8rem, 8vw, 10.2rem);
 	--font-size-display-small-responsive: clamp(2.2rem, 4vw, 4.6rem);
-	--font-weight-regular: 400;
-	--font-weight-bold: 500;
-	--font-weight-display: 600;
 }
 
-.medium{
-	font-family: "degular", sans-serif;
+@mixin text-medium{
+	font-family: var(--font-medium);
 	font-weight: 500;
 	font-style: normal;
 }
-.display{
-	font-family: "degular-display", sans-serif;
-	font-weight: 800;
+@mixin text-display{
+	font-family: var(--font-display);
+	font-style: normal;
+	font-size: clamp(2.8rem, 8vw, 10.2rem);
+}
+@mixin text-display-small{
+	font-family: var(--font-display);
+	font-style: normal;
+	font-size: clamp(2.2rem, 4vw, 4.6rem);
+}
+@mixin text-body{
+	font-family: var(--font-std);
 	font-style: normal;
 }
-.text-medium{
-	font-family: "degular-text", sans-serif;
-	font-weight: 500;
-	font-style: normal;
-}
-
-.text-mono{
-	font-family: "degular-text", sans-serif;
-	font-weight: 500;
+@mixin text-blocky{
+	font-family: var(--font-blocky);
 	font-style: normal;
 	text-transform: uppercase;
 	font-size: 1.4rem;
 }
-.text-mono-lower{
-	font-family: "degular-text", sans-serif;
-	font-weight: 500;
+@mixin text-section-title{
+	font-family: var(--font-medium);
 	font-style: normal;
-	font-size: 1.4rem;
-}
-.text-section-title{
 	font-size: 2.8rem;
-	font-family: "degular", sans-serif;
-	font-weight: 500;
-	font-style: normal;
 }
