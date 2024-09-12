@@ -1,8 +1,9 @@
 :root{
 	--border-radius: 4px;
-	--gutter-padding: 2rem;
-	--gutter-padding--mobile: 4rem;
+	--gutter-padding: 2vw;
 	--block-spacing: 4rem;
 	--block-spacing--shallow: 2rem;
 	--block-spacing--deep: 6rem;
+	--site-width: 1000px;
+	--site-width-margins: calc(1000px + var(--gutter-padding) + var(--gutter-padding));
 }
