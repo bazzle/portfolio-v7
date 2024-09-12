@@ -1,50 +1,41 @@
-// Breakpoints
-$breakpoints: (
-    mobile: 35.9rem, // 359px
-    mobile-land: 51.2rem, // 512px
-    tablet: 64.1rem, // 641px
-    desktop-mini: 80rem, // 800px
-    desktop: 88rem, // 880px
-    desktop-med: 102.5rem, // 1025px
-    mobile-nav: 109rem, // 1090px
-    desktop-wide: 120rem, // 1200px
-    desktop-wider: 134rem, // 1340px
-    desktop-xl: 140.8rem, // 1408px
-    site-width-margins: var(--site-width-margins),
-    site-width: var(--site-width)
-);
-$breakpoints--h: (
-    letterbox: 900px
-);
+// Breakpoint variables
+
+$mobile: 35.9rem; // 359px
+$mobile-land: 51.2rem; // 512px
+$tablet: 64.1rem; // 641px
+$desktop-mini: 80rem; // 800px
+$desktop: 88rem; // 880px
+$desktop-med: 102.5rem; // 1025px
+$mobile-nav: 109rem; // 1090px
+$desktop-wide: 120rem; // 1200px
+$desktop-wider: 134rem; // 1340px
+$desktop-xl: 140.8rem; // 1408px
+$site-width-margins: var(--site-width-margins);
+$site-width: var(--site-width);
+
+$letterbox: '900px';
 
 // breakpoint mixins
-@mixin break($breakpoint: medium) {
-  @if map-has-key($breakpoints, $breakpoint) {
-      @media screen and (min-width: map.get($breakpoints, $breakpoint)) {
-          @content;
-      }
-  }
-}
 
-@mixin break-under($breakpoint: medium) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media screen and (max-width: map.get($breakpoints, $breakpoint)) {
-        @content;
+@mixin break($breakpoint: $tablet) {
+	@media screen and (min-width: $breakpoint) {
+    	@content;
     }
-  }
 }
-
-@mixin break-between($breakpoint-lower, $breakpoint-higher){
-  @media screen and (min-width: map.get($breakpoints, $breakpoint-lower)) and (max-width: map.get($breakpoints, $breakpoint-higher)) {
-    @content;
-  }
+@mixin break-under($breakpoint: $tablet) {
+	@media screen and (max-width: $breakpoint) {
+    	@content;
+    }
+}
+@mixin break-between($breakpoint-lower, $breakpoint-higher) {
+	@media screen and (min-width: $breakpoint-lower) and (max-width: $breakpoint-higher) {
+    	@content;
+    }
 }
 
 // height 
 @mixin break--h($breakpoint) {
-  @if map-has-key($breakpoints--h, $breakpoint) {
-      @media screen and (max-height: map.get($breakpoints--h, $breakpoint)) and (orientation: landscape) {
-          @content;
-      }
-  }
+	@media screen and (min-height: $breakpoint) and (orientation: landscape) {
+        @content;
+    }
 }
