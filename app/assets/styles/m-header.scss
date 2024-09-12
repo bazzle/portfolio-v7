@@ -1,7 +1,7 @@
 .header{
 	background-color: var(--color-bg);
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	padding-top: var(--block-spacing--shallow);
+	padding-bottom: var(--block-spacing--shallow);
 	z-index: 2;
 	position: relative;
 
@@ -44,11 +44,13 @@
 			@include break($mobile){
 				display: block;
 				position: absolute;
+				width: 25px;
+				height: 25px;
 				right: 4vw;
 				top: 0;
 				fill: var(--color-accent);
 				position: absolute;
-				transform: translateY(-50%);
+				transform: translate(50%, -50%);
 			}
 		}
 	}
