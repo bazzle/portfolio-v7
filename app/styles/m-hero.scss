@@ -1,29 +1,25 @@
 .hero{
 	background-color: var(--color-bg);
-}
-
-.hero__inner{
-	position: relative;
-	padding-top: calc(var(--block-spacing)*3);
-	padding-bottom: calc(var(--block-spacing)*3);
-}
-
-.hero__message{
-	font-size: var(--font-size-display-responsive);
-	font-family: "degular-display", sans-serif;
-	font-weight: 800;
-	font-style: normal;
-}
-
-.hero__message__main{
-	margin-bottom: .6em;
-}
-
-.hero__message__sub{
-	font-size: var(--font-size-display-small-responsive);
-}
-
-.hero__links{
-	display: flex;
-	gap: 1em;
+	&__inner{
+		position: relative;
+		padding-top: calc(var(--block-spacing)*3);
+		padding-bottom: calc(var(--block-spacing)*3);
+	}
+	&__message{
+		margin-bottom: 0;
+	}
+	&__message__main{
+		margin-bottom: .6em;
+		@include text-display;
+		display: block;
+	}
+	&__message__sub{
+		display: block;
+		@include text-medium;
+		font-size: 3.2rem;
+	}
+	&__links{
+		display: flex;
+		gap: 1em;
+	}
 }
