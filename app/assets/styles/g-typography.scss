@@ -22,7 +22,7 @@
 @mixin text-display{
 	font-family: var(--font-display);
 	font-style: normal;
-	font-size: clamp(2.8rem, 8vw, 10.2rem);
+	font-size: clamp(2.8rem, 8vw, 9rem);
 }
 @mixin text-display-small{
 	font-family: var(--font-display);

@@ -1,5 +1,5 @@
 import VerticalDots from "./vertical-dots";
-
+import Image from "next/image";
 
 function Hero(){
     return(
@@ -11,7 +11,7 @@ function Hero(){
                             My philosophy is
                         </span>
                         <span className="hero__message__main">
-							Web for <span className="highlight--alt">everyone.</span>
+							Web for <span className="highlight--alt">everyone</span>
                         </span>
                         <span className="hero__message__sub">
                             ... But still <span className="highlight">look cool</span>.
@@ -28,7 +28,17 @@ function Hero(){
 							<VerticalDots numDots = {2} />
 						</div>
 						<div className="hero__side-furniture__profile">
-							<svg className="dot" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg"><path d="M12.0208 24.0416L0 12.0208L12.0208 0L24.0416 12.0208L12.0208 24.0416Z" /></svg>
+							<svg viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+								<mask id="profileMask">
+									<path d="M12.0208 24.0416L0 12.0208L12.0208 0L24.0416 12.0208L12.0208 24.0416Z" fill="white" />
+								</mask>
+								<image
+								href="../assets/images/profile.jpg"
+								width="25"
+								height="25"
+								mask="url(#profileMask)"
+								/>
+							</svg>
 						</div>
 					</div>
                 </div>
@@ -41,6 +51,12 @@ function Hero(){
 					</div>
 				</div>
 			</div>
+			<Image
+			src="/profile.jpg"
+			width={150}
+			height={150}
+			alt="Picture of the author"
+			/>
         </section>
     )
 }

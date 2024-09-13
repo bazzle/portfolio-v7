@@ -4,7 +4,6 @@
 		position: relative;
 		background-image: url(../images/texture.jpg);
 		background-size: cover;
-		margin-bottom: 8rem;
 		z-index: 1;
 		&__inner{
 			position: relative;
@@ -16,9 +15,6 @@
 	&__foot-section{
 		background-color: var(--color-bg);
 		height: 8rem;
-		position: absolute;
-		bottom: 0;
-		left: 0;
 		width: 100%;
 		&__inner{
 			position: relative;
@@ -28,13 +24,16 @@
 	&__message{
 		margin-bottom: 0;
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 	}
 	&__message__main{
 		@include text-display;
 		display: block;
 		line-height: 1;
 		position: relative;
-		top: -.05em;
+		top: -.1em;
 	}
 	&__message__sub{
 		display: block;
