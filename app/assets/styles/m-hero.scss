@@ -10,6 +10,7 @@
 			position: relative;
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 		}
 	}
 	&__foot-section{
@@ -26,10 +27,14 @@
 	}
 	&__message{
 		margin-bottom: 0;
+		position: relative;
 	}
 	&__message__main{
 		@include text-display;
 		display: block;
+		line-height: 1;
+		position: relative;
+		top: -.05em;
 	}
 	&__message__sub{
 		display: block;
@@ -51,20 +56,39 @@
 			align-items: center;
 			gap: 4rem;
 			padding-top: 4rem;
-			padding-bottom: 0;
+			padding-bottom: calc(12rem);
+			right: calc(4vw - 5px);
+			width: 10px;
 		}
 		&__dots{
 			flex-grow: 1;
 		}
 		&__tick{
-			width: 70px;
+			position: relative;
 			height: 55px;
+			width: 10px;
+			svg{
+				position: absolute;
+				width: 70px;
+				height: 55px;
+				top: 0;
+				left: 12px;
+				transform: translateX(-50%);
+			}
 		}
 		&__profile{
+			position: absolute;
+			bottom: -8rem;
+			right: 0;
+			height: 16rem;
+			width: 10px;
 			svg{
 				width: 16rem;
 				height: 16rem;
-				fill: white;
+				fill: var(--color-accent);
+				position: absolute;
+				left: 8px;
+				transform: translateX(-50%);
 			}
 		}
 	}
