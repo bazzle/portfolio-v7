@@ -1,0 +1,12 @@
+.vertical-dots{
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	svg.dot{
+		width: 10px;
+		height: 10px;
+		fill: var(--color-accent);
+		position: relative;
+		//transform: translateX(50%);
+	}
+}
