@@ -46,8 +46,8 @@
 				position: absolute;
 				width: 25px;
 				height: 25px;
-				right: 4vw;
-				top: 0;
+				right: calc(6vw - 5px);
+				top: 1px;
 				fill: var(--color-accent);
 				position: absolute;
 				transform: translate(50%, -50%);
