@@ -51,12 +51,6 @@ function Hero(){
 					</div>
 				</div>
 			</div>
-			<Image
-			src="/profile.jpg"
-			width={150}
-			height={150}
-			alt="Picture of the author"
-			/>
         </section>
     )
 }

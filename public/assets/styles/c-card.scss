@@ -1,0 +1,16 @@
+.card{
+	background-color: var(--color-bg-alt);
+	padding: .5rem;
+	position: relative;
+	border-radius: var(--border-radius);
+	list-style: none;
+}
+
+.card img{
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border-radius: var(--border-radius);
+	margin-bottom: var(--block-spacing--shallow);
+}
