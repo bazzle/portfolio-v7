@@ -3,12 +3,17 @@ html{
 }
 
 body{
+	position: relative;
 	padding: 0;
 	margin: 0;
 	background-color: var(--color-bg-alt);
 	color: var(--color-foreground);
-	font-family: "degular", sans-serif;
-	font-size: var(--font-size-regular);
+	@include text-std;
+	overflow-y: auto;
+}
+
+main{
+	overflow-x: hidden;
 }
 
 a{

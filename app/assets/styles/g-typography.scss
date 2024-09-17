@@ -1,46 +1,110 @@
 @import url("https://use.typekit.net/sqv3apk.css");
 
-// Eventually replace std with DM sans
-:root{
-	--font-std: "degular-text", sans-serif;
-	--font-medium: "degular-text", sans-serif;
-	--font-display: "degular-display", sans-serif;
-	--font-blocky: "degular-text", sans-serif;
-	--font-size-regular: 1.6rem;
-	--font-size-small: 1.4rem;
-	--font-size-display: 6.4rem;
-	--font-size-display-small: 4rem;
-	--font-size-display-responsive: clamp(2.8rem, 8vw, 10.2rem);
-	--font-size-display-small-responsive: clamp(2.2rem, 4vw, 4.6rem);
+
+@function responsiveSize($initial, $pcreduction, $vw) {
+	$reduction: $initial * ((100 - $pcreduction) / 100);
+	@return clamp(#{$reduction}rem, #{$vw}vw, #{$initial}rem);
+}
+
+$font-body: "dm-sans", sans-serif;
+$font-std: "degular", sans-serif;
+$font-display: "degular-display", sans-serif;
+$font-text: "degular-text", sans-serif;
+$font-blocky: "degular-text", sans-serif;
+
+// For display only
+$font-size-display: responsiveSize(9, 40, 9);
+// For headings only
+$font-size-heading: responsiveSize(3.8, 40, 3.8);
+// For general use
+$font-size-medium: responsiveSize(3.2, 40, 3.2);
+// Default font size
+$font-size-std: responsiveSize(1.8, 8, 1.8);
+// For body only
+$font-size-body: responsiveSize(1.6, 5, 1.6);
+// For blocky text, taglines and other reasons
+$font-size-tiny: 1.4rem;
+// For exceptional reasons
+$font-size-miniscule: 1.2rem;
+
+
+@mixin text-tiny{
+	font-size: $font-size-tiny;
+}
+.text-tiny{
+	@include text-tiny;
+}
+
+@mixin text-std{
+	font-family: $font-text;
+	font-size: $font-size-std;
+	font-style: normal;
+}
+.text-std{
+	@include text-std;
+}
+
+@mixin text-link{
+	font-family: $font-text;
+	font-size: $font-size-std;
+	font-style: normal;
+}
+.text-link{
+	@include text-link;
+}
+
+@mixin text-body{
+	font-family: $font-body;
+	font-size: $font-size-body;
+	font-style: normal;
+	line-height: 1.6;
+}
+.text-body{
+	@include text-body;
+}
+
+@mixin text-intro{
+	font-size: responsiveSize(2.4, 40, 2.4);
+}
+.text-intro{
+	@include text-intro;
 }
 
 @mixin text-medium{
-	font-family: var(--font-medium);
-	font-weight: 500;
+	font-family: $font-std;
+	font-size: $font-size-medium;
+	font-style: normal;
+	line-height: 1.6;
+}
+.text-medium{
+	@include text-medium;
+}
+
+@mixin text-heading{
+	font-family: $font-std;
+	font-size: $font-size-heading;
 	font-style: normal;
 }
+.text-heading{
+	@include text-heading;
+}
+
 @mixin text-display{
-	font-family: var(--font-display);
+	font-family: $font-display;
+	font-size: $font-size-display;
 	font-style: normal;
-	font-size: clamp(2.8rem, 8vw, 9rem);
+	line-height: 1;
 }
-@mixin text-display-small{
-	font-family: var(--font-display);
-	font-style: normal;
-	font-size: clamp(2.2rem, 4vw, 4.6rem);
+.text-display{
+	@include text-display;
 }
-@mixin text-body{
-	font-family: var(--font-std);
-	font-style: normal;
-}
+
 @mixin text-blocky{
-	font-family: var(--font-blocky);
+	font-family: $font-blocky;
 	font-style: normal;
 	text-transform: uppercase;
-	font-size: 1.4rem;
+	font-size: $font-size-tiny;
 }
-@mixin text-section-title{
-	font-family: var(--font-medium);
-	font-style: normal;
-	font-size: 2.8rem;
+.text-blocky{
+	@include text-blocky;
 }
