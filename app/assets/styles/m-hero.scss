@@ -1,15 +1,16 @@
 .hero{
-	position: relative;
 	&__main-section{
 		position: relative;
 		background-image: url(../images/texture.jpg);
 		background-size: cover;
 		z-index: 1;
 		&__inner{
-			position: relative;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+			@include break($mobile){
+				position: relative;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
 		}
 	}
 	&__foot-section{
@@ -38,7 +39,6 @@
 	&__message__sub{
 		display: block;
 		@include text-medium;
-		font-size: 3.2rem;
 	}
 	&__links{
 		display: flex;
@@ -56,7 +56,7 @@
 			gap: 4rem;
 			padding-top: 4rem;
 			padding-bottom: calc(12rem);
-			right: calc(4vw - 5px);
+			right: calc(6vw - 5px);
 			width: 10px;
 		}
 		&__dots{
@@ -86,7 +86,9 @@
 				height: 16rem;
 				fill: var(--color-accent);
 				position: absolute;
+				position: absolute;
 				left: 8px;
+				top: -4px;
 				transform: translateX(-50%);
 			}
 		}
