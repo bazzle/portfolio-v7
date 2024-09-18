@@ -8,7 +8,7 @@
 			position: relative;
 			display: flex;
 			justify-content: space-between;
-			@include break($mobile){
+			@include break(tablet){
 				align-items: center;
 			}
 		}
@@ -16,7 +16,7 @@
 	&__foot-section{
 		background-color: var(--color-bg);
 		width: 100%;
-		@include break($mobile){
+		@include break(tablet){
 			height: 8rem;
 		}
 		&__inner{
@@ -50,7 +50,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: .3em;
-		@include break($mobile){
+		@include break(tablet){
 			padding-top: unset;
 			padding-bottom: unset;
 			flex-direction: row;
@@ -64,7 +64,7 @@
 	}
 	&__side-furniture{
 		position: relative;
-		@include break($mobile){
+		@include break(tablet){
 			right: calc(6vw - 5px);
 			display: flex;
 			flex-direction: column;
@@ -77,7 +77,7 @@
 		&__dots{
 			flex-grow: 1;
 			display: none;
-			@include break($mobile){
+			@include break(tablet){
 				display: block;
 			}
 		}
@@ -86,7 +86,7 @@
 			height: 55px;
 			width: 10px;
 			display: none;
-			@include break($mobile){
+			@include break(tablet){
 				display: block;
 			}
 			svg{
@@ -103,7 +103,7 @@
 			bottom: 0;
 			right: 0;
 			transform: translateY(50%);
-			@include break($mobile){
+			@include break(tablet){
 				transform: translateY(0);
 				position: absolute;
 				bottom: -8rem;
@@ -115,7 +115,7 @@
 				width: 16rem;
 				height: 16rem;
 				fill: var(--color-accent);
-				@include break($mobile){
+				@include break(tablet){
 					position: absolute;
 					left: 12px;
 					top: -4px;
