@@ -1,8 +1,0 @@
-@mixin diamond($color){
-	right: calc(8rem - 6px);
-	background-color: $color;
-	width: 14px;
-	height: 14px;
-	position: absolute;
-	transform: rotate(45deg);
-}

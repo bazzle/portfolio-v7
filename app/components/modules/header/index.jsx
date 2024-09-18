@@ -1,8 +1,10 @@
+import styles from './style.module.scss';
+
 function Header(){
     return(
-        <header className="header">
-            <div className="container header__inner">
-                <h1 className="header__site-name">
+        <header className={styles.header}>
+            <div className={`container ${styles.header__inner}`}>
+                <h1 className={styles.header__sitename}>
                     <span className="name">Barry Richards</span>
                     <span>Design Engineer</span>
                 </h1>

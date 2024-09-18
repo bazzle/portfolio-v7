@@ -1,4 +1,5 @@
-import SectionHead from "../components/section-head.jsx";
+import styles from './style.module.scss';
+import SectionHead from "../../components/section-head";
 
 function SkillsAndAbilities(){
 

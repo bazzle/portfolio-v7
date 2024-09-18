@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 // Breakpoints
 $breakpoints: (
     mobile: 359px,
