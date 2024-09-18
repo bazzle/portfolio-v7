@@ -1,9 +1,9 @@
 // import Image from "next/image";
 
-import Hero from "./components/modules/Hero";
-import SkillsAndAbilities from "./components/modules/Skills-and-abilities";
-import Status from "./components/components/Status";
-import Typesheet from "./components/modules/Type-sheet";
+import Hero from "./components/modules/hero";
+import SkillsAndAbilities from "./components/modules/skills-and-abilities";
+import Status from "./components/components/status";
+import Typesheet from "./components/modules/type-sheet";
 import WorkHistory from "./components/modules/work-history";
 
 
