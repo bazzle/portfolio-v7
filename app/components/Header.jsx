@@ -4,7 +4,7 @@ function Header(){
             <div className="container header__inner">
                 <h1 className="header__site-name">
                     <span className="name">Barry Richards</span>
-                    <span>Web Engineer</span>
+                    <span>Design Engineer</span>
                 </h1>
 				<div className="header__line">
 					<hr />
