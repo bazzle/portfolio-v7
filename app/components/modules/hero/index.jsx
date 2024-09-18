@@ -1,5 +1,6 @@
-import ActionLink from "../components/action-link";
-import VerticalDots from "../components/vertical-dots";
+import styles from './style.module.scss';
+import ActionLink from "../../components/action-link";
+import VerticalDots from "../../components/vertical-dots";
 import Image from "next/image";
 
 function Hero(){
