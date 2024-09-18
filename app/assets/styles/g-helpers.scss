@@ -1,9 +1,9 @@
 .highlight{
-	color: var(--color-accent);
+	color: $color-accent;
 }
 
 .highlight--alt{
-	color: var(--color-accent-alt);
+	color: $color-accent-alt;
 }
 
 .p-relative{
@@ -11,5 +11,5 @@
 }
 
 .mb{
-	margin-bottom: var(--block-spacing--shallow);
+	margin-bottom: $block-spacing--shallow;
 }

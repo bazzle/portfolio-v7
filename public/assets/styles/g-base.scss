@@ -5,14 +5,14 @@ html{
 body{
 	padding: 0;
 	margin: 0;
-	background-color: var(--color-bg-alt);
-	color: var(--color-foreground);
+	background-color: $color-bg-alt);
+	color: $color-foreground);
 	font-family: "degular", sans-serif;
-	font-size: var(--font-size-regular);
+	font-size: $font-size-regular);
 }
 
 a{
-	color: var(--color-accent);
+	color: $color-accent);
 	text-decoration: underline;
 	text-underline-offset: .15em;
 	&:hover{
@@ -24,11 +24,11 @@ hr{
 	border: 0;
 	background-color: black;
 	height: 1px;
-	margin-bottom: var(--block-spacing);
+	margin-bottom: $block-spacing);
 }
 
 button{
-	background-color: var(--color-foreground);
+	background-color: $color-foreground);
 	border: none;
 	text-transform: uppercase;
 	padding: .5em .8em;

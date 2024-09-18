@@ -10,8 +10,8 @@ $breakpoints: (
     desktop-wide: 1200px,
     desktop-wider: 1340px,
     desktop-xl: 1408px,
-	site-width-margins: var(--site-width-margins),
-	site-width: var(--site-width)
+	site-width-margins: $site-width-margins,
+	site-width: $site-width
 );
 $breakpoints--h: (
     letterbox: 900px

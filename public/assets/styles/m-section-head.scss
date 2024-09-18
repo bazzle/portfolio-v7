@@ -1,16 +1,16 @@
 .section-head{
 	position: relative;
 	width: 100%;
-	padding-top: var(--block-spacing);
-	padding-bottom: var(--block-spacing--deep);
+	padding-top: $block-spacing);
+	padding-bottom: $block-spacing--deep);
 }
 .section-head--separator{
-	border-top: 1px solid var(--color-accent);
+	border-top: 1px solid $color-accent);
 	&:before{
 		content: '';
 		left: 4rem;
 		top: -8px;
-		background-color: var(--color-accent);
+		background-color: $color-accent);
 		width: 14px;
 		height: 14px;
 		position: absolute;

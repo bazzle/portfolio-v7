@@ -52,7 +52,7 @@ $font-size-miniscule: 1.2rem;
 	text-underline-offset: .2em;
 	&:hover{
 		text-decoration: none;
-		color: var(--color-accent)
+		color: $color-accent;
 	}
 }
 .text-link{

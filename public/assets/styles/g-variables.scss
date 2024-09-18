@@ -5,5 +5,5 @@
 	--block-spacing--shallow: 3rem;
 	--block-spacing--deep: 6rem;
 	--site-width: 1000px;
-	--site-width-margins: calc(1000px + var(--gutter-padding) + var(--gutter-padding));
+	--site-width-margins: calc(1000px + $gutter-padding) + $gutter-padding));
 }

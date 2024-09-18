@@ -1,6 +1,6 @@
 .skills-abilities{
-	padding-top: var(--block-spacing--shallow);
-	padding-bottom: var(--block-spacing);
+	padding-top: $block-spacing--shallow;
+	padding-bottom: $block-spacing;
 	ul{
 		margin-bottom: 0;
 	}
@@ -53,7 +53,7 @@
 }
 
 .skill__rating{
-	color: var(--color-accent);
+	color: $color-accent;
 	width: 5ch;
 	text-align: left;
 	flex-shrink: 0;

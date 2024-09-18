@@ -6,8 +6,8 @@ body{
 	position: relative;
 	padding: 0;
 	margin: 0;
-	background-color: var(--color-bg-alt);
-	color: var(--color-foreground);
+	background-color: $color-bg-alt;
+	color: $color-foreground;
 	@include text-std;
 	overflow-y: auto;
 }
@@ -20,11 +20,11 @@ hr{
 	border: 0;
 	background-color: black;
 	height: 1px;
-	margin-bottom: var(--block-spacing);
+	margin-bottom: $block-spacing;
 }
 
 button{
-	background-color: var(--color-foreground);
+	background-color: $color-foreground;
 	border: none;
 	text-transform: uppercase;
 	padding: .5em .8em;
@@ -32,4 +32,8 @@ button{
 	color: white;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+input, button, label, textarea{
+	margin-bottom: $block-spacing--shallow;
 }
