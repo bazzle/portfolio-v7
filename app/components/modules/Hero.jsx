@@ -1,4 +1,4 @@
-import VerticalDots from "./vertical-dots";
+import VerticalDots from "../components/vertical-dots";
 import Image from "next/image";
 
 function Hero(){

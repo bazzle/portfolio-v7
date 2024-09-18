@@ -1,4 +1,4 @@
-import SectionHead from "./section-head.jsx";
+import SectionHead from "../components/section-head.jsx";
 
 function SkillsAndAbilities(){
 
