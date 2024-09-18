@@ -46,7 +46,7 @@ function Hero(){
 			<div className="hero__foot-section">
 				<div className="container hero__foot-section__inner">
 					<div className="hero__links">
-						<a href="mailto:barry@br-web.me">barry@br-web.me</a> &mdash;
+						<a href="mailto:barry@br-web.me">barry@br-web.me</a>
 						<a href="https://www.linkedin.com/in/br-web/">LinkedIn</a>
 					</div>
 				</div>

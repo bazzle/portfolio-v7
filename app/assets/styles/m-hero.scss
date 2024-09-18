@@ -93,6 +93,7 @@
 			right: 0;
 			transform: translateY(50%);
 			@include break($mobile){
+				transform: translateY(0);
 				position: absolute;
 				bottom: -8rem;
 				right: 0;
