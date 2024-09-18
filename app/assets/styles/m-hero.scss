@@ -5,10 +5,10 @@
 		background-size: cover;
 		z-index: 1;
 		&__inner{
+			position: relative;
+			display: flex;
+			justify-content: space-between;
 			@include break($mobile){
-				position: relative;
-				display: flex;
-				justify-content: space-between;
 				align-items: center;
 			}
 		}
@@ -28,8 +28,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		padding-top: var(--block-spacing--shallow);
-		padding-bottom: var(--block-spacing--shallow);
+		padding-top: var(--block-spacing--deep);
+		padding-bottom: var(--block-spacing--deep);
 	}
 	&__message__main{
 		@include text-display;
@@ -52,25 +52,32 @@
 		}
 	}
 	&__side-furniture{
-		display: none;
+		position: relative;
 		@include break($mobile){
-			position: relative;
+			right: calc(6vw - 5px);
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			gap: 4rem;
 			padding-top: 4rem;
 			padding-bottom: 12rem;
-			right: calc(6vw - 5px);
 			width: 10px;
 		}
 		&__dots{
 			flex-grow: 1;
+			display: none;
+			@include break($mobile){
+				display: block;
+			}
 		}
 		&__tick{
 			position: relative;
 			height: 55px;
 			width: 10px;
+			display: none;
+			@include break($mobile){
+				display: block;
+			}
 			svg{
 				position: absolute;
 				width: 70px;
@@ -82,19 +89,27 @@
 		}
 		&__profile{
 			position: absolute;
-			bottom: -8rem;
+			bottom: 0;
 			right: 0;
-			height: 16rem;
-			width: 10px;
+			transform: translateY(50%);
+			@include break($mobile){
+				transform: translateY(0);
+				position: absolute;
+				bottom: -8rem;
+				right: 0;
+				height: 16rem;
+				width: 10px;
+			}
 			svg{
 				width: 16rem;
 				height: 16rem;
 				fill: var(--color-accent);
-				position: absolute;
-				position: absolute;
-				left: 8px;
-				top: -4px;
-				transform: translateX(-50%);
+				@include break($mobile){
+					position: absolute;
+					left: 12px;
+					top: -4px;
+					transform: translateX(-50%);
+				}
 			}
 		}
 	}
