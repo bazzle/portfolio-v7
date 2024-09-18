@@ -16,15 +16,6 @@ main{
 	overflow-x: hidden;
 }
 
-a{
-	color: var(--color-accent);
-	text-decoration: underline;
-	text-underline-offset: .15em;
-	&:hover{
-		text-decoration: none;
-	}
-}
-
 hr{
 	border: 0;
 	background-color: black;
