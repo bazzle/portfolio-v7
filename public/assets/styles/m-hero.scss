@@ -48,7 +48,7 @@
 	}
 	&__side-furniture{
 		display: none;
-		@include break($mobile){
+		@include break(tablet){
 			position: relative;
 			display: flex;
 			flex-direction: column;
