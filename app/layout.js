@@ -1,6 +1,6 @@
 import "./assets/styles/main.scss";
-import Header from "./components/Header";
-import Footer from "./components/footer";
+import Header from "./components/modules/Header";
+import Footer from "./components/modules/Footer";
 
 export const metadata = {
   title: "Barry Richards",
