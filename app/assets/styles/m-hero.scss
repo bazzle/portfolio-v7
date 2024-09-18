@@ -112,10 +112,12 @@
 				width: 10px;
 			}
 			svg{
-				width: 16rem;
-				height: 16rem;
+				width: 12rem;
+				height: 12rem;
 				fill: var(--color-accent);
 				@include break(tablet){
+					width: 16rem;
+					height: 16rem;
 					position: absolute;
 					left: 12px;
 					top: -4px;
