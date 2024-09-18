@@ -1,8 +1,8 @@
 .card{
-	background-color: var(--color-bg-alt);
+	background-color: $color-bg-alt);
 	padding: .5rem;
 	position: relative;
-	border-radius: var(--border-radius);
+	border-radius: $border-radius);
 	list-style: none;
 }
 
@@ -11,6 +11,6 @@
 	height: auto;
 	aspect-ratio: 1/1;
 	object-fit: cover;
-	border-radius: var(--border-radius);
-	margin-bottom: var(--block-spacing--shallow);
+	border-radius: $border-radius);
+	margin-bottom: $block-spacing--shallow);
 }

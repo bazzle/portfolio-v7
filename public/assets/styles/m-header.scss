@@ -1,7 +1,7 @@
 .header{
-	background-color: var(--color-bg);
-	padding-top: var(--block-spacing--shallow);
-	padding-bottom: var(--block-spacing--shallow);
+	background-color: $color-bg);
+	padding-top: $block-spacing--shallow);
+	padding-bottom: $block-spacing--shallow);
 	z-index: 2;
 	position: relative;
 
@@ -25,7 +25,7 @@
 		@include text-blocky;
 		font-size: 1.6rem;
 		span.name{
-			color: var(--color-accent);
+			color: $color-accent);
 		}
 	}
 	
@@ -37,7 +37,7 @@
 			margin: 0;
 			padding: 0;
 			height: 1px;
-			background-color: var(--color-accent);
+			background-color: $color-accent);
 		}
 		svg{
 			display: none;
@@ -48,7 +48,7 @@
 				height: 25px;
 				right: 4vw;
 				top: 0;
-				fill: var(--color-accent);
+				fill: $color-accent);
 				position: absolute;
 				transform: translate(50%, -50%);
 			}

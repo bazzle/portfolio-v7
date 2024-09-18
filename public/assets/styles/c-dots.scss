@@ -5,7 +5,7 @@
 	svg.dot{
 		width: 10px;
 		height: 10px;
-		fill: var(--color-accent);
+		fill: $color-accent);
 		position: relative;
 		//transform: translateX(50%);
 	}

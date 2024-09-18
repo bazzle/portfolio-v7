@@ -10,8 +10,8 @@ $mobile-nav: 109rem; // 1090px
 $desktop-wide: 120rem; // 1200px
 $desktop-wider: 134rem; // 1340px
 $desktop-xl: 140.8rem; // 1408px
-$site-width-margins: var(--site-width-margins);
-$site-width: var(--site-width);
+$site-width-margins: $site-width-margins);
+$site-width: $site-width);
 
 $letterbox: '900px';
 

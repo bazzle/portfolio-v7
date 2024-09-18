@@ -1,9 +1,9 @@
 .footer{
-	padding: var(--block-spacing) 0;
-	// height: 30rem;
-	background-color: var(--color-bg-alt);
-	border-top: 1px solid var(--color-accent);
-	padding-top: var(--block-spacing);
+	padding: $block-spacing 0;
+	height: 30rem;
+	background-color: $color-bg-alt;
+	border-top: 1px solid $color-accent;
+	padding-top: $block-spacing;
 }
 
 .footer__line{

@@ -3,10 +3,6 @@ p, ul, ol, img, li, h1, h2, h3, h4, h5, h6, input, select, textarea, label{
 	margin-top: 0;
 }
 
-input, button, label, textarea{
-	margin-bottom: var(--block-spacing--shallow);
-}
-
 *{
 	box-sizing: border-box;
 }
