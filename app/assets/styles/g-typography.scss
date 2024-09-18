@@ -47,7 +47,13 @@ $font-size-miniscule: 1.2rem;
 @mixin text-link{
 	font-family: $font-text;
 	font-size: $font-size-std;
-	font-style: normal;
+	color: white;
+	text-decoration: underline;
+	text-underline-offset: .2em;
+	&:hover{
+		text-decoration: none;
+		color: var(--color-accent)
+	}
 }
 .text-link{
 	@include text-link;

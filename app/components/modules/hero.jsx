@@ -1,3 +1,4 @@
+import ActionLink from "../components/action-link";
 import VerticalDots from "../components/vertical-dots";
 import Image from "next/image";
 
@@ -46,8 +47,9 @@ function Hero(){
 			<div className="hero__foot-section">
 				<div className="container hero__foot-section__inner">
 					<div className="hero__links">
-						<a href="mailto:barry@br-web.me">barry@br-web.me</a>
-						<a href="https://www.linkedin.com/in/br-web/">LinkedIn</a>
+						<ActionLink linkString="mailto:barry@br-web.me" textString="Drop me an email" />
+						<ActionLink linkString="https://www.linkedin.com/in/br-web/" textString="LinkedIn" />
+						<ActionLink linkString="https://github.com/bazzle/" textString="Github" />
 					</div>
 				</div>
 			</div>

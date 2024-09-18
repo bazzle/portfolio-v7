@@ -15,8 +15,10 @@
 	}
 	&__foot-section{
 		background-color: var(--color-bg);
-		height: 8rem;
 		width: 100%;
+		@include break($mobile){
+			height: 8rem;
+		}
 		&__inner{
 			position: relative;
 			height: 100%;
@@ -43,10 +45,19 @@
 		@include text-medium;
 	}
 	&__links{
+		padding-top: var(--block-spacing--shallow);
+		padding-bottom: var(--block-spacing--shallow);
 		display: flex;
-		gap: 1em;
-		height: 100%;
-		align-items: center;
+		flex-direction: column;
+		gap: .3em;
+		@include break($mobile){
+			padding-top: unset;
+			padding-bottom: unset;
+			flex-direction: row;
+			align-items: center;
+			height: 100%;
+			gap: 1em;
+		}
 		a{
 			@include text-link;
 		}

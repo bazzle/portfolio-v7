@@ -16,14 +16,22 @@
 		margin: 0;
 		padding: 0;
 		line-height: 1;
-		text-transform: uppercase;
-		display: flex;
-		gap: .5em;
 		position: relative;
 		top: .05em;
-		flex-shrink: 0;
 		@include text-blocky;
 		font-size: 1.6rem;
+		display: flex;
+		flex-shrink: 0;
+		flex-direction: column;
+		gap: .5em;
+		@include break($mobile){
+			flex-shrink: 0;
+			flex-direction: row;
+			gap: .5em;
+		}
+		span{
+			flex-shrink: 0;
+		}
 		span.name{
 			color: var(--color-accent);
 		}
