@@ -1,15 +1,130 @@
 @use "../../../assets/styles/all-vars" as *;
 
-.footer{
-	padding: $block-spacing 0;
-	height: 30rem;
-	background-color: $color-bg-alt;
-	border-top: 1px solid $color-accent;
-	padding-top: $block-spacing;
-	&__line{
-		width: 100%;
-		text-align: center;
-		@include text-blocky;
-		margin-bottom: 0;
+.hero{
+	position: relative;
+}
+
+.main_section{
+	position: relative;
+	background-image: url(../../../assets/images/texture.jpg);
+	background-size: cover;
+	z-index: 1;
+	&__inner{
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		@include break(tablet){
+			align-items: center;
+		}
+	}
+}
+.foot_section{
+	background-color: $color-bg;
+	width: 100%;
+	@include break(tablet){
+		height: 8rem;
+	}
+	&__inner{
+		position: relative;
+		height: 100%;
+	}
+	&__links{
+		padding-top: $block-spacing--shallow;
+		padding-bottom: $block-spacing--shallow;
+		display: flex;
+		flex-direction: column;
+		gap: .3em;
+		@include break(tablet){
+			padding-top: unset;
+			padding-bottom: unset;
+			flex-direction: row;
+			align-items: center;
+			height: 100%;
+			gap: 1em;
+		}
+	}
+}
+.message{
+	margin-bottom: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding-top: $block-spacing--deep;
+	padding-bottom: $block-spacing--deep;
+}
+.message__main{
+	@include text-display;
+	display: block;
+	line-height: 1;
+	position: relative;
+	top: -.1em;
+}
+.message__sub{
+	display: block;
+	@include text-medium;
+}
+.side_furniture{
+	position: relative;
+	@include break(tablet){
+		right: calc(6vw - 5px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4rem;
+		padding-top: 4rem;
+		padding-bottom: 12rem;
+		width: 10px;
+	}
+	&__dots{
+		flex-grow: 1;
+		display: none;
+		@include break(tablet){
+			display: block;
+		}
+	}
+	&__tick{
+		position: relative;
+		height: 55px;
+		width: 10px;
+		display: none;
+		@include break(tablet){
+			display: block;
+		}
+		svg{
+			position: absolute;
+			width: 70px;
+			height: 55px;
+			top: 0;
+			left: 12px;
+			transform: translateX(-50%);
+		}
+	}
+	&__profile{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		transform: translateY(50%);
+		@include break(tablet){
+			transform: translateY(0);
+			position: absolute;
+			bottom: -8rem;
+			right: 0;
+			height: 16rem;
+			width: 10px;
+		}
+		svg{
+			width: 12rem;
+			height: 12rem;
+			fill: $color-accent;
+			@include break(tablet){
+				width: 16rem;
+				height: 16rem;
+				position: absolute;
+				left: 12px;
+				top: -4px;
+				transform: translateX(-50%);
+			}
+		}
 	}
 }
