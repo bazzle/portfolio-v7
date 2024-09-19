@@ -1,4 +1,174 @@
-@forward "./colours";
-@forward "./typography";
-@forward "./variables";
-@forward "./breakpoints";
+/* Colours ------------------------------------------------- */
+
+$color-foreground: #ffffff;
+$color-accent: #9AF3FF;
+$color-accent-dark: #14AABF;
+$color-accent-alt: #FFAAAA;
+$color-bg: #141414;
+$color-bg-alt: #000000;
+$color-feint-line: rgb(255, 255, 255, 0.2);
+
+
+
+
+
+/* Typography ------------------------------------------------- */
+
+@import url("https://use.typekit.net/sqv3apk.css");
+
+
+@function responsiveSize($initial, $pcreduction, $vw) {
+	$reduction: $initial * ((100 - $pcreduction) / 100);
+	@return clamp(#{$reduction}rem, #{$vw}vw, #{$initial}rem);
+}
+
+$font-body: "dm-sans", sans-serif;
+$font-std: "degular", sans-serif;
+$font-display: "degular-display", sans-serif;
+$font-text: "degular-text", sans-serif;
+$font-blocky: "degular-text", sans-serif;
+
+// For display only
+$font-size-display: responsiveSize(9, 40, 9);
+// For headings only
+$font-size-heading: responsiveSize(3.8, 40, 3.8);
+// For general use
+$font-size-medium: responsiveSize(3.2, 30, 3.2);
+// Default font size
+$font-size-std: responsiveSize(1.8, 8, 1.8);
+// For body only
+$font-size-body: responsiveSize(1.6, 5, 1.6);
+// For blocky text, taglines and other reasons
+$font-size-tiny: 1.4rem;
+// For exceptional reasons
+$font-size-miniscule: 1.2rem;
+
+
+@mixin text-tiny{
+	font-size: $font-size-tiny;
+}
+
+@mixin text-std{
+	font-family: $font-text;
+	font-size: $font-size-std;
+	font-style: normal;
+}
+
+@mixin text-link{
+	font-family: $font-text;
+	font-size: $font-size-std;
+	color: white;
+	text-decoration: underline;
+	text-underline-offset: .2em;
+	&:hover{
+		text-decoration: none;
+		color: $color-accent;
+	}
+}
+
+@mixin text-body{
+	font-family: $font-body;
+	font-size: $font-size-body;
+	font-style: normal;
+	line-height: 1.6;
+}
+
+@mixin text-intro{
+	font-size: responsiveSize(2.4, 40, 2.4);
+}
+
+@mixin text-medium{
+	font-family: $font-std;
+	font-size: $font-size-medium;
+	font-style: normal;
+	line-height: 1.6;
+}
+
+@mixin text-heading{
+	font-family: $font-std;
+	font-size: $font-size-heading;
+	font-style: normal;
+}
+
+@mixin text-display{
+	font-family: $font-display;
+	font-size: $font-size-display;
+	font-style: normal;
+	line-height: 1;
+}
+
+@mixin text-blocky{
+	font-family: $font-blocky;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: $font-size-tiny;
+}
+
+
+
+
+/* Variables ------------------------------------------------- */
+
+$border-radius: 4px;
+$gutter-padding: 4vw;
+$block-spacing: 4.5rem;
+$block-spacing--shallow: 3rem;
+$block-spacing--deep: 6rem;
+$site-width: 1000px;
+$site-width-margins: calc((1000px + $gutter-padding) + $gutter-padding);
+
+
+
+
+/* Breakpoints ------------------------------------------------- */
+
+$breakpoints: (
+    mobile: 359px,
+    mobile-land: 512px,
+    tablet: 641px,
+    desktop: 800px,
+    desktop-mini: 880px,
+    desktop-med: 1025px,
+    mobile-nav: 1090px,
+    desktop-wide: 1200px,
+    desktop-wider: 1340px,
+    desktop-xl: 1408px,
+	site-width-margins: $site-width-margins,
+	site-width: $site-width
+);
+$breakpoints--h: (
+    letterbox: 900px
+);
+
+
+// breakpoint mixins
+@mixin break($breakpoint: medium) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+  }
+  
+  @mixin break-under($breakpoint: medium) {
+	@if map-has-key($breakpoints, $breakpoint) {
+	  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+		  @content;
+	  }
+	}
+  }
+  
+  @mixin break-between($breakpoint-lower, $breakpoint-higher){
+	@media screen and (min-width: map-get($breakpoints, $breakpoint-lower)) and (max-width: map-get($breakpoints, $breakpoint-higher)) {
+	  @content;
+	}
+  }
+  
+  // height 
+  @mixin break--h($breakpoint) {
+	@if map-has-key($breakpoints--h, $breakpoint) {
+		@media screen and (max-height: map-get($breakpoints--h, $breakpoint)) and (orientation: landscape) {
+			@content;
+		}
+	}
+  }

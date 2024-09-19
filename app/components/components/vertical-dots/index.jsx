@@ -1,3 +1,4 @@
+import styles from './style.module.scss';
 import propTypes from "prop-types";
 
 function VerticalDots({numDots}){
@@ -8,7 +9,7 @@ function VerticalDots({numDots}){
         );
     }
     return (
-        <div className="vertical-dots">
+        <div className={styles.vertical_dots}>
             {dotsArray}
         </div>
     )

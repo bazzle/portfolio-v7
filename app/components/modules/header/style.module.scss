@@ -6,62 +6,59 @@
 	padding-bottom: $block-spacing--shallow;
 	z-index: 2;
 	position: relative;
-
-	&__inner{
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-		position: relative;
+}
+.inner{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	position: relative;
+}
+.sitename{
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	position: relative;
+	top: .05em;
+	@include text-blocky;
+	font-size: 1.6rem;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+	gap: .2em;
+	@include break(tablet){
+		flex-shrink: 0;
+		flex-direction: row;
+		gap: .5em;
 	}
-
-	&__sitename{
+	span{
+		flex-shrink: 0;
+	}
+	span.name{
+		color: $color-accent;
+	}
+}
+.line{
+	width: 100%;
+	position: relative;
+	hr{
+		border: 0;
 		margin: 0;
 		padding: 0;
-		line-height: 1;
-		position: relative;
-		top: .05em;
-		@include text-blocky;
-		font-size: 1.6rem;
-		display: flex;
-		flex-shrink: 0;
-		flex-direction: column;
-		gap: .2em;
-		@include break(tablet){
-			flex-shrink: 0;
-			flex-direction: row;
-			gap: .5em;
-		}
-		span{
-			flex-shrink: 0;
-		}
-		span.name{
-			color: $color-accent;
-		}
+		height: 1px;
+		background-color: $color-accent;
 	}
-	
-	&__line{
-		width: 100%;
-		position: relative;
-		hr{
-			border: 0;
-			margin: 0;
-			padding: 0;
-			height: 1px;
-			background-color: $color-accent;
-		}
-		svg{
-			display: none;
-			@include break(tablet){
-				display: block;
-				position: absolute;
-				width: 25px;
-				height: 25px;
-				right: calc(6vw - 5px);
-				top: 1px;
-				fill: $color-accent;
-				position: absolute;
-				transform: translate(50%, -50%);
-			}
+	svg{
+		display: none;
+		@include break(tablet){
+			display: block;
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			right: calc(6vw - 5px);
+			top: 1px;
+			fill: $color-accent;
+			position: absolute;
+			transform: translate(50%, -50%);
 		}
 	}
 }

@@ -6,4 +6,7 @@
 	margin: 0 auto;
 	padding-left: $gutter-padding;
 	padding-right: $gutter-padding;
+	&--vertical-fill{
+		height:100%;
+	}
 }
