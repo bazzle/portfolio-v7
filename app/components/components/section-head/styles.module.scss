@@ -3,7 +3,7 @@
 .section_head{
 	position: relative;
 	width: 100%;
-	padding-top: $block-spacing--shallow;
+	padding-top: .25em;
 	padding-bottom: $block-spacing--deep;
 }
 .separator{
@@ -15,7 +15,7 @@
 		position: absolute;
 		width: 25px;
 		height: 25px;
-		left: 3vw;
+		left: 2vw;
 		top: 0;
 		fill: $color-accent;
 		position: absolute;
@@ -24,7 +24,7 @@
 }
 .title{
 	margin: 0;
-	padding-left: calc(3vw + .8em);
+	padding-left: calc(2vw + .8em);
 	padding-top: 1.5rem;
 	@include text-heading;
 }
