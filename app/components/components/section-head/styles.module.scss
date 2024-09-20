@@ -11,18 +11,15 @@
 	width: 100%;
 	position: relative;
 	svg{
-		display: none;
-		@include break(tablet){
-			display: block;
-			position: absolute;
-			width: 25px;
-			height: 25px;
-			left: 3vw;
-			top: 0;
-			fill: $color-accent;
-			position: absolute;
-			transform: translate(0, -50%);
-		}
+		display: block;
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		left: 3vw;
+		top: 0;
+		fill: $color-accent;
+		position: absolute;
+		transform: translate(0, -50%);
 	}
 }
 .title{
