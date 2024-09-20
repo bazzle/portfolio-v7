@@ -1,5 +1,6 @@
 import styles from './style.module.scss';
 import SectionHead from "../../components/section-head";
+import VennDiagram from '../../components/venn-diagram';
 
 function SkillsAndAbilities(){
 
@@ -71,7 +72,7 @@ function SkillsAndAbilities(){
 				<div className="container pt pb--deep">
 					<div className={styles.skills_abilities__about_section__inner}>
 						<div className={styles.col_1}>
-							<p>Diagram in here</p>
+							<VennDiagram />
 						</div>
 						<div className={styles.col_2}>
 							<div className={styles.body_text}>
