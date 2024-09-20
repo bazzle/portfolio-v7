@@ -76,13 +76,13 @@ $font-size-miniscule: 1.2rem;
 	}
 }
 
-// 400, 700
+// 300, 400, 700
 @mixin text-body{
 	font-family: $font-body;
 	font-size: $font-size-body;
 	font-style: normal;
 	line-height: 1.6;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 @mixin text-intro{
