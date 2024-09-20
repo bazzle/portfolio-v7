@@ -12,6 +12,23 @@
 	position:relative;
 }
 
+.mt{
+	margin-top: $block-spacing--shallow;
+}
 .mb{
 	margin-bottom: $block-spacing--shallow;
+}
+
+.pt{
+	padding-top: $block-spacing--shallow;
+}
+.pb{
+	padding-bottom: $block-spacing--shallow;
+}
+
+.pt--deep{
+	padding-top: $block-spacing--deep;
+}
+.pb--deep{
+	padding-bottom: $block-spacing--deep;
 }

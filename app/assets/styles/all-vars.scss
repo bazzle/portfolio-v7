@@ -10,6 +10,16 @@ $color-feint-line: rgb(255, 255, 255, 0.2);
 
 
 
+/* Variables ------------------------------------------------- */
+
+$border-radius: 4px;
+$gutter-padding: 4vw;
+$block-spacing: 4.5rem;
+$block-spacing--shallow: 3rem;
+$block-spacing--deep: 8rem;
+$site-width: 1000px;
+$site-width-margins: calc((1000px + $gutter-padding) + $gutter-padding);
+
 
 
 /* Typography ------------------------------------------------- */
@@ -66,11 +76,13 @@ $font-size-miniscule: 1.2rem;
 	}
 }
 
+// 400, 700
 @mixin text-body{
 	font-family: $font-body;
 	font-size: $font-size-body;
 	font-style: normal;
 	line-height: 1.6;
+	font-weight: 400;
 }
 
 @mixin text-intro{
@@ -106,18 +118,22 @@ $font-size-miniscule: 1.2rem;
 	font-weight: 400;
 }
 
-
-
-
-/* Variables ------------------------------------------------- */
-
-$border-radius: 4px;
-$gutter-padding: 4vw;
-$block-spacing: 4.5rem;
-$block-spacing--shallow: 3rem;
-$block-spacing--deep: 6rem;
-$site-width: 1000px;
-$site-width-margins: calc((1000px + $gutter-padding) + $gutter-padding);
+@mixin body-formatting{
+	*{
+		@include text-body;
+	}
+	h2, h3, h4, h5, h6{
+		@include text-heading;
+	}
+	p, ul, ol, blockquote{
+		&:not(:last-child){
+			margin-bottom: 1em;
+		}
+		b, strong{
+			font-weight: 700;
+		}
+	}
+}
 
 
 
