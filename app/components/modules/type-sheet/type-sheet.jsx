@@ -1,3 +1,5 @@
+import styles from './style.module.scss';
+
 function Typesheet(){
 	return(
 		<div>

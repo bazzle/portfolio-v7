@@ -1,22 +1,6 @@
 /* Globals --------------- */
-
 @forward "./reset";
 @forward "./base";
 @forward "./helpers";
 @forward "./layout";
-
-// /* Modules --------------- */
-
-// @import "./m-header.scss";
-// @import "./m-footer.scss";
-// @import "./m-hero.scss";
-// @import "./m-section-head.scss";
-// @import "./m-work-history.scss";
-// @import "./m-status.scss";
-// @import "./m-skills.scss";
-
-// /* Components --------------- */
-
-// @import "./c-card.scss";
-// @import "./c-dots.scss";
-// @import "./c-action-link.scss";
+@forward "./typography";
