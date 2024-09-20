@@ -6,8 +6,8 @@
 .inner{
 	display: flex;
 	flex-direction: column;
-	gap: 5rem;
 	@include break(tablet){
+		gap: 5rem;
 		flex-direction: row;
 	}
 	.col_1{
