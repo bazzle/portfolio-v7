@@ -16,11 +16,11 @@ function SkillsAndAbilities(){
 	];
 
     const abilitiesItems = [
-        { id: 1, name: 'Accessibility',  rating: 5 },
-        { id: 2, name: 'Responsive web',  rating: 5 },
-        { id: 3, name: 'Semantics',  rating: 5},
-        { id: 4, name: 'User centred design',  rating: 3 },
-        { id: 5, name: 'Typography',  rating: 5 }
+        { id: 1, name: 'Accessibility'},
+        { id: 2, name: 'Responsive web'},
+        { id: 3, name: 'Semantics'},
+        { id: 4, name: 'User centred design'},
+        { id: 5, name: 'Typography'}
     ];
 
 
@@ -29,36 +29,33 @@ function SkillsAndAbilities(){
         const ratingArray = new Array(number).fill(null);
         return ratingArray.map(
             (item, index) => (
-                <span key={index} className="plus">+</span>
+                <span key={index} className={styles.plus}>+</span>
             )
         );
     }
 
     return(
-        <section className="skills-abilities">
+        <section className={styles.skills_abilities}>
             <div className="container">
                 <SectionHead titleString="Skills and Abilities" separator/>
-                <div className="skills-abilities__inner">
-                    <ul className="skills-list">
+                <div className={styles.inner}>
+                    <ul className={styles.skills_list}>
                         {skillsItems.map(item => (
-                            <li className="skill text-mono" key={item.id}>
-                                <span className="skill__name">
+                            <li className={styles.skills_list__item} key={item.id}>
+                                <span className={styles.skills_list__item__name}>
                                     {item.name}
                                 </span>
-                                <span className="skill__rating">
+                                <span className={styles.skills_list__item__rating}>
                                     {ratingsAdd(item.rating)}
                                 </span>
                             </li>
                         ))}
                     </ul>
-                    <ul className="abilities-list">
+                    <ul className={styles.abilities_list}>
                         {abilitiesItems.map(item => (
-                            <li className="skill text-mono" key={item.id}>
-                                <span className="skill__name">
+                            <li className={styles.abilities_list__item} key={item.id}>
+                                <span className={styles.abilities_list__item__name}>
                                     {item.name}
-                                </span>
-                                <span className="skill__rating">
-                                    {ratingsAdd(item.rating)}
                                 </span>
                             </li>
                         ))}
