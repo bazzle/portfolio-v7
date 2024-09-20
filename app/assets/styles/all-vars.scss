@@ -56,6 +56,7 @@ $font-size-miniscule: 1.2rem;
 
 @mixin text-tiny{
 	font-size: $font-size-tiny;
+	font-family: $font-text;
 }
 
 @mixin text-std{
