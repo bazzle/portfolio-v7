@@ -12,9 +12,6 @@ function Home(){
 			<Hero/>
 			<Welcome/>
 			<SkillsAndAbilities/>
-			<WorkHistory/>
-			<Typesheet/>
-			
 		</main>
 	)
 }
