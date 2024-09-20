@@ -1,89 +1,29 @@
-@import url("https://use.typekit.net/sqv3apk.css");
+@use "./all-vars.scss" as *;
 
-
-@function responsiveSize($initial, $pcreduction, $vw) {
-	$reduction: $initial * ((100 - $pcreduction) / 100);
-	@return clamp(#{$reduction}rem, #{$vw}vw, #{$initial}rem);
+.text-tiny{
+	@include text-tiny;
 }
-
-$font-body: "dm-sans", sans-serif;
-$font-std: "degular", sans-serif;
-$font-display: "degular-display", sans-serif;
-$font-text: "degular-text", sans-serif;
-$font-blocky: "degular-text", sans-serif;
-
-// For display only
-$font-size-display: responsiveSize(9, 40, 9);
-// For headings only
-$font-size-heading: responsiveSize(3.8, 40, 3.8);
-// For general use
-$font-size-medium: responsiveSize(3.2, 30, 3.2);
-// Default font size
-$font-size-std: responsiveSize(1.8, 8, 1.8);
-// For body only
-$font-size-body: responsiveSize(1.6, 5, 1.6);
-// For blocky text, taglines and other reasons
-$font-size-tiny: 1.4rem;
-// For exceptional reasons
-$font-size-miniscule: 1.2rem;
-
-
-@mixin text-tiny{
-	font-size: $font-size-tiny;
+.text-std{
+	@include text-std;
 }
-
-@mixin text-std{
-	font-family: $font-text;
-	font-size: $font-size-std;
-	font-style: normal;
+.text-link{
+	@include text-link;
 }
-
-@mixin text-link{
-	font-family: $font-text;
-	font-size: $font-size-std;
-	color: white;
-	text-decoration: underline;
-	text-underline-offset: .2em;
-	&:hover{
-		text-decoration: none;
-		color: $color-accent;
-	}
+.text-body{
+	@include text-body;
 }
-
-@mixin text-body{
-	font-family: $font-body;
-	font-size: $font-size-body;
-	font-style: normal;
-	line-height: 1.6;
+.text-intro{
+	@include text-intro;
 }
-
-@mixin text-intro{
-	font-size: responsiveSize(2.4, 40, 2.4);
+.text-medium{
+	@include text-medium;
 }
-
-@mixin text-medium{
-	font-family: $font-std;
-	font-size: $font-size-medium;
-	font-style: normal;
-	line-height: 1.6;
+.text-heading{
+	@include text-heading;
 }
-
-@mixin text-heading{
-	font-family: $font-std;
-	font-size: $font-size-heading;
-	font-style: normal;
+.text-display{
+	@include text-display;
 }
-
-@mixin text-display{
-	font-family: $font-display;
-	font-size: $font-size-display;
-	font-style: normal;
-	line-height: 1;
-}
-
-@mixin text-blocky{
-	font-family: $font-blocky;
-	font-style: normal;
-	text-transform: uppercase;
-	font-size: $font-size-tiny;
+.text-blocky{
+	@include text-blocky;
 }
