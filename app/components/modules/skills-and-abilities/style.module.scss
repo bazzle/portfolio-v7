@@ -57,8 +57,16 @@
 		}
 	}
 	.abilities_list{
+		border-top: .5px solid $color-feint-line;
+		padding-top: $block-spacing--shallow;
+		margin-top: $block-spacing--shallow;
+		margin-bottom: $block-spacing--shallow;
 		@include break(tablet){
 			grid-column: 3/4;
+			border-top: unset;
+			padding-top: unset;
+			margin-top: unset;
+			margin-bottom: unset;
 		}
 		&__item{
 			display: flex;
