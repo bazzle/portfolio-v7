@@ -48,16 +48,16 @@
 		background-color: $color-accent;
 	}
 	svg{
-		display: none;
+		display: block;
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		right: calc(6vw - 5px);
+		top: 1px;
+		fill: $color-accent;
+		position: absolute;
+		transform: translate(25%, -50%);
 		@include break(tablet){
-			display: block;
-			position: absolute;
-			width: 25px;
-			height: 25px;
-			right: calc(6vw - 5px);
-			top: 1px;
-			fill: $color-accent;
-			position: absolute;
 			transform: translate(50%, -50%);
 		}
 	}
