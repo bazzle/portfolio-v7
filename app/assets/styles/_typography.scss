@@ -31,17 +31,11 @@ $font-size-miniscule: 1.2rem;
 @mixin text-tiny{
 	font-size: $font-size-tiny;
 }
-.text-tiny{
-	@include text-tiny;
-}
 
 @mixin text-std{
 	font-family: $font-text;
 	font-size: $font-size-std;
 	font-style: normal;
-}
-.text-std{
-	@include text-std;
 }
 
 @mixin text-link{
@@ -55,9 +49,6 @@ $font-size-miniscule: 1.2rem;
 		color: $color-accent;
 	}
 }
-.text-link{
-	@include text-link;
-}
 
 @mixin text-body{
 	font-family: $font-body;
@@ -65,15 +56,9 @@ $font-size-miniscule: 1.2rem;
 	font-style: normal;
 	line-height: 1.6;
 }
-.text-body{
-	@include text-body;
-}
 
 @mixin text-intro{
 	font-size: responsiveSize(2.4, 40, 2.4);
-}
-.text-intro{
-	@include text-intro;
 }
 
 @mixin text-medium{
@@ -82,17 +67,11 @@ $font-size-miniscule: 1.2rem;
 	font-style: normal;
 	line-height: 1.6;
 }
-.text-medium{
-	@include text-medium;
-}
 
 @mixin text-heading{
 	font-family: $font-std;
 	font-size: $font-size-heading;
 	font-style: normal;
-}
-.text-heading{
-	@include text-heading;
 }
 
 @mixin text-display{
@@ -101,16 +80,10 @@ $font-size-miniscule: 1.2rem;
 	font-style: normal;
 	line-height: 1;
 }
-.text-display{
-	@include text-display;
-}
 
 @mixin text-blocky{
 	font-family: $font-blocky;
 	font-style: normal;
 	text-transform: uppercase;
 	font-size: $font-size-tiny;
-}
-.text-blocky{
-	@include text-blocky;
 }

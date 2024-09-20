@@ -1,0 +1,14 @@
+@use "../../../assets/styles/all-vars" as *;
+
+.vertical_dots{
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	svg{
+		width: 10px;
+		height: 10px;
+		fill: $color-accent;
+		position: relative;
+		transform: translateX(50%);
+	}
+}

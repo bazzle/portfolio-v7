@@ -1,0 +1,17 @@
+@use "../../../assets/styles/all-vars" as *;
+
+.action_link{
+	display: flex;
+	align-items: center;
+	gap: .4em;
+	a{
+		@include text-link;
+	}
+	svg{
+		width: 12px;
+		height: 12px;
+		fill: $color-accent;
+		position: relative;
+		top: 2px;
+	}
+}

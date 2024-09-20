@@ -1,8 +1,11 @@
+@use "./colours" as *;
+@use "./variables" as *;
+
 .highlight{
 	color: $color-accent;
 }
 
-.highlight--alt{
+.highlight_alt{
 	color: $color-accent-alt;
 }
 
