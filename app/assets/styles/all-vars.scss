@@ -14,9 +14,10 @@ $color-feint-line: rgb(255, 255, 255, 0.2);
 
 $border-radius: 4px;
 $gutter-padding: 4vw;
-$block-spacing: 4.5rem;
-$block-spacing--shallow: 3rem;
-$block-spacing--deep: 8rem;
+$block-spacing: clamp(3.5rem, 6vw, 6.5rem);
+$block-spacing--shallow: clamp(2rem, 4vw, 4.5rem);
+$block-spacing--deep: clamp(4.5rem, 8vw, 12rem);
+$column-gap: clamp(2rem, 5vw, 5rem);
 $site-width: 1000px;
 $site-width-margins: calc((1000px + $gutter-padding) + $gutter-padding);
 
@@ -167,27 +168,27 @@ $breakpoints--h: (
 			@content;
 		}
 	}
-  }
-  
-  @mixin break-under($breakpoint: medium) {
+}
+
+@mixin break-under($breakpoint: medium) {
 	@if map-has-key($breakpoints, $breakpoint) {
 	  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
 		  @content;
 	  }
 	}
-  }
-  
-  @mixin break-between($breakpoint-lower, $breakpoint-higher){
+}
+
+@mixin break-between($breakpoint-lower, $breakpoint-higher){
 	@media screen and (min-width: map-get($breakpoints, $breakpoint-lower)) and (max-width: map-get($breakpoints, $breakpoint-higher)) {
-	  @content;
+		@content;
 	}
-  }
-  
-  // height 
-  @mixin break--h($breakpoint) {
+}
+
+// height 
+@mixin break--h($breakpoint) {
 	@if map-has-key($breakpoints--h, $breakpoint) {
 		@media screen and (max-height: map-get($breakpoints--h, $breakpoint)) and (orientation: landscape) {
 			@content;
 		}
 	}
-  }
+}
