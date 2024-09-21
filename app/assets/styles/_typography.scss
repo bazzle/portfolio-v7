@@ -32,7 +32,7 @@ p.inset-text{
 	@include text-body;
 	font-style: normal;
 	line-height: 1.6;
-	border-left: 8px solid $color-accent;
+	border-left: 3px solid $color-accent;
 	padding-left: 2rem;
 	font-weight: 700;
 }
