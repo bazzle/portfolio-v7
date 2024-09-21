@@ -7,7 +7,7 @@
 	display: flex;
 	flex-direction: column;
 	@include break(tablet){
-		gap: 5rem;
+		gap: $column-gap;
 		flex-direction: row;
 	}
 	.col_1{
