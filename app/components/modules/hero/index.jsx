@@ -1,6 +1,7 @@
 import styles from './style.module.scss';
 import ActionLink from "../../components/action-link";
 import VerticalDots from "../../components/vertical-dots";
+import Contacts from "../contacts";
 import Image from "next/image";
 
 function Hero(){
@@ -48,15 +49,7 @@ function Hero(){
 				</div>
             </div>
 			<div className={styles.foot_section}>
-				<div className="container container--vertical-fill">
-					<div className={styles.foot_section__inner}>
-						<div className={styles.foot_section__links}>
-							<ActionLink linkString="mailto:barry@br-web.me" textString="Drop me an email" />
-							<ActionLink linkString="https://www.linkedin.com/in/br-web/" textString="LinkedIn" />
-							<ActionLink linkString="https://github.com/bazzle/" textString="Github" />
-						</div>
-					</div>
-				</div>
+				<Contacts />
 			</div>
         </section>
     )

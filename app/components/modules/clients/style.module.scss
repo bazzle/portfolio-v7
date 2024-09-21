@@ -1,0 +1,11 @@
+@use "../../../assets/styles/all-vars" as *;
+
+.clients{
+	background-color: $color-bg;
+	.inner{
+		display: flex;
+		flex-direction: row;
+		gap: clamp(2rem, 4vw, 6rem);
+		align-items: center;
+	}
+}
