@@ -24,25 +24,6 @@
 	@include break(tablet){
 		height: 8rem;
 	}
-	&__inner{
-		position: relative;
-		height: 100%;
-	}
-	&__links{
-		padding-top: $block-spacing--shallow;
-		padding-bottom: $block-spacing--shallow;
-		display: flex;
-		flex-direction: column;
-		gap: .3em;
-		@include break(tablet){
-			padding-top: unset;
-			padding-bottom: unset;
-			flex-direction: row;
-			align-items: center;
-			height: 100%;
-			gap: 1em;
-		}
-	}
 }
 .message{
 	margin-bottom: 0;
