@@ -5,6 +5,10 @@ function VennDiagram() {
 
     return (
         <div className={styles.venn_diagram}>
+			<div className={styles.text_overlay}>
+				<span>Space where I can</span>
+				<span>{<LoopActions />}</span>
+			</div>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="300"
@@ -20,10 +24,6 @@ function VennDiagram() {
                     <circle cx="113.718" cy="140.384" r="112.718" stroke="#FFAAAA" strokeWidth="2" />
                     <text fill="#FFAAAA" xmlSpace="preserve">
                         <tspan x="86.6426" y="10.6979">Design</tspan>
-                    </text>
-					<text xmlSpace="preserve" className={styles.venn_diagram__text}>
-                        <tspan x="150" y="132.539" text-anchor="middle" dominant-baseline="middle">Space where I can</tspan>
-						<tspan x="150" y="150.409"text-anchor="middle" dominant-baseline="middle">{<LoopActions />}</tspan>
                     </text>
                 </g>
                 <defs>

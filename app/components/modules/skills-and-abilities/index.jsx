@@ -40,9 +40,9 @@ function SkillsAndAbilities(){
 				<SectionHead titleString="Skills and Abilities" separator/>
 			</div>
 
-			<div className={styles.skills_abilities__list_section}>
-				<div className="container">
-					<div className={styles.skills_abilities__list_section__inner}>
+			<div className={styles.list_section}>
+				<div className="container pb">
+					<div className={styles.list_section__inner}>
 						<ul className={styles.skills_list}>
 							{skillsItems.map(item => (
 								<li className={styles.skills_list__item} key={item.id}>
@@ -68,11 +68,13 @@ function SkillsAndAbilities(){
 				</div>
 			</div>
 
-			<div className={styles.skills_abilities__about_section}>
+			<div className={styles.about_section}>
 				<div className="container pt pb--deep">
-					<div className={styles.skills_abilities__about_section__inner}>
+					<div className={styles.about_section__inner}>
 						<div className={styles.col_1}>
-							<VennDiagram />
+							<div className={styles.venn_diagram_container}>
+								<VennDiagram />
+							</div>
 						</div>
 						<div className={styles.col_2}>
 							<div className={styles.body_text}>
