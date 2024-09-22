@@ -119,6 +119,13 @@ $font-size-miniscule: 1.2rem;
 	font-size: $font-size-tiny;
 	font-weight: 400;
 }
+@mixin text-blocky-bold{
+	font-family: $font-blocky;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: $font-size-tiny;
+	font-weight: 500;
+}
 
 @mixin body-formatting{
 	*{

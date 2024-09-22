@@ -11,11 +11,24 @@ function ContentSheet({
 	return (
 		<div className={styles.content_sheet}>
 			<div className={styles.inner}>
-				<div className={styles.col_1}>
-					<h3 className={styles.name}>{name}</h3>
-					<p className={styles.duration}>{duration}</p>
+				<div className={styles.metadata}>
+					<div className={styles.metadata__item}>
+						<h2 className="visually-hidden">{name}</h2>
+					</div>
+					<div className={styles.metadata__item}>
+						<h3 className={styles.metadata__title}>Duration</h3>
+						<p className={styles.duration}>{duration}</p>
+					</div>
+					<div className={styles.metadata__item}>
+						<h3 className={styles.metadata__title}>Clients</h3>
+						<ul className={styles.clients_list}>
+						{clients.map((item, index) => {
+							return <li key={index}>{item}</li>
+						})}
+						</ul>
+					</div>
 				</div>
-				<div className={styles.col_2}>
+				<div className={styles.about}>
 					<p className={styles.intro}>
 						{intro}
 					</p>
