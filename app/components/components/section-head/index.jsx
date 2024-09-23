@@ -1,5 +1,5 @@
 import propTypes from "prop-types";
-import styles from "./styles.module.scss";
+import styles from "./style.module.scss";
 function SectionHead({
     titleString = 'Section title',
     separator = false

@@ -1,5 +1,7 @@
 @use "../../../assets/styles/all-vars" as *;
 
+$lineHeight: 10rem;
+
 .work_history{
 	background-color: $color-bg;
 	.inner{
@@ -10,41 +12,50 @@
 	.nav{
 		width: 100%;
 		display: flex;
-		gap: 4rem;
-		justify-content: space-between;
-		flex-direction: row-reverse;
-		border-bottom: 1px solid white;
-		align-items: center;
-		padding-bottom: calc(15rem + 9px);
-		padding-top: $block-spacing--shallow;
+		flex-direction: row;
+		gap: 1rem;
+		flex-wrap: wrap;
+		@include break(tablet){
+			gap: 4rem;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+			border-bottom: 1px solid white;
+			align-items: center;
+			padding-bottom: calc($lineHeight + 9px);
+			padding-top: $block-spacing--shallow;
+		}
 		&__item{
 			flex-grow: 0;
 			margin-bottom: 0;
 			position: relative;
-			flex-shrink: 2;
+			@include break(tablet){
+				flex-shrink: 2;
+			}
 			&.is_active{
 				color: $color-accent;
-				text-decoration: none;
-				font-size: 2.2rem;
 				position: relative;
 				display: block;
-				flex-grow: 1;
+				cursor: default;
+				text-decoration: none;
+				@include break(tablet){
+					font-size: 2.2rem;
+					flex-grow: 1;
+				}
 				&::after{
-					content: '';
-					height: calc(15rem);
-					width: 100vw;
-					background: $color-bg;
-					border-left: 1px solid white;
-					position: absolute;
-					bottom: -10px;
-					transform: translateY(100%);
-					left: 50%;
-					display: block;
+					@include break(tablet){
+						content: '';
+						height: calc($lineHeight);
+						width: 100vw;
+						background: $color-bg;
+						border-left: 1px solid white;
+						position: absolute;
+						bottom: -10px;
+						transform: translateY(100%);
+						left: 50%;
+						display: block;
+					}
 				}
 			}
 		}
-	}
-	&__content{
-		padding-top: $block-spacing;
 	}
 }

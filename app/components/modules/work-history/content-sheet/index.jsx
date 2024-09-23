@@ -13,14 +13,14 @@ function ContentSheet({
 			<div className={styles.inner}>
 				<div className={styles.metadata}>
 					<div className={styles.metadata__item}>
-						<h2 className="visually-hidden">{name}</h2>
+						<h2 className={styles.title}>{name}</h2>
 					</div>
 					<div className={styles.metadata__item}>
-						<h3 className={styles.metadata__title}>Duration</h3>
+						<h3 className={styles.metadata__heading}>Duration</h3>
 						<p className={styles.duration}>{duration}</p>
 					</div>
 					<div className={styles.metadata__item}>
-						<h3 className={styles.metadata__title}>Clients</h3>
+						<h3 className={styles.metadata__heading}>Clients</h3>
 						<ul className={styles.clients_list}>
 						{clients.map((item, index) => {
 							return <li key={index}>{item}</li>

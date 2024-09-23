@@ -2,8 +2,6 @@
 
 .header{
 	background-color: $color-bg;
-	padding-top: $block-spacing--shallow;
-	padding-bottom: $block-spacing--shallow;
 	z-index: 2;
 	position: relative;
 }
@@ -21,6 +19,8 @@
 	top: .05em;
 	@include text-blocky;
 	font-size: 1.6rem;
+	padding-top: 1em;
+	padding-bottom: 1.4em;
 	display: flex;
 	flex-shrink: 0;
 	flex-direction: column;

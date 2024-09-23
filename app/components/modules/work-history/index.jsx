@@ -13,7 +13,7 @@ function WorkHistory(){
 				return (
 					<ContentSheet
 						name="Freelance"
-						duration="2010-2012"
+						duration="~2 years – 2010-2012"
 						clients={["Geckoboard", "Lumanity", "Momentum ITSMA", "Recipe London", "93 Digital", "Fat Beehive", "Shelter", "Helpful Digital" ]}
 						intro="My freelance work intro here"
 						bodyContent={`
@@ -78,9 +78,9 @@ function WorkHistory(){
 			content: () => {
 				return (
 					<ContentSheet
-						name="Hamilton Brown"
+						name="Stepladder"
 						duration="2010-2012"
-						clients={["BDO Store", "Lionpoint"]}
+						clients={["Canary Wharf Group"]}
 						intro="Hamilton-Brown is a creative agency based in London"
 						bodyContent={`
 							<p>

@@ -41,14 +41,18 @@ $font-blocky: "degular-text", sans-serif;
 
 // For display only
 $font-size-display: responsiveSize(9, 40, 9);
+// For display only
+$font-size-display-small: responsiveSize(5, 10, 5);
 // For headings only
-$font-size-heading: responsiveSize(3.8, 40, 3.8);
+$font-size-heading: responsiveSize(3.8, 20, 3.8);
 // For general use
 $font-size-medium: responsiveSize(3.2, 30, 3.2);
 // Default font size
 $font-size-std: responsiveSize(1.8, 8, 1.8);
 // For body only
 $font-size-body: responsiveSize(1.6, 5, 1.6);
+// For body standaouts
+$font-size-body-standout: responsiveSize(2.4, 5, 2.4);
 // For blocky text, taglines and other reasons
 $font-size-tiny: 1.4rem;
 // For exceptional reasons
@@ -88,7 +92,7 @@ $font-size-miniscule: 1.2rem;
 }
 
 @mixin text-intro{
-	font-size: responsiveSize(2.4, 40, 2.4);
+	font-size: $font-size-body-standout;
 }
 
 @mixin text-medium{
@@ -103,11 +107,19 @@ $font-size-miniscule: 1.2rem;
 	font-size: $font-size-heading;
 	font-style: normal;
 	font-weight: 400;
+	line-height:1;
 }
 
 @mixin text-display{
 	font-family: $font-display;
 	font-size: $font-size-display;
+	font-style: normal;
+	line-height: 1;
+}
+
+@mixin text-display-small{
+	font-family: $font-display;
+	font-size: $font-size-display-small;
 	font-style: normal;
 	line-height: 1;
 }
@@ -118,6 +130,7 @@ $font-size-miniscule: 1.2rem;
 	text-transform: uppercase;
 	font-size: $font-size-tiny;
 	font-weight: 400;
+	letter-spacing: .03em;
 }
 @mixin text-blocky-bold{
 	font-family: $font-blocky;
