@@ -1,6 +1,7 @@
 @use "../../../../assets/styles/all-vars" as *;
 
 .content_sheet{
+	padding-top: $block-spacing--shallow;
 	.inner{
 		display: flex;
 		flex-direction: column;
@@ -14,12 +15,16 @@
 		&__item{
 			margin-bottom: 2rem;
 		}
-		&__title{
+		&__heading{
 			@include text-blocky-bold;
 		}
 		&__duration{
 			@include text-blocky;
 		}
+	}
+	.title{
+		@include text-heading;
+		color: $color-accent;
 	}
 	.duration{
 		@include text-blocky;
@@ -35,13 +40,15 @@
 		li{
 			list-style-type: none;
 			@include text-blocky;
-			gap: 1em;
+			gap: .7em;
 			align-items: center;
 			display: flex;
 			&::before{
+				position: relative;
+				bottom: -.1em;
 				content: '';
-				width: 8px;
-				height: 8px;
+				width: 6px;
+				height: 6px;
 				background-color: $color-accent-alt;
 				display: block;
 				transform: rotate(45deg);
