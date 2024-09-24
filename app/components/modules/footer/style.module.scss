@@ -4,12 +4,21 @@
 	padding: $block-spacing 0;
 	height: 30rem;
 	background-color: $color-bg-alt;
-	border-top: 1px solid $color-accent;
 	padding-top: $block-spacing;
+	position: relative;
+	background-image: url(../../../assets/images/texture.jpg);
+	background-size: cover;
 	&__line{
 		width: 100%;
-		text-align: center;
-		@include text-blocky;
-		margin-bottom: 0;
+		display: flex;
+		justify-content: center;
+		p{
+			background-color: $color-bg;
+			padding: .5em 1em .65em 1em;
+			display: inline;
+			border-radius: .2em;
+			@include text-blocky;
+			text-align: center;
+		}
 	}
 }
