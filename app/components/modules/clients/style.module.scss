@@ -2,10 +2,22 @@
 
 .clients{
 	background-color: $color-bg;
-	.inner{
+	.logos{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: clamp(2rem, 4vw, 6rem);
+		align-items: baseline;
+	}
+	.logos_line{
 		display: flex;
 		flex-direction: row;
 		gap: clamp(2rem, 4vw, 6rem);
-		align-items: center;
+		align-items: baseline;
+		flex-wrap: wrap;
+	}
+	.logo_nao{
+		position: relative;
+		top: 5px;
 	}
 }
