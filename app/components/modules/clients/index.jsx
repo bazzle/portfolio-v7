@@ -8,7 +8,7 @@ import LogoOns from './logo-ons.jsx';
 function Clients(){
     return(
         <section className={styles.clients}>
-            <div className="container pt pb">
+            <div className="container pt pb--deep">
                 <div className={styles.logos}>
 
 					<div className={styles.logos_line}>

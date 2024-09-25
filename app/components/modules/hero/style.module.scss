@@ -79,6 +79,7 @@
 			top: 0;
 			left: 12px;
 			transform: translateX(-50%);
+			filter: drop-shadow(0 0 3rem rgba($color-accent-alt, .4));
 		}
 	}
 	&__profile{
@@ -108,4 +109,12 @@
 			}
 		}
 	}
+}
+.highlight{
+	color: $color-accent;
+	text-shadow: 0 0 10rem rgba($color-accent, .5);
+}
+.highlight_alt{
+	color: $color-accent-alt;
+	text-shadow: 0 0 10rem rgba($color-accent-alt, .5);
 }

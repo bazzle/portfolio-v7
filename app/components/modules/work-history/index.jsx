@@ -118,7 +118,7 @@ function WorkHistory(){
 
     return (
         <section className={styles.work_history}>
-			<div className="container pb--deep">
+			<div className="container pt--deep pb--deep">
 				<SectionHead titleString="My story so far" separator/>
 				<nav className={styles.nav}>
 					{navItem(0)}
@@ -126,9 +126,7 @@ function WorkHistory(){
 					{navItem(2)}
 					{navItem(3)}
 				</nav>
-				<div className={styles.work_history__content}>
-					{activeSection.content()}
-				</div>
+				{activeSection.content()}
 			</div>
         </section>
     )

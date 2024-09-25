@@ -1,8 +1,6 @@
 @use "../../../assets/styles/all-vars" as *;
 
 .skills_abilities{
-	padding-top: $block-spacing--shallow;
-	padding-bottom: $block-spacing;
 	background-color: $color-bg;
 	ul{
 		margin-bottom: 0;
@@ -103,5 +101,8 @@
 }
 .venn_diagram_container{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+	@include break(tablet){
+		justify-content: center;
+	}
 }
