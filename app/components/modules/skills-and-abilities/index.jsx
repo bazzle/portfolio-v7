@@ -36,12 +36,9 @@ function SkillsAndAbilities(){
     return(
         <section className={styles.skills_abilities}>
 
-			<div className="container">
-				<SectionHead titleString="Skills and Abilities" separator/>
-			</div>
-
 			<div className={styles.list_section}>
-				<div className="container pb">
+				<div className="container pt--deep pb">
+					<SectionHead titleString="Skills and Abilities" separator/>
 					<div className={styles.list_section__inner}>
 						<ul className={styles.skills_list}>
 							{skillsItems.map(item => (

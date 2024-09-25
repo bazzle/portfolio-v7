@@ -57,6 +57,7 @@
 	}
 	.intro{
 		@include text-intro;
+		color: $color-accent-alt;
 	}
 	.body_text{
 		@include body-formatting;
