@@ -20,7 +20,34 @@
 }
 .foot_section{
 	background-color: $color-bg;
-	width: 100%;
+	&__inner{
+		padding-top: calc(3rem + 60px);
+		padding-bottom: 3rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 100%;
+		align-items: flex-start;
+		@include break(mobile){
+			padding-top: 0;
+			padding-right: calc(120px + 2rem);
+			padding-top: 2rem;
+		}
+		p{
+			margin-bottom: 0;
+		}
+		.intro{
+			display: flex;
+			flex-direction: row;
+			gap: 1em;
+			flex-wrap: wrap;
+		}
+		.clients{
+			margin-top: 2rem;
+			border-top: 1px solid $color-feint-line;
+			padding-top: 2rem;
+		}
+	}
 }
 .message{
 	margin-bottom: 0;
@@ -105,23 +132,5 @@
 				transform: translateX(-50%);
 			}
 		}
-	}
-}
-
-
-.intro{
-	padding-top: calc(3rem + 60px);
-	padding-bottom: 3rem;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 2rem;
-	p{
-		margin-bottom: 0;
-	}
-	@include break(mobile){
-		padding-top: 0;
-		padding-right: calc(120px + 2rem);
-		padding-top: 2rem;
 	}
 }
