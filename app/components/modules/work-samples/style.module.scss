@@ -1,0 +1,63 @@
+@use "../../../assets/styles/all-vars" as *;
+
+.work_samples{
+    background-color: $color-bg-alt;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	aspect-ratio: 5 / 1;
+	min-height: 200px;
+	position: relative;
+}
+
+.inner{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	width: 120%;
+	position: relative;
+	left: -10%;
+	height: 100%;
+}
+
+.browser_desktop, .browser_mobile{
+	position: relative;	height: 100%;
+	&::after{
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		z-index: 1;
+		opacity: 0.5;
+	}
+	svg{
+		height: 100%;
+	}	
+}
+
+.title_overlay{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	
+	h2{
+		margin-bottom: 0;
+		@include text-blocky-lower;
+		font-size: $font-size-body-standout;
+		line-height: 1.2;
+		padding: .3em .8em .6em;
+		border-radius: 3px;
+		background-color: black;
+		text-align: center;
+		display: inline-block;
+	}
+}
