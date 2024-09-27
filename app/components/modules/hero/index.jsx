@@ -2,7 +2,7 @@ import styles from './style.module.scss';
 import ActionLink from "../../components/action-link";
 import VerticalDots from "../../components/vertical-dots";
 import Contacts from "../contacts";
-import Image from "next/image";
+import Clients from "../clients";
 
 function Hero(){
     return(
@@ -53,9 +53,14 @@ function Hero(){
 					<div className={styles.foot_section__inner}>
 						<div className={styles.intro}>
 							<p>Hello! I’m a UK based web designer and developer. Open to opportunities</p>
-							<a href="#">Read more about me</a>
+							<a href="#welcome">Read more about me</a>
 						</div>
-						<Contacts />
+						<div className={styles.contacts}>
+							<Contacts />
+						</div>
+						<div className={styles.clients}>
+							<Clients/>
+						</div>
 					</div>
 				</div>
 			</div>

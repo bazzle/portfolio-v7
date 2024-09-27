@@ -20,3 +20,6 @@
 .body_text{
 	@include body-formatting;
 }
+.client_logos{
+	margin-top: $block-spacing--shallow;
+}
