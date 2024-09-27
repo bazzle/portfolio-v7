@@ -15,10 +15,10 @@ function Hero(){
 								My philosophy is
 							</span>
 							<span className={styles.message__main}>
-								Web for <span className={styles.highlight_alt}>everyone</span>
+								Web for <span className="highlight_alt">everyone</span>
 							</span>
 							<span className={styles.message__sub}>
-								... But still <span className={styles.highlight}>look cool</span>.
+								... But still <span className="highlight">look cool</span>.
 							</span>
 						</p>
 						<div className={styles.side_furniture}>
@@ -49,7 +49,15 @@ function Hero(){
 				</div>
             </div>
 			<div className={styles.foot_section}>
-				<Contacts />
+				<div className="container">
+					<div className={styles.foot_section__inner}>
+						<div className={styles.intro}>
+							<p>Hello! I’m a UK based web designer and developer. Open to opportunities</p>
+							<a href="#">Read more about me</a>
+						</div>
+						<Contacts />
+					</div>
+				</div>
 			</div>
         </section>
     )

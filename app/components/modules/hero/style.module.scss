@@ -21,9 +21,6 @@
 .foot_section{
 	background-color: $color-bg;
 	width: 100%;
-	@include break(tablet){
-		height: 8rem;
-	}
 }
 .message{
 	margin-bottom: 0;
@@ -110,11 +107,21 @@
 		}
 	}
 }
-.highlight{
-	color: $color-accent;
-	text-shadow: 0 0 10rem rgba($color-accent, .5);
-}
-.highlight_alt{
-	color: $color-accent-alt;
-	text-shadow: 0 0 10rem rgba($color-accent-alt, .5);
+
+
+.intro{
+	padding-top: calc(3rem + 60px);
+	padding-bottom: 3rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2rem;
+	p{
+		margin-bottom: 0;
+	}
+	@include break(mobile){
+		padding-top: 0;
+		padding-right: calc(120px + 2rem);
+		padding-top: 2rem;
+	}
 }
