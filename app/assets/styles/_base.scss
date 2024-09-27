@@ -40,3 +40,7 @@ button{
 input, button, label, textarea{
 	margin-bottom: $block-spacing--shallow;
 }
+
+a:not(:has(> *)){
+	@include text-link;
+}

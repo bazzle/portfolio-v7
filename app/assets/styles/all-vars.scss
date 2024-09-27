@@ -73,12 +73,12 @@ $font-size-miniscule: 1.2rem;
 @mixin text-link{
 	font-family: $font-text;
 	font-size: $font-size-std;
-	color: white;
+	color: $color-accent;
 	text-decoration: underline;
 	text-underline-offset: .2em;
 	&:hover{
 		text-decoration: none;
-		color: $color-accent;
+		color: white
 	}
 }
 

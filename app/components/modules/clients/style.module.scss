@@ -1,18 +1,17 @@
 @use "../../../assets/styles/all-vars" as *;
 
 .clients{
-	background-color: $color-bg;
 	.logos{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: clamp(2rem, 4vw, 6rem);
+		gap: 3rem;
 		align-items: baseline;
 	}
 	.logos_line{
 		display: flex;
 		flex-direction: row;
-		gap: clamp(2rem, 4vw, 6rem);
+		gap: 3rem;
 		align-items: baseline;
 		flex-wrap: wrap;
 	}
