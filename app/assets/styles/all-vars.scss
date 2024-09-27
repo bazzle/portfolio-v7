@@ -18,8 +18,8 @@ $block-spacing: clamp(3.5rem, 6vw, 6.5rem);
 $block-spacing--shallow: clamp(2rem, 4vw, 4.5rem);
 $block-spacing--deep: clamp(4.5rem, 8vw, 12rem);
 $column-gap: clamp(2rem, 5vw, 5rem);
-$site-width: 1000px;
-$site-width-margins: calc((1000px + $gutter-padding) + $gutter-padding);
+$site-width: 1200px;
+$site-width-margins: calc(($site-width + $gutter-padding) + $gutter-padding);
 
 
 
@@ -138,6 +138,13 @@ $font-size-miniscule: 1.2rem;
 	text-transform: uppercase;
 	font-size: $font-size-tiny;
 	font-weight: 500;
+}
+@mixin text-blocky-lower{
+	font-family: $font-blocky;
+	font-style: normal;
+	font-size: $font-size-tiny;
+	font-weight: 400;
+	letter-spacing: .03em;
 }
 
 @mixin body-formatting{
