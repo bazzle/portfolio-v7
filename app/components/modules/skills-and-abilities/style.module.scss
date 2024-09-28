@@ -2,11 +2,12 @@
 
 .skills_abilities{
 	background-color: $color-bg;
-	ul{
-		margin-bottom: 0;
-	}
+}
+.inner{
+	padding-top: $block-spacing--shallow;
 }
 .list_section{
+	margin-bottom: $block-spacing--shallow;
 	&__inner{
 		@include break(tablet){
 			max-width: 400px;
