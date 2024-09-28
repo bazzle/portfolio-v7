@@ -7,7 +7,7 @@ function WorkSamples(){
 			<div className={styles.title_overlay}>
 				<h2 className={styles.title_overlay_text}>Work Samples coming soon</h2>
 			</div>
-            <div className={styles.inner}>
+			<div className={styles.inner}>
 				<BrowserDesktop
 					src="/assets/images/samples-nao.png"
 					alt="profile"
@@ -16,23 +16,19 @@ function WorkSamples(){
 					src="/assets/images/samples-bfi.png"
 					alt="profile"
 				/>
-				<BrowserMobile
-					src="/assets/images/samples-satoshi-power.png"
+				<BrowserDesktop
+					src="/assets/images/samples-nao.png"
 					alt="profile"
 				/>
-				<BrowserDesktop
-					src="/assets/images/samples-ons.png"
+				<BrowserMobile
+					src="/assets/images/samples-satoshi-power.png"
 					alt="profile"
 				/>
 				<BrowserDesktop
 					src="/assets/images/samples-bfi.png"
 					alt="profile"
 				/>
-				<BrowserDesktop
-					src="/assets/images/samples-ons.png"
-					alt="profile"
-				/>
-            </div>
+			</div>
         </section>
     )
 }
