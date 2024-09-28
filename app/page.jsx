@@ -4,6 +4,7 @@ import SkillsAndAbilities from "./components/modules/skills-and-abilities";
 import WorkHistory from "./components/modules/work-history";
 import Welcome from "./components/modules/welcome";
 import WorkSamples from "./components/modules/work-samples";
+import Themes from "./components/modules/themes";
 
 function Home(){
 	return(
@@ -13,6 +14,7 @@ function Home(){
 			<WorkSamples/>
 			<SkillsAndAbilities/>
 			<WorkHistory/>
+			<Themes/>
 		</main>
 	)
 }
