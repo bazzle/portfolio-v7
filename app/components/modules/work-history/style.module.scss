@@ -1,13 +1,9 @@
 @use "../../../assets/styles/all-vars" as *;
 
-$lineHeight: 10rem;
-
 .work_history{
 	background-color: $color-bg;
-	.inner{
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
+	&__sectionHead{
+		margin-top: 10.2rem;
 	}
 	.nav{
 		width: 100%;
@@ -16,44 +12,87 @@ $lineHeight: 10rem;
 		gap: 1rem;
 		flex-wrap: wrap;
 		@include break(tablet){
-			gap: 4rem;
+			border-bottom: 1px solid white;
 			justify-content: space-between;
 			flex-direction: row-reverse;
-			border-bottom: 1px solid white;
-			align-items: center;
-			padding-bottom: calc($lineHeight + 9px);
-			padding-top: $block-spacing--shallow;
+			height: 10.2rem;
 		}
-		&__item{
-			flex-grow: 0;
-			margin-bottom: 0;
+		@include break(desktop-med){
+			gap: 4rem;
+		}
+	}
+	.nav_item{
+		flex-grow: 0;
+		margin-bottom: 0;
+		position: relative;
+		padding-bottom: 3rem;
+		@include break(tablet){
+			flex-shrink: 2;
+		}
+		&__inner{
 			position: relative;
 			@include break(tablet){
-				flex-shrink: 2;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 6rem;
+				padding-bottom: 2rem;
 			}
-			&.is_active{
-				color: $color-accent;
-				position: relative;
-				display: block;
-				cursor: default;
-				text-decoration: none;
-				@include break(tablet){
-					font-size: 2.2rem;
-					flex-grow: 1;
+		}
+		&__title{
+			display: block;
+			text-align: center;
+		}
+		&__dates{
+			display: none;
+			@include text-blocky-bold;
+			text-align: center;
+		}
+		&.is_active{
+			color: $color-accent;
+			position: relative;
+			display: block;
+			cursor: default;
+			text-decoration: none;
+			color: white;
+			@include break(desktop-med){
+				flex-grow: 1;
+			}
+			.nav_item__title{
+				@include break(desktop-med){
+					font-size: responsiveSize(2.6, 10, 2.6);
 				}
-				&::after{
-					@include break(tablet){
-						content: '';
-						height: calc($lineHeight);
-						width: 100vw;
-						background: $color-bg;
-						border-left: 1px solid white;
-						position: absolute;
-						bottom: -10px;
-						transform: translateY(100%);
-						left: 50%;
-						display: block;
-					}
+			}
+			.nav_item__dates{
+				@include break(tablet){
+					display: block;
+				}
+			}
+			&::before{
+				@include break(tablet){
+					content: "";
+					width: 1px;
+					height: 3rem;
+					display: block;
+					background-color: white;
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+				}
+			}
+			&::after{
+				@include break(tablet){
+					content: '';
+					height: 1px;
+					width: 100vw;
+					background: $color-bg;
+					border-left: 1px solid white;
+					position: absolute;
+					bottom: 0;
+					transform: translateY(100%);
+					left: 50%;
+					display: block;
 				}
 			}
 		}

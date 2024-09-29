@@ -26,15 +26,11 @@ hr{
 }
 
 button{
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
-	color: $color-foreground;
-	font-size: inherit;
-	font-family: inherit;
-	@include text-link;
-	padding: 0;
-	margin: 0;
+	all: unset;
+	&.button{
+		@include text-link;
+		cursor: pointer;
+	}
 }
 
 input, button, label, textarea{

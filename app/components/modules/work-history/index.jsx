@@ -4,18 +4,23 @@ import SectionHead from "../../components/section-head";
 import { useState } from "react";
 import ContentSheet from "./content-sheet";
 
+const ongoingYear = (startYear) => {
+	const currentYear = new Date().getFullYear();
+	return currentYear - startYear
+}
+
 function WorkHistory(){
 	const sections = [
 		{
-			id: 'freelance',
-			title: 'Freelance',
+			id: 'dxw',
+			title: 'dxw',
 			content: () => {
 				return (
 					<ContentSheet
-						name="Freelance"
-						duration="~2 years – 2010-2012"
-						clients={["Geckoboard", "Lumanity", "Momentum ITSMA", "Recipe London", "93 Digital", "Fat Beehive", "Shelter", "Helpful Digital" ]}
-						intro="My freelance work intro here"
+						name="dxw"
+						startDate={2021}
+						clients={["British Film Institute", "Ministry of Justice", "National Health Service", "Office for National Statistics", "University Alliance,", "National Audit Office"]}
+						intro="dxw is a digital agency that works with the public and third sectors."
 						bodyContent={`
 							<p>
 								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
@@ -29,15 +34,16 @@ function WorkHistory(){
 			}
 		},
 		{
-			id: 'dxw',
-			title: 'dxw',
+			id: 'freelance',
+			title: 'Freelance',
 			content: () => {
 				return (
 					<ContentSheet
-						name="dxw"
-						duration="2010-2012"
-						clients={["British Film Institute", "Ministry of Justice", "National Health Service", "Office for National Statistics", "University Alliance,", "National Audit Office"]}
-						intro="dxw is a digital agency that works with the public and third sectors."
+						name="Freelance"
+						startDate={2018}
+						endDate={2020}
+						clients={["Geckoboard", "Lumanity", "Momentum ITSMA", "Recipe London", "93 Digital", "Fat Beehive", "Shelter", "Helpful Digital" ]}
+						intro="My freelance work intro here"
 						bodyContent={`
 							<p>
 								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
@@ -57,7 +63,8 @@ function WorkHistory(){
 				return (
 					<ContentSheet
 						name="Hamilton Brown"
-						duration="2010-2012"
+						startDate={2015}
+						endDate={2018}
 						clients={["BDO Store", "Lionpoint"]}
 						intro="Hamilton-Brown is a creative agency based in London"
 						bodyContent={`
@@ -79,7 +86,8 @@ function WorkHistory(){
 				return (
 					<ContentSheet
 						name="Stepladder"
-						duration="2010-2012"
+						startDate={2015}
+						endDate={2018}
 						clients={["Canary Wharf Group"]}
 						intro="Hamilton-Brown is a creative agency based in London"
 						bodyContent={`
@@ -106,38 +114,39 @@ function WorkHistory(){
 	function navItem(arrayIndex){
 		const section = sections[arrayIndex];
 		const isActive = activeSection.id === section.id;
-		const conditionalClass = isActive ? styles.is_active : '';
+		const conditionalClass = isActive ? styles.is_active : 'button';
 		return (
 			<button 
-				onClick={(evt) => handleClick(evt, section)} 
-				className={`${styles.nav__item} ${conditionalClass}`}>
-				{section.title}
+				onClick={(evt) => handleClick(evt, section)}
+				className={`${styles.nav_item} ${conditionalClass}`}
+			>
+					<span className={styles.nav_item__inner}>
+						<span className={styles.nav_item__title}>{section.title}</span>
+						<span className={styles.nav_item__dates}>2021-present</span>
+					</span>
 			</button>
 		)
 	}
 
     return (
         <section className={styles.work_history}>
-			<div className="container pt--deep">
+			<div className="container pb--deep">
 				<div className="inner-2col">
 					<div className="col-1">
-						<SectionHead titleString="My story so far" separator/>
+						<div className={styles.work_history__sectionHead}>
+							<SectionHead titleString="My story so far" separator/>
+						</div>
 					</div>
 					<div className="col-2">
-						<p>
-							Some blurb here Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
-						</p>
+						<nav className={styles.nav}>
+							{navItem(0)}
+							{navItem(1)}
+							{navItem(2)}
+							{navItem(3)}
+						</nav>
+						{activeSection.content()}
 					</div>
 				</div>
-			</div>
-			<div className="container pb--deep">
-				<nav className={styles.nav}>
-					{navItem(0)}
-					{navItem(1)}
-					{navItem(2)}
-					{navItem(3)}
-				</nav>
-				{activeSection.content()}
 			</div>
         </section>
     )
