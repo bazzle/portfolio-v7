@@ -118,8 +118,19 @@ function WorkHistory(){
 
     return (
         <section className={styles.work_history}>
-			<div className="container pt--deep pb--deep">
-				<SectionHead titleString="My story so far" separator/>
+			<div className="container pt--deep">
+				<div className="inner-2col">
+					<div className="col-1">
+						<SectionHead titleString="My story so far" separator/>
+					</div>
+					<div className="col-2">
+						<p>
+							Some blurb here Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className="container pb--deep">
 				<nav className={styles.nav}>
 					{navItem(0)}
 					{navItem(1)}
