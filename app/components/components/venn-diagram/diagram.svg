@@ -4,9 +4,9 @@
 <rect width="1200" height="3003.34" transform="translate(-100 -1564)" fill="black"/>
 <rect width="1200" height="338.042" transform="translate(-100 -335.744)" fill="#202020"/>
 <rect width="1200" height="416" transform="translate(-100 2.29785)" fill="#202020"/>
-<circle cx="186.282" cy="140.384" r="112.718" stroke="#9AF3FF" stroke-width="2"/>
+<circle cx="186.282" cy="140.384" r="112.718" stroke="#9AF3FF" strokeWidth="2"/>
 <text fill="#9AF3FF" xml:space="preserve" style="white-space: pre" font-family="Degular Text" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="155.957" y="10.6979">Development</tspan></text>
-<circle cx="113.718" cy="140.384" r="112.718" stroke="#FFAAAA" stroke-width="2"/>
+<circle cx="113.718" cy="140.384" r="112.718" stroke="#FFAAAA" strokeWidth="2"/>
 <text fill="#FFAAAA" xml:space="preserve" style="white-space: pre" font-family="Degular Text" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="86.6426" y="10.6979">Design</tspan></text>
 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Degular Text" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="95.3998" y="150.409">Anticipate issues</tspan></text>
 <text fill="#FFAAAA" xml:space="preserve" style="white-space: pre" font-family="Degular Text" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="91.8712" y="132.539">Space where I can</tspan></text>

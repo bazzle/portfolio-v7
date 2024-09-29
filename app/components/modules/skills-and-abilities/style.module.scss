@@ -6,38 +6,12 @@
 .inner{
 	padding-top: $block-spacing--shallow;
 }
-.list_section{
-	margin-bottom: $block-spacing--shallow;
-	&__inner{
-		@include break(tablet){
-			max-width: 400px;
-			margin-left:4rem;
-			max-width: unset;
-			margin-left: unset;
-			display: flex;
-		}
-	}
-}
 .skills_list{
-	@include break(tablet){
-		grid-column: 1/3;
-		flex: 2;
-	}
-}
-.abilities_list{
-	@include break(tablet){
-		grid-column: 3/4;
-		flex: 1;
-	}
-}
-.skills_list, .abilities_list{
 	list-style: none;
 	padding: 0;
-}
-.skills_list{
 	@include break(tablet){
 		width: 100%;
-		column-count: 2;
+		column-count: 3;
 		column-gap: 6rem;
 	}
 	&__item{
@@ -55,28 +29,6 @@
 			width: 5ch;
 			text-align: left;
 			flex-shrink: 0;
-		}
-	}	
-}
-.abilities_list{
-	border-top: .5px solid $color-feint-line;
-	padding-top: $block-spacing--shallow;
-	margin-top: $block-spacing--shallow;
-	margin-bottom: $block-spacing--shallow;
-	@include break(tablet){
-		border-top: unset;
-		padding-top: unset;
-		margin-top: unset;
-		margin-bottom: unset;
-	}
-	&__item{
-		display: flex;
-		gap: 1em;
-		padding: .2em 0;
-		@include text-blocky;
-		&__name{
-			width: 100%;
-			flex-grow: 1;
 		}
 	}
 }
@@ -100,7 +52,7 @@
 		@include text-body;
 	}
 }
-.venn_diagram_container{
+.diagram{
 	display: flex;
 	justify-content: flex-start;
 	@include break(tablet){
