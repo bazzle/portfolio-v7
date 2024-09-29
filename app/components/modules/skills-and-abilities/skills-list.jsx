@@ -13,6 +13,7 @@ function SkillsList(){
         { id: 8, name: 'Three.js',  rating: 1 },
         { id: 9, name: 'Figma',  rating: 5 }
 	];
+	skillsItems.sort((a, b) => b.rating - a.rating);
 
     const ratingsAdd = (number) => {
         const ratingArray = new Array(number).fill(null);
@@ -25,24 +26,18 @@ function SkillsList(){
 
 	return(
 
-		<div className={styles.list_section}>
-
-			<div className={styles.list_section__inner}>
-				<ul className={styles.skills_list}>
-					{skillsItems.map(item => (
-						<li className={styles.skills_list__item} key={item.id}>
-							<span className={styles.skills_list__item__name}>
-								{item.name}
-							</span>
-							<span className={styles.skills_list__item__rating}>
-								{ratingsAdd(item.rating)}
-							</span>
-						</li>
-					))}
-				</ul>
-			</div>
-
-		</div>
+		<ul className={styles.skills_list}>
+			{skillsItems.map(item => (
+				<li className={styles.skills_list__item} key={item.id}>
+					<span className={styles.skills_list__item__name}>
+						{item.name}
+					</span>
+					<span className={styles.skills_list__item__rating}>
+						{ratingsAdd(item.rating)}
+					</span>
+				</li>
+			))}
+		</ul>
 
 	)
 }

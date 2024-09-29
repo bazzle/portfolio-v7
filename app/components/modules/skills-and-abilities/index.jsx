@@ -7,18 +7,27 @@ function SkillsAndAbilities(){
 
     return(
         <section className={styles.skills_abilities}>
-			<div className="container pt pb--deep">
-				<SectionHead titleString="Skills and expertise" separator/>
+			<div className="container pt">
 				<div className={styles.inner}>
 					<div className={styles.about_section__inner}>
 						<div className={styles.col_1}>
-							<div className={styles.venn_diagram_container}>
+							<SectionHead titleString="Skills and expertise" separator/>
+						</div>
+						<div className={styles.col_2}>
+							<SkillsList />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="container pb--deep">
+				<div className={styles.inner}>
+					<div className={styles.about_section__inner}>
+						<div className={styles.col_1}>
+							<div className={styles.diagram}>
 								<VennDiagram />
 							</div>
 						</div>
 						<div className={styles.col_2}>
-
-							<SkillsList />
 
 							<div className={styles.body_text}>
 								<p>

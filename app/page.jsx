@@ -13,8 +13,8 @@ function Home(){
 			<Welcome/>
 			<WorkSamples/>
 			<SkillsAndAbilities/>
-			<WorkHistory/>
 			<Themes/>
+			<WorkHistory/>
 		</main>
 	)
 }
