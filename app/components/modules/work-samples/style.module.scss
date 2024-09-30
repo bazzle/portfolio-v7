@@ -2,15 +2,16 @@
 
 .work_samples{
     background-color: $color-bg-alt;
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-	aspect-ratio: 5 / 1;
-	min-height: 200px;
-	position: relative;
 }
 
 .inner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	position: relative;
+}
+
+.strip{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
@@ -20,9 +21,10 @@
 	position: relative;
 	height: 100%;
 	user-select: none;
-	width: 120vw;
+	width: 110vw;
 	overflow: hidden;
-	overflow: hidden;
+	aspect-ratio: 8 / 1;
+	min-height: 160px;
 }
 
 .browser_desktop, .browser_mobile{
@@ -35,7 +37,7 @@
 		width: 100%;
 		height: 100%;
 		background-color: black;
-		opacity: 0.3;
+		opacity: 0.6;
 	}
 	svg{
 		height: 100%;
@@ -48,15 +50,15 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
-	
+	border: 1px solid $color-accent;
+	border-radius: 6px;
+	background-color: black;
 	h2{
 		margin-bottom: 0;
 		@include text-blocky-lower;
 		font-size: $font-size-body-standout;
 		line-height: 1.2;
-		padding: .3em .8em .6em;
-		border-radius: 3px;
-		background-color: black;
+		padding: .9em 1.6em 1.2em;
 		text-align: center;
 		display: inline-block;
 	}
