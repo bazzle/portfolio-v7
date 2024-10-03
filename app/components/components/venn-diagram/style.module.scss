@@ -36,5 +36,8 @@
 		text{
 			@include text-tiny;
 		}
+		circle{
+			fill: none!important;
+		}
 	}
 }

@@ -17,14 +17,18 @@ function VennDiagram() {
                 fill="none"
             >
                 <g clipPath="url(#clip0_0_1)">
-                    <circle cx="186.282" cy="140.384" r="112.718" stroke="#9AF3FF" strokeWidth="2" />
-                    <text fill="#9AF3FF" xmlSpace="preserve">
-                        <tspan x="155.957" y="10.6979">Development</tspan>
-                    </text>
-                    <circle cx="113.718" cy="140.384" r="112.718" stroke="#FFAAAA" strokeWidth="2" />
-                    <text fill="#FFAAAA" xmlSpace="preserve">
-                        <tspan x="86.6426" y="10.6979">Design</tspan>
-                    </text>
+					<g className={styles.svg__dev}>
+						<circle cx="186.282" cy="140.384" r="112.718" className="stroke-accent" strokeWidth="2" />
+						<text className="fill-accent" xmlSpace="preserve">
+							<tspan x="155.957" y="10.6979">Development</tspan>
+						</text>
+					</g>
+					<g className={styles.svg__design}>
+						<circle cx="113.718" cy="140.384" r="112.718" className="stroke-accent-alt" strokeWidth="2" />
+						<text className="fill-accent-alt" xmlSpace="preserve">
+							<tspan x="86.6426" y="10.6979">Design</tspan>
+						</text>
+					</g>
                 </g>
                 <defs>
                     <clipPath id="clip0_0_1">
