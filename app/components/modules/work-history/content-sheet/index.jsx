@@ -2,6 +2,7 @@ import styles from './style.module.scss';
 import PropTypes from 'prop-types';
 
 function ContentSheet({
+		id,
 		name,
 		startDate,
 		endDate,
@@ -11,7 +12,7 @@ function ContentSheet({
 	}) {
 		const duration = endDate ? `${startDate - endDate} years` : 'Ongoing';
 		return (
-			<div className={styles.content_sheet}>
+			<div id={`panel-${id}`} className={styles.content_sheet} role="tabpanel">
 				<div className="inner-2col">
 					<div className={styles.content_sheet__main}>
 						<p className={styles.intro}>

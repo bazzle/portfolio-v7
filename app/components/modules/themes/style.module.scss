@@ -25,29 +25,30 @@
 	display: grid;
 	gap: .5rem;
 	grid-template-rows: auto;
-	grid-template-columns: 1fr;
-	@include break(mobile){
-		grid-template-columns: 1fr 1fr;
-	}
+	grid-template-columns: 1fr 1fr;
 	@include break(desktop){
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 .tile{
-	border: .5px solid $color-accent;
+	// border: .5px solid $color-accent;
+	background-color: $color-bg-alt;
 	border-radius: 6px;
 	&__name{
 		@include text-tiny;
 		text-align: center;
 	}
 	.tile__inner{
+		gap: 0;
+		@include break(mobile){
+			gap: 2rem;
+		}
 		width: 100%;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 2rem;
 		padding: 2rem;
 	}
 }

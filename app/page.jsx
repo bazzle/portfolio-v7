@@ -11,7 +11,6 @@ function Home(){
 		<main>
 			<Hero/>
 			<Welcome/>
-			<WorkSamples/>
 			<SkillsAndAbilities/>
 			<Themes/>
 			<WorkHistory/>

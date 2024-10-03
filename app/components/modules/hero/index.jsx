@@ -6,7 +6,7 @@ import Clients from "../clients";
 
 function Hero(){
     return(
-        <section className={styles.hero}>
+        <div className={styles.hero}>
             <div className={styles.main_section}>
 				<div className="container">
 					<div className={styles.main_section__inner}>
@@ -64,7 +64,7 @@ function Hero(){
 					</div>
 				</div>
 			</div>
-        </section>
+        </div>
     )
 }
 
