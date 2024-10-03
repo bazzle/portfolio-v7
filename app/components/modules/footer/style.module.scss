@@ -2,9 +2,12 @@
 
 .footer{
 	padding: $block-spacing 0;
-	background-image: url(../../../assets/images/texture.jpg);
+	background-image: url(../../../assets/images/texture-light.jpg);
+	@media (prefers-color-scheme: dark) {
+		background-image: url(../../../assets/images/texture-dark.jpg);
+	}
+	background-repeat: repeat;
 	position: relative;
-	background-size: cover;
 	border-top: .5px solid $color-accent;
 	&__line{
 		width: 100%;
@@ -19,7 +22,7 @@
 			@include text-blocky;
 			text-align: center;
 			margin-bottom: 0;
-			color: $color-bg;
+			color: $color-foreground;
 		}
 	}
 }
