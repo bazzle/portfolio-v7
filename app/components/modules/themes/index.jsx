@@ -10,7 +10,7 @@ import IconTag from "./icons/icon-tag.jsx";
 
 function Themes(){
 	return(
-		<div className={styles.themes}>
+		<section className={styles.themes}>
 			
 			<div className="container pb--deep">
 				<div className={styles.inner}>
@@ -35,7 +35,7 @@ function Themes(){
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 

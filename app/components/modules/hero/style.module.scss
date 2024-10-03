@@ -2,6 +2,8 @@
 
 .hero{
 	position: relative;
+	min-height: 100vh;
+	background-color: $color-bg;
 }
 
 .main_section{
@@ -19,7 +21,6 @@
 	}
 }
 .foot_section{
-	background-color: $color-bg;
 	&__inner{
 		padding-top: calc(3rem + 60px);
 		padding-bottom: 3rem;
