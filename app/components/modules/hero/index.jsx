@@ -55,12 +55,8 @@ function Hero(){
 							<p>Hello! I’m a UK based web designer and developer. Open to opportunities</p>
 							<a href="#welcome">Read more about me</a>
 						</div>
-						<div className={styles.contacts}>
-							<Contacts />
-						</div>
-						<div className={styles.clients}>
-							<Clients/>
-						</div>
+						<Contacts />
+						<Clients/>
 					</div>
 				</div>
 			</div>
