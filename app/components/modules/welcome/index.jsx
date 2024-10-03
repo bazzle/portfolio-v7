@@ -4,7 +4,7 @@ import SectionHead from "../../components/section-head";
 function Welcome(){
 	return(
 		<section id="welcome" className={styles.welcome}>
-			<div className="container pt--deep pb--deep">
+			<div className="container">
 				<div className={styles.inner}>
 					<div className={styles.col_1}>
 						<SectionHead titleString="Welcome" separator />

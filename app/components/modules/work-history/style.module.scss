@@ -55,7 +55,7 @@
 			display: block;
 			cursor: default;
 			text-decoration: none;
-			color: white;
+			color: $color-foreground;
 			@include break(desktop-med){
 				flex-grow: 1;
 			}
@@ -75,7 +75,7 @@
 					width: 1px;
 					height: 3rem;
 					display: block;
-					background-color: white;
+					background-color: $color-foreground;
 					position: absolute;
 					left: 50%;
 					bottom: 0;
@@ -87,7 +87,7 @@
 					height: 1px;
 					width: 100vw;
 					background: $color-bg;
-					border-left: 1px solid white;
+					border-left: 1px solid $color-foreground;
 					position: absolute;
 					bottom: 0;
 					transform: translateY(100%);

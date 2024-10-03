@@ -2,14 +2,15 @@
 
 .hero{
 	position: relative;
-	min-height: 100vh;
 	background-color: $color-bg;
+	padding-bottom: 10vw;
 }
 
 .main_section{
 	position: relative;
-	background-image: url(../../../assets/images/texture.jpg);
-	background-size: cover;
+	background-image: url(../../../assets/images/texture-light.jpg);
+	background-size: auto;
+	background-repeat: repeat;
 	z-index: 1;
 	&__inner{
 		position: relative;
@@ -104,7 +105,9 @@
 			top: 0;
 			left: 12px;
 			transform: translateX(-50%);
-			filter: drop-shadow(0 0 3rem rgba($color-accent-alt, .4));
+			path, clipPath, rect{
+				fill: $color-accent;
+			}
 		}
 	}
 	&__profile{
