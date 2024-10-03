@@ -10,7 +10,7 @@ const ongoingYear = (startYear) => {
 }
 
 function WorkHistory(){
-	const sections = [
+	let sections = [
 		{
 			id: 'dxw',
 			title: 'dxw',
@@ -18,6 +18,7 @@ function WorkHistory(){
 				return (
 					<ContentSheet
 						name="dxw"
+						id="dxw"
 						startDate={2021}
 						clients={["British Film Institute", "Ministry of Justice", "National Health Service", "Office for National Statistics", "University Alliance,", "National Audit Office"]}
 						intro="dxw is a digital agency that works with the public and third sectors."
@@ -40,6 +41,7 @@ function WorkHistory(){
 				return (
 					<ContentSheet
 						name="Freelance"
+						id="freelance"
 						startDate={2018}
 						endDate={2020}
 						clients={["Geckoboard", "Lumanity", "Momentum ITSMA", "Recipe London", "93 Digital", "Fat Beehive", "Shelter", "Helpful Digital" ]}
@@ -63,6 +65,7 @@ function WorkHistory(){
 				return (
 					<ContentSheet
 						name="Hamilton Brown"
+						id="hamilton-brown"
 						startDate={2015}
 						endDate={2018}
 						clients={["BDO Store", "Lionpoint"]}
@@ -80,12 +83,13 @@ function WorkHistory(){
 			}
 		},
 		{
-			id: 'Stepladder',
+			id: 'stepladder',
 			title: 'Stepladder',
 			content: () => {
 				return (
 					<ContentSheet
 						name="Stepladder"
+						id="stepladder"
 						startDate={2015}
 						endDate={2018}
 						clients={["Canary Wharf Group"]}
@@ -103,6 +107,7 @@ function WorkHistory(){
 			}
 		}
 	];
+	
 
 	const [activeSection, setActiveSection] = useState(sections[0]);
 
@@ -116,18 +121,19 @@ function WorkHistory(){
 		const isActive = activeSection.id === section.id;
 		const conditionalClass = isActive ? styles.is_active : 'button';
 		return (
-			<button 
+			<button role="tab"
 				onClick={(evt) => handleClick(evt, section)}
 				className={`${styles.nav_item} ${conditionalClass}`}
+				aria-controls={`panel-${section.id}`}
+				aria-selected={isActive ? 'true' : 'false'}
 			>
-					<span className={styles.nav_item__inner}>
-						<span className={styles.nav_item__title}>{section.title}</span>
-						<span className={styles.nav_item__dates}>2021-present</span>
-					</span>
+				<span className={styles.nav_item__inner}>
+					<span className={styles.nav_item__title}>{section.title}</span>
+					<span className={styles.nav_item__dates}>2021-present</span>
+				</span>
 			</button>
 		)
 	}
-
     return (
         <section className={styles.work_history}>
 			<div className="container pb--deep">
@@ -138,7 +144,7 @@ function WorkHistory(){
 						</div>
 					</div>
 					<div className="col-2">
-						<nav className={styles.nav}>
+						<nav role="tablist" className={styles.nav}>
 							{navItem(0)}
 							{navItem(1)}
 							{navItem(2)}
