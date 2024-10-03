@@ -7,7 +7,7 @@ function IconTag(){
 			<circle cx="51.2862" cy="47.3152" r="3.98947" transform="rotate(-14.6595 51.2862 47.3152)" className="stroke-accent" strokeWidth="0.735623"/>
 			<circle cx="51.2862" cy="47.3154" r="2.90015" transform="rotate(-14.6595 51.2862 47.3154)" className="stroke-accent" strokeWidth="0.735623"/>
 			<circle cx="51.2862" cy="47.3154" r="2.90015" transform="rotate(-14.6595 51.2862 47.3154)" className="stroke-accent" strokeWidth="0.735623"/>
-			<path d="M4.7561 27.0676H51.9304L57.9846 33.0226V57.6746L51.9304 63.6296H4.7561V27.0676Z" fill="#202020" className="stroke-accent" strokeWidth="2"/>
+			<path d="M4.7561 27.0676H51.9304L57.9846 33.0226V57.6746L51.9304 63.6296H4.7561V27.0676Z" className="fill-bg-alt stroke-accent" strokeWidth="2"/>
 			<circle cx="51.2503" cy="45.2397" r="3.98947" className="stroke-accent" strokeWidth="0.735623"/>
 			<circle cx="51.2503" cy="45.2397" r="3.98947" className="stroke-accent" strokeWidth="0.735623"/>
 			<circle cx="51.2504" cy="45.2398" r="2.90015" className="stroke-accent" strokeWidth="0.735623"/>

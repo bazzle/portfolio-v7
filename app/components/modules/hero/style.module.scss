@@ -9,6 +9,9 @@
 .main_section{
 	position: relative;
 	background-image: url(../../../assets/images/texture-light.jpg);
+	@media (prefers-color-scheme: dark) {
+		background-image: url(../../../assets/images/texture-dark.jpg);
+	}
 	background-size: auto;
 	background-repeat: repeat;
 	z-index: 1;
