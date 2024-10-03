@@ -41,3 +41,29 @@
 	height: 1px;
 	overflow: hidden;
 }
+
+
+.stroke-accent{
+	stroke: $color-accent;
+}
+.fill-accent{
+	fill: $color-accent;
+}
+.fill-bg{
+	fill: $color-bg;
+}
+.color-accent{
+	color: $color-accent;
+}
+.stroke-accent-alt{
+	stroke: $color-accent-alt;
+}
+.fill-accent-alt{
+	fill: $color-accent-alt;
+}
+.color-accent-alt{
+	color: $color-accent;
+}
+.fill-bg-alt{
+	fill: $color-bg-alt;
+}

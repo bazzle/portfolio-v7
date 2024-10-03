@@ -19,4 +19,6 @@
 		position: relative;
 		top: 5px;
 	}
+	@include svgColor($color-foreground);
+
 }
