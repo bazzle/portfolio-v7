@@ -6,13 +6,15 @@ function Footer(){
 
     return(
         <footer className={styles.footer}>
-            <div className="container">
-                <div className={styles.footer__line}>
-					<p>
-						&copy; Barry Richards –  {currentYear}
-					</p>
+			<div className={styles.footer__inner}>
+				<div className="container">
+					<div className={styles.footer__line}>
+						<p>
+							&copy; Barry Richards –  {currentYear}
+						</p>
+					</div>
 				</div>
-            </div>
+			</div>
         </footer>
     )
 }
