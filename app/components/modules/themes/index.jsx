@@ -12,7 +12,7 @@ function Themes(){
 	return(
 		<section className={styles.themes}>
 			
-			<div className="container pb--deep">
+			<div className="container">
 				<div className={styles.inner}>
 					<div className={styles.col_1}>
 						<SectionHead titleString="Things I think about" separator />

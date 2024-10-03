@@ -7,7 +7,7 @@ function SkillsAndAbilities(){
 
     return(
         <section className={styles.skills_abilities}>
-			<div className="container pt">
+			<div className="container">
 				<div className={styles.inner}>
 					<div className={styles.about_section__inner}>
 						<div className={styles.col_1}>
@@ -19,7 +19,7 @@ function SkillsAndAbilities(){
 					</div>
 				</div>
 			</div>
-			<div className="container pb--deep">
+			<div className="container">
 				<div className={styles.inner}>
 					<div className={styles.about_section__inner}>
 						<div className={styles.col_1}>

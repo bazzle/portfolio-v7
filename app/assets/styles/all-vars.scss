@@ -1,12 +1,35 @@
 /* Colours ------------------------------------------------- */
 
-$color-foreground: #ffffff;
-$color-accent: #9AF3FF;
-$color-accent-dark: #14AABF;
-$color-accent-alt: #FFAAAA;
-$color-bg: #202020;
-$color-bg-alt: #161616;
-$color-feint-line: rgb(255, 255, 255, 0.2);
+$color-foreground-light: #000000;
+$color-accent-light: #386a71;
+$color-accent-alt-light: #af4a4a;
+$color-bg-light: #f2f2f2;
+$color-bg-alt-light: #dadada;
+$color-feint-line-light: rgb(255, 255, 255, 0.2);
+
+$color-foreground-dark: #ffffff;
+$color-accent-dark: #9AF3FF;
+$color-accent-alt-dark: #FFAAAA;
+$color-bg-dark: #202020;
+$color-bg-alt-dark: #161616;
+$color-feint-line-dark: rgba(0, 0, 0, 0.2);
+
+$color-foreground: light-dark($color-foreground-light, $color-foreground-dark);
+$color-accent: light-dark($color-accent-light, $color-accent-dark);
+$color-accent-alt: light-dark($color-accent-alt-light, $color-accent-alt-dark);
+$color-bg: light-dark($color-bg-light, $color-bg-dark);
+$color-bg-alt: light-dark($color-bg-alt-light, $color-bg-alt-dark);
+$color-feint-line: light-dark($color-feint-line-light, $color-feint-line-dark);
+
+@mixin svgColor($color: $color-foreground){
+	path, clipPath, rect, circle{
+		fill: $color;
+		color: $color;
+	}
+	text{
+		color: $color;
+	}
+}
 
 
 
@@ -78,7 +101,7 @@ $font-size-miniscule: 1.2rem;
 	text-underline-offset: .2em;
 	&:hover{
 		text-decoration: none;
-		color: white
+		color: $color-foreground;
 	}
 }
 

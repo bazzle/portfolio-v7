@@ -136,7 +136,7 @@ function WorkHistory(){
 	}
     return (
         <section className={styles.work_history}>
-			<div className="container pb--deep">
+			<div className="container">
 				<div className="inner-2col">
 					<div className="col-1">
 						<div className={styles.work_history__sectionHead}>
