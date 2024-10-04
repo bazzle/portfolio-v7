@@ -5,11 +5,11 @@ function Welcome(){
 	return(
 		<section id="welcome" className={styles.welcome}>
 			<div className="container">
-				<div className={styles.inner}>
-					<div className={styles.col_1}>
+				<div className="inner-2col">
+					<div className="col-1">
 						<SectionHead titleString="Welcome" separator />
 					</div>
-					<div className={styles.col_2}>
+					<div className="col-2">
 						<div className={styles.body_text}>
 							<p>
 								From the baseline of accessibility I seek to bring understated creative flair, using typography, hierarchy, animation and colour. I’m experienced at working with clients to help unlock that missing piece, that elusive “pop” that their website needs.
