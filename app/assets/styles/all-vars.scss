@@ -4,7 +4,7 @@ $color-foreground-light: #000000;
 $color-accent-light: #386a71;
 $color-accent-alt-light: #af4a4a;
 $color-bg-light: #f2f2f2;
-$color-bg-alt-light: #dadada;
+$color-bg-alt-light: #e3e3e3;
 $color-feint-line-light: rgb(255, 255, 255, 0.2);
 
 $color-foreground-dark: #ffffff;
@@ -65,17 +65,19 @@ $font-size-heading: responsiveSize(2.8, 20, 2.8);
 // For general use
 $font-size-medium: responsiveSize(3.2, 30, 3.2);
 // Default font size
-$font-size-std: responsiveSize(1.8, 8, 1.8);
+$font-size-std: responsiveSize(2, 10, 2);
 // For body only
-$font-size-body: responsiveSize(1.8, 8, 1.8);
+$font-size-body: responsiveSize(2, 10, 2);
 // For body standaouts
-$font-size-body-standout: responsiveSize(2.4, 5, 2.4);
+$font-size-body-intro: responsiveSize(2.4, 5, 2.4);
 // For blocky text, taglines and other reasons
+$font-size-blocky: responsiveSize(1.6, 8, 1.6);
+// For tiny text
 $font-size-tiny: 1.4rem;
 // For exceptional reasons
-$font-size-miniscule: 1.2rem;
+$font-size-miniscule: 1.25rem;
 
-$font-body: "dm-sans", sans-serif;
+$font-body: "degular-variable", sans-serif;
 $font-std: "degular-variable", sans-serif;
 $font-display: "degular-variable", sans-serif;
 $font-text: "degular-variable", sans-serif;
@@ -102,7 +104,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-body;
 	font-style: normal;
 	line-height: 1.6;
-	font-weight: 300;
+	letter-spacing: -.015em;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
+
 }
 
 @mixin text-link{
@@ -126,8 +130,14 @@ $font-blocky: "degular-variable", sans-serif;
 }
 
 @mixin text-intro{
-	font-size: $font-size-body-standout;
+	font-size: $font-size-body-intro;
 	font-variation-settings: "ital" 0, "opsz" 14, "wght" 700;
+}
+
+@mixin text-body-bold{
+	font-size: $font-size-body;
+	line-height: 1.4;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
 }
 
 @mixin text-medium{
@@ -142,7 +152,7 @@ $font-blocky: "degular-variable", sans-serif;
 	font-family: $font-blocky;
 	font-style: normal;
 	text-transform: uppercase;
-	font-size: $font-size-tiny;
+	font-size: $font-size-blocky;
 	letter-spacing: .03em;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 }
@@ -150,7 +160,7 @@ $font-blocky: "degular-variable", sans-serif;
 @mixin text-blocky-lower{
 	font-family: $font-blocky;
 	font-style: normal;
-	font-size: $font-size-tiny;
+	font-size: $font-size-blocky;
 	letter-spacing: .03em;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 }
@@ -159,13 +169,13 @@ $font-blocky: "degular-variable", sans-serif;
 	font-family: $font-blocky;
 	font-style: normal;
 	text-transform: uppercase;
-	font-size: $font-size-tiny;
+	font-size: $font-size-blocky;
 	letter-spacing: .03em;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
 }
 
 @mixin text-tiny{
-	font-size: $font-size-tiny;
+	font-size: $font-size-blocky;
 	font-family: $font-text;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 }
