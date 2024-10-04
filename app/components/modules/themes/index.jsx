@@ -13,11 +13,11 @@ function Themes(){
 		<section className={styles.themes}>
 			
 			<div className="container">
-				<div className={styles.inner}>
-					<div className={styles.col_1}>
+				<div className="inner-2col">
+					<div className="col-1">
 						<SectionHead titleString="Things I think about" separator />
 					</div>
-					<div className={styles.col_2}>
+					<div className="col-2">
 						<div className={styles.tile_grid}>
 							<Tile component={<IconGlass/>} name="Responsive web" />
 							<Tile component={<IconDoor/>} name="Accessibility" />
@@ -35,6 +35,7 @@ function Themes(){
 					</div>
 				</div>
 			</div>
+			
 		</section>
 	)
 }

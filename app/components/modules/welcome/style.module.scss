@@ -3,20 +3,6 @@
 .welcome{
 	background-color: $color-bg;
 }
-.inner{
-	display: flex;
-	flex-direction: column;
-	@include break(tablet){
-		gap: $column-gap;
-		flex-direction: row;
-	}
-	.col_1{
-		flex: 1;
-	}
-	.col_2{
-		flex: 2;
-	}
-}
 .body_text{
 	@include body-formatting;
 }
