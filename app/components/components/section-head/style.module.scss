@@ -26,6 +26,7 @@
 	padding-left: calc(2vw + 1.1em);
 	padding-top: 1.5rem;
 	@include text-heading;
+	color: $color-accent;
 }
 .title__no_separator{
 	margin: 0;
