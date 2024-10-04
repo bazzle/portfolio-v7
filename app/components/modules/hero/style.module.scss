@@ -35,7 +35,6 @@
 		align-items: flex-start;
 		@include break(mobile){
 			padding-top: 0;
-			padding-right: calc(120px + 2rem);
 			padding-top: 2rem;
 		}
 		p{
@@ -46,6 +45,9 @@
 			flex-direction: row;
 			column-gap: .5em;
 			flex-wrap: wrap;
+			@include break(mobile){
+				padding-right: calc(120px + 2rem);
+			}
 		}
 		.clients{
 			margin-top: 2rem;
