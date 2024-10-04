@@ -5,6 +5,7 @@ import WorkHistory from "./components/modules/work-history";
 import Welcome from "./components/modules/welcome";
 import WorkSamples from "./components/modules/work-samples";
 import Themes from "./components/modules/themes";
+import Typesheet from "./components/modules/type-sheet/type-sheet";
 
 function Home(){
 	return(

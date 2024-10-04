@@ -10,10 +10,6 @@
 		&__item{
 			margin-bottom: 2rem;
 		}
-		&__heading{
-			@include text-blocky-bold;
-			color: $color-accent-alt;
-		}
 		&__duration{
 			@include text-blocky;
 		}

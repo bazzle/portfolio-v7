@@ -29,7 +29,10 @@ function Typesheet(){
 					This is text-blocky. For footnotes and that kinda stuff.
 				</div>
 				<div className="text-tiny mb">
-					Text tiny, only to be used in exceptional circumstances.
+					Tiny text, for small text, obviously.
+				</div>
+				<div className="text-miniscule mb">
+					Miniscule text, only to be used in exceptional circumstances.
 				</div>
 			</div>
 		</div>
