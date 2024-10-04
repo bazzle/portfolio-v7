@@ -44,7 +44,7 @@
 		.intro{
 			display: flex;
 			flex-direction: row;
-			gap: 1em;
+			column-gap: .5em;
 			flex-wrap: wrap;
 		}
 		.clients{
