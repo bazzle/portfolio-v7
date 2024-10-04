@@ -2,9 +2,9 @@
 
 .footer{
 	padding: $block-spacing 0;
-	background-image: url(../../../assets/images/texture-light.jpg);
+	background-image: url("/assets/images/texture-light.jpg");
 	@media (prefers-color-scheme: dark) {
-		background-image: url(../../../assets/images/texture-dark.jpg);
+		background-image: url("/assets/images/texture-dark.jpg");
 	}
 	background-repeat: repeat;
 	position: relative;
