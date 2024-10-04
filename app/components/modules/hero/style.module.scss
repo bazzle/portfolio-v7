@@ -66,9 +66,14 @@
 .message__main{
 	@include text-display;
 	display: block;
-	line-height: 1;
-	position: relative;
-	top: -.1em;
+	@media (prefers-color-scheme: light){
+		color: $color-foreground-light;
+	}
+	span{
+		text-decoration: underline;
+		color: $color-accent-alt;
+	}
+
 }
 .message__sub{
 	display: block;

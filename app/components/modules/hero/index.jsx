@@ -15,7 +15,7 @@ function Hero(){
 								My philosophy is
 							</span>
 							<span className={styles.message__main}>
-								Web for <span className="highlight_alt">everyone</span>
+								Web for <span>everyone</span>
 							</span>
 							<span className={styles.message__sub}>
 								... But still <span className="highlight">look cool</span>.
