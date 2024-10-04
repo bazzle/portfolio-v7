@@ -14,6 +14,7 @@ function Home(){
 			<Welcome/>
 			<SkillsAndAbilities/>
 			<Themes/>
+			<WorkSamples/>
 			<WorkHistory/>
 		</main>
 	)

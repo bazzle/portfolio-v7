@@ -1,23 +1,22 @@
 @use "../../../assets/styles/all-vars" as *;
 
-.work_samples{
-    background-color: $color-bg-alt;
-}
-
 .inner{
 	width: 100%;
 	position: relative;
 	overflow: hidden;
 	position: relative;
+	background: $color-bg-alt;
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 .strip{
-	padding-top: 10px;
-	padding-bottom: 10px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 10px;
+	gap: 1rem;
 	position: relative;
 	height: 100%;
 	user-select: none;
@@ -36,12 +35,12 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: black;
-		opacity: 0.6;
+		opacity: 0.4;
+		background-color: $color-bg;
 	}
 	svg{
 		height: 100%;
-	}	
+	}
 }
 
 .title_overlay{
@@ -50,14 +49,14 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
-	border: 1px solid $color-accent;
 	border-radius: 6px;
-	background-color: black;
+	background-color: $color-bg-alt;
+	padding: .6em 1em;
+	border-radius: 6px;
 	h2{
 		margin-bottom: 0;
-		line-height: 1.2;
-		padding: .9em 1.6em 1.2em;
 		text-align: center;
 		display: inline-block;
+		@include text-tiny;
 	}
 }
