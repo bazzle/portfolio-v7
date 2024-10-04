@@ -10,14 +10,12 @@
 		&__item{
 			margin-bottom: 2rem;
 		}
+		&__heading{
+			@include text-heading;
+		}
 		&__duration{
 			@include text-blocky;
 		}
-	}
-	.title{
-		@include text-heading;
-		color: $color-accent;
-		display: none;
 	}
 	.duration{
 		@include text-blocky;
@@ -26,23 +24,23 @@
 		padding-left: 0;
 		column-count: 2;
 		gap: 6rem;
-		max-width: 60rem;
 		li{
 			list-style-type: none;
 			@include text-blocky;
 			gap: .7em;
-			align-items: center;
+			align-items:baseline;
 			display: flex;
 			padding-bottom: .3em;
 			&::before{
 				position: relative;
-				top: .1em;
+				top: -.1em;
 				content: '';
 				width: 6px;
 				height: 6px;
 				background-color: $color-accent-alt;
 				display: block;
 				transform: rotate(45deg);
+				flex-shrink: 0;
 			}
 		}
 	}

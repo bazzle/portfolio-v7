@@ -27,6 +27,9 @@
 	padding-top: 1.5rem;
 	@include text-heading;
 	color: $color-accent;
+	@media (prefers-color-scheme: dark){
+		color: $color-foreground;
+	}
 }
 .title__no_separator{
 	margin: 0;
