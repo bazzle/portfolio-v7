@@ -27,6 +27,9 @@
 .text-blocky{
 	@include text-blocky;
 }
+.text-miniscule{
+	@include text-miniscule;
+}
 
 p.inset-text{
 	@include text-body;
@@ -34,5 +37,4 @@ p.inset-text{
 	line-height: 1.6;
 	border-left: 3px solid $color-accent;
 	padding-left: 2rem;
-	font-weight: 700;
 }

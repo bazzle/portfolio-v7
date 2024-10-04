@@ -56,12 +56,6 @@ $site-width-margins: calc(($site-width + $gutter-padding) + $gutter-padding);
 	@return clamp(#{$reduction}rem, #{$vw}vw, #{$initial}rem);
 }
 
-$font-body: "dm-sans", sans-serif;
-$font-std: "degular", sans-serif;
-$font-display: "degular-display", sans-serif;
-$font-text: "degular-text", sans-serif;
-$font-blocky: "degular-text", sans-serif;
-
 // For display only
 $font-size-display: responsiveSize(9, 40, 9);
 // For display only
@@ -73,7 +67,7 @@ $font-size-medium: responsiveSize(3.2, 30, 3.2);
 // Default font size
 $font-size-std: responsiveSize(1.8, 8, 1.8);
 // For body only
-$font-size-body: responsiveSize(1.6, 5, 1.6);
+$font-size-body: responsiveSize(1.8, 8, 1.8);
 // For body standaouts
 $font-size-body-standout: responsiveSize(2.4, 5, 2.4);
 // For blocky text, taglines and other reasons
@@ -81,31 +75,28 @@ $font-size-tiny: 1.4rem;
 // For exceptional reasons
 $font-size-miniscule: 1.2rem;
 
+$font-body: "dm-sans", sans-serif;
+$font-std: "degular-variable", sans-serif;
+$font-display: "degular-variable", sans-serif;
+$font-text: "degular-variable", sans-serif;
+$font-blocky: "degular-variable", sans-serif;
 
-@mixin text-tiny{
-	font-size: $font-size-tiny;
-	font-family: $font-text;
+
+@mixin text-display{
+	font-family: $font-display;
+	font-size: $font-size-display;
+	font-style: normal;
+	line-height: 1;
+	font-variation-settings: "ital" 0, "opsz" 72, "wght" 800;
 }
 
 @mixin text-std{
 	font-family: $font-text;
 	font-size: $font-size-std;
 	font-style: normal;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
 }
 
-@mixin text-link{
-	font-family: $font-text;
-	font-size: $font-size-std;
-	color: $color-accent;
-	text-decoration: underline;
-	text-underline-offset: .2em;
-	&:hover{
-		text-decoration: none;
-		color: $color-foreground;
-	}
-}
-
-// 300, 400, 700
 @mixin text-body{
 	font-family: $font-body;
 	font-size: $font-size-body;
@@ -114,8 +105,29 @@ $font-size-miniscule: 1.2rem;
 	font-weight: 300;
 }
 
+@mixin text-link{
+	font-size: $font-size-std;
+	font-family: $font-text;
+	color: $color-accent;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
+	text-decoration: underline;
+	text-underline-offset: .2em;
+	&:hover{
+		text-decoration: none;
+		color: $color-foreground;
+	}
+}
+
+@mixin text-heading{
+	font-family: $font-std;
+	font-size: $font-size-heading;
+	line-height:1;
+	font-variation-settings: "ital" 0, "opsz" 14, "wght" 400;
+}
+
 @mixin text-intro{
 	font-size: $font-size-body-standout;
+	font-variation-settings: "ital" 0, "opsz" 14, "wght" 700;
 }
 
 @mixin text-medium{
@@ -123,28 +135,7 @@ $font-size-miniscule: 1.2rem;
 	font-size: $font-size-medium;
 	font-style: normal;
 	line-height: 1.6;
-}
-
-@mixin text-heading{
-	font-family: $font-std;
-	font-size: $font-size-heading;
-	font-style: normal;
-	font-weight: 400;
-	line-height:1;
-}
-
-@mixin text-display{
-	font-family: $font-display;
-	font-size: $font-size-display;
-	font-style: normal;
-	line-height: 1;
-}
-
-@mixin text-display-small{
-	font-family: $font-display;
-	font-size: $font-size-display-small;
-	font-style: normal;
-	line-height: 1;
+	font-variation-settings: "ital" 0, "opsz" 14, "wght" 500;
 }
 
 @mixin text-blocky{
@@ -152,22 +143,39 @@ $font-size-miniscule: 1.2rem;
 	font-style: normal;
 	text-transform: uppercase;
 	font-size: $font-size-tiny;
-	font-weight: 400;
 	letter-spacing: .03em;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 }
+
+@mixin text-blocky-lower{
+	font-family: $font-blocky;
+	font-style: normal;
+	font-size: $font-size-tiny;
+	letter-spacing: .03em;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
+}
+
 @mixin text-blocky-bold{
 	font-family: $font-blocky;
 	font-style: normal;
 	text-transform: uppercase;
 	font-size: $font-size-tiny;
-	font-weight: 500;
-}
-@mixin text-blocky-lower{
-	font-family: $font-blocky;
-	font-style: normal;
-	font-size: $font-size-tiny;
-	font-weight: 400;
 	letter-spacing: .03em;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
+}
+
+@mixin text-tiny{
+	font-size: $font-size-tiny;
+	font-family: $font-text;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
+}
+
+@mixin text-miniscule{
+	font-family: $font-body;
+	font-size: $font-size-miniscule;
+	font-style: normal;
+	line-height: 1.6;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 }
 
 @mixin body-formatting{

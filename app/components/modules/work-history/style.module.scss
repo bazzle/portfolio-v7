@@ -46,7 +46,7 @@
 		}
 		&__dates{
 			display: none;
-			@include text-blocky-bold;
+			@include text-blocky;
 			text-align: center;
 		}
 		&.is_active{
