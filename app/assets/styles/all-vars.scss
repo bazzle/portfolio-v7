@@ -8,6 +8,7 @@ $color-accent-light: #386a71;
 $color-accent-alt-light: #af4a4a;
 $color-bg-light: #f2f2f2;
 $color-bg-alt-light: #e3e3e3;
+$color-bg-solid-light: #ffffff;
 $color-feint-line-light: rgb(255, 255, 255, 0.2);
 $color-focus-light: #386a71;
 
@@ -16,6 +17,7 @@ $color-accent-dark: #9AF3FF;
 $color-accent-alt-dark: #FFAAAA;
 $color-bg-dark: #202020;
 $color-bg-alt-dark: #161616;
+$color-bg-solid-dark: #000000;
 $color-feint-line-dark: rgba(0, 0, 0, 0.2);
 $color-focus-dark: #9AF3FF;
 
@@ -24,6 +26,7 @@ $color-accent: light-dark($color-accent-light, $color-accent-dark);
 $color-accent-alt: light-dark($color-accent-alt-light, $color-accent-alt-dark);
 $color-bg: light-dark($color-bg-light, $color-bg-dark);
 $color-bg-alt: light-dark($color-bg-alt-light, $color-bg-alt-dark);
+$color-bg-solid: light-dark($color-bg-solid-light, $color-bg-solid-dark);
 $color-feint-line: light-dark($color-feint-line-light, $color-feint-line-dark);
 $color-focus: light-dark($color-focus-light, $color-focus-dark);
 
