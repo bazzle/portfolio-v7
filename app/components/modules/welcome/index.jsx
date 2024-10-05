@@ -12,16 +12,13 @@ function Welcome(){
 					<div className="col-2">
 						<div className={styles.body_text}>
 							<p>
-								From the baseline of accessibility I seek to bring understated creative flair, using typography, hierarchy, animation and colour. I’m experienced at working with clients to help unlock that missing piece, that elusive “pop” that their website needs.
+								Throughout my career of over a decade of delivering web projects – working with some great people, keeping an open mind and constantly learning and iterating – I believe I have forged an optimal approach to deliver fantastic web projects and a set of principles that I stand by as much as I can.
 							</p>
 							<p>
-								I’m a design minimalist, I believe small changes make big differences. I take a pragmatic approach and I’m sympathetic to client and user needs. 
+								My work within the public sector for Helpful Digital and dxw has instilled in me strong appreciation for accessibility. One thing I’ve carried with me is the notion that accessibility standards aren’t exclusively for disabled people. In catering to disabilites we’re making the web better for everyone.
 							</p>
 							<p>
-								I call myself a design engineer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally captivating.
-							</p>
-							<p>
-								I have experience in many phases of development. Initial prototyping, user testing, design and build of the component library, scoping sessions with the team and ongoing iteration and maintenance.
+								When I design a website, I think of accessibility as a baseline. From there, I seek to bring understated creative flair, using typography, hierarchy, animation and colour. I’m experienced at working with clients to help unlock that missing piece, that elusive “pop” that their website needs. I’m a design minimalist, I believe small changes make big differences. I take a pragmatic approach and I’m sympathetic to client and user needs.
 							</p>
 						</div>
 					</div>

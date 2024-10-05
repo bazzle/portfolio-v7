@@ -25,12 +25,15 @@ function Themes(){
 							<Tile component={<IconPieces/>} name="Typography" />
 							<Tile component={<IconMagGlass/>} name="User centred design" />
 							<Tile component={<IconShapes/>} name="Brand integration" />
-							<Tile name="Integrating AI in my workflow" />
-							<Tile name="Search Engine Optimisation" />
+							<Tile name="Content design" />
+							<Tile name="Code maintainability" />
+							<Tile name="Editor experience" />
+							<Tile name="Modularity" />
 							<Tile name="Hierarchy, balance, white-space" />
-							<Tile name="Content management" />
 							<Tile name="Layout/Grid" />
 							<Tile name="Web conventions" />
+							<Tile name="Integrating AI in my workflow" />
+							<Tile name="Search Engine Optimisation" />
 						</div>
 					</div>
 				</div>
