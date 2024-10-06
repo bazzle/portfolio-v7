@@ -3,9 +3,6 @@
 .footer{
 	padding: $block-spacing 0;
 	background-image: url("/assets/images/texture-light.jpg");
-	:global(body.dark-mode) .main_section{
-		background-image: url("/assets/images/texture-dark.jpg");
-	}
 	background-repeat: repeat;
 	position: relative;
 	border-top: .5px solid var(--color-accent);
@@ -25,4 +22,7 @@
 			color: var(--color-foreground);
 		}
 	}
+}
+:global(body.dark-mode) .footer{
+	background-image: url("/assets/images/texture-dark.jpg");
 }
