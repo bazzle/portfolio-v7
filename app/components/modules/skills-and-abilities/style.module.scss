@@ -1,7 +1,7 @@
 @use "../../../assets/styles/all-vars" as *;
 
 .skills_abilities{
-	background-color: $color-bg;
+	background-color: var(--color-bg);
 }
 .inner{
 	padding-top: $block-spacing--shallow;
@@ -35,7 +35,7 @@
 			max-width: 12ch;
 		}
 		&__rating{
-			color: $color-accent;
+			color: var(--color-accent);
 			width: 5ch;
 			text-align: left;
 			flex-shrink: 0;

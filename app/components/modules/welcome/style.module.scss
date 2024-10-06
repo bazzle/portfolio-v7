@@ -1,7 +1,7 @@
 @use "../../../assets/styles/all-vars" as *;
 
 .welcome{
-	background-color: $color-bg;
+	background-color: var(--color-bg);
 }
 .body_text{
 	@include body-formatting;

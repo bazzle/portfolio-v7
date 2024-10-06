@@ -5,7 +5,7 @@
 	position: relative;
 	overflow: hidden;
 	position: relative;
-	background: $color-bg-alt;
+	background: var(--color-bg-alt);
 	padding: 1rem 0;
 	display: flex;
 	flex-direction: column;
@@ -36,7 +36,7 @@
 		width: 100%;
 		height: 100%;
 		opacity: 0.4;
-		background-color: $color-bg;
+		background-color: var(--color-bg);
 	}
 	svg{
 		height: 100%;
@@ -50,7 +50,7 @@
 	transform: translate(-50%, -50%);
 	z-index: 2;
 	border-radius: 6px;
-	background-color: $color-bg-alt;
+	background-color: var(--color-bg-alt);
 	padding: .6em 1em;
 	border-radius: 6px;
 	h2{

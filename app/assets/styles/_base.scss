@@ -1,9 +1,5 @@
 @use "./all-vars.scss" as *;
 
-:root {
-	color-scheme: light dark;
-}
-
 html{
 	font-size: 10px;
 }
@@ -12,8 +8,8 @@ body{
 	position: relative;
 	padding: 0;
 	margin: 0;
-	background-color: $color-bg;
-	color: $color-foreground;
+	background-color: var(--color-bg);
+	color: var(--color-foreground);
 	@include text-std;
 	overflow-y: auto;
 }
@@ -47,7 +43,7 @@ a:not(:has(> *)){
 
 a, button, input, textarea, select{
 	&:focus-visible{
-		outline: 2px solid $color-focus;
+		outline: 2px solid var(--color-focus);
 		outline-offset: .3em;
 	}
 }

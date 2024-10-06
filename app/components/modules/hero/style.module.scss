@@ -2,16 +2,13 @@
 
 .hero{
 	position: relative;
-	background-color: $color-bg;
+	background-color: var(--color-bg);
 	padding-bottom: 10vw;
 }
 
 .main_section{
 	position: relative;
 	background-image: url("/assets/images/texture-light.jpg");
-	@media (prefers-color-scheme: dark) {
-		background-image: url("/assets/images/texture-dark.jpg");
-	}
 	background-size: auto;
 	background-repeat: repeat;
 	z-index: 1;
@@ -23,6 +20,9 @@
 			align-items: center;
 		}
 	}
+}
+:global(body.dark-mode) .main_section{
+	background-image: url("/assets/images/texture-dark.jpg");
 }
 .foot_section{
 	&__inner{
@@ -51,7 +51,7 @@
 		}
 		.clients{
 			margin-top: 2rem;
-			border-top: 1px solid $color-feint-line;
+			border-top: 1px solid var(--color-feint-line);
 			padding-top: 2rem;
 		}
 	}
@@ -69,11 +69,11 @@
 	@include text-display;
 	display: block;
 	@media (prefers-color-scheme: light){
-		color: $color-foreground-light;
+		color: var(--color-foreground)-light;
 	}
 	span{
 		text-decoration: underline;
-		color: $color-accent-alt;
+		color: var(--color-accent-alt);
 	}
 
 }
@@ -116,7 +116,7 @@
 			left: 12px;
 			transform: translateX(-50%);
 			path, clipPath, rect{
-				fill: $color-accent-alt;
+				fill: var(--color-accent-alt);
 			}
 		}
 	}
@@ -136,7 +136,7 @@
 		svg{
 			width: 12rem;
 			height: 12rem;
-			fill: $color-accent;
+			fill: var(--color-accent);
 			@include break(tablet){
 				width: 16rem;
 				height: 16rem;

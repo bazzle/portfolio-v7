@@ -33,7 +33,7 @@
 
 p.inset-text{
 	@include text-body-bold;
-	color: $color-accent;
-	border-left: 3px solid $color-accent;
+	color: var(--color-accent);
+	border-left: 3px solid var(--color-accent);
 	padding-left: 2rem;
 }
