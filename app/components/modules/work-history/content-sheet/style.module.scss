@@ -37,7 +37,7 @@
 				content: '';
 				width: 6px;
 				height: 6px;
-				background-color: $color-accent-alt;
+				background-color: var(--color-accent-alt);
 				display: block;
 				transform: rotate(45deg);
 				flex-shrink: 0;
@@ -46,7 +46,7 @@
 	}
 	.intro{
 		@include text-intro;
-		color: $color-accent-alt;
+		color: var(--color-accent-alt);
 	}
 	.body_text{
 		@include body-formatting;

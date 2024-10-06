@@ -1,11 +1,11 @@
 @use "./all-vars.scss" as *;
 
 .highlight{
-	color: $color-accent;
+	color: var(--color-accent);
 }
 
 .highlight_alt{
-	color: $color-accent-alt;
+	color: var(--color-accent-alt);
 }
 
 .p-relative{
@@ -44,29 +44,29 @@
 
 
 .stroke-accent{
-	stroke: $color-accent;
+	stroke: var(--color-accent);
 }
 .fill-accent{
-	fill: $color-accent;
+	fill: var(--color-accent);
 }
 .fill-foreground{
-	fill: $color-foreground;
+	fill: var(--color-foreground);
 }
 .fill-bg{
-	fill: $color-bg;
+	fill: var(--color-bg);
 }
 .color-accent{
-	color: $color-accent;
+	color: var(--color-accent);
 }
 .stroke-accent-alt{
-	stroke: $color-accent-alt;
+	stroke: var(--color-accent-alt);
 }
 .fill-accent-alt{
-	fill: $color-accent-alt;
+	fill: var(--color-accent-alt);
 }
 .color-accent-alt{
-	color: $color-accent;
+	color: var(--color-accent);
 }
 .fill-bg-alt{
-	fill: $color-bg-alt;
+	fill: var(--color-bg-alt);
 }

@@ -3,12 +3,12 @@
 .footer{
 	padding: $block-spacing 0;
 	background-image: url("/assets/images/texture-light.jpg");
-	@media (prefers-color-scheme: dark) {
+	:global(body.dark-mode) .main_section{
 		background-image: url("/assets/images/texture-dark.jpg");
 	}
 	background-repeat: repeat;
 	position: relative;
-	border-top: .5px solid $color-accent;
+	border-top: .5px solid var(--color-accent);
 	&__line{
 		width: 100%;
 		display: flex;
@@ -22,7 +22,7 @@
 			@include text-blocky;
 			text-align: center;
 			margin-bottom: 0;
-			color: $color-foreground;
+			color: var(--color-foreground);
 		}
 	}
 }

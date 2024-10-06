@@ -1,7 +1,7 @@
 @use "../../../assets/styles/all-vars" as *;
 
 .themes{
-	background-color: $color-bg;
+	background-color: var(--color-bg);
 	padding-top: $block-spacing--shallow;
 }
 
@@ -15,8 +15,8 @@
 	}
 }
 .tile{
-	// border: .5px solid $color-accent;
-	background-color: $color-bg-alt;
+	// border: .5px solid var(--color-accent);
+	background-color: var(--color-bg-alt);
 	border-radius: 6px;
 	&__name{
 		@include text-tiny;

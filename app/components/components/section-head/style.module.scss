@@ -6,7 +6,7 @@
 	padding-bottom: $block-spacing--shallow;
 }
 .separator{
-	border-top: 1px solid $color-accent;
+	border-top: 1px solid var(--color-accent);
 	width: 100%;
 	position: relative;
 	svg{
@@ -16,7 +16,7 @@
 		height: 25px;
 		left: 2vw;
 		top: 0;
-		fill: $color-accent;
+		fill: var(--color-accent);
 		position: absolute;
 		transform: translate(0, -50%);
 	}
@@ -26,11 +26,12 @@
 	padding-left: calc(2vw + 1.1em);
 	padding-top: 1.5rem;
 	@include text-heading;
-	color: $color-accent;
-	@media (prefers-color-scheme: dark){
-		color: $color-foreground;
-	}
+	color: var(--color-accent);
 }
+:global(body.dark-mode) .title {
+	color: var(--color-foreground);
+}
+
 .title__no_separator{
 	margin: 0;
 	@include text-heading;

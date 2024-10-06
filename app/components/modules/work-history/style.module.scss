@@ -1,7 +1,7 @@
 @use "../../../assets/styles/all-vars" as *;
 
 .work_history{
-	background-color: $color-bg;
+	background-color: var(--color-bg);
 	&__sectionHead{
 		margin-top: 10.2rem;
 	}
@@ -12,7 +12,7 @@
 		gap: 1rem;
 		flex-wrap: wrap;
 		@include break(tablet){
-			border-bottom: 1px solid $color-foreground;
+			border-bottom: 1px solid var(--color-foreground);
 			justify-content: space-between;
 			flex-direction: row-reverse;
 			height: 10.2rem;
@@ -50,12 +50,12 @@
 			text-align: center;
 		}
 		&.is_active{
-			color: $color-accent;
+			color: var(--color-accent);
 			position: relative;
 			display: block;
 			cursor: default;
 			text-decoration: none;
-			color: $color-foreground;
+			color: var(--color-foreground);
 			@include break(desktop-med){
 				flex-grow: 1;
 			}
@@ -75,7 +75,7 @@
 					width: 1px;
 					height: 3rem;
 					display: block;
-					background-color: $color-foreground;
+					background-color: var(--color-foreground);
 					position: absolute;
 					left: 50%;
 					bottom: 0;
@@ -86,8 +86,8 @@
 					content: '';
 					height: 1px;
 					width: 100vw;
-					background: $color-bg;
-					border-left: 1px solid $color-foreground;
+					background: var(--color-bg);
+					border-left: 1px solid var(--color-foreground);
 					position: absolute;
 					bottom: 0;
 					transform: translateY(100%);

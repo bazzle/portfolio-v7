@@ -19,6 +19,6 @@
 		position: relative;
 		top: 5px;
 	}
-	@include svgColor($color-foreground);
+	@include svgColor(var(--color-foreground));
 
 }

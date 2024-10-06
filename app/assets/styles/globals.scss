@@ -1,5 +1,29 @@
 @import url("https://use.typekit.net/sqv3apk.css");
 
+:root{
+	--color-foreground: #2c2c2c;
+	--color-foreground-alt: #4b4b4b;
+	--color-accent: #386a71;
+	--color-accent-alt: #af4a4a;
+	--color-bg: #f2f2f2;
+	--color-bg-alt: #e3e3e3;
+	--color-bg-solid: #ffffff;
+	--color-feint-line: rgb(255, 255, 255, 0.2);
+	--color-focus: #386a71;
+}
+
+body.dark-mode{
+	--color-foreground: #ffffff;
+	--color-accent: #9AF3FF;
+	--color-accent-alt: #FFAAAA;
+	--color-bg: #202020;
+	--color-bg-alt: #161616;
+	--color-bg-solid: #000000;
+	--color-feint-line: rgba(0, 0, 0, 0.2);
+	--color-focus: #9AF3FF;
+}
+
+
 /* Colours ------------------------------------------------- */
 
 
