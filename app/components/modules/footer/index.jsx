@@ -10,7 +10,7 @@ function Footer(){
 				<div className="container">
 					<div className={styles.footer__line}>
 						<p>
-							&copy; Barry Richards –  {currentYear}
+							&copy; Barry Richards – {currentYear}
 						</p>
 					</div>
 				</div>

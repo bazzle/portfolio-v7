@@ -6,31 +6,35 @@ import styles from './style.module.scss';
 function DarkMode() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
 
+	// Function to apply dark mode to the body and localStorage
+	const applyDarkMode = (isDark) => {
+		setIsDarkMode(isDark);
+		document.body.classList.toggle('dark-mode', isDark);
+		localStorage.setItem('darkMode', isDark ? 'dark' : 'light');
+	};
+
 	useEffect(() => {
 		// Initialize dark mode state
 		const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 		const storedMode = localStorage.getItem('darkMode');
 		const initialDarkMode = storedMode === 'dark' || (storedMode === null && prefersDarkScheme.matches);
-		setIsDarkMode(initialDarkMode);
-		document.body.classList.toggle('dark-mode', initialDarkMode);
+		applyDarkMode(initialDarkMode);
 
 		// Event listener for system preference changes
-		const handleChange = (e) => {
-			if (localStorage.getItem('darkMode') === null) {
-				setIsDarkMode(e.matches);
-				document.body.classList.toggle('dark-mode', e.matches);
-			}
+		const handleSystemPreferenceChange = (e) => {
+			applyDarkMode(e.matches);
 		};
-		prefersDarkScheme.addEventListener('change', handleChange);
 
-		return () => prefersDarkScheme.removeEventListener('change', handleChange);
+		prefersDarkScheme.addEventListener('change', handleSystemPreferenceChange);
+
+		// Cleanup listener on component unmount
+		return () => prefersDarkScheme.removeEventListener('change', handleSystemPreferenceChange);
 	}, []);
 
+	// Handle button click for toggling dark mode
 	const handleClick = () => {
 		const newDarkMode = !isDarkMode;
-		setIsDarkMode(newDarkMode);
-		document.body.classList.toggle('dark-mode', newDarkMode);
-		localStorage.setItem('darkMode', newDarkMode ? 'dark' : 'light');
+		applyDarkMode(newDarkMode);
 	};
 
 	return (
