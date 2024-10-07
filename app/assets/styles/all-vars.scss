@@ -121,7 +121,7 @@ $font-blocky: "degular-variable", sans-serif;
 %text-heading{
 	font-family: $font-std;
 	font-size: $font-size-heading;
-	line-height:1;
+	line-height:1.2;
 	font-variation-settings: "ital" 0, "opsz" 14, "wght" 400;
 	:global(body.dark-mode) &{
 		font-variation-settings: "ital" 0, "opsz" 14, "wght" 300;
@@ -131,6 +131,7 @@ $font-blocky: "degular-variable", sans-serif;
 %text-intro{
 	font-size: $font-size-body-intro;
 	font-variation-settings: "ital" 0, "opsz" 14, "wght" 700;
+	line-height: 1.2;
 	:global(body.dark-mode) &{
 		font-variation-settings: "ital" 0, "opsz" 14, "wght" 650;
 	}
@@ -183,7 +184,7 @@ $font-blocky: "degular-variable", sans-serif;
 }
 
 %text-tiny{
-	font-size: $font-size-blocky;
+	font-size: $font-size-tiny;
 	font-family: $font-text;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 	:global(body.dark-mode) &{
