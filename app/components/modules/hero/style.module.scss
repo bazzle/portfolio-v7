@@ -48,6 +48,10 @@
 			@include break(mobile){
 				padding-right: calc(120px + 2rem);
 			}
+			a{
+				@extend %text-link;
+				font-size: inherit;
+			}
 		}
 		.clients{
 			margin-top: 2rem;
@@ -65,8 +69,9 @@
 	padding-top: $block-spacing--deep;
 	padding-bottom: $block-spacing--deep;
 }
+
 .message__main{
-	@include text-display;
+	@extend %text-display;
 	display: block;
 	@media (prefers-color-scheme: light){
 		color: var(--color-foreground)-light;
@@ -79,7 +84,7 @@
 }
 .message__sub{
 	display: block;
-	@include text-medium;
+	@extend %text-medium;
 }
 .side_furniture{
 	position: relative;

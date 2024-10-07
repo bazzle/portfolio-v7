@@ -49,7 +49,7 @@ $font-size-std: responsiveSize(2, 10, 2);
 // For body only
 $font-size-body: responsiveSize(2, 10, 2);
 // For body standaouts
-$font-size-body-intro: responsiveSize(2.4, 5, 2.4);
+$font-size-body-intro: responsiveSize(2.6, 5, 2.6);
 // For blocky text, taglines and other reasons
 $font-size-blocky: responsiveSize(1.6, 8, 1.6);
 // For tiny text
@@ -63,118 +63,151 @@ $font-display: "degular-variable", sans-serif;
 $font-text: "degular-variable", sans-serif;
 $font-blocky: "degular-variable", sans-serif;
 
-
-@mixin text-display{
+%text-display{
 	font-family: $font-display;
 	font-size: $font-size-display;
 	font-style: normal;
 	line-height: 1;
-	font-variation-settings: "ital" 0, "opsz" 72, "wght" 800;
+	font-variation-settings: "ital" 0, "opsz" 72, "wght" 750;
+	:global(body.dark-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 72, "wght" 730;
+	}
 }
 
-@mixin text-std{
+%text-std{
 	font-family: $font-text;
 	font-size: $font-size-std;
 	font-style: normal;
 	line-height: 1.6;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
+	:global(body.dark-mode) &{
+		letter-spacing: unset;
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 200;
+	}
 }
 
-@mixin text-body{
+%text-body{
 	font-family: $font-body;
 	font-size: $font-size-body;
 	font-style: normal;
 	line-height: 1.6;
 	letter-spacing: -.015em;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
-
+	:global(body.dark-mode) &{
+		letter-spacing: unset;
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 200;
+	}
 }
 
-@mixin text-link{
+%text-link{
 	font-size: $font-size-std;
 	font-family: $font-text;
 	color: var(--color-accent);
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 	text-decoration: underline;
-	text-underline-offset: .2em;
+	text-underline-offset: .15em;
+	text-decoration-thickness: .08em;
+	:global(body.dark-mode) &{
+		text-underline-offset: 0.2em;
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
+		text-decoration-thickness: .05em;
+	}
 	&:hover{
 		text-decoration: none;
 		color: var(--color-foreground);
 	}
 }
 
-@mixin text-heading{
+%text-heading{
 	font-family: $font-std;
 	font-size: $font-size-heading;
 	line-height:1;
 	font-variation-settings: "ital" 0, "opsz" 14, "wght" 400;
+	:global(body.dark-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 14, "wght" 300;
+	}
 }
 
-@mixin text-intro{
+%text-intro{
 	font-size: $font-size-body-intro;
 	font-variation-settings: "ital" 0, "opsz" 14, "wght" 700;
+	:global(body.dark-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 14, "wght" 650;
+	}
 }
 
-@mixin text-body-bold{
+%text-body-bold{
 	font-size: $font-size-body;
 	line-height: 1.4;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
+	:global(body.dark-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 450;
+	}
 }
 
-@mixin text-medium{
+%text-medium{
 	font-family: $font-std;
 	font-size: $font-size-medium;
 	font-style: normal;
 	line-height: 1.6;
 	font-variation-settings: "ital" 0, "opsz" 14, "wght" 500;
+	:global(body.dark-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 14, "wght" 450;
+	}
 }
 
-@mixin text-blocky{
+%text-blocky{
 	font-family: $font-blocky;
 	font-style: normal;
 	text-transform: uppercase;
 	font-size: $font-size-blocky;
 	letter-spacing: .03em;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
+	:global(body.dark-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 450;
+		letter-spacing: .05em;
+	}
 }
 
-@mixin text-blocky-lower{
-	font-family: $font-blocky;
-	font-style: normal;
-	font-size: $font-size-blocky;
-	letter-spacing: .03em;
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
-}
-
-@mixin text-blocky-bold{
+%text-blocky-bold{
 	font-family: $font-blocky;
 	font-style: normal;
 	text-transform: uppercase;
 	font-size: $font-size-blocky;
 	letter-spacing: .03em;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
+	:global(body.dark-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 550;
+		letter-spacing: .06em;
+	}
 }
 
-@mixin text-tiny{
+%text-tiny{
 	font-size: $font-size-blocky;
 	font-family: $font-text;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
+	:global(body.dark-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
+	}
 }
 
-@mixin text-miniscule{
+%text-miniscule{
 	font-family: $font-body;
 	font-size: $font-size-miniscule;
 	font-style: normal;
 	line-height: 1.6;
 	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
+	:global(body.dark-mode) &{
+		letter-spacing: .02em;
+	}
 }
 
 @mixin body-formatting{
 	*{
-		@include text-body;
+		@extend %text-body;
 	}
 	h2, h3, h4, h5, h6{
-		@include text-heading;
+		@extend %text-heading;
 	}
 	p, ul, ol, blockquote{
 		&:not(:last-child){

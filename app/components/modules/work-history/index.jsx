@@ -119,7 +119,7 @@ function WorkHistory(){
 	function navItem(arrayIndex){
 		const section = sections[arrayIndex];
 		const isActive = activeSection.id === section.id;
-		const conditionalClass = isActive ? styles.is_active : 'button';
+		const conditionalClass = isActive && styles.is_active;
 		return (
 			<button role="tab"
 				onClick={(evt) => handleClick(evt, section)}

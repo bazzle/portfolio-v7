@@ -11,14 +11,14 @@
 			margin-bottom: 2rem;
 		}
 		&__heading{
-			@include text-heading;
+			@extend %text-heading;
 		}
 		&__duration{
-			@include text-blocky;
+			@extend %text-blocky;
 		}
 	}
 	.duration{
-		@include text-blocky;
+		@extend %text-blocky;
 	}
 	ul.clients_list{
 		padding-left: 0;
@@ -26,7 +26,7 @@
 		gap: 6rem;
 		li{
 			list-style-type: none;
-			@include text-blocky;
+			@extend %text-blocky;
 			gap: .7em;
 			align-items:baseline;
 			display: flex;
@@ -45,7 +45,7 @@
 		}
 	}
 	.intro{
-		@include text-intro;
+		@extend %text-intro;
 		color: var(--color-accent-alt);
 	}
 	.body_text{
