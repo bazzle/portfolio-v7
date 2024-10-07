@@ -28,7 +28,7 @@
 	&__item{
 		display: flex;
 		gap: 1em;
-		@include text-blocky;
+		@extend %text-blocky;
 		&__name{
 			width: 100%;
 			flex-grow: 1;
@@ -43,7 +43,7 @@
 	}
 }
 .body_text{
-	@include text-body;
+	@extend %text-body;
 }
 .diagram{
 	display: flex;

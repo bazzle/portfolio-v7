@@ -25,7 +25,7 @@
 	margin: 0;
 	padding-left: calc(2vw + 1.1em);
 	padding-top: 1.5rem;
-	@include text-heading;
+	@extend %text-heading;
 	color: var(--color-accent);
 }
 :global(body.dark-mode) .title {
@@ -34,5 +34,5 @@
 
 .title__no_separator{
 	margin: 0;
-	@include text-heading;
+	@extend %text-heading;
 }

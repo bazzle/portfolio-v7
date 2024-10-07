@@ -1,39 +1,45 @@
 @use "./all-vars.scss" as *;
 
 .text-tiny{
-	@include text-tiny;
+	@extend %text-tiny;
 }
 .text-std{
-	@include text-std;
+	@extend %text-std;
 }
 .text-link{
-	@include text-link;
+	@extend %text-link;
 }
 .text-body{
-	@include text-body;
+	@extend %text-body;
 }
 .text-intro{
-	@include text-intro;
+	@extend %text-intro;
 }
 .text-medium{
-	@include text-medium;
+	@extend %text-medium;
 }
 .text-heading{
-	@include text-heading;
+	@extend %text-heading;
 }
 .text-display{
-	@include text-display;
+	@extend %text-display;;
 }
 .text-blocky{
-	@include text-blocky;
+	@extend %text-blocky;
 }
 .text-miniscule{
-	@include text-miniscule;
+	@extend %text-miniscule;
 }
 
 p.inset-text{
-	@include text-body-bold;
-	color: var(--color-accent);
-	border-left: 3px solid var(--color-accent);
+	font-size: $font-size-body;
+	line-height: 1.4;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
+	.dark-mode &{
+		font-variation-settings: "wght" 500;
+		letter-spacing: .02em;
+	}
+	color: var(--color-accent-alt);
+	border-left: 3px solid var(--color-accent-alt);
 	padding-left: 2rem;
 }

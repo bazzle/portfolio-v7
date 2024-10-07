@@ -19,7 +19,7 @@
 	background-color: var(--color-bg-alt);
 	border-radius: 6px;
 	&__name{
-		@include text-tiny;
+		@extend %text-tiny;
 		text-align: center;
 	}
 	.tile__inner{

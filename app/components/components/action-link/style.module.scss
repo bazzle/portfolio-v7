@@ -5,7 +5,7 @@
 	align-items: center;
 	gap: .4em;
 	a{
-		@include text-link;
+		@extend %text-link;
 	}
 	svg{
 		width: 12px;

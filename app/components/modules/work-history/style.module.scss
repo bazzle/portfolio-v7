@@ -43,28 +43,35 @@
 		&__title{
 			display: block;
 			text-align: center;
+			
+		}
+		&:not(.is_active){
+			.nav_item__title{
+				@extend %text-link;
+			}
 		}
 		&__dates{
 			display: none;
-			@include text-blocky;
+			@extend %text-blocky;
 			text-align: center;
 		}
 		&.is_active{
-			color: var(--color-accent);
 			position: relative;
 			display: block;
 			cursor: default;
 			text-decoration: none;
-			color: var(--color-foreground);
 			@include break(desktop-med){
 				flex-grow: 1;
 			}
 			.nav_item__title{
+				color: var(--color-foreground);
+				line-height: 1.2;
 				@include break(desktop-med){
 					font-size: responsiveSize(2.6, 10, 2.6);
 				}
 			}
 			.nav_item__dates{
+				color: var(--color-accent-alt);
 				@include break(tablet){
 					display: block;
 				}
