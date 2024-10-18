@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 function TextBlock(props){
 
 	return(
-		<section className="pb0">
+		<section>
 			<div className={styles.text_block}>
 				<div className="container">
 					<blockquote className={styles.text_block__blockquote}>
