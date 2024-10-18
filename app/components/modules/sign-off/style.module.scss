@@ -6,25 +6,12 @@
 	background-size: auto;
 	background-repeat: repeat;
 	&__blockquote{
-		margin-block-start: unset;
-		margin-block-end: unset;
+		margin: 0;
 		padding: 2em 0;
-		display: block;
 		@extend %text-display-small;
 		text-align: center;
-    	margin: 0 auto;
-		color: var(--color-foreground-alt);
-		max-width: 80vw;
-		@include break(tablet){
-			max-width: 60vw;
-		}
 	}
 }
 :global(body.dark-mode) .text_block{
 	background-image: url("/assets/images/texture-dark.jpg");
-	.text_block{
-		&__blockquote{
-			color: var(--color-foreground);
-		}
-	}
 }
