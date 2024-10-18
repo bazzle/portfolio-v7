@@ -1,17 +1,13 @@
 @use "../../../assets/styles/all-vars" as *;
 
-.text_block{
+.sign_off{
 	position: relative;
-	background-image: url("/assets/images/texture-light.jpg");
 	background-size: auto;
 	background-repeat: repeat;
-	&__blockquote{
+	p{
 		margin: 0;
 		padding: 2em 0;
 		@extend %text-display-small;
 		text-align: center;
 	}
-}
-:global(body.dark-mode) .text_block{
-	background-image: url("/assets/images/texture-dark.jpg");
 }

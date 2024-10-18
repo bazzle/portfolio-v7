@@ -1,14 +1,14 @@
 import styles from "./style.module.scss";
 
-function TextBlock(props){
+function SignOff(){
 
 	return(
-		<section className="pb0">
-			<div className={styles.text_block}>
+		<section className="pb--0">
+			<div className={styles.sign_off}>
 				<div className="container">
-					<blockquote className={styles.text_block__blockquote}>
-						{props.text}
-					</blockquote>
+					<p>
+						Thankyou, have a great day!
+					</p>
 				</div>
 			</div>
 		</section>
@@ -16,4 +16,4 @@ function TextBlock(props){
 
 }
 
-export default TextBlock;
+export default SignOff;
