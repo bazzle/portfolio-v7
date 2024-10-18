@@ -46,12 +46,20 @@
 	overflow: hidden;
 }
 
-
-.stroke-accent{
-	stroke: var(--color-accent);
+.color-accent{
+	color: var(--color-accent);
 }
+.color-accent-alt{
+	color: var(--color-accent);
+}
+
+
+// SVG fills
 .fill-accent{
 	fill: var(--color-accent);
+}
+.fill-accent-alt{
+	fill: var(--color-accent-alt);
 }
 .fill-foreground{
 	fill: var(--color-foreground);
@@ -59,18 +67,17 @@
 .fill-bg{
 	fill: var(--color-bg);
 }
-.color-accent{
-	color: var(--color-accent);
+.fill-bg-alt{
+	fill: var(--color-bg-alt);
+}
+
+// SVG strokes
+.stroke-bg{
+	stroke: var(--color-bg);
+}
+.stroke-accent{
+	stroke: var(--color-accent);
 }
 .stroke-accent-alt{
 	stroke: var(--color-accent-alt);
-}
-.fill-accent-alt{
-	fill: var(--color-accent-alt);
-}
-.color-accent-alt{
-	color: var(--color-accent);
-}
-.fill-bg-alt{
-	fill: var(--color-bg-alt);
 }
