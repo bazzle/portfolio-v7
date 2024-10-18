@@ -22,7 +22,17 @@
 			color: var(--color-foreground);
 		}
 	}
+	:global(body.dark-mode) &{
+		background-image: url("/assets/images/texture-dark.jpg");
+	}
 }
-:global(body.dark-mode) .footer{
-	background-image: url("/assets/images/texture-dark.jpg");
+.back_top{
+	position: absolute;
+	right: 1rem;
+	bottom: 0;
+	@include break(tablet){
+		right: 4rem;
+		top: -4rem;
+		
+	}
 }
