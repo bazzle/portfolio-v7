@@ -1,0 +1,11 @@
+@use "../../../assets/styles/all-vars" as *;
+
+.backTop{
+	display: block;
+	height: 4rem;
+	margin-bottom: 0;
+	svg{
+		height: 4rem;
+		width: 4rem;
+	}
+}
