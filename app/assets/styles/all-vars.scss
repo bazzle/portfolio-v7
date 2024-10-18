@@ -39,7 +39,7 @@ $site-width-margins: calc(($site-width + $gutter-padding) + $gutter-padding);
 // For display only
 $font-size-display: responsiveSize(9, 40, 9);
 // For display only
-$font-size-display-small: responsiveSize(5, 40, 5);
+$font-size-display-small: responsiveSize(4, 35, 4);
 // For headings only
 $font-size-heading: responsiveSize(2.8, 20, 2.8);
 // For general use
@@ -70,7 +70,7 @@ $font-blocky: "degular-variable", sans-serif;
 	line-height: 1;
 	font-variation-settings: "ital" 0, "opsz" 72, "wght" 750;
 	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 72, "wght" 730;
+		font-variation-settings: "ital" 0, "opsz" 72, "wght" 700;
 	}
 }
 
@@ -79,9 +79,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-display-small;
 	font-style: normal;
 	line-height: 1.1;
-	font-variation-settings: "ital" 0, "opsz" 72, "wght" 700;
+	font-variation-settings: "ital" 0, "opsz" 72, "wght" 680;
 	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 72, "wght" 670;
+		font-variation-settings: "ital" 0, "opsz" 72, "wght" 620;
 	}
 }
 
@@ -133,9 +133,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-family: $font-std;
 	font-size: $font-size-heading;
 	line-height:1.2;
-	font-variation-settings: "ital" 0, "opsz" 14, "wght" 400;
+	font-variation-settings: "ital" 0, "opsz" 10, "wght" 420;
 	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 14, "wght" 300;
+		font-variation-settings: "ital" 0, "opsz" 10, "wght" 330;
 	}
 }
 
