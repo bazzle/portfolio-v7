@@ -23,7 +23,7 @@ $block-spacing: clamp(3.5rem, 6vw, 6.5rem);
 $block-spacing--shallow: clamp(2rem, 4vw, 4.5rem);
 $block-spacing--deep: clamp(4.5rem, 8vw, 12rem);
 $column-gap: clamp(2rem, 5vw, 5rem);
-$site-width: 1200px;
+$site-width: 1100px;
 $site-width-margins: calc(($site-width + $gutter-padding) + $gutter-padding);
 
 
@@ -39,7 +39,7 @@ $site-width-margins: calc(($site-width + $gutter-padding) + $gutter-padding);
 // For display only
 $font-size-display: responsiveSize(9, 40, 9);
 // For display only
-$font-size-display-small: responsiveSize(5, 10, 5);
+$font-size-display-small: responsiveSize(5, 40, 5);
 // For headings only
 $font-size-heading: responsiveSize(2.8, 20, 2.8);
 // For general use
@@ -71,6 +71,17 @@ $font-blocky: "degular-variable", sans-serif;
 	font-variation-settings: "ital" 0, "opsz" 72, "wght" 750;
 	:global(body.dark-mode) &{
 		font-variation-settings: "ital" 0, "opsz" 72, "wght" 730;
+	}
+}
+
+%text-display-small{
+	font-family: $font-display;
+	font-size: $font-size-display-small;
+	font-style: normal;
+	line-height: 1.1;
+	font-variation-settings: "ital" 0, "opsz" 72, "wght" 700;
+	:global(body.dark-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 72, "wght" 670;
 	}
 }
 
