@@ -1,6 +1,7 @@
 @use "./all-vars.scss" as *;
 
 .container{
+	position: relative;
 	width: 100%;
 	max-width: $site-width-margins;
 	margin: 0 auto;
@@ -28,5 +29,5 @@
 }
 
 section{
-	padding-bottom: 10vw;
+	margin-bottom: 10vw;
 }

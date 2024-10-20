@@ -10,6 +10,11 @@ function TextBlock(props){
 						{props.text}
 					</blockquote>
 				</div>
+				<div role="presentation" className={styles.shapes}>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 			</div>
 		</section>
 	)
