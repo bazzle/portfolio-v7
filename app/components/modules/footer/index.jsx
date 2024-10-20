@@ -13,9 +13,14 @@ function Footer(){
 						&copy; Barry Richards – {currentYear}
 					</p>
 				</div>
-				<div className={styles.back_top}>
-					<BackTop/>
-				</div>
+			</div>
+			<div className={styles.back_top}>
+				<BackTop/>
+			</div>
+			<div role="presentation" className={styles.shapes}>
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
         </footer>
     )

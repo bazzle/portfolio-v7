@@ -68,9 +68,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-display;
 	font-style: normal;
 	line-height: 1;
-	font-variation-settings: "ital" 0, "opsz" 72, "wght" 750;
+	font-variation-settings: "ital" 0, "opsz" 72, "wght" 780;
 	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 72, "wght" 700;
+		font-variation-settings: "ital" 0, "opsz" 72, "wght" 760;
 	}
 }
 
@@ -79,9 +79,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-display-small;
 	font-style: normal;
 	line-height: 1.1;
-	font-variation-settings: "ital" 0, "opsz" 72, "wght" 680;
+	font-variation-settings: "ital" 0, "opsz" 40, "wght" 620;
 	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 72, "wght" 620;
+		font-variation-settings: "ital" 0, "opsz" 40, "wght" 580;
 	}
 }
 

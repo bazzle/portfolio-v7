@@ -47,6 +47,11 @@ function Hero(){
 						</div>
 					</div>
 				</div>
+				<div role="presentation" className={styles.shapes}>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
             </div>
 			<div className={styles.foot_section}>
 				<div className="container">

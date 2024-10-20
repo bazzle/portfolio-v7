@@ -4,10 +4,10 @@ import BrowserDesktop from './browser-desktop';
 function WorkSamples(){
     return(
         <section className={styles.work_samples}>
-			<div className={styles.inner}>
-				<div className={styles.title_overlay}>
-					<h2 className={styles.title_overlay_text}>Work samples coming soon!</h2>
-				</div>
+			<div className={styles.title_section}>
+				<h2 className={styles.title_section_text}>Work samples coming soon!</h2>
+			</div>
+			<div className={styles.main}>
 				<div className={styles.strip}>
 					<BrowserMobile
 						src="/assets/images/samples-satoshi-power.png"
@@ -64,6 +64,11 @@ function WorkSamples(){
 						alt="profile"
 					/>
 				</div>
+			</div>
+			<div role="presentation" className={styles.shapes}>
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
         </section>
     )
