@@ -6,7 +6,7 @@ function WorkSamples(){
         <section className={styles.work_samples}>
 			<div className={styles.inner}>
 				<div className={styles.title_overlay}>
-					<h2 className={styles.title_overlay_text}>Work Samples coming soon!</h2>
+					<h2 className={styles.title_overlay_text}>Work samples coming soon!</h2>
 				</div>
 				<div className={styles.strip}>
 					<BrowserMobile

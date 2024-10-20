@@ -14,7 +14,7 @@
 		position: absolute;
 		width: 25px;
 		height: 25px;
-		left: 2vw;
+		left: 1.5vw;
 		top: 0;
 		fill: var(--color-accent);
 		position: absolute;
@@ -23,7 +23,7 @@
 }
 .title{
 	margin: 0;
-	padding-left: calc(2vw + 1.1em);
+	padding-left: calc(1.5vw + 1.1em);
 	padding-top: 1.5rem;
 	@extend %text-heading;
 	color: var(--color-accent);

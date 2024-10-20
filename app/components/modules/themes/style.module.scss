@@ -7,7 +7,7 @@
 
 .tile_grid{
 	display: grid;
-	gap: .5rem;
+	gap: 2rem;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr 1fr;
 	@include break(desktop){
@@ -15,13 +15,9 @@
 	}
 }
 .tile{
-	border: 1px solid var(--color-accent);
-	background-color: var(--color-bg-alt);
-	:global(body.dark-mode) &{
-		border: .5px solid var(--color-accent);
-		background-color: var(--color-bg-alt);
-	}
-	border-radius: 6px;
+	background-color: var(--color-bg-off-solid);
+	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.040);
+	border-radius: 2px;
 	&__name{
 		@extend %text-tiny;
 		text-align: center;
