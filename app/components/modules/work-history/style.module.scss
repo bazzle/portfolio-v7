@@ -66,9 +66,9 @@
 			.nav_item__title{
 				color: var(--color-foreground);
 				line-height: 1.2;
-				font-variation-settings: "ital" 0, "opsz" 10, "wght" 450;
-				:global(body.dark-mode) &{
-					font-variation-settings: "ital" 0, "opsz" 10, "wght" 430;
+				font-variation-settings: "ital" 0, "opsz" 10, "wght" 430;
+				:global(body.light-mode) &{
+					font-variation-settings: "ital" 0, "opsz" 10, "wght" 450;
 				}
 				@include break(desktop-med){
 					font-size: responsiveSize(2.6, 10, 2.6);

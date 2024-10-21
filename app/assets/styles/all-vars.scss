@@ -68,9 +68,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-display;
 	font-style: normal;
 	line-height: 1;
-	font-variation-settings: "ital" 0, "opsz" 72, "wght" 780;
-	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 72, "wght" 760;
+	font-variation-settings: "ital" 0, "opsz" 72, "wght" 760;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 72, "wght" 780;
 	}
 }
 
@@ -79,9 +79,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-display-small;
 	font-style: normal;
 	line-height: 1.1;
-	font-variation-settings: "ital" 0, "opsz" 40, "wght" 620;
-	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 40, "wght" 580;
+	font-variation-settings: "ital" 0, "opsz" 40, "wght" 580;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 40, "wght" 620;
 	}
 }
 
@@ -90,10 +90,10 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-std;
 	font-style: normal;
 	line-height: 1.6;
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
-	:global(body.dark-mode) &{
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 200;
+	:global(body.light-mode) &{
 		letter-spacing: unset;
-		font-variation-settings: "ital" 0, "opsz" 6, "wght" 200;
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
 	}
 }
 
@@ -103,10 +103,10 @@ $font-blocky: "degular-variable", sans-serif;
 	font-style: normal;
 	line-height: 1.6;
 	letter-spacing: -.015em;
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
-	:global(body.dark-mode) &{
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 200;
+	:global(body.light-mode) &{
 		letter-spacing: unset;
-		font-variation-settings: "ital" 0, "opsz" 6, "wght" 200;
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
 	}
 }
 
@@ -114,14 +114,14 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-std;
 	font-family: $font-text;
 	color: var(--color-accent);
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 	text-decoration: underline;
-	text-underline-offset: .15em;
-	text-decoration-thickness: .08em;
-	:global(body.dark-mode) &{
-		text-underline-offset: 0.2em;
-		font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
-		text-decoration-thickness: .05em;
+	text-underline-offset: 0.2em;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
+	text-decoration-thickness: .05em;
+	:global(body.light-mode) &{
+		text-underline-offset: .15em;
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
+		text-decoration-thickness: .08em;
 	}
 	&:hover{
 		text-decoration: none;
@@ -133,27 +133,27 @@ $font-blocky: "degular-variable", sans-serif;
 	font-family: $font-std;
 	font-size: $font-size-heading;
 	line-height:1.2;
-	font-variation-settings: "ital" 0, "opsz" 10, "wght" 420;
-	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 10, "wght" 330;
+	font-variation-settings: "ital" 0, "opsz" 10, "wght" 330;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 10, "wght" 420;
 	}
 }
 
 %text-intro{
 	font-size: $font-size-body-intro;
-	font-variation-settings: "ital" 0, "opsz" 14, "wght" 700;
 	line-height: 1.2;
-	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 14, "wght" 650;
+	font-variation-settings: "ital" 0, "opsz" 14, "wght" 650;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 14, "wght" 700;
 	}
 }
 
 %text-body-bold{
 	font-size: $font-size-body;
 	line-height: 1.4;
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
-	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 6, "wght" 450;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 450;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
 	}
 }
 
@@ -162,9 +162,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-medium;
 	font-style: normal;
 	line-height: 1.6;
-	font-variation-settings: "ital" 0, "opsz" 14, "wght" 500;
-	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 14, "wght" 450;
+	font-variation-settings: "ital" 0, "opsz" 14, "wght" 450;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 14, "wght" 500;
 	}
 }
 
@@ -174,10 +174,10 @@ $font-blocky: "degular-variable", sans-serif;
 	text-transform: uppercase;
 	font-size: $font-size-blocky;
 	letter-spacing: .03em;
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
-	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 6, "wght" 450;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 450;
+	:global(body.light-mode) &{
 		letter-spacing: .05em;
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 	}
 }
 
@@ -187,9 +187,9 @@ $font-blocky: "degular-variable", sans-serif;
 	text-transform: uppercase;
 	font-size: $font-size-blocky;
 	letter-spacing: .03em;
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
-	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 6, "wght" 550;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 550;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
 		letter-spacing: .06em;
 	}
 }
@@ -197,9 +197,9 @@ $font-blocky: "degular-variable", sans-serif;
 %text-tiny{
 	font-size: $font-size-tiny;
 	font-family: $font-text;
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
-	:global(body.dark-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
+	font-variation-settings: "ital" 0, "opsz" 6, "wght" 400;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 	}
 }
 
@@ -208,9 +208,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-miniscule;
 	font-style: normal;
 	line-height: 1.6;
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
-	:global(body.dark-mode) &{
+	:global(body.light-mode) &{
 		letter-spacing: .02em;
+		font-variation-settings: "ital" 0, "opsz" 6, "wght" 500;
 	}
 }
 

@@ -9,9 +9,9 @@
 		padding: 2em 0;
 		@extend %text-display-small;
 		text-align: center;
-		color: var(--color-accent);
-		:global(body.dark-mode) &{
-			color: var(--color-foreground);
+		color: var(--color-foreground);
+		:global(body.light-mode) &{
+			color: var(--color-accent);
 		}
 	}
 }
