@@ -9,13 +9,12 @@ function DarkMode() {
 	// Function to apply dark mode to the body and localStorage
 	const applyDarkMode = (isDark) => {
 		setIsDarkMode(isDark);
-		document.body.classList.toggle('dark-mode', isDark);
-		localStorage.setItem('darkMode', isDark ? 'dark' : 'light');
+		document.body.classList.toggle('light-mode', isDark);
+		localStorage.setItem('darkMode', isDark ? 'light' : 'dark');
 	};
 
 	useEffect(() => {
 		// Initialize dark mode state
-		const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 		const storedMode = localStorage.getItem('darkMode');
 		const initialDarkMode = storedMode === 'dark' || (storedMode === null && prefersDarkScheme.matches);
 		applyDarkMode(initialDarkMode);
@@ -24,11 +23,6 @@ function DarkMode() {
 		const handleSystemPreferenceChange = (e) => {
 			applyDarkMode(e.matches);
 		};
-
-		prefersDarkScheme.addEventListener('change', handleSystemPreferenceChange);
-
-		// Cleanup listener on component unmount
-		return () => prefersDarkScheme.removeEventListener('change', handleSystemPreferenceChange);
 	}, []);
 
 	// Handle button click for toggling dark mode

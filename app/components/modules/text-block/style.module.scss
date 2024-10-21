@@ -4,9 +4,9 @@
 	position: relative;
 	background-size: auto;
 	background-repeat: repeat;
-	background-image: url("/assets/images/texture-light.jpg");
-	:global(body.dark-mode) &{
-		background-image: url("/assets/images/texture-dark.jpg");
+	background-image: url("/assets/images/texture-dark.jpg");
+	:global(body.light-mode) &{
+		background-image: url("/assets/images/texture-light.jpg");
 	}
 	&__blockquote{
 		margin-block-start: unset;
@@ -16,11 +16,11 @@
 		@extend %text-display-small;
 		text-align: center;
     	margin: 0 auto;
-		color: var(--color-foreground-alt);
-		text-shadow: 0 .01em .5em rgba(255,255,255,1);
-		:global(body.dark-mode) &{
-			color: var(--color-foreground);
-			text-shadow:unset;
+		color: var(--color-foreground);
+		text-shadow:unset;
+		:global(body.light-mode) &{
+			color: var(--color-foreground-alt);
+			text-shadow: 0 .01em .5em rgba(255,255,255,1);
 		}
 		max-width: 80vw;
 		@include break(tablet){

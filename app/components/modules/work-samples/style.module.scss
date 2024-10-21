@@ -2,9 +2,9 @@
 
 .work_samples{
 	position: relative;
-	background-image: url("/assets/images/texture-light.jpg");
-	:global(body.dark-mode) &{
-		background-image: url("/assets/images/texture-dark.jpg");
+	background-image: url("/assets/images/texture-dark.jpg");
+	:global(body.light-mode) &{
+		background-image: url("/assets/images/texture-light.jpg");
 	}
 }
 

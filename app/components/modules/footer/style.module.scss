@@ -2,7 +2,10 @@
 
 .footer{
 	padding: $block-spacing 0;
-	background-image: url("/assets/images/texture-light.jpg");
+	background-image: url("/assets/images/texture-dark.jpg");
+	:global(body.light-mode) &{
+		background-image: url("/assets/images/texture-light.jpg");
+	}
 	background-repeat: repeat;
 	position: relative;
 	border-top: .5px solid var(--color-accent);
@@ -21,9 +24,6 @@
 			margin-bottom: 0;
 			color: var(--color-foreground);
 		}
-	}
-	:global(body.dark-mode) &{
-		background-image: url("/assets/images/texture-dark.jpg");
 	}
 }
 .back_top{
