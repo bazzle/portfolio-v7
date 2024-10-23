@@ -1,4 +1,4 @@
-import DarkMode from './dark-mode';
+import ColourMode from './colour-mode';
 import styles from './style.module.scss';
 
 function Header(){
@@ -16,7 +16,7 @@ function Header(){
 					</div>
 				</div>
 			</div>
-			<DarkMode/>
+			<ColourMode/>
         </header>
     )
 }
