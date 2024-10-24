@@ -16,6 +16,7 @@ function Header(){
 					</div>
 				</div>
 			</div>
+			<ColourMode/>
         </header>
     )
 }
