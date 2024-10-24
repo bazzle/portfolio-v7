@@ -19,7 +19,7 @@ function ColourMode() {
 
 
 	useEffect(() => {
-		let currentMode = localStorage.getItem('colourMode');
+		const currentMode = localStorage.getItem('colourMode');
 		if(currentMode === 'light'){
 			applyLightMode();
 		} else {
@@ -28,7 +28,7 @@ function ColourMode() {
 	});
 	
 	const handleClick = () => {
-		let currentMode = localStorage.getItem('colourMode');
+		const currentMode = localStorage.getItem('colourMode');
 		if(currentMode === 'light' || currentMode === null){
 			applyDarkMode();
 		} else {
