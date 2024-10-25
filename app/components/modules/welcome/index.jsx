@@ -1,5 +1,6 @@
 import styles from './style.module.scss';
 import SectionHead from "../../components/section-head";
+import ListItem from '../../components/list-item';
 
 function Welcome(){
 	return(
@@ -12,8 +13,14 @@ function Welcome(){
 					<div className="col-2">
 						<div className={styles.body_text}>
 							<p>
-								Throughout my career of over a decade of delivering web projects – working with some great people, keeping an open mind and constantly learning and iterating – I believe I have forged an optimal approach to deliver fantastic web projects and a set of principles that I stand by as much as I can.
+								Throughout my career of over a decade of delivering web projects – working with some great people, <a href="/">keeping</a> an open mind and constantly learning and iterating – I believe I have forged an optimal approach to deliver fantastic web projects and a <b>set of principles</b> that I stand by as much as I can.
 							</p>
+							<ul>
+								<ListItem content="My work within the public sector for Helpful Digital and dxw has instilled in me strong appreciation for accessibility. One thing I’ve carried with me is the notion that accessibility standards aren’t exclusively for disabled people. In catering to disabilites we’re making the web better for everyone."/>
+								<ListItem content="Is"/>
+								<ListItem content="A"/>
+								<ListItem content="List"/>
+							</ul>
 							<p>
 								My work within the public sector for Helpful Digital and dxw has instilled in me strong appreciation for accessibility. One thing I’ve carried with me is the notion that accessibility standards aren’t exclusively for disabled people. In catering to disabilites we’re making the web better for everyone.
 							</p>
