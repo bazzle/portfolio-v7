@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 import PropTypes from "prop-types";
 
-function Tile({ component, name }){
+function Tile({ component, name, slug }){
 
 	function iconBlock(){
 		return(

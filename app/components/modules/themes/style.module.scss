@@ -4,26 +4,44 @@
 	background-color: var(--color-bg);
 	padding-top: $block-spacing--shallow;
 }
-
+.tile_container{
+	position: relative;
+	overflow: hidden;
+}
 .tile_grid{
+	background-color: var(--color-feint-line);
+	gap: .5px;
 	display: grid;
-	gap: 2rem;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr 1fr;
+	position: relative;
+	top: -1px;
+	right: -1px;
 	@include break(desktop){
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+	> *:last-of-type{
+		grid-column: span 2;
+		@include break(desktop){
+			grid-column: unset;
+		}
+	}
 }
 .tile{
-	background-color: var(--color-bg-off-solid);
-	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.040);
-	border-radius: 2px;
+	background-color: var(--color-bg);
+	min-height: 10rem;
+	border-top: 1px solid rgba(255,255,255,.07);
+	border-right: 1px solid rgba(255,255,255,.05);
+	:global(body.light-mode) &{
+		border-top: 1px solid rgba(0,0,0,.07);
+		border-right: 1px solid rgba(0,0,0,.07);
+	}
 	&__name{
 		@extend %text-tiny;
 		text-align: center;
 	}
 	.tile__inner{
-		gap: 0;
+		gap: 2rem;
 		@include break(mobile){
 			gap: 2rem;
 		}
@@ -47,6 +65,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 	svg{
 		max-width: 100%;
 	}
