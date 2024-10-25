@@ -223,7 +223,8 @@ $font-blocky: "degular-variable", sans-serif;
 	font-family: $font-body;
 	font-size: $font-size-miniscule;
 	font-style: normal;
-	line-height: 1.6;
+	line-height: 1.4;
+	font-variation-settings: "ital" 0, "opsz" 10, "wght" 500;
 	:global(body.light-mode) &{
 		letter-spacing: .02em;
 		font-variation-settings: "ital" 0, "opsz" 10, "wght" 500;
