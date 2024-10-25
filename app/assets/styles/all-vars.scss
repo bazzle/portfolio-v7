@@ -115,9 +115,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-body;
 	font-style: normal;
 	line-height: 1.5;
-	font-variation-settings: "ital" 0, "opsz" 16, "wght" 300;
+	font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
 	}
 }
 %text-body-link{
@@ -231,7 +231,7 @@ $font-blocky: "degular-variable", sans-serif;
 }
 
 @mixin body-formatting{
-	p, li{
+	p:not([class]), li:not([class]){
 		@extend %text-body;
 		a{
 			@extend %text-body-link;
@@ -241,9 +241,7 @@ $font-blocky: "degular-variable", sans-serif;
 		@extend %text-heading;
 	}
 	p, ul, ol, blockquote{
-		&:not(:last-child){
-			margin-bottom: 1em;
-		}
+		margin-bottom: 1em;
 	}
 }
 
