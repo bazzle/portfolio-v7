@@ -13,9 +13,8 @@ body{
 	color: var(--color-foreground);
 	@extend %text-std;
 	overflow-y: auto;
-	&.light-mode{
-		font-variation-settings: "ital" 0, "opsz" 20, "wght" 400;
-	}
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ::selection{
@@ -60,4 +59,16 @@ a, button, input, textarea, select{
 
 h1, h2, h3, h4, h5, h6{
 	font-weight: unset;
+}
+
+button, 
+a, 
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+label,
+select,
+textarea {
+	min-width: 24px;
+	min-height: 24px;
 }
