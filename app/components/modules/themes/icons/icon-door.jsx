@@ -1,6 +1,8 @@
-function IconDoor(){
+import styles from "./style.module.scss";
+
+function IconDoor({slug}){
 	return(
-		<svg width="58" height="77" viewBox="0 0 58 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg className={styles[slug]} width="58" height="77" viewBox="0 0 58 77" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<rect x="1.625" y="10.4777" width="30.6457" height="55.5043" className="stroke-accent" strokeWidth="2"/>
 			<path d="M35.0679 9.47736L55.7335 0.49231V75.9667L35.0679 66.9817" className="stroke-accent" strokeWidth="0.367812"/>
 			<path d="M57.6802 1.24121V75.6674" className="stroke-accent" strokeWidth="0.367812"/>
