@@ -1,5 +1,6 @@
 import styles from './style.module.scss';
 import PropTypes from 'prop-types';
+import ListItem from '../../../components/list-item';
 
 function ContentSheet({
 		id,
@@ -28,7 +29,7 @@ function ContentSheet({
 								<h3 className={styles.metadata__heading}>Clients</h3>
 								<ul className={styles.clients_list}>
 									{clients.map((item, index) => {
-										return <li key={index}>{item}</li>
+										return <ListItem key={index} blocky content={item}/>
 									})}
 								</ul>
 							</div>
