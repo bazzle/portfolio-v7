@@ -41,13 +41,13 @@ $font-size-display: responsiveSize(9, 40, 9);
 // For display only
 $font-size-display-small: responsiveSize(4, 35, 4);
 // For headings only
-$font-size-heading: responsiveSize(2.8, 20, 2.8);
+$font-size-heading: responsiveSize(2.8, 5, 2.8);
 // For general use
 $font-size-medium: responsiveSize(3.2, 30, 3.2);
 // Default font size
-$font-size-std: responsiveSize(2, 10, 2);
+$font-size-std: responsiveSize(2, 20, 2);
 // For body only
-$font-size-body: responsiveSize(2, 10, 2);
+$font-size-body: responsiveSize(2, 20, 2);
 // For body standaouts
 $font-size-body-intro: responsiveSize(2.6, 5, 2.6);
 // For blocky text, taglines and other reasons
@@ -89,11 +89,14 @@ $font-blocky: "degular-variable", sans-serif;
 	font-family: $font-text;
 	font-size: $font-size-std;
 	font-style: normal;
-	line-height: 1.5;
+	line-height: 1.3;
 	letter-spacing:.02em;
-	font-variation-settings: "ital" 0, "opsz" 20, "wght" 200;
+	font-variation-settings: "ital" 0, "opsz" 16, "wght" 300;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 20, "wght" 400;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 400;
+	}
+	&.light-mode{
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 400;
 	}
 }
 
@@ -101,17 +104,34 @@ $font-blocky: "degular-variable", sans-serif;
 	font-family: $font-body;
 	font-size: $font-size-body;
 	font-style: normal;
-	font-variation-settings: "ital" 0, "opsz" 20, "wght" 200;
+	line-height: 1.5;
+	font-variation-settings: "ital" 0, "opsz" 16, "wght" 300;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 20, "wght" 400;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 450;
 	}
 }
 %text-body-bold{
+	font-family: $font-body;
 	font-size: $font-size-body;
-	line-height: 1.4;
-	font-variation-settings: "ital" 0, "opsz" 20, "wght" 450;
+	font-style: normal;
+	line-height: 1.5;
+	font-variation-settings: "ital" 0, "opsz" 16, "wght" 300;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 20, "wght" 600;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
+	}
+}
+%text-body-link{
+	font-family: $font-body;
+	font-size: $font-size-body;
+	color: var(--color-accent);
+	text-decoration: underline;
+	text-underline-offset: 0.1em;
+	text-decoration-thickness: .05em;
+	font-style: normal;
+	line-height: 1.5;
+	font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
 	}
 }
 
@@ -121,11 +141,11 @@ $font-blocky: "degular-variable", sans-serif;
 	color: var(--color-accent);
 	text-decoration: underline;
 	text-underline-offset: 0.2em;
-	font-variation-settings: "ital" 0, "opsz" 20, "wght" 400;
+	font-variation-settings: "ital" 0, "opsz" 20, "wght" 500;
 	text-decoration-thickness: .05em;
 	:global(body.light-mode) &{
 		text-underline-offset: .15em;
-		font-variation-settings: "ital" 0, "opsz" 20, "wght" 500;
+		font-variation-settings: "ital" 0, "opsz" 20, "wght" 600;
 		text-decoration-thickness: .08em;
 	}
 	&:hover{
@@ -138,9 +158,9 @@ $font-blocky: "degular-variable", sans-serif;
 	font-family: $font-std;
 	font-size: $font-size-heading;
 	line-height:1.2;
-	font-variation-settings: "ital" 0, "opsz" 28, "wght" 330;
+	font-variation-settings: "ital" 0, "opsz" 28, "wght" 500;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 28, "wght" 420;
+		font-variation-settings: "ital" 0, "opsz" 28, "wght" 600;
 	}
 }
 
@@ -211,8 +231,11 @@ $font-blocky: "degular-variable", sans-serif;
 }
 
 @mixin body-formatting{
-	*{
+	p, li{
 		@extend %text-body;
+		a{
+			@extend %text-body-link;
+		}
 	}
 	h2, h3, h4, h5, h6{
 		@extend %text-heading;
@@ -221,12 +244,8 @@ $font-blocky: "degular-variable", sans-serif;
 		&:not(:last-child){
 			margin-bottom: 1em;
 		}
-		b, strong{
-			font-weight: 700;
-		}
 	}
 }
-
 
 
 
