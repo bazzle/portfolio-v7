@@ -13,17 +13,23 @@
 }
 
 .mt{
-	margin-top: $block-spacing--shallow;
+	margin-top: $block-spacing;
 }
 .mb{
+	margin-bottom: $block-spacing;
+}
+.mb--deep{
+	margin-bottom: $block-spacing--deep;
+}
+.mb--shallow{
 	margin-bottom: $block-spacing--shallow;
 }
 
 .pt{
-	padding-top: $block-spacing--shallow;
+	padding-top: $block-spacing;
 }
 .pb{
-	padding-bottom: $block-spacing--shallow;
+	padding-bottom: $block-spacing;
 }
 
 .pb--0{
