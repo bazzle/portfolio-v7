@@ -43,7 +43,7 @@
 	}
 }
 .body_text{
-	@extend %text-body;
+	@include body-formatting;
 }
 .diagram{
 	display: flex;

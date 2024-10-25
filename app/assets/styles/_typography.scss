@@ -32,13 +32,8 @@
 }
 
 p.inset-text{
-	font-size: $font-size-body;
+	@extend %text-body-bold;
 	line-height: 1.4;
-	font-variation-settings: "ital" 0, "opsz" 6, "wght" 600;
-	.dark-mode &{
-		font-variation-settings: "wght" 500;
-		letter-spacing: .02em;
-	}
 	color: var(--color-accent-alt);
 	border-left: 3px solid var(--color-accent-alt);
 	padding-left: 2rem;
