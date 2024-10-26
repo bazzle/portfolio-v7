@@ -37,6 +37,7 @@
 	min-height: 10rem;
 	border-top: 1px solid rgba(255,255,255,.07);
 	border-right: 0;
+	position: relative;
 	@include break(mobile){
 		border-right: 1px solid rgba(255,255,255,.05);
 	}
@@ -57,24 +58,23 @@
 		justify-content: center;
 		gap: 2vw;
 		padding: 2vw;
+		position: relative;
 		@include break(mobile){
 			gap: 2rem;
 		}
-	}
-}
-.tile_icon{
-	aspect-ratio: 1/1;
-}
-.icon_container{
-	width: 50%;
-	max-width: 120px;
-	height: auto;
-	aspect-ratio: 1/1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	svg{
-		max-width: 100%;
+		.icon_container{
+			width: 50%;
+			max-width: 120px;
+			height: auto;
+			aspect-ratio: 1/1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			svg{
+				max-width: 100%;
+				z-index: 1;
+			}
+		}
 	}
 }
