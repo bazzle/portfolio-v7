@@ -4,10 +4,10 @@ import VerticalDots from "../../components/vertical-dots";
 import Contacts from "../contacts";
 import Clients from "../clients";
 import React, { useContext } from 'react';
-import { colorThemeContext } from '@/app/context/color-theme';
+import { colourThemeContext } from '@/app/context/colour-theme';
 
 function Hero(){
-	const colorMode = useContext(colorThemeContext);
+	const { colourMode } = useContext(colourThemeContext);
     return(
         <div className={styles.hero}>
             <div className={styles.main_section}>
@@ -18,7 +18,7 @@ function Hero(){
 								My philosophy is
 							</span>
 							<span className={styles.message__main}>
-								Web for <span>everyone</span>
+								Web for <span>Everyone</span>
 							</span>
 							<span className={styles.message__sub}>
 								... But still <span className="highlight">look cool</span>.
