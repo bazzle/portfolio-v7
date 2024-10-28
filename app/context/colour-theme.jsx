@@ -9,10 +9,12 @@ export function ColourThemeProvider({children}){
 
 	const applyLightMode = () => {
 		document.body.classList.add('light-mode');
+		document.body.classList.remove('dark-mode');
 		localStorage.setItem('colourMode', 'light');
 		setColourMode('light');
 	}
 	const applyDarkMode = () => {
+		document.body.classList.add('dark-mode');
 		document.body.classList.remove('light-mode');
 		localStorage.setItem('colourMode', 'dark');
 		setColourMode('dark');
