@@ -32,3 +32,15 @@
 	height: auto;
 	position: relative;
 }
+
+.dark_mode_hide{
+	visibility:hidden;
+	:global(body.light-mode) &{
+		visibility:visible;
+	}
+}
+.dark_mode_nobg{
+	:global(body.dark-mode) &{
+		fill: none;
+	}
+}
