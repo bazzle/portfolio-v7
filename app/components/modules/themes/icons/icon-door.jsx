@@ -1,9 +1,15 @@
+'use client'
 import styles from "./style.module.scss";
+import { useContext } from 'react';
+import { colourThemeContext } from '@/app/context/colour-theme';
 
 function IconDoor({slug}){
+	const { colourMode } = useContext(colourThemeContext);
 	return(
 		<svg className={styles[slug]} width="58" height="77" viewBox="0 0 58 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<rect x="1.625" y="10.4777" width="30.6457" height="55.5043" className="stroke-accent fill-bg-solid" strokeWidth="2"/>
+			<rect x="1.625" y="10.4777" width="30.6457" height="55.5043" className="stroke-accent" strokeWidth="2"/>
+			<path className={styles.dark_mode_hide} d="M14.8184 50C13.6524 48.5749 15.8184 48.2274 16.8184 48C17.8184 47.7726 14.8184 46.5 14.8184 46.5C14.8184 46.5 16.984 46.9164 17.3184 48C17.4464 48.4148 14.0002 48.5 15.5002 50C23.5002 57.5 23.962 58.4583 17.3873 64H11.3184C24.4678 56.0833 19.3184 55.5 14.8184 50Z" fill="#FFAAAA"/>
+			<path className={styles.dark_mode_hide} d="M4 13H30V36C28.8013 34.7222 25.1613 32.8056 21.5213 36C19.4413 34.0833 14.5473 32.1667 12.1613 32.1667C8.00131 32.1667 4 34.7222 4 34.7222V13Z" fill="#FFAAAA"/>
 			<path d="M35.0679 9.47736L55.7335 0.49231V75.9667L35.0679 66.9817" className="stroke-accent" strokeWidth="0.367812"/>
 			<path d="M57.6802 1.24121V75.6674" className="stroke-accent" strokeWidth="2"/>
 			<ellipse cx="49.3892" cy="38.5973" rx="1.53155" ry="3.0631" className="fill-bg-solid"/>
