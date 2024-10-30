@@ -2,6 +2,7 @@ import styles from './style.module.scss';
 import SectionHead from "../../components/section-head";
 import VennDiagram from './venn-diagram';
 import SkillsList from './skills-list';
+import Spacer from '../../components/spacer';
 
 function SkillsAndAbilities(){
 
@@ -19,11 +20,12 @@ function SkillsAndAbilities(){
 			</div>
 			<div className="container">
 				<div className="inner-2col">
-					<div className="col-1 mb">
+					<div className="col-1">
 						<div className={styles.diagram}>
 							<VennDiagram />
 						</div>
 					</div>
+					<Spacer deep mobile/>
 					<div className="col-2 {styles.main_section}">
 						<div className={styles.body_text}>
 							<p>
