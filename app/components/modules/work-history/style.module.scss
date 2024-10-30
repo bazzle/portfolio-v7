@@ -3,7 +3,9 @@
 .work_history{
 	background-color: var(--color-bg);
 	&__sectionHead{
-		margin-top: 10.2rem;
+		@include break(tablet){
+			margin-top: 10.2rem;
+		}
 	}
 	.nav{
 		width: 100%;
