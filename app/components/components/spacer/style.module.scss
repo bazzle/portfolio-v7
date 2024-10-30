@@ -1,0 +1,16 @@
+@use '@/app/assets/styles/all-vars.scss' as *;
+
+.spacer{
+	display: block;
+	height: .5px;
+	background-color: rgba(255, 255, 255, 0.07);
+	border-bottom: var(--color-feint-line);
+	margin-top: $block-spacing--deep;
+	margin-bottom: $block-spacing--deep;
+	&_mobile{
+		display: block;
+		@include break(tablet){
+			display: none;
+		}
+	}
+}
