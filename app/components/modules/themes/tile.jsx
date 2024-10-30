@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 import PropTypes from "prop-types";
 
-function Tile({ component, name, slug }){
+function Tile({ component, name }){
 
 	function iconBlock(){
 		return(
@@ -9,7 +9,7 @@ function Tile({ component, name, slug }){
 		)
 	}
 	return (
-		<div className={`${styles.tile} ${component ? styles.tile_icon : styles.tile_noIcon}`}>
+		<div className={`${styles.tile} ${component ? styles.tile_icon : styles.tile_noicon}`}>
 			<div className={styles.tile__inner}>
 				{component && iconBlock()}
 				<div className={styles.tile__name}>

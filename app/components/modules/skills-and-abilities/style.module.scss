@@ -47,8 +47,5 @@
 }
 .diagram{
 	display: flex;
-	justify-content: flex-start;
-	@include break(tablet){
-		justify-content: center;
-	}
+	justify-content: center;
 }

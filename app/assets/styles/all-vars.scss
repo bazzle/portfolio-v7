@@ -242,6 +242,9 @@ $font-blocky: "degular-variable", sans-serif;
 		@extend %text-heading;
 		margin-bottom: 2rem;
 	}
+	> *:last-child {
+		margin-bottom: 0!important;
+	}
 }
 
 

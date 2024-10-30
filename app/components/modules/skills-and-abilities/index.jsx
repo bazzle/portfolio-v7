@@ -20,12 +20,13 @@ function SkillsAndAbilities(){
 			</div>
 			<div className="container">
 				<div className="inner-2col">
+					<Spacer mobile/>
 					<div className="col-1">
 						<div className={styles.diagram}>
 							<VennDiagram />
 						</div>
 					</div>
-					<Spacer deep mobile/>
+					<Spacer mobile/>
 					<div className="col-2 {styles.main_section}">
 						<div className={styles.body_text}>
 							<p>
