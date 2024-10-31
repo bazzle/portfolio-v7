@@ -1,8 +1,8 @@
 "use client";
 import styles from './style.module.scss';
 import VerticalDots from "./vertical-dots";
-import Contacts from "../contacts";
-import Clients from "../clients";
+import Contacts from "@/app/components/modules/contacts";
+import Clients from "@/app/components/modules/clients";
 import React, { useContext } from 'react';
 import { colourThemeContext } from '@/app/context/colour-theme';
 

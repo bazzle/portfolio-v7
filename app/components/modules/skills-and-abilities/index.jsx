@@ -1,8 +1,8 @@
 import styles from './style.module.scss';
-import SectionHead from "../../components/section-head";
+import SectionHead from '@/app/components/components/section-head';
 import VennDiagram from './venn-diagram';
 import SkillsList from './skills-list';
-import Spacer from '../../components/spacer';
+import Spacer from '@/app/components/components/spacer';
 
 function SkillsAndAbilities(){
 

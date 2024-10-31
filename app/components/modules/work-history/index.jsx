@@ -1,9 +1,9 @@
 'use client'
 import styles from './style.module.scss';
-import SectionHead from "../../components/section-head";
-import { useState } from "react";
+import SectionHead from "@/app/components/components/section-head";
 import ContentSheet from "./content-sheet";
-import Spacer from '../../components/spacer';
+import Spacer from "@/app/components/components/spacer";
+import { useState } from "react";
 
 const ongoingYear = (startYear) => {
 	const currentYear = new Date().getFullYear();
