@@ -1,5 +1,5 @@
 import styles from './style.module.scss';
-import BackTop from '../../components/backtop';
+import BackTop from './backtop';
 
 function Footer(){
 

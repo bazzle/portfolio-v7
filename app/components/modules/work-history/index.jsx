@@ -3,6 +3,7 @@ import styles from './style.module.scss';
 import SectionHead from "../../components/section-head";
 import { useState } from "react";
 import ContentSheet from "./content-sheet";
+import Spacer from '../../components/spacer';
 
 const ongoingYear = (startYear) => {
 	const currentYear = new Date().getFullYear();
@@ -154,6 +155,7 @@ function WorkHistory(){
 					</div>
 				</div>
 			</div>
+		<Spacer/>
         </section>
     )
 }
