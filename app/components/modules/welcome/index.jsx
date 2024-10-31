@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
-import SectionHead from "../../components/section-head";
-import ListItem from '../../components/list-item';
+import SectionHead from '@/app/components/components/section-head';
+import ListItem from '@/app/components/components/list-item';
 
 function Welcome(){
 	return(

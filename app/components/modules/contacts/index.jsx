@@ -1,5 +1,5 @@
 import styles from './style.module.scss';
-import ActionLink from '../../components/action-link';
+import ActionLink from '@/app/components/components/action-link';
 
 function Contacts() {
 	return (
