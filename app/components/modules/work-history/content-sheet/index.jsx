@@ -19,7 +19,9 @@ function ContentSheet({
 						<p className={styles.intro}>
 							{intro}
 						</p>
-						<div className={styles.body_text} dangerouslySetInnerHTML={{ __html: bodyContent }} />
+						<div
+							className={styles.body_text} dangerouslySetInnerHTML={{ __html: bodyContent }}
+						/>
 						<div className={styles.metadata}>
 							<div className={styles.metadata__item}>
 								<h3 className={styles.metadata__heading}>Duration</h3>
