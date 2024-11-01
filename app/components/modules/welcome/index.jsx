@@ -1,10 +1,11 @@
 import styles from './style.module.scss';
 import SectionHead from '@/app/components/components/section-head';
 import ListItem from '@/app/components/components/list-item';
+import Section from '@/app/components/components/section';
 
 function Welcome(){
 	return(
-		<section id="welcome" className={styles.welcome}>
+		<Section id="welcome">
 			<div className="container">
 				<div className="inner-2col">
 					<div className="col-1">
@@ -31,7 +32,7 @@ function Welcome(){
 					</div>
 				</div>
 			</div>
-		</section>
+		</Section>
 	)
 }
 

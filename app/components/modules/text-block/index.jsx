@@ -1,9 +1,10 @@
 import styles from "./style.module.scss";
+import Section from '@/app/components/components/section';
 
 function TextBlock(props){
 
 	return(
-		<section>
+		<Section>
 			<div className={styles.text_block}>
 				<div className="container">
 					<blockquote className={styles.text_block__blockquote}>
@@ -16,7 +17,7 @@ function TextBlock(props){
 					<div></div>
 				</div>
 			</div>
-		</section>
+		</Section>
 	)
 
 }

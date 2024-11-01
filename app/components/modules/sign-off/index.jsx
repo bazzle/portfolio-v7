@@ -1,9 +1,10 @@
 import styles from "./style.module.scss";
+import Section from '@/app/components/components/section';
 
 function SignOff(){
 
 	return(
-		<section className="pb--0">
+		<Section>
 			<div className={styles.sign_off}>
 				<div className="container">
 					<p>
@@ -11,7 +12,7 @@ function SignOff(){
 					</p>
 				</div>
 			</div>
-		</section>
+		</Section>
 	)
 
 }
