@@ -6,10 +6,13 @@
 			padding-top: $block-spacing--shallow;
 		}
 	}
+	.body_text{
+		@include body-formatting;
+		margin-bottom: $block-spacing--shallow;
+	}
 	.metadata{
-		margin-top: $block-spacing--shallow;
 		&__item{
-			margin-bottom: 2rem;
+			margin-bottom: $block-spacing--shallow;
 		}
 		&__heading{
 			@extend %text-heading;
@@ -23,14 +26,14 @@
 	}
 	ul.clients_list{
 		padding-left: 0;
-		column-count: 2;
 		gap: 6rem;
+		column-count: 1;
+		@include break(desktop){
+			column-count: 2;
+		}
 	}
 	.intro{
 		@extend %text-intro;
 		color: var(--color-accent-alt);
-	}
-	.body_text{
-		@include body-formatting;
 	}
 }
