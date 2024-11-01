@@ -5,6 +5,7 @@ import Contacts from "@/app/components/modules/contacts";
 import Clients from "@/app/components/modules/clients";
 import React, { useContext } from 'react';
 import { colourThemeContext } from '@/app/context/colour-theme';
+import BgShapes from '@/app/components/components/bg-shapes';
 
 function Hero(){
 	const { colourMode } = useContext(colourThemeContext);
@@ -50,11 +51,7 @@ function Hero(){
 						</div>
 					</div>
 				</div>
-				<div role="presentation" className={styles.shapes}>
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
+				<BgShapes variant="1" />
             </div>
 			<div className={styles.foot_section}>
 				<div className="container">
