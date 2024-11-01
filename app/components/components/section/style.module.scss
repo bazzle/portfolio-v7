@@ -1,6 +1,5 @@
 @use "@/app/assets/styles/all-vars" as *;
 
 .section{
-	margin-bottom: 10vw;
-	margin-bottom: clamp(6rem, 10vw, 12rem);
+	margin-bottom: clamp(12rem, 14vw, 24rem);
 }

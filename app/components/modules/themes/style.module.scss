@@ -48,12 +48,19 @@
 		text-align: center;
 	}
 	&_icon{
-		aspect-ratio: 1/1;
 		display: block;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		@include break(mobile){
+			padding-top: 0;
+			padding-bottom: 0;
+			aspect-ratio: 1/1;
+			display: block;
+		}
 	}
 	&_noicon{
-		padding-top: 2em;
-		padding-bottom: 2em;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 	}
 	.tile__inner{
 		width: 100%;
@@ -62,18 +69,19 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 2vw;
-		padding: 0 2vw;
+		gap: 1rem;
 		position: relative;
-		@include break(mobile){
+		@include break(tablet){
 			gap: 2rem;
-			padding:0 2rem;
 		}
 		.icon_container{
-			width: 50%;
-			max-width: 120px;
-			height: auto;
-			aspect-ratio: 1/1;
+			// background: gold;
+			@include break(mobile){
+				max-width: 120px;
+				aspect-ratio: 1/1;
+				width: 50%;
+				height: auto;
+			}
 			display: flex;
 			align-items: center;
 			justify-content: center;
