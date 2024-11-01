@@ -1,14 +1,10 @@
-"use client";
 import styles from './style.module.scss';
 import VerticalDots from "./vertical-dots";
 import Contacts from "@/app/components/modules/contacts";
 import Clients from "@/app/components/modules/clients";
-import React, { useContext } from 'react';
-import { colourThemeContext } from '@/app/context/colour-theme';
 import BgShapes from '@/app/components/components/bg-shapes';
 
 function Hero(){
-	const { colourMode } = useContext(colourThemeContext);
     return(
         <div className={styles.hero}>
             <div className={styles.main_section}>
