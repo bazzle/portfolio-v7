@@ -1,5 +1,6 @@
 import styles from './style.module.scss';
 import BackTop from './backtop';
+import BgShapes from '@/app/components/components/bg-shapes';
 
 function Footer(){
 
@@ -17,11 +18,7 @@ function Footer(){
 			<div className={styles.back_top}>
 				<BackTop/>
 			</div>
-			<div role="presentation" className={styles.shapes}>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
+			<BgShapes variant="4" />
         </footer>
     )
 }

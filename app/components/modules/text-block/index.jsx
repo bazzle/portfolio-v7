@@ -1,3 +1,4 @@
+import BgShapes from "../../components/bg-shapes";
 import styles from "./style.module.scss";
 import Section from '@/app/components/components/section';
 
@@ -11,11 +12,7 @@ function TextBlock(props){
 						{props.text}
 					</blockquote>
 				</div>
-				<div role="presentation" className={styles.shapes}>
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
+				<BgShapes variant="2" />
 			</div>
 		</Section>
 	)

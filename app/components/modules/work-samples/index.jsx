@@ -2,6 +2,7 @@ import styles from './style.module.scss';
 import BrowserMobile from './browser-mobile';
 import BrowserDesktop from './browser-desktop';
 import Section from '@/app/components/components/section';
+import BgShapes from '@/app/components/components/bg-shapes';
 
 function WorkSamples(){
     return(
@@ -68,11 +69,7 @@ function WorkSamples(){
 						/>
 					</div>
 				</div>
-				<div role="presentation" className={styles.shapes}>
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
+				<BgShapes variant="3" />
 			</div>
 		</Section>
     )
