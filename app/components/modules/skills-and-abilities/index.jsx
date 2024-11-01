@@ -15,7 +15,7 @@ function SkillsAndAbilities(){
 						<div className="col-1">
 							<SectionHead titleString="Skills and expertise" separator/>
 						</div>
-						<div className="col-2 mb">
+						<div className="col-2">
 							<SkillsList />
 						</div>
 					</div>
