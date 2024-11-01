@@ -4,6 +4,7 @@ import SectionHead from "@/app/components/components/section-head";
 import ContentSheet from "./content-sheet";
 import Spacer from "@/app/components/components/spacer";
 import { useState } from "react";
+import Section from '@/app/components/components/section';
 
 const ongoingYear = (startYear) => {
 	const currentYear = new Date().getFullYear();
@@ -136,27 +137,29 @@ function WorkHistory(){
 		)
 	}
     return (
-        <section className={styles.work_history}>
-			<div className="container">
-				<div className="inner-2col">
-					<div className="col-1">
-						<div className={styles.work_history__sectionHead}>
-							<SectionHead titleString="My story so far" separator/>
+        <Section>
+			<div className={styles.work_history}>
+				<div className="container">
+					<div className="inner-2col">
+						<div className="col-1">
+							<div className={styles.work_history__sectionHead}>
+								<SectionHead titleString="My story so far" separator/>
+							</div>
+						</div>
+						<div className="col-2">
+							<nav role="tablist" className={styles.nav}>
+								{navItem(0)}
+								{navItem(1)}
+								{navItem(2)}
+								{navItem(3)}
+							</nav>
+							{activeSection.content()}
 						</div>
 					</div>
-					<div className="col-2">
-						<nav role="tablist" className={styles.nav}>
-							{navItem(0)}
-							{navItem(1)}
-							{navItem(2)}
-							{navItem(3)}
-						</nav>
-						{activeSection.content()}
-					</div>
 				</div>
+				<Spacer/>
 			</div>
-		<Spacer/>
-        </section>
+        </Section>
     )
 }
 
