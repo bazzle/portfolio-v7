@@ -17,12 +17,12 @@ function SkillsAndAbilities(){
 						</div>
 						<div className="col-2">
 							<SkillsList />
+							<Spacer shallow />
 						</div>
 					</div>
 				</div>
 				<div className="container">
 					<div className="inner-2col">
-						<Spacer mobile/>
 						<div className="col-1">
 							<div className={styles.diagram}>
 								<VennDiagram />
