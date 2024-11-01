@@ -18,7 +18,6 @@
 		// filled bg shape
 		&:nth-of-type(2){
 			aspect-ratio: 1/1;
-			background-color: var(--color-accent);
 			opacity: .05;
 			border-radius: 50%;
 			mix-blend-mode: color-dodge;
@@ -32,7 +31,8 @@
 			top: 0;
 			right: 25vw;
 			mix-blend-mode: color-dodge;
-			border: .5px solid var(--color-accent);
+			border-width: .5px;
+			border-style: solid;
 		}
 	}
 	&_1{
@@ -62,7 +62,7 @@
 				transform:translate(50%, -25%);
 				top: 0;
 				right: 25vw;
-				border: .5px solid var(--color-accent);
+				border-color: var(--color-accent);
 			}
 		}
 	}
@@ -91,7 +91,7 @@
 				transform:translate(50%, -25%);
 				top: 0;
 				right: 25vw;
-				border: .5px solid var(--color-accent);
+				border-color: var(--color-accent);
 			}
 		}
 	}
@@ -120,7 +120,7 @@
 				transform:translate(50%, -25%);
 				top: 0;
 				right: 25vw;
-				border: .5px solid var(--color-accent);
+				border-color: var(--color-accent);
 			}
 		}
 	}
@@ -151,6 +151,7 @@
 				top: 0;
 				left: 0;
 				border: .5px solid var(--color-accent-alt);
+				border-color: var(--color-accent);
 			}
 		}
 	}
