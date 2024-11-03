@@ -85,70 +85,9 @@
 	display: block;
 	@extend %text-medium;
 }
-.side_furniture{
+.side_furniture_container{
 	position: relative;
 	@include break(tablet){
-		right: calc(8vw - 5px);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 4rem;
-		padding-top: 4rem;
-		padding-bottom: 12rem;
-		width: 10px;
-	}
-	&__dots{
-		flex-grow: 1;
-		display: none;
-		@include break(tablet){
-			display: block;
-		}
-	}
-	&__tick{
-		position: relative;
-		height: 55px;
-		width: 10px;
-		display: none;
-		@include break(tablet){
-			display: block;
-		}
-		svg{
-			position: absolute;
-			width: 70px;
-			height: 55px;
-			top: 0;
-			left: 12px;
-			transform: translateX(-50%);
-			path, clipPath, rect{
-				fill: var(--color-accent-alt);
-			}
-		}
-	}
-	&__profile{
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		transform: translateY(50%);
-		@include break(tablet){
-			transform: translateY(0);
-			position: absolute;
-			bottom: -8rem;
-			right: 0;
-			height: 16rem;
-			width: 10px;
-		}
-		svg{
-			width: 12rem;
-			height: 12rem;
-			fill: var(--color-accent);
-			@include break(tablet){
-				width: 16rem;
-				height: 16rem;
-				position: absolute;
-				left: 12px;
-				top: -4px;
-				transform: translateX(-50%);
-			}
-		}
+		right: calc(8vw - 10px);
 	}
 }
