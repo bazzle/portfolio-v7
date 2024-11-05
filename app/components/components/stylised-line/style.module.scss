@@ -1,0 +1,25 @@
+@use "@/app/assets/styles/all-vars" as *;
+
+.stylised_line{
+	width: 100%;
+	position: relative;
+	top: -12.5px;
+	svg{
+		position: relative;
+		display: block;
+		width: 25px;
+		height: 25px;
+		left: 1.5vw;
+		fill: var(--color-accent);
+	}
+}
+.line{
+	position: absolute;
+	top: 12.5px;
+	right: 0;
+	height: 1px;
+	width: 0;
+	border: none;
+	background-color: var(--color-accent);
+	display: block;
+}

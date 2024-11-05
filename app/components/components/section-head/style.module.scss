@@ -4,26 +4,9 @@
 	position: relative;
 	width: 100%;
 }
-.separator{
-	border-top: 1px solid var(--color-accent);
-	width: 100%;
-	position: relative;
-	svg{
-		display: block;
-		position: absolute;
-		width: 25px;
-		height: 25px;
-		left: 1.5vw;
-		top: 0;
-		fill: var(--color-accent);
-		position: absolute;
-		transform: translate(0, -50%);
-	}
-}
 .title{
 	margin: 0;
 	padding-left: calc(1.5vw + 1.1em);
-	padding-top: 1.5rem;
 	padding-bottom: 3rem;
 	@extend %text-heading;
 	color: var(--color-accent);
