@@ -9,7 +9,7 @@ function TextBlock(props){
 			<div className={styles.text_block}>
 				<div className="container">
 					<blockquote className={styles.text_block__blockquote}>
-						{props.text}
+						<p>{props.text}</p>
 					</blockquote>
 				</div>
 				<BgShapes variant="2" />

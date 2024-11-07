@@ -6,11 +6,6 @@ import Spacer from "@/app/components/components/spacer";
 import { useState } from "react";
 import Section from '@/app/components/components/section';
 
-const ongoingYear = (startYear) => {
-	const currentYear = new Date().getFullYear();
-	return currentYear - startYear
-}
-
 function WorkHistory(){
 	let sections = [
 		{

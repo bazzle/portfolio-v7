@@ -3,6 +3,7 @@
 
 .side_furniture{
 	position: relative;
+	height: 100%;
 	@include break(tablet){
 		display: flex;
 		flex-direction: column;

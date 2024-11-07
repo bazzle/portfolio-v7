@@ -16,6 +16,7 @@ function ContentSheet({
 			<div id={`panel-${id}`} className={styles.content_sheet} role="tabpanel">
 				<div className="inner-2col">
 					<div className={styles.content_sheet__main}>
+						<h3 className="visually-hidden">{name}</h3>
 						<p className={styles.intro}>
 							{intro}
 						</p>
@@ -24,11 +25,11 @@ function ContentSheet({
 						/>
 						<div className={styles.metadata}>
 							<div className={styles.metadata__item}>
-								<h3 className={styles.metadata__heading}>Duration</h3>
+								<h4 className={styles.metadata__heading}>Duration</h4>
 								<p className={styles.duration}>{duration}</p>
 							</div>
 							<div className={styles.metadata__item}>
-								<h3 className={styles.metadata__heading}>Clients</h3>
+								<h4 className={styles.metadata__heading}>Clients</h4>
 								<ul className={styles.clients_list}>
 									{clients.map((item, index) => {
 										return <ListItem key={index} blocky content={item}/>
