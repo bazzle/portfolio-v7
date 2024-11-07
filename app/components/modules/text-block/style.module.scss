@@ -5,13 +5,16 @@
 	background-size: auto;
 	background-repeat: repeat;
 	background-image: url("/assets/images/texture-dark.jpg");
+	border-top: .5px solid var(--color-accent);
+	border-bottom: .5px solid var(--color-accent-alt);
 	:global(body.light-mode) &{
 		background-image: url("/assets/images/texture-light.jpg");
 	}
 	&__blockquote{
 		margin-block-start: unset;
 		margin-block-end: unset;
-		padding: 2em 0;
+		padding-top: clamp(9rem, 10.5vw, 14rem);
+		padding-bottom: clamp(9rem, 10.5vw, 14rem);
 		display: block;
 		@extend %text-display-small;
 		text-align: center;
