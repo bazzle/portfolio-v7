@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import Section from '@/app/components/components/section';
+import {SignoffContent} from '@/app/content/body-content';
 
 function SignOff(){
 
@@ -8,7 +9,7 @@ function SignOff(){
 			<div className={styles.sign_off}>
 				<div className="container">
 					<p>
-						Thankyou, have a great day!
+						{SignoffContent.title}
 					</p>
 				</div>
 			</div>

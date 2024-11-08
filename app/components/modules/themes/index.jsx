@@ -8,6 +8,7 @@ import IconPieces from "./icons/icon-pieces.jsx";
 import IconShapes from "./icons/icon-shapes.jsx";
 import IconTag from "./icons/icon-tag.jsx";
 import Section from '@/app/components/components/section';
+import { themesContent } from "@/app/content/body-content";
 
 function Themes(){
 	return(
@@ -17,7 +18,7 @@ function Themes(){
 				<div className="container">
 					<div className="inner-2col">
 						<div className="col-1">
-							<SectionHead titleString="Things I think about" separator />
+							<SectionHead titleString={themesContent.title} separator />
 						</div>
 						<div className="col-2">
 							<div className={styles.tile_container}>

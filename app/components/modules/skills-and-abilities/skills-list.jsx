@@ -1,18 +1,9 @@
 import styles from "./style.module.scss";
+import { SkillsContent } from "@/app/content/body-content";
 
 function SkillsList(){
 
-	const skillsItems = [
-        { id: 1, name: 'HTML/DOM',  rating: 5 },
-        { id: 2, name: 'CSS/SASS',  rating: 5 },
-        { id: 3, name: 'Vanilla JS',  rating: 4 },
-        { id: 4, name: 'React',  rating: 3 },
-        { id: 5, name: 'Git',  rating: 4 },
-        { id: 6, name: 'WordPress',  rating: 4 },
-        { id: 7, name: 'PHP',  rating: 3 },
-        { id: 8, name: 'Three.js',  rating: 1 },
-        { id: 9, name: 'Figma',  rating: 5 }
-	];
+	const skillsItems = SkillsContent.skillsItems
 	skillsItems.sort((a, b) => b.rating - a.rating);
 
     const ratingsAdd = (number) => {
