@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 import PropTypes from 'prop-types';
-import ListItem from '../../../components/list-item';
+import ListItem from '@/app/components/components/list-item';
 
 function ContentSheet({
 		id,
@@ -11,7 +11,16 @@ function ContentSheet({
 		intro,
 		bodyContent
 	}) {
-		const duration = endDate ? `${startDate - endDate} years` : 'Ongoing';
+		const ongoingYear = (startDate) => {
+			const currentYear = new Date().getFullYear();
+			return currentYear - startDate
+		}
+		let duration
+		if (typeof endDate === 'string' || endDate === null){
+			duration = `Ongoing ~ ${ongoingYear(startDate)} years`
+		} else {
+			duration = `~ ${endDate - startDate} years`
+		}
 		return (
 			<div id={`panel-${id}`} className={styles.content_sheet} role="tabpanel">
 				<div className="inner-2col">
@@ -20,13 +29,15 @@ function ContentSheet({
 						<p className={styles.intro}>
 							{intro}
 						</p>
-						<div
-							className={styles.body_text} dangerouslySetInnerHTML={{ __html: bodyContent }}
-						/>
+						<div className={styles.body_text} >
+							{bodyContent}
+						</div>
 						<div className={styles.metadata}>
 							<div className={styles.metadata__item}>
 								<h4 className={styles.metadata__heading}>Duration</h4>
-								<p className={styles.duration}>{duration}</p>
+								<p className={styles.duration}>
+									{duration}
+								</p>
 							</div>
 							<div className={styles.metadata__item}>
 								<h4 className={styles.metadata__heading}>Clients</h4>
@@ -46,7 +57,7 @@ function ContentSheet({
 ContentSheet.propTypes = {
 	name: PropTypes.string.isRequired,
 	startDate: PropTypes.number.isRequired,
-	endDate: PropTypes.number,
+	endDate: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	clients: PropTypes.array.isRequired,
 	intro: PropTypes.string,
 	bodyContent: PropTypes.string.isRequired,
