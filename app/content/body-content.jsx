@@ -25,7 +25,9 @@ export const WelcomeContent = {
 	}
 }
 
-export const TextBlock1Content = "I call myself a design engineer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally captivating.";
+export const TextBlocks = [
+	"I call myself a design engineer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally captivating."
+]
 
 export const SkillsContent = {
 	title: "Skills and Expertise",
@@ -59,6 +61,10 @@ export const SkillsContent = {
 
 export const themesContent = {
 	title: 'Things I think about'
+}
+
+export const workSamplesContent = {
+	title: 'Work samples coming soon!'
 }
 
 export const WorkHistoryContent = {
@@ -124,4 +130,8 @@ export const WorkHistoryContent = {
 			}
 		}
 	]
+}
+
+export const SignoffContent = {
+	title: 'Thankyou, have a great day!'
 }

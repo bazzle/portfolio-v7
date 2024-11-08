@@ -3,13 +3,14 @@ import BrowserMobile from './browser-mobile';
 import BrowserDesktop from './browser-desktop';
 import Section from '@/app/components/components/section';
 import BgShapes from '@/app/components/components/bg-shapes';
+import {workSamplesContent} from '@/app/content/body-content';
 
 function WorkSamples(){
     return(
 		<Section>
 			<div className={styles.work_samples}>
 				<div className={styles.title_section}>
-					<h2 className={styles.title_section_text}>Work samples coming soon!</h2>
+					<h2 className={styles.title_section_text}>{workSamplesContent.title}</h2>
 				</div>
 				<div className={styles.main}>
 					<div className={styles.strip}>

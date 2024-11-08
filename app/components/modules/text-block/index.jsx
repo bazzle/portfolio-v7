@@ -1,16 +1,19 @@
 import BgShapes from "../../components/bg-shapes";
 import styles from "./style.module.scss";
 import Section from '@/app/components/components/section';
+import {TextBlocks} from '@/app/content/body-content';
 
 function TextBlock(props){
 
 	return(
 		<Section>
 			<div className={styles.text_block}>
-				<div className="container">
-					<blockquote className={styles.text_block__blockquote}>
-						<p>{props.text}</p>
-					</blockquote>
+				<div className={styles.text_block__inner}>
+					<div className="container">
+						<blockquote className={styles.text_block__blockquote}>
+							<p>{TextBlocks[props.index]}</p>
+						</blockquote>
+					</div>
 				</div>
 				<BgShapes variant="2" />
 			</div>

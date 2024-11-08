@@ -15,7 +15,7 @@ function Home(){
 		<main>
 			<Hero/>
 			<Welcome/>
-			<TextBlock text="I call myself a design engineer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally captivating."/>
+			<TextBlock index={0}/>
 			<SkillsAndAbilities/>
 			<Themes/>
 			<WorkSamples/>

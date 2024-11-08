@@ -10,6 +10,10 @@
 	:global(body.light-mode) &{
 		background-image: url("/assets/images/texture-light.jpg");
 	}
+	&__inner{
+		position: relative;
+		z-index: 1;
+	}
 	&__blockquote{
 		margin-block-start: unset;
 		margin-block-end: unset;
