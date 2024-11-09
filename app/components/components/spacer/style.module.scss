@@ -19,4 +19,9 @@
 			margin-bottom: $block-spacing--shallow;
 		}
 	}
+	&_noline{
+		background-color: transparent;
+		border-bottom: 0;
+		margin-bottom: 0;
+	}
 }

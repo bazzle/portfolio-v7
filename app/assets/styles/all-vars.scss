@@ -128,10 +128,14 @@ $font-blocky: "degular-variable", sans-serif;
 	text-underline-offset: 0.1em;
 	text-decoration-thickness: .05em;
 	font-style: normal;
-	line-height: 1.5;
-	font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
-	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
+	line-height: 1.5;:global(body.light-mode) &{
+		text-underline-offset: .15em;
+		font-variation-settings: "ital" 0, "opsz" 20, "wght" 600;
+		text-decoration-thickness: .08em;
+	}
+	&:hover{
+		text-decoration: none;
+		color: var(--color-foreground);
 	}
 }
 

@@ -1,9 +1,9 @@
 import styles from './style.module.scss';
 
-function Spacer(props){
-	const classString = `${styles.spacer} ${props.mobile ? styles.spacer_mobile : ''} ${props.shallow ? styles.spacer_shallow : ''}`;
+function Spacer({shallow, mobile, noLine}){
+	const classString =`${styles.spacer} ${mobile ? styles.spacer_mobile : ''} ${shallow ? styles.spacer_shallow : ''} ${noLine ? styles.spacer_noline : ''}`.trim();
 	return(
-		<div className={classString} role="presentation">
+		<div className={classString || undefined} role="presentation">
 		</div>
 	)
 }
