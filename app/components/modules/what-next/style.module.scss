@@ -1,0 +1,5 @@
+@use "@/app/assets/styles/all-vars" as *;
+
+.body_text{
+	@include body-formatting;
+}

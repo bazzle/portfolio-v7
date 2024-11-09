@@ -8,7 +8,7 @@ import Themes from "./components/modules/themes";
 import Typesheet from "./components/modules/type-sheet/type-sheet";
 import TextBlock from "./components/modules/text-block";
 import SignOff from "./components/modules/sign-off";
-import Section from "./components/components/section";
+import WhatNext from "./components/modules/what-next";
 
 function Home(){
 	return(
@@ -20,6 +20,7 @@ function Home(){
 			<Themes/>
 			<WorkSamples/>
 			<WorkHistory/>
+			<WhatNext/>
 			<SignOff/>
 		</main>
 	)
