@@ -13,9 +13,9 @@
 	}
 	background-size: auto;
 	background-repeat: repeat;
-	z-index: 1;
 	border-bottom: .5px solid white;
 	&__inner{
+		z-index: 1;
 		position: relative;
 		display: flex;
 		justify-content: space-between;
