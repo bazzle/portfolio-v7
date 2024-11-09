@@ -17,8 +17,8 @@
 	&__blockquote{
 		margin-block-start: unset;
 		margin-block-end: unset;
-		padding-top: clamp(9rem, 10.5vw, 14rem);
-		padding-bottom: clamp(9rem, 10.5vw, 14rem);
+		padding-top: clamp(6rem, 10.5vw, 14rem);
+		padding-bottom: clamp(6rem, 10.5vw, 14rem);
 		display: block;
 		@extend %text-display-small;
 		text-align: center;
