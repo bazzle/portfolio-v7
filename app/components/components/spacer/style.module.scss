@@ -13,6 +13,12 @@
 			display: none;
 		}
 	}
+	&_nomobile{
+		display: none;
+		@include break(tablet){
+			display: block;
+		}
+	}
 	&_shallow{
 		@include break(tablet){
 			margin-top: $block-spacing--shallow;

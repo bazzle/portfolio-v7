@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 import Spacer from '@/app/components/components/spacer';
 
 function Section({ children, id, classes, noSpacer, line }) {
-  const classString = (classes ? classes : '').trim();
+  const classString = (classes ? classes : '').replace(/\s+/g, ' ');
 
   // Use classString as the value for the className attribute
   return (
