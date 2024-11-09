@@ -64,7 +64,6 @@ function WorkHistory(){
 						</div>
 					</div>
 				</div>
-				<Spacer/>
 			</div>
         </Section>
     )
