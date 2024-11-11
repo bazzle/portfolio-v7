@@ -12,7 +12,7 @@ export const WelcomeContent = {
 				My work within the public sector for Helpful Digital and dxw has instilled in me strong appreciation for accessibility. One thing I’ve carried with me is the notion that accessibility standards aren’t exclusively for people with disabilities. In catering to disabilites we’re making the web better for everyone.
 			</p>
 			<p>
-				When I design a website, I think of accessibility as a baseline. From there, I seek to bring understated creative flair, using typography, hierarchy, animation and colour. I’m experienced at working with clients to help unlock that missing piece, that elusive “pop” that their website needs. I’m a design minimalist, I believe small changes make big differences. I take a pragmatic approach and I’m sympathetic to client and user needs.
+				When I design and develop a website, I think of accessibility as a baseline. From there, I seek to bring understated creative flair, using typography, hierarchy, animation and colour. I’m experienced at working with clients to help unlock that missing piece, that elusive “pop” that their website needs. I’m a design minimalist, I believe small changes make big differences. I take a pragmatic approach and I’m sympathetic to client and user needs.
 			</p>
 			</>
 		)
@@ -134,7 +134,7 @@ export const WhatNextContent = {
 		return(
 			<>
 			<p>
-				dsdsds
+				I‘m looking to use my skills 
 			</p>
 			</>
 		)

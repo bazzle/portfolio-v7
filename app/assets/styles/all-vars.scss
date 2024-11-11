@@ -21,7 +21,7 @@ $border-radius: 4px;
 $gutter-padding: 4vw;
 $block-spacing: clamp(3.5rem, 6vw, 6.5rem);
 $block-spacing--shallow: clamp(2rem, 4vw, 4.5rem);
-$block-spacing--deep: clamp(4.5rem, 8vw, 12rem);
+$block-spacing--deep: clamp(8rem, 12vw, 14rem);
 $column-gap: clamp(2rem, 5vw, 5rem);
 $site-width: 1100px;
 $site-width-margins: calc(($site-width + $gutter-padding) + $gutter-padding);
@@ -47,7 +47,7 @@ $font-size-medium: responsiveSize(3.2, 30, 3.2);
 // Default font size
 $font-size-std: responsiveSize(2, 20, 2);
 // For body only
-$font-size-body: responsiveSize(2, 20, 2);
+$font-size-body: responsiveSize(2.2, 20, 2.2);
 // For body standaouts
 $font-size-body-intro: responsiveSize(2.6, 5, 2.6);
 // For blocky text, taglines and other reasons
@@ -242,6 +242,7 @@ $font-blocky: "degular-variable", sans-serif;
 		a{
 			@extend %text-body-link;
 		}
+		max-width: 45ch;
 	}
 	h2, h3, h4, h5, h6{
 		@extend %text-heading;

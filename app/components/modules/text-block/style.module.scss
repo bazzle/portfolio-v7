@@ -29,13 +29,9 @@
 			position: relative;
 			margin-bottom: 0;
 			color: transparent;
-			background: linear-gradient(180deg, white 75%, var(--color-accent) 100% );
+			background: linear-gradient(180deg, var(--color-foreground) 75%, var(--color-accent) 100% );
 			background-clip: text;
     		-webkit-background-clip: text;
-		}
-		:global(body.light-mode) &{
-			color: var(--color-foreground-alt);
-			text-shadow: 0 .01em .5em rgba(255,255,255,1);
 		}
 		max-width: 80vw;
 		@include break(tablet){
