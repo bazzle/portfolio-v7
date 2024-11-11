@@ -28,6 +28,8 @@
 	&_noline{
 		background-color: transparent;
 		border-bottom: 0;
-		margin-bottom: 0;
+		@include break(tablet){
+			margin-bottom: 0;
+		}
 	}
 }
