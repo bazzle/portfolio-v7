@@ -5,15 +5,15 @@ export const WelcomeContent = {
 	bodyContent: () => {
 		return(
 			<>
-			<p>
-				Throughout my career of over a decade of delivering web projects – working with some great people, keeping an open mind and constantly learning and iterating – I believe I have forged an optimal approach to deliver fantastic web projects and a <b>set of principles</b> that I stand by as much as I can.
-			</p>
-			<p>
-				My work within the public sector for Helpful Digital and dxw has instilled in me strong appreciation for accessibility. One thing I’ve carried with me is the notion that accessibility standards aren’t exclusively for people with disabilities. In catering to disabilites we’re making the web better for everyone.
-			</p>
-			<p>
-				When I design and develop a website, I think of accessibility as a baseline. From there, I seek to bring understated creative flair, using typography, hierarchy, animation and colour. I’m experienced at working with clients to help unlock that missing piece, that elusive “pop” that their website needs. I’m a design minimalist, I believe small changes make big differences. I take a pragmatic approach and I’m sympathetic to client and user needs.
-			</p>
+				<p>
+					I‘m Barry, I have been working as a creative web developer for several years on a variety of projects. I currently work with the great people at dxw for a variety of public and third-sector organisations.
+				</p>
+				<p>
+					Working within the public sector has instilled in me a strong appreciation for web standards, accessibility and user centred design. These principles form my baseline. From there I seek to bring understated creative flair using typography, hierarchy, animation and colour.
+				</p>
+				<p>
+					I‘m a design minimalist, I believe small changes make big differences. I take a pragmatic approach and I‘m sympathetic to client and user needs. I have endless curiosity and desire to figure out how to improve a piece of the UI, or find that elusive “pop”
+				</p>
 			</>
 		)
 	}
@@ -29,10 +29,13 @@ export const SkillsContent = {
 		return(
 			<>
 				<p>
-					People talk a lot about their “happy place”. For me it’s being creative and experimenting, utilising the wealth of freely available languages and libraries. I have extensive experience with fundamental front-end technologies including vanilla javascript, and I’m getting to grips with React. I’ve worked on WordPress projects extensively throughout my professional experience. 
+					People talk a lot about their “happy place”. For me it’s being creative and experimenting. Playing around, learning new languages, libraries and tools and working towards meeting a need or providing something of value.
 				</p>
 				<p>
-					I have experience in many phases of development, with varying levels of involvement within Agile and Kanban development teams. I have created initial wireframes, built interactive prototypes, assisted user research sessions, developed mockups in Figma and collaborated with other developers in production build. Aswell as the less flashy things like responding to support requests, conducting accessibility audits and carrying out the necessary remediation work.
+					I have experience in many phases of development, with varying levels of involvement within Agile and Kanban development teams.
+				</p>
+				<p>
+					I have created initial wireframes, built interactive prototypes, assisted user research sessions, developed mockups in Figma, held collaborative design sessions and worked with other developers in production build. Aswell as the less flashy things like responding to support requests, conducting accessibility audits and the necessary remediation work.
 				</p>
 			</>
 		)
@@ -75,13 +78,51 @@ export const WorkHistoryContent = {
 				"National Health Service",
 				"National Audit Office"
 			],
-			intro: "dxw is a digital agency that works with the public and third sectors.",
+			intro: "dxw is a digital agency that works with the public and third sectors to achieve better outcomes for citizens and business, and replacing legacy systems with more efficient and sustainable digital products",
 			content: () => {
 				return(
 					<>
 						<p>
-							Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+							After a spell of freelancing, I was offered a permanent role within the GovPress team. Focussing on content managed websites for our clients. Much of my work is updating websites with new brand guidelines and migrating to the new Gutenburg block editor.
 						</p>
+						<p>
+							My first project was the design of the Screen Culture 2033 strategy micro-site and blog. I also paired with the tech-lead in the development of the site, using WordPress and utilising elements from BFI’s style guide.
+						</p>
+						<p>
+							I also joined the Interaction Design team to develop a tool for Probation officers to find temporary accommodation for prison leavers at risk of homelessness. Using the gov.uk design system and elements from the MoJ pattern library, I designed the service up until nation-wide rollout. Responding to several rounds of user testing.
+						</p>
+					</>
+				)
+			}
+		},
+		{
+			name: "Freelance",
+			id: "freelance",
+			startDate: 2015,
+			endDate: "present",
+			clients: [
+				"Fat Beehive",
+				"Geckoboard",
+				"Shelter",
+				"Recipe",
+				"Helpful Digital"
+			],
+			intro: "I have done various contracts for companies in London",
+			content: () => {
+				return(
+					<>
+						<h4>Fat Beehive</h4>
+						<p>Fat Beehive are a digital agency serving the charity sector. I was involved in wireframing, look and feel design and build of several websites including The British Academy, Chevening and Croydon Pride.</p>
+						<h4>Geckoboard</h4>
+						<p>Geckoboard produce TV dashboards to display key performance data for customer service and SAAS companies. I worked on the main website, and various campaign landing pages.</p>
+						<h4>Shelter</h4>
+						<p>Working within the digital and marketing teams, I was involved in the build of landing pages and email campaigns using the brand guidelines. I also did some front-end work on the main website, addressing support requests.</p>
+						<h4>Fat Beehive</h4>
+						<p>Fat Beehive are a digital agency serving the charity sector. I was involved in wireframing, look and feel design and build of several websites including The British Academy, Chevening and Croydon Pride.</p>
+						<h4>Recipe</h4>
+						<p>Recipe are an advertising agency. I worked on their advertising marketplace web app, linking companies looking for ad space with networks. Involved in the discovery phase, wireframing and mockups.</p>
+						<h4>Helpful Digital</h4>
+						<p>Helpful do training and web builds for government initiatives and charities. I designed and built various websites including a government owned property company and a fund for tech startups in Africa. I also worked on various digital tools Helpful use for crisis traning.</p>
 					</>
 				)
 			}
@@ -89,15 +130,15 @@ export const WorkHistoryContent = {
 		{
 			name: "Hamilton Brown",
 			id: "hamilton-brown",
-			startDate: 2015,
-			endDate: 2018,
+			startDate: 2020,
+			endDate: 2021,
 			clients: ["BDO Store", "Lionpoint"],
-			intro: "Hamilton-Brown is a creative agency based in London",
+			intro: "Hamilton-Brown is a full-service creative agency based in London. They deliver dedicated B2B support where and when needed for regional and global clients.",
 			content: () => {
 				return(
 					<>
-						<p>This is an &ldquo;example&rdquo; sentence in JSX.
-							Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+						<p>
+							As part of the digital team designing and developing B2B marketing and campaign websites, I was instrumental in transitioning our build process from page-builder tools to bespoke WordPress development. I designed and assited the development of a storefront for a corporate accounting company that sells various digital accounting tools. And maintained the product through multiple releases over the course of about a year.
 						</p>
 					</>
 				)
@@ -106,15 +147,14 @@ export const WorkHistoryContent = {
 		{
 			name: "Stepladder",
 			id: "stepladder",
-			startDate: 2015,
-			endDate: 2018,
-			clients: ["Canary Wharf Group"],
-			intro: "Stepladder is a creative agency based in London",
+			startDate: 2013,
+			endDate: 2015,
+			intro: "Stepladder is a branding agency that specialises in the high-end commercial property market. Capturing the energy of spaces through strategic thinking and distinctive creative campaigns.",
 			content: () => {
 				return(
 					<>
 						<p>
-							Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+							Stepladder produces printed material to an extremely high standard of quality, using high grade materials and cutting-edge printing techniques. I was brought in to extend this standard to their online material. Working with the designers to translate their brand designs to digital form. I produced interactive interfaces for users to find out about local amenities, infrastructure and the characteristics of the spaces themselves — maps, representations of floor plans and various layout configurations.
 						</p>
 					</>
 				)
@@ -123,20 +163,22 @@ export const WorkHistoryContent = {
 	]
 }
 
-export const SignoffContent = {
-	title: 'Thankyou, have a great day!'
-}
-
-
 export const WhatNextContent = {
 	title: "What's next?",
 	bodyContent: () => {
 		return(
 			<>
 			<p>
-				I‘m looking to use my skills 
+				I am looking for a job where I have the opportunity to both use my existing experience and diversify my current skill-set by learning new things, as I firmly believe in learning by doing. My perfect employer would be a small to medium sized company that doesn’t have a rigid adherence to siloed job roles. And a company that creates value by doing something innovative and perhaps against the mould. I am passionate about new technologies and paradigms. Decentralised protocols such as Bitcoin and Nostr interest me greatly.
+			</p>
+			<p>
+				If you have something you think I’d be interested in, please <a href="mailto:barry@br-web.me">drop me an email!</a>
 			</p>
 			</>
 		)
 	}
+}
+
+export const SignoffContent = {
+	title: 'Thankyou, have a great day!'
 }
