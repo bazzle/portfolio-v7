@@ -43,15 +43,6 @@
 	padding-bottom: $block-spacing--deep;
 }
 
-.visually-hidden{
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-}
-
 .color-accent{
 	color: var(--color-accent);
 }
@@ -95,6 +86,10 @@
 }
 .stroke-accent-alt{
 	stroke: var(--color-accent-alt);
+}
+
+.hidden{
+	display: none;
 }
 
 .visually-hidden {
