@@ -21,6 +21,23 @@ function ContentSheet({
 		} else {
 			duration = `~ ${endDate - startDate} years`
 		}
+
+		const clientList = () => {
+			if (clients){
+				return (
+					<div className={styles.metadata__item}>
+						<h4 className={styles.metadata__heading}>Clients</h4>
+						<ul className={styles.clients_list}>
+							{clients.map((item, index) => {
+								return <ListItem key={index} blocky content={item}/>
+							})}
+						</ul>
+					</div>
+				)
+			} else {
+				return false
+			}
+		}
 		return (
 			<div id={`panel-${id}`} className={styles.content_sheet} role="tabpanel">
 				<div className="inner-2col">
@@ -39,14 +56,7 @@ function ContentSheet({
 									{duration}
 								</p>
 							</div>
-							<div className={styles.metadata__item}>
-								<h4 className={styles.metadata__heading}>Clients</h4>
-								<ul className={styles.clients_list}>
-									{clients.map((item, index) => {
-										return <ListItem key={index} blocky content={item}/>
-									})}
-								</ul>
-							</div>
+							{clientList()}
 						</div>
 					</div>
 				</div>
@@ -58,7 +68,7 @@ ContentSheet.propTypes = {
 	name: PropTypes.string.isRequired,
 	startDate: PropTypes.number.isRequired,
 	endDate: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-	clients: PropTypes.array.isRequired,
+	clients: PropTypes.array,
 	intro: PropTypes.string,
 	bodyContent: PropTypes.string.isRequired,
 };
