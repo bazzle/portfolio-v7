@@ -52,15 +52,13 @@ function WorkHistory(){
 							<nav role="tablist" className={styles.nav}>
 								{ sectionsArray.map((item, index) => navItem(item, index)) }
 							</nav>
-							<ContentSheet
-								name={activeSection.name}
-								id={activeSection.id}
-								startDate={activeSection.startDate}
-								endDate={activeSection.endDate}
-								clients={activeSection.clients}
-								intro={activeSection.intro}
-								bodyContent={activeSection.content()}
-							/>
+							{sectionsArray.map((item, index) => (
+								<ContentSheet
+									key={index}
+									contentSheetObj = {item}
+									isHidden = {item === activeSection ? false : true}
+								/>
+							))}
 						</div>
 					</div>
 				</div>
