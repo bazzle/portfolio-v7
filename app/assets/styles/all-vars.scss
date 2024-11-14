@@ -89,7 +89,7 @@ $font-blocky: "degular-variable", sans-serif;
 	font-family: $font-text;
 	font-size: $font-size-std;
 	font-style: normal;
-	line-height: 1.3;
+	line-height: 1.4;
 	letter-spacing:.02em;
 	font-variation-settings: "ital" 0, "opsz" 16, "wght" 300;
 	:global(body.light-mode) &{
@@ -239,6 +239,24 @@ $font-blocky: "degular-variable", sans-serif;
 	p:not([class]), li:not([class]){
 		margin-bottom: 2rem;
 		@extend %text-body;
+		a{
+			@extend %text-body-link;
+		}
+		max-width: 45ch;
+	}
+	h2, h3, h4, h5, h6{
+		@extend %text-heading;
+		margin-bottom: 2rem;
+	}
+	> *:last-child {
+		margin-bottom: 0!important;
+	}
+}
+
+@mixin body-formatting-small{
+	p:not([class]), li:not([class]){
+		margin-bottom: 2rem;
+		@extend %text-std;
 		a{
 			@extend %text-body-link;
 		}

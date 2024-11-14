@@ -9,6 +9,9 @@
 	.body_text{
 		@include body-formatting;
 		margin-bottom: $block-spacing--shallow;
+		p{
+			max-width: unset!important;
+		}
 	}
 	.metadata{
 		&__item{
