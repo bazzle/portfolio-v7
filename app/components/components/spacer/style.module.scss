@@ -12,6 +12,9 @@
 		@include break(tablet){
 			display: none;
 		}
+		@media print{
+			display: none;
+		}
 	}
 	&_nomobile{
 		display: none;
@@ -31,5 +34,9 @@
 		@include break(tablet){
 			margin-bottom: 0;
 		}
+	}
+	@media print{
+		margin-top: $block-spacing--shallow--static;
+		margin-bottom: $block-spacing--shallow--static;
 	}
 }

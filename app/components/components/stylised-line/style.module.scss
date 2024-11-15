@@ -3,7 +3,10 @@
 .stylised_line{
 	width: 100%;
 	position: relative;
-	top: -12.5px;
+	top: -13px;
+	@media print{
+		top: 0;
+	}
 	svg{
 		position: relative;
 		display: block;
@@ -11,11 +14,17 @@
 		height: 25px;
 		left: 1.5vw;
 		fill: var(--color-accent);
+		@media print{
+			display: none;
+		}
 	}
 }
 .line{
 	position: absolute;
 	top: 12.5px;
+	@media print{
+		top: 12px;
+	}
 	right: 0;
 	height: 1px;
 	width: 0;

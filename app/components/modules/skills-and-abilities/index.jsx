@@ -27,7 +27,7 @@ function SkillsAndAbilities(){
 				</div>
 				<div className="container">
 					<div className="inner-2col">
-						<div className="col-1">
+						<div className="col-1 hide-print">
 							<div className={styles.diagram}>
 								<VennDiagram />
 							</div>

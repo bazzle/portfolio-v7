@@ -10,6 +10,13 @@
 	padding-bottom: 3rem;
 	@extend %text-heading;
 	color: var(--color-accent);
+	@media print{
+		padding-left: 0;
+		font-size:4rem;
+		margin-top: 2rem;
+		padding-top: 4rem;
+		padding-bottom: 2rem;
+	}
 }
 :global(body.dark-mode) .title {
 	color: var(--color-foreground);

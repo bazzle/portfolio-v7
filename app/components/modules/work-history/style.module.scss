@@ -22,6 +22,9 @@
 		@include break(desktop-med){
 			gap: 4rem;
 		}
+		@media print{
+			display: none;
+		}
 	}
 	.nav_item{
 		flex-grow: 0;
@@ -45,7 +48,6 @@
 		&__title{
 			display: block;
 			text-align: center;
-			
 		}
 		&:not(.is_active){
 			.nav_item__title{

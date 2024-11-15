@@ -15,5 +15,13 @@
 			height: 100%;
 			gap: 1em;
 		}
+		@media print{
+			padding-top: unset;
+			padding-bottom: unset;
+			flex-direction: row;
+			align-items: center;
+			height: 100%;
+			gap: 1em;
+		}
 	}
 }

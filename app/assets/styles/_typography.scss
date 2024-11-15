@@ -43,8 +43,18 @@ p.outset-text{
 	}
 }
 
+h2, h3, h4, h5, h6{
+	@extend %text-heading;
+}
+
 h2, h3, h4, h5, h6, p, ul, ol, blockquote{
 	margin-bottom: 1em;
+}
+
+p, ul, ol, blockquote{
+	@media print{
+		max-width: 80ch;
+	}
 }
 
 b, strong{

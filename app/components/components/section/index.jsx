@@ -2,16 +2,17 @@ import styles from './style.module.scss';
 import propTypes from "prop-types";
 import Spacer from '@/app/components/components/spacer';
 
-function Section({ children, id, classes, noSpacer, line }) {
-  const classString = (classes ? classes : '').replace(/\s+/g, ' ');
-
-  // Use classString as the value for the className attribute
-  return (
-    <section id={id} className={classString || undefined}>
-      {children}
-	  { noSpacer ? '' : (line ? <Spacer /> : <Spacer noLine />)}
-    </section>
-  );
+function Section({ children, id, classes, noSpacer, noSpacerPrint, line }) {
+	let classString = classes
+	if (noSpacerPrint){
+		classString = `${classes} no_spacer_print`
+	}
+	return (
+		<section id={id} className={classString}>
+			{children}
+			{ noSpacer ? '' : (line ? <Spacer /> : <Spacer noLine />)}
+		</section>
+  	);
 }
 
 Section.propTypes = {
@@ -19,6 +20,8 @@ Section.propTypes = {
   id: propTypes.string,
   classes: propTypes.string,
   line: propTypes.bool,
+  noSpacer: propTypes.bool,
+  noSpacerPrint: propTypes.bool
 };
 
 export default Section;

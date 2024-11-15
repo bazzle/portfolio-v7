@@ -20,7 +20,12 @@
 	}
 	@include break(desktop){
 		width: 100%;
-		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 2rem;
+		grid-row-gap: .5rem;
+	}
+	@media print{
+		width: 100%;
 		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 2rem;
 		grid-row-gap: .5rem;
@@ -33,6 +38,9 @@
 			width: 100%;
 			flex-grow: 1;
 			max-width: 12ch;
+			@media print{
+				font-size: 1.7rem;
+			}
 		}
 		&__rating{
 			color: var(--color-accent-alt);
@@ -48,4 +56,10 @@
 .diagram{
 	display: flex;
 	justify-content: center;
+}
+
+.col-1{
+	@media print{
+		display: none;
+	}
 }

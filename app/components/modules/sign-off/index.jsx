@@ -7,7 +7,7 @@ function SignOff(){
 
 	return(
 		<Section>
-			<div className={styles.sign_off}>
+			<div className={`${styles.sign_off} hide-print`}>
 				<div className="container">
 					<p>
 						{SignoffContent.title}

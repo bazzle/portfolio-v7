@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
-import Contacts from "@/app/components/modules/contacts";
-import Clients from "@/app/components/modules/clients";
+import Contacts from "@/app/components/modules/hero/contacts";
+import Clients from "@/app/components/modules/hero/clients";
 import BgShapes from '@/app/components/components/bg-shapes';
 import SideFurniture from './side-furniture';
 import Spacer from '@/app/components/components/spacer';
@@ -36,7 +36,7 @@ function Hero(){
 							<p>Hello! I’m a UK based web designer and developer. Open to opportunities</p>
 							<a href="#welcome">Read more about me</a>
 						</div>
-						<Contacts />
+						<Contacts/>
 						<Clients/>
 					</div>
 				</div>

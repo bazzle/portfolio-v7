@@ -1,1 +1,9 @@
 @use "@/app/assets/styles/all-vars" as *;
+
+.no_spacer_print{
+	.spacer{
+		@media print{
+			display: none;
+		}
+	}
+}
