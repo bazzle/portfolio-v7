@@ -38,12 +38,12 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 			return false
 		}
 	}
-	const classListString = `${styles.content_sheet} ${ isHidden ? 'hidden' : ''}`
+	const classListString = `${styles.content_sheet} ${ isHidden ? styles.content_sheet_hidden : ''}`
 	return (
 		<div id={`panel-${id}`} className={classListString} role="tabpanel">
 			<div className="inner-2col">
 				<div className={styles.content_sheet__main}>
-					<h3 className="visually-hidden">{name}</h3>
+					<h3 className={`${styles.content_sheet__name} visually-hidden--show-print`}>{name}</h3>
 					<p className={styles.intro}>
 						{intro}
 					</p>

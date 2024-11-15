@@ -6,19 +6,39 @@
 			padding-top: $block-spacing--shallow;
 		}
 	}
+	&_hidden{
+		display: none;
+		@media print{
+			display: block;
+		}
+	}
+	&__name{
+		@extend %text-heading;
+		@media print{
+			font-size:4rem;
+			color: var(--color-accent);
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
 	.body_text{
 		@include body-formatting;
 		margin-bottom: $block-spacing--shallow;
 		p{
-			max-width: unset!important;
+			@media screen{
+				max-width: unset!important;
+			}
 		}
 	}
 	.metadata{
 		&__item{
 			margin-bottom: $block-spacing--shallow;
-		}
-		&__heading{
-			@extend %text-heading;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+			p{
+				margin-bottom: 0;
+			}
 		}
 		&__duration{
 			@extend %text-blocky;
@@ -34,9 +54,15 @@
 		@include break(desktop){
 			column-count: 2;
 		}
+		@media print{
+			column-count: 4;
+		}
 	}
 	.intro{
 		@extend %text-intro;
 		color: var(--color-accent-alt);
+		@media print{
+			color: var(--color-foreground);
+		}
 	}
 }

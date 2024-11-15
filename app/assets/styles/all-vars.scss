@@ -20,6 +20,7 @@
 $border-radius: 4px;
 $gutter-padding: 4vw;
 $block-spacing: clamp(3.5rem, 6vw, 6.5rem);
+$block-spacing--shallow--static: 2rem;
 $block-spacing--shallow: clamp(2rem, 4vw, 4.5rem);
 $block-spacing--deep: clamp(8rem, 12vw, 14rem);
 $column-gap: clamp(2rem, 5vw, 5rem);
@@ -83,6 +84,9 @@ $font-blocky: "degular-variable", sans-serif;
 	:global(body.light-mode) &{
 		font-variation-settings: "ital" 0, "opsz" 40, "wght" 620;
 	}
+	@media print{
+		font-size: 2.4rem;
+	}
 }
 
 %text-std{
@@ -98,6 +102,9 @@ $font-blocky: "degular-variable", sans-serif;
 	&.light-mode{
 		font-variation-settings: "ital" 0, "opsz" 16, "wght" 400;
 	}
+	@media print{
+		font-size: 1.8rem;
+	}
 }
 
 %text-body{
@@ -107,30 +114,26 @@ $font-blocky: "degular-variable", sans-serif;
 	line-height: 1.5;
 	font-variation-settings: "ital" 0, "opsz" 16, "wght" 300;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 450;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
+	}
+	@media print{
+		font-size: 1.7rem;
 	}
 }
 %text-body-bold{
-	font-family: $font-body;
-	font-size: $font-size-body;
-	font-style: normal;
-	line-height: 1.5;
 	font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 550;
 	}
 }
 %text-body-link{
-	font-family: $font-body;
-	font-size: $font-size-body;
 	color: var(--color-accent);
 	text-decoration: underline;
 	text-underline-offset: 0.1em;
 	text-decoration-thickness: .05em;
-	font-style: normal;
-	line-height: 1.5;:global(body.light-mode) &{
+	:global(body.light-mode) &{
 		text-underline-offset: .15em;
-		font-variation-settings: "ital" 0, "opsz" 20, "wght" 600;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 550;
 		text-decoration-thickness: .08em;
 	}
 	&:hover{
@@ -199,6 +202,9 @@ $font-blocky: "degular-variable", sans-serif;
 		letter-spacing: .05em;
 		font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
 	}
+	@media print{
+		font-size: 1.7rem;
+	}
 }
 
 %text-blocky-bold{
@@ -216,6 +222,9 @@ $font-blocky: "degular-variable", sans-serif;
 
 %text-tiny{
 	font-size: $font-size-tiny;
+	@media print{
+		font-size: 1.7rem;
+	}
 	font-family: $font-text;
 	font-variation-settings: "ital" 0, "opsz" 14, "wght" 400;
 	:global(body.light-mode) &{
@@ -242,10 +251,8 @@ $font-blocky: "degular-variable", sans-serif;
 		a{
 			@extend %text-body-link;
 		}
-		max-width: 45ch;
 	}
 	h2, h3, h4, h5, h6{
-		@extend %text-heading;
 		margin-bottom: 2rem;
 	}
 	> *:last-child {

@@ -7,7 +7,7 @@ function Footer(){
     const currentYear = new Date().getFullYear();
 
     return(
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer} hide-print`}>
 			<div className="container">
 				<div className={styles.footer__line}>
 					<p>

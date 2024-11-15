@@ -4,13 +4,27 @@
 	display: flex;
 	align-items: center;
 	gap: .4em;
+	@media print{
+		&::after{
+			content: attr(data-label);
+		}
+	}
 	a{
 		@extend %text-link;
+		cursor: pointer;
+		@media print{
+			display: none;
+		}
 	}
 	svg{
 		width: 12px;
 		height: 12px;
 		fill: var(--color-accent);
 		position: relative;
+		@media print{
+			width: 8px;
+			height: 8px;
+			top: -1px;
+		}
 	}
 }

@@ -39,17 +39,25 @@
 		p{
 			margin-bottom: 0;
 		}
+		@media print{
+			padding-top: 1em;
+			gap: .8em;
+		}
 		.intro{
 			display: flex;
 			flex-direction: row;
 			column-gap: .5em;
 			flex-wrap: wrap;
+			@extend %text-std;
 			@include break(mobile){
 				padding-right: calc(120px + 2rem);
 			}
 			a{
 				@extend %text-link;
 				font-size: inherit;
+				@media print{
+					display: none;
+				}
 			}
 		}
 		.clients{
@@ -67,6 +75,10 @@
 	gap: 1rem;
 	padding-top: $block-spacing--deep;
 	padding-bottom: $block-spacing--deep;
+	@media print{
+		padding-top: 1em;
+		padding-bottom: $block-spacing--shallow;
+	}
 }
 
 .message__main{

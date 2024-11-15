@@ -9,6 +9,9 @@
 }
 .tile_grid{
 	background-color: var(--color-feint-line);
+	@media print{
+		background-color: unset;
+	}
 	width: 80vw;
 	margin: 0 auto;
 	gap: .5px;
@@ -29,6 +32,16 @@
 		@include break(desktop){
 			grid-column: unset;
 		}
+		@media print{
+			grid-column: unset;
+		}
+	}
+	@media print{
+		display: grid;
+		grid-template-rows: auto;
+		width: 100%;
+		right: -1px;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
 }
 .tile{
@@ -57,10 +70,12 @@
 			aspect-ratio: 1/1;
 			display: block;
 		}
+		@media print{
+			display: none;
+		}
 	}
 	&_noicon{
-		padding-top: 2rem;
-		padding-bottom: 2rem;
+		padding: 2rem;
 	}
 	.tile__inner{
 		width: 100%;
@@ -75,7 +90,6 @@
 			gap: 2rem;
 		}
 		.icon_container{
-			// background: gold;
 			@include break(mobile){
 				max-width: 120px;
 				aspect-ratio: 1/1;

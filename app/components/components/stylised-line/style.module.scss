@@ -3,7 +3,10 @@
 .stylised_line{
 	width: 100%;
 	position: relative;
-	top: -12.5px;
+	top: -13px;
+	@media print{
+		top: 0;
+	}
 	svg{
 		position: relative;
 		display: block;
@@ -11,6 +14,9 @@
 		height: 25px;
 		left: 1.5vw;
 		fill: var(--color-accent);
+		@media print{
+			display: none;
+		}
 	}
 }
 .line{
@@ -22,4 +28,7 @@
 	border: none;
 	background-color: var(--color-accent);
 	display: block;
+	@media print{
+		border-top: 1px solid var(--color-accent);
+	}
 }

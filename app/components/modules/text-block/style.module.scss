@@ -10,6 +10,11 @@
 	:global(body.light-mode) &{
 		background-image: url("/assets/images/texture-light.jpg");
 	}
+	@media print{
+		border-top: 0;
+		border-bottom: 0;
+		background: none!important;
+	}
 	&__inner{
 		position: relative;
 		z-index: 1;
@@ -20,7 +25,6 @@
 		padding-top: clamp(6rem, 10.5vw, 14rem);
 		padding-bottom: clamp(6rem, 10.5vw, 14rem);
 		display: block;
-		@extend %text-display-small;
 		text-align: center;
     	margin: 0 auto;
 		color: var(--color-foreground);
@@ -32,10 +36,21 @@
 			background: linear-gradient(180deg, var(--color-foreground) 75%, var(--color-accent) 100% );
 			background-clip: text;
     		-webkit-background-clip: text;
+			@extend %text-display-small;
+			@media print{
+				background: none;
+				color: var(--color-foreground);
+			}
 		}
 		max-width: 80vw;
 		@include break(tablet){
 			max-width: 60vw;
+		}
+		@media print{
+			padding-top: unset;
+			padding-bottom: unset;
+			text-align: left;
+			margin-left: unset;
 		}
 	}
 }

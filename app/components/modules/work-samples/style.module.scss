@@ -9,6 +9,9 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 	:global(body.light-mode) &{
 		background-image: url("/assets/images/texture-light.jpg");
 	}
+	@media print{
+		display: none;
+	}
 }
 
 .title_section{
@@ -17,6 +20,7 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 	padding: .6em 1em;
 	border-radius: 2px;
 	text-align: center;
+	z-index: 1;
 	h2{
 		margin-bottom: 0;
 		text-align: center;
