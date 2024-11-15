@@ -1,6 +1,7 @@
 @use "@/app/assets/styles/all-vars" as *;
 
 .clients{
+	@include svgColor(var(--color-foreground));
 	.logos{
 		display: flex;
 		flex-direction: row;
@@ -19,6 +20,7 @@
 		position: relative;
 		top: 5px;
 	}
-	@include svgColor(var(--color-foreground));
-
+	@media print{
+		display: none;
+	}
 }

@@ -14,8 +14,12 @@
 	}
 	&__name{
 		@extend %text-heading;
-		font-size:4rem;
-		color: var(--color-accent);
+		@media print{
+			font-size:4rem;
+			color: var(--color-accent);
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
 	}
 	.body_text{
 		@include body-formatting;
@@ -57,5 +61,8 @@
 	.intro{
 		@extend %text-intro;
 		color: var(--color-accent-alt);
+		@media print{
+			color: var(--color-foreground);
+		}
 	}
 }

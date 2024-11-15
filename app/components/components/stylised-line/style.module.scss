@@ -22,13 +22,13 @@
 .line{
 	position: absolute;
 	top: 12.5px;
-	@media print{
-		top: 12px;
-	}
 	right: 0;
 	height: 1px;
 	width: 0;
 	border: none;
 	background-color: var(--color-accent);
 	display: block;
+	@media print{
+		border-top: 1px solid var(--color-accent);
+	}
 }

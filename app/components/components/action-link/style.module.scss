@@ -20,5 +20,10 @@
 		height: 12px;
 		fill: var(--color-accent);
 		position: relative;
+		@media print{
+			width: 8px;
+			height: 8px;
+			top: -1px;
+		}
 	}
 }
