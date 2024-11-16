@@ -1,19 +1,28 @@
 @use "@/app/assets/styles/all-vars" as *;
 
 .contacts{
+	width: 100%;
+	&:before{
+		content: '';
+		width: 100%;
+		background-color: black;
+		height: 1px;
+		top: -2px;
+		left: 0;
+		position: absolute;
+	}
 	.inner{
-		padding-top: $block-spacing--shallow;
-		padding-bottom: $block-spacing--shallow;
 		display: flex;
 		flex-direction: column;
-		gap: .3em;
+		position: relative;
+		width: 100%;
+		align-items: center;
 		@include break(tablet){
 			padding-top: unset;
 			padding-bottom: unset;
 			flex-direction: row;
 			align-items: center;
 			height: 100%;
-			gap: 1em;
 		}
 		@media print{
 			padding-top: unset;
@@ -21,7 +30,18 @@
 			flex-direction: row;
 			align-items: center;
 			height: 100%;
-			gap: 1em;
+		}
+	}
+	&_section{
+		border-left: var(--color-feint-line) solid .5px;
+		min-height: 80px;
+		display: flex;
+		gap: 2rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+		&:first-of-type{
+			padding-left: 0;
+			border-left: 0;
 		}
 	}
 }
