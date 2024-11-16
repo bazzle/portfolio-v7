@@ -14,15 +14,29 @@
 	--color-accent-alt-faded: #ffaaaa63;
 }
 
-body.light-mode{
-	--color-foreground: #2c2c2c;
-	--color-foreground-alt: #4b4b4b;
-	--color-accent: #386a71;
-	--color-accent-alt: #af4a4a;
-	--color-bg: #e3e3e3;
-	--color-bg-alt: #d1d1d1;
-	--color-bg-off-solid: #fbfbfb;
-	--color-bg-solid: #ffffff;
-	--color-feint-line: rgb(255, 255, 255, 1);
-	--color-focus: #386a71;
+body{
+	&.light-mode{
+		--color-foreground: #2c2c2c;
+		--color-foreground-alt: #4b4b4b;
+		--color-accent: #386a71;
+		--color-accent-alt: #af4a4a;
+		--color-bg: #e3e3e3;
+		--color-bg-alt: #d1d1d1;
+		--color-bg-off-solid: #fbfbfb;
+		--color-bg-solid: #ffffff;
+		--color-feint-line: rgb(255, 255, 255, 1);
+		--color-focus: #386a71;
+	}
+	@media print{
+		--color-foreground: #2c2c2c;
+		--color-foreground-alt: #4b4b4b;
+		--color-accent: #386a71;
+		--color-accent-alt: #af4a4a;
+		--color-bg: #e3e3e3;
+		--color-bg-alt: #d1d1d1;
+		--color-bg-off-solid: #fbfbfb;
+		--color-bg-solid: #ffffff;
+		--color-feint-line: rgb(255, 255, 255, 1);
+		--color-focus: #386a71;
+	}
 }

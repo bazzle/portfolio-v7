@@ -73,6 +73,9 @@ $font-blocky: "degular-variable", sans-serif;
 	:global(body.light-mode) &{
 		font-variation-settings: "ital" 0, "opsz" 72, "wght" 780;
 	}
+	@media print{
+		font-variation-settings: "ital" 0, "opsz" 72, "wght" 780;
+	}
 }
 
 %text-display-small{
@@ -85,7 +88,8 @@ $font-blocky: "degular-variable", sans-serif;
 		font-variation-settings: "ital" 0, "opsz" 40, "wght" 620;
 	}
 	@media print{
-		font-size: 2.4rem;
+		font-size: 3rem;
+		font-variation-settings: "ital" 0, "opsz" 40, "wght" 620;
 	}
 }
 
@@ -103,7 +107,7 @@ $font-blocky: "degular-variable", sans-serif;
 		font-variation-settings: "ital" 0, "opsz" 16, "wght" 400;
 	}
 	@media print{
-		font-size: 1.8rem;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 400;
 	}
 }
 
@@ -114,26 +118,42 @@ $font-blocky: "degular-variable", sans-serif;
 	line-height: 1.5;
 	font-variation-settings: "ital" 0, "opsz" 16, "wght" 300;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 450;
 	}
 	@media print{
-		font-size: 1.7rem;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 450;
 	}
 }
 %text-body-bold{
+	font-family: $font-body;
+	font-size: $font-size-body;
+	font-style: normal;
+	line-height: 1.5;
 	font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 550;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
+	}
+	@media print{
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
 	}
 }
 %text-body-link{
+	font-family: $font-body;
+	font-size: $font-size-body;
 	color: var(--color-accent);
 	text-decoration: underline;
 	text-underline-offset: 0.1em;
 	text-decoration-thickness: .05em;
+	font-style: normal;
+	line-height: 1.5;
 	:global(body.light-mode) &{
 		text-underline-offset: .15em;
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 550;
+		font-variation-settings: "ital" 0, "opsz" 20, "wght" 600;
+		text-decoration-thickness: .08em;
+	}
+	@media print{
+		text-underline-offset: .15em;
+		font-variation-settings: "ital" 0, "opsz" 20, "wght" 600;
 		text-decoration-thickness: .08em;
 	}
 	&:hover{
@@ -155,6 +175,11 @@ $font-blocky: "degular-variable", sans-serif;
 		font-variation-settings: "ital" 0, "opsz" 20, "wght" 600;
 		text-decoration-thickness: .08em;
 	}
+	@media print{
+		text-underline-offset: .15em;
+		font-variation-settings: "ital" 0, "opsz" 20, "wght" 600;
+		text-decoration-thickness: .08em;
+	}
 	&:hover{
 		text-decoration: none;
 		color: var(--color-foreground);
@@ -169,6 +194,9 @@ $font-blocky: "degular-variable", sans-serif;
 	:global(body.light-mode) &{
 		font-variation-settings: "ital" 0, "opsz" 28, "wght" 600;
 	}
+	@media print{
+		font-variation-settings: "ital" 0, "opsz" 28, "wght" 600;
+	}
 }
 
 %text-intro{
@@ -176,6 +204,9 @@ $font-blocky: "degular-variable", sans-serif;
 	line-height: 1.2;
 	font-variation-settings: "ital" 0, "opsz" 26, "wght" 650;
 	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 26, "wght" 700;
+	}
+	@media print{
 		font-variation-settings: "ital" 0, "opsz" 26, "wght" 700;
 	}
 }
@@ -187,6 +218,9 @@ $font-blocky: "degular-variable", sans-serif;
 	line-height: 1.6;
 	font-variation-settings: "ital" 0, "opsz" 32, "wght" 450;
 	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 32, "wght" 500;
+	}
+	@media print{
 		font-variation-settings: "ital" 0, "opsz" 32, "wght" 500;
 	}
 }
@@ -204,6 +238,8 @@ $font-blocky: "degular-variable", sans-serif;
 	}
 	@media print{
 		font-size: 1.7rem;
+		letter-spacing: .05em;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
 	}
 }
 
@@ -215,6 +251,10 @@ $font-blocky: "degular-variable", sans-serif;
 	letter-spacing: .03em;
 	font-variation-settings: "ital" 0, "opsz" 16, "wght" 550;
 	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
+		letter-spacing: .06em;
+	}
+	@media print{
 		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
 		letter-spacing: .06em;
 	}
@@ -230,6 +270,9 @@ $font-blocky: "degular-variable", sans-serif;
 	:global(body.light-mode) &{
 		font-variation-settings: "ital" 0, "opsz" 14, "wght" 500;
 	}
+	@media print{
+		font-variation-settings: "ital" 0, "opsz" 14, "wght" 500;
+	}
 }
 
 %text-miniscule{
@@ -239,6 +282,10 @@ $font-blocky: "degular-variable", sans-serif;
 	line-height: 1.4;
 	font-variation-settings: "ital" 0, "opsz" 10, "wght" 500;
 	:global(body.light-mode) &{
+		letter-spacing: .02em;
+		font-variation-settings: "ital" 0, "opsz" 10, "wght" 500;
+	}
+	@media print{
 		letter-spacing: .02em;
 		font-variation-settings: "ital" 0, "opsz" 10, "wght" 500;
 	}
