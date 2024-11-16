@@ -30,15 +30,15 @@ function Hero(){
 				<BgShapes variant="1" />
             </div>
 			<div className={styles.foot_section}>
-				<div className="container">
-					<div className={styles.foot_section__inner}>
+				<div className={styles.foot_section__inner}>
+					<div className="container">
 						<div className={styles.intro}>
 							<p>Hello! I’m a UK based web designer and developer. Open to opportunities</p>
 							<a href="#welcome">Read more about me</a>
 						</div>
-						<Contacts/>
-						<Clients/>
 					</div>
+					<Contacts/>
+					<Clients/>
 				</div>
 			</div>
 			<Spacer />

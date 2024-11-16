@@ -2,6 +2,8 @@
 
 .clients{
 	@include svgColor(var(--color-foreground));
+	padding-top: 30px;
+	width: 100%;
 	.logos{
 		display: flex;
 		flex-direction: row;

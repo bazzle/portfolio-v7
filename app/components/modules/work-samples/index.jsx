@@ -14,58 +14,74 @@ function WorkSamples(){
 				</div>
 				<div className={styles.main}>
 					<div className={styles.strip}>
-						<BrowserMobile
-							src="/assets/images/samples-satoshi-power.png"
+						<BrowserDesktop
+							src="/assets/images/samples/nao2-dt.jpg"
 							alt="profile"
 						/>
 						<BrowserDesktop
-							src="/assets/images/samples-ons.png"
+							src="/assets/images/samples/chevening-dt.jpg"
 							alt="profile"
 						/>
 						<BrowserDesktop
-							src="/assets/images/samples-bfi.png"
-							alt="profile"
-						/>
-						<BrowserDesktop
-							src="/assets/images/samples-nao.png"
-							alt="profile"
-						/>
-						<BrowserDesktop
-							src="/assets/images/samples-ons.png"
+							src="/assets/images/samples/ua-dt.jpg"
 							alt="profile"
 						/>
 						<BrowserMobile
-							src="/assets/images/samples-satoshi-power.png"
+							src="/assets/images/samples/bdo-mob.jpg"
 							alt="profile"
 						/>
 						<BrowserDesktop
-							src="/assets/images/samples-bfi.png"
+							src="/assets/images/samples/bdo-dt.jpg"
+							alt="profile"
+						/>
+						<BrowserDesktop
+							src="/assets/images/samples/chevening2-dt.jpg"
+							alt="profile"
+						/>
+						<BrowserMobile
+							src="/assets/images/samples/nao2-mob.jpg"
+							alt="profile"
+						/>
+						<BrowserDesktop
+							src="/assets/images/samples/bfi-dt.jpg"
 							alt="profile"
 						/>
 					</div>
 					<div className={styles.strip}>
 						<BrowserDesktop
-							src="/assets/images/samples-nao.png"
-							alt="profile"
-						/>
-						<BrowserDesktop
-							src="/assets/images/samples-bfi.png"
+							src="/assets/images/samples/chevening-dt.jpg"
 							alt="profile"
 						/>
 						<BrowserMobile
-							src="/assets/images/samples-satoshi-power.png"
+							src="/assets/images/samples/ua-mob.jpg"
 							alt="profile"
 						/>
 						<BrowserDesktop
-							src="/assets/images/samples-nao.png"
+							src="/assets/images/samples/nao2-dt.jpg"
+							alt="profile"
+						/>
+						<BrowserMobile
+							src="/assets/images/samples/nao-mob.jpg"
 							alt="profile"
 						/>
 						<BrowserDesktop
-							src="/assets/images/samples-bfi.png"
+							src="/assets/images/samples/bfi-dt.jpg"
 							alt="profile"
 						/>
 						<BrowserDesktop
-							src="/assets/images/samples-ons.png"
+							src="/assets/images/samples/ons-dt.jpg"
+							alt="profile"
+						/>
+						<BrowserDesktop
+							src="/assets/images/samples/nao-dt.jpg"
+							alt="profile"
+						/>
+						<BrowserDesktop
+							src="/assets/images/samples/ua2-dt.jpg"
+							alt="profile"
+						/>
+						<BrowserDesktop
+							src="/assets/images/samples/nao3-dt.jpg"
 							alt="profile"
 						/>
 					</div>

@@ -1,7 +1,6 @@
 @use "@/app/assets/styles/all-vars" as *;
 
 .hero{
-	position: relative;
 	background-color: var(--color-bg);
 	position: relative;
 }
@@ -30,16 +29,10 @@
 }
 .foot_section{
 	&__inner{
-		padding-top: calc(3rem + 60px);
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
 		width: 100%;
 		align-items: flex-start;
-		@include break(mobile){
-			padding-top: 0;
-			padding-top: 2rem;
-		}
 		p{
 			margin-bottom: 0;
 		}
@@ -53,6 +46,9 @@
 			column-gap: .5em;
 			flex-wrap: wrap;
 			@extend %text-std;
+			min-height: 80px;
+			display: flex;
+			align-items: center;
 			@include break(mobile){
 				padding-right: calc(120px + 2rem);
 			}
