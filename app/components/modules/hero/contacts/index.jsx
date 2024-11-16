@@ -14,7 +14,7 @@ function Contacts() {
 				<ActionLink linkString="https://www.linkedin.com/in/br-web/" textString="LinkedIn" printString="linkedin.com/in/br-web/" />
 				<ActionLink linkString="https://github.com/bazzle/" textString="Github" printString="github.com/bazzle/" />
 				<ActionLink linkString="mailto:barry@br-web.me" textString="Drop me an email" printString="barry@br-web.me" />
-				<ActionLink clickEvent={PrintPage} textString="Print this page" />
+				<ActionLink classes="hide-print" clickEvent={PrintPage} textString="Print this page" />
 			</div>
 		</div>
 	)
