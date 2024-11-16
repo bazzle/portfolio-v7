@@ -11,6 +11,7 @@
 	}
 	a{
 		@extend %text-link;
+		cursor: pointer;
 		@media print{
 			display: none;
 		}
