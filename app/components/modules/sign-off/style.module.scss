@@ -12,5 +12,8 @@
 		:global(body.light-mode) &{
 			color: var(--color-accent);
 		}
+		@media print{
+			color: var(--color-accent);
+		}
 	}
 }

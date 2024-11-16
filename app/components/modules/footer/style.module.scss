@@ -25,6 +25,9 @@
 			color: var(--color-foreground);
 		}
 	}
+	@media print{
+		background-image: none;
+	}
 }
 .back_top{
 	position: absolute;

@@ -74,6 +74,9 @@
 				:global(body.light-mode) &{
 					font-variation-settings: "ital" 0, "opsz" 10, "wght" 450;
 				}
+				@media print{
+					font-variation-settings: "ital" 0, "opsz" 10, "wght" 450;
+				}
 				@include break(desktop-med){
 					font-size: responsiveSize(2.6, 10, 2.6);
 				}

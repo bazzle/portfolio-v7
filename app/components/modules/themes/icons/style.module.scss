@@ -38,6 +38,9 @@
 	:global(body.light-mode) &{
 		visibility:visible;
 	}
+	@media print{
+		visibility:visible;
+	}
 }
 .dark_mode_nobg{
 	:global(body.dark-mode) &{
