@@ -14,7 +14,6 @@
 		&:nth-of-type(1){
 			aspect-ratio: 1/1;
 			border-radius: 50%;
-			filter: blur(256px);
 			mix-blend-mode: color-dodge;
 			@supports (-moz-appearance: none) {
 				mix-blend-mode: color;
@@ -42,9 +41,10 @@
 		div{
 			&:nth-of-type(1){
 				width: auto;
-				height: 515px;
-				background-color: rgba(255, 170, 170,.3);
-				top: 0;
+				height: 1200px;
+				filter: blur(300px);
+				background-color: rgba(110, 3, 3, 0.8);
+				bottom: 0;
 				left: 0;
 			}
 			&:nth-of-type(2){
@@ -72,19 +72,20 @@
 		div{
 			&:nth-of-type(1){
 				width: auto;
-				height: 515px;
-				background-color: var(--color-accent);
-				opacity: .2;
-				top: 0;
+				height: 1200px;
+				filter: blur(300px);
+				background-color: rgba(110, 3, 3, 0.6);
+				bottom: 0;
 				left: 0;
 			}
 			&:nth-of-type(2){
 				width: 80vw;
 				height: auto;
-				background-color: var(--color-accent-alt);
-				opacity: .02;
-				bottom: 0;
-				right: 0;
+				aspect-ratio: 1/1;
+				background-color: var(--color-accent);
+				opacity: .05;
+				top: 0;
+				right: -20vw;
 			}
 			&:nth-of-type(3){
 				width: auto;
@@ -101,19 +102,20 @@
 		div{
 			&:nth-of-type(1){
 				width: auto;
-				height: 515px;
-				background-color: var(--color-accent);
-				opacity: .2;
-				top: 0;
+				height: 1200px;
+				filter: blur(300px);
+				background-color: rgba(110, 3, 3, 0.6);
+				bottom: 0;
 				left: 0;
 			}
 			&:nth-of-type(2){
 				width: 80vw;
 				height: auto;
-				background-color: var(--color-accent-alt);
-				opacity: .02;
-				bottom: 0;
-				right: 0;
+				aspect-ratio: 1/1;
+				background-color: var(--color-accent);
+				opacity: .05;
+				top: 0;
+				right: -20vw;
 			}
 			&:nth-of-type(3){
 				width: auto;
@@ -130,19 +132,20 @@
 		div{
 			&:nth-of-type(1){
 				width: auto;
-				height: 515px;
-				background-color: var(--color-accent-alt);
-				opacity: .2;
-				top: 0;
+				height: 1200px;
+				filter: blur(300px);
+				background-color: rgba(110, 3, 3, 0.6);
+				bottom: 0;
 				left: 0;
 			}
 			&:nth-of-type(2){
 				width: 80vw;
 				height: auto;
+				aspect-ratio: 1/1;
 				background-color: var(--color-accent);
-				opacity: .02;
-				bottom: 0;
-				right: 0;
+				opacity: .05;
+				top: 0;
+				right: -20vw;
 			}
 			&:nth-of-type(3){
 				width: auto;
