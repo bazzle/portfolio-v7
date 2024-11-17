@@ -69,10 +69,6 @@
 		border-left: .5px solid var(--color-ridged-line-light);
 		border-right: 1px solid var(--color-ridged-line-shadow);
 	}
-	:global(body.light-mode) &{
-		border-top: 1px solid rgba(0,0,0,.07);
-		border-right: 1px solid rgba(0,0,0,.07);
-	}
 	&__name{
 		@extend %text-tiny;
 		text-align: center;
