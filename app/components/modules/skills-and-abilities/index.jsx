@@ -12,7 +12,7 @@ function SkillsAndAbilities(){
 	const content = SkillsContent.bodyContent()
 
     return(
-		<Section>
+		<Section line>
 			<div className={styles.skills_abilities}>
 				<div className="container">
 					<div className="inner-2col">

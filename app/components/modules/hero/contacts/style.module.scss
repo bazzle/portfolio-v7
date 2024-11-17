@@ -33,15 +33,30 @@
 		}
 	}
 	&_section{
-		border-left: var(--color-feint-line) solid .5px;
 		min-height: 80px;
 		display: flex;
 		gap: 2rem;
 		padding-left: 4rem;
 		padding-right: 4rem;
+		position: relative;
 		&:first-of-type{
 			padding-left: 0;
 			border-left: 0;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			background-color: var(--color-ridged-line-shadow);
+			border-right: .5px solid var(--color-ridged-line-light);
+			height: 100%;
+			width: 1px;
+		}
+		&:last-of-type{
+			&:after{
+				display: none;
+			}
 		}
 	}
 }

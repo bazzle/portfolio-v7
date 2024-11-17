@@ -12,6 +12,8 @@
 	--color-accent-immutable: #9AF3FF;
 	--color-accent-faded: #9af3ff76;
 	--color-accent-alt-faded: #ffaaaa63;
+	--color-ridged-line-shadow: #000000;
+	--color-ridged-line-light: rgba(255, 255, 255, 0.2);
 }
 
 body{
@@ -26,6 +28,8 @@ body{
 		--color-bg-solid: #ffffff;
 		--color-feint-line: rgb(255, 255, 255, 1);
 		--color-focus: #386a71;
+		--color-ridged-line-shadow: rgba(0, 0, 0, 0.05);
+		--color-ridged-line-light: rgb(255, 255, 255);
 	}
 	@media print{
 		--color-foreground: #2c2c2c;
