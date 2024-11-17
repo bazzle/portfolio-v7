@@ -22,7 +22,7 @@ function BgShapes(props){
 			<motion.div
 				initial={{ x: 0 }}
 				animate={{
-					y: [0, 50, 0],
+					y: [50, 0, 0],
 				}}
 				transition={{
 					duration: 60,

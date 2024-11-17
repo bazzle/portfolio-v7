@@ -9,7 +9,7 @@ function BrowserDesktop({src, alt}){
 				<circle cx="10" cy="13.5" r="4" fill="#FFAAAA"/>
 				<circle cx="22" cy="13.5" r="4" fill="#FDFAA4"/>
 				<circle cx="34" cy="13.5" r="4" fill="#9AF3FF"/>
-				<rect x="45" y="6" width="349" height="15" rx="2" fill="#383838"/>
+				<rect x="45" y="6" width="349" height="15" rx="2" className="fill-bg-solid"/>
 				<mask id="mask0_273_297" style={{maskType:'alpha'}} maskUnits="userSpaceOnUse" x="6" y="29" width="388" height="245">
 					<path d="M6 31.94C6 30.3163 7.34315 29 9 29H391C392.657 29 394 30.3163 394 31.94V271.06C394 272.684 392.657 274 391 274H9.00001C7.34315 274 6 272.684 6 271.06V31.94Z" fill="white"/>
 				</mask>

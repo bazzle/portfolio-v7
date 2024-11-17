@@ -101,13 +101,13 @@ $font-blocky: "degular-variable", sans-serif;
 	letter-spacing:.02em;
 	font-variation-settings: "ital" 0, "opsz" 16, "wght" 300;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 400;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 450;
 	}
 	&.light-mode{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 400;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 450;
 	}
 	@media print{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 400;
+		font-variation-settings: "ital" 0, "opsz" 16, "wght" 450;
 	}
 }
 
@@ -266,7 +266,7 @@ $font-blocky: "degular-variable", sans-serif;
 		font-size: 1.7rem;
 	}
 	font-family: $font-text;
-	font-variation-settings: "ital" 0, "opsz" 14, "wght" 400;
+	font-variation-settings: "ital" 0, "opsz" 14, "wght" 450;
 	:global(body.light-mode) &{
 		font-variation-settings: "ital" 0, "opsz" 14, "wght" 500;
 	}
