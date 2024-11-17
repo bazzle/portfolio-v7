@@ -1,20 +1,23 @@
 {
-  "name": "v7",
-  "version": "0.1.0",
+  "name": "portfolio-v7",
+  "version": "7.0.0",
   "private": true,
+  "homepage": "https://bazzle.github.io/portfolio-v7",
   "scripts": {
     "dev": "next dev",
     "browser-sync": "browser-sync start --config 'bs-config.js'",
     "sync": "concurrently \"npm run dev\" \"npm run browser-sync\"",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+	"predeploy": "npm run build",
+    "deploy": "gh-pages -d out --nojekyll"
   },
   "dependencies": {
     "browser-sync": "^3.0.3",
     "concurrently": "^9.0.1",
     "motion": "^11.11.17",
-    "next": "14.2.8",
+    "next": "^14.2.18",
     "react": "^18",
     "react-dom": "^18",
     "sass-loader": "^16.0.1"
@@ -22,6 +25,7 @@
   "devDependencies": {
     "eslint": "^8",
     "eslint-config-next": "14.2.8",
+    "gh-pages": "^6.2.0",
     "sass": "^1.79.1"
   }
 }
