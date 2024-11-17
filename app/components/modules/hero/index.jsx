@@ -33,8 +33,7 @@ function Hero(){
 				<div className={styles.foot_section__inner}>
 					<div className="container">
 						<div className={styles.intro}>
-							<p>Hello! I’m a UK based web designer and developer. Open to opportunities</p>
-							<a href="#welcome">Read more about me</a>
+							<p>Hello! I’m a UK based web designer and developer. Open to opportunities – <a href="#welcome">Read more about me</a></p>
 						</div>
 					</div>
 					<Contacts/>

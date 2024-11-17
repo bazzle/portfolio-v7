@@ -41,20 +41,21 @@
 			gap: .8em;
 		}
 		.intro{
-			display: flex;
-			flex-direction: row;
-			column-gap: .5em;
-			flex-wrap: wrap;
 			@extend %text-std;
-			min-height: 80px;
-			display: flex;
-			align-items: center;
 			@include break(mobile){
 				padding-right: calc(120px + 2rem);
+				display: flex;
+				flex-direction: row;
+				column-gap: .5em;
+				flex-wrap: wrap;
+				align-items: center;
+				padding-top: 3rem;
+				padding-bottom: 3rem;
 			}
 			a{
 				@extend %text-link;
 				font-size: inherit;
+				white-space: nowrap;
 				@media print{
 					display: none;
 				}

@@ -16,7 +16,6 @@
 		flex-direction: column;
 		position: relative;
 		width: 100%;
-		align-items: center;
 		@include break(tablet){
 			padding-top: unset;
 			padding-bottom: unset;
@@ -33,11 +32,12 @@
 		}
 	}
 	&_section{
-		min-height: 80px;
 		display: flex;
 		gap: 2rem;
-		padding-left: 4rem;
-		padding-right: 4rem;
+		@include break(tablet){
+			padding-left: 4rem;
+			padding-right: 4rem;
+		}
 		position: relative;
 		&:first-of-type{
 			padding-left: 0;
