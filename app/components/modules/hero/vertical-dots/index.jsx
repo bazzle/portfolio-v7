@@ -1,7 +1,7 @@
 "use client";
 import styles from './style.module.scss';
 import propTypes from "prop-types";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 function VerticalDots({numDots, manualDelay}){
     let dotsArray = [];

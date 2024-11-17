@@ -9,7 +9,7 @@ function VennDiagram() {
         <div className={styles.venn_diagram}>
 			<div className={styles.text_overlay}>
 				<span>Space where I can</span>
-				<span>{<LoopActions />}</span>
+				<LoopActions />
 			</div>
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
