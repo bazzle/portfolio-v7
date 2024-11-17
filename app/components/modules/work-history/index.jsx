@@ -39,7 +39,7 @@ function WorkHistory(){
 		)
 	}
     return (
-        <Section>
+        <Section line>
 			<div className={styles.work_history}>
 				<div className="container">
 					<div className="inner-2col">
