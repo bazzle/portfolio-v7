@@ -48,10 +48,15 @@
 			position: absolute;
 			right: 0;
 			top: 0;
-			background-color: $ridgedLineTop;
-			border-right: .5px solid $ridgedLineBottom;
+			background-color: var(--color-ridged-line-shadow);
+			border-right: .5px solid var(--color-ridged-line-light);
 			height: 100%;
 			width: 1px;
+		}
+		&:last-of-type{
+			&:after{
+				display: none;
+			}
 		}
 	}
 }

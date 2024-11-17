@@ -2,11 +2,11 @@
 
 .spacer{
 	display: block;
-    height: 1px;
+    height: 1.5px;
     margin-top: clamp(8rem, 12vw, 14rem);
     margin-bottom: clamp(8rem, 12vw, 14rem);
-	background-color: $ridgedLineTop;
-    border-bottom: .5px solid $ridgedLineBottom;
+	background-color: var(--color-ridged-line-shadow);
+    border-bottom: .5px solid var(--color-ridged-line-light);
 	&_mobile{
 		display: block;
 		@include break(tablet){
