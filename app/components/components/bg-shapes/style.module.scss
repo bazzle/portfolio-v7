@@ -18,9 +18,6 @@
 			:global(body.light-mode) &{
 				mix-blend-mode:color-burn;
 			}
-			@supports (-moz-appearance: none) {
-				mix-blend-mode: color;
-			}
 		}
 		// filled bg shape
 		&:nth-of-type(2){
