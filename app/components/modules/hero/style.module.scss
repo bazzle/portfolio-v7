@@ -62,7 +62,6 @@
 		}
 		.clients{
 			margin-top: 2rem;
-			border-top: 1px solid var(--color-feint-line);
 			padding-top: 2rem;
 		}
 	}
@@ -85,7 +84,7 @@
 	@extend %text-display;
 	display: block;
 	@media (prefers-color-scheme: light){
-		color: var(--color-foreground)-light;
+		color: var(--color-foreground);
 	}
 	span{
 		color: var(--color-accent-alt);
