@@ -4,11 +4,7 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 
 .work_samples{
 	position: relative;
-	background-image: url("/assets/images/texture-dark.jpg");
 	border-top: .5px solid var(--color-accent);
-	:global(body.light-mode) &{
-		background-image: url("/assets/images/texture-light.jpg");
-	}
 	@media print{
 		display: none;
 	}

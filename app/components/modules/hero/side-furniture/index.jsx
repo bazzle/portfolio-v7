@@ -2,6 +2,7 @@
 import VerticalDots from "../vertical-dots";
 import styles from './style.module.scss';
 import { motion } from "motion/react";
+import Image from "next/image";
 
 function SideFurniture(){
 	return(
@@ -52,7 +53,7 @@ function SideFurniture(){
 							duration: .2,
 							delay: .75,
 						}}
-						href="../assets/images/profile.jpg"
+						href="./assets/images/profile.jpg"
 						width="25"
 						height="25"
 						mask="url(#profileMask)"

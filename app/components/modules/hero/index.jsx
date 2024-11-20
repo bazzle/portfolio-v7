@@ -6,9 +6,10 @@ import SideFurniture from './side-furniture';
 import Spacer from '@/app/components/components/spacer';
 
 function Hero(){
+
     return(
         <div className={styles.hero}>
-            <div className={styles.main_section}>
+            <div className={styles.main_section} >
 				<div className="container">
 					<div className={styles.main_section__inner}>
 						<p className={styles.message}>

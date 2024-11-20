@@ -4,12 +4,8 @@
 	position: relative;
 	background-size: auto;
 	background-repeat: repeat;
-	background-image: url("/assets/images/texture-dark.jpg");
 	border-top: .5px solid var(--color-accent);
 	border-bottom: .5px solid var(--color-accent-alt);
-	:global(body.light-mode) &{
-		background-image: url("/assets/images/texture-light.jpg");
-	}
 	@media print{
 		border-top: 0;
 		border-bottom: 0;

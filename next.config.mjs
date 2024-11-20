@@ -4,9 +4,11 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? '/portfolio-v7/' : '',
   basePath: isProd ? '/portfolio-v7' : '',
-  output: 'export'
+  output: 'export',
+  env: {
+    ASSET_PREFIX: isProd ? '/<portfolio-v7>' : '',
+  }
 };
 
 export default nextConfig;
