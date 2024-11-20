@@ -7,10 +7,19 @@ function VennDiagram() {
 
     return (
         <div className={styles.venn_diagram}>
-			<div className={styles.text_overlay}>
+			<motion.div
+				className={styles.text_overlay}
+				initial={{opacity: 0}}
+				whileInView={{opacity: 1}}
+				viewport={{ once: true }}
+				transition={{
+					duration: .1,
+					delay: 1.2
+				}}
+			>
 				<span>Space where I can</span>
 				<LoopActions />
-			</div>
+			</motion.div>
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="300"
@@ -27,34 +36,14 @@ function VennDiagram() {
             >
                 <g clipPath="url(#clip0_0_1)">
 					<g className={styles.svg__dev}>
-						<motion.circle
-						initial={{pathLength: 0}}
-						whileInView={{pathLength: 1}}
-						viewport={{ once: true }}
-						transition={{
-							duration: .1,
-							delay: 1,
-							type: "spring",
-							stiffness: 200,
-							damping: 30
-						}}
+						<circle
 						cx="186.282" cy="140.384" r="112.718" className="stroke-accent" strokeWidth="2" />
 						<text className="fill-accent" xmlSpace="preserve">
 							<tspan x="155.957" y="10.6979">Development</tspan>
 						</text>
 					</g>
 					<g className={styles.svg__design}>
-						<motion.circle
-						initial={{pathLength: 0}}
-						whileInView={{pathLength: 1}}
-						viewport={{ once: true }}
-						transition={{
-							duration: .1,
-							delay: 1.4,
-							type: "spring",
-							stiffness: 200,
-							damping: 30
-						}} cx="113.718" cy="140.384" r="112.718" className="stroke-accent-alt" strokeWidth="2" />
+						<circle cx="113.718" cy="140.384" r="112.718" className="stroke-accent-alt" strokeWidth="2" />
 						<text className="fill-accent-alt" xmlSpace="preserve">
 							<tspan x="86.6426" y="10.6979">Design</tspan>
 						</text>
