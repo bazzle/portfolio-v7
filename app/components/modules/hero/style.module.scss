@@ -7,10 +7,6 @@
 
 .main_section{
 	position: relative;
-	background-image: url("/assets/images/texture-dark.jpg");
-	:global(body.light-mode) &{
-		background-image: url("/assets/images/texture-light.jpg");
-	}
 	@media print{
 		background-image: none;
 	}

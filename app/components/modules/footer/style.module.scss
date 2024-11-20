@@ -2,10 +2,6 @@
 
 .footer{
 	padding: $block-spacing 0;
-	background-image: url("/assets/images/texture-dark.jpg");
-	:global(body.light-mode) &{
-		background-image: url("/assets/images/texture-light.jpg");
-	}
 	background-repeat: repeat;
 	position: relative;
 	border-top: .5px solid var(--color-accent);

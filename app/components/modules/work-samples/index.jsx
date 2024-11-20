@@ -37,73 +37,73 @@ function WorkSamples(){
 					<div className={styles.main}>
 						<motion.div className={styles.strip} style={{ left }}>
 							<BrowserDesktop
-								src="/assets/images/samples/nao2-dt.jpg"
+								src="./assets/images/samples/nao2-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/chevening-dt.jpg"
+								src="./assets/images/samples/chevening-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/ua-dt.jpg"
+								src="./assets/images/samples/ua-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserMobile
-								src="/assets/images/samples/bdo-mob.jpg"
+								src="./assets/images/samples/bdo-mob.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/bdo-dt.jpg"
+								src="./assets/images/samples/bdo-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/chevening2-dt.jpg"
+								src="./assets/images/samples/chevening2-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserMobile
-								src="/assets/images/samples/nao2-mob.jpg"
+								src="./assets/images/samples/nao2-mob.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/bfi-dt.jpg"
+								src="./assets/images/samples/bfi-dt.jpg"
 								alt="profile"
 							/>
 						</motion.div>
 						<motion.div className={styles.strip}  style={{ right }} >
 							<BrowserDesktop
-								src="/assets/images/samples/chevening-dt.jpg"
+								src="./assets/images/samples/chevening-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserMobile
-								src="/assets/images/samples/ua-mob.jpg"
+								src="./assets/images/samples/ua-mob.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/nao2-dt.jpg"
+								src="./assets/images/samples/nao2-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserMobile
-								src="/assets/images/samples/nao-mob.jpg"
+								src="./assets/images/samples/nao-mob.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/bfi-dt.jpg"
+								src="./assets/images/samples/bfi-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/ons-dt.jpg"
+								src="./assets/images/samples/ons-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/nao-dt.jpg"
+								src="./assets/images/samples/nao-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/ua2-dt.jpg"
+								src="./assets/images/samples/ua2-dt.jpg"
 								alt="profile"
 							/>
 							<BrowserDesktop
-								src="/assets/images/samples/nao3-dt.jpg"
+								src="./assets/images/samples/nao3-dt.jpg"
 								alt="profile"
 							/>
 						</motion.div>
