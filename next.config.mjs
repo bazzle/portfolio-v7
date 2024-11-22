@@ -4,10 +4,10 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  basePath: isProd ? '/br-web.me' : '',
+  basePath: isProd ? '' : '',
   output: 'export',
   env: {
-    ASSET_PREFIX: isProd ? '/<br-web.me>' : '',
+    ASSET_PREFIX: isProd ? '' : '',
   }
 };
 
