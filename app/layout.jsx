@@ -5,7 +5,7 @@ import { ColourThemeProvider } from "./context/colour-theme";
 
 export const metadata = {
   title: "Barry Richards",
-  description: "Web Engineer",
+  description: "Design engineer from the UK",
 };
 
 export default function RootLayout({ children }) {

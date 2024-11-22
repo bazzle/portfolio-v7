@@ -2,7 +2,7 @@
   "name": "portfolio-v7",
   "version": "7.0.0",
   "private": true,
-  "homepage": "https://bazzle.github.io/portfolio-v7",
+  "homepage": "https://br-web.me",
   "scripts": {
     "dev": "next dev",
     "browser-sync": "browser-sync start --config 'bs-config.js'",
