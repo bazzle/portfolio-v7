@@ -9,7 +9,7 @@ function Welcome(){
 	const content = WelcomeContent.bodyContent()
 
 	return(
-		<Section id="welcome" classes="someclass" noLine noSpacerPrint>
+		<Section id="welcome" noLine noSpacerPrint>
 			<div className="container">
 				<div className="inner-2col">
 					<div className="col-1">

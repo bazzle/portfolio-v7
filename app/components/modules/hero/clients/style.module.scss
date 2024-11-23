@@ -2,8 +2,10 @@
 
 .clients{
 	@include svgColor(var(--color-foreground));
-	padding-top: 30px;
 	width: 100%;
+	@include break(tablet){
+		padding-top: $block-spacing--shallow;
+	}
 	.logos{
 		display: flex;
 		flex-direction: row;

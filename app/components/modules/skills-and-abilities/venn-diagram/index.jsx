@@ -1,38 +1,21 @@
 'use client'
 import styles from './style.module.scss';
 import LoopActions from './loop-actions.jsx';
-import { motion } from 'motion/react';
 
 function VennDiagram() {
 
     return (
         <div className={styles.venn_diagram}>
-			<motion.div
-				className={styles.text_overlay}
-				initial={{opacity: 0}}
-				whileInView={{opacity: 1}}
-				viewport={{ once: true }}
-				transition={{
-					duration: .1,
-					delay: 1.2
-				}}
-			>
+			<div className={styles.text_overlay}>
 				<span>Space where I can</span>
 				<LoopActions />
-			</motion.div>
-            <motion.svg
+			</div>
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="300"
                 height="255"
                 viewBox="0 0 300 255"
                 fill="none"
-				initial={{opacity: 0}}
-				whileInView={{opacity: 1}}
-				viewport={{ once: true }}
-				transition={{
-					duration: .1,
-					delay: 1.2
-				}}
             >
                 <g clipPath="url(#clip0_0_1)">
 					<g className={styles.svg__dev}>
@@ -54,7 +37,7 @@ function VennDiagram() {
                         <rect width="1200" height="3003.34" fill="white" transform="translate(-100 -1564)" />
                     </clipPath>
                 </defs>
-            </motion.svg>
+            </svg>
         </div>
     );
 }

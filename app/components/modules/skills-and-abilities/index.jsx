@@ -12,7 +12,7 @@ function SkillsAndAbilities(){
 	const content = SkillsContent.bodyContent()
 
     return(
-		<Section line>
+		<Section noLineMobile>
 			<div className={styles.skills_abilities}>
 				<div className="container">
 					<div className="inner-2col">
@@ -21,7 +21,7 @@ function SkillsAndAbilities(){
 						</div>
 						<div className="col-2">
 							<SkillsList />
-							<Spacer shallow />
+							<Spacer shallow noMobile />
 						</div>
 					</div>
 				</div>
@@ -32,7 +32,6 @@ function SkillsAndAbilities(){
 								<VennDiagram />
 							</div>
 						</div>
-						<Spacer mobile/>
 						<div className="col-2 {styles.main_section}">
 							<div className={styles.body_text}>
 								{content}

@@ -1,10 +1,19 @@
 @use "@/app/assets/styles/all-vars" as *;
 
 .venn_diagram{
+	display: block;
 	position: relative;
-	width: 100%;
-	max-width: 280px;
 	height: auto;
+	width: 100%;
+	max-width: 300px;
+	padding-top: $block-spacing;
+	padding-bottom: $block-spacing;
+	margin: 0 auto;
+	@include break(tablet){
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
 	.text_overlay{
 		position: absolute;
 		top: 42%;
@@ -16,24 +25,28 @@
 		flex-direction: column;
 		align-items: center;
 		span{
+			color: var(--color-accent-alt);
 			text-align: center;
 			padding: .3em;
-			color: var(--color-accent-alt);
+			display: block;
+			@include break-under(mobile-land){
+				background-color: var(--color-bg);
+				padding: .5em .8em;
+			}
+			&.looping_text{
+				color: var(--color-foreground);
+			}
 		}
 	}
 	svg{
 		width: 100%;
-		height: auto;
+		max-width: 300px;
+		aspect-ratio: 300 / 255;
 		text{
 			@extend %text-miniscule;
 		}
 		circle{
 			fill: none!important;
 		}
-	}
-	.looping_text{
-		color: var(--color-foreground);
-		text-align: center;
-		display: block;
 	}
 }

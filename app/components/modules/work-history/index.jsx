@@ -2,7 +2,6 @@
 import styles from './style.module.scss';
 import SectionHead from "@/app/components/components/section-head";
 import ContentSheet from "./content-sheet";
-import Spacer from "@/app/components/components/spacer";
 import { useState } from "react";
 import Section from '@/app/components/components/section';
 import { WorkHistoryContent } from '@/app/content/body-content';
@@ -39,7 +38,7 @@ function WorkHistory(){
 		)
 	}
     return (
-        <Section line>
+        <Section noLineMobile>
 			<div className={styles.work_history}>
 				<div className="container">
 					<div className="inner-2col">

@@ -16,12 +16,18 @@
 		flex-direction: column;
 		position: relative;
 		width: 100%;
+		gap: 1rem;
 		@include break(tablet){
+			gap: 2rem;
+		}
+		@include break(tablet){
+			gap: unset;
 			padding-top: unset;
 			padding-bottom: unset;
 			flex-direction: row;
 			align-items: center;
 			height: 100%;
+			padding-top: $block-spacing--shallow;
 		}
 		@media print{
 			padding-top: unset;
@@ -33,10 +39,13 @@
 	}
 	&_section{
 		display: flex;
-		gap: 2rem;
+		gap: 1rem;
+		flex-direction: column;
 		@include break(tablet){
+			gap: 2rem;
 			padding-left: 4rem;
 			padding-right: 4rem;
+			flex-direction: row;
 		}
 		position: relative;
 		&:first-of-type{
@@ -44,14 +53,16 @@
 			border-left: 0;
 		}
 		&:after{
-			content: '';
-			position: absolute;
-			right: 0;
-			top: 0;
-			background-color: var(--color-ridged-line-shadow);
-			border-right: .5px solid var(--color-ridged-line-light);
-			height: 100%;
-			width: 1px;
+			@include break(tablet){
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 0;
+				background-color: var(--color-ridged-line-shadow);
+				border-right: .5px solid var(--color-ridged-line-light);
+				height: 100%;
+				width: 1px;
+			}
 		}
 		&:last-of-type{
 			&:after{

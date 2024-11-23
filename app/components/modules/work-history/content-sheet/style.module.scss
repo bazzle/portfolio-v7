@@ -51,6 +51,7 @@
 		padding-left: 0;
 		gap: 6rem;
 		column-count: 1;
+		margin-bottom: 0;
 		@include break(desktop){
 			column-count: 2;
 		}
