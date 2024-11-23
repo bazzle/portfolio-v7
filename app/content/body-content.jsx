@@ -40,6 +40,12 @@ export const SkillsContent = {
 			</>
 		)
 	},
+	skillsActions: [
+		"Anticipate issues",
+		"Design in the browser",
+		"Understand constraints",
+		"Find middle ground"
+	],
 	skillsItems: [
         { id: 1, name: 'HTML/DOM',  rating: 5 },
         { id: 2, name: 'CSS/SASS',  rating: 5 },

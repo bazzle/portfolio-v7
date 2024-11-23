@@ -53,10 +53,6 @@
 .body_text{
 	@include body-formatting;
 }
-.diagram{
-	display: flex;
-	justify-content: center;
-}
 
 .col-1{
 	@media print{

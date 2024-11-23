@@ -2,14 +2,11 @@
 import styles from './style.module.scss';
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { SkillsContent } from '@/app/content/body-content';
 
 function LoopActions() {
-  const actions = [
-    "Anticipate issues",
-    "Design in the browser",
-    "Understand constraints",
-    "Find middle ground",
-  ];
+
+  const actions = SkillsContent.skillsActions
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
