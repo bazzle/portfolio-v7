@@ -41,10 +41,14 @@
 		}
 	}
 	&__profile{
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		transform: translateY(50%);
+		display: none;
+		@include break(mobile){
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			transform: translateY(50%);
+		}
 		@include break(tablet){
 			transform: translateY(0);
 			position: absolute;
