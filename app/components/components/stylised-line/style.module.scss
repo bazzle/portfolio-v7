@@ -17,13 +17,16 @@
 		@media print{
 			display: none;
 		}
+		@include break-under(mobile-land){
+			left: 0;
+		}
 	}
 }
 .line{
 	position: absolute;
-	top: 12.5px;
+	top: 12px;
 	right: 0;
-	height: 1px;
+	height: .5px;
 	width: 0;
 	border: none;
 	background-color: var(--color-accent);
