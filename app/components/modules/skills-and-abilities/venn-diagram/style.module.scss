@@ -5,6 +5,13 @@
 	width: 100%;
 	max-width: 280px;
 	height: auto;
+	padding-top: $block-spacing;
+	padding-bottom: $block-spacing;
+	@include break(tablet){
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
 	.text_overlay{
 		position: absolute;
 		top: 42%;

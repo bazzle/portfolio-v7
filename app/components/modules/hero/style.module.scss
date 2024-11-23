@@ -47,7 +47,6 @@
 				flex-wrap: wrap;
 				align-items: center;
 				padding-top: 3rem;
-				padding-bottom: 3rem;
 			}
 			a{
 				@extend %text-link;
@@ -57,10 +56,6 @@
 					display: none;
 				}
 			}
-		}
-		.clients{
-			margin-top: 2rem;
-			padding-top: 2rem;
 		}
 	}
 }

@@ -2,11 +2,12 @@ import BgShapes from "../../components/bg-shapes";
 import styles from "./style.module.scss";
 import Section from '@/app/components/components/section';
 import {TextBlocks} from '@/app/content/body-content';
+import Spacer from "@/app/components/components/spacer";
 
 function TextBlock(props){
 
 	return(
-		<Section>
+		<Section noLine deep>
 			<div className={styles.text_block}>
 				<div className={styles.text_block__inner}>
 					<div className="container">

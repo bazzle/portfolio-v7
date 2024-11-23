@@ -13,7 +13,7 @@ import { themesContent } from "@/app/content/body-content";
 function Themes(){
 	return(
 
-		<Section>
+		<Section noLine>
 			<div className={styles.themes}>	
 				<div className="container">
 					<div className="inner-2col">

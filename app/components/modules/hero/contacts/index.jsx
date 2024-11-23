@@ -1,4 +1,5 @@
 'use client'
+import Spacer from '@/app/components/components/spacer';
 import styles from './style.module.scss';
 import ActionLink from '@/app/components/components/action-link';
 
@@ -10,6 +11,7 @@ function Contacts() {
 	}
 	return (
 		<div className={styles.contacts}>
+			<Spacer mobile />
 			<div className="container">
 				<div className={styles.inner}>
 					<div className={styles.contacts_section}>
@@ -22,6 +24,7 @@ function Contacts() {
 					</div>
 				</div>
 			</div>
+			<Spacer mobile />
 		</div>
 	)
 }
