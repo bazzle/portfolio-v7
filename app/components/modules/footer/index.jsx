@@ -15,9 +15,6 @@ function Footer(){
 					</p>
 				</div>
 			</div>
-			<div className={styles.back_top}>
-				<BackTop/>
-			</div>
 			<BgShapes variant="4" />
         </footer>
     )

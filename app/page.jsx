@@ -8,6 +8,7 @@ import Typesheet from "./components/modules/type-sheet";
 import TextBlock from "./components/modules/text-block";
 import SignOff from "./components/modules/sign-off";
 import WhatNext from "./components/modules/what-next";
+import BackTop from "./components/modules/footer/backtop";
 
 
 

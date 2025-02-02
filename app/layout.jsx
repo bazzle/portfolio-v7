@@ -2,6 +2,7 @@ import "./assets/styles/main.scss";
 import Header from "./components/modules/header";
 import Footer from "./components/modules/footer";
 import { ColourThemeProvider } from "./context/colour-theme";
+import BackTop from "./components/modules/footer/backtop";
 
 export const metadata = {
   title: "Barry Richards",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         {children}
 		<Footer/>
 		</ColourThemeProvider>
+		<BackTop/>
       </body>
     </html>
   );
