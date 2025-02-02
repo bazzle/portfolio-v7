@@ -61,12 +61,12 @@
 }
 .tile{
 	background-color: var(--color-bg);
-	border-top: .5px solid var(--color-ridged-line-light);
+	border-top: 1px solid var(--color-ridged-line-light);
 	border-bottom: 1px solid var(--color-ridged-line-shadow);
 	border-right: 0;
 	position: relative;
 	@include break(mobile){
-		border-left: .5px solid var(--color-ridged-line-light);
+		border-left: 1px solid var(--color-ridged-line-light);
 		border-right: 1px solid var(--color-ridged-line-shadow);
 	}
 	&__name{
