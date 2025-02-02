@@ -3,7 +3,9 @@
 .hero{
 	background-color: var(--color-bg);
 	position: relative;
-	min-height: 100vh;
+	@media (orientation: landscape) {
+		min-height: 100vh;
+	}
 }
 
 .main_section{
