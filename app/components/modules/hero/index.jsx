@@ -20,7 +20,7 @@ function Hero(){
 								Web for <span>Everyone</span>
 							</span>
 							<span className={styles.message__sub}>
-								... But still <span className="highlight">look cool</span>.
+								... But still <span className="highlight">POP &#128165;</span>
 							</span>
 						</p>
 						<div className={styles.side_furniture_container}>

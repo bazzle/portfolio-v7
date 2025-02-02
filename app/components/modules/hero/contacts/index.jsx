@@ -20,7 +20,6 @@ function Contacts() {
 					</div>
 					<div className={styles.contacts_section}>
 						<ActionLink linkString="mailto:barry@br-web.me" textString="Drop me an email" printString="barry@br-web.me" />
-						<ActionLink classes="hide-print" clickEvent={PrintPage} textString="Print this page" />
 					</div>
 				</div>
 			</div>
