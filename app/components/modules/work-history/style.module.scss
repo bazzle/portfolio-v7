@@ -2,24 +2,34 @@
 
 .work_history{
 	background-color: var(--color-bg);
+	position: relative;
 	&__sectionHead{
-		@include break(tablet){
-			margin-top: 10.2rem;
+		@include break(desktop-wider){
+			margin-top: 10rem;
+		}
+	}
+	&__inner{
+		position: relative;
+		@include break(desktop-wider){
+			padding-top: 10rem;
 		}
 	}
 	.nav{
-		width: 100%;
-		display: flex;
+		display: inline-flex;
 		flex-direction: row;
 		gap: 1rem;
 		flex-wrap: wrap;
-		@include break(tablet){
+		flex-direction: row-reverse;
+		@include break(desktop-wider){
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50vw;
 			border-bottom: 1px solid var(--color-foreground);
 			justify-content: space-between;
-			flex-direction: row-reverse;
-			height: 10.2rem;
+			height: 10rem;
 		}
-		@include break(desktop-med){
+		@include break(desktop-wider){
 			gap: 4rem;
 		}
 		@media print{
@@ -30,13 +40,14 @@
 		flex-grow: 0;
 		margin-bottom: 0;
 		position: relative;
-		padding-bottom: 3rem;
-		@include break(tablet){
+		max-width: 10em;
+		@include break(desktop-wider){
 			flex-shrink: 2;
+			padding-bottom: 3rem;
 		}
 		&__inner{
 			position: relative;
-			@include break(tablet){
+			@include break(desktop-wider){
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -64,8 +75,12 @@
 			display: block;
 			cursor: default;
 			text-decoration: none;
-			@include break(desktop-med){
+			@include break(desktop-wider){
 				flex-grow: 1;
+				display: block;
+				width: auto;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			.nav_item__title{
 				color: var(--color-foreground);
@@ -77,19 +92,19 @@
 				@media print{
 					font-variation-settings: "ital" 0, "opsz" 10, "wght" 450;
 				}
-				@include break(desktop-med){
+				@include break(desktop-wider){
 					font-size: responsiveSize(2.6, 10, 2.6);
 				}
 			}
 			.nav_item__dates{
 				color: var(--color-accent-alt);
 				@extend %text-tiny;
-				@include break(tablet){
+				@include break(desktop-wider){
 					display: block;
 				}
 			}
 			&::after{
-				@include break(tablet){
+				@include break(desktop-wider){
 					content: '';
 					height: 3rem;
 					width: 100vw;
@@ -100,6 +115,20 @@
 					bottom: -1px;
 					left: 50%;
 					display: block;
+				}
+			}
+		}
+		&:first-of-type{
+			&.is_active{
+				@include break(desktop-wider){
+					margin-right: 0;
+				}
+			}
+		}
+		&:last-of-type{
+			&.is_active{
+				@include break(desktop-wider){
+					margin-left: 0;
 				}
 			}
 		}

@@ -48,16 +48,18 @@ function WorkHistory(){
 							</div>
 						</div>
 						<div className="col-2">
-							<nav role="tablist" className={styles.nav}>
-								{ sectionsArray.map((item, index) => navItem(item, index)) }
-							</nav>
-							{sectionsArray.map((item, index) => (
-								<ContentSheet
-									key={index}
-									contentSheetObj = {item}
-									isHidden = {item === activeSection ? false : true}
-								/>
-							))}
+							<div className={styles.work_history__inner}>
+								<nav role="tablist" className={styles.nav}>
+									{ sectionsArray.map((item, index) => navItem(item, index)) }
+								</nav>
+								{sectionsArray.map((item, index) => (
+									<ContentSheet
+										key={index}
+										contentSheetObj = {item}
+										isHidden = {item === activeSection ? false : true}
+									/>
+								))}
+							</div>
 						</div>
 					</div>
 				</div>
