@@ -15,6 +15,7 @@ function Contacts() {
 			<div className="container">
 				<div className={styles.inner}>
 					<div className={styles.contacts_section}>
+						<ActionLink linkString="./public/assets/files/cv.pdf" textString="CV" printString="barry@br-web.me" />
 						<ActionLink linkString="https://www.linkedin.com/in/br-web/" textString="LinkedIn" printString="linkedin.com/in/br-web/" />
 						<ActionLink linkString="https://github.com/bazzle/" textString="Github" printString="github.com/bazzle/" />
 						<ActionLink linkString="mailto:barry@br-web.me" textString="Drop me an email" printString="barry@br-web.me" />
