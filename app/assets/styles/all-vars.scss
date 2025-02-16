@@ -43,6 +43,8 @@ $font-size-display: responsiveSize(9, 40, 9);
 $font-size-display-small: responsiveSize(4, 35, 4);
 // For headings only
 $font-size-heading: responsiveSize(2.8, 5, 2.8);
+// For small headings
+$font-size-heading-small: responsiveSize(2.2, 5, 2.2);
 // For general use
 $font-size-medium: responsiveSize(3.2, 30, 3.2);
 // Default font size
@@ -189,6 +191,19 @@ $font-blocky: "degular-variable", sans-serif;
 %text-heading{
 	font-family: $font-std;
 	font-size: $font-size-heading;
+	line-height:1.2;
+	font-variation-settings: "ital" 0, "opsz" 28, "wght" 500;
+	:global(body.light-mode) &{
+		font-variation-settings: "ital" 0, "opsz" 28, "wght" 600;
+	}
+	@media print{
+		font-variation-settings: "ital" 0, "opsz" 28, "wght" 600;
+	}
+}
+
+%text-heading-small{
+	font-family: $font-std;
+	font-size: $font-size-heading-small;
 	line-height:1.2;
 	font-variation-settings: "ital" 0, "opsz" 28, "wght" 500;
 	:global(body.light-mode) &{

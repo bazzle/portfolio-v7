@@ -1,0 +1,47 @@
+@mixin defaults{
+	position: relative;
+	left: 0;
+	top: 0;
+	height: auto;
+}
+
+.icon_glass{
+	@include defaults;
+	width: 35%;
+	left: -1.5rem;
+}
+.icon_door{
+	@include defaults;
+	width: 35%;
+}
+.icon_tag{
+	@include defaults;
+	width: 55%;
+}
+.icon_pieces{
+	@include defaults;
+	width: 55%;
+}
+.icon_mag_glass{
+	@include defaults;
+	width: 50%;
+}
+.icon_shapes{
+	@include defaults;
+	width: 45%;
+}
+
+.dark_mode_hide{
+	visibility:hidden;
+	:global(body.light-mode) &{
+		visibility:visible;
+	}
+	@media print{
+		visibility:visible;
+	}
+}
+.dark_mode_nobg{
+	:global(body.dark-mode) &{
+		fill: none;
+	}
+}

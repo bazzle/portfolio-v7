@@ -11,25 +11,16 @@
 	width: 80vw;
 	margin: 0 auto;
 	position: relative;
-	top: -1px;
 	@include break(mobile){
 		display: grid;
 		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
 		width: 100%;
-		right: -1px;
+		left: 1px;
+		top: -1px;
 	}
 	@include break(desktop){
 		grid-template-columns: 1fr 1fr 1fr;
-	}
-	> *:last-of-type{
-		grid-column: span 2;
-		@include break(desktop){
-			grid-column: unset;
-		}
-		@media print{
-			grid-column: unset;
-		}
 	}
 	@media print{
 		display: grid;
@@ -38,85 +29,66 @@
 		right: -1px;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
-	&:before{
-		content:'';
-		width: 2px;
-		height: 100%;
-		background-color: var(--color-bg);
+}
+.tile{
+	$indent: 12px;
+	position: relative;
+	height: auto;
+	overflow: hidden;
+	&::before{
+		content: '';
 		position: absolute;
-		top: 0;
+		top: $indent;
 		left: 0;
-		z-index: 1;
+		width: .5px;
+		height: calc(100% - $indent);
+		background-color: var(--color-accent-alt);
 	}
-	&:after{
-		content:'';
-		width: 100%;
-		height: 2px;
-		background-color: var(--color-bg);
+	&::after{
+		content: '';
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		z-index: 1;
-	}
-}
-.tile{
-	background-color: var(--color-bg);
-	border-top: 1px solid var(--color-ridged-line-light);
-	border-bottom: 1px solid var(--color-ridged-line-shadow);
-	border-right: 0;
-	position: relative;
-	@include break(mobile){
-		border-left: 1px solid var(--color-ridged-line-light);
-		border-right: 1px solid var(--color-ridged-line-shadow);
-	}
-	&__name{
-		@extend %text-tiny;
-		text-align: center;
+		width: calc(100% - $indent);
+		height: .5px;
+		background-color: var(--color-accent-alt);
 	}
 	&_icon{
 		display: block;
-		padding-top: 4rem;
-		padding-bottom: 4rem;
-		@include break(mobile){
-			padding-top: 0;
-			padding-bottom: 0;
-			aspect-ratio: 1/1;
-			display: block;
-		}
 		@media print{
 			display: none;
 		}
 	}
-	&_noicon{
-		padding: 2rem;
+	&__name{
+		@extend %text-heading-small;
+		text-align: left;
 	}
-	.tile__inner{
+	&__description{
+		@extend %text-tiny;
+		text-align: left;
+	}
+	&_noicon{
+		.tile__inner{
+			:global(body.dark-mode) &{
+				padding: 2rem;
+			}
+		}
+	}
+	&__inner{
 		width: 100%;
-		height: 100%;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 		gap: 1rem;
 		position: relative;
-		@include break(tablet){
-			gap: 2rem;
-		}
-		.icon_container{
-			@include break(mobile){
-				max-width: 120px;
-				aspect-ratio: 1/1;
-				width: 50%;
-				height: auto;
-			}
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: relative;
-			svg{
-				max-width: 100%;
-				z-index: 1;
-			}
+		padding: 2rem;
+	}
+	.icon_container{
+		aspect-ratio: 3/2;
+		width: 100%;
+		:global(body.light-mode) &{
+			display: none;
 		}
 	}
 }

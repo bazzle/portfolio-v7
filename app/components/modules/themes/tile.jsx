@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 import PropTypes from "prop-types";
 
-function Tile({ component, name }){
+function Tile({ component, name, description }){
 
 	function iconBlock(){
 		return(
@@ -15,6 +15,9 @@ function Tile({ component, name }){
 				<div className={styles.tile__name}>
 					{name}
 				</div>
+				<p className={styles.tile__description}>
+					{description}
+				</p>
 			</div>
 		</div>
 	)
@@ -22,7 +25,8 @@ function Tile({ component, name }){
 
 Tile.propTypes = {
 	component : PropTypes.elementType,
-	name : PropTypes.string.isRequired
+	name : PropTypes.string.isRequired,
+	description : PropTypes.string.isRequired
 }
 
 export default Tile
