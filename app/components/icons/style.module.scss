@@ -28,7 +28,15 @@
 }
 .icon_shapes{
 	@include defaults;
-	width: 45%;
+	width: 50%;
+}
+.icon_fingerprint{
+	@include defaults;
+	width: 35%;
+}
+.icon_balance{
+	@include defaults;
+	width: 35%;
 }
 
 .dark_mode_hide{
