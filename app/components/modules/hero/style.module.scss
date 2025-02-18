@@ -3,9 +3,6 @@
 .hero{
 	background-color: var(--color-bg);
 	position: relative;
-	@media (orientation: landscape) {
-		min-height: 100vh;
-	}
 }
 
 .main_section{
@@ -47,6 +44,9 @@
 			column-gap: .5em;
 			flex-wrap: wrap;
 			align-items: center;
+			p{
+				max-width: unset;
+			}
 			@include break(mobile){
 				padding-right: calc(120px + 2rem);
 			}

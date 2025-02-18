@@ -52,6 +52,7 @@ h2, h3, h4, h5, h6, p, ul, ol{
 }
 
 p, li{
+	max-width: 60ch;
 	@media print{
 		max-width: 100rem;
 	}

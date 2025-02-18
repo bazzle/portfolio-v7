@@ -8,8 +8,8 @@
 	margin-top: $block-spacing;
 	margin-bottom: $block-spacing;
 	@include break(tablet){
-		margin-top: clamp(8rem, 12vw, 14rem);
-		margin-bottom: clamp(8rem, 12vw, 14rem);
+		margin-top: clamp(10rem, 15vw, 17rem);
+		margin-bottom: clamp(10rem, 15vw, 17rem);
 	}
 	&_mobile{
 		display: block;
@@ -42,10 +42,6 @@
 			background-color: transparent;
 			border-bottom: 0;
 		}
-	}
-	&_deep{
-		margin-top: $block-spacing;
-		margin-bottom: $block-spacing;
 	}
 	@media print{
 		margin-top: $block-spacing--shallow--static;

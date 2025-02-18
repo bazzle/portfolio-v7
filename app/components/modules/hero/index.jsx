@@ -41,7 +41,7 @@ function Hero(){
 					<Clients/>
 				</div>
 			</div>
-			<Spacer deep />
+			<Spacer />
         </div>
     )
 }

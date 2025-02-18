@@ -10,9 +10,6 @@
 	}
 	&__inner{
 		position: relative;
-		@include break(desktop-wider){
-			padding-top: 10rem;
-		}
 	}
 	.nav{
 		display: inline-flex;
@@ -20,11 +17,8 @@
 		gap: 1rem;
 		flex-wrap: wrap;
 		flex-direction: row-reverse;
+		width: 100%;
 		@include break(desktop-wider){
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 50vw;
 			border-bottom: 1px solid var(--color-foreground);
 			justify-content: space-between;
 			height: 10rem;

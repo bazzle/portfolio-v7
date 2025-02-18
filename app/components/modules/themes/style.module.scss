@@ -5,33 +5,35 @@
 	overflow: hidden;
 }
 .tile_grid{
-	@media print{
-		background-color: unset;
-	}
-	width: 80vw;
-	margin: 0 auto;
 	position: relative;
 	@include break(mobile){
 		display: grid;
-		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
 		width: 100%;
 		left: 1px;
 		top: -1px;
+		grid-template-columns: 1fr 1fr;
 	}
 	@include break(desktop){
+		grid-template-columns: 1fr 1fr;
+	}
+	@include break(desktop-med){
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+	@include break(desktop-wide){
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 	@media print{
 		display: grid;
 		grid-template-rows: auto;
 		width: 100%;
 		right: -1px;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 .tile{
-	$indent: 12px;
+	$indent: 18px;
 	position: relative;
 	height: auto;
 	overflow: hidden;
@@ -85,8 +87,10 @@
 		padding: 2rem;
 	}
 	.icon_container{
-		aspect-ratio: 3/2;
 		width: 100%;
+		@include break(mobile){
+			aspect-ratio: 3/2;
+		}
 		:global(body.light-mode) &{
 			display: none;
 		}
