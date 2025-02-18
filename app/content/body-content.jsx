@@ -5,6 +5,8 @@ import IconMagGlass from "@/app/components/icons/icon-mag-glass.jsx";
 import IconPieces from "@/app/components/icons/icon-pieces.jsx";
 import IconShapes from "@/app/components/icons/icon-shapes.jsx";
 import IconTag from "@/app/components/icons/icon-tag.jsx";
+import IconFingerprint from "@/app/components/icons/icon-fingerprint";
+import IconBalance from "@/app/components/icons/icon-balance";
 
 export const WelcomeContent = {
 	title: "Welcome",
@@ -69,46 +71,48 @@ export const themesContent = {
 	title: 'Things I think about',
 	tiles: [
 		{
-			component: <IconGlass slug="icon_glass"/>,
+			component: <IconGlass />,
 			name: "Responsive web",
 			description: "Throughout every stage of the design and development process, I think about how the interface will appear in different size viewports."
 		},
 		{
-			component: <IconDoor slug="icon_door"/>,
+			component: <IconDoor />,
 			name: "Accessibility",
 			description: "I design with inclusivity in mind, ensuring digital experiences are usable for everyone, including those with disabilities, by following WCAG guidelines."
 		},
 		{
-			component: <IconTag slug="icon_tag"/>,
+			component: <IconTag />,
 			name: "Semantics",
 			description: "I prioritize clean, meaningful HTML structure to enhance SEO, accessibility, and maintainability, ensuring content is understood by both users and machines."
 		},
 		{
-			component: <IconPieces slug="icon_pieces"/>,
+			component: <IconPieces />,
 			name: "Typography",
 			description: "Thoughtful typography improves readability and hierarchy, reinforcing brand identity while ensuring accessibility across different screens and contexts."
 		},
 		{
-			component: <IconMagGlass slug="icon_mag_glass"/>,
+			component: <IconFingerprint />,
 			name: "User-Centered Design",
 			description: "Every design decision is guided by user needs, balancing aesthetics with functionality to create intuitive and engaging experiences."
 		},
 		{
-			component: <IconShapes slug="icon_shapes"/>,
+			component: <IconShapes />,
 			name: "Brand integration",
 			description: "I align design with brand values, creating cohesive experiences that strengthen identity, build trust, and foster meaningful user connections."
 		},
 		{
-			name: "Integrating AI in My Workflow",
-			description: "I leverage AI tools to enhance efficiency, automate repetitive tasks, and generate insights, ensuring smarter design and development decisions."
+			component: <IconBalance />,
+			name: "Hierarchy, Balance, White-Space",
+			description: "I carefully structure layouts using visual hierarchy, balance, and white space to guide attention, improve readability, and create a refined user experience."
 		},
 		{
+			component: <IconMagGlass />,
 			name: "Search Engine Optimisation",
 			description: "I build websites with SEO in mind. Semantic structure, performance optimisation, and meaningful content—to improve visibility and user engagement."
 		},
 		{
-			name: "Hierarchy, Balance, White-Space",
-			description: "I carefully structure layouts using visual hierarchy, balance, and white space to guide attention, improve readability, and create a refined user experience."
+			name: "Integrating AI in My Workflow",
+			description: "I leverage AI tools to enhance efficiency, automate repetitive tasks, and generate insights, ensuring smarter design and development decisions."
 		},
 		{
 			name: "Content Management",
