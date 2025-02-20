@@ -13,8 +13,6 @@ function Clients(){
 					<LogoBFI />
 					<LogoNao />
 					<LogoBDO />
-				</div>
-				<div className={styles.logos_line}>
 					<LogoOns />
 					<LogoShelter />
 				</div>

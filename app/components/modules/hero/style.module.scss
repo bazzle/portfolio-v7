@@ -3,9 +3,13 @@
 .hero{
 	background-color: var(--color-bg);
 	position: relative;
-	height: calc(100vh - 60px);
+	height: auto;
 	display: flex;
 	flex-direction: column;
+	@include break(tablet){
+		height: auto;
+		height: calc(100vh - 60px);
+	}
 }
 
 .main_section{
@@ -15,6 +19,8 @@
 	&__inner{
 		z-index: 1;
 		position: relative;
+		padding-top: clamp(10rem, 15vw, 17rem);
+		padding-bottom: clamp(10rem, 15vw, 17rem);
 		@include break(tablet){
 			height: 100%;
 			width: 100%;
@@ -66,9 +72,6 @@
 		flex-direction: column;
 		width: 100%;
 		align-items: flex-start;
-		p{
-			margin-bottom: 0;
-		}
 		@media print{
 			padding-top: 1em;
 			gap: .8em;
@@ -78,15 +81,18 @@
 			padding-top: 3rem;
 			display: flex;
 			flex-direction: column;
-			column-gap: .5em;
-			padding-right: calc(8vw + 8rem);
+			gap: 1em;
+			width: 100%;
 			@include break(tablet){
+				padding-right: calc(8vw + 8rem);
 				flex-direction: row;
 				align-items: flex-start;
 				justify-content: space-between;
 			}
-			p{
+			.intro_main{
 				max-width: unset;
+				margin-bottom: 0;
+				flex-shrink: 1;
 			}
 			a{
 				@extend %text-link;
@@ -98,17 +104,21 @@
 			}
 		}
 		.contacts{
+			flex-shrink: 1;
 			display: flex;
-			gap: 1rem;
-			flex-direction: column;
-			@include break(tablet){
-				flex-direction: row;
-				gap: 2rem;
-			}
+			flex-wrap: wrap;
+			gap: 1rem 2rem;
+			flex-direction: row;
 			position: relative;
 			&:first-of-type{
 				padding-left: 0;
 				border-left: 0;
+			}
+			@include break(tablet){
+				flex-direction: column;
+			}
+			@include break(desktop){
+				flex-direction: row;
 			}
 		}
 	}
