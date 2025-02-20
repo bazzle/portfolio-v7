@@ -8,10 +8,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		width: 10px;
 		gap: 4rem;
 		padding-top: 4rem;
-		padding-bottom: 12rem;
-		width: 10px;
 	}
 	&__dots{
 		flex-grow: 1;
@@ -22,7 +21,7 @@
 	}
 	&__tick{
 		position: relative;
-		height: 55px;
+		height: 8rem;
 		width: 10px;
 		display: none;
 		@include break(tablet){
@@ -30,8 +29,8 @@
 		}
 		svg{
 			position: absolute;
-			width: 70px;
-			height: 55px;
+			width: 8rem;
+			height: 8rem;
 			top: 0;
 			left: 12px;
 			transform: translateX(-50%);
@@ -42,20 +41,11 @@
 	}
 	&__profile{
 		display: none;
-		@include break(mobile){
-			display: block;
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			transform: translateY(50%);
-		}
 		@include break(tablet){
-			transform: translateY(0);
-			position: absolute;
-			bottom: -8rem;
-			right: 0;
 			height: 16rem;
 			width: 10px;
+			display: block;
+			position: relative;
 		}
 		svg{
 			width: 12rem;
@@ -65,8 +55,8 @@
 				width: 16rem;
 				height: 16rem;
 				position: absolute;
-				left: 12px;
-				top: -4px;
+				left: 8px;
+				top: -3px;
 				transform: translateX(-50%);
 			}
 		}

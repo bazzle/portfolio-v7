@@ -5,6 +5,7 @@
 	width: 100%;
 	@include break(tablet){
 		padding-top: $block-spacing--shallow;
+		padding-bottom: $block-spacing--shallow;
 	}
 	.logos{
 		display: flex;

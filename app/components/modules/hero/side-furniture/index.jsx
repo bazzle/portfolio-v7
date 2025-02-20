@@ -8,7 +8,7 @@ function SideFurniture(){
 	return(
 		<div className={styles.side_furniture}>
 			<div className={styles.side_furniture__dots}>
-				<VerticalDots numDots = {4} />
+				<VerticalDots numDots = {3} />
 			</div>
 			<div className={styles.side_furniture__tick}>
 				<svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +30,7 @@ function SideFurniture(){
 				</svg>
 			</div>
 			<div className={styles.side_furniture__dots}>
-				<VerticalDots numDots = {2} manualDelay={.5} />
+				<VerticalDots numDots = {3} manualDelay={.5} />
 			</div>
 			<div className={styles.side_furniture__profile}>
 				<svg viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">

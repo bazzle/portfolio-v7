@@ -8,17 +8,15 @@ import LogoOns from './logos/logo-ons.jsx';
 function Clients(){
     return(
         <div className={styles.clients}>
-			<div className="container">
-				<div className={styles.logos}>
-					<div className={styles.logos_line}>
-						<LogoBFI />
-						<LogoNao />
-						<LogoBDO />
-					</div>
-					<div className={styles.logos_line}>
-						<LogoOns />
-						<LogoShelter />
-					</div>
+			<div className={styles.logos}>
+				<div className={styles.logos_line}>
+					<LogoBFI />
+					<LogoNao />
+					<LogoBDO />
+				</div>
+				<div className={styles.logos_line}>
+					<LogoOns />
+					<LogoShelter />
 				</div>
 			</div>
         </div>
