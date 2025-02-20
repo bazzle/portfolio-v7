@@ -2,8 +2,6 @@
 
 
 .side_furniture{
-	position: relative;
-	height: 100%;
 	@include break(tablet){
 		display: flex;
 		flex-direction: column;
@@ -11,6 +9,11 @@
 		width: 10px;
 		gap: 4rem;
 		padding-top: 4rem;
+		height: 100%;
+		position: absolute;
+		right: calc(8vw - 8px);
+		top: 0;
+		height: calc(100% + 8rem);
 	}
 	&__dots{
 		flex-grow: 1;
@@ -40,7 +43,9 @@
 		}
 	}
 	&__profile{
-		display: none;
+		position: absolute;
+		bottom: 0;
+		right: 0;
 		@include break(tablet){
 			height: 16rem;
 			width: 10px;
@@ -48,9 +53,12 @@
 			position: relative;
 		}
 		svg{
+			position: relative;
 			width: 12rem;
 			height: 12rem;
 			fill: var(--color-accent);
+			transform: translateY(50%);
+			top: 4px;
 			@include break(tablet){
 				width: 16rem;
 				height: 16rem;

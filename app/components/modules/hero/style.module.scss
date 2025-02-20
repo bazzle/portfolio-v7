@@ -58,12 +58,6 @@
 			@extend %text-medium;
 		}
 	}
-	.side_furniture_container{
-		position: absolute;
-		right: calc(8vw - 8px);
-		top: 0;
-		height: calc(100% + 8rem);
-	}
 }
 .foot_section{
 	height: auto;
@@ -93,6 +87,10 @@
 				max-width: unset;
 				margin-bottom: 0;
 				flex-shrink: 1;
+				padding-right: calc(8vw + 8rem);
+				@include break(tablet){
+					padding-right: unset;
+				}
 			}
 			a{
 				@extend %text-link;

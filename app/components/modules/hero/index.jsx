@@ -23,9 +23,7 @@ function Hero(){
 								... But still <span className="highlight">POP &#128165;</span>
 							</span>
 						</p>
-						<div className={styles.side_furniture_container}>
-							<SideFurniture/>
-						</div>
+						<SideFurniture/>
 					</div>
 				</div>
 				<BgShapes variant="1" />

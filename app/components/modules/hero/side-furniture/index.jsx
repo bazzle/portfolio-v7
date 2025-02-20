@@ -2,7 +2,6 @@
 import VerticalDots from "../vertical-dots";
 import styles from './style.module.scss';
 import { motion } from "motion/react";
-import Image from "next/image";
 
 function SideFurniture(){
 	return(
