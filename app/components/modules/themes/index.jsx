@@ -19,7 +19,7 @@ function Themes(){
 	
 	return(
 
-		<Section noLine>
+		<Section noLine shallow>
 			<div className={styles.themes}>	
 				<div className="container">
 					<div className="inner-2col">
