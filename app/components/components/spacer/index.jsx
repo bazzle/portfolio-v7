@@ -8,7 +8,6 @@ function Spacer({shallow, mobile, noMobile, noLine, noLineMobile, deep}){
 		${shallow ? styles.spacer_shallow : ''}
 		${noLine ? styles.spacer_noline : ''}
 		${noLineMobile ? styles.spacer_nolinemobile : ''}
-		${deep ? styles.spacer_deep : ''}
 		`).replace(/\s+/g, ' ');
 
 	return(

@@ -4,6 +4,7 @@
 	position: relative;
 	width: 100%;
 }
+
 .title{
 	margin: 0;
 	padding-left: calc(1.5vw + 1.1em);
@@ -17,12 +18,16 @@
 		padding-top: 4rem;
 		padding-bottom: 2rem;
 	}
+	&__no_indent_mobile{
+		@include break-under(tablet){
+			padding-left: 0;
+		}
+	}
+	&__no_separator{
+		margin: 0;
+		@extend %text-heading;
+	}
 }
 :global(body.dark-mode) .title {
 	color: var(--color-foreground);
-}
-
-.title__no_separator{
-	margin: 0;
-	@extend %text-heading;
 }

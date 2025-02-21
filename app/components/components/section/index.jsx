@@ -29,8 +29,7 @@ Section.propTypes = {
   noSpacerPrint: propTypes.bool,
   noMobile: propTypes.bool,
   noLine: propTypes.bool,
-  noLineMobile: propTypes.bool,
-  deep: propTypes.bool
+  noLineMobile: propTypes.bool
 };
 
 export default Section;
