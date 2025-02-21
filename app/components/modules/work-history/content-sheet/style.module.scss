@@ -2,9 +2,7 @@
 
 .content_sheet{
 	&__main{
-		@include break(tablet){
-			padding-top: $block-spacing--shallow;
-		}
+		padding-top: $block-spacing--shallow;
 	}
 	&_hidden{
 		display: none;
