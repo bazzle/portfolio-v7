@@ -6,6 +6,7 @@
 	background-repeat: repeat;
 	p{
 		margin: 0;
+		max-width: unset;
 		@extend %text-display-small;
 		text-align: center;
 		color: var(--color-foreground);
