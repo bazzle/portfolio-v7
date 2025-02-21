@@ -2,7 +2,7 @@ import styles from './style.module.scss';
 import propTypes from "prop-types";
 import Spacer from '@/app/components/components/spacer';
 
-function Section({ children, id, classes, noSpacer, noSpacerPrint, mobile, noMobile, noLine, noLineMobile, deep }) {
+function Section({ children, id, classes, noSpacer, noSpacerPrint, mobile, noMobile, noLine, noLineMobile, deep, shallow }) {
 	let classString = classes
 	const spacerProps = {
 		...(noSpacer && { noSpacer: true }),
@@ -11,7 +11,8 @@ function Section({ children, id, classes, noSpacer, noSpacerPrint, mobile, noMob
 		...(noMobile && { noMobile: true }),
 		...(noLine && { noLine: true }),
 		...(noLineMobile && { noLineMobile: true }),
-		...(deep && { deep: true })
+		...(deep && { deep: true }),
+		...(shallow && { shallow: true })
 	};
 	return (
 		<section id={id} className={classString}>
@@ -29,7 +30,8 @@ Section.propTypes = {
   noSpacerPrint: propTypes.bool,
   noMobile: propTypes.bool,
   noLine: propTypes.bool,
-  noLineMobile: propTypes.bool
+  noLineMobile: propTypes.bool,
+  shallow: propTypes.bool
 };
 
 export default Section;

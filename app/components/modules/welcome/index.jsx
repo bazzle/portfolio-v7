@@ -10,8 +10,8 @@ function Welcome(){
 	const content = WelcomeContent.bodyContent()
 
 	return(
-		<Section id="welcome" noLine noSpacerPrint>
-			<Spacer noLine />
+		<Section id="welcome" noLine noSpacerPrint shallow>
+			<Spacer noLine shallow />
 			<div className="container">
 				<div className="inner-2col">
 					<div className="col-1">

@@ -10,7 +10,7 @@ function WhatNext(){
 	const content = WhatNextContent.bodyContent()
 
 	return(
-		<Section line>
+		<Section noLine shallow>
 			<div className="container">
 				<div className="inner-2col">
 					<div className="col-1">

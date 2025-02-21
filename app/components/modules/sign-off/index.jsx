@@ -1,11 +1,12 @@
 import styles from "./style.module.scss";
 import Section from '@/app/components/components/section';
 import {SignoffContent} from '@/app/content/body-content';
+import Spacer from "../../components/spacer";
 
 function SignOff(){
 
 	return(
-		<Section noLine>
+		<Section noLine shallow>
 			<div className={`${styles.sign_off} hide-print`}>
 				<div className="container">
 					<p>
