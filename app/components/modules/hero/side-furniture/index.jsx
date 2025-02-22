@@ -52,10 +52,11 @@ function SideFurniture(){
 							duration: .2,
 							delay: .75,
 						}}
-						href="./assets/images/profile.jpg"
+						href="./images/profile.jpg"
 						width="25"
 						height="25"
 						mask="url(#profileMask)"
+						alt="Profile image"
 					/>
 				</svg>
 			</div>

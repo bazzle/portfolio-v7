@@ -8,19 +8,27 @@ import IconTag from "@/app/components/icons/icon-tag.jsx";
 import IconFingerprint from "@/app/components/icons/icon-fingerprint";
 import IconBalance from "@/app/components/icons/icon-balance";
 
+export const nameTitle = {
+	name: "Barry Richards",
+	title: "Web design engineer"
+}
+
 export const WelcomeContent = {
-	title: "Welcome",
+	title: "Who I am and what I do",
 	bodyContent: () => {
 		return(
 			<>
 				<p>
-					I‘m Barry, I have been working as a creative web developer for several years on a variety of projects. I currently work with the great people at dxw for a variety of public and third-sector organisations.
+					<strong>I‘m Barry. I design websites and web apps</strong> I deliver wireframes, mockups and interactive prototypes, and I build websites using WordPress and JavaScript based approaches like NextJS. I contribute to digital teams by carrying out various tasks. And to production build by leveraging my knowledge and experience using front-end languages and frameworks.
 				</p>
 				<p>
-					Working within the public sector has instilled in me a strong appreciation for web standards, accessibility and user centred design. These principles form my baseline. From there I seek to bring understated creative flair using typography, hierarchy, animation and colour.
+					<strong>I have been working as a designer and developer to different capacities on a variety of projects throughout my career</strong>. I‘m currently with the great people at dxw working on websites for public and third-sector organisations. Working within this sector has instilled in me an appreciation for web standards, accessibility and user centred design. Principles which form my baseline.
 				</p>
 				<p>
-					I‘m a design minimalist, I believe small changes make big differences. I take a pragmatic approach and I‘m sympathetic to client and user needs. I have endless curiosity and desire to figure out how to improve a piece of the UI, or find that elusive “pop”
+					<strong>From there I seek to bring understated visual flair</strong> using typography, hierarchy, animation, colour and other web design fundamentals. I‘m a design minimalist, I believe small changes can make huge differences. I take a pragmatic approach and I‘m sympathetic to client and user needs. I love to figure out how to improve a piece of the interface, or change the look and feel to unlock that elusive missing piece.
+				</p>
+				<p>
+					<strong>People talk a lot about their “happy place”</strong> and what they are inspired by to make them get up in the morning to work. I‘m inspired by the emancipating effects of technology coupled with great user experience. I‘m interested in the psychology of how people respond to design. And to this end, I like to experiment with elements of the design to affect how people engage and interact with it.
 				</p>
 			</>
 		)
@@ -37,13 +45,7 @@ export const SkillsContent = {
 		return(
 			<>
 				<p>
-					People talk a lot about their “happy place”. For me it’s being creative and experimenting. Playing around, learning new languages, libraries and tools and working towards meeting a need or providing something of value.
-				</p>
-				<p>
-					I have experience in many phases of development, with varying levels of involvement within Agile and Kanban development teams.
-				</p>
-				<p>
-					I have created initial wireframes, built interactive prototypes, assisted user research sessions, developed mockups in Figma, held collaborative design sessions and worked with other developers in production build. Aswell as the less flashy things like responding to support requests, conducting accessibility audits and the necessary remediation work.
+					I have experience in many phases of development, with varying levels of involvement within Agile and Kanban development teams. I create wireframes, build interactive prototypes, assist user research sessions, facilitate collaborative design sessions and work with developers in production build. I’m also an accessibility auditor. Not to forget the less flashy things like responding to support requests, accessibility remediation work and working on legacy code.
 				</p>
 			</>
 		)

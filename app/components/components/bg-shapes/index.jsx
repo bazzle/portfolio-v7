@@ -8,7 +8,7 @@ const isDev = process.env.NODE_ENV === "development";
 function BgShapes(props){
 	const { colourMode } = useContext(colourThemeContext);
 	const variantClass = styles[`shapes_${props.variant}`];
-	const bgImage = colourMode === 'light' ? 'url("./assets/images/texture-light.jpg")' : 'url("./assets/images/texture-dark.jpg")';
+	const bgImage = colourMode === 'light' ? 'url("./images/texture-light.jpg")' : 'url("./images/texture-dark.jpg")';
 	return(
 		<div role="presentation" className={`${styles.shapes} ${variantClass}`} style={{
 			backgroundImage : bgImage }}>

@@ -35,7 +35,7 @@ function Hero(){
 							<p className={styles.intro_main}>Hello! I’m a UK based web designer, developer and accessibility consultant.<br/>
 							<a href="#welcome">Read more about me</a></p>
 							<div className={styles.contacts}>
-								<ActionLink linkString="./public/assets/files/cv.pdf" textString="CV" printString="barry@br-web.me" />
+								<ActionLink linkString="./files/cv.pdf" textString="CV" printString="barry@br-web.me" />
 								<ActionLink linkString="https://www.linkedin.com/in/br-web/" textString="LinkedIn" printString="linkedin.com/in/br-web/" />
 								<ActionLink linkString="https://github.com/bazzle/" textString="Github" printString="github.com/bazzle/" />
 								<ActionLink linkString="mailto:barry@br-web.me" textString="Drop me an email" printString="barry@br-web.me" />

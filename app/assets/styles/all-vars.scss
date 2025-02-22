@@ -48,9 +48,9 @@ $font-size-heading-small: responsiveSize(2.2, 5, 2.2);
 // For general use
 $font-size-medium: responsiveSize(3.2, 30, 3.2);
 // Default font size
-$font-size-std: responsiveSize(2, 20, 2);
+$font-size-std: responsiveSize(1.8, 20, 1.8);
 // For body only
-$font-size-body: responsiveSize(2.2, 20, 2.2);
+$font-size-body: responsiveSize(2, 20, 2);
 // For body standaouts
 $font-size-body-intro: responsiveSize(2.6, 5, 2.6);
 // For blocky text, taglines and other reasons
@@ -118,12 +118,12 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-body;
 	font-style: normal;
 	line-height: 1.5;
-	font-variation-settings: "ital" 0, "opsz" 16, "wght" 300;
+	font-variation-settings: "ital" 0, "opsz" 10, "wght" 300;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 450;
+		font-variation-settings: "ital" 0, "opsz" 10, "wght" 450;
 	}
 	@media print{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 450;
+		font-variation-settings: "ital" 0, "opsz" 10, "wght" 450;
 	}
 }
 %text-body-bold{
@@ -131,12 +131,12 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-body;
 	font-style: normal;
 	line-height: 1.5;
-	font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
+	font-variation-settings: "ital" 0, "opsz" 10, "wght" 500;
 	:global(body.light-mode) &{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
+		font-variation-settings: "ital" 0, "opsz" 10, "wght" 600;
 	}
 	@media print{
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 600;
+		font-variation-settings: "ital" 0, "opsz" 10, "wght" 600;
 	}
 }
 %text-body-link{

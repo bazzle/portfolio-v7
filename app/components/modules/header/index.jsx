@@ -1,5 +1,6 @@
 import ColourMode from './colour-mode';
 import styles from './style.module.scss';
+import { nameTitle } from '@/app/content/body-content';
 
 function Header(){
     return(
@@ -7,8 +8,8 @@ function Header(){
 			<div className="container">
 				<div className={styles.inner}>
 					<h1 className={styles.sitename}>
-						<span className='highlight'>Barry Richards</span>
-						<span>Design Engineer</span>
+						<span className='highlight'>{nameTitle.name}</span>
+						<span>{nameTitle.title}</span>
 					</h1>
 					<div className={styles.line}>
 						<hr />
