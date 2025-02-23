@@ -38,7 +38,7 @@ function WorkHistory(){
 		)
 	}
     return (
-        <Section noLineMobile>
+        <Section id="work-history" noLineMobile>
 			<div className={styles.work_history}>
 				<div className="container">
 					<div className="inner-2col">

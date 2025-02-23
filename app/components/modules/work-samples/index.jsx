@@ -48,7 +48,7 @@ function WorkSamples(){
 	}
 
     return(
-		<Section noLine shallow>
+		<Section id="work-samples" noLine shallow>
 			<div ref={ref}>
 				<div className={styles.work_samples}>
 					<div className={styles.title_section}>

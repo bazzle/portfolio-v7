@@ -19,8 +19,8 @@ function Themes(){
 	
 	return(
 
-		<Section noLine shallow>
-			<div className={styles.themes}>	
+		<Section id="things-i-think-about" noLine shallow>
+			<div className={styles.themes}>
 				<div className="container">
 					<div className="inner-2col">
 						<div className="col-1">

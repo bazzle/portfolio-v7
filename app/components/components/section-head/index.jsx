@@ -6,15 +6,10 @@ function SectionHead({
     separator = false,
 	noLineMobile
 }){
-	const headingClassString = `
-	${separator ? styles.title : styles.title__no_separator}
-	${noLineMobile && styles.title__no_indent_mobile }
-	`
+	const headingClassString = `${separator ? styles.title : styles.title__no_separator}`
     return (
         <div className={styles.section_head}>
-			<div className={noLineMobile && 'hide-mobile'}>
-				<StylisedLine />
-			</div>
+			<StylisedLine />
             <h2 className={headingClassString}>
 				{titleString}
 			</h2>

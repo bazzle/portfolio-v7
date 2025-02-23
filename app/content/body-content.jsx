@@ -19,7 +19,7 @@ export const WelcomeContent = {
 		return(
 			<>
 				<p>
-					<strong>I‘m Barry. I design websites and web apps</strong> I deliver wireframes, mockups and interactive prototypes, and I build websites using WordPress and JavaScript based approaches like NextJS. I contribute to digital teams by carrying out various tasks. And to production build by leveraging my knowledge and experience using front-end languages and frameworks.
+					<strong>I‘m Barry. I design websites and web apps</strong> I deliver wireframes, mockups and interactive prototypes, and I build websites using WordPress and JavaScript based approaches like NextJS. I contribute to digital teams by carrying out various tasks within my <a href="#skills-and-abilities">skillset</a>. And to production build by leveraging my knowledge and experience using front-end languages and frameworks.
 				</p>
 				<p>
 					<strong>I have been working as a designer and developer to different capacities on a variety of projects throughout my career</strong>. I‘m currently with the great people at dxw working on websites for public and third-sector organisations. Working within this sector has instilled in me an appreciation for web standards, accessibility and user centred design. Principles which form my baseline.
