@@ -46,6 +46,7 @@ function Hero(){
 					</div>
 				</div>
 			</div>
+			<Spacer shallowTop />
         </div>
     )
 }

@@ -11,7 +11,6 @@ function Welcome(){
 
 	return(
 		<Section id="welcome" noLine noSpacerPrint shallow>
-			<Spacer shallowTop />
 			<div className="container">
 				<div className="inner-2col">
 					<div className="col-1">

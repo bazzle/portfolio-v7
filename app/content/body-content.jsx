@@ -19,10 +19,10 @@ export const WelcomeContent = {
 		return(
 			<>
 				<p>
-					<strong>I‘m Barry. I design websites and web apps</strong> I deliver wireframes, mockups and interactive prototypes, and I build websites using WordPress and JavaScript based approaches like NextJS. I contribute to digital teams by carrying out various tasks within my <a href="#skills-and-abilities">skillset</a>. And to production build by leveraging my knowledge and experience using front-end languages and frameworks.
+					<strong>I‘m Barry</strong>. I design websites and web apps. I design using various tools and build websites and web apps using WordPress and other approaches. I contribute to digital teams by carrying out various tasks within my <a href="#skills-and-abilities">skillset</a>. And to production build by leveraging my knowledge and experience using front-end languages and frameworks. I‘m also knowledgable with Web Content Accessibility Guidelines (WCAG) and carry out audits regularly.
 				</p>
 				<p>
-					<strong>I have been working as a designer and developer to different capacities on a variety of projects throughout my career</strong>. I‘m currently with the great people at dxw working on websites for public and third-sector organisations. Working within this sector has instilled in me an appreciation for web standards, accessibility and user centred design. Principles which form my baseline.
+					<strong>I have been working as a designer and developer to different capacities on a variety of projects throughout my career</strong>. I‘m currently with the great people at <a href="https://www.dxw.com/">dxw</a> working on websites for public and third-sector organisations. Working within this sector has instilled in me an appreciation for web standards, accessibility and user centred design. Principles which form my baseline.
 				</p>
 				<p>
 					<strong>From there I seek to bring understated visual flair</strong> using typography, hierarchy, animation, colour and other web design fundamentals. I‘m a design minimalist, I believe small changes can make huge differences. I take a pragmatic approach and I‘m sympathetic to client and user needs. I love to figure out how to improve a piece of the interface, or change the look and feel to unlock that elusive missing piece.
@@ -45,7 +45,10 @@ export const SkillsContent = {
 		return(
 			<>
 				<p>
-					I have experience in many phases of development, with varying levels of involvement within Agile and Kanban development teams. I create wireframes, build interactive prototypes, assist user research sessions, facilitate collaborative design sessions and work with developers in production build. I’m also an accessibility auditor. Not to forget the less flashy things like responding to support requests, accessibility remediation work and working on legacy code.
+					I have experience in many phases of development, with varying levels of involvement within Agile and Kanban development teams. I create wireframes, build mockups and interactive prototypes, assist user research sessions, facilitate collaborative design sessions and work with other developers in production build. I also carry out accessibility audits using automated tools and manual testing. I primarily build websites using WordPress that use either the classic or the Gutenburg block editor.
+				</p>
+				<p>
+					I‘ve also been exploring building websites and apps using vanilla JS and frameworks such as React + NextJS and Vue + Nuxt.js. This website is built in nextJS. I am adaptable and a fast learner to different tech stacks.
 				</p>
 			</>
 		)
@@ -57,15 +60,15 @@ export const SkillsContent = {
 		"Find middle ground"
 	],
 	skillsItems: [
-        { id: 1, name: 'HTML/DOM',  rating: 5 },
+        { id: 1, name: 'HTML',  rating: 5 },
         { id: 2, name: 'CSS/SASS',  rating: 5 },
+		{ id: 6, name: 'WordPress',  rating: 5 },
+		{ id: 9, name: 'Figma',  rating: 5 },
         { id: 3, name: 'Vanilla JS',  rating: 4 },
-        { id: 4, name: 'React',  rating: 3 },
         { id: 5, name: 'Git',  rating: 4 },
-        { id: 6, name: 'WordPress',  rating: 4 },
+		{ id: 4, name: 'Tailwind',  rating: 3 },
+        { id: 4, name: 'React',  rating: 3 },
         { id: 7, name: 'PHP',  rating: 3 },
-        { id: 8, name: 'Three.js',  rating: 1 },
-        { id: 9, name: 'Figma',  rating: 5 }
 	]
 }
 
@@ -85,22 +88,22 @@ export const themesContent = {
 		{
 			component: <IconTag />,
 			name: "Semantics",
-			description: "I prioritize clean, meaningful HTML structure to enhance SEO, accessibility, and maintainability, ensuring content is understood by both users and machines."
+			description: "I strive to build with clean, meaningful HTML structure to enhance SEO, accessibility, and maintainability, ensuring content is understood by users and machines."
 		},
 		{
 			component: <IconPieces />,
 			name: "Typography",
-			description: "Thoughtful typography improves readability and hierarchy, reinforcing brand identity while ensuring accessibility across different screens and contexts."
+			description: "I appreciate the value of good typographical choices. Something often overlooked in more tech focussed teams. And I stay up to date with new techniques such Variable and Opentype features"
 		},
 		{
 			component: <IconFingerprint />,
 			name: "User-Centered Design",
-			description: "Every design decision is guided by user needs, balancing aesthetics with functionality to create intuitive and engaging experiences."
+			description: "I appreciate how design should be guided by user needs and behaviour. I use esdtablished and tested design patterns and seek to validate design choices with user research when possible"
 		},
 		{
 			component: <IconShapes />,
 			name: "Brand integration",
-			description: "I align design with brand values, creating cohesive experiences that strengthen identity, build trust, and foster meaningful user connections."
+			description: "I have extensive experience collaborating with brand designers and guardians, ensuring that visual identities and messaging are accurately and effectively translated into the digital products"
 		},
 		{
 			component: <IconBalance />,
@@ -110,23 +113,23 @@ export const themesContent = {
 		{
 			component: <IconMagGlass />,
 			name: "Search Engine Optimisation",
-			description: "I build websites with SEO in mind. Semantic structure, performance optimisation, and meaningful content—to improve visibility and user engagement."
+			description: "I build websites with SEO in mind. Semantic structure, performance optimisation, and meaningful content—to improve visibility and engagement."
 		},
 		{
 			name: "Integrating AI in My Workflow",
-			description: "I leverage AI tools to enhance efficiency, automate repetitive tasks, and generate insights, ensuring smarter design and development decisions."
+			description: "I leverage AI tools to enhance efficiency in my workflow, automate repetitive tasks, assist my learning and ensuring smarter design and development decisions."
 		},
 		{
 			name: "Content Management",
-			description: "I develop user-friendly content management solutions that empower clients to update and maintain their websites with ease and flexibility."
+			description: "I optimise the user experience for the content editor. An example of this is curating the WordPress block editor by restricting certain blocks and stylistic choices to allow for flexibility while maintaining visual consistency."
 		},
 		{
 			name: "Layout/Grid",
-			description: "A strong grid system ensures consistency, flexibility, and visual harmony, adapting seamlessly to different devices and screen sizes."
+			description: "I have experience utilising advanced layout systems in CSS, including flexbox and grid. I know the advantages and drawbacks of different techniques and can identify the best approach for each."
 		},
 		{
 			name: "Web Conventions",
-			description: "I design with familiar patterns and best practices, ensuring usability and reducing cognitive load while maintaining a unique brand identity."
+			description: "Going  by the “Don’t make me think” principle, I design with familiar patterns and best practices in mind, ensuring usability and reducing cognitive load."
 		},
 	]
 }
@@ -160,10 +163,10 @@ export const WorkHistoryContent = {
 							After a spell of freelancing, I was offered a permanent role within the GovPress team. Focussing on content managed websites for our clients. Much of my work is updating websites with new brand guidelines and migrating to the new Gutenburg block editor.
 						</p>
 						<p>
-							My first project was the design of the Screen Culture 2033 strategy micro-site and blog. I also paired with the tech-lead in the development of the site, using WordPress and utilising elements from BFI’s style guide.
+							My first project was the design of the <a href="https://blog.bfi.org.uk/">Screen Culture 2033</a> strategy micro-site and blog. I also paired with the tech-lead in the development of the site, using WordPress and utilising elements from BFI’s style guide.
 						</p>
 						<p>
-							I also joined the Interaction Design team to develop a tool for Probation officers to find temporary accommodation for prison leavers at risk of homelessness. Using the gov.uk design system and elements from the MoJ pattern library, I designed the service up until nation-wide rollout. Responding to several rounds of user testing.
+							I also joined the Interaction Design team to develop a tool for Probation officers to find temporary accommodation for prison leavers at risk of homelessness. Using the GOV.UK design system and elements from the MoJ pattern library, I designed the service up until nation-wide rollout. Responding to several rounds of user testing.
 						</p>
 					</>
 				)
@@ -255,7 +258,7 @@ export const WhatNextContent = {
 		return(
 			<>
 			<p>
-				I am looking for a job where I have the opportunity to both use my existing experience and diversify my current skill-set by learning new things, as I firmly believe in learning by doing. My perfect employer would be a small to medium sized company that doesn’t have a rigid adherence to siloed job roles. And a company that creates value by doing something innovative and perhaps against the mould. I am passionate about new technologies and paradigms. Decentralised protocols such as Bitcoin and Nostr interest me greatly.
+				I am looking for a job where I have the opportunity to both use my existing experience and diversify my current skill-set by tackling new things, as I firmly believe in learning by doing. I try to avoid environments that impose rigid specialisation, preferring flexibility to an extent. My perfect employer would be a small to medium sized organisation that creates value by doing something innovative and perhaps against the mould. I am passionate about new technologies and paradigms. Decentralised protocols such as Bitcoin and Nostr interest me greatly.
 			</p>
 			<p>
 				If you have <b>something</b> you think I’d be interested in, please <a href="mailto:barry@br-web.me">drop me an email!</a>

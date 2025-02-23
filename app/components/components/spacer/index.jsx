@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 
-function Spacer({shallow, mobile, noMobile, noLine, noLineMobile, deep, noMarginTop, noMarginBottom, shallowTop}){
+function Spacer({mobile, noMobile, shallow, noLine, noLineMobile, noMarginTop, noMarginBottom, shallowTop}){
 	let classString =(`
 		${styles.spacer}
 		${mobile ? styles.spacer_mobile : ''}
@@ -8,7 +8,6 @@ function Spacer({shallow, mobile, noMobile, noLine, noLineMobile, deep, noMargin
 		${shallow ? styles.spacer_shallow : ''}
 		${noLine ? styles.spacer_noline : ''}
 		${noLineMobile ? styles.spacer_nolinemobile : ''}
-		${deep ? styles.spacer_deep : ''}
 		${noMarginTop ? styles.spacer_nomargin_top : ''}
 		${noMarginBottom ? styles.spacer_nomargin_bottom : ''}
 		${shallowTop ? styles.spacer_shallow_top : ''}
