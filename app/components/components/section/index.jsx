@@ -1,23 +1,11 @@
 import styles from './style.module.scss';
 import propTypes from "prop-types";
-import Spacer from '@/app/components/components/spacer';
 
-function Section({ children, id, classes, noSpacer, noSpacerPrint, mobile, noMobile, noLine, noLineMobile, deep, shallow }) {
-	let classString = classes
-	const spacerProps = {
-		...(noSpacer && { noSpacer: true }),
-		...(noSpacerPrint && { noSpacerPrint: true }),
-		...(mobile && { mobile: true }),
-		...(noMobile && { noMobile: true }),
-		...(noLine && { noLine: true }),
-		...(noLineMobile && { noLineMobile: true }),
-		...(deep && { deep: true }),
-		...(shallow && { shallow: true })
-	};
+function Section({ children, id, line, noSpacing, noMinHeight }) {
+	let classString = `${styles.section} ${line ? styles.section_line : ''} ${noSpacing ? styles.section_no_spacing : ''} ${noMinHeight ? styles.section_no_min_height : ''}`;
 	return (
 		<section id={id} className={classString}>
 			{children}
-			{ noSpacer ? '' : <Spacer {...spacerProps} />}
 		</section>
   	);
 }
@@ -25,13 +13,11 @@ function Section({ children, id, classes, noSpacer, noSpacerPrint, mobile, noMob
 Section.propTypes = {
   children: propTypes.node,
   id: propTypes.string,
-  classes: propTypes.string,
-  noSpacer: propTypes.bool,
-  noSpacerPrint: propTypes.bool,
+  noSpacing: propTypes.bool,
+  noSpacingPrint: propTypes.bool,
   noMobile: propTypes.bool,
-  noLine: propTypes.bool,
-  noLineMobile: propTypes.bool,
-  shallow: propTypes.bool
+  line: propTypes.bool,
+  noMinHeight: propTypes.bool
 };
 
 export default Section;

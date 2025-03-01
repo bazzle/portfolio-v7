@@ -6,7 +6,7 @@ import Spacer from "../../components/spacer";
 function SignOff(){
 
 	return(
-		<Section id="sign-off" noLine shallow>
+		<Section id="sign-off" noMinHeight>
 			<div className={`${styles.sign_off} hide-print`}>
 				<div className="container">
 					<p>

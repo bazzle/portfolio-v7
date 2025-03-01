@@ -10,7 +10,7 @@ function Welcome(){
 	const content = WelcomeContent.bodyContent()
 
 	return(
-		<Section id="welcome" noLine noSpacerPrint shallow>
+		<Section id="welcome" noMinHeight>
 			<div className="container">
 				<div className="inner-2col">
 					<div className="col-1">
