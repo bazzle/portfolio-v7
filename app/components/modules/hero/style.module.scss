@@ -6,9 +6,11 @@
 	height: auto;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 6rem;
+	margin-bottom: 6rem;
 	@include break(tablet){
-		height: auto;
 		min-height: calc(100vh - 60px);
+		margin-bottom: 12rem;
 	}
 }
 
