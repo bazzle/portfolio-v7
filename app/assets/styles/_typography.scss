@@ -32,7 +32,6 @@
 }
 
 p.outset-text{
-	@extend %text-body-bold;
 	line-height: 1.4;
 	color: var(--color-accent-alt);
 	border-left: 2px solid var(--color-accent-alt);
