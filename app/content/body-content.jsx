@@ -262,7 +262,7 @@ export const WhatNextContent = {
 				I am looking for a job where I have the opportunity to both use my existing experience and diversify my current skill-set by tackling new things, as I firmly believe in learning by doing. I try to avoid environments that impose rigid specialisation, preferring flexibility to an extent. My perfect employer would be a small to medium sized organisation that creates value by doing something innovative and perhaps against the mould. I am passionate about new technologies and paradigms. Decentralised protocols such as Bitcoin and Nostr interest me greatly.
 			</p>
 			<p>
-				If you have <b>something</b> you think I’d be interested in, please <a href="mailto:barry@br-web.me">drop me an email!</a>
+				If you want to chat, please <a href="mailto:barry@br-web.me">drop me an email!</a>
 			</p>
 			</>
 		)
