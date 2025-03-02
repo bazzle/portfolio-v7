@@ -19,7 +19,7 @@ export const WelcomeContent = {
 		return(
 			<>
 				<p>
-					<strong>I’m Barry</strong> Front-end developer and designer. I design and build websites using languages and tools within my <a href="#skills-and-abilities">skillset</a>.
+					<strong>I’m Barry.</strong> Front-end developer and designer. I design and build websites using languages and tools within my <a href="#skills-and-abilities">skillset</a>.
 				</p>
 				<p>
 					I’m currently working with the great people at <a href="https://www.dxw.com/">dxw</a>. Where I design, build and carry out accessibility audits.
@@ -27,7 +27,7 @@ export const WelcomeContent = {
 				<ul>
 					<ListItem content={'I’m <strong>constantly curious</strong> and always learning new things.'}/>
 					<ListItem content={'I’m a <strong>designer through and through</strong>. Inspired by aesthetics and feel.'}/>
-					<ListItem content={'I’m a design minimalist. I believe small changes can make massive differences.'}/>
+					<ListItem content={'I’m a <strong>design minimalist</strong>. I believe small changes can make massive differences.'}/>
 					<ListItem content={'I’m a <strong>creative pragmatist</strong>. I like creative freedom aswell as constraints.'}/>
 					<ListItem content={'I love the <strong>impermanence of the web</strong> as a medium to design for. To test on, to rethink and iterate.'}/>
 					<ListItem content={'I love to <strong>problem solve</strong>—figure out how to improve a piece of the interface, or change the look and feel to unlock that elusive missing piece. And I’m sympathetic to client and user needs.'}/>
