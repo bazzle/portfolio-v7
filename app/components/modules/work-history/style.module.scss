@@ -1,7 +1,6 @@
 @use "@/app/assets/styles/all-vars" as *;
 
 .work_history{
-	background-color: var(--color-bg);
 	position: relative;
 	&__sectionHead{
 		@include break(desktop-wider){

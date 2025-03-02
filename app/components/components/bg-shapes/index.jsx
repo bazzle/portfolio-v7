@@ -10,8 +10,8 @@ function BgShapes(props){
 	const variantClass = styles[`shapes_${props.variant}`];
 	const bgImage = colourMode === 'light' ? 'url("./images/texture-light.jpg")' : 'url("./images/texture-dark.jpg")';
 	return(
-		<div role="presentation" className={`${styles.shapes} ${variantClass}`} style={{
-			backgroundImage : bgImage }}>
+		<div role="presentation" className={`${styles.shapes} ${variantClass}`}>
+			<span className={styles.shapes__background} style={{ backgroundImage : bgImage }}></span>
 			<div></div>
 			<motion.div
 				initial={ isDev ? false : { x: 0 }}
