@@ -19,17 +19,18 @@ export const WelcomeContent = {
 		return(
 			<>
 				<p>
-					<strong>I‘m Barry</strong>. I design websites and web apps. I design using various tools and build websites and web apps using WordPress and other approaches. I contribute to digital teams by carrying out various tasks within my <a href="#skills-and-abilities">skillset</a>. And to production build by leveraging my knowledge and experience using front-end languages and frameworks. I‘m also knowledgable with Web Content Accessibility Guidelines (WCAG) and carry out audits regularly.
+					<strong>I’m Barry</strong> Front-end developer and designer. I design and build websites using languages and tools within my <a href="#skills-and-abilities">skillset</a>.
 				</p>
 				<p>
-					<strong>I have been working as a designer and developer to different capacities on a variety of projects throughout my career</strong>. I‘m currently with the great people at <a href="https://www.dxw.com/">dxw</a> working on websites for public and third-sector organisations. Working within this sector has instilled in me an appreciation for web standards, accessibility and user centred design. Principles which form my baseline.
+					I’m currently working with the great people at <a href="https://www.dxw.com/">dxw</a>. Where I design, build and carry out accessibility audits.
 				</p>
-				<p>
-					<strong>From there I seek to bring understated visual flair</strong> using typography, hierarchy, animation, colour and other web design fundamentals. I‘m a design minimalist, I believe small changes can make huge differences. I take a pragmatic approach and I‘m sympathetic to client and user needs. I love to figure out how to improve a piece of the interface, or change the look and feel to unlock that elusive missing piece.
-				</p>
-				<p>
-					<strong>People talk a lot about their “happy place”</strong> and what they are inspired by to make them get up in the morning to work. I‘m inspired by the emancipating effects of technology coupled with great user experience. I‘m interested in the psychology of how people respond to design. And to this end, I like to experiment with elements of the design to affect how people engage and interact with it.
-				</p>
+				<ul>
+					<ListItem content={'I’m <strong>constantly curious</strong> and always learning new things.'}/>
+					<ListItem content={'I’m a <strong>designer through and through</strong>. Inspired by aesthetics and feel. I believe small changes make massive differences.'}/>
+					<ListItem content={'I’m a <strong>creative pragmatist</strong>. I like creative freedom aswell as constraints.'}/>
+					<ListItem content={'I love the <strong>impermanence of the web</strong> as a medium to design for. To test on, to rethink and iterate.'}/>
+					<ListItem content={'I love to <strong>problem solve</strong>—figure out how to improve a piece of the interface, or change the look and feel to unlock that elusive missing piece. And I’m sympathetic to client and user needs.'}/>
+				</ul>
 			</>
 		)
 	}
@@ -48,7 +49,7 @@ export const SkillsContent = {
 					I have experience in many phases of development, with varying levels of involvement within Agile and Kanban development teams. I create wireframes, build mockups and interactive prototypes, assist user research sessions, facilitate collaborative design sessions and work with other developers in production build. I also carry out accessibility audits using automated tools and manual testing. I primarily build websites using WordPress that use either the classic or the Gutenburg block editor.
 				</p>
 				<p>
-					I‘ve also been exploring building websites and apps using vanilla JS and frameworks such as React + NextJS and Vue + Nuxt.js. This website is built in nextJS. I am adaptable and a fast learner to different tech stacks.
+					I‘ve also been exploring building websites and apps using vanilla JS and frameworks such as React + NextJS and Vue + Nuxt.js. I am adaptable and a fast learner to different tech stacks.
 				</p>
 			</>
 		)
