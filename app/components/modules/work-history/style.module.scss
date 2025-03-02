@@ -84,7 +84,7 @@
 			}
 			.nav_item__dates{
 				color: var(--color-accent-alt);
-				@extend %text-tiny;
+				@extend %text-miniscule;
 				@include break(desktop-wider){
 					display: block;
 				}

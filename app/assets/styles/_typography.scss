@@ -1,8 +1,5 @@
 @use "./all-vars.scss" as *;
 
-.text-tiny{
-	@extend %text-tiny;
-}
 .text-std{
 	@extend %text-std;
 }

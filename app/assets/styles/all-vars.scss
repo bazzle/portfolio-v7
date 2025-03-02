@@ -259,12 +259,9 @@ $font-blocky: "degular-variable", sans-serif;
 
 %text-tiny{
 	font-size: $font-size-tiny;
-	@media print{
-		font-size: 1.7rem;
-	}
 	font-family: $font-text;
 	font-variation-settings: 'opsz' 6;
-	font-weight: 450;
+	font-weight: 300;
 	:global(body.light-mode) &{
 		font-weight: 500;
 	}
