@@ -26,7 +26,8 @@ export const WelcomeContent = {
 				</p>
 				<ul>
 					<ListItem content={'I’m <strong>constantly curious</strong> and always learning new things.'}/>
-					<ListItem content={'I’m a <strong>designer through and through</strong>. Inspired by aesthetics and feel. I believe small changes make massive differences.'}/>
+					<ListItem content={'I’m a <strong>designer through and through</strong>. Inspired by aesthetics and feel.'}/>
+					<ListItem content={'I’m a design minimalist. I believe small changes can make massive differences.'}/>
 					<ListItem content={'I’m a <strong>creative pragmatist</strong>. I like creative freedom aswell as constraints.'}/>
 					<ListItem content={'I love the <strong>impermanence of the web</strong> as a medium to design for. To test on, to rethink and iterate.'}/>
 					<ListItem content={'I love to <strong>problem solve</strong>—figure out how to improve a piece of the interface, or change the look and feel to unlock that elusive missing piece. And I’m sympathetic to client and user needs.'}/>
