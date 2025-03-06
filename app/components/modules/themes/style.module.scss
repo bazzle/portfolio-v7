@@ -64,10 +64,8 @@
 		}
 	}
 	&__icon{
-		@include break(mobile){
-			width: 20%;
-			flex-shrink: 0;
-		}
+		width: 20%;
+		flex-shrink: 0;
 		@include break(desktop){
 			aspect-ratio: 3/2;
 			width: 100%;
