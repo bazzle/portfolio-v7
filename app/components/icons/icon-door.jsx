@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 
 function IconDoor(){
 	return(
-		<svg className={styles.icon_door} width="83" height="111" viewBox="0 0 83 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg className={styles.icon_door} width="83" height="109" viewBox="0 0 83 111" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<rect x="2" y="15.7125" width="43.1693" height="79.0871" stroke="#FFAAAA" strokeWidth="4"/>
 		<path d="M49.7656 13.7125L79.6251 0.730103V109.782L49.7656 96.7996" stroke="#FFAAAA" strokeWidth="0.521779"/>
 		<path d="M82.438 1.81195V109.349" stroke="#9AF3FF" strokeWidth="0.521779"/>

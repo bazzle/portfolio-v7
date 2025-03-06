@@ -6,16 +6,10 @@
 }
 .tile_grid{
 	position: relative;
-	@include break(mobile){
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-		width: 100%;
-		left: 1px;
-		top: -1px;
-		grid-template-columns: 1fr 1fr;
-	}
+	display: grid;
+	row-gap: 1rem;
 	@include break(desktop){
+		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
 	}
 	@include break(desktop-med){
@@ -48,11 +42,42 @@
 	&::after{
 		content: '';
 		position: absolute;
-		bottom: 0;
+		bottom: 1px;
 		left: 0;
 		width: calc(100% - $indent);
 		height: .5px;
 		background-color: var(--color-accent-alt);
+	}
+	&__inner{
+		width: 100%;
+		display: flex;
+		position: relative;
+		gap: 1rem;
+		padding: 2rem;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		@include break(desktop){
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+		}
+	}
+	&__icon{
+		@include break(mobile){
+			width: 20%;
+			flex-shrink: 0;
+		}
+		@include break(desktop){
+			aspect-ratio: 3/2;
+			width: 100%;
+		}
+		:global(body.light-mode) &{
+			display: none;
+		}
+		@media print{
+			display: none;
+		}
 	}
 	&__name{
 		@extend %text-heading-small;
@@ -68,28 +93,6 @@
 			:global(body.dark-mode) &{
 				padding: 2rem;
 			}
-		}
-	}
-	&__inner{
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: center;
-		gap: 1rem;
-		position: relative;
-		padding: 2rem;
-	}
-	.icon_container{
-		width: 100%;
-		@include break(mobile){
-			aspect-ratio: 3/2;
-		}
-		:global(body.light-mode) &{
-			display: none;
-		}
-		@media print{
-			display: none;
 		}
 	}
 }

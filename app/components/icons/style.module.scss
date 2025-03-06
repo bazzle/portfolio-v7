@@ -3,40 +3,33 @@
 	left: 0;
 	top: 0;
 	height: auto;
+	max-width: 80%;
 }
 
 .icon_glass{
 	@include defaults;
-	width: 35%;
 	left: -1.5rem;
 }
 .icon_door{
 	@include defaults;
-	width: 35%;
 }
 .icon_tag{
 	@include defaults;
-	width: 55%;
 }
 .icon_pieces{
 	@include defaults;
-	width: 55%;
 }
 .icon_mag_glass{
 	@include defaults;
-	width: 50%;
 }
 .icon_shapes{
 	@include defaults;
-	width: 50%;
 }
 .icon_fingerprint{
 	@include defaults;
-	width: 35%;
 }
 .icon_balance{
 	@include defaults;
-	width: 35%;
 }
 
 .dark_mode_hide{
