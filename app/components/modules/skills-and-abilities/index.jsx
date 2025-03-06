@@ -21,20 +21,15 @@ function SkillsAndAbilities(){
 						</div>
 						<div className="col-2">
 							<SkillsList />
-							<Spacer shallow noMobile />
-						</div>
-					</div>
-				</div>
-				<div className="container">
-					<div className="inner-2col">
-						<div className="col-1 hide-print">
-							<div className={styles.diagram}>
-								<VennDiagram />
-							</div>
-						</div>
-						<div className="col-2 {styles.main_section}">
-							<div className={styles.body_text}>
-								{content}
+							<div className="inner-2col--50-50">
+								<div className={styles.body_text}>
+									<Spacer shallow noMobile />
+									{content}
+								</div>
+								<div className={styles.diagram}>
+									<Spacer shallow noMobile noLine />
+									<VennDiagram />
+								</div>
 							</div>
 						</div>
 					</div>
