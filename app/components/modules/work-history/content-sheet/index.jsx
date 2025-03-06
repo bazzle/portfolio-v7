@@ -44,6 +44,9 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 			<div className="inner-2col">
 				<div className={styles.content_sheet__main}>
 					<h3 className={`${styles.content_sheet__name} visually-hidden--show-print`}>{name}</h3>
+					<p className={styles.content_sheet__dates}>
+						<span className={styles.nav_item__dates}>{startDate} – {endDate}</span>
+					</p>
 					<p className={styles.intro}>
 						{intro}
 					</p>

@@ -60,9 +60,12 @@
 			}
 		}
 		&__dates{
+			@extend %text-miniscule;
+			color: var(--color-accent-alt);
 			display: none;
-			@extend %text-blocky;
-			text-align: center;
+			@include break(desktop-wider){
+				display: block;
+			}
 		}
 		&.is_active{
 			position: relative;
@@ -80,13 +83,6 @@
 				color: var(--color-foreground);
 				line-height: 1.2;
 				@extend %text-heading-small;
-			}
-			.nav_item__dates{
-				color: var(--color-accent-alt);
-				@extend %text-miniscule;
-				@include break(desktop-wider){
-					display: block;
-				}
 			}
 			&::after{
 				@include break(desktop-wider){

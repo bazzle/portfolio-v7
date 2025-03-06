@@ -104,6 +104,12 @@
 	}
 }
 
+.show-mobile{
+	@include break(tablet){
+		display: none;
+	}
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;

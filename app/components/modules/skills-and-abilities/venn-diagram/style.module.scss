@@ -30,7 +30,7 @@
 			padding: .3em;
 			display: block;
 			@include break-under(mobile-land){
-				background-color: var(--color-bg);
+				background-color: var(--color-bg-alt);
 				padding: .5em .8em;
 			}
 			&.looping_text{
