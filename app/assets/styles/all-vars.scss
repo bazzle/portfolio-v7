@@ -66,6 +66,11 @@ $font-display: "degular-variable", sans-serif;
 $font-text: "degular-variable", sans-serif;
 $font-blocky: "degular-variable", sans-serif;
 
+$dark-mode-weight: 300;
+$dark-mode-weight-bold: 600;
+$light-mode-weight: 550;
+$light-mode-weight-bold: 700;
+
 %text-display{
 	font-family: $font-display;
 	font-size: $font-size-display;
@@ -89,7 +94,7 @@ $font-blocky: "degular-variable", sans-serif;
 	font-variation-settings: 'opsz' 40;
 	font-weight: 580;
 	:global(body.light-mode) &{
-		font-weight: 620;
+		font-weight: $light-mode-weight-bold;
 	}
 	@media print{
 		font-size: 3rem;
@@ -103,15 +108,24 @@ $font-blocky: "degular-variable", sans-serif;
 	font-style: normal;
 	line-height: 1.4;
 	font-variation-settings: 'opsz' 6;
-	font-weight: 300;
+	font-weight: $dark-mode-weight;
 	:global(body.light-mode) &{
-		font-weight: 450;
+		font-weight: $light-mode-weight;
 	}
 	&.light-mode{
-		font-weight: 450;
+		font-weight: $light-mode-weight;
 	}
 	@media print{
-		font-weight: 450;
+		font-weight: $light-mode-weight;
+	}
+	strong, b{
+		font-weight: 600;
+		:global(body.light-mode) &{
+			font-weight: $light-mode-weight-bold;
+		}
+		@media print{
+			font-weight: $light-mode-weight-bold;
+		}
 	}
 }
 
@@ -122,13 +136,14 @@ $font-blocky: "degular-variable", sans-serif;
 	text-underline-offset: 0.1em;
 	text-decoration-thickness: .05em;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: $dark-mode-weight-bold;
 	:global(body.light-mode) &{
 		text-underline-offset: .15em;
 		text-decoration-thickness: .08em;
-		font-weight: 600;
+		font-weight: $light-mode-weight-bold;
 	}
 	@media print{
+		font-weight: $light-mode-weight-bold;
 		text-underline-offset: .15em;
 		text-decoration-thickness: .08em;
 	}
@@ -143,20 +158,20 @@ $font-blocky: "degular-variable", sans-serif;
 	font-style: normal;
 	line-height: 1.5;
 	font-variation-settings: 'opsz' 6;
-	font-weight: 300;
+	font-weight: $dark-mode-weight;
 	:global(body.light-mode) &{
-		font-weight: 500;
+		font-weight: $light-mode-weight;
 	}
 	@media print{
-		font-weight: 500;
+		font-weight: $light-mode-weight;
 	}
 	strong, b{
-		font-weight: 600;
+		font-weight: $dark-mode-weight-bold;
 		:global(body.light-mode) &{
-			font-weight: 650;
+			font-weight: $light-mode-weight-bold;
 		}
 		@media print{
-			font-weight: 650;
+			font-weight: $light-mode-weight-bold;
 		}
 	}
 	a{
@@ -230,12 +245,12 @@ $font-blocky: "degular-variable", sans-serif;
 	font-weight: 450;
 	:global(body.light-mode) &{
 		letter-spacing: .05em;
-		font-weight: 500;
+		font-weight: $light-mode-weight;
 	}
 	@media print{
 		font-size: 1.7rem;
 		letter-spacing: .05em;
-		font-variation-settings: "ital" 0, "opsz" 16, "wght" 500;
+		font-weight: $light-mode-weight;
 	}
 }
 
@@ -261,12 +276,18 @@ $font-blocky: "degular-variable", sans-serif;
 	font-size: $font-size-tiny;
 	font-family: $font-text;
 	font-variation-settings: 'opsz' 6;
-	font-weight: 300;
+	font-weight: $dark-mode-weight;
 	:global(body.light-mode) &{
-		font-weight: 500;
+		font-weight: $light-mode-weight;
 	}
 	@media print{
-		font-weight: 500;
+		font-weight: $light-mode-weight;
+	}
+	strong, b{
+		font-weight: $dark-mode-weight;
+		:global(body.light-mode) &{
+			font-weight: $light-mode-weight-bold;
+		}
 	}
 }
 
@@ -277,6 +298,18 @@ $font-blocky: "degular-variable", sans-serif;
 	line-height: 1.4;
 	font-variation-settings: 'opsz' 6;
 	font-weight: 500;
+	:global(body.light-mode) &{
+		font-weight: $light-mode-weight;
+	}
+	@media print{
+		font-weight: $light-mode-weight;
+	}
+	strong, b{
+		font-weight: $dark-mode-weight-bold;
+		:global(body.light-mode) &{
+			font-weight: $light-mode-weight-bold;
+		}
+	}
 }
 
 @mixin body-formatting{
