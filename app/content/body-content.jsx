@@ -10,7 +10,7 @@ import IconBalance from "@/app/components/icons/icon-balance";
 
 export const nameTitle = {
 	name: "Barry Richards",
-	title: "Web design engineer"
+	title: "Design tinkerer"
 }
 
 export const WelcomeContent = {
@@ -38,7 +38,7 @@ export const WelcomeContent = {
 }
 
 export const TextBlocks = [
-	"I call myself a design engineer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally captivating."
+	"I call myself a design <s>engineer</s> tinkerer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally captivating."
 ]
 
 export const SkillsContent = {

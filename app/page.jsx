@@ -17,7 +17,7 @@ function Home(){
 		<main>
 			<Hero/>
 			<Welcome/>
-			<TextBlock index={0}/>
+			<TextBlock itemIndex={0}/>
 			<SkillsAndAbilities/>
 			<Themes/>
 			<WorkSamples/>
