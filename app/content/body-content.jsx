@@ -38,7 +38,7 @@ export const WelcomeContent = {
 }
 
 export const TextBlocks = [
-	"I call myself a design <s>engineer</s> tinkerer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally captivating."
+	"I call myself a design engineer / tinkerer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally interesting."
 ]
 
 export const SkillsContent = {
