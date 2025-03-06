@@ -16,9 +16,9 @@ function Tile({ component, name, description }){
 				
 				{component && iconBlock()}
 				<div className={styles.tile__content}>
-					<div className={styles.tile__name}>
+					<h3 className={styles.tile__name}>
 						{name}
-					</div>
+					</h3>
 					<p className={styles.tile__description}>
 						{description}
 					</p>

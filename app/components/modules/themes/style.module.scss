@@ -80,6 +80,7 @@
 	&__name{
 		@extend %text-heading-small;
 		text-align: left;
+		margin-bottom: 1em;
 	}
 	&__description{
 		@extend %text-tiny;
