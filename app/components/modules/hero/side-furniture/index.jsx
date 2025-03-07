@@ -52,7 +52,7 @@ function SideFurniture(){
 							duration: .2,
 							delay: .75,
 						}}
-						href="./images/profile.jpg"
+						href="./images/profile.webp"
 						width="25"
 						height="25"
 						mask="url(#profileMask)"
