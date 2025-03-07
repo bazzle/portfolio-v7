@@ -7,7 +7,7 @@
 .tile_grid{
 	position: relative;
 	display: grid;
-	row-gap: 1rem;
+	gap: 1rem;
 	@include break(desktop){
 		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
@@ -30,24 +30,9 @@
 	position: relative;
 	height: auto;
 	overflow: hidden;
-	&::before{
-		content: '';
-		position: absolute;
-		top: $indent;
-		left: 0;
-		width: .5px;
-		height: calc(100% - $indent);
-		background-color: var(--color-accent-alt);
-	}
-	&::after{
-		content: '';
-		position: absolute;
-		bottom: 1px;
-		left: 0;
-		width: calc(100% - $indent);
-		height: .5px;
-		background-color: var(--color-accent-alt);
-	}
+	border-left: .5px solid var(--color-accent);
+	border-bottom: .5px solid var(--color-accent);
+	border-bottom-left-radius: 2px;
 	&__inner{
 		width: 100%;
 		display: flex;
@@ -80,7 +65,7 @@
 	&__name{
 		@extend %text-heading-small;
 		text-align: left;
-		margin-bottom: 1em;
+		margin-bottom: .5em;
 	}
 	&__description{
 		@extend %text-tiny;
