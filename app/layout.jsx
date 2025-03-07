@@ -12,14 +12,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-		<ColourThemeProvider>
-		<Header/>
-        {children}
-		<Footer/>
-		</ColourThemeProvider>
-		<BackTop/>
-      </body>
+		<head>
+        	<link rel="stylesheet" href="https://use.typekit.net/sqv3apk.css" />
+      	</head>
+    	<body>
+			<ColourThemeProvider>
+			<Header/>
+        	{children}
+			<Footer/>
+			</ColourThemeProvider>
+			<BackTop/>
+      	</body>
     </html>
   );
 }
