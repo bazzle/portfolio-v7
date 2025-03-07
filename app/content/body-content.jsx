@@ -95,17 +95,17 @@ export const themesContent = {
 		{
 			component: <IconPieces />,
 			name: "Typography",
-			description: "I appreciate the value of good typographical choices. Something often overlooked in more tech focussed teams. And I stay up to date with new techniques such Variable and Opentype features"
+			description: "I appreciate the value of good typographical choices. Something often overlooked in more tech focussed teams. And I stay up to date with new techniques such Variable and Opentype features."
 		},
 		{
 			component: <IconFingerprint />,
 			name: "User-Centered Design",
-			description: "I appreciate how design should be guided by user needs and behaviour. I use esdtablished and tested design patterns and seek to validate design choices with user research when possible"
+			description: "I appreciate how design should be guided by user needs and behaviour. I use esdtablished and tested design patterns and seek to validate design choices with user research when possible."
 		},
 		{
 			component: <IconShapes />,
 			name: "Brand integration",
-			description: "I have extensive experience collaborating with brand designers and guardians, ensuring that visual identities and messaging are accurately and effectively translated into the digital products"
+			description: "I have extensive experience collaborating with brand designers and guardians, ensuring that visual identities and messaging are accurately and effectively translated into the digital products."
 		},
 		{
 			component: <IconBalance />,
@@ -175,6 +175,23 @@ export const WorkHistoryContent = {
 			}
 		},
 		{
+			name: "Hamilton Brown",
+			id: "hamilton-brown",
+			startDate: 2020,
+			endDate: 2021,
+			clients: ["BDO Store", "Lionpoint"],
+			intro: "Hamilton-Brown is a full-service creative agency based in London. They deliver dedicated B2B support where and when needed for regional and global clients.",
+			content: () => {
+				return(
+					<>
+						<p>
+							As part of the digital team designing and developing B2B marketing and campaign websites, I was instrumental in transitioning our build process from page-builder tools to bespoke WordPress development. I designed and assited the development of a storefront for a corporate accounting company that sells various digital accounting tools. And maintained the product through multiple releases over the course of about a year.
+						</p>
+					</>
+				)
+			}
+		},
+		{
 			name: "Freelance",
 			id: "freelance",
 			startDate: 2015,
@@ -202,10 +219,6 @@ export const WorkHistoryContent = {
 						<p>
 							Working within the digital and marketing teams, I was involved in the build of landing pages and email campaigns using the brand guidelines. I also did some front-end work on the main website, addressing support requests.
 						</p>
-						<h4>Fat Beehive</h4>
-						<p>
-							Fat Beehive are a digital agency serving the charity sector. I was involved in wireframing, look and feel design and build of several websites including The British Academy, Chevening and Croydon Pride.
-						</p>
 						<h4>Recipe</h4>
 						<p>
 							Recipe are an advertising agency. I worked on their advertising marketplace web app, linking companies looking for ad space with networks. Involved in the discovery phase, wireframing and mockups.
@@ -213,23 +226,6 @@ export const WorkHistoryContent = {
 						<h4>Helpful Digital</h4>
 						<p>
 							Helpful do training and web builds for government initiatives and charities. I designed and built various websites including a government owned property company and a fund for tech startups in Africa. I also worked on various digital tools Helpful use for crisis traning.
-						</p>
-					</>
-				)
-			}
-		},
-		{
-			name: "Hamilton Brown",
-			id: "hamilton-brown",
-			startDate: 2020,
-			endDate: 2021,
-			clients: ["BDO Store", "Lionpoint"],
-			intro: "Hamilton-Brown is a full-service creative agency based in London. They deliver dedicated B2B support where and when needed for regional and global clients.",
-			content: () => {
-				return(
-					<>
-						<p>
-							As part of the digital team designing and developing B2B marketing and campaign websites, I was instrumental in transitioning our build process from page-builder tools to bespoke WordPress development. I designed and assited the development of a storefront for a corporate accounting company that sells various digital accounting tools. And maintained the product through multiple releases over the course of about a year.
 						</p>
 					</>
 				)

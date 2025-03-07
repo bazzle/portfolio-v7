@@ -32,7 +32,7 @@ function Hero(){
 				<div className={styles.foot_section__inner}>
 					<div className="container">
 						<div className={styles.intro}>
-							<p className={styles.intro_main}>Hello! I’m a UK based web designer, developer and accessibility consultant.<br/>
+							<p className={styles.intro_main}><strong>Hello!</strong> I’m a UK based web designer, developer and accessibility consultant.<br/>
 							<a href="#welcome">Read more about me</a></p>
 							<div className={styles.contacts}>
 								<ActionLink linkString="./files/cv.pdf" textString="CV" printString="barry@br-web.me" />
