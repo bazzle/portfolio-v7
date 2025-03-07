@@ -5,8 +5,8 @@ import { ColourThemeProvider } from "./context/colour-theme";
 import BackTop from "./components/modules/footer/backtop";
 
 export const metadata = {
-  title: "Barry Richards",
-  description: "Design engineer from the UK",
+  title: "Barry Richards Design tinkerer",
+  description: "Web designer, developer and accessibility consultant from the UK. My philosophy is Web for Everyone but still POP",
 };
 
 export default function RootLayout({ children }) {
