@@ -64,13 +64,13 @@ export const SkillsContent = {
 	skillsItems: [
         { id: 1, name: 'HTML',  rating: 5 },
         { id: 2, name: 'CSS/SASS',  rating: 5 },
-		{ id: 6, name: 'WordPress',  rating: 5 },
-		{ id: 9, name: 'Figma',  rating: 5 },
-        { id: 3, name: 'Vanilla JS',  rating: 4 },
-        { id: 5, name: 'Git',  rating: 4 },
-		{ id: 4, name: 'Tailwind',  rating: 3 },
-        { id: 4, name: 'React',  rating: 3 },
-        { id: 7, name: 'PHP',  rating: 3 },
+		{ id: 3, name: 'WordPress',  rating: 5 },
+		{ id: 4, name: 'Figma',  rating: 5 },
+        { id: 5, name: 'Vanilla JS',  rating: 4 },
+        { id: 6, name: 'Git',  rating: 4 },
+		{ id: 7, name: 'Tailwind',  rating: 3 },
+        { id: 8, name: 'React',  rating: 3 },
+        { id: 9, name: 'PHP',  rating: 3 },
 	]
 }
 
