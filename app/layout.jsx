@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 		<head>
+			<link rel="preconnect" href="https://use.typekit.net/sqv3apk.css" />
         	<link rel="stylesheet" href="https://use.typekit.net/sqv3apk.css" />
       	</head>
     	<body>
