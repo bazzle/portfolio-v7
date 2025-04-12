@@ -1,0 +1,3 @@
+[submodule "app/assets/styles/style-library"]
+	path = app/assets/styles/style-library
+	url = https://github.com/bazzle/br-web-style-library

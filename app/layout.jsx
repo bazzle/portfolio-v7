@@ -1,4 +1,4 @@
-import "./assets/styles/main.scss";
+import "./assets/styles/style-library/main.scss";
 import Header from "./components/modules/header";
 import Footer from "./components/modules/footer";
 import { ColourThemeProvider } from "./context/colour-theme";
