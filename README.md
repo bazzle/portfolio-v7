@@ -7,3 +7,6 @@ Current version: 7.1.5
 * react
 * next.js
 * sass
+* Hosted on github pages
+
+Contains [BR Web style guide](https://github.com/bazzle/br-web-style-library) as submodule
