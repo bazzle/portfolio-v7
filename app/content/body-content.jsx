@@ -66,11 +66,14 @@ export const SkillsContent = {
         { id: 2, name: 'CSS/SASS',  rating: 5 },
 		{ id: 3, name: 'WordPress',  rating: 5 },
 		{ id: 4, name: 'Figma',  rating: 5 },
-        { id: 5, name: 'Vanilla JS',  rating: 4 },
-        { id: 6, name: 'Git',  rating: 4 },
-		{ id: 7, name: 'Tailwind',  rating: 3 },
-        { id: 8, name: 'React',  rating: 3 },
-        { id: 9, name: 'PHP',  rating: 3 },
+        { id: 5, name: 'Vanilla JS',  rating: 5 },
+        { id: 6, name: 'Git',  rating: 5 },
+		{ id: 7, name: 'React/JSX',  rating: 3 },
+		{ id: 7, name: 'Next JS',  rating: 3 },
+		{ id: 9, name: 'TypeScript',  rating: 3 },
+		{ id: 10, name: 'Tailwind',  rating: 3 },
+        { id: 11, name: 'Vue',  rating: 2 },
+        { id: 12, name: 'nuxt',  rating: 2 },
 	]
 }
 
