@@ -12,10 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-		<head>
+		{/* <head>
 			<link rel="preconnect" href="https://use.typekit.net/sqv3apk.css" />
         	<link rel="stylesheet" href="https://use.typekit.net/sqv3apk.css" />
-      	</head>
+      	</head> */}
     	<body>
 			<ColourThemeProvider>
 			<Header/>
