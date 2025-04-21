@@ -5,7 +5,7 @@ import { createContext, useEffect, useState } from "react";
 export const colourThemeContext = createContext();
 
 export function ColourThemeProvider({children}){
-	const [colourMode, setColourMode] = useState('dark');
+	const [colourMode, setColourMode] = useState();
 
 	const applyLightMode = () => {
 		document.body.classList.add('light-mode');
@@ -21,11 +21,32 @@ export function ColourThemeProvider({children}){
 	}
 	useEffect(() => {
 		const storedMode = localStorage.getItem('colourMode');
-		if(storedMode === 'light'){
-			applyLightMode();
+		const osMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+		const osModeChecker = window.matchMedia('(prefers-color-scheme: dark)'); 
+
+
+		if (storedMode){
+			if(storedMode === 'light'){
+				applyLightMode();
+			} else {
+				applyDarkMode();
+			}
 		} else {
-			applyDarkMode();
+			if(osMode === 'light'){
+				applyLightMode();
+			} else {
+				applyDarkMode();
+			}
 		}
+
+		osModeChecker.addEventListener('change',(e) => {
+			if(e.matches){
+				applyDarkMode();
+			} else {
+				applyLightMode();
+			}
+		})
+
 	}, []);
 
 	const modeSwitch = () => colourMode === 'light' ? applyDarkMode() : applyLightMode();
