@@ -1,17 +1,17 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .spacer{
 	display: block;
-	@include ridged-line;
-	margin-top: $block-spacing;
-	margin-bottom: $block-spacing;
-	@include break(tablet){
+	@include vars.ridged-line;
+	margin-top: vars.$block-spacing;
+	margin-bottom: vars.$block-spacing;
+	@include vars.break(tablet){
 		margin-top: clamp(10rem, 15vw, 13rem);
 		margin-bottom: clamp(10rem, 15vw, 13rem);
 	}
 	&_mobile{
 		display: block;
-		@include break(tablet){
+		@include vars.break(tablet){
 			display: none;
 		}
 		@media print{
@@ -20,14 +20,14 @@
 	}
 	&_nomobile{
 		display: none;
-		@include break(tablet){
+		@include vars.break(tablet){
 			display: block;
 		}
 	}
 	&_shallow{
-		margin-top: $block-spacing--shallow;
-		margin-bottom: $block-spacing--shallow;
-		@include break(tablet){
+		margin-top: vars.$block-spacing--shallow;
+		margin-bottom: vars.$block-spacing--shallow;
+		@include vars.break(tablet){
 			margin-top: clamp(5rem, 3.75vw, 8.5rem);
 			margin-bottom: clamp(5rem, 3.75vw, 8.5rem);
 		}
@@ -37,7 +37,7 @@
 		border-bottom: 0;
 	}
 	&_nolinemobile{
-		@include break-under(tablet){
+		@include vars.break-under(tablet){
 			background-color: transparent;
 			border-bottom: 0;
 		}
@@ -49,13 +49,13 @@
 		margin-bottom: 0;
 	}
 	&_shallow_top{
-		@include break(tablet){
-			margin-top: $block-spacing;
+		@include vars.break(tablet){
+			margin-top: vars.$block-spacing;
 		}
 	}
 
 	@media print{
-		margin-top: $block-spacing--shallow--static;
-		margin-bottom: $block-spacing--shallow--static;
+		margin-top: vars.$block-spacing--shallow--static;
+		margin-bottom: vars.$block-spacing--shallow--static;
 	}
 }

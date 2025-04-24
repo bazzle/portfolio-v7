@@ -1,8 +1,8 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 
 .side_furniture{
-	@include break(tablet){
+	@include vars.break(tablet){
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -18,7 +18,7 @@
 	&__dots{
 		flex-grow: 1;
 		display: none;
-		@include break(tablet){
+		@include vars.break(tablet){
 			display: block;
 		}
 	}
@@ -27,7 +27,7 @@
 		height: 8rem;
 		width: 10px;
 		display: none;
-		@include break(tablet){
+		@include vars.break(tablet){
 			display: block;
 		}
 		svg{
@@ -46,7 +46,7 @@
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		@include break(tablet){
+		@include vars.break(tablet){
 			height: 16rem;
 			width: 10px;
 			display: block;
@@ -59,7 +59,7 @@
 			fill: var(--color-accent);
 			transform: translateY(50%);
 			top: 4px;
-			@include break(tablet){
+			@include vars.break(tablet){
 				width: 16rem;
 				height: 16rem;
 				position: absolute;

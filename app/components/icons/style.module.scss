@@ -1,4 +1,4 @@
-@mixin defaults{
+%defaults{
 	position: relative;
 	left: 0;
 	top: 0;
@@ -7,29 +7,29 @@
 }
 
 .icon_glass{
-	@include defaults;
+	@extend %defaults;
 	left: -1.5rem;
 }
 .icon_door{
-	@include defaults;
+	@extend %defaults;
 }
 .icon_tag{
-	@include defaults;
+	@extend %defaults;
 }
 .icon_pieces{
-	@include defaults;
+	@extend %defaults;
 }
 .icon_mag_glass{
-	@include defaults;
+	@extend %defaults;
 }
 .icon_shapes{
-	@include defaults;
+	@extend %defaults;
 }
 .icon_fingerprint{
-	@include defaults;
+	@extend %defaults;
 }
 .icon_balance{
-	@include defaults;
+	@extend %defaults;
 }
 
 .dark_mode_hide{

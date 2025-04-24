@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .hero{
 	position: relative;
@@ -7,7 +7,7 @@
 	flex-direction: column;
 	padding-bottom: 6rem;
 	margin-bottom: 6rem;
-	@include break(tablet){
+	@include vars.break(tablet){
 		min-height: calc(100vh - 60px);
 		margin-bottom: 12rem;
 	}
@@ -24,7 +24,7 @@
 		position: relative;
 		padding-top: clamp(10rem, 15vw, 17rem);
 		padding-bottom: clamp(10rem, 15vw, 17rem);
-		@include break(tablet){
+		@include vars.break(tablet){
 			height: 100%;
 			width: 100%;
 			display: flex;
@@ -49,10 +49,10 @@
 		max-width: unset;
 		@media print{
 			padding-top: 1em;
-			padding-bottom: $block-spacing--shallow;
+			padding-bottom: vars.$block-spacing--shallow;
 		}
 		&__main{
-			@extend %text-display;
+			@include vars.text-display;
 			display: block;
 			@media (prefers-color-scheme: light){
 				color: var(--color-foreground);
@@ -63,7 +63,7 @@
 		}
 		&__sub{
 			display: block;
-			@extend %text-medium;
+			@include vars.text-medium;
 		}
 	}
 }
@@ -79,13 +79,12 @@
 			gap: .8em;
 		}
 		.intro{
-			@extend %text-std;
 			padding-top: 3rem;
 			display: flex;
 			flex-direction: column;
 			gap: 1em;
 			width: 100%;
-			@include break(tablet){
+			@include vars.break(tablet){
 				padding-right: calc(8vw + 8rem);
 				flex-direction: row;
 				align-items: flex-start;
@@ -96,12 +95,11 @@
 				margin-bottom: 0;
 				flex-shrink: 1;
 				padding-right: calc(8vw + 8rem);
-				@include break(tablet){
+				@include vars.break(tablet){
 					padding-right: unset;
 				}
 			}
 			a{
-				@extend %text-link;
 				font-size: inherit;
 				white-space: nowrap;
 				@media print{
@@ -120,10 +118,10 @@
 				padding-left: 0;
 				border-left: 0;
 			}
-			@include break(tablet){
+			@include vars.break(tablet){
 				flex-direction: column;
 			}
-			@include break(desktop){
+			@include vars.break(desktop){
 				flex-direction: row;
 			}
 		}

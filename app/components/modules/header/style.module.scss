@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .header{
 	z-index: 2;
@@ -18,16 +18,16 @@
 	padding: 0;
 	line-height: 1;
 	position: relative;
-	@extend %text-blocky-bold;
+	@include vars.text-blocky-bold;
 	font-size: 1.6rem;
 	display: flex;
 	flex-shrink: 0;
 	flex-direction: column;
 	gap: .2em;
-	@include break(mobile){
+	@include vars.break(mobile){
 		flex-direction: row;
 	}
-	@include break(tablet){
+	@include vars.break(tablet){
 		flex-shrink: 0;
 		gap: .5em;
 	}
@@ -62,7 +62,7 @@
 		fill: var(--color-accent);
 		position: absolute;
 		transform: translate(25%, -50%);
-		@include break(tablet){
+		@include vars.break(tablet){
 			display: block;
 			transform: translate(50%, -50%);
 			right: calc(8vw - 5px);

@@ -11,14 +11,16 @@ function Welcome(){
 
 	return(
 		<Section id="welcome" noMinHeight>
-			<div className="container">
-				<div className="inner-2col">
-					<div className="col-1">
-						<SectionHead titleString={title} separator />
-					</div>
-					<div className="col-2">
-						<div className={styles.body_text}>
-							{content}
+			<div className={styles.welcome}>
+				<div className="container">
+					<div className="inner-2col">
+						<div className="col-1">
+							<SectionHead titleString={title} separator />
+						</div>
+						<div className="col-2">
+							<div className={styles.body_text}>
+								{content}
+							</div>
 						</div>
 					</div>
 				</div>

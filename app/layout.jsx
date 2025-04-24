@@ -1,4 +1,4 @@
-import "./assets/styles/style-library/main.scss";
+import "@/app/assets/styles/style-library/main.scss";
 import Header from "./components/modules/header";
 import Footer from "./components/modules/footer";
 import { ColourThemeProvider } from "./context/colour-theme";
@@ -12,10 +12,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-		{/* <head>
-			<link rel="preconnect" href="https://use.typekit.net/sqv3apk.css" />
-        	<link rel="stylesheet" href="https://use.typekit.net/sqv3apk.css" />
-      	</head> */}
     	<body>
 			<ColourThemeProvider>
 			<Header/>

@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 $gap: clamp(.8rem, 2vw, 1.2rem);
 
@@ -21,7 +21,7 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 		margin-bottom: 0;
 		text-align: center;
 		display: inline-block;
-		@extend %text-display-small;
+		@include vars.text-display-small;
 		padding-top: 2em;
 		padding-bottom: 1em;
 	}

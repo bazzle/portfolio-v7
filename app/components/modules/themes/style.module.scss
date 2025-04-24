@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .tile_container{
 	position: relative;
@@ -8,14 +8,14 @@
 	position: relative;
 	display: grid;
 	gap: 1rem;
-	@include break(desktop){
+	@include vars.break(desktop){
 		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
 	}
-	@include break(desktop-med){
+	@include vars.break(desktop-med){
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	@include break(desktop-wide){
+	@include vars.break(desktop-wide){
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 	@media print{
@@ -42,7 +42,7 @@
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: center;
-		@include break(desktop){
+		@include vars.break(desktop){
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: center;
@@ -51,7 +51,7 @@
 	&__icon{
 		width: 20%;
 		flex-shrink: 0;
-		@include break(desktop){
+		@include vars.break(desktop){
 			aspect-ratio: 3/2;
 			width: 100%;
 		}
@@ -63,12 +63,12 @@
 		}
 	}
 	&__name{
-		@extend %text-heading-small;
+		@include vars.text-heading-small;
 		text-align: left;
 		margin-bottom: .5em;
 	}
 	&__description{
-		@extend %text-tiny;
+		@include vars.text-tiny;
 		text-align: left;
 		margin-bottom: 0;
 	}

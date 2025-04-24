@@ -1,11 +1,5 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
-.welcome{
-	background-color: var(--color-bg);
-}
 .body_text{
-	@include body-formatting;
-}
-.client_logos{
-	margin-top: $block-spacing--shallow;
+	@include vars.body-formatting;
 }

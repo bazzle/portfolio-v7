@@ -1,9 +1,9 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .work_history{
 	position: relative;
 	&__sectionHead{
-		@include break(desktop-wider){
+		@include vars.break(desktop-wider){
 			margin-top: 10rem;
 		}
 	}
@@ -18,12 +18,12 @@
 		flex-direction: row-reverse;
 		justify-content: flex-end;
 		width: 100%;
-		@include break(desktop-wider){
+		@include vars.break(desktop-wider){
 			border-bottom: 1px solid var(--color-foreground);
 			justify-content: space-between;
 			height: 10rem;
 		}
-		@include break(desktop-wider){
+		@include vars.break(desktop-wider){
 			gap: 4rem;
 		}
 		@media print{
@@ -35,13 +35,13 @@
 		margin-bottom: 0;
 		position: relative;
 		max-width: 10em;
-		@include break(desktop-wider){
+		@include vars.break(desktop-wider){
 			flex-shrink: 2;
 			padding-bottom: 3rem;
 		}
 		&__inner{
 			position: relative;
-			@include break(desktop-wider){
+			@include vars.break(desktop-wider){
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -56,14 +56,14 @@
 		}
 		&:not(.is_active){
 			.nav_item__title{
-				@extend %text-link;
+				@include vars.text-link;
 			}
 		}
 		&__dates{
-			@extend %text-miniscule;
+			@include vars.text-miniscule;
 			color: var(--color-accent-alt);
 			display: none;
-			@include break(desktop-wider){
+			@include vars.break(desktop-wider){
 				display: block;
 			}
 		}
@@ -72,7 +72,7 @@
 			display: block;
 			cursor: default;
 			text-decoration: none;
-			@include break(desktop-wider){
+			@include vars.break(desktop-wider){
 				flex-grow: 1;
 				display: block;
 				width: auto;
@@ -82,10 +82,10 @@
 			.nav_item__title{
 				color: var(--color-foreground);
 				line-height: 1.2;
-				@extend %text-heading-small;
+				@include vars.text-heading-small;
 			}
 			&::after{
-				@include break(desktop-wider){
+				@include vars.break(desktop-wider){
 					content: '';
 					height: 3rem;
 					width: 100vw;
@@ -100,14 +100,14 @@
 		}
 		&:first-of-type{
 			&.is_active{
-				@include break(desktop-wider){
+				@include vars.break(desktop-wider){
 					margin-right: 0;
 				}
 			}
 		}
 		&:last-of-type{
 			&.is_active{
-				@include break(desktop-wider){
+				@include vars.break(desktop-wider){
 					margin-left: 0;
 				}
 			}

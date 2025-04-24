@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .sign_off{
 	position: relative;
@@ -7,7 +7,7 @@
 	p{
 		margin: 0;
 		max-width: unset;
-		@extend %text-display-small;
+		@include vars.text-display-small;
 		text-align: center;
 		color: var(--color-foreground);
 		:global(body.light-mode) &{
@@ -16,7 +16,7 @@
 		@media print{
 			color: var(--color-accent);
 		}
-		@include break-under(tablet){
+		@include vars.break-under(tablet){
 			padding-top: 1em;
 			padding-bottom: 1em;
 		}

@@ -1,10 +1,12 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .list_item{
 	list-style-type: none;
 	gap: .7em;
 	align-items:baseline;
 	display: flex;
+	padding-top: .3em;
+	padding-bottom: .3em;
 	&::before{
 		position: relative;
 		top: -.1em;
@@ -16,10 +18,8 @@
 		transform: rotate(45deg);
 		flex-shrink: 0;
 	}
-	padding-top: .3em;
-	padding-bottom: .3em;
 	&.blocky{
-		@extend %text-blocky;
+		@include vars.text-blocky;
 		padding-top: .1em;
 		padding-bottom: .1em;
 	}

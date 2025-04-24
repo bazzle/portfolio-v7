@@ -1,8 +1,8 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .content_sheet{
 	&__main{
-		padding-top: $block-spacing--shallow;
+		padding-top: vars.$block-spacing--shallow;
 	}
 	&_hidden{
 		display: none;
@@ -11,7 +11,7 @@
 		}
 	}
 	&__name{
-		@extend %text-heading;
+		@include vars.text-heading;
 		@media print{
 			font-size:4rem;
 			color: var(--color-accent);
@@ -20,17 +20,17 @@
 		}
 	}
 	&__dates{
-		@include break(desktop-wider){
+		@include vars.break(desktop-wider){
 			display: none;
 		}
 	}
 	.body_text{
-		@include body-formatting;
-		margin-bottom: $block-spacing--shallow;
+		@include vars.body-formatting;
+		margin-bottom: vars.$block-spacing--shallow;
 	}
 	.metadata{
 		&__item{
-			margin-bottom: $block-spacing--shallow;
+			margin-bottom: vars.$block-spacing--shallow;
 			&:last-of-type{
 				margin-bottom: 0;
 			}
@@ -39,18 +39,18 @@
 			}
 		}
 		&__duration{
-			@extend %text-blocky;
+			@include vars.text-blocky;
 		}
 	}
 	.duration{
-		@extend %text-blocky;
+		@include vars.text-blocky;
 	}
 	ul.clients_list{
 		padding-left: 0;
 		gap: 6rem;
 		column-count: 1;
 		margin-bottom: 0;
-		@include break(desktop){
+		@include vars.break(desktop){
 			column-count: 2;
 		}
 		@media print{
@@ -58,7 +58,7 @@
 		}
 	}
 	.intro{
-		@extend %text-intro;
+		@include vars.text-intro;
 		color: var(--color-accent-alt);
 		@media print{
 			color: var(--color-foreground);

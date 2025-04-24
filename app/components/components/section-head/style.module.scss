@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .section_head{
 	position: relative;
@@ -9,7 +9,7 @@
 	margin: 0;
 	padding-left: calc(1.5vw + 1.1em);
 	padding-bottom: 2rem;
-	@extend %text-heading;
+	@include vars.text-heading;
 	color: var(--color-accent);
 	@media print{
 		padding-left: 0;
@@ -19,13 +19,13 @@
 		padding-bottom: 2rem;
 	}
 	&__no_indent_mobile{
-		@include break-under(tablet){
+		@include vars.break-under(tablet){
 			padding-left: 0;
 		}
 	}
 	&__no_separator{
 		margin: 0;
-		@extend %text-heading;
+		@include vars.text-heading;
 	}
 }
 :global(body.dark-mode) .title {

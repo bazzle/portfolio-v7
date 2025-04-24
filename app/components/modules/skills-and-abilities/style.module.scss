@@ -1,6 +1,6 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 .inner{
-	padding-top: $block-spacing--shallow;
+	padding-top: vars.$block-spacing--shallow;
 }
 .skills_list{
 	list-style: none;
@@ -10,11 +10,11 @@
 	grid-column-gap: 1rem;
 	grid-row-gap: .5rem;
 	margin-bottom: 0;
-	@include break(mobile){
+	@include vars.break(mobile){
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 2rem;
 	}
-	@include break(desktop){
+	@include vars.break(desktop){
 		width: 100%;
 		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 2rem;
@@ -29,7 +29,7 @@
 	&__item{
 		display: flex;
 		gap: 1em;
-		@extend %text-blocky;
+		@include vars.text-blocky;
 		&__name{
 			width: 100%;
 			flex-grow: 1;
@@ -47,7 +47,7 @@
 	}
 }
 .body_text{
-	@include body-formatting;
+	@include vars.body-formatting;
 }
 
 .col-1{

@@ -1,9 +1,9 @@
 import styles from "./style.module.scss";
 
-function ListItem(props){
+function ListItem({content, blocky}){
 	return(
-		<li className={`${styles.list_item} ${props.blocky && styles.blocky} `}>
-			<span dangerouslySetInnerHTML={{ __html: props.content }} />
+		<li className={`${styles.list_item} ${blocky ? styles.blocky : ''}`}>
+			<span dangerouslySetInnerHTML={{ __html: content }} />
 		</li>
 	)
 }

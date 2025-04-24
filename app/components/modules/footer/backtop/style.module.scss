@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .backTop{
 	position: fixed;
@@ -8,7 +8,7 @@
 	margin-bottom: 0;
 	padding-bottom: 0;
 	display: block;
-	@include break(tablet){
+	@include vars.break(tablet){
 		right: 4rem;
 	}
 	height: 4rem;

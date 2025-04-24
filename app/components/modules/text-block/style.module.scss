@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .text_block{
 	position: relative;
@@ -32,14 +32,14 @@
 			background: linear-gradient(180deg, var(--color-foreground) 75%, var(--color-accent) 100% );
 			background-clip: text;
     		-webkit-background-clip: text;
-			@extend %text-display-small;
+			@include vars.text-display-small;
 			@media print{
 				background: none;
 				color: var(--color-foreground);
 			}
 		}
 		max-width: 80vw;
-		@include break(tablet){
+		@include vars.break(tablet){
 			max-width: 60vw;
 		}
 		@media print{

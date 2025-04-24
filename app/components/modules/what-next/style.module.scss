@@ -1,5 +1,5 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .body_text{
-	@include body-formatting;
+	@include vars.body-formatting;
 }

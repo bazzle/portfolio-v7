@@ -1,11 +1,11 @@
-@use "@/app/assets/styles/style-library/all-vars" as *;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .clients{
-	@include svgColor(var(--color-foreground));
+	@include vars.svgColor(var(--color-foreground));
 	width: 100%;
-	@include break(tablet){
-		padding-top: $block-spacing--shallow;
-		padding-bottom: $block-spacing--shallow;
+	@include vars.break(tablet){
+		padding-top: vars.$block-spacing--shallow;
+		padding-bottom: vars.$block-spacing--shallow;
 	}
 	.logos{
 		display: flex;
