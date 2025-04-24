@@ -1,4 +1,3 @@
-import styles from './style.module.scss';
 import SectionHead from '@/app/components/components/section-head';
 import Section from '@/app/components/components/section';
 import {WhatNextContent} from '@/app/content/body-content';
@@ -17,9 +16,7 @@ function WhatNext(){
 						<SectionHead titleString={title} separator />
 					</div>
 					<div className="col-2">
-						<div className={styles.body_text}>
-							{content}
-						</div>
+						{content}
 					</div>
 				</div>
 			</div>

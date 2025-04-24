@@ -2,7 +2,7 @@
 
 .content_sheet{
 	&__main{
-		padding-top: vars.$block-spacing--shallow;
+		padding-top: vars.$block-spacing--tiny;
 	}
 	&_hidden{
 		display: none;
@@ -20,30 +20,18 @@
 		}
 	}
 	&__dates{
+		margin-bottom: vars.$block-spacing--tiny;
 		@include vars.break(desktop-wider){
 			display: none;
 		}
 	}
 	.body_text{
-		@include vars.body-formatting;
-		margin-bottom: vars.$block-spacing--shallow;
+		margin-bottom: vars.$block-spacing--tiny;
 	}
 	.metadata{
-		&__item{
-			margin-bottom: vars.$block-spacing--shallow;
-			&:last-of-type{
-				margin-bottom: 0;
-			}
-			p{
-				margin-bottom: 0;
-			}
-		}
 		&__duration{
 			@include vars.text-blocky;
 		}
-	}
-	.duration{
-		@include vars.text-blocky;
 	}
 	ul.clients_list{
 		padding-left: 0;
@@ -59,7 +47,9 @@
 	}
 	.intro{
 		@include vars.text-intro;
+		margin-bottom: vars.$block-spacing--shallow;
 		color: var(--color-accent-alt);
+		max-width: vars.$content-width;
 		@media print{
 			color: var(--color-foreground);
 		}

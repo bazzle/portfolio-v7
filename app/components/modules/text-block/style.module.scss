@@ -25,6 +25,8 @@
     	margin: 0 auto;
 		color: var(--color-foreground);
 		text-shadow:unset;
+		display: flex;
+		justify-content: center;
 		p{
 			position: relative;
 			margin-bottom: 0;
@@ -33,6 +35,7 @@
 			background-clip: text;
     		-webkit-background-clip: text;
 			@include vars.text-display-small;
+			max-width: unset;
 			@media print{
 				background: none;
 				color: var(--color-foreground);

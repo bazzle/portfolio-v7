@@ -46,9 +46,6 @@
 		}
 	}
 }
-.body_text{
-	@include vars.body-formatting;
-}
 
 .col-1{
 	@media print{

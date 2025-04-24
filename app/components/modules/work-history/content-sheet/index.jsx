@@ -54,12 +54,10 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 						{bodyContent}
 					</div>
 					<div className={styles.metadata}>
-						<div className={styles.metadata__item}>
-							<h4 className={styles.metadata__heading}>Duration</h4>
-							<p className={styles.duration}>
-								{duration}
-							</p>
-						</div>
+						<h4 className={styles.metadata__heading}>Duration</h4>
+						<p className={styles.duration}>
+							{duration}
+						</p>
 						{clientList()}
 					</div>
 				</div>

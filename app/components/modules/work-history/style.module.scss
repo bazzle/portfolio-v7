@@ -53,10 +53,11 @@
 		&__title{
 			display: block;
 			text-align: center;
+			white-space: nowrap;
 		}
 		&:not(.is_active){
 			.nav_item__title{
-				@include vars.text-link;
+				@include vars.standalone-link;
 			}
 		}
 		&__dates{
@@ -82,7 +83,10 @@
 			.nav_item__title{
 				color: var(--color-foreground);
 				line-height: 1.2;
-				@include vars.text-heading-small;
+				@include vars.standalone-link-inactive;
+				@include vars.break(desktop-wider){
+					font-size: vars.$font-size-heading;
+				}
 			}
 			&::after{
 				@include vars.break(desktop-wider){
