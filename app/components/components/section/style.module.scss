@@ -13,4 +13,7 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 	&_line{
 		border-bottom: .5px solid var(--color--accent-50);
 	}
+	&_no_min_height{
+		min-height: unset;
+	}
 }
