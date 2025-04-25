@@ -1,23 +1,26 @@
+'use client';
+
 import styles from './style.module.scss';
-import propTypes from "prop-types";
+import { useContext } from 'react';
+import { colourThemeContext } from '@/app/context/colour-theme';
 
 function Section({ children, id, line, noSpacing, noMinHeight }) {
-	let classString = `${styles.section} ${line ? styles.section_line : ''} ${noSpacing ? styles.section_no_spacing : ''} ${noMinHeight ? styles.section_no_min_height : ''}`;
+	const { colourMode, modeSwitch } = useContext(colourThemeContext);
+
+	const colorModeClassname = `colour--${colourMode}`
+
+	const styleConfigString = [
+		styles.section,
+		line && styles.section_line,
+		noSpacing && styles.section_no_spacing,
+		noMinHeight && styles.section_no_min_height
+	  ].filter(Boolean).join(' ');
+	
 	return (
-		<section id={id} className={classString}>
+		<section id={id} className={`${styleConfigString} ${colorModeClassname}`}>
 			{children}
 		</section>
   	);
 }
-
-Section.propTypes = {
-  children: propTypes.node,
-  id: propTypes.string,
-  noSpacing: propTypes.bool,
-  noSpacingPrint: propTypes.bool,
-  noMobile: propTypes.bool,
-  line: propTypes.bool,
-  noMinHeight: propTypes.bool
-};
 
 export default Section;
