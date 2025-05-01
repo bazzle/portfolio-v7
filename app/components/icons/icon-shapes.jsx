@@ -1,5 +1,5 @@
 'use client'
-import styles from "./style.module.scss";
+
 
 function IconShapes(){
 	return(

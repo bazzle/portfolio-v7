@@ -1,4 +1,4 @@
-import styles from './style.module.scss';
+
 import SectionHead from '@/app/components/components/section-head';
 import VennDiagram from './venn-diagram';
 import SkillsList from './skills-list';

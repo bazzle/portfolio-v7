@@ -1,6 +1,6 @@
 'use client'
 import VerticalDots from "../vertical-dots";
-import styles from './style.module.scss';
+
 import { motion } from "motion/react";
 
 function SideFurniture(){

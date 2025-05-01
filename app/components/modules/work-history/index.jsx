@@ -1,5 +1,5 @@
 'use client'
-import styles from './style.module.scss';
+
 import SectionHead from "@/app/components/components/section-head";
 import ContentSheet from "./content-sheet";
 import { useState } from "react";

@@ -1,4 +1,4 @@
-import styles from './style.module.scss';
+
 import Clients from "@/app/components/modules/hero/clients";
 import BgShapes from '@/app/components/components/bg-shapes';
 import SideFurniture from './side-furniture';

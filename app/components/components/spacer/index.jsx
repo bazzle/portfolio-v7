@@ -1,4 +1,4 @@
-import styles from './style.module.scss';
+
 
 function Spacer({mobile, noMobile, shallow, noLine, noLineMobile, noMarginTop, noMarginBottom, shallowTop}){
 	let classString =(`

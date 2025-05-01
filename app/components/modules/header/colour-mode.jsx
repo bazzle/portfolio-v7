@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useContext } from 'react';
-import styles from './style.module.scss';
+
 import { colourThemeContext } from '@/app/context/colour-theme';
 
 function ColourMode() {

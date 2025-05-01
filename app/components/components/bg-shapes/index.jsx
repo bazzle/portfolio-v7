@@ -1,5 +1,5 @@
 'use client';
-import styles from './style.module.scss';
+
 import { motion } from "motion/react";
 import { useContext } from 'react';
 import { colourThemeContext } from '@/app/context/colour-theme';

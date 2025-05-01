@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import styles from './style.module.scss';
+
 
 function BrowserMobile({src, alt}){
     return(

@@ -1,5 +1,5 @@
 import BgShapes from "../../components/bg-shapes";
-import styles from "./style.module.scss";
+
 import Section from '@/app/components/components/section';
 import {TextBlocks} from '@/app/content/body-content';
 import propTypes from "prop-types";

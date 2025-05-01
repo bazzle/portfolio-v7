@@ -1,5 +1,5 @@
 'use client'
-import styles from './style.module.scss';
+
 import propTypes from "prop-types";
 
 function ActionLink({linkString, textString, printString, clickEvent, classes}){

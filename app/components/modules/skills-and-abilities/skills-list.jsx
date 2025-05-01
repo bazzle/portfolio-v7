@@ -1,4 +1,4 @@
-import styles from "./style.module.scss";
+
 import { SkillsContent } from "@/app/content/body-content";
 
 function SkillsList(){

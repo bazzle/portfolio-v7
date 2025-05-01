@@ -1,5 +1,5 @@
 import propTypes from "prop-types";
-import styles from "./style.module.scss";
+
 import StylisedLine from "@/app/components/components/stylised-line";
 function SectionHead({
     titleString = 'Section title',

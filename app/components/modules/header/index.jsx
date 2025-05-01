@@ -1,5 +1,5 @@
 import ColourMode from './colour-mode';
-import styles from './style.module.scss';
+
 import { nameTitle } from '@/app/content/body-content';
 
 function Header(){

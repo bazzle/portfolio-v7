@@ -1,4 +1,4 @@
-import styles from './style.module.scss';
+
 import BackTop from './backtop';
 import BgShapes from '@/app/components/components/bg-shapes';
 

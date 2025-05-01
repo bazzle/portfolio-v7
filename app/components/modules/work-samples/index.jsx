@@ -1,5 +1,5 @@
 'use client'
-import styles from './style.module.scss';
+
 import BrowserMobile from './browser-mobile';
 import BrowserDesktop from './browser-desktop';
 import Section from '@/app/components/components/section';

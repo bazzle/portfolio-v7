@@ -1,4 +1,4 @@
-import styles from './style.module.scss';
+
 import LogoBFI from './logos/logo-bfi.jsx';
 import LogoNao from './logos/logo-nao.jsx';
 import LogoBDO from './logos/logo-bdo.jsx';

@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './style.module.scss';
+
 
 const handleClick = () => {
 	window.scrollTo({

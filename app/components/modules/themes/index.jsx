@@ -1,4 +1,4 @@
-import styles from "./style.module.scss";
+
 import SectionHead from "../../components/section-head";
 import Tile from "./tile";
 import Section from '@/app/components/components/section';

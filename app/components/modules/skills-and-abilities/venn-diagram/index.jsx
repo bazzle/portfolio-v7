@@ -1,5 +1,5 @@
 'use client'
-import styles from './style.module.scss';
+
 import LoopActions from './loop-actions.jsx';
 
 function VennDiagram() {

@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './style.module.scss';
+
 import { useContext } from 'react';
 import { colourThemeContext } from '@/app/context/colour-theme';
 

@@ -1,5 +1,5 @@
 "use client";
-import styles from './style.module.scss';
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { SkillsContent } from '@/app/content/body-content';

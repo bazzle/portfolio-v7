@@ -1,4 +1,4 @@
-import styles from './style.module.scss';
+
 import ListItem from '@/app/components/components/list-item';
 
 function ContentSheet({ contentSheetObj, isHidden }) {
