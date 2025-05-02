@@ -1,17 +1,17 @@
-import ColourMode from './colour-mode';
+import ColourMode from './DmSwitcher';
 
 import { nameTitle } from '@/app/content/body-content';
 
 function Header(){
     return(
-        <header className={styles.header}>
+        <header className="header">
 			<div className="container">
-				<div className={styles.inner}>
-					<h1 className={styles.sitename}>
+				<div className="header__inner">
+					<h1 className="header__sitename">
 						<span className='highlight'>{nameTitle.name}</span>
 						<span>{nameTitle.title}</span>
 					</h1>
-					<div className={styles.line}>
+					<div className="header__line">
 						<hr />
 						<svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><path d="M12.0208 24.0416L0 12.0208L12.0208 0L24.0416 12.0208L12.0208 24.0416Z" /></svg>
 					</div>

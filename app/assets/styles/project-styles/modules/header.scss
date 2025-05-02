@@ -7,13 +7,13 @@
 	display: flex;
 	align-items: center;
 }
-.inner{
+.header__inner{
 	display: flex;
 	align-items: center;
 	gap: 1rem;
 	position: relative;
 }
-.sitename{
+.header__sitename{
 	margin: 0;
 	padding: 0;
 	line-height: 1;
@@ -39,11 +39,11 @@
 	span{
 		flex-shrink: 0;
 	}
-	span.name{
+	span.header__sitename-name{
 		color: var(--color-accent);
 	}
 }
-.line{
+.header__line{
 	width: 100%;
 	position: relative;
 	hr{
@@ -70,7 +70,7 @@
 	}
 }
 
-.dm_switcher{
+.header__dmSwitcher{
 	height: 60px;
 	width: 60px;
 	position: absolute;
