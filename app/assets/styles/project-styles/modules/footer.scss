@@ -15,7 +15,7 @@
 			padding: .5em 1em .65em 1em;
 			display: inline;
 			border-radius: .4em;
-			@include vars.text-blocky;
+			@extend %text-blocky;
 			text-align: center;
 			margin-bottom: 0;
 			color: var(--color-foreground);

@@ -34,7 +34,7 @@
 			background: linear-gradient(180deg, var(--color-foreground) 75%, var(--color-accent) 100% );
 			background-clip: text;
     		-webkit-background-clip: text;
-			@include vars.text-display-small;
+			@extend %text-display-small;
 			max-width: unset;
 			@media print{
 				background: none;

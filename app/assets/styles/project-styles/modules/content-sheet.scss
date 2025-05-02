@@ -11,7 +11,7 @@
 		}
 	}
 	&__name{
-		@include vars.text-heading;
+		@extend %text-heading;
 		@media print{
 			font-size:4rem;
 			color: var(--color-accent);
@@ -30,7 +30,7 @@
 	}
 	.metadata{
 		&__duration{
-			@include vars.text-blocky;
+			@extend %text-blocky;
 		}
 	}
 	ul.clients_list{
@@ -46,7 +46,7 @@
 		}
 	}
 	.intro{
-		@include vars.text-intro;
+		@extend %text-intro;
 		margin-bottom: vars.$block-spacing--shallow;
 		color: var(--color-accent-alt);
 		max-width: vars.$content-width;

@@ -63,7 +63,7 @@
 		}
 	}
 	&__name{
-		@include vars.text-heading-small;
+		@extend %text-heading-small;
 		text-align: left;
 		margin-bottom: .5em;
 	}

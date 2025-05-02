@@ -7,7 +7,7 @@
 	p{
 		margin: 0;
 		max-width: unset;
-		@include vars.text-display-small;
+		@extend %text-display-small;
 		text-align: center;
 		color: var(--color-foreground);
 		:global(body.light-mode) &{

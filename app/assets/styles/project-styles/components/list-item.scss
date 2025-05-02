@@ -8,7 +8,7 @@
 	padding-top: .3em;
 	padding-bottom: .3em;
 	max-width: vars.$content-width;
-	@include vars.text-body;
+	@extend %text-body;
 	&::before{
 		position: relative;
 		top: -.1em;
@@ -21,7 +21,7 @@
 		flex-shrink: 0;
 	}
 	&.blocky{
-		@include vars.text-blocky;
+		@extend %text-blocky;
 		padding-top: .1em;
 		padding-bottom: .1em;
 	}

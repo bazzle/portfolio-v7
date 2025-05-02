@@ -52,7 +52,7 @@
 			padding-bottom: vars.$block-spacing--shallow;
 		}
 		&__main{
-			@include vars.text-display;
+			@extend %text-display;
 			display: block;
 			@media (prefers-color-scheme: light){
 				color: var(--color-foreground);
@@ -63,7 +63,7 @@
 		}
 		&__sub{
 			display: block;
-			@include vars.text-medium;
+			@extend %text-medium;
 		}
 	}
 }

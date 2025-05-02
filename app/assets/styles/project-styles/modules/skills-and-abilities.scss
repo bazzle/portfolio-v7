@@ -29,7 +29,7 @@
 	&__item{
 		display: flex;
 		gap: 1em;
-		@include vars.text-blocky;
+		@extend %text-blocky;
 		&__name{
 			width: 100%;
 			flex-grow: 1;

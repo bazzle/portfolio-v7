@@ -9,7 +9,7 @@
 	margin: 0;
 	padding-left: calc(1.5vw + 1.1em);
 	padding-bottom: 2rem;
-	@include vars.text-heading;
+	@extend %text-heading;
 	color: var(--color-accent);
 	@media print{
 		padding-left: 0;
@@ -25,7 +25,7 @@
 	}
 	&__no_separator{
 		margin: 0;
-		@include vars.text-heading;
+		@extend %text-heading;
 	}
 }
 :global(body.dark-mode) .title {
