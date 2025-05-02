@@ -1,6 +1,6 @@
 import SectionHead from '@/app/components/components/SectionHead/SectionHead';
 import Section from '@/app/components/components/Section/Section';
-import {WelcomeContent} from '@/app/content/body-content';
+import {WelcomeContent} from '@/app/content/BodyContent';
 
 function Welcome(){
 

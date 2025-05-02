@@ -1,12 +1,12 @@
 import ListItem from "@/app/components/components/ListItem/ListItem";
-import IconGlass from "@/app/components/icons/icon-glass.jsx";
-import IconDoor from "@/app/components/icons/icon-door.jsx";
-import IconMagGlass from "@/app/components/icons/icon-mag-glass.jsx";
-import IconPieces from "@/app/components/icons/icon-pieces.jsx";
-import IconShapes from "@/app/components/icons/icon-shapes.jsx";
-import IconTag from "@/app/components/icons/icon-tag.jsx";
-import IconFingerprint from "@/app/components/icons/icon-fingerprint";
-import IconBalance from "@/app/components/icons/icon-balance";
+import IconGlass from "@/app/components/Icons/IconGlass.jsx";
+import IconDoor from "@/app/components/Icons/IconDoor.jsx";
+import IconMagGlass from "@/app/components/Icons/IconMagGlass.jsx";
+import IconPieces from "@/app/components/Icons/IconPieces.jsx";
+import IconShapes from "@/app/components/Icons/IconShapes.jsx";
+import IconTag from "@/app/components/Icons/IconTag.jsx";
+import IconFingerprint from "@/app/components/Icons/IconFingerprint";
+import IconBalance from "@/app/components/Icons/IconBalance";
 
 export const nameTitle = {
 	name: "Barry Richards",

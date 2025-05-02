@@ -1,6 +1,6 @@
 import ColourMode from './DmSwitcher';
 
-import { nameTitle } from '@/app/content/body-content';
+import { nameTitle } from '@/app/content/BodyContent';
 
 function Header(){
     return(
