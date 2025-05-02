@@ -1,9 +1,9 @@
 
-import LogoBFI from './logos/logo-bfi.jsx';
-import LogoNao from './logos/logo-nao.jsx';
-import LogoBDO from './logos/logo-bdo.jsx';
-import LogoShelter from './logos/logo-shelter.jsx';
-import LogoOns from './logos/logo-ons.jsx';
+import LogoBFI from './Logos/Logo-bfi.jsx';
+import LogoNao from './Logos/Logo-nao.jsx';
+import LogoBDO from './Logos/Logo-bdo.jsx';
+import LogoShelter from './Logos/logo-shelter.jsx';
+import LogoOns from './Logos/Logo-ons.jsx';
 
 function Clients(){
     return(
