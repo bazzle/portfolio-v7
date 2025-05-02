@@ -1,6 +1,6 @@
-import "@/app/assets/styles/style-library/main.scss";
+import "@/app/assets/styles/main.scss";
 import Header from "./components/modules/header";
-import Footer from "./components/modules/footer";
+// import Footer from "./components/modules/footer";
 import { ColourThemeProvider } from "./context/colour-theme";
 import BackTop from "./components/modules/footer/backtop";
 
@@ -15,10 +15,10 @@ export default function RootLayout({ children }) {
     	<body>
 			<ColourThemeProvider>
 			<Header/>
-        	{children}
-			<Footer/>
+        	{/* {children}
+			<Footer/> */}
 			</ColourThemeProvider>
-			<BackTop/>
+			{/* <BackTop/> */}
       	</body>
     </html>
   );
