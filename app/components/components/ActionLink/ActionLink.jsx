@@ -13,9 +13,9 @@ function ActionLink({linkString, textString, printString, clickEvent, classes}){
 	}
 	let classListString
 	if (classes !== undefined){
-		classListString = `${styles.action_link} ${classes}`
+		classListString = `${"actionLink"} ${classes}`
 	} else {
-		classListString = `${styles.action_link}`
+		classListString = `${"actionLink"}`
 	}
 	
 	return (

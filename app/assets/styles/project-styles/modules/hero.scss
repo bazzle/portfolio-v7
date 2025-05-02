@@ -13,7 +13,7 @@
 	}
 }
 
-.main_section{
+.hero__mainSection {
 	flex-grow: 1;
 	position: relative;
 	border-bottom: .5px solid white;
@@ -40,7 +40,7 @@
 	@media print{
 		background-image: none;
 	}
-	.message{
+	&__message{
 		flex-grow: 1;
 		display: block;
 		width: 100%;
@@ -67,7 +67,7 @@
 		}
 	}
 }
-.foot_section{
+.hero__footSection{
 	height: auto;
 	&__inner{
 		display: flex;
@@ -78,52 +78,52 @@
 			padding-top: 1em;
 			gap: .8em;
 		}
-		.intro{
-			padding-top: 3rem;
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			width: 100%;
+	}
+	&__intro{
+		padding-top: 3rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		width: 100%;
+		@include vars.break(tablet){
+			padding-right: calc(8vw + 8rem);
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		&__main{
+			max-width: unset;
+			margin-bottom: 0;
+			flex-shrink: 1;
+			padding-right: calc(8vw + 8rem);
 			@include vars.break(tablet){
-				padding-right: calc(8vw + 8rem);
-				flex-direction: row;
-				align-items: flex-start;
-				justify-content: space-between;
-			}
-			.intro_main{
-				max-width: unset;
-				margin-bottom: 0;
-				flex-shrink: 1;
-				padding-right: calc(8vw + 8rem);
-				@include vars.break(tablet){
-					padding-right: unset;
-				}
-			}
-			a{
-				font-size: inherit;
-				white-space: nowrap;
-				@media print{
-					display: none;
-				}
+				padding-right: unset;
 			}
 		}
-		.contacts{
-			flex-shrink: 1;
-			display: flex;
-			flex-wrap: wrap;
-			gap: 1rem 2rem;
+		a{
+			font-size: inherit;
+			white-space: nowrap;
+			@media print{
+				display: none;
+			}
+		}
+	}
+	&__contacts{
+		flex-shrink: 1;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem 2rem;
+		flex-direction: row;
+		position: relative;
+		&:first-of-type{
+			padding-left: 0;
+			border-left: 0;
+		}
+		@include vars.break(tablet){
+			flex-direction: column;
+		}
+		@include vars.break(desktop){
 			flex-direction: row;
-			position: relative;
-			&:first-of-type{
-				padding-left: 0;
-				border-left: 0;
-			}
-			@include vars.break(tablet){
-				flex-direction: column;
-			}
-			@include vars.break(desktop){
-				flex-direction: row;
-			}
 		}
 	}
 }

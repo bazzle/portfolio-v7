@@ -1,7 +1,7 @@
 @use "../../style-library/all-vars" as vars;
 
 
-.side_furniture{
+.sideFurniture{
 	@include vars.break(tablet){
 		display: flex;
 		flex-direction: column;

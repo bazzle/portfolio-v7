@@ -1,15 +1,15 @@
 'use client'
-import VerticalDots from "../vertical-dots";
+import VerticalDots from "../VerticalDots/VerticalDots";
 
 import { motion } from "motion/react";
 
 function SideFurniture(){
 	return(
-		<div className={styles.side_furniture}>
-			<div className={styles.side_furniture__dots}>
+		<div className="sideFurniture">
+			<div className="sideFurniture__dots">
 				<VerticalDots numDots = {3} />
 			</div>
-			<div className={styles.side_furniture__tick}>
+			<div className="sideFurniture__tick">
 				<svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
 					<motion.rect
 						x="13.1887" y="40.376" width="18.2061" height="18.2061" transform="rotate(-135 13.1887 40.376)"
@@ -28,10 +28,10 @@ function SideFurniture(){
 					/>
 				</svg>
 			</div>
-			<div className={styles.side_furniture__dots}>
+			<div className="sideFurniture__dots">
 				<VerticalDots numDots = {3} manualDelay={.5} />
 			</div>
-			<div className={styles.side_furniture__profile}>
+			<div className="sideFurniture__profile">
 				<svg viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
 					<motion.path
 						initial={{ opacity: 0 }}

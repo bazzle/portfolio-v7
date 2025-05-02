@@ -1,11 +1,11 @@
 @use "../../style-library/all-vars" as vars;
 
-.vertical_dots{
+.verticalDots{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	justify-content: space-around;
-	.dot{
+	&__dot{
 		width: 10px;
 		height: 10px;
 		fill: var(--color-accent);

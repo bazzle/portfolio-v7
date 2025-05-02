@@ -7,9 +7,9 @@ import LogoOns from './logos/logo-ons.jsx';
 
 function Clients(){
     return(
-        <div className={styles.clients}>
-			<div className={styles.logos}>
-				<div className={styles.logos_line}>
+        <div className="clients">
+			<div className="clients__logos">
+				<div className="clients__logos__line">
 					<LogoBFI />
 					<LogoNao />
 					<LogoBDO />

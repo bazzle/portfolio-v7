@@ -1,4 +1,4 @@
-// import Hero from "./components/modules/hero";
+import Hero from "./components/modules/Hero/Hero";
 // import SkillsAndAbilities from "./components/modules/skills-and-abilities";
 // import WorkHistory from "./components/modules/work-history";
 // import Welcome from "./components/modules/welcome";
@@ -13,7 +13,8 @@
 function Home(){
 	return(
 		<main>
-			{/* <Hero/>
+			<Hero/>
+			{/* 
 			<Welcome/>
 			<TextBlock itemIndex={0}/>
 			<SkillsAndAbilities/>

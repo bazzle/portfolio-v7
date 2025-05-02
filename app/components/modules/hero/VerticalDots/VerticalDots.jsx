@@ -9,7 +9,7 @@ function VerticalDots({numDots, manualDelay}){
 		let delay = manualDelay ? manualDelay + (index - index/1.1) : index - index/1.1;
         dotsArray.push(
 			<motion.svg
-			className={styles.dot}
+			className="verticalDots__dot"
 			initial={{ opacity: 0, scale: 0.1 }}
 			animate={{ opacity: 1, scale: 1 }}
 			transition={{
@@ -27,7 +27,7 @@ function VerticalDots({numDots, manualDelay}){
         );
     }
     return (
-        <div className={styles.vertical_dots}>
+        <div className="verticalDots">
             {dotsArray}
         </div>
     )
