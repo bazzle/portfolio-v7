@@ -68,7 +68,7 @@
 		margin-bottom: .5em;
 	}
 	&__description{
-		@include vars.text-tiny;
+		@extend %text-tiny;
 		text-align: left;
 		margin-bottom: 0;
 	}

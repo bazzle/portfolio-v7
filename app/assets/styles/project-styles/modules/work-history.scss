@@ -61,7 +61,7 @@
 			}
 		}
 		&__dates{
-			@include vars.text-miniscule;
+			@extend %text-miniscule;
 			color: var(--color-accent-alt);
 			display: none;
 			@include vars.break(desktop-wider){
