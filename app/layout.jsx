@@ -1,8 +1,8 @@
 import "@/app/assets/styles/main.scss";
-import Header from "./components/modules/header";
-// import Footer from "./components/modules/footer";
+import Header from "./components/modules/Header/Header";
+import Footer from "./components/modules/Footer/Footer";
 import { ColourThemeProvider } from "./context/colour-theme";
-import BackTop from "./components/modules/footer/backtop";
+import BackTop from "./components/modules/Footer/Backtop/Backtop";
 
 export const metadata = {
   title: "Barry Richards Design tinkerer",
@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
     	<body>
 			<ColourThemeProvider>
 			<Header/>
-        	{/* {children}
-			<Footer/> */}
+        	{/* {children} */}
+			<Footer/>
 			</ColourThemeProvider>
 			{/* <BackTop/> */}
       	</body>
