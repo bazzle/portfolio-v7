@@ -5,21 +5,21 @@ function Tile({ component, name, description }){
 
 	function iconBlock(){
 		return(
-			<div className={styles.tile__icon}>
+			<div className="tile__icon">
 				{component}
 			</div>
 		)
 	}
 	return (
-		<div className={`${styles.tile} ${component ? styles.tile_icon : styles.tile_noicon}`}>
-			<div className={styles.tile__inner}>
+		<div className={`tile ${component ? "tile____icon" : "tile____noicon"}`}>
+			<div className="tile__inner">
 				
 				{component && iconBlock()}
-				<div className={styles.tile__content}>
-					<h3 className={styles.tile__name}>
+				<div className="tile__content">
+					<h3 className="tile__name">
 						{name}
 					</h3>
-					<p className={styles.tile__description}>
+					<p className="tile__description">
 						{description}
 					</p>
 				</div>

@@ -3,7 +3,7 @@ import Hero from "./components/modules/Hero/Hero";
 import WorkHistory from "./components/modules/WorkHistory/WorkHistory";
 import Welcome from "./components/modules/Welcome/Welcome";
 import WorkSamples from "./components/modules/WorkSamples/WorkSamples";
-// import Themes from "./components/modules/themes";
+import Themes from "./components/modules/Themes/Themes";
 // import TextBlock from "./components/modules/text-block";
 import SignOff from "./components/modules/SignOff/SignOff";
 import WhatNext from "./components/modules/WhatNext/WhatNext";
@@ -16,8 +16,8 @@ function Home(){
 			<Hero/>
 			<Welcome/>
 			{/* <TextBlock itemIndex={0}/>
-			<SkillsAndAbilities/>
-			<Themes/> */}
+			<SkillsAndAbilities/>  */}
+			<Themes/>
 			<WorkSamples/>
 			<WorkHistory/>
 			<WhatNext/>

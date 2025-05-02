@@ -1,8 +1,8 @@
 
-import SectionHead from "../../components/section-head";
-import Tile from "./tile";
-import Section from '@/app/components/components/section';
-import { themesContent } from "@/app/content/body-content";
+import SectionHead from '@/app/components/components/SectionHead/SectionHead';
+import Tile from "./Tile";
+import Section from '@/app/components/components/Section/Section';
+import { themesContent } from "@/app/content/bodyContent";
 
 function Themes(){
 	const tiles = () => {
@@ -20,15 +20,15 @@ function Themes(){
 	return(
 
 		<Section id="things-i-think-about" noLine shallow>
-			<div className={styles.themes}>
+			<div className="themes">
 				<div className="container">
 					<div className="inner-2col">
 						<div className="col-1">
 							<SectionHead titleString={themesContent.title} separator />
 						</div>
 						<div className="col-2">
-							<div className={styles.tile_container}>
-								<div className={styles.tile_grid}>
+							<div className="tileContainer">
+								<div className="tileGrid">
 									{tiles()}
 								</div>
 							</div>

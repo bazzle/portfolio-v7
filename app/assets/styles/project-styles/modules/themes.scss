@@ -1,10 +1,10 @@
 @use "../../style-library/all-vars" as vars;
 
-.tile_container{
+.tileContainer{
 	position: relative;
 	overflow: hidden;
 }
-.tile_grid{
+.tileGrid{
 	position: relative;
 	display: grid;
 	gap: 1rem;
@@ -72,11 +72,12 @@
 		text-align: left;
 		margin-bottom: 0;
 	}
-	&_noicon{
-		.tile__inner{
-			:global(body.dark-mode) &{
-				padding: 2rem;
-			}
+}
+.tile____noicon{
+	@extend .tile;
+	.tile__inner{
+		:global(body.dark-mode) &{
+			padding: 2rem;
 		}
 	}
 }
