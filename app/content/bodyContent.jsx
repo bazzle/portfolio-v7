@@ -1,10 +1,10 @@
 import ListItem from "@/app/components/components/ListItem/ListItem";
-import IconGlass from "@/app/components/Icons/IconGlass.jsx";
-import IconDoor from "@/app/components/Icons/IconDoor.jsx";
-import IconMagGlass from "@/app/components/Icons/IconMagGlass.jsx";
-import IconPieces from "@/app/components/Icons/IconPieces.jsx";
-import IconShapes from "@/app/components/Icons/IconShapes.jsx";
-import IconTag from "@/app/components/Icons/IconTag.jsx";
+import IconGlass from "@/app/components/Icons/IconGlass";
+import IconDoor from "@/app/components/Icons/IconDoor";
+import IconMagGlass from "@/app/components/Icons/IconMagGlass";
+import IconPieces from "@/app/components/Icons/IconPieces";
+import IconShapes from "@/app/components/Icons/IconShapes";
+import IconTag from "@/app/components/Icons/IconTag";
 import IconFingerprint from "@/app/components/Icons/IconFingerprint";
 import IconBalance from "@/app/components/Icons/IconBalance";
 

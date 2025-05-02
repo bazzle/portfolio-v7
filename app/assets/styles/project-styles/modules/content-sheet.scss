@@ -1,6 +1,6 @@
 @use "../../style-library/all-vars" as vars;
 
-.content_sheet{
+.contentSheet{
 	&__main{
 		padding-top: vars.$block-spacing--tiny;
 	}
@@ -25,15 +25,15 @@
 			display: none;
 		}
 	}
-	.body_text{
+	&__body_text{
 		margin-bottom: vars.$block-spacing--tiny;
 	}
-	.metadata{
+	&__metadata{
 		&__duration{
 			@extend %text-blocky;
 		}
 	}
-	ul.clients_list{
+	&__clients_list{
 		padding-left: 0;
 		gap: 6rem;
 		column-count: 1;
@@ -45,7 +45,7 @@
 			column-count: 2;
 		}
 	}
-	.intro{
+	&__intro{
 		@extend %text-intro;
 		margin-bottom: vars.$block-spacing--shallow;
 		color: var(--color-accent-alt);

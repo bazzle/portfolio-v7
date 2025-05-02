@@ -1,10 +1,9 @@
 'use client'
-
-import SectionHead from "@/app/components/components/section-head";
-import ContentSheet from "./content-sheet";
 import { useState } from "react";
-import Section from '@/app/components/components/section';
-import { WorkHistoryContent } from '@/app/content/body-content';
+import SectionHead from "@/app/components/components/sectionHead/SectionHead";
+import Section from '@/app/components/components/Section/Section';
+import ContentSheet from "./ContentSheet/ContentSheet";
+import { WorkHistoryContent } from '@/app/content/bodyContent';
 
 function WorkHistory(){
 
@@ -20,36 +19,36 @@ function WorkHistory(){
 
 	function navItem(item, index){
 		const isActive = activeSection.id === item.id
-		const conditionalClass = isActive && styles.is_active
+		const conditionalClass = isActive && "is_active"
 		return (
 			<button
 				key={index}
 				role="tab"
 				onClick={(evt) => handleClick(evt, item)}
-				className={`${styles.nav_item} ${conditionalClass}`}
+				className={`workHistory__nav__item ${conditionalClass}`}
 				aria-controls={`panel-${item.id}`}
 				aria-selected={isActive ? 'true' : 'false'}
 			>
-				<span className={styles.nav_item__inner}>
-					<span className={styles.nav_item__title}>{item.name}</span>
-					<span className={styles.nav_item__dates}>{item.startDate} – {item.endDate}</span>
+				<span className="workHistory__nav__item__inner">
+					<span className="workHistory__nav__item__title">{item.name}</span>
+					<span className="workHistory__nav__item__dates">{item.startDate} – {item.endDate}</span>
 				</span>
 			</button>
 		)
 	}
     return (
         <Section id="work-history" noLineMobile>
-			<div className={styles.work_history}>
+			<div className="workHistory">
 				<div className="container">
 					<div className="inner-2col">
 						<div className="col-1">
-							<div className={styles.work_history__sectionHead}>
+							<div className="workHistory__sectionHead">
 								<SectionHead titleString={sectionTitle} separator/>
 							</div>
 						</div>
 						<div className="col-2">
-							<div className={styles.work_history__inner}>
-								<nav role="tablist" className={styles.nav}>
+							<div className="workHistory__inner">
+								<nav role="tablist" className="workHistory__nav">
 									{ sectionsArray.map((item, index) => navItem(item, index)) }
 								</nav>
 								{sectionsArray.map((item, index) => (

@@ -1,5 +1,4 @@
-
-import ListItem from '@/app/components/components/list-item';
+import ListItem from '@/app/components/components/ListItem/ListItem';
 
 function ContentSheet({ contentSheetObj, isHidden }) {
 
@@ -25,9 +24,9 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 	const clientList = () => {
 		if (clients){
 			return (
-				<div className={styles.metadata__item}>
-					<h4 className={styles.metadata__heading}>Clients</h4>
-					<ul className={styles.clients_list}>
+				<div className="contentSheet__metadata__item">
+					<h4 className="contentSheet__metadata__heading">Clients</h4>
+					<ul className="contentSheet__clients_list">
 						{clients.map((item, index) => {
 							return <ListItem key={index} blocky content={item}/>
 						})}
@@ -38,32 +37,34 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 			return false
 		}
 	}
-	const classListString = `${styles.content_sheet} ${ isHidden ? styles.content_sheet_hidden : ''}`
+	const classListString = `contentSheet ${ isHidden ? "contentSheet_hidden" : ""}`;
+
 	return (
 		<div id={`panel-${id}`} className={classListString} role="tabpanel">
 			<div className="inner-2col">
-				<div className={styles.content_sheet__main}>
-					<h3 className={`${styles.content_sheet__name} visually-hidden--show-print`}>{name}</h3>
-					<p className={styles.content_sheet__dates}>
-						<span className={styles.nav_item__dates}>{startDate} – {endDate}</span>
-					</p>
-					<p className={styles.intro}>
+				<div className="contentSheet__main">
+			  		<h3 className="contentSheet__name visually-hidden--show-print">{name}</h3>
+			  		<p className="contentSheet__dates">
+						<span>{startDate} – {endDate}</span>
+			  		</p>
+			  		<p className="contentSheet__intro">
 						{intro}
-					</p>
-					<div className={styles.body_text} >
+			  		</p>
+			  		<div className="contentSheet__body_text">
 						{bodyContent}
-					</div>
-					<div className={styles.metadata}>
-						<h4 className={styles.metadata__heading}>Duration</h4>
-						<p className={styles.duration}>
-							{duration}
+			  		</div>
+			  		<div className="contentSheet__metadata">
+						<h4 className="contentSheet__metadata__heading">Duration</h4>
+						<p className="contentSheet__metadata__duration">
+				  			{duration}
 						</p>
 						{clientList()}
-					</div>
+			  		</div>
 				</div>
 			</div>
 		</div>
-	)
+	  );
+	  
 
 }
 
