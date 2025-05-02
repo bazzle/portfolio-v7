@@ -10,10 +10,10 @@ function Section({ children, id, line, noSpacing, noMinHeight }) {
 	const colorModeClassname = `colour--${colourMode}`
 
 	const styleConfigString = [
-		styles.section,
-		line && styles.section_line,
-		noSpacing && styles.section_no_spacing,
-		noMinHeight && styles.section_no_min_height
+		"section",
+		line && "section____line",
+		noSpacing && "section____no_spacing",
+		noMinHeight && "section____no_min_height"
 	  ].filter(Boolean).join(' ');
 	
 	return (

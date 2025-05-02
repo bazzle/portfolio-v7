@@ -5,15 +5,15 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 .section{
 	padding-bottom: $spacingunit;
 	margin-bottom: $spacingunit;
-	&_no_spacing{
+	&____no_spacing{
 		margin-bottom: 0;
 		padding-bottom: 0;
 		border-bottom: 0;
 	}
-	&_line{
+	&____line{
 		border-bottom: .5px solid var(--color--accent-50);
 	}
-	&_no_min_height{
+	&_____no_min_height{
 		min-height: unset;
 	}
 }

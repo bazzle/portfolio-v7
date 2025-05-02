@@ -1,6 +1,6 @@
 @use "../../style-library/all-vars" as vars;
 
-.list_item{
+.listItem{
 	list-style-type: none;
 	gap: .7em;
 	align-items:baseline;
@@ -20,9 +20,11 @@
 		transform: rotate(45deg);
 		flex-shrink: 0;
 	}
-	&.blocky{
-		@extend %text-blocky;
-		padding-top: .1em;
-		padding-bottom: .1em;
-	}
+}
+
+.listItem____blocky{
+	@extend .listItem;
+	@extend %text-blocky;
+	padding-top: .1em;
+	padding-bottom: .1em;
 }

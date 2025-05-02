@@ -1,7 +1,7 @@
 import Hero from "./components/modules/Hero/Hero";
 // import SkillsAndAbilities from "./components/modules/skills-and-abilities";
 // import WorkHistory from "./components/modules/work-history";
-// import Welcome from "./components/modules/welcome";
+import Welcome from "./components/modules/Welcome/Welcome";
 // import WorkSamples from "./components/modules/work-samples";
 // import Themes from "./components/modules/themes";
 // import TextBlock from "./components/modules/text-block";
@@ -14,9 +14,8 @@ function Home(){
 	return(
 		<main>
 			<Hero/>
-			{/* 
 			<Welcome/>
-			<TextBlock itemIndex={0}/>
+			{/* <TextBlock itemIndex={0}/>
 			<SkillsAndAbilities/>
 			<Themes/>
 			<WorkSamples/>

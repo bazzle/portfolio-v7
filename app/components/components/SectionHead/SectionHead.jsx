@@ -1,14 +1,14 @@
 import propTypes from "prop-types";
 
-import StylisedLine from "@/app/components/components/stylised-line";
+import StylisedLine from "@/app/components/components/StylisedLine/StylisedLine";
 function SectionHead({
     titleString = 'Section title',
     separator = false,
 	noLineMobile
 }){
-	const headingClassString = `${separator ? styles.title : styles.title__no_separator}`
+	const headingClassString = `${separator ? "sectionHead__title" : "sectionHead__title____no_separator"}`
     return (
-        <div className={styles.section_head}>
+        <div className={"sectionHead"}>
 			<StylisedLine />
             <h2 className={headingClassString}>
 				{titleString}

@@ -5,9 +5,9 @@ import { motion } from "motion/react";
 
 function StylisedLine(){
 	return (
-		<div className={styles.stylised_line} role="presentation">
+		<div className="stylised_line" role="presentation">
 			<motion.div
-				className={styles.line}
+				className="line"
 				initial={{ width: "30%", opacity: 0 }}
 				whileInView={{width: "100%", opacity: 1 }}
 				viewport={{ once: true }}

@@ -1,4 +1,4 @@
-import ListItem from "@/app/components/components/list-item";
+import ListItem from "@/app/components/components/ListItem/ListItem";
 import IconGlass from "@/app/components/icons/icon-glass.jsx";
 import IconDoor from "@/app/components/icons/icon-door.jsx";
 import IconMagGlass from "@/app/components/icons/icon-mag-glass.jsx";
