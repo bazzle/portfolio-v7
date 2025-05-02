@@ -1,12 +1,12 @@
 
-import Section from '@/app/components/components/section';
-import {SignoffContent} from '@/app/content/body-content';
+import Section from '@/app/components/components/Section/Section';
+import {SignoffContent} from '@/app/content/bodyContent';
 
 function SignOff(){
 
 	return(
 		<Section id="sign-off" noMinHeight>
-			<div className={`${styles.sign_off} hide-print`}>
+			<div className="signOff hide-print">
 				<div className="container">
 					<p>
 						{SignoffContent.title}

@@ -5,7 +5,7 @@ import Welcome from "./components/modules/Welcome/Welcome";
 // import WorkSamples from "./components/modules/work-samples";
 // import Themes from "./components/modules/themes";
 // import TextBlock from "./components/modules/text-block";
-// import SignOff from "./components/modules/sign-off";
+import SignOff from "./components/modules/SignOff/SignOff";
 // import WhatNext from "./components/modules/what-next";
 
 
@@ -20,8 +20,8 @@ function Home(){
 			<Themes/>
 			<WorkSamples/>
 			<WorkHistory/>
-			<WhatNext/>
-			<SignOff/> */}
+			<WhatNext/> */}
+			<SignOff/>
 		</main>
 	)
 }
