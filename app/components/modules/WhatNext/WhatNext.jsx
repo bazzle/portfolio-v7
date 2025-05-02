@@ -1,6 +1,6 @@
-import SectionHead from '@/app/components/components/section-head';
-import Section from '@/app/components/components/section';
-import {WhatNextContent} from '@/app/content/body-content';
+import SectionHead from '@/app/components/components/SectionHead/SectionHead';
+import Section from '@/app/components/components/Section/Section';
+import {WhatNextContent} from '@/app/content/BodyContent';
 
 
 function WhatNext(){
