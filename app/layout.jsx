@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         	{/* {children} */}
 			<Footer/>
 			</ColourThemeProvider>
-			{/* <BackTop/> */}
+			<BackTop/>
       	</body>
     </html>
   );
