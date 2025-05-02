@@ -1,17 +1,16 @@
-import BgShapes from "../../components/bg-shapes";
-
-import Section from '@/app/components/components/section';
-import {TextBlocks} from '@/app/content/body-content';
+import BgShapes from '@/app/components/components/BgShapes/BgShapes';
+import Section from '@/app/components/components/Section/Section';
+import {TextBlocks} from '@/app/content/bodyContent';
 import propTypes from "prop-types";
 
 function TextBlock({itemIndex}){
 	console.log(itemIndex);
 	return(
 		<Section id="text-block">
-			<div className={styles.text_block}>
-				<div className={styles.text_block__inner}>
+			<div className="textBlock">
+				<div className="textBlock__inner">
 					<div className="container">
-						<blockquote className={styles.text_block__blockquote}>
+						<blockquote className="textBlock__blockquote">
 							<p dangerouslySetInnerHTML={{ __html: TextBlocks[itemIndex] }} />
 						</blockquote>
 					</div>
