@@ -1,10 +1,10 @@
 'use client'
 
-import BrowserMobile from './browser-mobile';
-import BrowserDesktop from './browser-desktop';
-import Section from '@/app/components/components/section';
-import BgShapes from '@/app/components/components/bg-shapes';
-import {workSamplesContent} from '@/app/content/body-content';
+import BrowserMobile from './browserMobile';
+import BrowserDesktop from './browserDesktop';
+import Section from '@/app/components/components/Section/Section';
+import BgShapes from '@/app/components/components/BgShapes/BgShapes';
+import {workSamplesContent} from '@/app/content/bodyContent';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
 import Image from 'next/image';
@@ -50,12 +50,12 @@ function WorkSamples(){
     return(
 		<Section id="work-samples" noLine shallow>
 			<div ref={ref}>
-				<div className={styles.work_samples}>
-					<div className={styles.title_section}>
-						<h2 className={styles.title_section_text}>{workSamplesContent.title}</h2>
+				<div className="workSamples">
+					<div className="workSamples__titleSection">
+						<h2 className="workSamples__titleSection_text">{workSamplesContent.title}</h2>
 					</div>
-					<div className={styles.main}>
-						<motion.div className={styles.strip} style={{ left }}>
+					<div className="main">
+						<motion.div className="strip" style={{ left }}>
 							<BrowserDesktop
 								src={images.image_bdo_dt.props.src}
 								alt={images.image_bdo_dt.props.alt}
@@ -89,7 +89,7 @@ function WorkSamples(){
 								alt={images.image_chevening_dt.props.alt}
 							/>
 						</motion.div>
-						<motion.div className={styles.strip}  style={{ right }} >
+						<motion.div className="strip" style={{ right }} >
 							<BrowserDesktop
 								src={images.image_nao2_dt.props.src}
 								alt={images.image_nao2_dt.props.alt}

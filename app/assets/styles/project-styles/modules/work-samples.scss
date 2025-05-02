@@ -2,28 +2,27 @@
 
 $gap: clamp(.8rem, 2vw, 1.2rem);
 
-.work_samples{
+.workSamples{
 	position: relative;
 	border-top: .5px solid var(--color-accent);
 	@media print{
 		display: none;
 	}
-}
-
-.title_section{
-	position: relative;
-	border-radius: 6px;
-	padding: .6em 1em;
-	border-radius: 2px;
-	text-align: center;
-	z-index: 1;
-	h2{
-		margin-bottom: 0;
+	&__titleSection{
+		position: relative;
+		border-radius: 6px;
+		padding: .6em 1em;
+		border-radius: 2px;
 		text-align: center;
-		display: inline-block;
-		@extend %text-heading;
-		padding-top: 2em;
-		padding-bottom: 1em;
+		z-index: 1;
+		h2{
+			margin-bottom: 0;
+			text-align: center;
+			display: inline-block;
+			@extend %text-heading;
+			padding-top: 2em;
+			padding-bottom: 1em;
+		}
 	}
 }
 
@@ -52,7 +51,7 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 	margin-bottom: 0;
 }
 
-.browser_desktop, .browser_mobile{
+.browserDesktop, .browserMobile{
 	position: relative;	height: 100%;
 	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
 	:global(body.light-mode) &{
@@ -72,10 +71,10 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 	}
 }
 
-.browser_desktop{
+.browserDesktop{
 	aspect-ratio: 40/28;
 }
-.browser_mobile{
+.browserMobile{
 	aspect-ratio: 14.2/28;
 }
 
