@@ -1,5 +1,5 @@
 
-import { SkillsContent } from "@/app/content/body-content";
+import { SkillsContent } from "@/app/content/BodyContent";
 
 function SkillsList(){
 
@@ -10,20 +10,20 @@ function SkillsList(){
         const ratingArray = new Array(number).fill(null);
         return ratingArray.map(
             (item, index) => (
-                <span key={index} className={styles.plus}>+</span>
+                <span key={index} className="plus">+</span>
             )
         );
     }
 
 	return(
 
-		<ul className={styles.skills_list}>
+		<ul className="skillsList">
 			{skillsItems.map(item => (
-				<li className={styles.skills_list__item} key={item.id}>
-					<span className={styles.skills_list__item__name}>
+				<li className="skillsList__item" key={item.id}>
+					<span className="skillsList__item__name">
 						{item.name}
 					</span>
-					<span className={styles.skills_list__item__rating}>
+					<span className="skillsList__item__rating">
 						{ratingsAdd(item.rating)}
 					</span>
 				</li>

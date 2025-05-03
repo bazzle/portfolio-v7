@@ -1,8 +1,6 @@
 @use "../../style-library/all-vars" as vars;
-.inner{
-	padding-top: vars.$block-spacing--shallow;
-}
-.skills_list{
+
+.skillsList{
 	list-style: none;
 	padding: 0;
 	display: grid;

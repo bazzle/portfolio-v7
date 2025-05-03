@@ -1,12 +1,12 @@
 'use client'
 
-import LoopActions from './loop-actions.jsx';
+import LoopActions from './LoopActions.jsx';
 
 function VennDiagram() {
 
     return (
-        <div className={styles.venn_diagram}>
-			<div className={styles.text_overlay}>
+        <div className="vennDiagram">
+			<div className="vennDiagram__textOverlay">
 				<span>Space where I can</span>
 				<LoopActions />
 			</div>
@@ -18,14 +18,14 @@ function VennDiagram() {
                 fill="none"
             >
                 <g clipPath="url(#clip0_0_1)">
-					<g className={styles.svg__dev}>
+					<g className="svg__dev">
 						<circle
 						cx="186.282" cy="140.384" r="112.718" className="stroke-accent" strokeWidth="2" />
 						<text className="fill-accent" xmlSpace="preserve">
 							<tspan x="155.957" y="10.6979">Development</tspan>
 						</text>
 					</g>
-					<g className={styles.svg__design}>
+					<g className="svg__design">
 						<circle cx="113.718" cy="140.384" r="112.718" className="stroke-accent-alt" strokeWidth="2" />
 						<text className="fill-accent-alt" xmlSpace="preserve">
 							<tspan x="86.6426" y="10.6979">Design</tspan>

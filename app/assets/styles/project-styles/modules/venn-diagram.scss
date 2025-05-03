@@ -1,6 +1,6 @@
 @use "../../style-library/all-vars" as vars;
 
-.venn_diagram{
+.vennDiagram{
 	display: block;
 	position: relative;
 	height: auto;
@@ -13,7 +13,7 @@
 		padding-bottom: 0;
 	}
 
-	.text_overlay{
+	&__textOverlay{
 		position: absolute;
 		top: 42%;
 		left: 50%;
@@ -32,7 +32,7 @@
 				background-color: var(--color-bg-alt);
 				padding: .5em .8em;
 			}
-			&.looping_text{
+			&.loopingText{
 				color: var(--color-foreground);
 			}
 		}

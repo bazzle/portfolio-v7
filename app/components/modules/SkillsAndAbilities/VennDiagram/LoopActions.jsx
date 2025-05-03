@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { SkillsContent } from '@/app/content/body-content';
+import { SkillsContent } from '@/app/content/BodyContent';
 
 function LoopActions() {
 
@@ -19,7 +19,7 @@ function LoopActions() {
 	return (
     	<AnimatePresence mode="wait">
         	<motion.span
-				className={styles.looping_text}
+				className="loopingText"
         		key={actions[currentIndex]}
           		initial={{ opacity: 0 }}
           		animate={{ opacity: 1 }}

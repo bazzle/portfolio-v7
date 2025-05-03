@@ -1,5 +1,5 @@
 import Hero from "./components/modules/Hero/Hero";
-// import SkillsAndAbilities from "./components/modules/skills-and-abilities";
+import SkillsAndAbilities from "./components/modules/SkillsAndAbilities/SkillsAndAbilities";
 import WorkHistory from "./components/modules/WorkHistory/WorkHistory";
 import Welcome from "./components/modules/Welcome/Welcome";
 import WorkSamples from "./components/modules/WorkSamples/WorkSamples";
@@ -16,8 +16,7 @@ function Home(){
 			<Hero/>
 			<Welcome/>
 			<TextBlock itemIndex={0}/>
-			{/* 
-			<SkillsAndAbilities/>  */}
+			<SkillsAndAbilities/>
 			<Themes/>
 			<WorkSamples/>
 			<WorkHistory/>

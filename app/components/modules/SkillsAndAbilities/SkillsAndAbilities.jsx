@@ -1,10 +1,10 @@
 
-import SectionHead from '@/app/components/components/section-head';
-import VennDiagram from './venn-diagram';
-import SkillsList from './skills-list';
-import Spacer from '@/app/components/components/spacer';
-import Section from '@/app/components/components/section';
-import { SkillsContent } from '@/app/content/body-content';
+import SectionHead from '@/app/components/components/SectionHead/SectionHead';
+import VennDiagram from './VennDiagram/VennDiagram';
+import SkillsList from './skillsList';
+import Spacer from '@/app/components/components/Spacer/Spacer';
+import Section from '@/app/components/components/Section/Section';
+import { SkillsContent } from '@/app/content/bodyContent';
 
 function SkillsAndAbilities(){
 
@@ -12,8 +12,8 @@ function SkillsAndAbilities(){
 	const content = SkillsContent.bodyContent()
 
     return(
-		<Section  id="skills-and-abilities" noLineMobile>
-			<div className={styles.skills_abilities}>
+		<Section id="skills-and-abilities" noLineMobile>
+			<div className="skillsAbilities">
 				<div className="container">
 					<div className="inner-2col">
 						<div className="col-1">
@@ -23,10 +23,10 @@ function SkillsAndAbilities(){
 							<SkillsList />
 							<Spacer shallow noLine />
 							<div className="inner-2col--50-50">
-								<div className={styles.body_text}>
+								<div className="skillsAbilities__bodyText">
 									{content}
 								</div>
-								<div className={styles.diagram}>
+								<div className="skillsAbilities__diagram">
 									<VennDiagram />
 								</div>
 							</div>
