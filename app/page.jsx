@@ -1,12 +1,12 @@
-import Hero from "./components/modules/Hero/Hero";
-import SkillsAndAbilities from "./components/modules/SkillsAndAbilities/SkillsAndAbilities";
-import WorkHistory from "./components/modules/WorkHistory/WorkHistory";
-import Welcome from "./components/modules/Welcome/Welcome";
-import WorkSamples from "./components/modules/WorkSamples/WorkSamples";
-import Themes from "./components/modules/Themes/Themes";
-import TextBlock from "./components/modules/TextBlock/TextBlock";
-import SignOff from "./components/modules/SignOff/SignOff";
-import WhatNext from "./components/modules/WhatNext/WhatNext";
+import Hero from "./ui/modules/Hero";
+import SkillsAndAbilities from "./ui/modules/SkillsAndAbilities";
+import WorkHistory from "./ui/modules/WorkHistory";
+import Welcome from "./ui/modules/Welcome";
+import WorkSamples from "./ui/modules/WorkSamples";
+import Themes from "./ui/modules/Themes";
+import TextBlock from "./ui/modules/TextBlock";
+import SignOff from "./ui/modules/SignOff";
+import WhatNext from "./ui/modules/WhatNext";
 
 
 

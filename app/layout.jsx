@@ -1,8 +1,8 @@
 import "@/app/assets/styles/main.scss";
-import Header from "./components/modules/Header/Header";
-import Footer from "./components/modules/Footer/Footer";
+import Header from "./ui/modules/Header";
+import Footer from "./ui/modules/Footer";
 import { ColourThemeProvider } from "./Context/ColourTheme";
-import BackTop from "./components/modules/Footer/Backtop/Backtop";
+import BackTop from "./ui/modules/Footer/Backtop";
 
 export const metadata = {
   title: "Barry Richards Design tinkerer",
