@@ -2,7 +2,7 @@
 import { useState } from "react";
 import SectionHead from "@/app/ui/components/SectionHead";
 import Section from '@/app/ui/components/Section';
-import ContentSheet from "./ContentSheet/ContentSheet";
+import ContentSheet from "./ContentSheet";
 import { WorkHistoryContent } from '@/app/content/BodyContent';
 
 function WorkHistory(){
@@ -19,19 +19,19 @@ function WorkHistory(){
 
 	function navItem(item, index){
 		const isActive = activeSection.id === item.id
-		const conditionalClass = isActive && "is_active"
+		const conditionalClass = isActive ? "is_active" : "not_active"
 		return (
 			<button
 				key={index}
 				role="tab"
 				onClick={(evt) => handleClick(evt, item)}
-				className={`workHistory__nav__item ${conditionalClass}`}
+				className={`workHistoryItem ${conditionalClass}`}
 				aria-controls={`panel-${item.id}`}
 				aria-selected={isActive ? 'true' : 'false'}
 			>
-				<span className="workHistory__nav__item__inner">
-					<span className="workHistory__nav__item__title">{item.name}</span>
-					<span className="workHistory__nav__item__dates">{item.startDate} – {item.endDate}</span>
+				<span className="workHistoryItem__inner">
+					<span className="workHistoryItem__title">{item.name}</span>
+					<span className="workHistoryItem__dates">{item.startDate} – {item.endDate}</span>
 				</span>
 			</button>
 		)

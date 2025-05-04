@@ -24,14 +24,14 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 	const clientList = () => {
 		if (clients){
 			return (
-				<div className="contentSheet__metadata__item">
-					<h4 className="contentSheet__metadata__heading">Clients</h4>
+				<>
+					<h4>Clients</h4>
 					<ul className="contentSheet__clients_list">
 						{clients.map((item, index) => {
 							return <ListItem key={index} blocky content={item}/>
 						})}
 					</ul>
-				</div>
+				</>
 			)
 		} else {
 			return false
@@ -54,7 +54,7 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 						{bodyContent}
 			  		</div>
 			  		<div className="contentSheet__metadata">
-						<h4 className="contentSheet__metadata__heading">Duration</h4>
+						<h4>Duration</h4>
 						<p className="contentSheet__metadata__duration">
 				  			{duration}
 						</p>

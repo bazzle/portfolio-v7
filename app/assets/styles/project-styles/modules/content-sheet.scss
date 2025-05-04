@@ -2,7 +2,7 @@
 
 .contentSheet{
 	&__main{
-		padding-top: vars.$block-spacing--tiny;
+		padding-top: vars.$block-spacing--shallow;
 	}
 	&_hidden{
 		display: none;
@@ -25,12 +25,10 @@
 			display: none;
 		}
 	}
-	&__body_text{
-		margin-bottom: vars.$block-spacing--tiny;
-	}
 	&__metadata{
 		&__duration{
 			@extend %text-blocky;
+			margin-bottom: vars.$block-spacing--text;
 		}
 	}
 	&__clients_list{
@@ -47,7 +45,7 @@
 	}
 	&__intro{
 		@extend %text-intro;
-		margin-bottom: vars.$block-spacing--shallow;
+		margin-bottom: vars.$block-spacing--text;
 		color: var(--color-accent-alt);
 		max-width: vars.$content-width;
 		@media print{
