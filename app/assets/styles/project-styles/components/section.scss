@@ -5,7 +5,12 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 .section{
 	padding-bottom: $spacingunit;
 	margin-bottom: $spacingunit;
-	&____no_spacing{
+	&__heading-top{
+		text-align: center;
+		margin-bottom: vars.$block-spacing;
+		@extend %text-heading;
+	}
+	&____no-spacing{
 		margin-bottom: 0;
 		padding-bottom: 0;
 		border-bottom: 0;
@@ -13,7 +18,7 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 	&____line{
 		border-bottom: .5px solid var(--color--accent-50);
 	}
-	&_____no_min_height{
+	&_____no-min-height{
 		min-height: unset;
 	}
 }
