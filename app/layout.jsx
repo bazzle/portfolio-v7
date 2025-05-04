@@ -1,7 +1,7 @@
 import "@/app/assets/styles/main.scss";
 import Header from "./components/modules/Header/Header";
 import Footer from "./components/modules/Footer/Footer";
-import { ColourThemeProvider } from "./context/colour-theme";
+import { ColourThemeProvider } from "./Context/ColourTheme";
 import BackTop from "./components/modules/Footer/Backtop/Backtop";
 
 export const metadata = {

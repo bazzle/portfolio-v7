@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { useContext } from 'react';
-import { colourThemeContext } from '@/app/context/colour-theme';
+import { colourThemeContext } from '@/app/Context/ColourTheme';
 const isDev = process.env.NODE_ENV === "development";
 
 function BgShapes(props){

@@ -2,7 +2,7 @@
 
 
 import { useContext } from 'react';
-import { colourThemeContext } from '@/app/context/colour-theme';
+import { colourThemeContext } from '@/app/Context/ColourTheme';
 
 function Section({ children, id, line, noSpacing, noMinHeight }) {
 	const { colourMode, modeSwitch } = useContext(colourThemeContext);
