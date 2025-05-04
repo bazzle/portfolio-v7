@@ -8,7 +8,7 @@ function SignOff(){
 		<Section id="sign-off" noMinHeight>
 			<div className="signOff hide-print">
 				<div className="container">
-					<p>
+					<p className="signOff__text">
 						{SignoffContent.title}
 					</p>
 				</div>
