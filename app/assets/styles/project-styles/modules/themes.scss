@@ -55,10 +55,7 @@
 			aspect-ratio: 3/2;
 			width: 100%;
 		}
-		:global(body.light-mode) &{
-			display: none;
-		}
-		@media print{
+		@include vars.light-mode-wrapper{
 			display: none;
 		}
 	}

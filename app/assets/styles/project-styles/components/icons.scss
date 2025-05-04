@@ -1,3 +1,5 @@
+@use "../../style-library/all-vars" as vars;
+
 %defaults{
 	position: relative;
 	left: 0;
@@ -34,7 +36,7 @@
 
 .dark_mode_hide{
 	visibility:hidden;
-	:global(body.light-mode) &{
+	@include vars.light-mode-wrapper{
 		visibility:visible;
 	}
 	@media print{

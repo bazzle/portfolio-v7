@@ -54,7 +54,7 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 .browserDesktop, .browserMobile{
 	position: relative;	height: 100%;
 	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
-	:global(body.light-mode) &{
+	@include vars.light-mode-wrapper{
 		box-shadow: none;
 	}
 	padding-top: 0;

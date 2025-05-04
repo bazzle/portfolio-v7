@@ -10,7 +10,7 @@
 		@extend %text-display-small;
 		text-align: center;
 		color: var(--color-foreground);
-		:global(body.light-mode) &{
+		@include vars.light-mode-wrapper{
 			color: var(--color-accent);
 		}
 		@media print{
