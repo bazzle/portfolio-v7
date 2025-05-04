@@ -11,7 +11,7 @@ function TextBlock({itemIndex}){
 				<div className="textBlock__inner">
 					<div className="container">
 						<blockquote className="textBlock__blockquote">
-							<p dangerouslySetInnerHTML={{ __html: TextBlocks[itemIndex] }} />
+							<p className="textBlock__blockquote__text" dangerouslySetInnerHTML={{ __html: TextBlocks[itemIndex] }} />
 						</blockquote>
 					</div>
 				</div>
