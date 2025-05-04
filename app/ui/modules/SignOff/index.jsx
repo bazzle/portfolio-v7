@@ -1,6 +1,6 @@
 
 import Section from '@/app/ui/components/Section';
-import {SignoffContent} from '@/app/content/bodyContent';
+import {SignoffContent} from '@/app/content/BodyContent';
 
 function SignOff(){
 

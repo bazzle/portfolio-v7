@@ -4,7 +4,7 @@ import VennDiagram from './VennDiagram';
 import SkillsList from './skillsList';
 import Spacer from '@/app/ui/components/Spacer';
 import Section from '@/app/ui/components/Section';
-import { SkillsContent } from '@/app/content/bodyContent';
+import { SkillsContent } from '@/app/content/BodyContent';
 
 function SkillsAndAbilities(){
 
