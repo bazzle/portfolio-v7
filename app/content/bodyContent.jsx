@@ -8,7 +8,7 @@ import IconTag from "@/app/components/Icons/IconTag";
 import IconFingerprint from "@/app/components/Icons/IconFingerprint";
 import IconBalance from "@/app/components/Icons/IconBalance";
 
-export const nameTitle = {
+export const NameTitle = {
 	name: "Barry Richards",
 	title: "Design tinkerer"
 }
@@ -77,7 +77,7 @@ export const SkillsContent = {
 	]
 }
 
-export const themesContent = {
+export const ThemesContent = {
 	title: 'Things I think about',
 	tiles: [
 		{

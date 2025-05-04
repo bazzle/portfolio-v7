@@ -1,9 +1,9 @@
 'use client'
 import { useState } from "react";
-import SectionHead from "@/app/components/components/sectionHead/SectionHead";
+import SectionHead from "@/app/components/components/SectionHead/SectionHead";
 import Section from '@/app/components/components/Section/Section';
 import ContentSheet from "./ContentSheet/ContentSheet";
-import { WorkHistoryContent } from '@/app/content/bodyContent';
+import { WorkHistoryContent } from '@/app/content/BodyContent';
 
 function WorkHistory(){
 

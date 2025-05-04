@@ -4,7 +4,7 @@ import BrowserMobile from './browserMobile';
 import BrowserDesktop from './browserDesktop';
 import Section from '@/app/components/components/Section/Section';
 import BgShapes from '@/app/components/components/BgShapes/BgShapes';
-import {workSamplesContent} from '@/app/content/bodyContent';
+import {workSamplesContent} from '@/app/content/BodyContent';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
 import Image from 'next/image';

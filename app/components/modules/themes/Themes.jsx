@@ -2,11 +2,11 @@
 import SectionHead from '@/app/components/components/SectionHead/SectionHead';
 import Tile from "./Tile";
 import Section from '@/app/components/components/Section/Section';
-import { themesContent } from "@/app/content/bodyContent";
+import { ThemesContent } from "@/app/content/BodyContent";
 
 function Themes(){
 	const tiles = () => {
-		const tilesArr = themesContent.tiles;
+		const tilesArr = ThemesContent.tiles;
 		return tilesArr.map((item, index) => {
 			return <Tile
 				key={index}
@@ -24,7 +24,7 @@ function Themes(){
 				<div className="container">
 					<div className="inner-2col">
 						<div className="col-1">
-							<SectionHead titleString={themesContent.title} separator />
+							<SectionHead titleString={ThemesContent.title} separator />
 						</div>
 						<div className="col-2">
 							<div className="tileContainer">

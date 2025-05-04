@@ -1,6 +1,6 @@
 import ColourMode from './DmSwitcher';
 
-import { nameTitle } from '@/app/content/BodyContent';
+import { NameTitle } from '@/app/content/BodyContent';
 
 function Header(){
     return(
@@ -8,8 +8,8 @@ function Header(){
 			<div className="container">
 				<div className="header__inner">
 					<h1 className="header__sitename">
-						<span className='highlight'>{nameTitle.name}</span>
-						<span>{nameTitle.title}</span>
+						<span className='highlight'>{NameTitle.name}</span>
+						<span>{NameTitle.title}</span>
 					</h1>
 					<div className="header__line">
 						<hr />

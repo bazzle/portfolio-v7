@@ -1,6 +1,6 @@
 import BgShapes from '@/app/components/components/BgShapes/BgShapes';
 import Section from '@/app/components/components/Section/Section';
-import {TextBlocks} from '@/app/content/bodyContent';
+import {TextBlocks} from '@/app/content/BodyContent';
 import propTypes from "prop-types";
 
 function TextBlock({itemIndex}){
