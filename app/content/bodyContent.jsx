@@ -7,6 +7,8 @@ import IconShapes from "@/app/ui/Icons/IconShapes";
 import IconTag from "@/app/ui/Icons/IconTag";
 import IconFingerprint from "@/app/ui/Icons/IconFingerprint";
 import IconBalance from "@/app/ui/Icons/IconBalance";
+import IconAi from "@/app/ui/Icons/iconAi";
+import IconGrid from "@/app/ui/Icons/iconGrid";
 
 export const NameTitle = {
 	name: "Barry Richards",
@@ -121,21 +123,15 @@ export const ThemesContent = {
 			description: "I build websites with SEO in mind. Semantic structure, performance optimisation, and meaningful content—to improve visibility and engagement."
 		},
 		{
+			component: <IconAi />,
 			name: "Integrating AI in My Workflow",
 			description: "I leverage AI tools to enhance efficiency in my workflow, automate repetitive tasks, assist my learning and ensuring smarter design and development decisions."
 		},
 		{
-			name: "Content Management",
-			description: "I optimise the user experience for the content editor. An example of this is curating the WordPress block editor by restricting certain blocks and stylistic choices to allow for flexibility while maintaining visual consistency."
-		},
-		{
+			component: <IconGrid />,
 			name: "Layout/Grid",
 			description: "I have experience utilising advanced layout systems in CSS, including flexbox and grid. I know the advantages and drawbacks of different techniques and can identify the best approach for each."
-		},
-		{
-			name: "Web Conventions",
-			description: "Going  by the “Don’t make me think” principle, I design with familiar patterns and best practices in mind, ensuring usability and reducing cognitive load."
-		},
+		}
 	]
 }
 
