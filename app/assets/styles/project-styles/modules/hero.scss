@@ -87,7 +87,6 @@
 		width: 100%;
 		@include vars.break(tablet){
 			padding-right: calc(8vw + 8rem);
-			flex-direction: row;
 			align-items: flex-start;
 			justify-content: space-between;
 		}
@@ -98,6 +97,10 @@
 			padding-right: calc(8vw + 8rem);
 			@include vars.break(tablet){
 				padding-right: unset;
+			}
+			p{
+				max-width: unset;
+				margin-bottom: 0;
 			}
 		}
 		a{
