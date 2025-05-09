@@ -5,33 +5,15 @@
 	left: 0;
 	top: 0;
 	height: auto;
-	max-width: 80%;
+	max-width:100%;
+	transform: scale(0.8);
 }
 
-.icon_glass{
+.icon{
 	@extend %defaults;
-	left: -1.5rem;
-}
-.icon_door{
-	@extend %defaults;
-}
-.icon_tag{
-	@extend %defaults;
-}
-.icon_pieces{
-	@extend %defaults;
-}
-.icon_mag_glass{
-	@extend %defaults;
-}
-.icon_shapes{
-	@extend %defaults;
-}
-.icon_fingerprint{
-	@extend %defaults;
-}
-.icon_balance{
-	@extend %defaults;
+	&____glass{
+		left: -1.5rem;
+	}
 }
 
 .dark_mode_hide{

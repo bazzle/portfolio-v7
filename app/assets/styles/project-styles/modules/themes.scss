@@ -8,7 +8,7 @@
 	position: relative;
 	display: grid;
 	gap: 1rem;
-	@include vars.break(desktop){
+	@include vars.break(tablet){
 		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
 	}
@@ -16,13 +16,13 @@
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 	@include vars.break(desktop-wide){
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
 	@media print{
 		display: grid;
 		grid-template-rows: auto;
 		width: 100%;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
 }
 .tile{
@@ -42,7 +42,7 @@
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: center;
-		@include vars.break(desktop){
+		@include vars.break(desktop-med){
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: center;
@@ -51,8 +51,8 @@
 	&__icon{
 		width: 20%;
 		flex-shrink: 0;
-		@include vars.break(desktop){
-			aspect-ratio: 3/2;
+		@include vars.break(desktop-med){
+			aspect-ratio: 4/2;
 			width: 100%;
 		}
 		@include vars.light-mode-wrapper{
