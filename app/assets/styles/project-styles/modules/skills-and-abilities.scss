@@ -1,5 +1,18 @@
 @use "../../style-library/all-vars" as vars;
 
+.skillsAbilities{
+	&__bodyText{
+		width: 100%;
+		.vennDiagram{
+			float: right;
+			width: 100%;
+			max-width: 300px;
+			margin-left: vars.$block-spacing--shallow;
+			margin-bottom: vars.$block-spacing--shallow;
+		}
+	}
+}
+
 .skillsList{
 	list-style: none;
 	padding: 0;

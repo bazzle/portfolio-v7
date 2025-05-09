@@ -4,15 +4,7 @@
 	display: block;
 	position: relative;
 	height: auto;
-	width: 300px;
-	padding-top: vars.$block-spacing;
-	padding-bottom: vars.$block-spacing;
-	margin: 0 auto;
-	@include vars.break(tablet){
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-
+	width: 100%;
 	&__textOverlay{
 		position: absolute;
 		top: 42%;
@@ -39,7 +31,6 @@
 	}
 	svg{
 		width: 100%;
-		max-width: 300px;
 		aspect-ratio: 300 / 255;
 		text{
 			@extend %text-miniscule;

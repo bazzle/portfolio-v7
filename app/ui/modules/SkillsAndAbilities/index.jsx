@@ -24,10 +24,8 @@ function SkillsAndAbilities(){
 							<Spacer shallow noLine />
 							<div className="inner-2col--50-50">
 								<div className="skillsAbilities__bodyText">
-									{content}
-								</div>
-								<div className="skillsAbilities__diagram">
 									<VennDiagram />
+									{content}
 								</div>
 							</div>
 						</div>
