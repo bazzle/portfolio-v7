@@ -54,12 +54,6 @@ export const SkillsContent = {
 				<p>
 					I‘ve also been exploring building websites and apps using vanilla JS and frameworks such as React + NextJS and Vue + Nuxt.js. I am adaptable and a fast learner to different tech stacks.
 				</p>
-				<p>
-					I have experience in many phases of development, with varying levels of involvement within Agile and Kanban development teams. I create wireframes, build mockups and interactive prototypes, assist user research sessions, facilitate collaborative design sessions and work with other developers in production build. I also carry out accessibility audits using automated tools and manual testing. I primarily build websites using WordPress that use either the classic or the Gutenburg block editor.
-				</p>
-				<p>
-					I‘ve also been exploring building websites and apps using vanilla JS and frameworks such as React + NextJS and Vue + Nuxt.js. I am adaptable and a fast learner to different tech stacks.
-				</p>
 			</>
 		)
 	},
