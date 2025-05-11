@@ -8,7 +8,6 @@
 		padding-left: calc(1.5vw + 1.1em);
 		padding-bottom: 2rem;
 		@extend %text-heading;
-		color: var(--color-accent);
 		@media print{
 			padding-left: 0;
 			font-size:4rem;
