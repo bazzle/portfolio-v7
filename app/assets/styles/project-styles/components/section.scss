@@ -9,6 +9,7 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 		text-align: center;
 		margin-bottom: vars.$block-spacing;
 		@extend %text-heading;
+		color: var(--color-accent-alt);
 	}
 	&____no-spacing{
 		margin-bottom: 0;
