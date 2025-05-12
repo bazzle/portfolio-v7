@@ -6,18 +6,21 @@ export const colourThemeContext = createContext();
 
 export function ColourThemeProvider({children}){
 	const [colourMode, setColourMode] = useState();
+	const [isLoading, setIsLoading] = useState(true);
 
 	const applyLightMode = () => {
 		document.body.classList.add('light-mode');
 		document.body.classList.remove('dark-mode');
 		localStorage.setItem('colourMode', 'light');
 		setColourMode('light');
+		setIsLoading(false);
 	}
 	const applyDarkMode = () => {
 		document.body.classList.add('dark-mode');
 		document.body.classList.remove('light-mode');
 		localStorage.setItem('colourMode', 'dark');
 		setColourMode('dark');
+		setIsLoading(false);
 	}
 	useEffect(() => {
 		const storedMode = localStorage.getItem('colourMode');
@@ -55,7 +58,7 @@ export function ColourThemeProvider({children}){
 	
 	return (
 		<colourThemeContext.Provider value={{colourMode, modeSwitch}}>
-			{children}
+			{!isLoading && children}
 		</colourThemeContext.Provider>
 	)
 }
