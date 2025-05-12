@@ -71,7 +71,7 @@ export const SkillsContent = {
         { id: 5, name: 'Vanilla JS',  rating: 5 },
         { id: 6, name: 'Git',  rating: 5 },
 		{ id: 7, name: 'React/JSX',  rating: 3 },
-		{ id: 7, name: 'Next JS',  rating: 3 },
+		{ id: 8, name: 'Next JS',  rating: 3 },
 		{ id: 9, name: 'TypeScript',  rating: 3 },
 		{ id: 10, name: 'Tailwind',  rating: 3 },
         { id: 11, name: 'Vue',  rating: 2 },
