@@ -34,7 +34,7 @@ function Hero(){
 						<div className="hero__footSection__intro">
 							<div className="hero__footSection__intro__main">
 								<p>
-									<strong>Hello!</strong> I’m a UK based web designer, developer and accessibility consultant. <a href="#welcome">Read more about me</a>
+									<strong>Hello!</strong> I’m a UK based web designer, developer and accessibility consultant.
 								</p>
 							</div>
 							<div className="hero__footSection__contacts">
