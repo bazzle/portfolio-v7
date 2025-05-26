@@ -62,6 +62,7 @@
 			@extend %standalone-link-inactive;
 			@include vars.break(desktop-wider){
 				font-size: vars.$font-size-heading;
+				font-weight: 400;
 			}
 		}
 		.not_active &{
