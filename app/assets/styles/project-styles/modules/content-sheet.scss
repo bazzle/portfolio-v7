@@ -20,6 +20,7 @@
 	}
 	&__dates{
 		margin-bottom: vars.$block-spacing--tiny;
+		@extend %text-blocky;
 		@include vars.break(desktop-wider){
 			display: none;
 		}
