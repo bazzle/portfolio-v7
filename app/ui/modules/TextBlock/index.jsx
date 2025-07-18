@@ -4,7 +4,6 @@ import {TextBlocks} from '@/app/content/BodyContent';
 import propTypes from "prop-types";
 
 function TextBlock({itemIndex}){
-	console.log(itemIndex);
 	return(
 		<Section id="text-block">
 			<div className="textBlock">
