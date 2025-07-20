@@ -57,12 +57,11 @@
 		text-align: center;
 		white-space: nowrap;
 		.is_active &{
-			color: var(--color-foreground);
+			color: var(--color-accent-alt);
 			line-height: 1.2;
-			@extend %standalone-link-inactive;
-			@include vars.break(desktop-wider){
-				font-size: vars.$font-size-heading;
-				font-weight: 400;
+			@extend %text-heading--chunky;
+			@include vars.break-under(desktop-wider){
+				font-size: inherit;
 			}
 		}
 		.not_active &{
@@ -71,7 +70,6 @@
 	}
 	&__dates{
 		@extend %text-miniscule;
-		color: var(--color-accent-alt);
 		display: none;
 		@include vars.break(desktop-wider){
 			display: block;

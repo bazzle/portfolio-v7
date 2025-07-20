@@ -46,10 +46,6 @@
 	&__intro{
 		@extend %text-intro;
 		margin-bottom: vars.$block-spacing--text;
-		color: var(--color-accent-alt);
 		max-width: vars.$content-width;
-		@media print{
-			color: var(--color-foreground);
-		}
 	}
 }
