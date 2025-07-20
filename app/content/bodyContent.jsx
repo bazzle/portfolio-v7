@@ -84,52 +84,57 @@ export const ThemesContent = {
 	tiles: [
 		{
 			component: <IconGlass />,
-			name: "Responsive web",
+			nameFirstLine: "Responsive web",
 			description: "Throughout every stage of the design and development process, I think about how the interface will appear in different size viewports."
 		},
 		{
 			component: <IconDoor />,
-			name: "Accessibility",
+			nameFirstLine: "Accessibility",
 			description: "I design with inclusivity in mind, ensuring digital experiences are usable for everyone, including those with disabilities, by following WCAG guidelines."
 		},
 		{
 			component: <IconTag />,
-			name: "Semantics",
+			nameFirstLine: "Semantics",
 			description: "I strive to build with clean, meaningful HTML structure to enhance SEO, accessibility, and maintainability, ensuring content is understood by users and machines."
 		},
 		{
 			component: <IconPieces />,
-			name: "Typography",
+			nameFirstLine: "Typography",
 			description: "I appreciate the value of good typographical choices. Something often overlooked in more tech focussed teams. And I stay up to date with new techniques such Variable and Opentype features."
 		},
 		{
 			component: <IconFingerprint />,
-			name: "User-Centered Design",
+			nameFirstLine: "User-Centered",
+			nameSecondLine: "Design",
 			description: "I appreciate how design should be guided by user needs and behaviour. I use esdtablished and tested design patterns and seek to validate design choices with user research when possible."
 		},
 		{
 			component: <IconShapes />,
-			name: "Brand integration",
+			nameFirstLine: "Brand",
+			nameSecondLine: "integration",
 			description: "I have extensive experience collaborating with brand designers and guardians, ensuring that visual identities and messaging are accurately and effectively translated into the digital products."
 		},
 		{
 			component: <IconBalance />,
-			name: "Hierarchy, Balance, White-Space",
+			nameFirstLine: "Hierarchy, Balance,",
+			nameSecondLine: "White-Space",
 			description: "I carefully structure layouts using visual hierarchy, balance, and white space to guide attention, improve readability, and create a refined user experience."
 		},
 		{
 			component: <IconMagGlass />,
-			name: "Search Engine Optimisation",
+			nameFirstLine: "Search Engine",
+			nameSecondLine: "Optimisation",
 			description: "I build websites with SEO in mind. Semantic structure, performance optimisation, and meaningful content—to improve visibility and engagement."
 		},
 		{
 			component: <IconAi />,
-			name: "Integrating AI in My Workflow",
+			nameFirstLine: "Integrating AI",
+			nameSecondLine: "in My Workflow",
 			description: "I leverage AI tools to enhance efficiency in my workflow, automate repetitive tasks, assist my learning and ensuring smarter design and development decisions."
 		},
 		{
 			component: <IconGrid />,
-			name: "Layout/Grid",
+			nameFirstLine: "Layout/Grid",
 			description: "I have experience utilising advanced layout systems in CSS, including flexbox and grid. I know the advantages and drawbacks of different techniques and can identify the best approach for each."
 		}
 	]

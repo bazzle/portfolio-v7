@@ -1,7 +1,7 @@
 
 import PropTypes from "prop-types";
 
-function Tile({ component, name, description }){
+function Tile({ component, nameFirstLine, nameSecondLine, description }){
 
 	function iconBlock(){
 		return(
@@ -17,7 +17,8 @@ function Tile({ component, name, description }){
 				{component && iconBlock()}
 				<div className="tile__content">
 					<h3 className="tile__name">
-						{name}
+						<span>{nameFirstLine}</span>
+						{nameSecondLine && <span>{nameSecondLine}</span>}
 					</h3>
 					<p className="tile__description">
 						{description}

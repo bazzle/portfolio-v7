@@ -12,7 +12,8 @@ function Themes(){
 				<Tile
 					key={index}
 					component={item.component}
-					name={item.name}
+					nameFirstLine={item.nameFirstLine}
+					nameSecondLine={item.nameSecondLine}
 					description={item.description}
 				/>
 			)
