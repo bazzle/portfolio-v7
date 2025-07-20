@@ -4,12 +4,13 @@ import BgShapes from '@/app/ui/components/BgShapes';
 import SideFurniture from './SideFurniture';
 import ActionLink from '@/app/ui/components/ActionLink';
 import Spacer from '@/app/ui/components/Spacer';
+import Image from "next/image";
 
 function Hero(){
 
     return(
         <div className="hero">
-            <div className="hero__mainSection" >
+            <div className="hero__mainSection">
 				<div className="container container--vertical-fill">
 					<div className="hero__mainSection__inner">
 						<p className="message">
@@ -23,8 +24,10 @@ function Hero(){
 								... But still <span className="highlight">POP &#128165;</span>
 							</span>
 						</p>
-						<SideFurniture/>
 					</div>
+				</div>
+				<div className="hero__mainSection__profile">
+					<Image width="200" height="200" className="hero__mainSection__profile" src="images/profile.webp" alt="Profile image" />
 				</div>
 				<BgShapes variant="1" />
             </div>

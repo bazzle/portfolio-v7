@@ -46,11 +46,11 @@
 .header__line{
 	width: 100%;
 	position: relative;
-	hr{
+	&__line{
 		border: 0;
 		margin: 0;
 		padding: 0;
-		height: .5px;
+		height: 1px;
 		background-color: var(--color-accent);
 	}
 	svg{

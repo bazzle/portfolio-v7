@@ -9,6 +9,9 @@ function BgShapes(props){
 	const { colourMode } = useContext(colourThemeContext);
 	const variantClass = `shapes--${props.variant}`;
 	const bgImage = colourMode === 'light' ? 'url("./images/texture-light.webp")' : 'url("./images/texture-dark.webp")';
+	if (colourMode === 'light'){
+		return;
+	}
 	return(
 		<div role="presentation" className={`shapes ${variantClass}`}>
 			<span className="shapes__background" style={{ backgroundImage : bgImage }}></span>

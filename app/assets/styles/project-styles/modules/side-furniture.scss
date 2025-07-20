@@ -3,70 +3,31 @@
 
 .sideFurniture{
 	@include vars.break(tablet){
-		display: flex;
-		flex-direction: column;
 		align-items: center;
 		width: 10px;
 		gap: 4rem;
-		padding-top: 4rem;
 		height: 100%;
 		position: absolute;
 		right: calc(8vw - 8px);
 		top: 0;
 		height: calc(100% + 8rem);
 	}
-	&__dots{
-		flex-grow: 1;
-		display: none;
-		@include vars.break(tablet){
-			display: block;
-		}
-	}
-	&__tick{
-		position: relative;
-		height: 8rem;
-		width: 10px;
-		display: none;
-		@include vars.break(tablet){
-			display: block;
-		}
-		svg{
-			position: absolute;
-			width: 8rem;
-			height: 8rem;
-			top: 0;
-			left: 12px;
-			transform: translateX(-50%);
-			path, clipPath, rect{
-				fill: var(--color-accent-alt);
-			}
-		}
-	}
 	&__profile{
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		@include vars.break(tablet){
-			height: 16rem;
-			width: 10px;
-			display: block;
+		img{
 			position: relative;
-		}
-		svg{
-			position: relative;
-			width: 12rem;
-			height: 12rem;
-			fill: var(--color-accent);
-			transform: translateY(50%);
-			top: 4px;
-			@include vars.break(tablet){
-				width: 16rem;
-				height: 16rem;
-				position: absolute;
-				left: 8px;
-				top: -3px;
-				transform: translateX(-50%);
-			}
+			bottom: 0;
+			right: 0;
+			aspect-ratio: 1/1;
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+			clip-path: polygon(
+				50% 0%,
+				100% 50%,
+				50% 100%,
+				0% 50%
+			);
+			border-radius: 8px;
 		}
 	}
 }
