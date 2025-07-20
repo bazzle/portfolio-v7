@@ -24,7 +24,6 @@ export function ColourThemeProvider({children}){
 	}
 	useEffect(() => {
 		const storedMode = localStorage.getItem('colourMode');
-		const osMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 		const osModeChecker = window.matchMedia('(prefers-color-scheme: dark)'); 
 
 
@@ -35,11 +34,7 @@ export function ColourThemeProvider({children}){
 				applyDarkMode();
 			}
 		} else {
-			if(osMode === 'light'){
-				applyLightMode();
-			} else {
-				applyDarkMode();
-			}
+			applyDarkMode();
 		}
 
 		osModeChecker.addEventListener('change',(e) => {
