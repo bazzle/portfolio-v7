@@ -1,4 +1,3 @@
-import BgShapes from '@/app/ui/components/BgShapes';
 import Section from '@/app/ui/components/Section';
 import {TextBlocks} from '@/app/content/BodyContent';
 import propTypes from "prop-types";
@@ -14,7 +13,6 @@ function TextBlock({itemIndex}){
 						</blockquote>
 					</div>
 				</div>
-				<BgShapes variant="2" />
 			</div>
 		</Section>
 	)
