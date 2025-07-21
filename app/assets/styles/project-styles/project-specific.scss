@@ -1,3 +1,23 @@
 $site-width: 1200px;
 $content-width: 700px;
 $extended-width: 1600px;
+
+main{
+	&::before, &::after{
+		content: '';
+		top: 0;
+		height: 100%;
+		position: fixed;
+		z-index: 10;
+	}
+	&:before{
+		left: 0;
+		width: 1px;
+		background-color: var(--color-accent);
+	}
+	&:after{
+		right: 0;
+		width: 1px;
+		background-color: var(--color-accent-alt);
+	}
+}

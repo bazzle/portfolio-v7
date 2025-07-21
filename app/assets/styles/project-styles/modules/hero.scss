@@ -70,10 +70,13 @@
 	&__profile{
 		z-index: 1;
 		position: absolute;
-		bottom: -101px;
-		right: 100px;
+		bottom: -100px;
+		right: 10vw;
 		width: 200px;
 		aspect-ratio: 1/1;
+		@include vars.break-under(tablet){
+			display: none;
+		}
 		img{
 			object-fit: cover;
 			width: 200px;
@@ -90,10 +93,10 @@
 		}
 		&::before{
 			content: '';
-			width: 204px;
+			width: 208px;
 			aspect-ratio: 1/1;
-			top: -2px;
-			left: -2px;
+			top: -4px;
+			left: -4px;
 			position: absolute;
 			background: linear-gradient(90deg, var(--color-accent), var(--color-accent-alt));
 			padding: 8px;
