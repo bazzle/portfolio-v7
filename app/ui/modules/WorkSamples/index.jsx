@@ -128,7 +128,6 @@ function WorkSamples(){
 							/>
 						</motion.div>
 					</div>
-					<BgShapes variant="3" />
 				</div>
 			</div>
 		</Section>

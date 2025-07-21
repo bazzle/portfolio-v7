@@ -4,7 +4,7 @@
 	padding: vars.$block-spacing 0;
 	background-repeat: repeat;
 	position: relative;
-	border-top: .5px solid var(--color-accent);
+	border-top: 1px solid var(--color-accent);
 	&__line{
 		width: 100%;
 		display: flex;
