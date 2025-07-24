@@ -1,25 +1,33 @@
 @use "../../style-library/all-vars" as vars;
+@use "../../style-library/helpers" as *;
 
 $spacingunit: clamp(4rem, 8vw, 28rem);
 
 .section{
-	padding-bottom: $spacingunit;
 	margin-bottom: $spacingunit;
 	&__heading-top{
 		text-align: center;
-		margin-bottom: vars.$block-spacing;
+		margin-bottom: vars.$block-spacing--shallow;
 		@extend %text-heading--chunky;
 		color: var(--color-accent-alt);
 	}
 	&____no-spacing{
 		margin-bottom: 0;
-		padding-bottom: 0;
 		border-bottom: 0;
 	}
 	&____line{
-		border-bottom: 1px solid var(--color--accent-50);
+		border-top: 1px solid var(--color-accent);
+		padding-top: $spacingunit;
 	}
 	&_____no-min-height{
 		min-height: unset;
+	}
+	&____hidden-heading{
+		.section__heading-top{
+			@extend .visually-hidden;
+		}
+	}
+	&____deep-mb{
+		margin-bottom: calc($spacingunit *2);
 	}
 }

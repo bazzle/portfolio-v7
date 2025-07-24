@@ -1,13 +1,12 @@
 'use client'
 import { useState } from "react";
-import SectionHead from "@/app/ui/components/SectionHead";
-import Section from '@/app/ui/components/Section';
+import Section2 from '@/app/ui/components/Section2';
 import ContentSheet from "./ContentSheet";
 import { WorkHistoryContent } from '@/app/content/BodyContent';
 
 function WorkHistory(){
 
-	const sectionTitle = WorkHistoryContent.title
+	const title = WorkHistoryContent.title
 	const sectionsArray = WorkHistoryContent.workHistoryItems
 
 	const [activeSection, setActiveSection] = useState(sectionsArray[0]);
@@ -37,33 +36,20 @@ function WorkHistory(){
 		)
 	}
     return (
-        <Section id="work-history" noLineMobile>
-			<div className="workHistory">
-				<div className="container">
-					<div className="inner-2col">
-						<div className="col-1">
-							<div className="workHistory__sectionHead">
-								<SectionHead titleString={sectionTitle} separator/>
-							</div>
-						</div>
-						<div className="col-2">
-							<div className="workHistory__inner">
-								<nav role="tablist" className="workHistory__nav">
-									{ sectionsArray.map((item, index) => navItem(item, index)) }
-								</nav>
-								{sectionsArray.map((item, index) => (
-									<ContentSheet
-										key={index}
-										contentSheetObj = {item}
-										isHidden = {item === activeSection ? false : true}
-									/>
-								))}
-							</div>
-						</div>
-					</div>
-				</div>
+		<Section2 moduleClassname="workHistory" heading={title} id="work-history" layout="2col">
+			<div className="workHistory__inner">
+				<nav role="tablist" className="workHistory__nav">
+					{ sectionsArray.map((item, index) => navItem(item, index)) }
+				</nav>
+				{sectionsArray.map((item, index) => (
+					<ContentSheet
+						key={index}
+						contentSheetObj = {item}
+						isHidden = {item === activeSection ? false : true}
+					/>
+				))}
 			</div>
-        </Section>
+        </Section2>
     )
 }
 

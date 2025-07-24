@@ -2,7 +2,7 @@
 
 .workHistory{
 	position: relative;
-	&__sectionHead{
+	.sectionHead{
 		@include vars.break(desktop-wider){
 			margin-top: 10rem;
 		}

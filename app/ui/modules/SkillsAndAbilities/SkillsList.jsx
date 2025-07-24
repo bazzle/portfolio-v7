@@ -1,4 +1,3 @@
-
 import { SkillsContent } from "@/app/content/BodyContent";
 
 function SkillsList(){

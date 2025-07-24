@@ -4,7 +4,7 @@
 	position: relative;
 	background-size: auto;
 	background-repeat: repeat;
-	border-top: 1px solid var(--color-accent-alt);
+	// border-top: 1px solid var(--color-accent-alt);
 	@media print{
 		border-top: 0;
 		border-bottom: 0;
@@ -17,8 +17,6 @@
 	&__blockquote{
 		margin-block-start: unset;
 		margin-block-end: unset;
-		padding-top: clamp(6rem, 10.5vw, 14rem);
-		padding-bottom: clamp(6rem, 10.5vw, 14rem);
 		display: block;
 		text-align: center;
     	margin: 0 auto;

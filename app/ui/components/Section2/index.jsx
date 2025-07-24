@@ -8,18 +8,23 @@ function Section2({
 	layout = "normal",
 	line,
 	noSpacing,
-	noMinHeight
+	noMinHeight,
+	headingHidden,
+	id,
+	deepMb
 }) {
 
 	const styleConfigString = [
 		line && "section____line",
 		noSpacing && "section____no-spacing",
-		noMinHeight && "section____no-min-height"
+		noMinHeight && "section____no-min-height",
+		headingHidden && "section____hidden-heading",
+		deepMb && "section____deep-mb"
 	].filter(Boolean).join(' ');
 
 	const topHeadingOutput = (str) => {
 		return (
-			<h3 className="section__heading-top">{str}</h3>
+			<h2 className="section__heading-top">{str}</h2>
 		)
 	}
 
@@ -43,6 +48,12 @@ function Section2({
 					{children}
 				</div>
 			)
+		} else if (layout === 'toEdges') {
+			return(
+				<div className="container____toEdges">
+					{children}
+				</div>
+			)
 		} else {
 			return(
 				<div className="container">
@@ -52,12 +63,18 @@ function Section2({
 		}
 	}
 
-	const sectionId = (str)=>{
-		return str.toLowerCase().trim().replace(/[\s\W-]+/g, '-').replace(/^-+|-+$/g, '');
+	const sectionId = ()=>{
+		let str
+		if (id){
+			str = id
+		} else if (heading) {
+			str = heading.toLowerCase().trim().replace(/[\s\W-]+/g, '-').replace(/^-+|-+$/g, '');
+		}
+		return str
 	}
 	
 	return (
-		<section id={sectionId(heading)} className={`section ${styleConfigString}`}>
+		<section id={sectionId()} className={`section ${styleConfigString}`}>
 			<div className={moduleClassname}>
 				{headingTop && topHeadingOutput(heading) }
 				{mainSectionOutput(layout)}

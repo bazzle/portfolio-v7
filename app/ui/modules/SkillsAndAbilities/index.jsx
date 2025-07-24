@@ -1,9 +1,6 @@
-
-import SectionHead from '@/app/ui/components/SectionHead';
 import VennDiagram from './VennDiagram';
 import SkillsList from './skillsList';
-import Spacer from '@/app/ui/components/Spacer';
-import Section from '@/app/ui/components/Section';
+import Section2 from '@/app/ui/components/Section2';
 import { SkillsContent } from '@/app/content/BodyContent';
 
 function SkillsAndAbilities(){
@@ -12,27 +9,13 @@ function SkillsAndAbilities(){
 	const content = SkillsContent.bodyContent()
 
     return(
-		<Section id="skills-and-abilities" noLineMobile>
-			<div className="skillsAbilities">
-				<div className="container">
-					<div className="inner-2col">
-						<div className="col-1">
-							<SectionHead titleString={title} separator/>
-						</div>
-						<div className="col-2">
-							<SkillsList />
-							<Spacer shallow noLine />
-							<div className="inner-2col--50-50">
-								<div className="skillsAbilities__bodyText">
-									<VennDiagram />
-									{content}
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+		<Section2 heading={title} moduleClassname='skillsAbilities' id="skills-and-abilities" layout='2col' noLineMobile>
+			<SkillsList />
+			<div className="skillsAbilities__bodyText">
+				<VennDiagram />
+				{content}
 			</div>
-		</Section>
+		</Section2>
     )
 
 }

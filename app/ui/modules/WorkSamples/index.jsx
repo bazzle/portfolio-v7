@@ -2,8 +2,7 @@
 
 import BrowserMobile from './browserMobile';
 import BrowserDesktop from './browserDesktop';
-import Section from '@/app/ui/components/Section';
-import BgShapes from '@/app/ui/components/BgShapes';
+import Section2 from '@/app/ui/components/Section2';
 import {workSamplesContent} from '@/app/content/BodyContent';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
@@ -48,14 +47,11 @@ function WorkSamples(){
 	}
 
     return(
-		<Section id="work-samples" noLine shallow>
+		<Section2 heading={workSamplesContent.title} moduleClassname="themes" layout="toEdges" headingTop line deepMb>
 			<div ref={ref}>
 				<div className="workSamples">
-					<div className="workSamples__titleSection">
-						<h2 className="workSamples__titleSection_text">{workSamplesContent.title}</h2>
-					</div>
-					<div className="main">
-						<motion.div className="strip" style={{ left }}>
+					<div className="workSamples__main">
+						<motion.div className="workSamples__strip" style={{ left }}>
 							<BrowserDesktop
 								src={images.image_bdo_dt.props.src}
 								alt={images.image_bdo_dt.props.alt}
@@ -89,7 +85,7 @@ function WorkSamples(){
 								alt={images.image_chevening_dt.props.alt}
 							/>
 						</motion.div>
-						<motion.div className="strip" style={{ right }} >
+						<motion.div className="workSamples__strip" style={{ right }} >
 							<BrowserDesktop
 								src={images.image_nao2_dt.props.src}
 								alt={images.image_nao2_dt.props.alt}
@@ -130,7 +126,7 @@ function WorkSamples(){
 					</div>
 				</div>
 			</div>
-		</Section>
+		</Section2>
     )
 }
 

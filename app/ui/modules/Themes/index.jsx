@@ -1,5 +1,3 @@
-
-import SectionHead from '@/app/ui/components/SectionHead';
 import Tile from "./Tile";
 import Section2 from '@/app/ui/components/Section2';
 import { ThemesContent } from "@/app/content/BodyContent";
@@ -22,7 +20,7 @@ function Themes(){
 	
 	return(
 
-		<Section2 heading={ThemesContent.title} moduleClassname="themes" layout="fullWidth" headingTop noLine shallow>
+		<Section2 heading={ThemesContent.title} moduleClassname="themes" layout="fullWidth" headingTop headingHidden noLine>
 			<div className="tileContainer">
 				<div className="tileGrid">
 					{tiles()}

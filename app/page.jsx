@@ -17,6 +17,7 @@ function Home(){
 			<Welcome/>
 			<TextBlock itemIndex={0}/>
 			<SkillsAndAbilities/>
+			<TextBlock itemIndex={0}/>
 			<Themes/>
 			<WorkSamples/>
 			<WorkHistory/>

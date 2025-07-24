@@ -1,20 +1,14 @@
-import Section from '@/app/ui/components/Section';
+import Section2 from '@/app/ui/components/Section2';
 import {TextBlocks} from '@/app/content/BodyContent';
 import propTypes from "prop-types";
 
 function TextBlock({itemIndex}){
 	return(
-		<Section id="text-block">
-			<div className="textBlock">
-				<div className="textBlock__inner">
-					<div className="container">
-						<blockquote className="textBlock__blockquote">
-							<p className="textBlock__blockquote__text" dangerouslySetInnerHTML={{ __html: TextBlocks[itemIndex] }} />
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</Section>
+		<Section2 id="text-block" moduleClassname="textBlock" layout="fullWidth" line deepMb>
+			<blockquote className="textBlock__blockquote">
+				<p className="textBlock__blockquote__text" dangerouslySetInnerHTML={{ __html: TextBlocks[itemIndex] }} />
+			</blockquote>
+		</Section2>
 	)
 
 }
