@@ -5,6 +5,8 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 
 .section{
 	margin-bottom: $spacingunit;
+	position: relative;
+	background-color: var(--color-bg-alt-60);
 	&__heading-top{
 		text-align: center;
 		margin-bottom: vars.$block-spacing--shallow;
@@ -16,8 +18,26 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 		border-bottom: 0;
 	}
 	&____line{
-		border-top: 1px solid var(--color-accent);
+		border-top: 1px solid;
+		border-image: linear-gradient(90deg, var(--color-accent) 85%, var(--color-accent-alt) 85%) 1;
 		padding-top: $spacingunit;
+			&::before{
+				position: absolute;
+				display: block;
+				right: 15%;
+				top: 0;
+				transform: translate(50%, -50%);
+				content: '';
+				width: 30px;
+				aspect-ratio: 1/1;
+				background: linear-gradient(to right, var(--color-accent), var(--color-accent-alt));
+				clip-path: polygon(
+					50% 0%,
+					100% 50%,
+					50% 100%,
+					0% 50%
+				);
+			}
 	}
 	&_____no-min-height{
 		min-height: unset;

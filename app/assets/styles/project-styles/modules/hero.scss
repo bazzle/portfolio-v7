@@ -71,11 +71,15 @@
 		z-index: 1;
 		position: absolute;
 		bottom: -100px;
-		right: 10vw;
+		right: 15%;
 		width: 200px;
+		transform: translate(50%);
 		aspect-ratio: 1/1;
 		@include vars.break-under(tablet){
 			display: none;
+		}
+		&__inner{
+			display: block;
 		}
 		img{
 			object-fit: cover;
@@ -83,7 +87,6 @@
 			aspect-ratio: 1/1;
 			top: 0;
 			left: 0;
-			position: absolute;
 			clip-path: polygon(
 				50% 0%,
 				100% 50%,

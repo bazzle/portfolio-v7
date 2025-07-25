@@ -2,7 +2,7 @@ $site-width: 1200px;
 $content-width: 700px;
 $extended-width: 1600px;
 
-main{
+body{
 	&::before, &::after{
 		content: '';
 		top: 0;
@@ -19,5 +19,19 @@ main{
 		right: 0;
 		width: 1px;
 		background-color: var(--color-accent-alt);
+	}
+}
+
+main{
+	&::after{
+		content: '';
+		top: 0;
+		height: 100%;
+		position: fixed;
+		z-index: 10;
+		width: 1px;
+		background-color: var(--color--accent-20);
+		right: 15%;
+		z-index: -1;
 	}
 }

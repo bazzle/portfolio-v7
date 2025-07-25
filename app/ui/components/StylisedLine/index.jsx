@@ -5,9 +5,9 @@ import { motion } from "motion/react";
 
 function StylisedLine(){
 	return (
-		<div className="stylised_line" role="presentation">
+		<div className="stylisedLine" role="presentation">
 			<motion.div
-				className="line"
+				className="stylisedLine__line"
 				initial={{ width: "30%", opacity: 0 }}
 				whileInView={{width: "100%", opacity: 1 }}
 				viewport={{ once: true }}
@@ -20,7 +20,8 @@ function StylisedLine(){
 				}}
 			>
 			</motion.div>
-			<motion.svg
+			<motion.div
+				className="stylisedLine__diamond"
 				initial={{ opacity: 0, scale: 0.1 }}
 				whileInView={{ opacity: 1, scale: 1 }}
 				viewport={{ once: true }}
@@ -31,11 +32,7 @@ function StylisedLine(){
 					stiffness: 200,
 					damping: 30
 				}}
-				viewBox="0 0 25 25"
-				xmlns="http://www.w3.org/2000/svg"
-				>
-					<path d="M12.0208 24.0416L0 12.0208L12.0208 0L24.0416 12.0208L12.0208 24.0416Z" />
-			</motion.svg>
+			/>
 		</div>
 	)
 }
