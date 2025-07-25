@@ -27,7 +27,7 @@ function Hero(){
 					</div>
 				</div>
 				<div className="hero__mainSection__profile">
-					<motion.div classname="hero__mainSection__profile__inner"
+					<motion.div className="hero__mainSection__profile__inner"
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					viewport={{ once: false }}
