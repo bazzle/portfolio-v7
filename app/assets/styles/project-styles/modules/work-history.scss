@@ -18,13 +18,27 @@
 		flex-direction: row-reverse;
 		justify-content: flex-end;
 		width: 100%;
-		@include vars.break(desktop-wider){
-			border-bottom: 1px solid var(--color-foreground);
-			justify-content: space-between;
-			height: 10rem;
-		}
-		@include vars.break(desktop-wider){
-			gap: 4rem;
+		position: relative;
+		.extending_line{
+			@include vars.break(desktop-wider){
+				width: 0%;
+				height: 1px;
+				background-color: white;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				&::after{
+					content: '';
+					width: 1px;
+					height: 3rem;
+					background-color: white;
+					position: absolute;
+					right: 0;
+					top: -3rem;
+					display: none;
+					background: gold;
+				}
+			}
 		}
 		@media print{
 			display: none;
@@ -87,19 +101,25 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
-		&::after{
+		.indicator{
 			@include vars.break(desktop-wider){
-				content: '';
-				height: 3rem;
-				width: 100vw;
-				background: var(--color-bg-off-solid);
-				border-left: 1px solid var(--color-foreground);
 				position: absolute;
-				bottom: -1px;
 				left: 50%;
-				display: block;
 			}
 		}
+		// &::after{
+		// 	@include vars.break(desktop-wider){
+		// 		content: '';
+		// 		height: 3rem;
+		// 		width: 100vw;
+		// 		background: var(--color-bg-off-solid);
+		// 		border-left: 1px solid var(--color-foreground);
+		// 		position: absolute;
+		// 		bottom: -1px;
+		// 		left: 50%;
+		// 		display: block;
+		// 	}
+		// }
 	}
 	&:first-of-type{
 		&.is_active{
