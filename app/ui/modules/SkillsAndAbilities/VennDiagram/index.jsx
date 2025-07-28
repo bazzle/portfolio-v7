@@ -4,13 +4,14 @@ import LoopActions from './LoopActions.jsx';
 
 function VennDiagram() {
 
-    return (
-        <div className="vennDiagram">
+	return (
+		<div className="vennDiagram">
+			<div className="vennDiagram__inner">
 			<div className="vennDiagram__textOverlay">
 				<span>Space where I can</span>
 				<LoopActions />
 			</div>
-            <svg
+			<svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="300"
                 height="255"
@@ -37,9 +38,10 @@ function VennDiagram() {
                         <rect width="1200" height="3003.34" fill="white" transform="translate(-100 -1564)" />
                     </clipPath>
                 </defs>
-            </svg>
-        </div>
-    );
+			</svg>
+			</div>
+		</div>
+	);
 }
 
 export default VennDiagram;

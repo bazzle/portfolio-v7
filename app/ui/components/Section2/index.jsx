@@ -7,11 +7,13 @@ function Section2({
 	headingTop,
 	layout = "normal",
 	line,
+	lineTop,
 	noSpacing,
 	noMinHeight,
 	headingHidden,
 	id,
-	deepMb
+	deepMb,
+	deepMbLine
 }) {
 
 	const styleConfigString = [
@@ -19,7 +21,9 @@ function Section2({
 		noSpacing && "section____no-spacing",
 		noMinHeight && "section____no-min-height",
 		headingHidden && "section____hidden-heading",
-		deepMb && "section____deep-mb"
+		deepMb && "section____deep-mb",
+		deepMbLine && "section____deep-mb-line",
+		lineTop && "section____line-top"
 	].filter(Boolean).join(' ');
 
 	const topHeadingOutput = (str) => {

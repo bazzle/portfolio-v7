@@ -8,7 +8,7 @@ function WhatNext(){
 	const content = WhatNextContent.bodyContent()
 
 	return(
-		<Section2 heading={title} id="welcome" layout="2col" moduleClassname="textBlock" noMinHeight deepMb>
+		<Section2 heading={title} id="welcome" layout="2col" moduleClassname="textBlock" noMinHeight deepMbLine>
 			{content}
 		</Section2>
 	)

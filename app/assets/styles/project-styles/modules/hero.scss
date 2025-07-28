@@ -5,7 +5,6 @@
 	height: auto;
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 6rem;
 	margin-bottom: 6rem;
 	@include vars.break(tablet){
 		min-height: calc(100vh - 60px);

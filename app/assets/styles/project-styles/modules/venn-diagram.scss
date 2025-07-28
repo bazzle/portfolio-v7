@@ -1,10 +1,15 @@
 @use "../../style-library/all-vars" as vars;
 
 .vennDiagram{
-	display: block;
-	position: relative;
-	height: auto;
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	&__inner{
+		position: relative;
+		display: block;
+		height: auto;
+		width: 80%;
+		max-width: 300px;
+	}
 	&__textOverlay{
 		position: absolute;
 		top: 42%;
@@ -20,10 +25,8 @@
 			text-align: center;
 			padding: .3em;
 			display: block;
-			@include vars.break-under(mobile-land){
-				background-color: var(--color-bg-alt);
-				padding: .5em .8em;
-			}
+			background-color: var(--color-bg-alt);
+			padding: .5em .8em;
 			&.loopingText{
 				color: var(--color-foreground);
 			}
@@ -31,7 +34,7 @@
 	}
 	svg{
 		width: 100%;
-		aspect-ratio: 300 / 255;
+		height: auto;
 		text{
 			@extend %text-miniscule;
 		}
