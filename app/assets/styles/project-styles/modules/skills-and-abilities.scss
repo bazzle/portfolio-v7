@@ -9,9 +9,12 @@
 		.vennDiagram{
 			margin-bottom: vars.$block-spacing;
 			width: 100%;
+			max-width: 400px;
 			@include vars.break(desktop){
+				max-width: 300px;
+				min-width: 250px;
 				float: right;
-				width: 30vw;
+				width: 22vw;
 				margin-bottom: calc(vars.$block-spacing--shallow /2);
 				margin-left: calc(vars.$block-spacing--shallow /2);
 			}

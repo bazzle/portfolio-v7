@@ -8,14 +8,12 @@
 		display: block;
 		height: auto;
 		width: 80%;
-		max-width: 300px;
 	}
 	&__textOverlay{
 		position: absolute;
-		top: 42%;
+		top: calc(50% + .5em);
 		left: 50%;
-		width: 130px;
-		transform: translateX(-50%);
+		transform: translate(-50%, -50%);
 		@extend %text-miniscule;
 		display: flex;
 		flex-direction: column;
@@ -25,12 +23,9 @@
 			text-align: center;
 			padding: .3em;
 			display: block;
-			@include vars.light-mode-wrapper{
-				background-color: var(--color-bg-alt);
-			}
-			padding: .5em .8em;
 			&.loopingText{
 				color: var(--color-foreground);
+				max-width: 90px;
 			}
 		}
 	}

@@ -8,7 +8,8 @@ function VennDiagram() {
 		<div className="vennDiagram">
 			<div className="vennDiagram__inner">
 			<div className="vennDiagram__textOverlay">
-				<span>Space where I can</span>
+				<span>Space where <br/>
+				I can</span>
 				<LoopActions />
 			</div>
 			<svg
