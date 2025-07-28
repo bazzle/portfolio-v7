@@ -5,9 +5,9 @@ import ContentSheet from "./ContentSheet";
 import { WorkHistoryContent } from '@/app/content/BodyContent';
 
 function WorkHistory(){
-
+	const mediaQuery = '(min-width: 1340px)';
 	const title = WorkHistoryContent.title
-	const sectionsArray = WorkHistoryContent.workHistoryItems
+	const sectionsArray = WorkHistoryContent.workHistoryItems;
 
 	const [activeSection, setActiveSection] = useState(sectionsArray[0]);
 
@@ -27,8 +27,19 @@ function WorkHistory(){
 	}
 
 	useEffect(() => {
-		extendLine(getTablistPercentage());
-	});
+		const mql = window.matchMedia(mediaQuery);
+		const handleChange = () => {
+			if (mql.matches){
+				extendLine(getTablistPercentage());
+			}
+		};
+		handleChange();
+		mql.addEventListener('change',handleChange);
+		
+		return () => {
+			mql.removeEventListener('change', handleChange);
+		}
+	},[] );
 
 	function extendLine(inputWidth){
 		const elem = extendingLineRef.current;
@@ -37,12 +48,15 @@ function WorkHistory(){
 		}
 	}
 
-	function handleClick(evt, section){
+	function handleClick(evt, section) {
 		setActiveSection(section);
 		evt.preventDefault();
-		setTimeout(()=>{
-			extendLine(getTablistPercentage());
-		},500);
+		const mql = window.matchMedia(mediaQuery);
+		if (mql.matches) {
+			setTimeout(() => {
+				extendLine(getTablistPercentage());
+			}, 1);
+		}
 	}
 
 	function navItem(item, index){
@@ -70,7 +84,7 @@ function WorkHistory(){
 			<div className="workHistory__inner">
 				<nav ref={tablistRef} role="tablist" className="workHistory__nav">
 					{ sectionsArray.map((item, index) => navItem(item, index)) }
-					<div className="extending_line" ref={extendingLineRef}></div>
+					<div role="presentation" className="extending_line" ref={extendingLineRef}></div>
 				</nav>
 				{sectionsArray.map((item, index) => (
 					<ContentSheet
