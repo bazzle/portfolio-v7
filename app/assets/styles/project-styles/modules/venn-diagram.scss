@@ -25,7 +25,9 @@
 			text-align: center;
 			padding: .3em;
 			display: block;
-			background-color: var(--color-bg-alt);
+			@include vars.light-mode-wrapper{
+				background-color: var(--color-bg-alt);
+			}
 			padding: .5em .8em;
 			&.loopingText{
 				color: var(--color-foreground);

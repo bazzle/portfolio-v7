@@ -7,6 +7,9 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 	margin-bottom: $spacingunit;
 	position: relative;
 	background-color: var(--color-bg-alt-70);
+	@include vars.light-mode-wrapper{
+		background-color: unset;
+	}
 	&__heading-top{
 		text-align: center;
 		margin-bottom: vars.$block-spacing--shallow;

@@ -84,11 +84,15 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+	color: var(--color-accent);
 	svg{
 		width: 18px;
 		height: 18px;
 	}
 	@media print{
 		display: none;
+	}
+	&:hover{
+		color: var(--color-foreground);
 	}
 }
