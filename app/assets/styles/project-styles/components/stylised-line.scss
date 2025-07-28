@@ -3,6 +3,10 @@
 .stylisedLine{
 	width: 100%;
 	position: relative;
+	display: none;
+	@include vars.break(tablet){
+		display: block;
+	}
 	@media print{
 		top: 0;
 	}

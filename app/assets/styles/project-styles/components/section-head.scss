@@ -6,7 +6,10 @@
 	margin-top: 10px;
 	&__title{
 		margin: 0;
+		padding-left: 0;
+		@include vars.break(tablet){
 		padding-left: calc(1.5vw + 1.1em);
+		}
 		padding-bottom: 2rem;
 		padding-top: .5em;
 		@extend %text-heading--chunky;
