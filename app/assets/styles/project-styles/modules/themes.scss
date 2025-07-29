@@ -38,7 +38,7 @@
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: center;
-		@include vars.break(desktop-med){
+		@include vars.break(tablet){
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: center;
@@ -47,9 +47,10 @@
 	&__icon{
 		width: 20%;
 		flex-shrink: 0;
-		@include vars.break(desktop-med){
-			height: 120px;
-			width: 100%;
+		height: 120px;
+		width: 100%;
+		@include vars.break-under(tablet){
+			display: none;
 		}
 		@include vars.light-mode-wrapper{
 			display: none;
