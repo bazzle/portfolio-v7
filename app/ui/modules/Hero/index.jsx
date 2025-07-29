@@ -37,8 +37,7 @@ function Hero(){
 						type: "spring",
 						stiffness: 200,
 						damping: 30
-					}}
-					>
+					}}>
 						<Image width="200" height="200" src="images/profile.webp" alt="Profile image" />
 					</motion.div>
 				</div>
