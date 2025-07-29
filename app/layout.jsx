@@ -1,7 +1,6 @@
 import "@/app/assets/styles/main.scss";
 import Header from "./ui/modules/Header";
 import Footer from "./ui/modules/Footer";
-import { ColourThemeProvider } from "./Context/ColourTheme";
 import BackTop from "./ui/modules/Footer/Backtop";
 
 export const metadata = {
@@ -13,11 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     	<body>
-			<ColourThemeProvider>
 			<Header/>
         	{children}
 			<Footer/>
-			</ColourThemeProvider>
 			<BackTop/>
       	</body>
     </html>
