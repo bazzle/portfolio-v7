@@ -1,10 +1,8 @@
-'use client'
 import Clients from "@/app/ui/modules/Hero/Clients";
 import BgShapes from '@/app/ui/components/BgShapes';
 import ActionLink from '@/app/ui/components/ActionLink';
 import Spacer from '@/app/ui/components/Spacer';
-import Image from "next/image";
-import { motion } from "motion/react";
+import Profile from "@/app/ui/components/Profile";
 
 function Hero(){
 
@@ -26,20 +24,8 @@ function Hero(){
 						</p>
 					</div>
 				</div>
-				<div className="hero__mainSection__profile">
-					<motion.div className="hero__mainSection__profile__inner"
-					initial={{ opacity: 0 }}
-					whileInView={{ opacity: 1 }}
-					viewport={{ once: false }}
-					transition={{
-						duration: .01,
-						delay: .3,
-						type: "spring",
-						stiffness: 200,
-						damping: 30
-					}}>
-						<Image width="200" height="200" src="images/profile.webp" alt="Profile image" />
-					</motion.div>
+				<div className="hero__profile">
+					<Profile/>
 				</div>
 				<BgShapes variant="1" />
             </div>

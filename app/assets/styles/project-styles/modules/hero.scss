@@ -66,46 +66,13 @@
 			@extend %text-medium;
 		}
 	}
-	$profileMaxWidth: 200px;
-	$profileMinWidth: 100px;
-	$profileWidth: 20vw;
-	$outlinewidth: 3px;
-	@mixin profileDefaults{
-		display: block;
-		aspect-ratio: 1/1;
-		clip-path: polygon(
-			50% 0%,
-			100% 50%,
-			50% 100%,
-			0% 50%
-		);
-	}
-	&__profile{
-		@include profileDefaults;
-		width: $profileWidth;
-		max-width: $profileMaxWidth;
-		min-width: $profileMinWidth;
-		z-index: 1;
-		position: absolute;
-		bottom: 0;
-		right: 15%;
-		transform: translate(50%, 50%);
-		display: block;
-		background: linear-gradient(90deg, var(--color-accent), var(--color-accent-alt));
-	}
-	&__profile__inner{
-		@include profileDefaults;
-		position: relative;
-		top: $outlinewidth;
-		left: $outlinewidth;
-		width: calc(100% - $outlinewidth*2);
-		overflow: hidden;
-		img{
-			object-fit: cover;
-			width: 100%;
-			height: 100%;
-		}
-	}
+}
+.hero__profile{
+	position: absolute;
+	bottom: 0;
+	right: 15%;
+	transform: translate(50%, 50%);
+	z-index: 1;
 }
 .hero__footSection{
 	height: auto;
