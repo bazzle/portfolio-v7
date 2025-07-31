@@ -1,23 +1,16 @@
-import SectionHead from '@/app/ui/components/SectionHead';
-import Section from '@/app/ui/components/Section';
+import {WelcomeContent} from '@/app/content/BodyContent';
+import Section2 from '@/app/ui/components/Section2';
 
-function Template(){
+function Welcome(){
+
+	const title = WelcomeContent.title;
+	const content = WelcomeContent.bodyContent()
+
 	return(
-		<Section id="template">
-			<div className="Template">
-				<div className="container">
-					<div className="inner-2col">
-						<div className="col-1">
-							<SectionHead titleString={title} separator/>
-						</div>
-						<div className="col-2">
-							<p>Content here</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</Section>
+		<Section2 heading={WelcomeContent.title} layout="2col" moduleClassname="textBlock" noMinHeight>
+			{content}
+		</Section2>
 	)
 }
 
-export default Template
+export default Welcome;
