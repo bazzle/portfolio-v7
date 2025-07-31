@@ -1,5 +1,5 @@
 
-import Section2 from '@/app/ui/components/Section2';
+import Section2 from '@/app/ui/components/Section';
 import {SignoffContent} from '@/app/content/BodyContent';
 
 function SignOff(){

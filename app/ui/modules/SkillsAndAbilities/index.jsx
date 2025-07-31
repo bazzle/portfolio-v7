@@ -1,6 +1,6 @@
 import VennDiagram from './VennDiagram';
 import SkillsList from './skillsList';
-import Section2 from '@/app/ui/components/Section2';
+import Section2 from '@/app/ui/components/Section';
 import { SkillsContent } from '@/app/content/BodyContent';
 
 function SkillsAndAbilities(){

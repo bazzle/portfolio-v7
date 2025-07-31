@@ -1,4 +1,4 @@
-import Section2 from '@/app/ui/components/Section2';
+import Section2 from '@/app/ui/components/Section';
 import {WhatNextContent} from '@/app/content/BodyContent';
 
 

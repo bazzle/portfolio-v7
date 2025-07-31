@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from "react";
-import Section2 from '@/app/ui/components/Section2';
+import Section2 from '@/app/ui/components/Section';
 import ContentSheet from "./ContentSheet";
 import { WorkHistoryContent } from '@/app/content/BodyContent';
 

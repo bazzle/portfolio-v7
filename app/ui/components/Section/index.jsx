@@ -1,24 +1,88 @@
-'use client';
+import SectionHead from '@/app/ui/components/SectionHead';
 
-
-import { useContext } from 'react';
-import { colourThemeContext } from '@/app/Context/ColourTheme';
-
-function Section({ children, id, line, noSpacing, noMinHeight }) {
-	const { colourMode, modeSwitch } = useContext(colourThemeContext);
-
-	const colorModeClassname = `colour--${colourMode}`
+function Section({
+	children,
+	moduleClassname = "module",
+	heading,
+	headingTop,
+	layout = "normal",
+	line,
+	lineTop,
+	noSpacing,
+	noMinHeight,
+	headingHidden,
+	id,
+	deepMb,
+	deepMbLine
+}) {
 
 	const styleConfigString = [
-		"section",
 		line && "section____line",
-		noSpacing && "section____no_spacing",
-		noMinHeight && "section____no_min_height"
-	  ].filter(Boolean).join(' ');
+		noSpacing && "section____no-spacing",
+		noMinHeight && "section____no-min-height",
+		headingHidden && "section____hidden-heading",
+		deepMb && "section____deep-mb",
+		deepMbLine && "section____deep-mb-line",
+		lineTop && "section____line-top"
+	].filter(Boolean).join(' ');
+
+	const topHeadingOutput = (str) => {
+		return (
+			<h2 className="section__heading-top">{str}</h2>
+		)
+	}
+
+	const mainSectionOutput = (layout) => {
+		if(layout === '2col'){
+			return(
+				<div className="container">
+					<div className="inner-2col">
+						<div className="col-1">
+							<SectionHead titleString={heading} separator />
+						</div>
+						<div className="col-2">
+							{children}
+						</div>
+					</div>
+				</div>
+			)
+		} else if (layout === 'fullWidth') {
+			return(
+				<div className="container____extended">
+					{children}
+				</div>
+			)
+		} else if (layout === 'toEdges') {
+			return(
+				<div className="container____toEdges">
+					{children}
+				</div>
+			)
+		} else {
+			return(
+				<div className="container">
+					{children}
+				</div>
+			)
+		}
+	}
+
+	const sectionId = ()=>{
+		let str
+		if (id){
+			str = id
+		} else if (heading) {
+			str = heading.toLowerCase().trim().replace(/[\s\W-]+/g, '-').replace(/^-+|-+$/g, '');
+		}
+		return str
+	}
 	
 	return (
-		<section id={id} className={`${styleConfigString} ${colorModeClassname}`}>
-			{children}
+		<section id={sectionId()} className={`section ${styleConfigString}`}>
+			<div className={moduleClassname}>
+				{headingTop && topHeadingOutput(heading) }
+				{mainSectionOutput(layout)}
+			</div>
 		</section>
   	);
 }

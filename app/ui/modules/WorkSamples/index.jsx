@@ -2,7 +2,7 @@
 
 import BrowserMobile from './browserMobile';
 import BrowserDesktop from './browserDesktop';
-import Section2 from '@/app/ui/components/Section2';
+import Section2 from '@/app/ui/components/Section';
 import {workSamplesContent} from '@/app/content/BodyContent';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
