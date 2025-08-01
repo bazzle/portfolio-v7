@@ -20,13 +20,13 @@ function Themes(){
 	
 	return(
 
-		<section heading={ThemesContent.title} moduleClassname="themes" layout="fullWidth" headingTop headingHidden noLine>
+		<Section heading={ThemesContent.title} moduleClassname="themes" layout="fullWidth" headingTop headingHidden noLine>
 			<div className="tileContainer">
 				<div className="tileGrid">
 					{tiles()}
 				</div>
 			</div>
-		</section>
+		</Section>
 	)
 }
 

@@ -47,7 +47,7 @@ function WorkSamples(){
 	}
 
     return(
-		<section heading={workSamplesContent.title} moduleClassname="themes" layout="toEdges" headingTop line deepMbLine>
+		<Section heading={workSamplesContent.title} moduleClassname="themes" layout="toEdges" headingTop line deepMbLine>
 			<div ref={ref}>
 				<div className="workSamples">
 					<div className="workSamples__main">
@@ -126,7 +126,7 @@ function WorkSamples(){
 					</div>
 				</div>
 			</div>
-		</section>
+		</Section>
     )
 }
 

@@ -80,7 +80,7 @@ function WorkHistory(){
 		)
 	}
     return (
-		<section moduleClassname="workHistory" heading={title} id="work-history" layout="2col">
+		<Section moduleClassname="workHistory" heading={title} id="work-history" layout="2col">
 			<div className="workHistory__inner">
 				<nav ref={tablistRef} role="tablist" className="workHistory__nav">
 					{ sectionsArray.map((item, index) => navItem(item, index)) }
@@ -94,7 +94,7 @@ function WorkHistory(){
 					/>
 				))}
 			</div>
-        </section>
+        </Section>
     )
 }
 

@@ -9,13 +9,13 @@ function SkillsAndAbilities(){
 	const content = SkillsContent.bodyContent()
 
     return(
-		<section heading={title} moduleClassname='skillsAbilities' id="skills-and-abilities" layout='2col' noLineMobile>
+		<Section heading={title} moduleClassname='skillsAbilities' id="skills-and-abilities" layout='2col' noLineMobile>
 			<SkillsList />
 			<div className="skillsAbilities__bodyText">
 				<VennDiagram />
 				{content}
 			</div>
-		</section>
+		</Section>
     )
 
 }

@@ -5,7 +5,7 @@ import {SignoffContent} from '@/app/content/BodyContent';
 function SignOff(){
 
 	return(
-		<section moduleClassname="signOff" heading={SignoffContent.title} id="welcome" noMinHeight>
+		<Section moduleClassname="signOff" heading={SignoffContent.title} id="welcome" noMinHeight>
 			<div className="signOff hide-print">
 				<div className="container">
 					<p className="signOff__text">
@@ -13,7 +13,7 @@ function SignOff(){
 					</p>
 				</div>
 			</div>
-		</section>
+		</Section>
 	)
 
 }
