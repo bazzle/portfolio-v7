@@ -271,6 +271,10 @@ export const WhatNextContent = {
 	}
 }
 
+export const CardGridContent = {
+	title: "What I've been working on and thinking about"
+}
+
 export const SignoffContent = {
 	title: 'Thankyou, have a great day!'
 }

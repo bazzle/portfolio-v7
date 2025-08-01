@@ -7,6 +7,7 @@ import Themes from "./ui/modules/Themes";
 import TextBlock from "./ui/modules/TextBlock";
 import SignOff from "./ui/modules/SignOff";
 import WhatNext from "./ui/modules/WhatNext";
+import Cards from "./ui/modules/Cards";
 
 
 
@@ -22,6 +23,7 @@ function Home(){
 			<WorkSamples/>
 			<WorkHistory/>
 			<WhatNext/>
+			<Cards/>
 			<SignOff/>
 		</main>
 	)
