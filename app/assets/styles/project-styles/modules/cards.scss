@@ -1,22 +1,52 @@
 @use "../../style-library/all-vars" as vars;
 
 .cards{
+	$gridGap: clamp(1rem, 5vw, 100px);
 	&__grid{
 		display: flex;
 		align-items: center;
-		gap: vars.$block-spacing;
-		justify-content: flex-start;
+		flex-direction: column;
+		gap: 2rem;
+		@include vars.break(tablet){
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+			gap: $gridGap;
+		}
+		&__card{
+			position: relative;
+			&::before{
+				content: '';
+				background-color: var(--color-accent-alt-50);
+				display: block;
+				position: absolute;
+				width: 1px;
+				height: 2rem;
+				bottom: -2rem;
+				right: 50%;
+				@include vars.break(tablet){
+					width: $gridGap;
+					height: 1px;
+					top: 50%;
+					right: 0;
+					transform: translate(100%);
+				}
+			}
+			&:last-child{
+				&::before{
+					display: none;
+				}
+			}
+		}
 	}
 }
 
 .card{
 	position: relative;
 	border: .5px solid var(--color-accent-alt-50);
-	background-color: var(--color-bg);
 	padding: 1rem;
 	padding-bottom: 2rem;
 	&__image{
-		max-width: 400px;
+		width: 100%;
 		height: auto;
 	}
 	&__header{

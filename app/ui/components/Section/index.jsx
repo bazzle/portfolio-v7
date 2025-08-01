@@ -58,6 +58,12 @@ function Section({
 					{children}
 				</div>
 			)
+		} else if (layout === 'extended') {
+			return(
+				<div className="container____extended">
+					{children}
+				</div>
+			)
 		} else {
 			return(
 				<div className="container">

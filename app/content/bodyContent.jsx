@@ -272,7 +272,7 @@ export const WhatNextContent = {
 }
 
 export const CardGridContent = {
-	title: "What I've been working on and thinking about"
+	title: "Working on / thinking about"
 }
 
 export const SignoffContent = {
