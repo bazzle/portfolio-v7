@@ -1,5 +1,5 @@
 import Tile from "./Tile";
-import Section2 from '@/app/ui/components/Section';
+import Section from '@/app/ui/components/Section';
 import { ThemesContent } from "@/app/content/BodyContent";
 
 function Themes(){
@@ -20,13 +20,13 @@ function Themes(){
 	
 	return(
 
-		<Section2 heading={ThemesContent.title} moduleClassname="themes" layout="fullWidth" headingTop headingHidden noLine>
+		<section heading={ThemesContent.title} moduleClassname="themes" layout="fullWidth" headingTop headingHidden noLine>
 			<div className="tileContainer">
 				<div className="tileGrid">
 					{tiles()}
 				</div>
 			</div>
-		</Section2>
+		</section>
 	)
 }
 

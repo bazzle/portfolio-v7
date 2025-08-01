@@ -1,5 +1,5 @@
 import {WelcomeContent} from '@/app/content/BodyContent';
-import Section2 from '@/app/ui/components/Section';
+import Section from '@/app/ui/components/Section';
 
 function Welcome(){
 
@@ -7,9 +7,9 @@ function Welcome(){
 	const content = WelcomeContent.bodyContent()
 
 	return(
-		<Section2 heading={WelcomeContent.title} layout="2col" moduleClassname="textBlock" noMinHeight>
+		<section heading={WelcomeContent.title} layout="2col" moduleClassname="textBlock" noMinHeight>
 			{content}
-		</Section2>
+		</section>
 	)
 }
 

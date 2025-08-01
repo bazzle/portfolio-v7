@@ -1,11 +1,11 @@
 
-import Section2 from '@/app/ui/components/Section';
+import Section from '@/app/ui/components/Section';
 import {SignoffContent} from '@/app/content/BodyContent';
 
 function SignOff(){
 
 	return(
-		<Section2 moduleClassname="signOff" heading={SignoffContent.title} id="welcome" noMinHeight>
+		<section moduleClassname="signOff" heading={SignoffContent.title} id="welcome" noMinHeight>
 			<div className="signOff hide-print">
 				<div className="container">
 					<p className="signOff__text">
@@ -13,7 +13,7 @@ function SignOff(){
 					</p>
 				</div>
 			</div>
-		</Section2>
+		</section>
 	)
 
 }

@@ -2,7 +2,7 @@
 
 import BrowserMobile from './browserMobile';
 import BrowserDesktop from './browserDesktop';
-import Section2 from '@/app/ui/components/Section';
+import Section from '@/app/ui/components/Section';
 import {workSamplesContent} from '@/app/content/BodyContent';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
@@ -47,7 +47,7 @@ function WorkSamples(){
 	}
 
     return(
-		<Section2 heading={workSamplesContent.title} moduleClassname="themes" layout="toEdges" headingTop line deepMbLine>
+		<section heading={workSamplesContent.title} moduleClassname="themes" layout="toEdges" headingTop line deepMbLine>
 			<div ref={ref}>
 				<div className="workSamples">
 					<div className="workSamples__main">
@@ -126,7 +126,7 @@ function WorkSamples(){
 					</div>
 				</div>
 			</div>
-		</Section2>
+		</section>
     )
 }
 

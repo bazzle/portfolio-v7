@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from "react";
-import Section2 from '@/app/ui/components/Section';
+import Section from '@/app/ui/components/Section';
 import ContentSheet from "./ContentSheet";
 import { WorkHistoryContent } from '@/app/content/BodyContent';
 
@@ -80,7 +80,7 @@ function WorkHistory(){
 		)
 	}
     return (
-		<Section2 moduleClassname="workHistory" heading={title} id="work-history" layout="2col">
+		<section moduleClassname="workHistory" heading={title} id="work-history" layout="2col">
 			<div className="workHistory__inner">
 				<nav ref={tablistRef} role="tablist" className="workHistory__nav">
 					{ sectionsArray.map((item, index) => navItem(item, index)) }
@@ -94,7 +94,7 @@ function WorkHistory(){
 					/>
 				))}
 			</div>
-        </Section2>
+        </section>
     )
 }
 
