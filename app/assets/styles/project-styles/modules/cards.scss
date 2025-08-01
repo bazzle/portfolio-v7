@@ -16,6 +16,10 @@
 		}
 		&__card{
 			position: relative;
+			max-width: 300px;
+			@include vars.break(tablet){
+				max-width: unset;
+			}
 			&::before{
 				content: '';
 				background-color: var(--color-accent-alt-50);
