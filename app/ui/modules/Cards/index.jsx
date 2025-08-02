@@ -13,14 +13,14 @@ function Cards(){
 			imageAlt : "Figure with a question-mark for a head",
 			title : "Bitcoin Truthbombs",
 			description : "2 minute read articles about Bitcoin I write as I learn about the technology and economics.",
-			link : "https://thoughts2.netlify.app/week-ending-27th-july"
+			link : "https://thoughts2.netlify.app/bitcoin-truthbombs"
 		},
 		{
 			imageSrc : "images/cards/sat-power2.webp",
 			imageAlt : "Sat logo",
 			title : "Satoshi Power",
 			description : "Fun project looking at how the price of a satoshi compares to the smallest units of different fiat currencies. Pulling data from blockchain.com",
-			link : "https://thoughts2.netlify.app/week-ending-27th-july"
+			link : "https://thoughts2.netlify.app/satoshi-power"
 		},
 		{
 			imageSrc : "images/cards/exponential.png",
