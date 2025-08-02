@@ -62,7 +62,7 @@
 		@extend %text-heading-small;
 		color: var(--color-accent-alt);
 		text-align: left;
-		border-top: 1px solid var(--color--accent-20);
+		border-top: 1px solid var(--color-accent-20);
 		span{
 			background: var(--color-bg-alt);
 			@include vars.light-mode-wrapper{
