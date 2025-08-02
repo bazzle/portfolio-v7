@@ -43,6 +43,7 @@ function Hero(){
 								<ActionLink linkString="https://www.linkedin.com/in/br-web/" textString="LinkedIn" printString="linkedin.com/in/br-web/" />
 								<ActionLink linkString="https://github.com/bazzle/" textString="Github" printString="github.com/bazzle/" />
 								<ActionLink linkString="mailto:barry@br-web.me" textString="Drop me an email" printString="barry@br-web.me" />
+								<ActionLink linkString="/work-with-me/" textString="Work with me" />
 							</div>
 						</div>
 						<Spacer mobile />
