@@ -1,6 +1,6 @@
 @use "../../style-library/all-vars" as vars;
 
-.textBlock{
+.textStandout{
 	position: relative;
 	background-size: auto;
 	background-repeat: repeat;
@@ -20,10 +20,12 @@
 		display: block;
 		text-align: center;
     	margin: 0 auto;
-		color: var(--color-foreground);
-		text-shadow:unset;
 		display: flex;
 		justify-content: center;
+		max-width: 80vw;
+		@include vars.break(tablet){
+			max-width: 60vw;
+		}
 		&__text{
 			position: relative;
 			margin-bottom: 0;
@@ -37,10 +39,6 @@
 				background: none;
 				color: var(--color-foreground);
 			}
-		}
-		max-width: 80vw;
-		@include vars.break(tablet){
-			max-width: 60vw;
 		}
 		@media print{
 			padding-top: unset;

@@ -39,10 +39,11 @@ export const WelcomeContent = {
 	}
 }
 
-export const TextStandouts = [
-	"I call myself a design engineer / tinkerer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally interesting.",
-	"I embrace all facets of web design and development. I see them as separate parts of the whole."
-]
+export const TextStandout1 = "I call myself a design engineer / tinkerer because I like to occupy the intersection of visual design and web development. I find the two disciplines equally interesting."
+
+export const TextStandout2 = "I embrace all facets of web design and development. I see them as separate parts of the whole."
+
+export const TextStandout3 = "Thankyou, have a great day!"
 
 export const SkillsContent = {
 	title: "Skills and Expertise",

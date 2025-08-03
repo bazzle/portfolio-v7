@@ -3,12 +3,18 @@ import SkillsAndAbilities from "@/app/ui/modules/SkillsAndAbilities";
 import WorkHistory from "@/app/ui/modules/WorkHistory";
 import WorkSamples from "@/app/ui/modules/WorkSamples";
 import Themes from "@/app/ui/modules/Themes";
-import TextBlock from "@/app/ui/modules/TextBlock";
+import TextStandout from "@/app/ui/modules/TextStandout";
 import SignOff from "@/app/ui/modules/SignOff";
 import Cards from "@/app/ui/modules/Cards";
 import StdContentTemplate from "./ui/modules/StdContentTemplate";
 // content import
-import {WelcomeContent, WhatNextContent} from '@/app/content/BodyContent';
+import {
+	WelcomeContent,
+	WhatNextContent,
+	TextStandout1,
+	TextStandout2,
+	TextStandout3,
+} from '@/app/content/BodyContent';
 
 
 function Home(){
@@ -19,19 +25,18 @@ function Home(){
 				title={WelcomeContent.title}
 				bodyContent={WelcomeContent.bodyContent()}
 			/>
-			<TextBlock itemIndex={0}/>
+			<TextStandout content={TextStandout1} line deepMbLine/>
 			<SkillsAndAbilities/>
-			<TextBlock itemIndex={1}/>
+			<TextStandout content={TextStandout2} line deepMbLine/>
 			<Themes/>
 			<WorkSamples/>
 			<WorkHistory/>
 			<StdContentTemplate
 				title={WhatNextContent.title}
 				bodyContent={WhatNextContent.bodyContent()}
-				deepMb
 			/>
 			<Cards/>
-			<SignOff/>
+			<TextStandout content={TextStandout3}/>
 		</main>
 	)
 }

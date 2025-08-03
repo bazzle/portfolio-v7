@@ -13,7 +13,7 @@ function StdContentTemplate({title, bodyContent, deepMb, deepMbLine}){
 			heading={title}
 			id="welcome"
 			layout="2col"
-			moduleClassname="textBlock"
+			moduleClassname="TextStandout"
 			noMinHeight
 			{...optionalProps}
 		>

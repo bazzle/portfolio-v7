@@ -7,7 +7,7 @@ function Welcome(){
 	const content = WelcomeContent.bodyContent()
 
 	return(
-		<Section heading={WelcomeContent.title} layout="2col" moduleClassname="textBlock" noMinHeight>
+		<Section heading={WelcomeContent.title} layout="2col" moduleClassname="TextStandout" noMinHeight>
 			{content}
 		</Section>
 	)
