@@ -301,3 +301,21 @@ export const CardGridContent = {
 export const SignoffContent = {
 	title: 'Thankyou, have a great day!'
 }
+
+// work with me page
+
+export const ContentSection2 = {
+	title: "What can I do for you?",
+	bodyContent: () => {
+		return(
+			<>
+				<p>
+					<strong>Some info</strong> About what I can do for you.
+				</p>
+				<ul>
+					<ListItem content={'Stuff like <strong>Accessibility audits</strong> and that innit'}/>
+				</ul>
+			</>
+		)
+	}
+}
