@@ -1,8 +1,13 @@
 import Hero2 from "@/app/ui/modules/Hero2";
-import SignOff from "@/app/ui/modules/SignOff";
 import StdContentTemplate from "@/app/ui/modules/StdContentTemplate";
+import TextStandout from "@/app/ui/modules/TextStandout";
 // content import
-import {ContentSection2} from '@/app/content/BodyContent';
+import {
+	ContentSection2,
+	ContentSection3,
+	TextStandout3,
+	TextStandout4
+} from '@/app/content/BodyContent';
 
 export const metadata = {
   title: "Barry Richards Design tinkerer - Work with me",
@@ -16,12 +21,13 @@ function WorkWithMe() {
 				title={ContentSection2.title}
 				bodyContent={ContentSection2.bodyContent()}
 			/>
+			<TextStandout content={TextStandout4} deepMbline line/>
 			<StdContentTemplate
-				title={ContentSection2.title}
-				bodyContent={ContentSection2.bodyContent()}
+				title={ContentSection3.title}
+				bodyContent={ContentSection3.bodyContent()}
 				deepMbLine
 			/>
-			<SignOff/>
+			<TextStandout content={TextStandout3}/>
 		</main>
 	);
 }

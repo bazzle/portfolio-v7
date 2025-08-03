@@ -45,6 +45,8 @@ export const TextStandout2 = "I embrace all facets of web design and development
 
 export const TextStandout3 = "Thankyou, have a great day!"
 
+export const TextStandout4 = "I have spent a fair chunk of time designing and developing websites. I self-identify as a web design tinkerer."
+
 export const SkillsContent = {
 	title: "Skills and Expertise",
 	bodyContent: () => {
@@ -299,10 +301,6 @@ export const CardGridContent = {
 	]
 }
 
-export const SignoffContent = {
-	title: 'Thankyou, have a great day!'
-}
-
 // work with me page
 
 export const ContentSection2 = {
@@ -311,12 +309,39 @@ export const ContentSection2 = {
 		return(
 			<>
 				<p>
-					<strong>Some info</strong> About what I can do for you.
+					I have experience designing and developing websites, I self-identify as a web design tinkerer.
+				</p>
+				<p>
+					What does this mean in practical terms? What can I <em>really</em> do for you? The no-fluff answer as ChatGPT would say.
+				</p>
+				<p>
+					I can improve the look and feel of your website. I can audit your website for optimal accessibility to the latest WCAG guidelines. I can make on-page optimisations for search engines.
+				</p>
+				<p>
+					OR, I can produce wireframes and high-fidelity mockups at the early stages of your website or web app development.
+				</p>
+			</>
+		)
+	}
+}
+
+export const ContentSection3 = {
+	title: "Why Bitcoin?",
+	bodyContent: () => {
+		return(
+			<>
+				<p>
+					I do accept Bitcoin for my services. In fact I prefer it as form of payment. Why?
 				</p>
 				<ul>
-					<ListItem content={'Stuff like <strong>Accessibility audits</strong> and that innit'}/>
+					<ListItem content={'Reason 1'}/>
+					<ListItem content={'Reason 2'}/>
+					<ListItem content={'Reason 3'}/>
+					<ListItem content={'Reason 4'}/>
 				</ul>
 			</>
 		)
 	}
 }
+
+
