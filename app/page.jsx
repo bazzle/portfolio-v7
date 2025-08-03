@@ -6,7 +6,7 @@ import Themes from "@/app/ui/modules/Themes";
 import TextBlock from "@/app/ui/modules/TextBlock";
 import SignOff from "@/app/ui/modules/SignOff";
 import Cards from "@/app/ui/modules/Cards";
-import ContentSection from "./ui/modules/ContentSection";
+import StdContentTemplate from "./ui/modules/StdContentTemplate";
 // content import
 import {WelcomeContent, WhatNextContent} from '@/app/content/BodyContent';
 
@@ -15,7 +15,7 @@ function Home(){
 	return(
 		<main>
 			<Hero/>
-			<ContentSection
+			<StdContentTemplate
 				title={WelcomeContent.title}
 				bodyContent={WelcomeContent.bodyContent()}
 			/>
@@ -25,7 +25,7 @@ function Home(){
 			<Themes/>
 			<WorkSamples/>
 			<WorkHistory/>
-			<ContentSection
+			<StdContentTemplate
 				title={WhatNextContent.title}
 				bodyContent={WhatNextContent.bodyContent()}
 				deepMb

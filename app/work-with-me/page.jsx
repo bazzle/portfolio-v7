@@ -1,6 +1,6 @@
 import Hero2 from "@/app/ui/modules/Hero2";
 import SignOff from "@/app/ui/modules/SignOff";
-import ContentSection from "@/app/ui/modules/ContentSection";
+import StdContentTemplate from "@/app/ui/modules/StdContentTemplate";
 // content import
 import {ContentSection2} from '@/app/content/BodyContent';
 
@@ -12,11 +12,11 @@ function WorkWithMe() {
 	return (
 		<main>
 			<Hero2/>
-			<ContentSection
+			<StdContentTemplate
 				title={ContentSection2.title}
 				bodyContent={ContentSection2.bodyContent()}
 			/>
-			<ContentSection
+			<StdContentTemplate
 				title={ContentSection2.title}
 				bodyContent={ContentSection2.bodyContent()}
 				deepMbLine

@@ -1,7 +1,7 @@
 import Section from '@/app/ui/components/Section';
 
 
-function ContentSection({title, bodyContent, deepMb, deepMbLine}){
+function StdContentTemplate({title, bodyContent, deepMb, deepMbLine}){
 
 	const optionalProps = {
 		...(deepMb ? { deepMb: true } : {}),
@@ -22,4 +22,4 @@ function ContentSection({title, bodyContent, deepMb, deepMbLine}){
 	)
 }
 
-export default ContentSection;
+export default StdContentTemplate;
