@@ -1,4 +1,4 @@
-import Hero from "@/app/ui/modules/Hero";
+import Hero2 from "@/app/ui/modules/Hero2";
 import Welcome from "@/app/ui/modules/Welcome";
 import SignOff from "@/app/ui/modules/SignOff";
 
@@ -9,7 +9,7 @@ export const metadata = {
 function WorkWithMe() {
   return (
     <main>
-		<Hero/>
+		<Hero2/>
 		<Welcome/>
 		<SignOff/>
 	</main>
