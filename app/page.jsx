@@ -12,7 +12,7 @@ import {
 	WhatNextContent,
 	TextStandout1,
 	TextStandout2,
-	TextStandout3,
+	TextStandout3
 } from '@/app/content/BodyContent';
 
 

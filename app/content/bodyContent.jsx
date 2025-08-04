@@ -344,4 +344,25 @@ export const ContentSection3 = {
 	}
 }
 
+export const GetInTouchContent = {
+	title: "Get in touch",
+	bodyContent: () => {
+		const emailContent = 'email: <a href="#">email</a>';
+		const xContent = 'X: <a href="https://x.com/bazzle">@bazzle</a>';
+		const nostrContent = 'nostr: <a href="https://nosta.me/27a3d96de5945c3e9e522e63738ed289b1cfde8a7eca1fa31a953c3b23c87908">nosta.me</a>';
+		return(
+			<>
+				<p>
+					You can reach me by email or socials.
+				</p>
+				<ul>
+					<ListItem content={emailContent}/>
+					<ListItem content={xContent}/>
+					<ListItem content={nostrContent}/>
+				</ul>
+			</>
+		)
+	}
+}
+
 

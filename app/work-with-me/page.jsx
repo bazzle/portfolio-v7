@@ -6,7 +6,8 @@ import {
 	ContentSection2,
 	ContentSection3,
 	TextStandout3,
-	TextStandout4
+	TextStandout4,
+	GetInTouchContent
 } from '@/app/content/BodyContent';
 
 export const metadata = {
@@ -21,10 +22,15 @@ function WorkWithMe() {
 				title={ContentSection2.title}
 				bodyContent={ContentSection2.bodyContent()}
 			/>
-			<TextStandout content={TextStandout4} deepMbline line/>
+			<TextStandout content={TextStandout4} deepMbLine line/>
 			<StdContentTemplate
 				title={ContentSection3.title}
 				bodyContent={ContentSection3.bodyContent()}
+			/>
+			<StdContentTemplate
+				id="get-in-touch"
+				title={GetInTouchContent.title}
+				bodyContent={GetInTouchContent.bodyContent()}
 				deepMbLine
 			/>
 			<TextStandout content={TextStandout3}/>
