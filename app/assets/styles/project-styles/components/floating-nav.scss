@@ -1,0 +1,78 @@
+@use "../../style-library/all-vars" as vars;
+
+
+.floatingNav{
+	@mixin text-style{
+		@extend %text-blocky;
+		font-size: vars.$font-size-tiny;
+	}
+	position: fixed;
+	right: 2rem;
+	bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	display: block;
+	z-index: 10;
+	background-color: var(--color-bg);
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	overflow: hidden;
+	@include vars.break(tablet){
+		right: 4rem;
+		gap: 1rem;
+		height: 4rem;
+		flex-direction: row;
+	}
+	margin-bottom: 0;
+	border: 1px solid var(--color-accent);
+	&:hover, &:focus{
+		border-width: .5px;
+		border-color: var(--color-foreground);
+	}
+	border-bottom: 0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	&__backTop{
+		margin-bottom: 0;
+		svg{
+			height: 4rem;
+			width: 4rem;
+		}
+		@include vars.break-under(tablet){
+			display: flex;
+			align-items: center;
+		}
+		&::after{
+			content: 'Back to top';
+			padding: .3em;
+			text-decoration: none;
+			@include text-style;
+			@include vars.break(tablet){
+				content: '';
+			}
+		}
+	}
+	&__nav{
+		display: flex;
+		padding: .5em .5em 0;
+		flex-direction: column;
+		gap: 0;
+		@include vars.break(tablet){
+			align-items: center;
+			flex-direction: row;
+			gap: 1rem;
+			height: 4rem;
+			padding: 0 .5em;
+		}
+		a{
+			@include text-style;
+			font-size: vars.$font-size-tiny;
+			padding: .3em;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
