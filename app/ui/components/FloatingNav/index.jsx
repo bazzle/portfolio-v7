@@ -14,19 +14,21 @@ function FloatingNav(){
 
         useEffect(() => {
                 const sectionElements = Array.from(document.querySelectorAll('section[id]'));
-				const data = sectionElements
-				.filter(section => {
-					const heading = section.querySelector('h2');
-					return heading && !section.classList.contains('hide-from-nav');
-				})
-				.map(section => {
-					const heading = section.querySelector('h2');
+				const toFilterOut = (item) => {
+					const heading = item.querySelector('h2');
+					return heading && !item.classList.contains('hide-from-nav');
+				}
+				const toLoop = (item) => {
+					const heading = item.querySelector('h2');
 					return {
-						id: section.id,
+						id: item.id,
 						label: heading.textContent.trim()
 					};
-                });
-                setSections(data);
+				}
+				const data = sectionElements.filter(section => toFilterOut(section))
+				.map(section => toLoop(section));
+                
+				setSections(data);
 
                 const observer = new IntersectionObserver(entries => {
                         entries.forEach(entry => {
