@@ -13,7 +13,8 @@ function Section({
 	headingHidden,
 	id,
 	deepMb,
-	deepMbLine
+	deepMbLine,
+	hideFromNav
 }) {
 
 	const styleConfigString = [
@@ -23,7 +24,8 @@ function Section({
 		headingHidden && "section____hidden-heading",
 		deepMb && "section____deep-mb",
 		deepMbLine && "section____deep-mb-line",
-		lineTop && "section____line-top"
+		lineTop && "section____line-top",
+		hideFromNav && "hide-from-nav"
 	].filter(Boolean).join(' ');
 
 	const topHeadingOutput = (str) => {
@@ -82,9 +84,16 @@ function Section({
 		}
 		return str
 	}
+
+	const optionalProps = {
+		...(id ? { id: id } : {})
+	}
 	
 	return (
-		<section id={sectionId()} className={`section ${styleConfigString}`}>
+		<section
+		className={`section ${styleConfigString}`}
+		id={sectionId()}
+		>
 			<div className={moduleClassname}>
 				{headingTop && topHeadingOutput(heading) }
 				{mainSectionOutput(layout)}

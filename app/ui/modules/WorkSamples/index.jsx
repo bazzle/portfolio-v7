@@ -47,7 +47,7 @@ function WorkSamples(){
 	}
 
     return(
-		<Section heading={workSamplesContent.title} moduleClassname="themes" layout="toEdges" headingTop line deepMbLine>
+		<Section heading={workSamplesContent.title} moduleClassname="themes" layout="toEdges" headingTop line deepMbLine hideFromNav>
 			<div ref={ref}>
 				<div className="workSamples">
 					<div className="workSamples__main">

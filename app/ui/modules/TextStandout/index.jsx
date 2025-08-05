@@ -10,7 +10,6 @@ function TextStandout({content, line, deepMb, deepMbLine}){
 
 	return(
 		<Section
-			id="text-block"
 			moduleClassname="TextStandout"
 			layout="fullWidth"
 			{...optionalProps}

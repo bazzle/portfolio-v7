@@ -14,12 +14,17 @@ function FloatingNav(){
 
         useEffect(() => {
                 const sectionElements = Array.from(document.querySelectorAll('section[id]'));
-                const data = sectionElements.map(section => {
-                        const heading = section.querySelector('h2');
-                        return {
-                                id: section.id,
-                                label: heading ? heading.textContent.trim() : section.id.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
-                        };
+				const data = sectionElements
+				.filter(section => {
+					const heading = section.querySelector('h2');
+					return heading && !section.classList.contains('hide-from-nav');
+				})
+				.map(section => {
+					const heading = section.querySelector('h2');
+					return {
+						id: section.id,
+						label: heading.textContent.trim()
+					};
                 });
                 setSections(data);
 

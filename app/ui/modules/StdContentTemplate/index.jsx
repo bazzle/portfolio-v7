@@ -13,7 +13,6 @@ function StdContentTemplate({title, bodyContent, deepMb, deepMbLine, id}){
 		<Section
 			heading={title}
 			layout="2col"
-			moduleClassname="TextStandout"
 			noMinHeight
 			{...optionalProps}
 		>
