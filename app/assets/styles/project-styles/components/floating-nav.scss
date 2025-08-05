@@ -3,7 +3,7 @@
 
 .floatingNav{
 	@mixin text-style{
-		@extend %text-blocky;
+		@extend %text-tiny;
 		font-size: vars.$font-size-tiny;
 	}
 	position: fixed;
@@ -61,17 +61,21 @@
 		@include vars.break(tablet){
 			align-items: center;
 			flex-direction: row;
-			gap: 1rem;
+			gap: .5rem;
 			height: 4rem;
 			padding: 0 .5em;
 		}
 		a{
 			@include text-style;
-			font-size: vars.$font-size-tiny;
 			padding: .3em;
 			text-decoration: none;
+
 			&:hover{
 				text-decoration: underline;
+			}
+			color: var(--color-accent-50);
+			&.active{
+				color: var(--color-accent);
 			}
 		}
 	}
