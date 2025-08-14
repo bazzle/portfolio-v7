@@ -1,8 +1,6 @@
 import "@/app/assets/styles/main.scss";
 import Header from "@/app/ui/modules/Header";
 import Footer from "@/app/ui/modules/Footer";
-import BackTop from "@/app/ui/modules/Footer/Backtop";
-import FloatingNav from '@/app/ui/components/FloatingNav';
 
 export const metadata = {
   title: "Barry Richards Design tinkerer",
@@ -16,7 +14,6 @@ export default function RootLayout({ children }) {
 			<Header/>
         	{children}
 			<Footer/>
-			<FloatingNav/>
       	</body>
     </html>
   );

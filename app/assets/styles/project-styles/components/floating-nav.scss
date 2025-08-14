@@ -3,7 +3,7 @@
 
 .floatingNav{
 	@mixin text-style{
-		@extend %text-tiny;
+		@extend %text-blocky;
 		font-size: vars.$font-size-tiny;
 	}
 	position: fixed;
@@ -18,11 +18,15 @@
 	flex-direction: column;
 	gap: 0;
 	overflow: hidden;
+	width: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	@include vars.break(tablet){
 		right: 4rem;
 		gap: 1rem;
-		height: 4rem;
 		flex-direction: row;
+		justify-content: flex-end;
+		width: calc(100vw - 8rem);
 	}
 	margin-bottom: 0;
 	border: 1px solid var(--color-accent);
@@ -35,13 +39,11 @@
 	border-top-right-radius: 4px;
 	&__backTop{
 		margin-bottom: 0;
+		display: flex;
+		align-items: center;
 		svg{
 			height: 4rem;
 			width: 4rem;
-		}
-		@include vars.break-under(tablet){
-			display: flex;
-			align-items: center;
 		}
 		&::after{
 			content: 'Back to top';
@@ -50,32 +52,34 @@
 			@include text-style;
 			@include vars.break(tablet){
 				content: '';
+				display: none;
 			}
 		}
 	}
 	&__nav{
-		display: flex;
-		padding: .5em .5em 0;
 		flex-direction: column;
 		gap: 0;
+		display: none;
 		@include vars.break(tablet){
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
 			align-items: center;
 			flex-direction: row;
 			gap: .5rem;
-			height: 4rem;
-			padding: 0 .5em;
 		}
 		a{
 			@include text-style;
-			padding: .3em;
+			padding: 1em .3em;
 			text-decoration: none;
-
+			line-height: 1;
+			text-align: center;
 			&:hover{
 				text-decoration: underline;
 			}
-			color: var(--color-accent-50);
+			color: var(--color-accent-60);
 			&.active{
-				color: var(--color-accent);
+				color: var(--color-foreground);
 			}
 		}
 	}

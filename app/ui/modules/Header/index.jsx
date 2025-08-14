@@ -1,4 +1,5 @@
 import { NameTitle } from '@/app/content/BodyContent';
+import FloatingNav from '../../components/FloatingNav';
 
 function Header(){
     return(
@@ -11,6 +12,7 @@ function Header(){
 					</a>
 				</h1>
 			</div>
+			<FloatingNav/>
         </header>
     )
 }
