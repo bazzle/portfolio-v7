@@ -45,8 +45,6 @@ export const TextStandout2 = "I embrace all facets of web design and development
 
 export const TextStandout3 = "Thankyou, have a great day!"
 
-export const TextStandout4 = "I have spent a fair chunk of time designing and developing websites. I self-identify as a web design tinkerer."
-
 export const SkillsContent = {
 	title: "Skills and Expertise",
 	bodyContent: () => {
