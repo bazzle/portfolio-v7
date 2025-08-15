@@ -1,7 +1,7 @@
 @use "../../style-library/all-vars" as vars;
 
 .footer{
-	padding: vars.$block-spacing 0;
+	padding: vars.$block-spacing 0 calc(vars.$block-spacing--shallow *2);
 	background-repeat: repeat;
 	position: relative;
 	border-top: 1px solid var(--color-accent);
