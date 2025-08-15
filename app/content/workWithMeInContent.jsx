@@ -1,4 +1,5 @@
 import ListItem from "@/app/ui/components/ListItem"
+import { BtcAcceptedHere } from "@/app/ui/components/Stickers";
 
 // work with me page
 
@@ -7,24 +8,34 @@ export const ContentSection1 = {
 	bodyContent: () => {
 		return(
 			<>
+				<p>I have around 15 years experience working on the web. I&apos;m a generalist who nerds out on everything from web typography to accessibility, to the subtle art of making things <strong>POP</strong>.</p>
+
+				<p>What does this mean in practical terms? What can I <em>really</em> do for you? The no-fluff answer as ChatGPT would say. <strong>I can:</strong></p>
+
+				<ul>
+				<ListItem content={'Improve the <strong>look and feel</strong> of your website'} />
+				<ListItem content={'Audit your website or web app for optimal <strong>accessibility</strong> to the latest WCAG guidelines'} />
+				<ListItem content={'<strong>Make the necessary fixes</strong> for compliance'} />
+				<ListItem content={'Bump up your google Lighthouse score'} />
+				<ListItem content={'Design and build <strong>new features</strong>'} />
+				<ListItem content={'Optimise your pages for <strong>search engines</strong>'} />
+				</ul>
+
 				<p>
-					I have experience designing and developing websites, I self-identify as a web design tinkerer.
+					<span className="text-intro">
+						There&apos;s that annoying broken piece of UI on your website or web app and the developer you used has ghosted you.
+					</span>
 				</p>
-				<p>
-					What does this mean in practical terms? What can I <em>really</em> do for you? The no-fluff answer as ChatGPT would say.
-				</p>
-				<p>
-					I can improve the look and feel of your website. I can audit your website for optimal accessibility to the latest WCAG guidelines. I can make on-page optimisations for search engines.
-				</p>
-				<p>
-					OR, I can produce wireframes and high-fidelity mockups at the early stages of your website or web app development.
-				</p>
+
+				<p>I can step in at any time during the website or app development cycle. Wireframe, mockup, iterate in Figma, build new features, address issues.</p>
+
+				<p>I&apos;m also close to content designers and SEO specialists who I&apos;ve worked with before. We can team up to ensure your website content is the best it can be.</p>
 			</>
 		)
 	}
 }
 
-export const TextStandout1 = "I have spent a fair chunk of time designing and developing websites. I self-identify as a web design tinkerer."
+export const TextStandout1 = "I'm a generalist who nerds out on everything from web typography to accessibility, to the subtle art of making things POP."
 export const TextStandout2 = "Thankyou, have a great day!"
 
 export const ContentSection2 = {
@@ -33,14 +44,17 @@ export const ContentSection2 = {
 		return(
 			<>
 				<p>
-					I do accept Bitcoin for my services. In fact I prefer it as form of payment. Why?
+					I do accept Bitcoin for my services. In fact I prefer it as form of payment, especially for cross-border payments. Why?
 				</p>
 				<ul>
-					<ListItem content={'Reason 1'}/>
-					<ListItem content={'Reason 2'}/>
-					<ListItem content={'Reason 3'}/>
-					<ListItem content={'Reason 4'}/>
+					<ListItem content={'<strong>24 hour 7 days a week</strong> settlement within 30 mins. No waiting for bank transfers'}/>
+					<ListItem content={'<strong>Verifiable</strong> on the blockchain.'}/>
+					<ListItem content={'Backed by <strong>proof-of-work</strong> rather than money printed out of nowhere. True value for value'}/>
 				</ul>
+				<p>
+					Invoices will always be in GBP.
+				</p>
+				<BtcAcceptedHere />
 			</>
 		)
 	}
