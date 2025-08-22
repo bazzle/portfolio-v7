@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && gh-pages -d out --nojekyll"
+    "deploy": "next build && gh-pages -d out --nojekyll --dotfiles"
   },
   "dependencies": {
     "browser-sync": "^3.0.3",
