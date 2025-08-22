@@ -349,7 +349,7 @@ export const GetInTouchContent = {
 	bodyContent: () => {
 		const emailContent = 'email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>';
 		const xContent = 'X: <a href="https://x.com/bazzle">@bazzle</a>';
-		const nostrContent = 'Coming soon';
+		const nostrContent = 'Find me on Nostr: bazzle@br-web.me';
 		const linkedInContent = '<a href="https://www.linkedin.com/in/br-web">LinkedIn</a>';
 		const cvContent = '<a href="./files/cv.pdf">CV</a>'
 		const gitHubContent = '<a href="https://github.com/bazzle">GitHub</a>'
