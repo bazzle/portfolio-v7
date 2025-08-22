@@ -12,7 +12,8 @@ import {
 	WhatNextContent,
 	TextStandout1,
 	TextStandout2,
-	TextStandout3
+	TextStandout3,
+	GetInTouchContent
 } from '@/app/content/BodyContent';
 
 
@@ -35,6 +36,12 @@ function Home(){
 				bodyContent={WhatNextContent.bodyContent()}
 			/>
 			<Cards/>
+			<StdContentTemplate
+				id="get-in-touch"
+				title={GetInTouchContent.title}
+				bodyContent={GetInTouchContent.bodyContent()}
+				deepMbLine
+			/>
 			<TextStandout content={TextStandout3}/>
 		</main>
 	)

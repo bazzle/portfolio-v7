@@ -1,8 +1,9 @@
 import Clients from "@/app/ui/modules/Hero/Clients";
+import ActionLink from "@/app/ui/components/ActionLink";
 import BgShapes from '@/app/ui/components/BgShapes';
-import ActionLink from '@/app/ui/components/ActionLink';
 import Spacer from '@/app/ui/components/Spacer';
 import Profile from "@/app/ui/components/Profile";
+import Link from "next/link";
 
 function Hero(){
 
@@ -35,15 +36,9 @@ function Hero(){
 						<div className="hero__footSection__intro">
 							<div className="hero__footSection__intro__main">
 								<p>
-									<strong>Hello!</strong> I’m a UK based web designer, developer and accessibility consultant.
+									<strong>Hello!</strong> I’m a UK based web designer, developer and accessibility consultant.<br/>
+									<Link href="#who-i-am-and-what-i-do">Read on</Link> to learn more about me, or <Link href="#get-in-touch">Get in touch</Link>!
 								</p>
-							</div>
-							<div className="hero__footSection__contacts">
-								<ActionLink linkString="./files/cv.pdf" textString="CV" printString="barry@br-web.me" />
-								<ActionLink linkString="https://www.linkedin.com/in/br-web" textString="LinkedIn" printString="linkedin.com/in/br-web/" />
-								<ActionLink linkString="https://github.com/bazzle" textString="Github" printString="github.com/bazzle/" />
-								<ActionLink linkString="mailto:barry@br-web.me" textString="Drop me an email" printString="barry@br-web.me" />
-								<ActionLink linkString="/work-with-me" textString="Work with me" />
 							</div>
 						</div>
 						<Spacer mobile />

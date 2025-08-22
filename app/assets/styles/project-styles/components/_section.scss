@@ -4,6 +4,7 @@
 $spacingunit: clamp(4rem, 8vw, 28rem);
 
 .section{
+	margin-top: vars.$block-spacing--shallow;
 	margin-bottom: $spacingunit;
 	position: relative;
 	background-color: var(--color-bg-alt-70);
