@@ -12,7 +12,7 @@ import {
         IconGrid,
 		IconCopy
 } from "@/app/ui/components/icons";
-import CopyText from "@/app/ui/components/CopyText";
+import NostrCopy from "@/app/ui/components/NostrCopy";
 
 export const NameTitle = {
 	name: "Barry Richards",
@@ -359,11 +359,17 @@ export const GetInTouchContent = {
 			<>
 				<p>
 					Some external links:<br/>
-					<a href="./files/cv.pdf">CV</a> — <a href="https://www.linkedin.com/in/br-web">LinkedIn</a> – <a href="https://github.com/bazzle">GitHub</a>
+					<a href="./files/cv.pdf">CV</a>
+					<span className="divider"></span>
+					<a href="https://www.linkedin.com/in/br-web">LinkedIn</a>
+					<span className="divider"></span>
+					<a href="https://github.com/bazzle">GitHub</a>
 				</p>
 				<p>
 					Get in touch:<br/>
-					email: <a href="mailto:barry@br-web.me">barry@br-web.me</a> — <CopyText/>
+					email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>
+					<span className="divider"></span>
+					<NostrCopy/>
 				</p>
 			</>
 		)
