@@ -13,6 +13,7 @@ import {
 		IconCopy
 } from "@/app/ui/components/icons";
 import NostrCopy from "@/app/ui/components/NostrCopy";
+import HorizontalList from "@/app/ui/components/HorizontalList";
 
 export const NameTitle = {
 	name: "Barry Richards",
@@ -349,28 +350,19 @@ export const ContentSection3 = {
 export const GetInTouchContent = {
 	title: "Get in touch / Links",
 	bodyContent: () => {
-		const emailContent = 'email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>';
-		const xContent = 'X: <a href="https://x.com/bazzle">@bazzle</a>';
-		const nostrContent = 'Find me on Nostr: bazzle@br-web.me';
-		const linkedInContent = '<a href="https://www.linkedin.com/in/br-web">LinkedIn</a>';
+		const emailContent = 'email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>'
+		const xContent = 'X: <a href="https://x.com/bazzle">@bazzle</a>'
+		const linkedInContent = '<a href="https://www.linkedin.com/in/br-web">LinkedIn</a>'
 		const cvContent = '<a href="./files/cv.pdf">CV</a>'
 		const gitHubContent = '<a href="https://github.com/bazzle">GitHub</a>'
 		return(
 			<>
-				<p>
-					Some external links:<br/>
-					<a href="./files/cv.pdf">CV</a>
-					<span className="divider"></span>
-					<a href="https://www.linkedin.com/in/br-web">LinkedIn</a>
-					<span className="divider"></span>
-					<a href="https://github.com/bazzle">GitHub</a>
-				</p>
-				<p>
-					Get in touch:<br/>
-					email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>
-					<span className="divider"></span>
-					<NostrCopy/>
-				</p>
+				<h3 class="text-blocky">External links:</h3>
+				<HorizontalList listItems={[cvContent, linkedInContent, gitHubContent]} />
+				<h3 class="text-blocky">Get in touch:</h3>
+				<HorizontalList listItems={[emailContent, xContent]} />
+				<h3 class="text-blocky">Find me on nostr:</h3>
+				<p><NostrCopy/></p>
 			</>
 		)
 	}

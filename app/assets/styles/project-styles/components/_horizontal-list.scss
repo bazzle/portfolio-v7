@@ -1,0 +1,44 @@
+@use "../../style-library/all-vars" as vars;
+
+.horizontalList{
+	ul{
+		display: inline-flex;
+		gap: .3em;
+		flex-wrap: wrap;
+		width: 100%;
+		flex-direction: column;
+		@include vars.break(tablet){
+			flex-direction: row;
+			align-items: center;
+		}
+		li{
+			margin-bottom: 0;
+			@include vars.break(tablet){
+				display: flex;
+				align-items: center;
+				gap: .3em;
+				flex-direction: row;
+				margin-bottom: .6rem!important;
+				&::after{
+					content: '';
+					display: block;
+					flex-grow: 1;
+					height: 1px;
+					width: 4rem;
+					background-color: var(--color-accent-alt);
+					position: relative;
+					top: 2px;
+				}
+			}
+			a{
+				display: inline-block;
+			}
+			
+			&:last-of-type{
+				&::after{
+					display: none;
+				}
+			}
+		}
+	}
+}
