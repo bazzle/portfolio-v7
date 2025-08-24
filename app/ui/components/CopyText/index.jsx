@@ -23,7 +23,7 @@ function CopyText(){
 
 	return (
 		<span className="copyText">
-			<span>Find me on Nostr:</span> <button aria-label="Copy to nostr ID to clipboard" onClick={HandleClick}>{nostrId}<IconCopy/></button>{messageContainer()}
+			<span>Find me on Nostr:</span> <button aria-label="Copy nostr ID to clipboard" onClick={HandleClick}>{nostrId}<IconCopy/></button>{messageContainer()}
 		</span>
 	)
 }
