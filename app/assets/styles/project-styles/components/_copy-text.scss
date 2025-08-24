@@ -1,0 +1,30 @@
+@use "../../style-library/all-vars" as vars;
+
+.copyText{
+	display: inline-block;
+	position: relative;
+	button{
+		color: var(--color-accent);
+		margin-bottom: 0;
+		gap: .4em;
+		align-items: center;
+		display: inline-flex;
+		@extend %text-link-defaults;
+		svg{
+			width: 10px;
+		}
+	}
+	&__popupMessage{
+		color: white;
+		background: black;
+		@extend %text-miniscule;
+		text-transform: uppercase;
+		position: absolute;
+		right: -.5em;
+		padding: .1em .5em .2em;
+		border-radius: 2px;
+		display: inline-block;
+		top: 50%;
+		transform: translate(100%, -50%);
+	}
+}

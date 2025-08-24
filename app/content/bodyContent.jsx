@@ -10,7 +10,9 @@ import {
         IconBalance,
         IconAi,
         IconGrid,
+		IconCopy
 } from "@/app/ui/components/icons";
+import CopyText from "@/app/ui/components/CopyText";
 
 export const NameTitle = {
 	name: "Barry Richards",
@@ -356,21 +358,13 @@ export const GetInTouchContent = {
 		return(
 			<>
 				<p>
-					Some external links:
+					Some external links:<br/>
+					<a href="./files/cv.pdf">CV</a> — <a href="https://www.linkedin.com/in/br-web">LinkedIn</a> – <a href="https://github.com/bazzle">GitHub</a>
 				</p>
-				<ul>
-					<ListItem content={linkedInContent}/>
-					<ListItem content={cvContent}/>
-					<ListItem content={gitHubContent}/>
-				</ul>
 				<p>
-					You can reach me by email or socials:
+					Get in touch:<br/>
+					email: <a href="mailto:barry@br-web.me">barry@br-web.me</a> — <CopyText/>
 				</p>
-				<ul>
-					<ListItem content={emailContent}/>
-					<ListItem content={xContent}/>
-					<ListItem content={nostrContent}/>
-				</ul>
 			</>
 		)
 	}
