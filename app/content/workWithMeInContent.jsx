@@ -1,5 +1,7 @@
 import ListItem from "@/app/ui/components/ListItem"
 import { BtcAcceptedHere } from "@/app/ui/components/Stickers";
+import NostrCopy from "@/app/ui/components/NostrCopy";
+import HorizontalList from "@/app/ui/components/HorizontalList";
 
 // work with me page
 
@@ -61,21 +63,21 @@ export const ContentSection2 = {
 }
 
 export const GetInTouchContent = {
-	title: "Get in touch",
+	title: "Get in touch / Links",
 	bodyContent: () => {
-		const emailContent = 'email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>';
-		const xContent = 'X: <a href="https://x.com/bazzle">@bazzle</a>';
-		const nostrContent = 'nostr: <a href="https://nosta.me/27a3d96de5945c3e9e522e63738ed289b1cfde8a7eca1fa31a953c3b23c87908">nosta.me</a>';
+		const emailContent = 'email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>'
+		const xContent = 'X: <a href="https://x.com/bazzle">@bazzle</a>'
+		const linkedInContent = '<a href="https://www.linkedin.com/in/br-web">LinkedIn</a>'
+		const cvContent = '<a href="./files/cv.pdf">CV</a>'
+		const gitHubContent = '<a href="https://github.com/bazzle">GitHub</a>'
 		return(
 			<>
-				<p>
-					You can reach me by email or socials.
-				</p>
-				<ul>
-					<ListItem content={emailContent}/>
-					<ListItem content={xContent}/>
-					<ListItem content={nostrContent}/>
-				</ul>
+				<h3 class="text-blocky">External links:</h3>
+				<HorizontalList listItems={[cvContent, linkedInContent, gitHubContent]} />
+				<h3 class="text-blocky">Get in touch:</h3>
+				<HorizontalList listItems={[emailContent, xContent]} />
+				<h3 class="text-blocky">Find me on nostr:</h3>
+				<p><NostrCopy/></p>
 			</>
 		)
 	}
