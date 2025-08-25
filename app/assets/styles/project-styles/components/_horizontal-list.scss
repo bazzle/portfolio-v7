@@ -1,12 +1,18 @@
 @use "../../style-library/all-vars" as vars;
 
 .horizontalList{
+	margin-bottom: 4rem;
+	&__heading{
+		@extend %text-blocky;
+		padding-bottom: .6em;
+	}
 	ul{
 		display: inline-flex;
 		gap: .3em;
 		flex-wrap: wrap;
 		width: 100%;
 		flex-direction: column;
+		margin-bottom: 0;
 		@include vars.break(tablet){
 			flex-direction: row;
 			align-items: center;

@@ -1,16 +1,28 @@
-function HorizontalList({listItems}){
-	 if (!listItems.length) return null;
-	
+import React from "react";
+
+function HorizontalList({listItems, heading}){
+	if (listItems.length === 0) return null;
+
+	const wrapper = (input)=>{
+		if(React.isValidElement(input)){
+			return (<span>{input}</span>)
+		} else {
+			return (<span dangerouslySetInnerHTML={{ __html: input }} />)
+		}
+	}
+
 	return (
-		<span className="horizontalList">
+		<div className="horizontalList">
+			
+			{heading && <h3 className="horizontalList__heading">{heading}</h3>}
 			<ul>
 				{listItems.map((item, index)=>(
 					<li key={index}>
-						<span dangerouslySetInnerHTML={{ __html: item }} />
+						{wrapper(item)}
 					</li>
 				))}
 			</ul>
-		</span>
+		</div>
 	)
 }
 

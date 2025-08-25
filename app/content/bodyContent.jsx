@@ -355,14 +355,12 @@ export const GetInTouchContent = {
 		const linkedInContent = '<a href="https://www.linkedin.com/in/br-web">LinkedIn</a>'
 		const cvContent = '<a href="./files/cv.pdf">CV</a>'
 		const gitHubContent = '<a href="https://github.com/bazzle">GitHub</a>'
+		const nostrContent = <NostrCopy/>
 		return(
 			<>
-				<h3 class="text-blocky">External links:</h3>
-				<HorizontalList listItems={[cvContent, linkedInContent, gitHubContent]} />
-				<h3 class="text-blocky">Get in touch:</h3>
-				<HorizontalList listItems={[emailContent, xContent]} />
-				<h3 class="text-blocky">Find me on nostr:</h3>
-				<p><NostrCopy/></p>
+				<HorizontalList listItems={[cvContent, linkedInContent, gitHubContent]} heading="External links:" />
+				<HorizontalList listItems={[emailContent, xContent]} heading="Get in touch:" />
+				<HorizontalList listItems={[nostrContent]} heading="Find me on nostr:" />
 			</>
 		)
 	}
