@@ -36,7 +36,7 @@ function Hero(){
 						<div className="hero__footSection__intro">
 							<div className="hero__footSection__intro__main">
 								<p>
-									<strong>Hello!</strong> I'm a UK based web designer, developer and accessibility consultant.<br/>
+									<strong>Hello!</strong> I&apos;m a UK based web designer, developer and accessibility consultant.<br/>
 									<Link href="#who-i-am-and-what-i-do">Read on</Link> to learn more about me, <a href="./files/cv.pdf" target="_blank" rel="noopener noreferrer">download my CV</a> or <Link href="#get-in-touch">Get in touch</Link>!
 								</p>
 							</div>
