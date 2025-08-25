@@ -42,7 +42,7 @@ function NostrCopy(){
 
 	return (
 		<span className="copyText">
-			<button aria-label="Copy {nostrId} to clipboard" onClick={HandleClick}>{nostrId}<IconCopy/></button>{messageContainer()}
+			Find me on nostr: <button title="Copy nostr ID to clipboard" aria-label="Copy {nostrId} to clipboard" onClick={HandleClick}>{nostrId}<IconCopy/></button>{messageContainer()}
 		</span>
 	)
 }

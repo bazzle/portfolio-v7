@@ -14,6 +14,7 @@ import {
 } from "@/app/ui/components/icons";
 import NostrCopy from "@/app/ui/components/NostrCopy";
 import HorizontalList from "@/app/ui/components/HorizontalList";
+import Link from "next/link";
 
 export const NameTitle = {
 	name: "Barry Richards",
@@ -350,17 +351,19 @@ export const ContentSection3 = {
 export const GetInTouchContent = {
 	title: "Get in touch / Links",
 	bodyContent: () => {
-		const emailContent = 'email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>'
-		const xContent = 'X: <a href="https://x.com/bazzle">@bazzle</a>'
-		const linkedInContent = '<a href="https://www.linkedin.com/in/br-web">LinkedIn</a>'
-		const cvContent = '<a href="./files/cv.pdf">CV</a>'
-		const gitHubContent = '<a href="https://github.com/bazzle">GitHub</a>'
-		const nostrContent = <NostrCopy/>
+		const email = 'email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>'
+		const x = 'X: <a href="https://x.com/bazzle">@bazzle</a>'
+		const linkedIn = <Link href="https://www.linkedin.com/in/br-web">LinkedIn</Link>
+		const cv = <Link href="./files/cv.pdf">CV</Link>
+		const gitHub = <Link href="https://github.com/bazzle">GitHub</Link>
+		const nostr = <NostrCopy/>
+		const workWithMe = <Link href="/work-with-me">Lets work together</Link>
+		const thoughts = <Link href="https://thoughts2.netlify.app/">Thoughts</Link>
 		return(
 			<>
-				<HorizontalList listItems={[cvContent, linkedInContent, gitHubContent]} heading="External links:" />
-				<HorizontalList listItems={[emailContent, xContent]} heading="Get in touch:" />
-				<HorizontalList listItems={[nostrContent]} heading="Find me on nostr:" />
+				<HorizontalList listItems={[email]} heading="Get in touch:" />
+				<HorizontalList listItems={[x, nostr]} heading="Socials:" />
+				<HorizontalList listItems={[cv, linkedIn, gitHub, thoughts]} heading="Other links:" />
 			</>
 		)
 	}
