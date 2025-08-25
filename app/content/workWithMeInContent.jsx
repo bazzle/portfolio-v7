@@ -68,12 +68,12 @@ export const GetInTouchContent = {
 	bodyContent: () => {
 		const email = 'email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>'
 		const x = 'X: <a href="https://x.com/bazzle">@bazzle</a>'
-		const linkedIn = <Link href="https://www.linkedin.com/in/br-web">LinkedIn</Link>
-		const cv = <Link href="./files/cv.pdf">CV</Link>
-		const gitHub = <Link href="https://github.com/bazzle">GitHub</Link>
+		const linkedIn = <a href="https://www.linkedin.com/in/br-web">LinkedIn</a>
+		const cv = <a href="./files/cv.pdf">CV</a>
+		const gitHub = <a href="https://github.com/bazzle">GitHub</a>
 		const nostr = <NostrCopy/>
 		const workWithMe = <Link href="/work-with-me">Lets work together</Link>
-		const thoughts = <Link href="https://thoughts2.netlify.app/">Thoughts</Link>
+		const thoughts = <a href="https://thoughts2.netlify.app/">Thoughts</a>
 		return(
 			<>
 				<HorizontalList listItems={[email]} heading="Get in touch:" />
