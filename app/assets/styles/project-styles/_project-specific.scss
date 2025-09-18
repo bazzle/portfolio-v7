@@ -2,7 +2,7 @@ $site-width: 1200px;
 $content-width: 700px;
 $extended-width: 1600px;
 
-body{
+.body{
 	&::before, &::after{
 		content: '';
 		top: 0;
@@ -22,7 +22,7 @@ body{
 	}
 }
 
-main{
+.main{
 	&::after{
 		content: '';
 		top: 0;

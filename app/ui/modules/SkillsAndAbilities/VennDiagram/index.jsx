@@ -1,13 +1,14 @@
 'use client'
 
 import LoopActions from './LoopActions.jsx';
+import styles from "./VennDiagram.module.scss";
 
 function VennDiagram() {
 
 	return (
-		<div className="vennDiagram">
-			<div className="vennDiagram__inner">
-			<div className="vennDiagram__textOverlay">
+		<div className={styles.vennDiagram}>
+			<div className={styles.vennDiagram__inner}>
+			<div className={styles.vennDiagram__textOverlay}>
 				<span>Space where <br/>
 				I can</span>
 				<LoopActions />

@@ -1,6 +1,7 @@
 import Tile from "./Tile";
 import Section from '@/app/ui/components/Section';
 import { ThemesContent } from "@/app/content/BodyContent";
+import styles from "./Themes.module.scss";
 
 function Themes(){
 	const tiles = () => {
@@ -20,9 +21,9 @@ function Themes(){
 	
 	return(
 
-		<Section heading={ThemesContent.title} moduleClassname="themes" layout="fullWidth" headingTop headingHidden noLine>
-			<div className="tileContainer">
-				<div className="tileGrid">
+		<Section heading={ThemesContent.title} moduleClassname={styles.themes} layout="fullWidth" headingTop headingHidden noLine>
+			<div className={styles.tileContainer}>
+				<div className={styles.tileGrid}>
 					{tiles()}
 				</div>
 			</div>

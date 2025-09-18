@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import styles from "./Profile.module.scss";
 
 function Profile(){
 	return(
-		<div className="profile">
-			<motion.div className="profile__inner"
+		<div className={styles.profile}>
+			<motion.div className={styles["profile__inner"]}
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			viewport={{ once: false }}

@@ -1,4 +1,5 @@
 import SectionHead from '@/app/ui/components/SectionHead';
+import styles from "./Section.module.scss";
 
 function Section({
 	children,
@@ -17,20 +18,21 @@ function Section({
 	hideFromNav
 }) {
 
-	const styleConfigString = [
-		line && "section____line",
-		noSpacing && "section____no-spacing",
-		noMinHeight && "section____no-min-height",
-		headingHidden && "section____hidden-heading",
-		deepMb && "section____deep-mb",
-		deepMbLine && "section____deep-mb-line",
-		lineTop && "section____line-top",
-		hideFromNav && "hide-from-nav"
+	const sectionClasses = [
+		styles.section,
+		line && styles["section____line"],
+		noSpacing && styles["section____no-spacing"],
+		noMinHeight && styles["section_____no-min-height"],
+		headingHidden && styles["section____hidden-heading"],
+		deepMb && styles["section____deep-mb"],
+		deepMbLine && styles["section____deep-mb-line"],
+		lineTop && 'section____line-top',
+		hideFromNav && 'hide-from-nav'
 	].filter(Boolean).join(' ');
 
 	const topHeadingOutput = (str) => {
 		return (
-			<h2 className="section__heading-top">{str}</h2>
+			<h2 className={styles["section__heading-top"]}>{str}</h2>
 		)
 	}
 
@@ -85,14 +87,13 @@ function Section({
 		return str
 	}
 
-	const optionalProps = {
-		...(id ? { id: id } : {})
-	}
+	const computedId = sectionId();
+	const optionalProps = computedId ? { id: computedId } : {};
 	
 	return (
 		<section
-		className={`section ${styleConfigString}`}
-		id={sectionId()}
+		className={sectionClasses}
+		{...optionalProps}
 		>
 			<div className={moduleClassname}>
 				{headingTop && topHeadingOutput(heading) }

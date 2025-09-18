@@ -1,4 +1,6 @@
-@use "../../style-library/all-vars" as vars;
+@use "../../../assets/styles/style-library/all-vars" as vars;
+
+.themes{}
 
 .tileContainer{
 	position: relative;

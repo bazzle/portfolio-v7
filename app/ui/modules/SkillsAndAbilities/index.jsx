@@ -1,7 +1,8 @@
 import VennDiagram from './VennDiagram';
-import SkillsList from './skillsList';
+import SkillsList from './SkillsList';
 import Section from '@/app/ui/components/Section';
 import { SkillsContent } from '@/app/content/BodyContent';
+import styles from "./SkillsAndAbilities.module.scss";
 
 function SkillsAndAbilities(){
 
@@ -9,9 +10,9 @@ function SkillsAndAbilities(){
 	const content = SkillsContent.bodyContent()
 
     return(
-		<Section heading={title} moduleClassname='skillsAbilities' id="skills-and-abilities" layout='2col' noLineMobile>
+		<Section heading={title} moduleClassname={styles.skillsAbilities} id="skills-and-abilities" layout='2col' noLineMobile>
 			<SkillsList />
-			<div className="skillsAbilities__bodyText">
+			<div className={styles["skillsAbilities__bodyText"]}>
 				<VennDiagram />
 				{content}
 			</div>

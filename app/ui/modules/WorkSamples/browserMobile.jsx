@@ -1,9 +1,9 @@
 import propTypes from 'prop-types';
-
+import styles from "./WorkSamples.module.scss";
 
 function BrowserMobile({src, alt}){
     return(
-		<div className="browser_mobile">
+		<div className={styles.browserMobile}>
 			<svg viewBox="0 0 142 280" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect width="142" height="280" rx="3" className="fill-bg" />
 			<rect x="6" y="6" width="130" height="15" rx="2" className="fill-bg-solid"/>

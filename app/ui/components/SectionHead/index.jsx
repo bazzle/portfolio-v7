@@ -1,16 +1,22 @@
 import propTypes from "prop-types";
 
 import StylisedLine from "@/app/ui/components/StylisedLine";
+import styles from "./SectionHead.module.scss";
+
 function SectionHead({
     titleString = 'Section title',
     separator = false,
 	noLineMobile
 }){
-	const headingClassString = `${separator ? "sectionHead__title" : "sectionHead__title____no_separator"}`
+	const headingClasses = [
+		separator ? styles["sectionHead__title"] : styles["sectionHead__title____no_separator"],
+		noLineMobile && styles["sectionHead__title____no_indent_mobile"]
+	].filter(Boolean).join(' ');
+
     return (
-        <div className={"sectionHead"}>
+        <div className={`${styles.sectionHead} sectionHead`}>
 			<StylisedLine />
-            <h2 className={headingClassString}>
+            <h2 className={headingClasses}>
 				{titleString}
 			</h2>
         </div>

@@ -1,4 +1,5 @@
 import Section from '@/app/ui/components/Section';
+import styles from "./TextStandout.module.scss";
 
 function TextStandout({content, line, deepMb, deepMbLine}){
 
@@ -10,12 +11,12 @@ function TextStandout({content, line, deepMb, deepMbLine}){
 
 	return(
 		<Section
-			moduleClassname="TextStandout"
+			moduleClassname={styles.textStandout}
 			layout="fullWidth"
 			{...optionalProps}
 			>
-			<blockquote className="textStandout__blockquote">
-				<p className="textStandout__blockquote__text">
+			<blockquote className={styles["textStandout__blockquote"]}>
+				<p className={styles["textStandout__blockquote__text"]}>
 					{content}
 				</p>
 			</blockquote>

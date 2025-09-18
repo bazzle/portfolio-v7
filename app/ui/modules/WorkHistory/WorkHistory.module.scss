@@ -1,8 +1,8 @@
-@use "../../style-library/all-vars" as vars;
+@use "../../../assets/styles/style-library/all-vars" as vars;
 
 .workHistory{
 	position: relative;
-	.sectionHead{
+	:global(.sectionHead){
 		@include vars.break(desktop-wider){
 			margin-top: 9rem;
 		}
@@ -109,6 +109,8 @@
 			}
 		}
 	}
+	&.not_active{}
+
 	&:first-of-type{
 		&.is_active{
 			@include vars.break(desktop-wider){
