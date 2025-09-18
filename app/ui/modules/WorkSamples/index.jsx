@@ -7,6 +7,7 @@ import {workSamplesContent} from '@/app/content/BodyContent';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
 import Image from 'next/image';
+import styles from "./WorkSamples.module.scss";
 
 function WorkSamples(){
 
@@ -47,11 +48,11 @@ function WorkSamples(){
 	}
 
     return(
-		<Section heading={workSamplesContent.title} moduleClassname="themes" layout="toEdges" headingTop line deepMbLine hideFromNav>
+		<Section heading={workSamplesContent.title} moduleClassname={styles.workSamples} layout="toEdges" headingTop line deepMbLine hideFromNav>
 			<div ref={ref}>
-				<div className="workSamples">
-					<div className="workSamples__main">
-						<motion.div className="workSamples__strip" style={{ left }}>
+				<div className={styles.workSamples}>
+					<div className={styles["workSamples__main"]}>
+						<motion.div className={styles["workSamples__strip"]} style={{ left }}>
 							<BrowserDesktop
 								src={images.image_bdo_dt.props.src}
 								alt={images.image_bdo_dt.props.alt}
@@ -85,7 +86,7 @@ function WorkSamples(){
 								alt={images.image_chevening_dt.props.alt}
 							/>
 						</motion.div>
-						<motion.div className="workSamples__strip" style={{ right }} >
+						<motion.div className={styles["workSamples__strip"]} style={{ right }} >
 							<BrowserDesktop
 								src={images.image_nao2_dt.props.src}
 								alt={images.image_nao2_dt.props.alt}

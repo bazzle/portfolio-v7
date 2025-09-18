@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./HorizontalList.module.scss";
 
 function HorizontalList({listItems, heading}){
 	if (listItems.length === 0) return null;
@@ -12,9 +13,8 @@ function HorizontalList({listItems, heading}){
 	}
 
 	return (
-		<div className="horizontalList">
-			
-			{heading && <h3 className="horizontalList__heading">{heading}</h3>}
+		<div className={styles.horizontalList}>
+			{heading && <h3 className={styles["horizontalList__heading"]}>{heading}</h3>}
 			<ul>
 				{listItems.map((item, index)=>(
 					<li key={index}>

@@ -1,27 +1,27 @@
-@use "../../style-library/all-vars" as vars;
+@use "../../../assets/styles/style-library/all-vars" as vars;
 
-.actionLink{
+.actionLink {
 	display: flex;
 	align-items: center;
 	gap: .4em;
-	@media print{
-		&::after{
+	@media print {
+		&::after {
 			content: attr(data-label);
 		}
 	}
-	a{
+	a {
 		@extend %standalone-link;
 		cursor: pointer;
-		@media print{
+		@media print {
 			display: none;
 		}
 	}
-	svg{
+	svg {
 		width: 12px;
 		height: 12px;
 		fill: var(--color-accent);
 		position: relative;
-		@media print{
+		@media print {
 			width: 8px;
 			height: 8px;
 			top: -1px;

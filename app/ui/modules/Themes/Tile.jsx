@@ -1,26 +1,32 @@
 
 import PropTypes from "prop-types";
+import styles from "./Themes.module.scss";
 
 function Tile({ component, nameFirstLine, nameSecondLine, description }){
 
 	function iconBlock(){
 		return(
-			<div className="tile__icon">
+			<div className={styles["tile__icon"]}>
 				{component}
 			</div>
 		)
 	}
+
+	const tileClasses = [
+		styles.tile,
+		!component && styles["tile____noicon"]
+	].filter(Boolean).join(' ');
+
 	return (
-		<div className={`tile ${component ? "tile____icon" : "tile____noicon"}`}>
-			<div className="tile__inner">
-				
+		<div className={tileClasses}>
+			<div className={styles["tile__inner"]}>
 				{component && iconBlock()}
-				<div className="tile__content">
-					<h3 className="tile__name">
+				<div>
+					<h3 className={styles["tile__name"]}>
 						<span>{nameFirstLine}</span>
 						{nameSecondLine && <span>{nameSecondLine}</span>}
 					</h3>
-					<p className="tile__description">
+					<p className={styles["tile__description"]}>
 						{description}
 					</p>
 				</div>

@@ -16,7 +16,7 @@ export const metadata = {
 
 function WorkWithMe() {
 	return (
-		<main>
+		<main className="main">
 			<Hero2/>
 			<StdContentTemplate
 				title={ContentSection1.title}

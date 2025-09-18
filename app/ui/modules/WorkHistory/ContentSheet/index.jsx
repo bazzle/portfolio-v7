@@ -1,4 +1,5 @@
 import ListItem from '@/app/ui/components/ListItem';
+import styles from "./ContentSheet.module.scss";
 
 function ContentSheet({ contentSheetObj, isHidden }) {
 
@@ -26,7 +27,7 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 			return (
 				<>
 					<h4>Clients</h4>
-					<ul className="contentSheet__clients_list">
+					<ul className={styles["contentSheet__clients_list"]}>
 						{clients.map((item, index) => {
 							return <ListItem key={index} blocky content={item}/>
 						})}
@@ -37,25 +38,28 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 			return false
 		}
 	}
-	const classListString = `contentSheet ${ isHidden ? "contentSheet_hidden" : ""}`;
+	const classListString = [
+		styles.contentSheet,
+		isHidden ? styles.contentSheet_hidden : undefined
+	].filter(Boolean).join(' ');
 
 	return (
 		<div id={`panel-${id}`} className={classListString} role="tabpanel">
 			<div className="inner-2col">
-				<div className="contentSheet__main">
-			  		<h3 className="contentSheet__name visually-hidden--show-print">{name}</h3>
-			  		<p className="contentSheet__dates">
+				<div className={styles["contentSheet__main"]}>
+			  		<h3 className={`${styles["contentSheet__name"]} visually-hidden--show-print`}>{name}</h3>
+			  		<p className={styles["contentSheet__dates"]}>
 						<span>{startDate} – {endDate}</span>
 			  		</p>
-			  		<p className="contentSheet__intro">
+			  		<p className={styles["contentSheet__intro"]}>
 						{intro}
 			  		</p>
-			  		<div className="contentSheet__body_text">
+			  		<div className={styles["contentSheet__body_text"]}>
 						{bodyContent}
 			  		</div>
-			  		<div className="contentSheet__metadata">
+			  		<div className={styles["contentSheet__metadata"]}>
 						<h4>Duration</h4>
-						<p className="contentSheet__metadata__duration">
+						<p className={styles["contentSheet__metadata__duration"]}>
 				  			{duration}
 						</p>
 						{clientList()}

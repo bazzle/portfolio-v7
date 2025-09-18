@@ -1,23 +1,10 @@
-@use "../../style-library/all-vars" as vars;
+@use "../../../assets/styles/style-library/all-vars" as vars;
 
 .skillsAbilities{
 	&__bodyText{
 		width: 100%;
 		&>:last-child {
 			margin-bottom: 0;
-		}
-		.vennDiagram{
-			margin-bottom: vars.$block-spacing;
-			width: 100%;
-			max-width: 400px;
-			@include vars.break(desktop){
-				max-width: 300px;
-				min-width: 250px;
-				float: right;
-				width: 22vw;
-				margin-bottom: calc(vars.$block-spacing--shallow /2);
-				margin-left: calc(vars.$block-spacing--shallow /2);
-			}
 		}
 	}
 }
@@ -65,11 +52,5 @@
 			text-align: left;
 			flex-shrink: 0;
 		}
-	}
-}
-
-.col-1{
-	@media print{
-		display: none;
 	}
 }

@@ -1,4 +1,4 @@
-@use "../../style-library/all-vars" as vars;
+@use "../../../assets/styles/style-library/all-vars" as vars;
 
 
 .floatingNav{
@@ -60,25 +60,31 @@
 		flex-direction: column;
 		gap: 0;
 		display: none;
+		padding: 1rem;
 		@include vars.break(tablet){
+			padding: .5rem;
 			display: flex;
 			width: 100%;
 			justify-content: space-around;
+			flex-wrap: wrap;
 			align-items: center;
 			flex-direction: row;
-			gap: .5rem;
+			gap: 0 .5rem;
 		}
 		a{
 			@include text-style;
-			padding: 1em .3em;
+			padding: .5em .3em;
 			text-decoration: none;
 			line-height: 1;
 			text-align: center;
+			@include vars.break(tablet){
+				padding: .7em .3em;
+			}
 			&:hover{
 				text-decoration: underline;
 			}
 			color: var(--color-accent-60);
-			&.active{
+			&:global(.active){
 				color: var(--color-foreground);
 			}
 		}

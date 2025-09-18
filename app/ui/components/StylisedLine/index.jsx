@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "motion/react";
-
+import styles from "./StylisedLine.module.scss";
 
 function StylisedLine(){
 	return (
-		<div className="stylisedLine" role="presentation">
+		<div className={styles.stylisedLine} role="presentation">
 			<motion.div
-				className="stylisedLine__line"
+				className={styles["stylisedLine__line"]}
 				initial={{ width: "30%", opacity: 0 }}
 				whileInView={{width: "100%", opacity: 1 }}
 				viewport={{ once: true }}
@@ -21,7 +21,7 @@ function StylisedLine(){
 			>
 			</motion.div>
 			<motion.div
-				className="stylisedLine__diamond"
+				className={styles["stylisedLine__diamond"]}
 				initial={{ opacity: 0, scale: 0.1 }}
 				whileInView={{ opacity: 1, scale: 1 }}
 				viewport={{ once: true }}

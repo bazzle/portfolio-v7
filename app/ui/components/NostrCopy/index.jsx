@@ -1,6 +1,7 @@
 'use client'
 import { IconCopy } from "@/app/ui/components/icons";
 import { useState } from "react";
+import styles from "./NostrCopy.module.scss";
 
 function NostrCopy(){
 	const nostrId = 'bazzle@br-web.me'
@@ -17,7 +18,7 @@ function NostrCopy(){
 		} else {
 			message = 'Copied!'
 		}
-		return messageShow ? <span className="copyText__popupMessage">{message}</span> : null;
+		return messageShow ? <span className={styles["copyText__popupMessage"]}>{message}</span> : null;
 	}
 
 	const HandleClick = ()=>{
@@ -41,7 +42,7 @@ function NostrCopy(){
 	}
 
 	return (
-		<span className="copyText">
+		<span className={styles.copyText}>
 			Find me on nostr: <button title="Copy nostr ID to clipboard" aria-label="Copy {nostrId} to clipboard" onClick={HandleClick}>{nostrId}<IconCopy/></button>{messageContainer()}
 		</span>
 	)

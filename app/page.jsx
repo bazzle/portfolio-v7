@@ -19,7 +19,7 @@ import {
 
 function Home(){
 	return(
-		<main>
+		<main className="main">
 			<Hero/>
 			<StdContentTemplate
 				title={WelcomeContent.title}

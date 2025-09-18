@@ -1,4 +1,5 @@
 import { SkillsContent } from "@/app/content/BodyContent";
+import styles from "./SkillsAndAbilities.module.scss";
 
 function SkillsList(){
 
@@ -16,13 +17,13 @@ function SkillsList(){
 
 	return(
 
-		<ul className="skillsList">
+		<ul className={styles.skillsList}>
 			{skillsItems.map(item => (
-				<li className="skillsList__item" key={item.id}>
-					<span className="skillsList__item__name">
+				<li className={styles["skillsList__item"]} key={item.id}>
+					<span className={styles["skillsList__item__name"]}>
 						{item.name}
 					</span>
-					<span className="skillsList__item__rating">
+					<span className={styles["skillsList__item__rating"]}>
 						{ratingsAdd(item.rating)}
 					</span>
 				</li>

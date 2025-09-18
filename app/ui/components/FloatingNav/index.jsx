@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from "motion/react";
+import styles from "./FloatingNav.module.scss";
 
 const handleClick = () => {
         window.scrollTo({
@@ -12,6 +13,7 @@ const handleClick = () => {
 
 function FloatingNav(){
         const [sections, setSections] = useState([]);
+        const navClass = styles["floatingNav__nav"];
 
         useEffect(() => {
                 const sectionElements = Array.from(document.querySelectorAll('section[id]'));
@@ -33,7 +35,7 @@ function FloatingNav(){
 
                 const observer = new IntersectionObserver(entries => {
                         entries.forEach(entry => {
-                                const link = document.querySelector(`.floatingNav__nav a[href="#${entry.target.id}"]`);
+                                const link = document.querySelector(`.${navClass} a[href="#${entry.target.id}"]`);
                                 if (link){
                                         entry.isIntersecting ? link.classList.add('active') : link.classList.remove('active');
                                 }
@@ -46,12 +48,12 @@ function FloatingNav(){
                         sectionElements.forEach(section => observer.unobserve(section));
                         observer.disconnect();
                 };
-        }, []);
+        }, [navClass]);
 
         return(
                 sections.length > 0 && (
                         <motion.div
-                                className="floatingNav"
+                                className={styles.floatingNav}
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{
@@ -61,12 +63,12 @@ function FloatingNav(){
                                         damping: 30
                                 }}
                         >
-                                <nav className="floatingNav__nav">
+                                <nav className={navClass}>
                                         {sections.map(({id, label}) => (
                                                 <a key={id} href={`#${id}`}>{label}</a>
                                         ))}
                                 </nav>
-                                <button aria-label='Back to top' className="floatingNav__backTop" onClick={handleClick}>
+                                <button aria-label='Back to top' className={styles["floatingNav__backTop"]} onClick={handleClick}>
                                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path className="fill-bg" d="M3 0.5H30C31.3807 0.5 32.5 1.61929 32.5 3V32.5H0.5V3C0.5 1.61929 1.61929 0.5 3 0.5Z"/>
                                                 <path className="stroke-accent" strokeWidth="1" d="M23.5 19.5002L16.5 13.5002L9.50024 19.4998"/>

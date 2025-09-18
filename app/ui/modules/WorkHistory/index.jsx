@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Section from '@/app/ui/components/Section';
 import ContentSheet from "./ContentSheet";
 import { WorkHistoryContent } from '@/app/content/BodyContent';
+import styles from "./WorkHistory.module.scss";
 
 function WorkHistory(){
 	const mediaQuery = '(min-width: 1340px)';
@@ -61,30 +62,30 @@ function WorkHistory(){
 
 	function navItem(item, index){
 		const isActive = activeSection.id === item.id
-		const conditionalClass = isActive ? "is_active" : "not_active"
+		const conditionalClass = isActive ? styles.is_active : styles.not_active
 		return (
 			<button
 				key={index}
 				role="tab"
 				onClick={(evt) => handleClick(evt, item)}
-				className={`workHistoryItem ${conditionalClass}`}
+				className={[styles.workHistoryItem, conditionalClass].filter(Boolean).join(' ')}
 				aria-controls={`panel-${item.id}`}
 				aria-selected={isActive ? 'true' : 'false'}
 			>
-				<span className="workHistoryItem__inner">
-					<span className="workHistoryItem__title">{item.name}</span>
-					<span className="workHistoryItem__dates">{item.startDate} – {item.endDate}</span>
+				<span className={styles["workHistoryItem__inner"]}>
+					<span className={styles["workHistoryItem__title"]}>{item.name}</span>
+					<span className={styles["workHistoryItem__dates"]}>{item.startDate} – {item.endDate}</span>
 				</span>
-				{isActive && <span className="indicator" ref={currentItemRef}></span> }
+				{isActive && <span className={styles.indicator} ref={currentItemRef}></span> }
 			</button>
 		)
 	}
     return (
-		<Section moduleClassname="workHistory" heading={title} id="work-history" layout="2col">
-			<div className="workHistory__inner">
-				<nav ref={tablistRef} role="tablist" className="workHistory__nav">
+		<Section moduleClassname={styles.workHistory} heading={title} id="work-history" layout="2col">
+			<div className={styles["workHistory__inner"]}>
+				<nav ref={tablistRef} role="tablist" className={styles["workHistory__nav"]}>
 					{ sectionsArray.map((item, index) => navItem(item, index)) }
-					<div role="presentation" className="extending_line" ref={extendingLineRef}></div>
+					<div role="presentation" className={styles.extending_line} ref={extendingLineRef}></div>
 				</nav>
 				{sectionsArray.map((item, index) => (
 					<ContentSheet
