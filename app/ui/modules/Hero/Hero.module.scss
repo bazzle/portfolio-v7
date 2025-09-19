@@ -50,7 +50,7 @@
 		&__main{
 			@extend %text-display;
 			display: block;
-			padding-top: .3em;
+			padding-top: .1em;
 			padding-bottom: .3em;
 			@media (prefers-color-scheme: light){
 				color: var(--color-foreground);
