@@ -4,7 +4,7 @@ import Section from '@/app/ui/components/Section';
 import {CardGridContent} from '@/app/content/BodyContent';
 import { motion } from "motion/react";
 import styles from "./Cards.module.scss";
-const MotionImage = motion(Image);
+const MotionImage = motion.create(Image);
 
 function Cards(){
 
