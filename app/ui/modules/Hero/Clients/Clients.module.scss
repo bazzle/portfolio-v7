@@ -1,4 +1,4 @@
-@use "../../../../assets/styles/style-library/all-vars" as vars;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .clients{
 	@include vars.svgColor(var(--color-foreground));

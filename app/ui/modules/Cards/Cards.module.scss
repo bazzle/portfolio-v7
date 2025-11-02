@@ -1,4 +1,4 @@
-@use "../../../assets/styles/style-library/all-vars" as vars;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .cards{
 	$gridGap: clamp(1rem, 5vw, 100px);

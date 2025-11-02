@@ -1,4 +1,4 @@
-@use "../../../assets/styles/style-library/all-vars" as vars;
+@use "@/app/assets/styles/style-library/all-vars" as vars;
 @use "../../../assets/styles/style-library/helpers" as *;
 
 $spacingunit: clamp(4rem, 8vw, 28rem);
