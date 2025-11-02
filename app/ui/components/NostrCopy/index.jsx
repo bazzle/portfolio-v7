@@ -1,5 +1,5 @@
 'use client'
-import { IconCopy } from "@/app/ui/components/icons";
+import { IconCopy } from "@/app/ui/components/Icons";
 import { useState } from "react";
 import styles from "./NostrCopy.module.scss";
 

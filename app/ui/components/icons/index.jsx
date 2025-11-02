@@ -1,6 +1,5 @@
 'use client';
-
-import styles from "./icons.module.scss";
+import styles from "./Icons.module.scss";
 
 const iconClass = (variant) => {
 	const moduleVariant = variant ? styles[`icon____${variant}`] : undefined;

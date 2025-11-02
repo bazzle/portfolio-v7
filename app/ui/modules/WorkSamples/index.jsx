@@ -1,9 +1,9 @@
 'use client'
 
-import BrowserMobile from './browserMobile';
-import BrowserDesktop from './browserDesktop';
+import BrowserMobile from './BrowserMobile';
+import BrowserDesktop from './BrowserDesktop';
 import Section from '@/app/ui/components/Section';
-import {workSamplesContent} from '@/app/content/BodyContent';
+import {WorkSamplesContent} from '@/app/content/BodyContent';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
 import Image from 'next/image';
@@ -48,7 +48,7 @@ function WorkSamples(){
 	}
 
     return(
-		<Section heading={workSamplesContent.title} moduleClassname={styles.workSamples} layout="toEdges" headingTop line deepMbLine hideFromNav>
+		<Section heading={WorkSamplesContent.title} moduleClassname={styles.workSamples} layout="toEdges" headingTop line deepMbLine hideFromNav>
 			<div ref={ref}>
 				<div className={styles.workSamples}>
 					<div className={styles["workSamples__main"]}>
