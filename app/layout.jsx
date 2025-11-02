@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 		<head>
 			<link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
+			<link rel="stylesheet" href="https://use.typekit.net/sqp3jyo.css"></link>
 		</head>
     	<body className="body">
 			<Header/>
