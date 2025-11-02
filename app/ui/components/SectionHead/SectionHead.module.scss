@@ -7,13 +7,13 @@
 	&__title{
 		margin: 0;
 		padding-left: 0;
-		@include vars.break(tablet){
-		padding-left: calc(1.5vw + 1.1em);
-		}
 		padding-bottom: 2rem;
 		padding-top: .5em;
 		@extend %text-heading--chunky;
 		color: var(--color-accent-alt);
+		@include vars.break(tablet){
+		padding-left: calc(1.5vw + 1.1em);
+		}
 		@media print{
 			padding-left: 0;
 			font-size:4rem;

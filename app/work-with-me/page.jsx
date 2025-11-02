@@ -8,7 +8,7 @@ import {
 	TextStandout1,
 	TextStandout2,
 	GetInTouchContent
-} from '@/app/content/workWithMeInContent';
+} from '@/app/content/WorkWithMeInContent';
 
 export const metadata = {
   title: "Barry Richards Design tinkerer - Work with me",

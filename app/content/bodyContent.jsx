@@ -11,7 +11,7 @@ import {
         IconAi,
         IconGrid,
 		IconCopy
-} from "@/app/ui/components/icons";
+} from "@/app/ui/components/Icons";
 import NostrCopy from "@/app/ui/components/NostrCopy";
 import HorizontalList from "@/app/ui/components/HorizontalList";
 import Link from "next/link";
@@ -148,7 +148,7 @@ export const ThemesContent = {
 	]
 }
 
-export const workSamplesContent = {
+export const WorkSamplesContent = {
 	title: 'Work samples coming soon!'
 }
 
