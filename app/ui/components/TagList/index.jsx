@@ -4,7 +4,7 @@ import styles from './TagList.module.scss';
 function TagList({tags}){
         const tagItems = tags.map((tag, index)=> (
 			<li key={index}>
-					<Link href={`/tag/${tag}`}>{tag}</Link>
+					<Link href={`/${tag}`}>{tag}</Link>
 			</li>
         ));
 	return (
