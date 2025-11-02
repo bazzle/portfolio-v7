@@ -1,0 +1,32 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+%defaults{
+	position: relative;
+	left: 0;
+	top: 0;
+	height: auto;
+	max-width:100%;
+	transform: scale(0.8);
+}
+
+.icon{
+	@extend %defaults;
+	&____glass{
+		left: -1.5rem;
+	}
+}
+
+.dark_mode_hide{
+	visibility:hidden;
+	@include vars.light-mode-wrapper{
+		visibility:visible;
+	}
+	@media print{
+		visibility:visible;
+	}
+}
+.dark_mode_nobg{
+	:global(body.dark-mode) &{
+		fill: none;
+	}
+}
