@@ -33,7 +33,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { identifier } = params;
+  const { identifier } = await params;
   const [post, taggedPosts] = await Promise.all([
     getPostBySlug(identifier),
     getPostsByTag(identifier),
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ThoughtNode({ params }) {
-  const { identifier } = params;
+  const { identifier } = await params
   const post = await getPostBySlug(identifier);
 
   if (post) {
