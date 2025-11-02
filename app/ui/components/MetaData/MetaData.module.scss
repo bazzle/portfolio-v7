@@ -1,0 +1,16 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+.metadata{
+	display: flex;
+	align-items: center;
+	gap: .3em;
+	flex-wrap: wrap;
+	width: 100%;
+	.divider{
+		content: '';
+		height: 1px;
+		width: 100%;
+		max-width: 4rem;
+		background-color: var(--color-accent-alt);
+	}
+}
