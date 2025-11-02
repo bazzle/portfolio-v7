@@ -1,0 +1,15 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+.footer{
+	padding: vars.$block-spacing 0;
+	background-repeat: repeat;
+	position: relative;
+	border-top: .5px solid var(--color-accent);
+	&__content{
+		z-index: 2;
+		position: relative;
+	}
+	@media print{
+		background-image: none;
+	}
+}

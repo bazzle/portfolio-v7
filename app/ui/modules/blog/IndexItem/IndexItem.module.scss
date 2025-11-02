@@ -1,0 +1,34 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+.postIndexItem{
+	display: block;
+	margin-bottom: vars.$block-spacing;
+	width: 100%;
+	max-width: vars.$content-width;
+	&:first-of-type{
+		margin-top: vars.$block-spacing;
+	}
+	&:last-of-type{
+		margin-bottom: vars.$block-spacing;
+	}
+	&__title{
+		a{
+			@extend %text-heading--large;
+			margin-bottom: 0;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	&__metadata{
+		margin-top: .6rem;
+		display: flex;
+		align-items: center;
+		gap: .3em;
+		margin-top: calc(vars.$block-spacing--shallow /4);
+	}
+	&__excerpt{
+		margin-top: calc(vars.$block-spacing--shallow /4);
+	}
+}

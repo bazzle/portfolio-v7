@@ -1,0 +1,60 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+.shareButtons{
+	margin-top: vars.$block-spacing--shallow;
+	display: flex;
+	gap: .5em;
+	flex-wrap: wrap;
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-start;
+	@include vars.break(tablet){
+		flex-direction: row;
+		align-items: center;
+	}
+	&__label{
+		@extend %text-blocky;
+		@include vars.break-under(tablet){
+			margin-bottom: .5em;
+		}
+	}
+	&__divider{
+		content: '';
+		height: 1px;
+		width: 4rem;
+		background-color: var(--color-accent-alt);
+		display: none;
+		@include vars.break(tablet){
+			display: block;
+		}
+	}
+	&__list{
+		display: flex;
+		align-items: center;
+		gap: .5em;
+		flex-wrap: wrap;
+		button{
+			all: unset;
+			width: 36px;
+			height: 36px;
+			display: block;
+			cursor: pointer;
+			svg{
+				border: 1px solid var(--color-accent);
+			}
+		}
+		button:hover, a:hover{
+			svg{
+				border-width: 1px;
+				border-color: var(--color-foreground);
+			}
+		}
+		.divider{
+			content: '';
+			height: 1px;
+			width: 100%;
+			max-width: 4rem;
+			background-color: var(--color-accent-alt);
+		}
+	}
+}

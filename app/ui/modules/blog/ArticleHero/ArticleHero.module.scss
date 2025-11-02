@@ -1,0 +1,42 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+.articleHero{
+	position: relative;
+	height: auto;
+	flex-direction: column;
+	padding-top: vars.$block-spacing--deep;
+	padding-bottom: vars.$block-spacing--deep;
+	@media print{
+		background-image: none;
+	}
+	&__main{
+		display: block;
+		position: relative;
+		z-index: 1;
+	}
+	&__lockup{
+		flex-grow: 1;
+		display: block;
+		width: 100%;
+		position: relative;
+		margin-bottom: 0;
+		max-width: unset;
+		@media print{
+			padding-top: 1em;
+			padding-bottom: vars.$block-spacing--shallow;
+		}
+	}
+	&__title{
+		@extend %text-display-medium;
+		display: block;
+		color: var(--color-accent);
+		@include vars.light-mode-wrapper{
+			color: var(--color-accent);
+		}
+	}
+	&__metadata{
+		display: block;
+		@extend %text-blocky;
+		margin-top: calc(vars.$block-spacing--shallow /2);
+	}
+}
