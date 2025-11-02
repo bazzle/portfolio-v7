@@ -31,20 +31,20 @@ function WorkSamples(){
 	const someArray = ['item1', 'item2'];
 
 	const images = {
-		'image_bdo_dt' : <Image src="images/samples/bdo-dt.webp" alt="BDO" width="700" height="500"/>,
-		'image_bdo_mob' : <Image src="images/samples/bdo-mob.webp" alt="NAO" width="284" height="500"/>,
-		'image_bfi_dt' : <Image src="images/samples/bfi-dt.webp" alt="NAO" width="700" height="500"/>,
-		'image_chevening_dt' : <Image src="images/samples/chevening-dt.webp" alt="NAO" width="700" height="500"/>,
-		'image_chevening2_dt' : <Image src="images/samples/chevening2-dt.webp" alt="NAO" width="700" height="500"/>,
-		'image_nao_dt' : <Image src="images/samples/nao-dt.webp" alt="NAO" width="700" height="500"/>,
-		'image_nao_mob' : <Image src="images/samples/nao-mob.webp" alt="NAO" width="284" height="500"/>,
-		'image_nao2_mob' : <Image src="images/samples/nao2-mob.webp" alt="NAO" width="284" height="500"/>,
-		'image_nao2_dt' : <Image src="images/samples/nao2-dt.webp" alt="NAO" width="700" height="500"/>,
-		'image_nao3_dt' : <Image src="images/samples/nao3-dt.webp" alt="NAO" width="700" height="500"/>,
-		'image_ons_dt' : <Image src="images/samples/ons-dt.webp" alt="BDO" width="700" height="500"/>,
-		'image_ua_dt' : <Image src="images/samples/ua-dt.webp" alt="NAO" width="700" height="500"/>,
-		'image_ua2_dt' : <Image src="images/samples/ua2-dt.webp" alt="NAO" width="700" height="500"/>,
-		'image_ua_mob' : <Image src="images/samples/ua-mob.webp" alt="NAO" width="284" height="500"/>,
+		'image_bdo_dt' : <Image src="/images/samples/bdo-dt.webp" alt="BDO" width="700" height="500"/>,
+		'image_bdo_mob' : <Image src="/images/samples/bdo-mob.webp" alt="NAO" width="284" height="500"/>,
+		'image_bfi_dt' : <Image src="/images/samples/bfi-dt.webp" alt="NAO" width="700" height="500"/>,
+		'image_chevening_dt' : <Image src="/images/samples/chevening-dt.webp" alt="NAO" width="700" height="500"/>,
+		'image_chevening2_dt' : <Image src="/images/samples/chevening2-dt.webp" alt="NAO" width="700" height="500"/>,
+		'image_nao_dt' : <Image src="/images/samples/nao-dt.webp" alt="NAO" width="700" height="500"/>,
+		'image_nao_mob' : <Image src="/images/samples/nao-mob.webp" alt="NAO" width="284" height="500"/>,
+		'image_nao2_mob' : <Image src="/images/samples/nao2-mob.webp" alt="NAO" width="284" height="500"/>,
+		'image_nao2_dt' : <Image src="/images/samples/nao2-dt.webp" alt="NAO" width="700" height="500"/>,
+		'image_nao3_dt' : <Image src="/images/samples/nao3-dt.webp" alt="NAO" width="700" height="500"/>,
+		'image_ons_dt' : <Image src="/images/samples/ons-dt.webp" alt="BDO" width="700" height="500"/>,
+		'image_ua_dt' : <Image src="/images/samples/ua-dt.webp" alt="NAO" width="700" height="500"/>,
+		'image_ua2_dt' : <Image src="/images/samples/ua2-dt.webp" alt="NAO" width="700" height="500"/>,
+		'image_ua_mob' : <Image src="/images/samples/ua-mob.webp" alt="NAO" width="284" height="500"/>,
 	}
 
     return(

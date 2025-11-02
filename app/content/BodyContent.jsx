@@ -282,21 +282,21 @@ export const CardGridContent = {
 	title: "Working on / thinking about",
 	gridItems : [
 		{
-			imageSrc : "images/cards/whois.webp",
+			imageSrc : "/images/cards/whois.webp",
 			imageAlt : "Figure with a question-mark for a head",
 			title : "Bitcoin Truthbombs",
 			description : "2 minute read articles about Bitcoin I write as I learn about the technology and economics.",
 			link : "https://thoughts2.netlify.app/bitcoin-truthbombs"
 		},
 		{
-			imageSrc : "images/cards/sat-power2.webp",
+			imageSrc : "/images/cards/sat-power2.webp",
 			imageAlt : "Sat logo",
 			title : "Satoshi Power",
 			description : "Fun project looking at how the price of a satoshi compares to the smallest units of different fiat currencies. Pulling data from blockchain.com",
 			link : "https://thoughts2.netlify.app/satoshi-power"
 		},
 		{
-			imageSrc : "images/cards/exponential.png",
+			imageSrc : "/images/cards/exponential.png",
 			imageAlt : "Exponential curve depiction",
 			title : "My relationship with AI",
 			description : "I've been cautious about AI, I've had a strong desire to embrace it to improve my productivity and help my learning but formed some boundaries.",
@@ -368,5 +368,4 @@ export const GetInTouchContent = {
 		)
 	}
 }
-
 
