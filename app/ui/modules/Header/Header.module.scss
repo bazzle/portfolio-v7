@@ -27,6 +27,8 @@
 			flex-direction: column;
 			gap: .2em;
 			justify-content: center;
+			text-decoration: none;
+			color: white;
 			@include vars.break(mobile){
 				justify-content: flex-start;
 				flex-direction: row;
@@ -41,8 +43,6 @@
 				flex-shrink: 0;
 				gap: .5em;
 			}
-			text-decoration: none;
-			color: white;
 			span{
 				flex-shrink: 0;
 			}
