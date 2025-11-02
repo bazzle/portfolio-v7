@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import styles from './ArticleMain.module.scss';
 
 function ArticleMain({ bodyContent }) {
@@ -7,7 +8,7 @@ function ArticleMain({ bodyContent }) {
 		<div className={styles.articleMain}>
 				<div className="content-container">
 						<div className={styles.articleMain__body}>
-								{ bodyContent }
+								<MDXRemote source={bodyContent} components={elems} />
 						</div>
 				</div>
 		</div>
