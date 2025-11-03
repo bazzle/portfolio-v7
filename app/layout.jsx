@@ -1,5 +1,4 @@
 import "@/app/assets/styles/main.scss";
-import Header from "@/app/ui/modules/Header";
 import Footer from "@/app/ui/modules/Footer";
 
 export const metadata = {
@@ -15,7 +14,6 @@ export default function RootLayout({ children }) {
 			<link rel="stylesheet" href="https://use.typekit.net/sqp3jyo.css"></link>
 		</head>
     	<body className="body">
-			<Header/>
         	{children}
 			<Footer/>
       	</body>

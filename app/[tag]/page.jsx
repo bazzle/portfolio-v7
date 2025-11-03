@@ -3,6 +3,7 @@ import getPostsByTag from '@/app/utils/get-posts-by-tag.js';
 import getTags from '@/app/utils/get-tags.js';
 import ArticleHero from '@/app/ui/modules/blog/ArticleHero';
 import AfterArchive from '@/app/ui/modules/blog/AfterArticle';
+import Header from "@/app/ui/modules/Header";
 
 function getPosts(tag){
 	return getPostsByTag(tag);
@@ -24,14 +25,17 @@ export default async function TagArchivePage({ params }) {
 	const { tag } = await params;
 	const posts = getPosts(tag);
 	return (
-		<main className="main">
-			<ArticleHero title={`Tag — ${tag}`} />
-			<div className="content-container">
-				{posts.map((post, index) => (
-					<IndexItem key={index} post={post} />
-				))}
-			</div>
-			<AfterArchive/>
-		</main>
+		<>
+			<Header location="blog" />
+			<main className="main">
+				<ArticleHero title={`Tag — ${tag}`} />
+				<div className="content-container">
+					{posts.map((post, index) => (
+						<IndexItem key={index} post={post} />
+					))}
+				</div>
+				<AfterArchive/>
+			</main>
+		</>
 	);
 }

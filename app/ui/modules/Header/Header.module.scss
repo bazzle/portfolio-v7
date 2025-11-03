@@ -1,102 +1,62 @@
 @use "@/app/assets/styles/style-library/all-vars" as vars;
-
+@mixin headerlinkDefaults{
+	height: auto;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	@extend %text-blocky;
+	font-size: 1.6rem;
+	text-decoration: none;
+	&:hover{
+		color: var(--color-foreground);
+	}
+}
 .header{
 	z-index: 2;
 	position: relative;
-	height: 60px;
 	background-color: var(--color-bg-solid);
 	border-top: 1px solid;
 	border-bottom: 1px solid;
 	border-image: linear-gradient(to right, var(--color-accent), var(--color-accent-alt)) 1;
-	&__sitename{
-		position: relative;
-		margin: 0;
-		padding: 0;
-		display: inline-block;
-		a{
-			height: 60px;
-			position: relative;
-			margin: 0;
-			padding: 0;
-			line-height: 1;
-			display: block;
-			@extend %text-blocky;
-			font-size: 1.6rem;
-			display: flex;
-			flex-shrink: 0;
-			flex-direction: column;
-			gap: .2em;
-			justify-content: center;
-			text-decoration: none;
-			color: white;
-			@include vars.break(mobile){
-				justify-content: flex-start;
-				flex-direction: row;
-				align-items: center;
-			}
-			@include vars.break(tablet){
-				flex-shrink: 0;
-				gap: .5em;
-			}
-			@media print{
-				flex-direction: row;
-				flex-shrink: 0;
-				gap: .5em;
-			}
-			span{
-				flex-shrink: 0;
-			}
-			span.header__sitename-name{
-				color: var(--color-accent);
-			}
-		}
-	}
-	&__line{
-		width: 100%;
-		position: relative;
-		&__line{
-			border: 0;
-			margin: 0;
-			padding: 0;
-			height: 1px;
-			background-color: var(--color-accent);
-		}
-		svg{
-			display: none;
-			position: absolute;
-			width: 25px;
-			height: 25px;
-			top: 1px;
-			fill: var(--color-accent);
-			position: absolute;
-			transform: translate(25%, -50%);
-			@include vars.break(tablet){
-				display: block;
-				transform: translate(50%, -50%);
-				right: calc(8vw - 5px);
-			}
-		}
-	}
-	&__dmSwitcher{
-		height: 60px;
-		width: 60px;
-		position: absolute;
-		top: 0;
-		right: 0;
+	&__inner{
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-		color: var(--color-accent);
-		svg{
-			width: 18px;
-			height: 18px;
+		flex-direction: column;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		@include vars.break(tablet){
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
 		}
-		@media print{
-			display: none;
+	}
+	&__sitename{
+		all: unset;
+		&__link{
+			@include headerlinkDefaults;
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: .5em;
+			span{
+				display: block;
+				line-height: 1;
+			}
 		}
-		&:hover{
-			color: var(--color-foreground);
+	}
+	&__nav{
+		display: flex;
+		gap: 1em;
+		a{
+			@include headerlinkDefaults;
+			display: flex;
+			align-items: center;
+			gap: .5em;
+			svg{
+				transform: rotate(180deg);
+				fill: currentColor;
+			}
 		}
 	}
 }

@@ -1,6 +1,8 @@
 import Hero2 from "@/app/ui/modules/Hero2";
 import StdContentTemplate from "@/app/ui/modules/StdContentTemplate";
 import TextStandout from "@/app/ui/modules/TextStandout";
+import Header from "@/app/ui/modules/Header";
+
 // content import
 import {
 	ContentSection1,
@@ -16,25 +18,28 @@ export const metadata = {
 
 function WorkWithMe() {
 	return (
-		<main className="main">
-			<Hero2/>
-			<StdContentTemplate
-				title={ContentSection1.title}
-				bodyContent={ContentSection1.bodyContent()}
-			/>
-			<TextStandout content={TextStandout1} deepMbLine line/>
-			<StdContentTemplate
-				title={ContentSection2.title}
-				bodyContent={ContentSection2.bodyContent()}
-			/>
-			<StdContentTemplate
-				id="get-in-touch"
-				title={GetInTouchContent.title}
-				bodyContent={GetInTouchContent.bodyContent()}
-				deepMbLine
-			/>
-			<TextStandout content={TextStandout2}/>
-		</main>
+		<>
+			<Header />
+			<main className="main">
+				<Hero2/>
+				<StdContentTemplate
+					title={ContentSection1.title}
+					bodyContent={ContentSection1.bodyContent()}
+				/>
+				<TextStandout content={TextStandout1} deepMbLine line/>
+				<StdContentTemplate
+					title={ContentSection2.title}
+					bodyContent={ContentSection2.bodyContent()}
+				/>
+				<StdContentTemplate
+					id="get-in-touch"
+					title={GetInTouchContent.title}
+					bodyContent={GetInTouchContent.bodyContent()}
+					deepMbLine
+				/>
+				<TextStandout content={TextStandout2}/>
+			</main>
+		</>
 	);
 }
 

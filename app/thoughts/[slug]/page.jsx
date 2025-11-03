@@ -5,6 +5,7 @@ import matter from "gray-matter"
 import ArticleHero from "@/app/ui/modules/blog/ArticleHero"
 import ArticleMain from "@/app/ui/modules/blog/ArticleMain"
 import AfterArticle from "@/app/ui/modules/blog/AfterArticle"
+import Header from "@/app/ui/modules/Header"
 
 function getPostContent(slug){
 	const file = `./posts/${slug}.md`;
@@ -39,12 +40,15 @@ export default async function postPage({ params }) {
 	const postTags = post.data.tags
 	
 	return (
-		<main className="main">
-			<article>
-				<ArticleHero title={title} date={rawDate} tags={postTags} />
-				<ArticleMain bodyContent={bodyContent} />
-			</article>
-			<AfterArticle title={title} excerpt={excerpt} />
-		</main>
+		<>
+			<Header location="blog" />
+			<main className="main">
+				<article>
+					<ArticleHero title={title} date={rawDate} tags={postTags} />
+					<ArticleMain bodyContent={bodyContent} />
+				</article>
+				<AfterArticle title={title} excerpt={excerpt} />
+			</main>
+		</>
 	)
 }
