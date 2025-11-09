@@ -3,11 +3,11 @@ import ColourMode from '@/app/ui/components/ColourModeSwitcher';
 import { nameTitle } from '@/content/body-content';
 import Link from 'next/link';
 import { useContext } from 'react';
-import { HomePageContext } from '@/context/HomePageCheck.jsx';
+import { pageCheckContext } from '@/context/HomePageCheck.jsx';
 import styles from './Header.module.scss';
 
 function Header(){
-	const { isHome } = useContext(HomePageContext);
+	const { isHome } = useContext(pageCheckContext);
 
 	const siteName = isHome ? (
 		<h1>{nameTitle.title}</h1>

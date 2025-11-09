@@ -2,10 +2,10 @@ import MetaData from "@/app/ui/components/blog/MetaData";
 import Link from "next/link";
 import styles from './IndexItem.module.scss';
 
-function IndexItem(props){
-	const { post } = props;
+function IndexItem({ post, location }){
 	const date = post.date;
 	const tags = post.tags;
+	
 	return (
 		<div className={styles.postIndexItem}>
 			<div className="content-container">

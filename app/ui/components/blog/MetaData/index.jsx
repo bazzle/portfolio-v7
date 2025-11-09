@@ -3,11 +3,8 @@
 import PostDate from "@/app/ui/components/blog/PostDate";
 import TagList from "@/app/ui/components/blog/TagList";
 import styles from './MetaData.module.scss';
-import { useContext } from "react";
-import { HomepageContext } from "@/app/context/HomepageCheck";
 
 function MetaData({tags, date}){
-	const {isHome} = useContext(HomepageContext);
 	
 	const tagsList = (
 		<>
@@ -18,7 +15,7 @@ function MetaData({tags, date}){
 	return(
 		<div className={styles.metadata}>
 			<PostDate rawDate={date} />
-			{(tags && isHome) && tagsList}
+			{tags && tagsList}
 		</div>
 	)
 }

@@ -33,7 +33,7 @@ export default async function TagArchivePage({ params }) {
 				<ArticleHero title={`Tag — ${tag}`} />
 				<div className="content-container">
 					{posts.map((post, index) => (
-						<IndexItem key={index} post={post} />
+						<IndexItem key={index} post={post} location="indexTag" />
 					))}
 				</div>
 				<AfterArchive/>

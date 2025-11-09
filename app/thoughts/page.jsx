@@ -10,7 +10,7 @@ export default function Home() {
 			<main className="main">
 				{
 					postMetaData.map((post, postIndex) => (
-						<IndexItem key={postIndex} post={post}/>
+						<IndexItem key={postIndex} post={post} location='indexMain' />
 					))
 				}
 			</main>
