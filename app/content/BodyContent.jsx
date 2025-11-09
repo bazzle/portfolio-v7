@@ -1,5 +1,5 @@
 import ListItem from "@/app/ui/components/ListItem";
-import { IconThemes } from "@/app/ui/components/Icons";
+import { IconThemes } from "@/app/ui/misc/Icons";
 import NostrCopy from "@/app/ui/components/NostrCopy";
 import HorizontalList from "@/app/ui/components/HorizontalList";
 import Link from "next/link";
