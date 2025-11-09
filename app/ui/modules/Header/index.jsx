@@ -8,50 +8,59 @@ import styles from "./Header.module.scss";
 import {Icons} from "@/app/ui/misc/Icons";
 
 function Header({location}){
-        const pathname = usePathname();
-		let navLink
-		
-		if (location === 'blog'){
-			navLink = (
-				<Link className={styles.header__nav} href="/">Homepage
-					{Icons.backArrow}
-				</Link>
-			)
-		} else if (location === 'portfolio'){
-			navLink = (
-				<Link href="/thoughts">Thoughts
-					{Icons.backArrow}
-				</Link>
-			)
-		} else {
-			navLink = (
-				<Link href="/">Homepage
-					{Icons.backArrow}
-				</Link>
-			)
-		}
-        return(
-			<header className={styles.header}>
-					<div className="container">
-						<div className={styles.header__inner}>
-							<h1 className={styles.header__sitename}>
-								<Link className={styles.header__sitename__link} href="/">
-									<span className='highlight-on-link'>
-										{NameTitle.name}
-									</span>
-									<span>
-										{NameTitle.title}
-									</span>
-								</Link>
-							</h1>
-							<nav className={styles.header__nav}>
-								{navLink}
-							</nav>
-						</div>
+	
+	const pathname = usePathname();
+
+	let navLink
+
+	if (location === 'blog'){
+		navLink = (
+			<Link className={styles.header__nav} href="/">
+				<div className="rotate180">
+					{Icons.arrow}
+				</div>
+				Homepage
+			</Link>
+		)
+	} else if (location === 'portfolio'){
+		navLink = (
+			<Link href="/thoughts">
+				Thoughts
+				{Icons.arrow}
+			</Link>
+		)
+	} else {
+		navLink = (
+			<Link className={styles.header__nav} href="/">
+				<div className="rotate180">
+					{Icons.arrow}
+				</div>
+				Homepage
+			</Link>
+		)
+	}
+	return(
+		<header className={styles.header}>
+				<div className="container">
+					<div className={styles.header__inner}>
+						<h1 className={styles.header__sitename}>
+							<Link className={styles.header__sitename__link} href="/">
+								<span className='highlight-on-link'>
+									{NameTitle.name}
+								</span>
+								<span>
+									{NameTitle.title}
+								</span>
+							</Link>
+						</h1>
+						<nav className={styles.header__nav}>
+							{navLink}
+						</nav>
 					</div>
-					{pathname === '/' && <FloatingNav/>}
-			</header>
-        )
+				</div>
+				{pathname === '/' && <FloatingNav/>}
+		</header>
+	)
 }
 
 export default Header;

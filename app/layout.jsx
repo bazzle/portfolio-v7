@@ -1,5 +1,6 @@
 import "@/app/assets/styles/main.scss";
 import Footer from "@/app/ui/modules/Footer";
+import { HomepageCheckProvider } from "@/app/context/HomepageCheck"
 
 export const metadata = {
   title: "Barry Richards Design tinkerer",
@@ -13,10 +14,12 @@ export default function RootLayout({ children }) {
 			<link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
 			<link rel="stylesheet" href="https://use.typekit.net/sqp3jyo.css"></link>
 		</head>
-    	<body className="body">
-        	{children}
-			<Footer/>
-      	</body>
+		<HomepageCheckProvider>
+			<body className="body">
+				{children}
+				<Footer/>
+			</body>
+		</HomepageCheckProvider>
     </html>
   );
 }

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useContext } from 'react';
 
-import { colourThemeContext } from '@/app/Context/ColourTheme';
+import { colourThemeContext } from '@/app/context/ColourTheme';
 import styles from "./Header.module.scss";
 
 function ColourMode() {
