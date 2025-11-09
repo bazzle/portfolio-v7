@@ -8,13 +8,11 @@ export default function Home() {
 		<>
 			<Header location="blog" />
 			<main className="main">
-				<div className="content-container">
-					{
-						postMetaData.map((post, postIndex) => (
-							<IndexItem key={postIndex} post={post}/>
-						))
-					}
-				</div>
+				{
+					postMetaData.map((post, postIndex) => (
+						<IndexItem key={postIndex} post={post}/>
+					))
+				}
 			</main>
 		</>
   	);

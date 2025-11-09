@@ -3,8 +3,6 @@
 .postIndexItem{
 	display: block;
 	margin-bottom: vars.$block-spacing;
-	width: 100%;
-	max-width: vars.$content-width;
 	&:first-of-type{
 		margin-top: vars.$block-spacing;
 	}
