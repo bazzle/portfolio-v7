@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behaviour="smooth">
 		<head>
 			<link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
 			<link rel="stylesheet" href="https://use.typekit.net/sqp3jyo.css"></link>
