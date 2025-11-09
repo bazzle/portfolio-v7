@@ -5,7 +5,7 @@ import FloatingNav from '../../components/FloatingNav';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import styles from "./Header.module.scss";
-import Icons from "@/app/ui/components/Icons";
+import {Icons} from "@/app/ui/components/Icons";
 
 function Header({location}){
         const pathname = usePathname();

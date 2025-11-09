@@ -1,17 +1,5 @@
 import ListItem from "@/app/ui/components/ListItem";
-import {
-        IconGlass,
-        IconDoor,
-        IconMagGlass,
-        IconPieces,
-        IconShapes,
-        IconTag,
-        IconFingerprint,
-        IconBalance,
-        IconAi,
-        IconGrid,
-		IconCopy
-} from "@/app/ui/components/Icons";
+import { IconThemes } from "@/app/ui/components/Icons";
 import NostrCopy from "@/app/ui/components/NostrCopy";
 import HorizontalList from "@/app/ui/components/HorizontalList";
 import Link from "next/link";
@@ -20,6 +8,8 @@ export const NameTitle = {
 	name: "Barry Richards",
 	title: "Design tinkerer"
 }
+
+console.log(IconThemes.IconBalance);
 
 export const WelcomeContent = {
 	title: "Who I am and what I do",
@@ -91,57 +81,57 @@ export const ThemesContent = {
 	title: 'Things I think about',
 	tiles: [
 		{
-			component: <IconGlass />,
+			component: IconThemes.IconGlass,
 			nameFirstLine: "Responsive web",
 			description: "Throughout every stage of the design and development process, I think about how the interface will appear in different size viewports."
 		},
 		{
-			component: <IconDoor />,
+			component: IconThemes.IconDoor,
 			nameFirstLine: "Accessibility",
 			description: "I design with inclusivity in mind, ensuring digital experiences are usable for everyone, including those with disabilities, by following WCAG guidelines."
 		},
 		{
-			component: <IconTag />,
+			component: IconThemes.IconTag,
 			nameFirstLine: "Semantics",
 			description: "I strive to build with clean, meaningful HTML structure to enhance SEO, accessibility, and maintainability, ensuring content is understood by users and machines."
 		},
 		{
-			component: <IconPieces />,
+			component: IconThemes.IconPieces,
 			nameFirstLine: "Typography",
 			description: "I appreciate the value of good typographical choices. Something often overlooked in more tech focussed teams. And I stay up to date with new techniques such Variable and Opentype features."
 		},
 		{
-			component: <IconFingerprint />,
+			component: IconThemes.IconFingerprint,
 			nameFirstLine: "User-Centered",
 			nameSecondLine: "Design",
 			description: "I appreciate how design should be guided by user needs and behaviour. I use esdtablished and tested design patterns and seek to validate design choices with user research when possible."
 		},
 		{
-			component: <IconShapes />,
+			component: IconThemes.IconShapes,
 			nameFirstLine: "Brand",
 			nameSecondLine: "integration",
 			description: "I have extensive experience collaborating with brand designers and guardians, ensuring that visual identities and messaging are accurately and effectively translated into the digital products."
 		},
 		{
-			component: <IconBalance />,
+			component: IconThemes.IconBalance,
 			nameFirstLine: "Hierarchy, Balance,",
 			nameSecondLine: "White-Space",
 			description: "I carefully structure layouts using visual hierarchy, balance, and white space to guide attention, improve readability, and create a refined user experience."
 		},
 		{
-			component: <IconMagGlass />,
+			component: IconThemes.IconMagGlass,
 			nameFirstLine: "Search Engine",
 			nameSecondLine: "Optimisation",
 			description: "I build websites with SEO in mind. Semantic structure, performance optimisation, and meaningful content—to improve visibility and engagement."
 		},
 		{
-			component: <IconAi />,
+			component: IconThemes.IconAi,
 			nameFirstLine: "Integrating AI",
 			nameSecondLine: "in My Workflow",
 			description: "I leverage AI tools to enhance efficiency in my workflow, automate repetitive tasks, assist my learning and ensuring smarter design and development decisions."
 		},
 		{
-			component: <IconGrid />,
+			component: IconThemes.IconGrid,
 			nameFirstLine: "Layout/Grid",
 			description: "I have experience utilising advanced layout systems in CSS, including flexbox and grid. I know the advantages and drawbacks of different techniques and can identify the best approach for each."
 		}
@@ -368,4 +358,3 @@ export const GetInTouchContent = {
 		)
 	}
 }
-

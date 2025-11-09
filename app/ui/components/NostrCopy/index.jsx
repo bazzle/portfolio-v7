@@ -1,5 +1,5 @@
 'use client'
-import { IconCopy } from "@/app/ui/components/Icons";
+import { IconThemes } from "@/app/ui/components/Icons";
 import { useState } from "react";
 import styles from "./NostrCopy.module.scss";
 
@@ -43,7 +43,7 @@ function NostrCopy(){
 
 	return (
 		<span className={styles.copyText}>
-			Find me on nostr: <button title="Copy nostr ID to clipboard" aria-label="Copy {nostrId} to clipboard" onClick={HandleClick}>{nostrId}<IconCopy/></button>{messageContainer()}
+		Find me on nostr: <button title="Copy nostr ID to clipboard" aria-label="Copy {nostrId} to clipboard" onClick={HandleClick}>{nostrId}{IconThemes.IconCopy}</button>{messageContainer()}
 		</span>
 	)
 }
