@@ -19,6 +19,28 @@
 		}
 		li{
 			margin-bottom: 0;
+			list-style-type: none;
+			max-width: vars.$content-width;
+			margin-bottom: 0 !important;
+			padding-bottom: 0.3em;
+			list-style: none;
+			position: relative;
+			@include vars.break-under(tablet){
+				padding-left: 1em;
+			}
+			&::before{
+				@include vars.break-under(tablet){
+					position: absolute;
+					content: "◆";
+					font-size: .8em;
+					color: var(--color-accent-alt);
+					left: -.2em;
+					top: .3em;
+				}
+			}
+			p{
+				margin-bottom: 0;
+			}
 			@include vars.break(tablet){
 				display: flex;
 				align-items: center;
