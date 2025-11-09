@@ -1,21 +1,31 @@
 'use client'
-
-import PostDate from "@/app/ui/components/blog/PostDate";
-import TagList from "@/app/ui/components/blog/TagList";
+import Link from "next/link";
+import PostDate from "./PostDate";
 import styles from './MetaData.module.scss';
 
-function MetaData({tags, date}){
-	
-	const tagsList = (
-		<>
-			<span className={styles.divider}></span>
-			<TagList tags={tags} />
-		</>
-	)
+
+function MetaData({tags = [], date}){
+
+	function tagsList(){
+		const tagItems = tags.map((tag, index)=> (
+			<li key={index} className={styles.tagList__item}>
+					<Link href={`/thoughts/tag/${tag}`}>{tag}</Link>
+					<span className={styles.dash}>/</span>
+			</li>
+		));
+		return (
+			<>
+				<span className={styles.divider}></span>
+				<ul className={styles.tagList}>
+					{tagItems}
+				</ul>
+			</>
+		)
+	}
+
 	return(
 		<div className={styles.metadata}>
-			<PostDate rawDate={date} />
-			{tags && tagsList}
+			<PostDate rawDate={date} /> {tags && tagsList()}
 		</div>
 	)
 }

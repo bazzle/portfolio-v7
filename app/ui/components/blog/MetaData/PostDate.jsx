@@ -1,5 +1,5 @@
 import { format } from "date-fns"
-import styles from './PostDate.module.scss';
+import styles from './MetaData.module.scss';
 
 function PostDate({rawDate}){
 	let dateOutput
