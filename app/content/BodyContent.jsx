@@ -9,8 +9,6 @@ export const NameTitle = {
 	title: "Design tinkerer"
 }
 
-console.log(IconThemes.IconBalance);
-
 export const WelcomeContent = {
 	title: "Who I am and what I do",
 	bodyContent: () => {
