@@ -8,7 +8,7 @@ function ArticleMain({ bodyContent }) {
 		<div className={styles.articleMain}>
 				<div className="content-container">
 						<div className={styles.articleMain__body}>
-								<MDXRemote source={bodyContent} components={elems} />
+							<MDXRemote source={bodyContent} components={elems} />
 						</div>
 				</div>
 		</div>

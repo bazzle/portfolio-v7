@@ -10,6 +10,7 @@ import {Icons} from "@/app/ui/misc/Icons";
 function Header({location}){
         const pathname = usePathname();
 		let navLink
+		
 		if (location === 'blog'){
 			navLink = (
 				<Link className={styles.header__nav} href="/">Homepage
