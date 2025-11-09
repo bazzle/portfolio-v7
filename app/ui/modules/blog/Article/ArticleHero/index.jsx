@@ -1,5 +1,5 @@
 import BgShapes from "@/app/ui/components/BgShapes/index.jsx";
-import MetaData from "@/app/ui/components/MetaData";
+import MetaData from "@/app/ui/components/blog/MetaData";
 import styles from './ArticleHero.module.scss';
 
 function ArticleHero({title, date, tags}){

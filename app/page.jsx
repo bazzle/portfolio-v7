@@ -1,4 +1,4 @@
-import Hero from "@/app/ui/modules/Hero";
+import Hero from "@/app/ui/modules/Hero/HeroMain";
 import SkillsAndAbilities from "@/app/ui/modules/SkillsAndAbilities";
 import WorkHistory from "@/app/ui/modules/WorkHistory";
 import WorkSamples from "@/app/ui/modules/WorkSamples";

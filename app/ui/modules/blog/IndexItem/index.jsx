@@ -1,4 +1,4 @@
-import MetaData from "@/app/ui/components/MetaData";
+import MetaData from "@/app/ui/components/blog/MetaData";
 import Link from "next/link";
 import styles from './IndexItem.module.scss';
 

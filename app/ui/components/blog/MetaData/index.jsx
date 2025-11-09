@@ -1,5 +1,5 @@
-import PostDate from "@/app/ui/components/PostDate";
-import TagList from "@/app/ui/components/TagList";
+import PostDate from "@/app/ui/components/blog/PostDate";
+import TagList from "@/app/ui/components/blog/TagList";
 import styles from './MetaData.module.scss';
 
 function MetaData({tags, date}){

@@ -2,7 +2,7 @@
 import styles from "./AfterArticle.module.scss";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ShareButtons from "@/app/ui/components/ShareButtons";
+import ShareButtons from "@/app/ui/components/blog/ShareButtons";
 
 function AfterArticle({ title, excerpt }) {
     return (

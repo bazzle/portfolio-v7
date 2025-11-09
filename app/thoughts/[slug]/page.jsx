@@ -2,9 +2,9 @@ import getPostMetadata from "@/app/utils/get-post-metadata"
 import React from "react"
 import fs from "fs"
 import matter from "gray-matter"
-import ArticleHero from "@/app/ui/modules/blog/ArticleHero"
-import ArticleMain from "@/app/ui/modules/blog/ArticleMain"
-import AfterArticle from "@/app/ui/modules/blog/AfterArticle"
+import ArticleHero from "@/app/ui/modules/blog/Article/ArticleHero"
+import ArticleMain from "@/app/ui/modules/blog/Article/ArticleMain"
+import AfterArticle from "@/app/ui/modules/blog/Article/AfterArticle"
 import Header from "@/app/ui/modules/Header"
 
 function getPostContent(slug){

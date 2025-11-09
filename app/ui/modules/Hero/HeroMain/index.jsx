@@ -1,10 +1,11 @@
+import Clients from "@/app/ui/modules/Hero/HeroMain/Clients";
 import BgShapes from '@/app/ui/components/BgShapes';
-import ActionLink from '@/app/ui/components/ActionLink';
 import Spacer from '@/app/ui/components/Spacer';
 import Profile from "@/app/ui/components/Profile";
-import styles from "../Hero/Hero.module.scss";
+import Link from "next/link";
+import styles from "../Hero.module.scss";
 
-function Hero2(){
+function HeroMain(){
 
     return(
         <div className={styles.hero}>
@@ -12,8 +13,14 @@ function Hero2(){
 				<div className="container container--vertical-fill">
 					<div className={styles["hero__mainSection__inner"]}>
 						<p className={styles["hero__mainSection__message"]}>
+							<span className={styles["hero__mainSection__message__sub"]}>
+								My philosophy is
+							</span>
 							<span className={styles["hero__mainSection__message__main"]}>
-								Lets <span>work together</span>
+								Web for <span>Everyone</span>
+							</span>
+							<span className={styles["hero__mainSection__message__sub"]}>
+								... But still <span className="highlight">POP &#128165;</span>
 							</span>
 						</p>
 					</div>
@@ -29,15 +36,13 @@ function Hero2(){
 						<div className={styles["hero__footSection__intro"]}>
 							<div className={styles["hero__footSection__intro__main"]}>
 								<p>
-									<strong>Hello!</strong> I’m a UK based web designer, developer and accessibility consultant.
+									<strong>Hello!</strong> I&apos;m a UK based web designer, developer and accessibility consultant.<br/>
+									<Link href="#who-i-am-and-what-i-do">Read on</Link> to learn more about me, <a href="./files/cv.pdf" target="_blank" rel="noopener noreferrer">download my CV</a> or <Link href="#get-in-touch">Get in touch</Link>!
 								</p>
-							</div>
-							<div className={styles["hero__footSection__contacts"]}>
-								<ActionLink linkString="#get-in-touch" textString="Get in touch" />
-								<ActionLink linkString="/" textString="Read more about me" />
 							</div>
 						</div>
 						<Spacer mobile />
+						<Clients/>
 					</div>
 				</div>
 			</div>
@@ -45,4 +50,4 @@ function Hero2(){
     )
 }
 
-export default Hero2;
+export default HeroMain;

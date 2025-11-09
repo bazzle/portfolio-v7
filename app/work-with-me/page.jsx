@@ -1,4 +1,4 @@
-import Hero2 from "@/app/ui/modules/Hero2";
+import HeroLanding from "@/app/ui/modules/Hero/HeroLanding";
 import StdContentTemplate from "@/app/ui/modules/StdContentTemplate";
 import TextStandout from "@/app/ui/modules/TextStandout";
 import Header from "@/app/ui/modules/Header";
@@ -21,7 +21,7 @@ function WorkWithMe() {
 		<>
 			<Header />
 			<main className="main">
-				<Hero2/>
+				<HeroLanding/>
 				<StdContentTemplate
 					title={ContentSection1.title}
 					bodyContent={ContentSection1.bodyContent()}
