@@ -8,7 +8,7 @@ const isDev = process.env.NODE_ENV === "development";
 function BgShapes(props){
 	const variantClass = props.variant ? styles[`shapes--${props.variant}`] : undefined;
 	const className = [styles.shapes, variantClass].filter(Boolean).join(' ');
-	const bgImage = 'url("./images/texture-dark.webp")';
+	const bgImage = 'url("/images/texture-dark.webp")';
 	return(
 		<div role="presentation" className={className}>
 			<span className={styles["shapes__background"]} style={{ backgroundImage : bgImage }}></span>
