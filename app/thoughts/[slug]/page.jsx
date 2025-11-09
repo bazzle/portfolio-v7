@@ -30,6 +30,8 @@ export async function generateMetadata({ params }){
 	}
 }
 
+export const dynamicParams = false;
+
 export default async function postPage({ params }) {
 	const { slug } = await params;
 	const post = getPostContent(slug)

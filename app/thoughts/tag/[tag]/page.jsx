@@ -14,6 +14,8 @@ export const generateStaticParams = async () => {
 	return tags.map(tag => ({ tag }));
 };
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }) {
 	const { tag } = await params;
 	return {
