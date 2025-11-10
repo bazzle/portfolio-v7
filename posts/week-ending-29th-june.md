@@ -1,7 +1,7 @@
 ---
 title: Week ending 29th June 2025
 slug: week-ending-29th-june
-date: 2025-06-29T14:45:00+01:00
+date: 2025-06-29
 excerpt: Prague reflections and Lightning and nostr playing
 tags:
   - weeknotes

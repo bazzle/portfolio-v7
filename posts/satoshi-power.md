@@ -1,7 +1,7 @@
 ---
 title: Satoshi Power
 slug: satoshi-power
-date: 2025-08-21T14:10:00+01:00
+date: 2025-08-21
 excerpt: Fun project looking at how the price of a satoshi compares to the
   smallest units of different fiat currencies.
 tags:

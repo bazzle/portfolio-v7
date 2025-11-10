@@ -1,7 +1,7 @@
 ---
 title: Week ending 27th July 2025
 slug: week-ending-27th-july-2025
-date: 2025-07-27T14:19:00+01:00
+date: 2025-07-27
 excerpt: Nothing much to report on this week. Was a quiet one. Did a lot of
   boring personal admin, swore a lot at various apps' clear interaction design
   failures.

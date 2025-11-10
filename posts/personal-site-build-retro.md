@@ -1,7 +1,7 @@
 ---
 title: Personal site build Retro
 slug: personal-site-build-retro
-date: 2025-03-30T13:00:00Z
+date: 2025-03-30
 excerpt: Retro for my personal portfolio site build.
 tags:
   - Retro

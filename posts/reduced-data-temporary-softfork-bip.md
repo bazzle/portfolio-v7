@@ -1,7 +1,7 @@
 ---
 title: Reduced Data Temporary Softfork BIP
 slug: reduced-data-temporary-softfork-bip
-date: 2025-10-24T13:00:00Z
+date: 2025-10-24
 excerpt: Bitcoin Improvement proposal, published by Dathon Ohm
 tags:
   #### Bitcoin

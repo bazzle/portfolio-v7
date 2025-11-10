@@ -1,7 +1,7 @@
 ---
 title: Week ending 8th June 2025
 slug: week-ending-8th-june-2025
-date: 2025-06-08T13:00:00.000Z
+date: 2025-06-08
 excerpt: V1.2 of this website.
 tags:
   - weeknotes

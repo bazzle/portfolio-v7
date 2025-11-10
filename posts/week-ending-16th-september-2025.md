@@ -1,7 +1,7 @@
 ---
 title: Week ending 14th September 2025
 slug: week-ending-14th-september-2025
-date: 2025-09-14T01:13:00+01:00
+date: 2025-09-14
 excerpt: "Feeling like we're speeding towards winter. Summer seems to be fading
   fast. Chillier days and darker evenings. Autumn equinox is just around the
   corner now. "

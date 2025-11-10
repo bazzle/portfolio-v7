@@ -1,7 +1,7 @@
 ---
 title: Week ending 22nd June 2025
 slug: week-ending-22nd-june-2025
-date: 2025-06-22T14:44:00+01:00
+date: 2025-06-22
 excerpt: Bitcoin Prague
 tags:
   - bitcoin

@@ -1,7 +1,7 @@
 ---
 title: Bitcoin Truthbombs
 slug: bitcoin-truthbombs
-date: 2025-08-02T17:21:00+01:00
+date: 2025-08-02
 excerpt: 2 minute read articles about Bitcoin I write as I learn about the
   technology and economics.
 tags:

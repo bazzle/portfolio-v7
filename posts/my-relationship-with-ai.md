@@ -1,7 +1,7 @@
 ---
 title: My relationship with AI
 slug: my-relationship-with-ai
-date: 2025-06-01T13:00:00Z
+date: 2025-06-01
 excerpt: I've been cautious about AI, I've had a strong desire to embrace it to
   improve my productivity and help my learning but formed some boundaries.
 tags:

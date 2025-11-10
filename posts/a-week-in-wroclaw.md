@@ -1,7 +1,7 @@
 ---
 title: A week in Wrocław
 slug: a-week-in-wroclaw
-date: 2025-08-10T23:33:00+01:00
+date: 2025-08-10
 excerpt: Well not quite a week but the name catches.
 tags:
   - weeknotes

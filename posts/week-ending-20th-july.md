@@ -1,7 +1,7 @@
 ---
 title: Week ending 20th July 2025
 slug: week-ending-20th-july-2025
-date: 2025-07-20T13:34:00+01:00
+date: 2025-07-20
 excerpt: Late evening espresso and exponential growth.
 tags:
   - weeknotes

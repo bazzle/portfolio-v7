@@ -1,7 +1,7 @@
 ---
 title: It's going up forever Laura
 slug: its-going-up-forever-laura
-date: 2025-04-13T13:00:00Z
+date: 2025-04-13
 excerpt: A company isn't so attractive to invest in if it's been around for a
   number of years, or decades even. Time marches on, and people's desires
   change.

@@ -1,7 +1,7 @@
 ---
 title: Week ending 6th July 2025
 slug: week-ending-6th-july-2025
-date: 2025-07-06T20:22:00+01:00
+date: 2025-07-06
 excerpt: My attention is being pulled in different directions
 tags:
   - weeknotes

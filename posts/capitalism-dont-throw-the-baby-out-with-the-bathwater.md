@@ -1,7 +1,7 @@
 ---
 title: Capitalism – Don't throw the baby out with the bathwater.
 slug: capitalism-dont-throw-the-baby-out-with-the-bathwater
-date: 2025-06-26T13:00:00Z
+date: 2025-06-26
 excerpt: A look at capitalism, and how it compares with socialism and human incentives.
 tags:
   - economics

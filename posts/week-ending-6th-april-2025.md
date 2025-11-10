@@ -1,7 +1,7 @@
 ---
 title: Week ending 6th April 2025
 slug: week-ending-6th-april-2025
-date: 2025-04-06T13:00:00.000Z
+date: 2025-04-06
 excerpt: Working on my "Thoughts" blog site
 tags:
   - weeknotes

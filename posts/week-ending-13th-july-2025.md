@@ -1,7 +1,7 @@
 ---
 title: Week ending 13th July 2025
 slug: week-ending-13th-july-2025
-date: 2025-07-13T12:49:00+01:00
+date: 2025-07-13
 excerpt: Seeking sun, cursing at ProcessWire and some reflecting, listening to
   people I love and thinking about how I can use AI
 tags:
