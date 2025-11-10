@@ -31,10 +31,10 @@ export default async function TagArchivePage({ params }) {
 			<Header location="blog" />
 			<main className="main">
 				<ArticleHero title={`Tag — ${tag}`} />
-				<div className="content-container">
-					{posts.map((post, index) => (
-						<IndexItem key={index} post={post} location="indexTag" />
-					))}
+				<div>
+				{posts.map((post, index) => (
+					<IndexItem key={index} post={post} location="indexTag" />
+				))}
 				</div>
 				<AfterArchive/>
 			</main>
