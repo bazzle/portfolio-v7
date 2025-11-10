@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
-import PostDate from "./PostDate";
 import styles from './MetaData.module.scss';
+import { format } from "date-fns"
 
 
 function MetaData({tags = [], date}){
@@ -23,9 +23,20 @@ function MetaData({tags = [], date}){
 		)
 	}
 
+	function postDate(rawDate){
+		let dateOutput
+		if (rawDate != null){
+			const formattedDate = format(new Date(rawDate), 'MMMM dd, yyyy');
+			dateOutput = <time className={styles.postDate} dateTime={rawDate}>{formattedDate}</time>;
+		} else {
+			dateOutput = "Unknown date"
+		}
+		return dateOutput;
+	}
+
 	return(
 		<div className={styles.metadata}>
-			<PostDate rawDate={date} /> {tags && tagsList()}
+			{postDate(date)} {tags && tagsList()}
 		</div>
 	)
 }
