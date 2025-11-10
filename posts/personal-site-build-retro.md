@@ -10,7 +10,7 @@ tags:
 
 It was about time I created a new personal website to talk a bit about myself, my experience, my work and my approach to design and development. To inform any prospective employers, or whoever might want to hire me on a freelance basis. It was also a good excuse to finally try out NextJS, and get used to JSX syntax.
 
-<PostImage src="/images/blog/portfolio-screenshot.jpg" alt="screenshot" />
+<PostImage src="/images/blog/portfolio-screenshot.jpg" alt="screenshot" extended caption="Early iteration" />
 
 I set about designing this thing. To be honest, I haven’t thought about creating a showcase of my work. Not yet anyway. In a later release, I’ll have a blog section which can house case-studies. My aim is for the site to be an informative narrative about me, with a focus on the content, accentuated by type and iconography.
 
