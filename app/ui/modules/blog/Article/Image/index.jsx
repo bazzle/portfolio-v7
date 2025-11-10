@@ -5,35 +5,20 @@ import { useEffect, useRef, useState } from 'react';
 
 
 export default function PostImage({ src, alt, caption, extended }) {
-
-	const imageEl = useRef(null);
-	const figureEl = useRef(null);
-	const [imageHeight, SetImageHeight] = useState(0);
-
-	useEffect(() => {
-		SetImageHeight(imageEl.current.clientHeight)
-	},[imageEl])
-
+	
 	const classString = `${styles.postImage} ${extended && styles.extended}`
 	return (
 		<figure
-			ref={figureEl}
 			className={classString}
-			style={extended ? {height: `${imageHeight}px`} : {height: `auto`}}
 		>
-			<div
-				className={styles.postImage__imageContainer}
-				style={extended ? {height: `${imageHeight}px`} : {height: `auto`}}
-			>
-				<Image
-					ref={imageEl}
-					className={styles.postImage__image}
-					src={src}
-					alt={alt}
-					width={1200}
-					height={800}
-				/>
-			</div>
+			<Image
+				className={styles.postImage__image} 
+				src={src} 
+				alt={alt} 
+				width={1200} 
+				height={800} 
+				loading="lazy"
+			/>
 			{caption && <figcaption className={styles.postImage__caption}>{caption}</figcaption>}
 		</figure>
 	);
