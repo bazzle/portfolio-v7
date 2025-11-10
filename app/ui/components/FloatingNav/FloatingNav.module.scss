@@ -32,10 +32,6 @@
 		justify-content: flex-end;
 		width: calc(100vw - (vars.$gutter-padding * 2));
 	}
-	&:hover, &:focus{
-		border-width: .5px;
-		border-color: var(--color-foreground);
-	}
 	&__backTop{
 		margin-bottom: 0;
 		display: flex;
@@ -76,15 +72,21 @@
 			text-decoration: none;
 			line-height: 1;
 			text-align: center;
-			color: var(--color-accent-60);
+			color: var(--color-accent);
+			border-bottom: 1px solid transparent;
 			@include vars.break(tablet){
 				padding: .7em .3em;
 			}
 			&:hover{
 				text-decoration: underline;
+				text-decoration-thickness: .5px;
+				color: var(--color-foreground);
+			}
+			&:focus-visible{
+				color: var(--color-foreground);
 			}
 			&:global(.active){
-				color: var(--color-foreground);
+				border-color: var(--color-accent);
 			}
 		}
 	}
