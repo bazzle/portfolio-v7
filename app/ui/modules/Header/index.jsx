@@ -11,34 +11,73 @@ function Header({location}){
 	
 	const pathname = usePathname();
 
-	let navLink
+	let navLinks
 
 	if (location === 'blog'){
-		navLink = (
-			<Link className={styles.header__nav} href="/">
-				<div className="rotate180">
-					{Icons.arrow}
-				</div>
-				Homepage
-			</Link>
-		)
+		navLinks = [
+			(
+				<Link className={styles.header__nav} href="/" key="1">
+					<span className="rotate180">
+						{Icons.arrow}
+					</span>
+					<span>Homepage</span>
+				</Link>
+			)
+		]
+	} else if (location === 'blog-single'){
+		navLinks = [
+			(
+				<Link className={styles.header__nav} href="/" key="1">
+					<span className="rotate180">
+						{Icons.arrow}
+					</span>
+					<span>Homepage</span>
+				</Link>
+			),
+			(
+				<Link className={styles.header__nav} href="/thoughts" key="2">
+					<span>Thoughts index</span>
+				</Link>
+			)
+		]
+	} else if (location === 'tag-single'){
+		navLinks = [
+			(
+				<Link className={styles.header__nav} href="/" key="1">
+					<div className="rotate180">
+						{Icons.arrow}
+					</div>
+					<span>Homepage</span>
+				</Link>
+			),
+			(
+				<Link className={styles.header__nav} href="/thoughts" key="2">
+					<span>Thoughts index</span>
+				</Link>
+			)
+		]
 	} else if (location === 'portfolio'){
-		navLink = (
-			<Link href="/thoughts">
-				Thoughts
-				{Icons.arrow}
-			</Link>
-		)
+		navLinks = [
+			(
+				<Link className={styles.header__nav} href="/thoughts" key="1">
+					<span>Thoughts</span>
+					<span>{Icons.arrow}</span>
+				</Link>
+			)
+		]
 	} else {
-		navLink = (
-			<Link className={styles.header__nav} href="/">
-				<div className="rotate180">
-					{Icons.arrow}
-				</div>
-				Homepage
-			</Link>
-		)
+		navLinks = [
+			(
+				<Link className={styles.header__nav} href="/" key="1">
+					<span className="rotate180">
+						{Icons.arrow}
+					</span>
+					<span>Homepage</span>
+				</Link>
+			)
+		]
 	}
+
 	return(
 		<header className={styles.header}>
 				<div className="container">
@@ -54,7 +93,7 @@ function Header({location}){
 							</Link>
 						</h1>
 						<nav className={styles.header__nav}>
-							{navLink}
+							{ navLinks.map((item, index)=>(item)) }
 						</nav>
 					</div>
 				</div>
@@ -64,4 +103,3 @@ function Header({location}){
 }
 
 export default Header;
-

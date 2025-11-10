@@ -43,7 +43,7 @@ export default async function postPage({ params }) {
 	
 	return (
 		<>
-			<Header location="blog" />
+			<Header location="blog-single" />
 			<main className="main">
 				<article>
 					<ArticleHero title={title} date={rawDate} tags={postTags} />

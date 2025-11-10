@@ -28,12 +28,12 @@ export default async function TagArchivePage({ params }) {
 	const posts = getPosts(tag);
 	return (
 		<>
-			<Header location="blog" />
+			<Header location="tag-single" />
 			<main className="main">
 				<ArticleHero title={`Tag — ${tag}`} />
 				<div>
 				{posts.map((post, index) => (
-					<IndexItem key={index} post={post} location="indexTag" />
+					<IndexItem key={index} post={post} />
 				))}
 				</div>
 				<AfterArchive/>
