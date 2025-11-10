@@ -1,18 +1,36 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
 .postImage{
 	position: relative;
 	width: 100%;
 	display: block;
 	&__image{
 		height: auto;
+		position: relative;
+		display: block;
+		border-radius: 2px;
+		box-shadow: 0 8px 12px 4px rgba($color: #000000, $alpha: .2);
+	}
+	&__imageContainer{
+		position: relative;
+	}
+	&__caption{
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding-top: calc(vars.$block-spacing--text /2);
+		font-size: vars.$font-size-tiny;
 	}
 }
 .extended{
-	.postImage__image{
-		width: 90vw;
-		height: auto;
-		max-width: unset;
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%);
+	.postImage{
+		&__imageContainer{
+			width: 90vw;
+			height: auto;
+			max-width: unset;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+		}
 	}
 }

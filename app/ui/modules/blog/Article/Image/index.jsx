@@ -14,22 +14,27 @@ export default function PostImage({ src, alt, caption, extended }) {
 		SetImageHeight(imageEl.current.clientHeight)
 	},[imageEl])
 
-	const classString = `${styles.postImage__image} ${extended && styles.extended}`
+	const classString = `${styles.postImage} ${extended && styles.extended}`
 	return (
 		<figure
 			ref={figureEl}
 			className={classString}
-			style={{height: `${imageHeight}px`}}
+			style={extended ? {height: `${imageHeight}px`} : {height: `auto`}}
 		>
-			<Image
-				ref={imageEl}
-				className={styles.postImage__image}
-				src={src}
-				alt={alt}
-				width={1200}
-				height={800}
-			/>
-			{caption && <figcaption>{caption}</figcaption>}
+			<div
+				className={styles.postImage__imageContainer}
+				style={extended ? {height: `${imageHeight}px`} : {height: `auto`}}
+			>
+				<Image
+					ref={imageEl}
+					className={styles.postImage__image}
+					src={src}
+					alt={alt}
+					width={1200}
+					height={800}
+				/>
+			</div>
+			{caption && <figcaption className={styles.postImage__caption}>{caption}</figcaption>}
 		</figure>
 	);
 }
