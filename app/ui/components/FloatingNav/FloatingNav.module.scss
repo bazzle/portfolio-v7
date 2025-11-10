@@ -7,7 +7,7 @@
 
 .floatingNav{
 	position: fixed;
-	right: 2rem;
+	right: vars.$gutter-padding;
 	bottom: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -30,7 +30,7 @@
 		gap: 1rem;
 		flex-direction: row;
 		justify-content: flex-end;
-		width: calc(100vw - 8rem);
+		width: calc(100vw - (vars.$gutter-padding * 2));
 	}
 	&:hover, &:focus{
 		border-width: .5px;

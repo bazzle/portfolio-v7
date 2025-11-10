@@ -1,7 +1,8 @@
 'use client';
 
 import { NameTitle } from '@/app/content/BodyContent';
-import FloatingNav from '../../components/FloatingNav';
+import FloatingNav from '@/app/ui/components/FloatingNav';
+import FloatingBackTop from '@/app/ui/components/FloatingBackTop';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import styles from "./Header.module.scss";
@@ -99,7 +100,7 @@ function Header({location}){
 						</nav>
 					</div>
 				</div>
-				{pathname === '/' && <FloatingNav/>}
+				{pathname === '/' ? <FloatingNav/> : <FloatingBackTop/>}
 		</header>
 	)
 }
