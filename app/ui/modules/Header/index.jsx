@@ -16,8 +16,8 @@ function Header({location}){
 	if (location === 'blog'){
 		navLinks = [
 			(
-				<Link className={styles.header__nav} href="/" key="1">
-					<span className="rotate180">
+				<Link className={styles.header__nav__link} href="/" key="1">
+					<span className={styles.arrow____reverse}>
 						{Icons.arrow}
 					</span>
 					<span>Homepage</span>
@@ -27,15 +27,15 @@ function Header({location}){
 	} else if (location === 'blog-single'){
 		navLinks = [
 			(
-				<Link className={styles.header__nav} href="/" key="1">
-					<span className="rotate180">
+				<Link className={styles.header__nav__link} href="/" key="1">
+					<span className={styles.arrow____reverse}>
 						{Icons.arrow}
 					</span>
 					<span>Homepage</span>
 				</Link>
 			),
 			(
-				<Link className={styles.header__nav} href="/thoughts" key="2">
+				<Link className={styles.header__nav__link} href="/thoughts" key="2">
 					<span>Thoughts index</span>
 				</Link>
 			)
@@ -43,15 +43,15 @@ function Header({location}){
 	} else if (location === 'tag-single'){
 		navLinks = [
 			(
-				<Link className={styles.header__nav} href="/" key="1">
-					<div className="rotate180">
+				<Link className={styles.header__nav__link} href="/" key="1">
+					<span className={styles.arrow____reverse}>
 						{Icons.arrow}
-					</div>
+					</span>
 					<span>Homepage</span>
 				</Link>
 			),
 			(
-				<Link className={styles.header__nav} href="/thoughts" key="2">
+				<Link className={styles.header__nav__link} href="/thoughts" key="2">
 					<span>Thoughts index</span>
 				</Link>
 			)
@@ -59,17 +59,19 @@ function Header({location}){
 	} else if (location === 'portfolio'){
 		navLinks = [
 			(
-				<Link className={styles.header__nav} href="/thoughts" key="1">
+				<Link className={styles.header__nav__link} href="/thoughts" key="1">
 					<span>Thoughts</span>
-					<span>{Icons.arrow}</span>
+					<span className={styles.arrow}>
+						{Icons.arrow}
+					</span>
 				</Link>
 			)
 		]
 	} else {
 		navLinks = [
 			(
-				<Link className={styles.header__nav} href="/" key="1">
-					<span className="rotate180">
+				<Link className={styles.header__nav__link} href="/" key="1">
+					<span className={styles.arrow}>
 						{Icons.arrow}
 					</span>
 					<span>Homepage</span>
@@ -80,7 +82,7 @@ function Header({location}){
 
 	return(
 		<header className={styles.header}>
-				<div className="container">
+				<div className="container____toEdgesMobile">
 					<div className={styles.header__inner}>
 						<h1 className={styles.header__sitename}>
 							<Link className={styles.header__sitename__link} href="/">
