@@ -5,22 +5,21 @@
 	margin-top: vars.$block-spacing;
 	&__body{
 		@extend %text-editorial;
-		img{
-			box-shadow: 0 8px 12px 4px rgba($color: #000000, $alpha: .2);
-			position: relative;
-			display: block;
+		figure{
 			margin-bottom: vars.$block-spacing--text;
-			border-radius: 2px;
+			box-shadow: 0 8px 12px 4px rgba($color: #000000, $alpha: .2);
 		}
-		img:has(+ em) {
-			position: relative;
-			margin-bottom: 0;
-		}
-		& > img:first-child {
+		& > figure:first-child {
 			top: calc(-4 * #{vars.$block-spacing--text});
 			margin-bottom: 0;
 		}
-		img.extended{
+		img{
+			position: relative;
+			display: block;
+			border-radius: 2px;
+		}
+		.extended{
+			display: none!important;
 			@include vars.break(desktop){
 				width: 60dvw;
 				max-width: 60dvw;

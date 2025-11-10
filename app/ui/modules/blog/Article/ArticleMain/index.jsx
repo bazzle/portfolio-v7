@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import styles from './ArticleMain.module.scss';
+import PostImage from "../Image";
 
 function ArticleMain({ bodyContent }) {
-	const elems = { Link }
+	const elems = { Link, PostImage }
 	return (
 		<div className={styles.articleMain}>
 				<div className="content-container">

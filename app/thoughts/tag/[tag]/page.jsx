@@ -1,8 +1,8 @@
 import IndexItem from '@/app/ui/modules/blog/IndexItem';
 import getPostsByTag from '@/app/utils/get-posts-by-tag.js';
 import getTags from '@/app/utils/get-tags.js';
-import ArticleHero from '@/app/ui/modules/blog/Article/ArticleHero';
-import AfterArchive from '@/app/ui/modules/blog/Article/AfterArticle';
+import ArticleHero from '@/app/ui/modules/blog/Hero';
+import AfterArchive from '@/app/ui/modules/blog/AfterArchive';
 import Header from "@/app/ui/modules/Header";
 
 function getPosts(tag){
