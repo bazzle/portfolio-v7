@@ -9,7 +9,7 @@ tags:
   - articles
 ---
 
-<img src="/images/blog/fatcat.webp" alt="Fat cat capitalist" />
+<PostImage src="/images/blog/fatcat.webp" alt="Fat cat capitalist" />
 
 Life is good on paper in many ways. Contrary to what our fear-mongering media, and eyeball seeking algorithms are telling us, we’re living in a time of relative abundance and safety compared to previous times. The average person living in an economically developed country lives a more comfortable life than a medieval king. We have hot showers, affordable air travel, cryptography, nanotechnology, access to more information than is possible to comprehend in the literal palms of our hands, you name it.
 
@@ -76,7 +76,7 @@ In the same book, Smith used the metaphor _The Invisible Hand_ in an argument ag
 
 The _One big nail problem_ based on a  cartoon that appeared in the Soviet magazine _Krokodil_ in 1957, outlines the absurdity of central planning and how it ignores human incentives. A factory in Soviet Russia receives its quota to produce a set number of nails. The incentive for the factory workers is to produce the nails as quickly as possible so they can achieve their quota and go home early. They achieve this by producing extremely small nails which aren't useful for anything. When the state gets wise to this, they say the nails must meet a certain weight, so they produce one big nail which unsurprisingly is also is not useful for anything.
 
-![Cartoon depicting a massive nail hung on ropes](/images/blog/bignail.webp)
+<PostImage src="/images/blog/bignail.webp" alt="Cartoon depicting a massive nail hung on ropes" />
 _Factory worker: Who needs a nail like this? - Manager: That’s irrelevant, what matters is that we have fulfilled the plan target! I don’t know how the story ends but I’d assume the factory manager was sent to the gulag._
 
 This phenomenon describes _Goodhart's law_, which states _When a measure becomes a target, it ceases to be a good measure_ socialism is predicated on these kinds of performance targets that misalign incentives.

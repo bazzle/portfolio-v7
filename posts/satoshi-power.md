@@ -29,7 +29,7 @@ The rough roadmap is this:
 4. v4 Integrate unit testing using Jest or similar in preparation for v5 which will introduce new features
 5. v5 Introduce a currency converter UI
 
-<img src="/images/blog/satoshi-power.png" alt="Satoshi Power Screenshot" className="extended" />
+<PostImage src="/images/blog/satoshi-power.png" alt="Satoshi Power Screenshot" />
 
 ## Design notes
 
