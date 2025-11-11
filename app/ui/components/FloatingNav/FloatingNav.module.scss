@@ -30,6 +30,7 @@
 		gap: 1rem;
 		flex-direction: row;
 		justify-content: flex-end;
+		max-width: calc(100vw - (vars.$gutter-padding * 2));
 	}
 	&__backTop{
 		margin-bottom: 0;
@@ -41,30 +42,23 @@
 		}
 	}
 	&__nav{
-		flex-direction: column;
-		gap: 0;
 		display: none;
-		padding: 1rem;
 		@include vars.break(tablet){
 			padding: .5rem;
-			display: flex;
-			width: 100%;
-			justify-content: space-around;
-			flex-wrap: wrap;
-			align-items: center;
-			flex-direction: row;
-			gap: 0 .5rem;
+			display: block;
+			text-align: end;
+			text-wrap: balance;
 		}
 		a{
 			@include floating-nav-text-style;
-			padding: .5em .3em;
+			padding: .3em .3em;
 			text-decoration: none;
-			line-height: 1;
-			text-align: center;
 			color: var(--color-accent);
 			border-bottom: 1px solid transparent;
 			@include vars.break(tablet){
-				padding: .7em .3em;
+				display: inline-block;
+				margin-left: .5em;
+				margin-right: .5em;
 			}
 			&:hover{
 				text-decoration: underline;
