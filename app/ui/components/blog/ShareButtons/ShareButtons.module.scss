@@ -33,28 +33,27 @@
 		align-items: center;
 		gap: .5em;
 		flex-wrap: wrap;
-		button{
-			all: unset;
-			width: 36px;
-			height: 36px;
-			display: block;
-			cursor: pointer;
-			svg{
-				border: 1px solid var(--color-accent);
-			}
-		}
-		button:hover, a:hover{
-			svg{
-				border-width: 1px;
-				border-color: var(--color-foreground);
-			}
-		}
 		.divider{
 			content: '';
 			height: 1px;
 			width: 100%;
 			max-width: 4rem;
 			background-color: var(--color-accent-alt);
+		}
+		button{
+			all: unset;
+			width: 36px;
+			height: 36px;
+			display: block;
+			cursor: pointer;
+			background: gold;
+			border: 1px solid var(--color-accent)!important;
+			&:hover{
+				border-color: var(--color-foreground)!important;
+			}
+			&:focus-visible{
+				outline: vars.$outline-focus;
+			}
 		}
 	}
 }

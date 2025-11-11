@@ -4,7 +4,6 @@ import styles from "./ShareButtons.module.scss";
 import {
 	TwitterShareButton,
 	XIcon,
-	RedditShareButton,
 	LinkedinShareButton,
 	LinkedinIcon,
 	TelegramShareButton,
@@ -28,9 +27,10 @@ function ShareButtons({title, excerpt}){
 			<div className={styles.shareButtons__divider}></div>
 			<div className={styles.shareButtons__list}>
 				<TwitterShareButton
-					url={shareUrl}
-					htmlTitle="Share on X"
-					title={title}
+					url={shareUrl} 
+					htmlTitle="Share on X" 
+					title={title} 
+					resetButtonStyle
 				>
 					<XIcon
 						round={false}
