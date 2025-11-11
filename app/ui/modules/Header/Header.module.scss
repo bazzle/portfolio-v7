@@ -5,12 +5,14 @@
 	position: relative;
 	margin: 0;
 	padding: 0;
-	line-height: 2;
 	@extend %text-blocky;
 	font-size: 1.6rem;
 	text-decoration: none;
 	display: flex;
 	align-items: center;
+	@include vars.break(mobile){
+		line-height: 2;
+	}
 	&:hover{
 		color: var(--color-foreground);
 	}
@@ -34,15 +36,11 @@
 	}
 	&__sitename{
 		all: unset;
-		padding-top: 1em;
-		padding-bottom: 1em;
-		border-bottom: 1px solid;
-		border-image: linear-gradient(to right, var(--color-accent), var(--color-accent-alt)) 1;
-		@include vars.break-under(tablet){
-			padding-left: vars.$gutter-padding;
-			padding-right: vars.$gutter-padding;
-		}
+		padding-left: vars.$gutter-padding;
+		padding-right: vars.$gutter-padding;
+		padding-top: .5em;
 		@include vars.break(tablet){
+			padding-top: 1em;
 			border: none;
 		}
 		&__link{
@@ -51,7 +49,7 @@
 			align-items: center;
 			flex-direction: row;
 			flex-wrap: wrap;
-			gap: .5em;
+			gap: 0 .5em;
 			color: var(--color-accent-alt);
 			span{
 				display: block;
@@ -59,15 +57,14 @@
 		}
 	}
 	&__nav{
-		display: flex;
-		flex-direction: column;
+		gap: 0 1em;
 		padding-left: vars.$gutter-padding;
 		padding-right: vars.$gutter-padding;
-		padding-top: .5em;
 		padding-bottom: .5em;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		@include vars.break(tablet){
-			gap: 1em;
-			flex-direction: row;
 			padding-top: 1em;
 			padding-bottom: 1em;
 			padding-left: unset;
