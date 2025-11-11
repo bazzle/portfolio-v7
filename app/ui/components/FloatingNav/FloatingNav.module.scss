@@ -19,8 +19,8 @@
 	gap: 0;
 	overflow: hidden;
 	width: auto;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
 	border: 1px solid var(--color-accent);
 	border-bottom: 0;
 	border-top-left-radius: 4px;
@@ -30,7 +30,6 @@
 		gap: 1rem;
 		flex-direction: row;
 		justify-content: flex-end;
-		width: calc(100vw - (vars.$gutter-padding * 2));
 	}
 	&__backTop{
 		margin-bottom: 0;
@@ -39,16 +38,6 @@
 		svg{
 			height: 4rem;
 			width: 4rem;
-		}
-		&::after{
-			content: 'Back to top';
-			padding: .3em;
-			text-decoration: none;
-			@include floating-nav-text-style;
-			@include vars.break(tablet){
-				content: '';
-				display: none;
-			}
 		}
 	}
 	&__nav{
@@ -87,6 +76,7 @@
 			}
 			&:global(.active){
 				border-color: var(--color-accent);
+				text-decoration: none;
 			}
 		}
 	}

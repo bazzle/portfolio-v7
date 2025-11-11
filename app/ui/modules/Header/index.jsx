@@ -2,7 +2,6 @@
 
 import { NameTitle } from '@/app/content/BodyContent';
 import FloatingNav from '@/app/ui/components/FloatingNav';
-import FloatingBackTop from '@/app/ui/components/FloatingBackTop';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import styles from "./Header.module.scss";
@@ -83,24 +82,26 @@ function Header({location}){
 
 	return(
 		<header className={styles.header}>
-				<div className="container____toEdgesMobile">
-					<div className={styles.header__inner}>
-						<h1 className={styles.header__sitename}>
-							<Link className={styles.header__sitename__link} href="/">
-								<span className='highlight-on-link'>
-									{NameTitle.name}
-								</span>
-								<span>
-									{NameTitle.title}
-								</span>
-							</Link>
-						</h1>
-						<nav className={styles.header__nav}>
-							{ navLinks.map((item, index)=>(item)) }
-						</nav>
-					</div>
+			<div className="container____toEdgesMobile">
+				<div className={styles.header__inner}>
+					<h1 className={styles.header__sitename}>
+						<Link className={styles.header__sitename__link} href="/">
+							<span className='highlight-on-link'>
+								{NameTitle.name}
+							</span>
+							<span>
+								{NameTitle.title}
+							</span>
+						</Link>
+					</h1>
+					<nav className={styles.header__nav}>
+						{ navLinks.map((item, index)=>(item)) }
+					</nav>
 				</div>
-				{pathname === '/' ? <FloatingNav/> : <FloatingBackTop/>}
+			</div>
+			{
+				location === 'portfolio' ? <FloatingNav sectionNav /> : <FloatingNav/>
+			}
 		</header>
 	)
 }
