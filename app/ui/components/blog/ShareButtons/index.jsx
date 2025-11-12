@@ -12,7 +12,7 @@ import {
 	EmailIcon
 } from "react-share";
 
-function ShareButtons({title, excerpt}){
+function ShareButtons({title, excerpt, preText}){
     const [shareUrl, setShareUrl] = useState("");
 
     useEffect(() => {
@@ -20,10 +20,11 @@ function ShareButtons({title, excerpt}){
             setShareUrl(window.location.href);
         }
     }, []);
-	const intro = "This is the intro!"
 	return(
 		<div className={styles.shareButtons}>
-			<div className={styles.shareButtons__label}>Share this post</div>
+			<div className={styles.shareButtons__label}>
+				{preText ? preText : 'Share this post'}
+			</div>
 			<div className={styles.shareButtons__divider}></div>
 			<div className={styles.shareButtons__list}>
 				<TwitterShareButton

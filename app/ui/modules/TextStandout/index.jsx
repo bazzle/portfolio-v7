@@ -1,7 +1,7 @@
 import Section from '@/app/ui/components/Section';
 import styles from "./TextStandout.module.scss";
 
-function TextStandout({content, line, deepMb, deepMbLine, textPrefix, moreContent}){
+function TextStandout({content, line, deepMb, deepMbLine, textPrefix, children}){
 
 	const optionalProps = {
 		...(line ? { line } : {}),
@@ -13,6 +13,12 @@ function TextStandout({content, line, deepMb, deepMbLine, textPrefix, moreConten
 		<p className={styles.textStandout__prefix}>{textPrefix}</p>
 	)
 
+	const childrenContainer = (
+		<div className={styles.textStandout__children}>
+			{children}
+		</div>
+	)
+
 	return(
 		<Section
 			moduleClassname={styles.textStandout}
@@ -21,9 +27,10 @@ function TextStandout({content, line, deepMb, deepMbLine, textPrefix, moreConten
 			>
 			<div className={styles.textStandout__main}>
 				{textPrefix && textPrefixElem}
-				<p className={styles.textStandout__main__text}>
+				<p className={styles.textStandout__text}>
 					{content}
 				</p>
+				{children && childrenContainer}
 			</div>
 		</Section>
 	)

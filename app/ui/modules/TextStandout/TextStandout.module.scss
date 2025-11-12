@@ -28,25 +28,30 @@
 		@include vars.break(tablet){
 			max-width: 60vw;
 		}
-		&__text{
-			position: relative;
-			margin-bottom: 0;
-			color: transparent;
-			background: linear-gradient(180deg, var(--color-foreground) 75%, var(--color-accent) 100% );
-			background-clip: text;
-    		-webkit-background-clip: text;
-			@extend %text-display-small;
-			max-width: unset;
-			@media print{
-				background: none;
-				color: var(--color-foreground);
-			}
-		}
 		@media print{
 			padding-top: unset;
 			padding-bottom: unset;
 			text-align: left;
 			margin-left: unset;
 		}
+	}
+	&__text{
+		position: relative;
+		margin-bottom: 0;
+		color: transparent;
+		background: linear-gradient(180deg, var(--color-foreground) 75%, var(--color-accent) 100% );
+		background-clip: text;
+		-webkit-background-clip: text;
+		@extend %text-display-small;
+		max-width: unset;
+		@media print{
+			background: none;
+			color: var(--color-foreground);
+		}
+	}
+	&__children{
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }

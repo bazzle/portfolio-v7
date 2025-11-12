@@ -7,6 +7,9 @@ import TextStandout from "@/app/ui/modules/TextStandout";
 import Cards from "@/app/ui/modules/Cards";
 import StdContentTemplate from "./ui/modules/StdContentTemplate";
 import Header from "@/app/ui/modules/Header";
+import ShareButtons from "@/app/ui/components/blog/ShareButtons";
+import { metadata } from "./layout";
+
 // content import
 import {
 	WelcomeContent,
@@ -19,6 +22,8 @@ import {
 
 
 function Home(){
+	const title = metadata.title
+	const description = metadata.description
 	return(
 		<>
 			<Header location="portfolio" />
@@ -28,7 +33,7 @@ function Home(){
 					title={WelcomeContent.title}
 					bodyContent={WelcomeContent.bodyContent()}
 				/>
-				<TextStandout content={TextStandout1} line deepMbLine  textPrefix="What do I call myself?"/>
+				<TextStandout content={TextStandout1} line deepMbLine textPrefix="What do I call myself?"/>
 				<SkillsAndAbilities/>
 				<TextStandout content={TextStandout2} line deepMbLine/>
 				<Themes/>
@@ -45,7 +50,13 @@ function Home(){
 					bodyContent={GetInTouchContent.bodyContent()}
 					deepMbLine
 				/>
-				<TextStandout content={TextStandout3} />
+				<TextStandout content={TextStandout3}>
+					<ShareButtons
+						title={title}
+						excerpt={description}
+						preText={"Share this page"}
+					/>
+				</TextStandout>
 			</main>
 		</>
 	)

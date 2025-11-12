@@ -11,6 +11,7 @@
 	@include vars.break(tablet){
 		flex-direction: row;
 		align-items: center;
+		justify-content: center;
 	}
 	&__label{
 		@extend %text-blocky;
