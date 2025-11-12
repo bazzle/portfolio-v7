@@ -1,13 +1,17 @@
 import Section from '@/app/ui/components/Section';
 import styles from "./TextStandout.module.scss";
 
-function TextStandout({content, line, deepMb, deepMbLine}){
+function TextStandout({content, line, deepMb, deepMbLine, textPrefix, moreContent}){
 
 	const optionalProps = {
-		...(line ? { line: true } : {}),
-		...(deepMb ? { deepMb: true } : {}),
-		...(deepMbLine ? { deepMbLine: true } : {}),
+		...(line ? { line } : {}),
+		...(deepMb ? { deepMb } : {}),
+		...(deepMbLine ? { deepMbLine } : {}),
 	}
+
+	const textPrefixElem = (
+		<p className={styles.textStandout__prefix}>{textPrefix}</p>
+	)
 
 	return(
 		<Section
@@ -15,11 +19,12 @@ function TextStandout({content, line, deepMb, deepMbLine}){
 			layout="fullWidth"
 			{...optionalProps}
 			>
-			<blockquote className={styles["textStandout__blockquote"]}>
-				<p className={styles["textStandout__blockquote__text"]}>
+			<div className={styles.textStandout__main}>
+				{textPrefix && textPrefixElem}
+				<p className={styles.textStandout__main__text}>
 					{content}
 				</p>
-			</blockquote>
+			</div>
 		</Section>
 	)
 }

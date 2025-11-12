@@ -28,7 +28,7 @@ function Home(){
 					title={WelcomeContent.title}
 					bodyContent={WelcomeContent.bodyContent()}
 				/>
-				<TextStandout content={TextStandout1} line deepMbLine/>
+				<TextStandout content={TextStandout1} line deepMbLine  textPrefix="What do I call myself?"/>
 				<SkillsAndAbilities/>
 				<TextStandout content={TextStandout2} line deepMbLine/>
 				<Themes/>
@@ -45,7 +45,7 @@ function Home(){
 					bodyContent={GetInTouchContent.bodyContent()}
 					deepMbLine
 				/>
-				<TextStandout content={TextStandout3}/>
+				<TextStandout content={TextStandout3} />
 			</main>
 		</>
 	)

@@ -10,17 +10,19 @@
 		border-bottom: 0;
 		background: none!important;
 	}
-	&__inner{
-		position: relative;
-		z-index: 1;
+	&__prefix{
+		@extend %text-blocky;
+		color: var(--color-accent-alt);
+		margin-bottom: calc(vars.$block-spacing /2);
 	}
-	&__blockquote{
+	&__main{
 		margin-block-start: unset;
 		margin-block-end: unset;
 		display: block;
 		text-align: center;
     	margin: 0 auto;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		max-width: 80vw;
 		@include vars.break(tablet){

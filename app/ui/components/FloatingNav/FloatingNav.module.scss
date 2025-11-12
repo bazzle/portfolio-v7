@@ -1,8 +1,7 @@
 @use "@/app/assets/styles/style-library/all-vars" as vars;
 
 @mixin floating-nav-text-style{
-	@extend %text-blocky;
-	font-size: vars.$font-size-tiny;
+	@extend %text-blocky-tiny;
 }
 
 .floatingNav{
