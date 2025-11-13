@@ -41,13 +41,12 @@
 			max-width: 4rem;
 			background-color: var(--color-accent-alt);
 		}
-		button{
+		button, a{
 			all: unset;
 			width: 36px;
 			height: 36px;
 			display: block;
 			cursor: pointer;
-			background: gold;
 			border: 1px solid var(--color-accent)!important;
 			&:hover{
 				border-color: var(--color-foreground)!important;

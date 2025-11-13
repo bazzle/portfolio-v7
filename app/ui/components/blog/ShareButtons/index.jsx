@@ -13,13 +13,15 @@ import {
 } from "react-share";
 
 function ShareButtons({title, excerpt, preText}){
-    const [shareUrl, setShareUrl] = useState("");
+	const [shareUrl, setShareUrl] = useState("");
+	const emailBody = shareUrl
+	const mailtoHref = shareUrl ? `mailto:?subject=${encodeURIComponent(title)}&body=${emailBody}` : undefined;
 
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            setShareUrl(window.location.href);
-        }
-    }, []);
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			setShareUrl(window.location.href);
+		}
+	}, []);
 	return(
 		<div className={styles.shareButtons}>
 			<div className={styles.shareButtons__label}>
@@ -69,18 +71,21 @@ function ShareButtons({title, excerpt, preText}){
 					/>
 				</LinkedinShareButton>
 
-				<EmailShareButton
-					url={shareUrl}
-					htmlTitle="Share by email"
-					subject={title}
+				<a
+					className={styles.shareButtons__mailto}
+					href={mailtoHref}
+					title="Share by email"
+					aria-disabled={!mailtoHref}
+					onClick={!mailtoHref ? (e) => e.preventDefault() : undefined}
 				>
 					<EmailIcon
 						round={false}
 						size={36}
 						iconFillColor="var(--color-foreground)"
-						bgStyle={{fill: 'var(--color-bg-alt)'}}
+						bgStyle={{ fill: "var(--color-bg-alt)" }}
 					/>
-				</EmailShareButton>
+				</a>
+
 			</div>
 		</div>
 	)
