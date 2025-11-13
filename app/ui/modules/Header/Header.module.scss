@@ -1,11 +1,11 @@
 @use "@/app/assets/styles/style-library/all-vars" as vars;
 
-%headerlinkDefaults{
+@mixin headerlinkDefaults{
 	height: auto;
 	position: relative;
 	margin: 0;
 	padding: 0;
-	@extend %text-blocky;
+	@include vars.text-blocky;
 	font-size: 1.6rem;
 	text-decoration: none;
 	display: flex;
@@ -44,7 +44,7 @@
 			border: none;
 		}
 		&__link{
-			@extend %headerlinkDefaults;
+			@include headerlinkDefaults;
 			display: flex;
 			align-items: center;
 			flex-direction: row;
@@ -71,7 +71,7 @@
 			padding-right: unset;
 		}
 		&__link{
-			@extend %headerlinkDefaults;
+			@include headerlinkDefaults;
 			gap: .5em;
 			span{
 				display: block;

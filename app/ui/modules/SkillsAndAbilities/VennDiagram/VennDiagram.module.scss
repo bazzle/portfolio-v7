@@ -25,7 +25,7 @@
 		top: calc(50% + .5em);
 		left: 50%;
 		transform: translate(-50%, -50%);
-		@extend %text-miniscule;
+		@include vars.text-miniscule;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -44,7 +44,7 @@
 		width: 100%;
 		height: auto;
 		text{
-			@extend %text-miniscule;
+			@include vars.text-miniscule;
 		}
 		circle{
 			fill: none!important;

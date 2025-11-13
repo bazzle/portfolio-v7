@@ -18,7 +18,7 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 			margin-bottom: 0;
 			text-align: center;
 			display: inline-block;
-			@extend %text-heading--chunky;
+			@include vars.text-heading--chunky;
 			padding-top: 2em;
 			padding-bottom: 1em;
 		}

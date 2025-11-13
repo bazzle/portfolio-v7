@@ -27,7 +27,7 @@
 		}
 	}
 	&__title{
-		@extend %text-display-medium;
+		@include vars.text-display-medium;
 		display: block;
 		color: var(--color-accent);
 		@include vars.light-mode-wrapper{
@@ -36,7 +36,7 @@
 	}
 	&__metadata{
 		display: block;
-		@extend %text-blocky;
+		@include vars.text-blocky;
 		margin-top: calc(vars.$block-spacing--shallow /2);
 	}
 }

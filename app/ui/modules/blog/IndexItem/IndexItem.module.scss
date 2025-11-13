@@ -11,7 +11,7 @@
 	}
 	&__title{
 		a{
-			@extend %text-heading--large;
+			@include vars.text-heading--large;
 			margin-bottom: 0;
 			text-decoration: none;
 			&:hover{

@@ -4,7 +4,7 @@
 	display: block;
 	margin-top: vars.$block-spacing;
 	&__body{
-		@extend %text-editorial;
+		@include vars.text-editorial;
 		figure{
 			margin-bottom: vars.$block-spacing--text;
 		}

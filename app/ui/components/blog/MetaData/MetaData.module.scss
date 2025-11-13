@@ -14,7 +14,7 @@
 		background-color: var(--color-accent-alt);
 	}
 	.postDate{
-		@extend %text-blocky;
+		@include vars.text-blocky;
 		display: flex;
 		align-items: center;
 		min-height: 26px;
@@ -31,7 +31,7 @@
 			align-items: center;
 			a{
 				text-decoration: none;
-				@extend %text-blocky;
+				@include vars.text-blocky;
 				display: flex;
 				align-items: center;
 				line-height: 1;
@@ -48,7 +48,7 @@
 				padding: 0 .4em;
 				border: none;
 				background: none;
-				@extend %text-blocky;
+				@include vars.text-blocky;
 				font-size: 1.1em;
 				font-weight: 300;
 				display: flex;

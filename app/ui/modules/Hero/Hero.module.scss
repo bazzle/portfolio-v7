@@ -48,7 +48,7 @@
 			padding-bottom: vars.$block-spacing--shallow;
 		}
 		&__main{
-			@extend %text-display;
+			@include vars.text-display;
 			display: block;
 			padding-top: .1em;
 			padding-bottom: .3em;
@@ -61,7 +61,7 @@
 		}
 		&__sub{
 			display: block;
-			@extend %text-medium;
+			@include vars.text-medium;
 		}
 	}
 }

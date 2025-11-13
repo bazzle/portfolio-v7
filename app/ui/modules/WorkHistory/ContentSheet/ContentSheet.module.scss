@@ -11,7 +11,7 @@
 		}
 	}
 	&__name{
-		@extend %text-heading;
+		@include vars.text-heading;
 		@media print{
 			font-size:4rem;
 			margin-top: 2rem;
@@ -20,14 +20,14 @@
 	}
 	&__dates{
 		margin-bottom: vars.$block-spacing--tiny;
-		@extend %text-blocky;
+		@include vars.text-blocky;
 		@include vars.break(desktop-wider){
 			display: none;
 		}
 	}
 	&__metadata{
 		&__duration{
-			@extend %text-blocky;
+			@include vars.text-blocky;
 			margin-bottom: vars.$block-spacing--text;
 		}
 	}
@@ -44,7 +44,7 @@
 		}
 	}
 	&__intro{
-		@extend %text-intro;
+		@include vars.text-intro;
 		margin-bottom: vars.$block-spacing--text;
 		max-width: vars.$content-width;
 	}

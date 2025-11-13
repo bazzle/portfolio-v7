@@ -74,17 +74,17 @@
 		.is_active &{
 			color: var(--color-foreground);
 			line-height: 1.2;
-			@extend %text-heading--chunky;
+			@include vars.text-heading--chunky;
 			@include vars.break-under(desktop-wider){
 				font-size: inherit;
 			}
 		}
 		.not_active &{
-			@extend %standalone-link;
+			@include vars.standalone-link;
 		}
 	}
 	&__dates{
-		@extend %text-miniscule;
+		@include vars.text-miniscule;
 		display: none;
 		@include vars.break(desktop-wider){
 			display: block;

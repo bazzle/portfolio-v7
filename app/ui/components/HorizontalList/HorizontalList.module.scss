@@ -3,7 +3,7 @@
 .horizontalList{
 	margin-bottom: 4rem;
 	&__heading{
-		@extend %text-blocky;
+		@include vars.text-blocky;
 		padding-bottom: .6em;
 	}
 	ul{

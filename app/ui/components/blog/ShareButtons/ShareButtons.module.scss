@@ -14,7 +14,7 @@
 		justify-content: center;
 	}
 	&__label{
-		@extend %text-blocky;
+		@include vars.text-blocky;
 		@include vars.break-under(tablet){
 			margin-bottom: .5em;
 		}

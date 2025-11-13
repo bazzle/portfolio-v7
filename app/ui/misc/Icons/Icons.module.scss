@@ -1,6 +1,6 @@
 @use "@/app/assets/styles/style-library/all-vars" as vars;
 
-%defaults{
+@mixin defaults{
 	position: relative;
 	left: 0;
 	top: 0;
@@ -10,7 +10,7 @@
 }
 
 .icon{
-	@extend %defaults;
+	@include defaults;
 	&____glass{
 		left: -1.5rem;
 	}

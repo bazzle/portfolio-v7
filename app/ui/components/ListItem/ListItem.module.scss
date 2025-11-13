@@ -1,12 +1,12 @@
 @use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .listItem{
-	@extend %ul-list-item;
+	@include vars.ul-list-item;
 }
 
 .listItem____blocky{
-	@extend %ul-list-item;
-	@extend %text-blocky;
+	@include vars.ul-list-item;
+	@include vars.text-blocky;
 	padding-top: .1em;
 	padding-bottom: .1em;
 }

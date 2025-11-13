@@ -61,7 +61,7 @@
 		}
 	}
 	&__name{
-		@extend %text-heading-small;
+		@include vars.text-heading-small;
 		color: var(--color-accent-alt);
 		text-align: left;
 		border-top: 1px solid var(--color-accent-20);
@@ -77,7 +77,7 @@
 		}
 	}
 	&__description{
-		@extend %text-tiny;
+		@include vars.text-tiny;
 		text-align: left;
 		margin-bottom: 0;
 	}

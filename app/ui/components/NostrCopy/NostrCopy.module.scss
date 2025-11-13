@@ -9,7 +9,7 @@
 		gap: .4em;
 		align-items: center;
 		display: inline-flex;
-		@extend %text-link-defaults;
+		@include vars.text-link-defaults;
 		svg{
 			width: 10px;
 		}
@@ -17,7 +17,7 @@
 	&__popupMessage{
 		color: white;
 		background: black;
-		@extend %text-miniscule;
+		@include vars.text-miniscule;
 		text-transform: uppercase;
 		position: absolute;
 		right: -.5em;

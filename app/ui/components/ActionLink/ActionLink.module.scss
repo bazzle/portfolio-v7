@@ -10,7 +10,7 @@
 		}
 	}
 	a {
-		@extend %standalone-link;
+		@include vars.standalone-link;
 		cursor: pointer;
 		@media print {
 			display: none;
