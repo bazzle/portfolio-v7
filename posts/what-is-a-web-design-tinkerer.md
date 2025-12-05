@@ -7,7 +7,7 @@ tags:
   - design
 ---
 
-While working on my personal rebrand, or to put it less pretentiously, _figuring out who I am, and what I do_, I got hung up on what particular job title I can use that best describes me. I found that none of the existing titles which are conventionally recognised really fits. so I invented my own. I’m a _Web design tinkerer_ It’s not a distinctive job title per se, more a mindset and approach to work. A Web design tinkerer broadly covers UI design and front-end web development.
+While working on my personal rebrand, or to put it less pretentiously, _figuring out who I am, and what I do_, I got hung up on what particular job title I can use that best describes me. I found that none of the existing titles which are conventionally recognised really fits. so I invented my own. I’m a _Web design tinkerer_. It’s not a distinctive job title per se, more a mindset and approach to work. A Web design tinkerer broadly covers UI design and front-end web development.
 
 I will drop a few words and phrases that I think are relevant to being a Design tinkerer.
 
