@@ -1,7 +1,7 @@
 ---
 title: What is a Web Design Tinkerer
 slug: what-is-a-web-design-tinkerer
-date: 2025-12-5
+date: 2025-12-05
 excerpt: I got hung up on my job title for a while. I found that none of the existing titles that are conventionally recognised really capture what I do, so I invented my own one.
 tags:
   - design
