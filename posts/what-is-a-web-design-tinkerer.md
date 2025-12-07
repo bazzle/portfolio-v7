@@ -7,35 +7,35 @@ tags:
   - design
 ---
 
-While working on my personal rebrand, or to put it less pretentiously, _figuring out who I am, and what I do_, I got hung up on what particular job title I can use that best describes me. I found that none of the existing titles which are conventionally recognised really fits. so I invented my own. I’m a _Web design tinkerer_. It’s not a distinctive job title per se, more a mindset and approach to work. A Web design tinkerer broadly covers UI design and front-end web development.
+While working on my personal rebrand, or to put it less pretentiously, _figuring out who I am, and what I do_, I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own. I’m a _Web design tinkerer_
 
-I will drop a few words and phrases that I think are relevant to being a Design tinkerer.
+It’s not a job title per se, more a mindset and approach to work. A Web design tinkerer broadly covers UI design and front-end design engineering.
 
-Light-touch, less is more, iterate, kill your ego, pragmatism, agile, low-hanging-fruit, restraint, micro-interactions, embrace constraints, fundamentals, standards, stay humble, we can’t know everything.
+ As the name suggests, to tinker is to make the small changes. To iterate rapidly and refine over time. To set the scene, a few words to describe a Design tinkerer:
 
-Fundamentally, a Web design tinkerer improves the interface through optimising the _feel_ of an app or the _rhythm_ of a website. Enhancing the interactivity and presentation of content—from a baseline of accessibility and tried and tested, but often overlooked conventional web standards, coupled with what I call _The subtle art of making things POP_—through the use of typography, hierarchy, colour, white-space, layout and other design fundamentals. 
+Light-touch, less is more, iterate, kill your ego, pragmatism, agile, low-hanging-fruit, restraint, embrace constraints, fundamentals, standards, stay humble, we can’t know everything.
 
-My approach centres around a few design philosophies and truths:
+The approach of the design tinkerer centres around a few design philosophies and truths:
 
 1. Good design is _felt_ rather than noticed
 2. Design is as much about what you take away as what you add
 3. Small changes can make huge differences
 4. A great design lands through iteration.
 
-The verb I use, _to tinker_ encapsulates these philosophies pretty well, a website or app is like an old car, it’s made up of modular and composable parts. A perfect medium to tinker with. The agile approach that is standard in software development favours iteration and tinkering, as opposed to the linear waterfall approach where there’s definitive start and end states.
+The verb I use, _to tinker_ encapsulates these philosophies pretty well, a website or app is like an old car, it’s made up of modular and composable parts. A perfect medium to tinker with, to add to, to take away from, to modify, to refactor, retest and review. 
 
-To be a Design tinkerer is to Identify how I can make the smallest changes for the biggest improvements and the best outcomes. If I’m redesigning a website or interface, I don’t immediately think, throw it in the bin and start again, I find out what works and what doesn’t. Stripping out the bad, leaving the good and iterating from that baseline. It’s a more thoughtful approach and sensitive to scope constraints. Again, small changes can make huge differences, the Design tinkerer leverages this as much as possible. To give some examples of how this works in practice:
+The Design tinkerer can work for any design discipline, but it works particularly well for web design. Unlike, for example Interior design—where the designer can only tinker during the initial design and ideation stage, not after the interior has been installed, The impermanence of digital products allows for ongoing design iteration as more is understood about user needs and how they interact with the product. The agile mindset favours tinkering.
 
-**A website redesign to go with a new content strategy.** I’d question if a redesign is necessary, a _refresh_ might be more appropriate. I seek to figure out how I can present the new content as well as possible with what already exists. An adjustment of a single font property might make all the difference, loosening the line-height, a reduction of line-length and an increase in white-space might make a massive improvement to the presentation of a length of content on a web page.
+It is important to emphasise that, to describe the Design tinkerer as being exclusively concerned with the small changes is a misnomer. It is not the small change to achieve a certain goal, it is the _smallest_ change, which might be in itself a relatively large change. This is all to say that the Design tinkerer wouldn’t shy away from suggesting a website redesign, for example if that is the most appropriate course of action.
 
-**Optimising an interface for a newly identified user need or persona.** I’d find a way to satisfy the need without making big hard-to-reverse changes to the structure of the app or introducing new screens and user journeys, only doing so if necessary. This way, the product evolves slowly in response to changing user needs.
+As a Web design tinkerer, with a focus on the look and feel of interfaces, I figure out the small changes that can make the biggest impacts and best outcomes. From a baseline of often overlooked conventional web standards and accessibility guidelines, I add minimal but impactful  visual and interactive flourish, along the lines of what I call_The subtle art of making things POP_—the use of typography, hierarchy, colour, white-space, layout and other design fundamentals.
 
-**Improving the usability of an interface off the back of an accessibility audit.** Remediating WCAG and best practice violations, often improves the interface not just for users with disabilities.
+A web design tinkerer rejects the assumption that big changes must be made to achieve the big impacts a client is asking for. To outline how this works in practical terms, here are some examples:
 
-**A fresh new build** If tasked with building a new website or app, I’d be mindful to allow separation of concerns, to make possible design tinkering further down the line. Global styling, separate from component-level styling. Modern JavaScript UI libraries like React help with this separation of concerns.
+**A website redesign to go with a new content strategy** I’d question if a redesign is necessary, a _refresh_ might be more appropriate. I seek to figure out how I can present the new content as well as possible with what already exists. An adjustment of a single font property and a few styling rules—loosening that line-height, reducing the line-length, or increasing the white-space might make a massive improvement to the presentation of content on a web page.
 
-______
+**Optimising an interface for a newly identified user need or persona** I’d find a way to satisfy the need without introducing new screens and user journeys, only doing so if necessary. This way, the product evolves slowly in response to changing user needs.
 
-The opposite of the tinkerer is what I call the _design maximalist_, the designer who always pitches for a fresh rebuild of a site, or a new feature of an app outside of the identified user needs. If a client wants their website to have a little more visual impact, they would prioritise design elements that are best utilised with restraint. Flashy animations and distracting page transitions, to the detriment of the content and the needs of the users. Overlooking the fact that often it is the small changes that make the biggest impacts.
+**Improving the usability of an interface off the back of an accessibility audit** Simply remediating WCAG violations, improves the interface for everybody, not just for users with disabilities. From this baseline I can address instances where best practices haven’t been applied.
 
-Of course, there are times when a new build or a complete design overhaul is the appropriate course of action. I don’t follow a religious adherence to these philosophies I’ve described, as I’m mindful not to paint myself into a position where I’m wholly judged by them. It is more than anything the most appropriate designation of what I do, than any conventional job title that exists.
+**A fresh new build** If tasked with building a new website or app, I’d be mindful to allow separation of concerns, to make possible design tinkering further down the line, small changes to the code to make big differences. This could be in the form of global styling, separate from component-level. The data and content separate from the presentation layer.
