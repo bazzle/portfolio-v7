@@ -2,12 +2,10 @@
 title: What is a Web Design Tinkerer
 slug: what-is-a-web-design-tinkerer
 date: 2025-12-05
-excerpt: While working on my personal rebrand, or to put it less pretentiously, _figuring out who I am, and what I do_, I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own.
+excerpt: I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own.
 tags:
   - design
 ---
-
-## What is a Web design tinkerer
 
 While working on my personal rebrand, I got hung up on what particular job title I can use that best describes me and what I do. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own. I’m a _Web design tinkerer_
 
