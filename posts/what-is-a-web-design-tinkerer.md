@@ -45,4 +45,4 @@ A web design tinkerer rejects the assumption that big changes must be made to ac
 
 AI has been hugely disruptive in the web development space. Traditional job roles and ways of working are shifting faster than before. I think the notion of rigid specialisation is on the decline and people may step out of those silo’s, and embrace the fluidity of work going into the AI era. Perhaps allowing themselves be defined by the principles and philosophies they stand by, which I think will be more of a constant. I think a small part of this, is being creative and thoughtful with how a person brands and labels themselves.
 
-A Design Tinkerer is my attempt at this. And in true tinkerer fashion, even the label itself is open to iteration. It may evolve, it may change, or it may be discarded altogether, but the mindset will remain.
+A Design Tinkerer is my attempt at this. And in true tinkerer fashion, even the label itself is open to iteration. As I take the next steps in my career—learn new things, and live new experiences it may evolve—it may change, it may be discarded altogether. And that is a feature, not a bug.
