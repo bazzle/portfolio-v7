@@ -7,26 +7,23 @@ tags:
   - design
 ---
 
-While working on my personal rebrand, I got hung up on what particular job title I can use that best describes me and what I do. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own. I’m a _Web design tinkerer_
+While working on my personal rebrand, I got hung up on what particular job title I can use that best describes me and what I do. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own. I’m a _Web design tinkerer_.
 
 It’s not a job title per se, more a mindset and approach to work. A Web design tinkerer broadly covers UI design and front-end design engineering.
 
 As the name suggests, to tinker is to make the small changes. To iterate rapidly and refine over time. The design tinkerer centres around a few design philosophies and truths:
 
-1. Good design is _felt_ rather than noticed
-2. Design is as much about what you take away as what you add
-3. Small changes can make huge differences
-4. A great design lands through iteration.
-
-The verb I use, _to tinker_ encapsulates these philosophies pretty well.
+1. Design is as much about what you take away as what you add
+2. Small changes can make huge differences
+3. A great design lands through iteration.
 
 ### Design Tinkering for the web
 
 A website or app is modular—an aggregation of composable parts. A perfect medium to add to, to take away from, to modify, to refactor, to retest, review, to _tinker with_.
 
-The Design tinkerer can work for any design discipline, but it works particularly well for web design, and more broadly software development. Unlike, for example Interior design—where the designer can only tinker during the initial design stage, not after the interior has been installed. The impermanence of digital products allows for ongoing design iteration as more is understood about user needs and how users interact with the product. The agile mindset favours tinkering.
+The Design tinkerer can work for any design discipline. But it works particularly well for web design, and more broadly software development. Unlike, for example Interior design—where the designer can only tinker during the initial design stage, not after the interior has been installed. The impermanence of digital products allows for ongoing design iteration as more is understood about user needs and how users interact with the product. The agile mindset favours tinkering.
 
-It is important to emphasise that, to describe the Design tinkerer as being exclusively concerned with the small changes isn’t correct. It is not the small change to achieve a certain goal, it is the _smallest_ change, which might be in itself a relatively large change. This is all to say that the Design tinkerer wouldn’t shy away from suggesting a website redesign, for example if that is the most appropriate thing to do.
+It is important to emphasise that, to describe the Design tinkerer as being exclusively concerned with the small changes, is not correct. It is not the _small_ change to achieve a certain goal, it is the _smallest_ change, which might be in itself a relatively large change. This is all to say that the Design tinkerer wouldn’t shy away from suggesting a website redesign for example, if that is the most appropriate thing to do.
 
 As a Web design tinkerer, with a focus on the look and feel of interfaces, I figure out the small changes that can make the biggest impacts and best outcomes. From a baseline of often overlooked conventional web standards and accessibility guidelines, I add minimal but impactful  visual and interactive flourish, along the lines of what I call _The subtle art of making things POP_—the use of typography, hierarchy, colour, white-space, layout and other design principles.
 
@@ -40,12 +37,12 @@ A web design tinkerer rejects the assumption that big changes must be made to ac
 
 **Optimising an interface for a newly identified user need or persona** I’d find a way to satisfy the need without introducing new screens and user journeys, only doing so if necessary. This way, the product evolves slowly in response to changing user needs.
 
-**Improving the usability of an interface off the back of an accessibility audit** Simply remediating WCAG violations improves the interface for everybody, not just for users with disabilities. From there I can address instances where best practices haven’t been applied.
+**Improving the usability of an interface off the back of an accessibility audit** Simply remediating WCAG violations improves the interface for everybody, not just for users with disabilities. From there I can address instances where best practices have been overlooked.
 
-**A fresh new build** If tasked with building a new website or app, I’d be mindful to allow separation of concerns, or a layered approach to make possible design tinkering further down the line, small changes to the code to make big differences. This could be in the form of global styling, separate from component-level. The data and content separate from the presentation layer.
+**A fresh new build** If tasked with building a new website or app, I’d be mindful to allow separation of concerns, or a layered approach to make possible design tinkering further down the line, small changes to the code to make big differences. This could be in the form of global styling, separate from component-level, or the data and content separate from the presentation layer.
 
 ### Conclusion
 
-AI has been hugely disruptive in the web development space, and upended traditional job roles and ways of working. I think the notion of rigid specialisation is on the decline and people should unshackle themselves from those silo’s, embrace the fluidity of work going into the AI age, and let themselves be defined by the principles and philosophies they stand by, which I think will be more of a constant. I think a small part of this, is being creative and thoughtful with how a person brands and labels themselves.
+AI has been hugely disruptive in the web development space. Traditional job roles and ways of working are shifting faster than before. I think the notion of rigid specialisation is on the decline and people may step out of those silo’s, and embrace the fluidity of work going into the AI era. Perhaps allowing themselves be defined by the principles and philosophies they stand by, which I think will be more of a constant. I think a small part of this, is being creative and thoughtful with how a person brands and labels themselves.
 
-A Design tinkerer is my first attempt at this. A label which I just came up with, for lack of finding anything that truly encapsulates what I do. In the spirit of the Design tinkerer, what it is to be one might be iterated on, the name might change or it may be dropped entirely.
+A Design Tinkerer is my attempt at this. And in true tinkerer fashion, even the label itself is open to iteration. It may evolve, it may change, or it may be discarded altogether, but the mindset will remain.
