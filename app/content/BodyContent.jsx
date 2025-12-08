@@ -286,9 +286,9 @@ export const CardGridContent = {
 		{
 			imageSrc : "/images/cards/exponential.png",
 			imageAlt : "Exponential curve depiction",
-			title : "My relationship with AI",
-			description : "I've been cautious about AI, I've had a strong desire to embrace it to improve my productivity and help my learning but formed some boundaries.",
-			link : "https://br-web.me/thoughts/my-relationship-with-ai"
+			title : "What is a Web Design Tinkerer?",
+			description : "I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own.",
+			link : "https://br-web.me/thoughts/what-is-a-web-design-tinkerer"
 		}
 	]
 }
