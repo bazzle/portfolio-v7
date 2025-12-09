@@ -23,9 +23,9 @@ A website or app is modular—an aggregation of composable parts. A perfect medi
 
 The Design tinkerer can work for any design discipline. But it works particularly well for web design, and more broadly software development. Unlike, for example Interior design—where the designer can only tinker during the initial design stage, not after the interior has been installed. The impermanence of digital products allows for ongoing design iteration as more is understood about user needs and how users interact with the product. The agile methodology favours tinkering.
 
-It is important to emphasise that, to describe the Design tinkerer as being exclusively concerned with the small changes, is not correct. It is not the _small_ change to achieve a certain goal, it is the _smallest_ change, which might be in itself a relatively large change. This is all to say that the Design tinkerer wouldn’t shy away from suggesting a website redesign for example, if that is the most appropriate thing to do.
-
 As a Web design tinkerer, with a focus on the look and feel of interfaces, I figure out the smallest changes that can make the biggest impacts and best outcomes. From a baseline of often overlooked conventional web standards and accessibility guidelines, I add minimal but impactful  visual and interactive flourish, along the lines of what I call _The subtle art of making things POP_—the use of typography, hierarchy, colour, white-space, layout and other design principles.
+
+It is important to emphasise that, to describe the Design tinkerer as being exclusively concerned with the small changes, is not correct. It is not the _small_ change to achieve a certain goal, it is the _smallest_ change, which might be in itself a relatively large change. This is all to say that the Design tinkerer wouldn’t shy away from suggesting a website redesign for example, if that is the most appropriate thing to do.
 
 ### The impact of restraint
 
@@ -33,13 +33,13 @@ A web design tinkerer rejects the assumption that big changes must be made to ac
 
 ### Practical examples of tinkering
 
-**A website refresh to go with a new content strategy.** I’d seek to figure out how I can present the new content as well as possible with what already exists. An adjustment of a single font property and a few styling rules—loosening that line-height, reducing the line-length, or increasing the white-space might make a massive improvement to the presentation of content on a web page.
+**Optimising an interface for a newly identified user need or persona** I’d find a way to satisfy the need without introducing new screens and user journeys, only doing so if necessary. This way, the product evolves slowly in response to changing user needs.
 
-**Optimising an interface for a newly identified user need or persona.** I’d find a way to satisfy the need without introducing new screens and user journeys, only doing so if necessary. This way, the product evolves slowly in response to changing user needs.
+**Improving the usability of an interface following an accessibility audit** Simply remediating WCAG violations improves the interface for everybody, not just users with disabilities. From there I can address instances where best practices have been overlooked.
 
-**Improving the usability of an interface off the back of an accessibility audit.** Simply remediating WCAG violations improves the interface for everybody, not just for users with disabilities. From there I can address instances where best practices have been overlooked.
+**A website refresh to go with a new content strategy** I’d seek to figure out how I can present the new content as well as possible with what already exists. An adjustment of a single font property and a few styling rules—loosening that line-height, reducing the line-length, or increasing the white-space might make a massive improvement to the presentation of content on a web page.
 
-**A new build.** If tasked with building a new website or app, I’d be mindful to allow separation of concerns, or a layered approach to make possible design tinkering further down the line, small changes to the code to make big differences. This could be in the form of global styling, separate from component-level, or the data and content separate from the presentation layer.
+**A new build** Involved in a new build project pre-launch, there are a few principles I'd follow which are in-line with the ethos of a Web design tinkerer. Modularity—keeping components small, focused, and easy to adjust in isolation. Clear boundaries between concerns—to name a couple, global and component-level styling and keeping data handling separate from presentation logic. This ensures components can be tinkered with easily withough affecting other components. Workflow—chunking up what needs to be done into the smallest sensible tasks, keeping Pull Requests small in scope.
 
 ### Conclusion
 
