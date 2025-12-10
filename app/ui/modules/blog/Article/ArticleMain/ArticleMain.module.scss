@@ -3,6 +3,7 @@
 .articleMain{
 	display: block;
 	margin-top: vars.$block-spacing;
+	background-color: var(--color-bg-alt-70);
 	&__body{
 		@include vars.text-editorial;
 		figure{
