@@ -274,21 +274,21 @@ export const CardGridContent = {
 			imageAlt : "Figure with a question-mark for a head",
 			title : "Bitcoin Truthbombs",
 			description : "2 minute read articles about Bitcoin I write as I learn about the technology and economics.",
-			link : "https://br-web.me/thoughts/bitcoin-truthbombs"
+			link : "/thoughts/2025-08-02"
 		},
 		{
 			imageSrc : "/images/cards/sat-power2.webp",
 			imageAlt : "Sat logo",
 			title : "Satoshi Power",
 			description : "Fun project looking at how the price of a satoshi compares to the smallest units of different fiat currencies. Pulling data from blockchain.com",
-			link : "https://br-web.me/thoughts/satoshi-power"
+			link : "/thoughts/2025-08-21"
 		},
 		{
 			imageSrc : "/images/cards/exponential.png",
 			imageAlt : "Exponential curve depiction",
 			title : "What is a Web Design Tinkerer?",
 			description : "I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own.",
-			link : "https://br-web.me/thoughts/what-is-a-web-design-tinkerer"
+			link : "/thoughts/2025-12-05"
 		}
 	]
 }
