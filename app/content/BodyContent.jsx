@@ -339,19 +339,19 @@ export const ContentSection3 = {
 export const GetInTouchContent = {
 	title: "Get in touch / Links",
 	bodyContent: () => {
-		const email = 'email: <a href="mailto:barry@br-web.me">barry@br-web.me</a>'
-		const x = 'X: <a href="https://x.com/bazzle">@bazzle</a>'
+		const email = '<a href="mailto:barry@br-web.me">barry@br-web.me</a>'
+		const x = '<a href="https://x.com/bazzle">X</a>'
 		const linkedIn = <a href="https://www.linkedin.com/in/br-web">LinkedIn</a>
 		const cv = <a href="./files/cv.pdf">CV</a>
 		const gitHub = <a href="https://github.com/bazzle">GitHub</a>
-		const nostr = <NostrCopy/>
+		const nostr = '<a href="https://njump.me/bazzle@br-web.me">Nostr</a>'
 		const workWithMe = <Link href="/work-with-me">Lets work together</Link>
 		const thoughts = <a href="https://thoughts2.netlify.app/">Thoughts</a>
 		return(
 			<>
-				<HorizontalList listItems={[email]} heading="Get in touch:" />
-				<HorizontalList listItems={[x, nostr]} heading="Socials:" />
-				<HorizontalList listItems={[cv, linkedIn, gitHub, thoughts]} heading="Other links:" />
+				<HorizontalList listItems={[email]} heading="Email:" />
+				<HorizontalList listItems={[x, nostr, linkedIn]} heading="Socials:" />
+				<HorizontalList listItems={[cv, gitHub, thoughts]} heading="Other links:" />
 			</>
 		)
 	}
