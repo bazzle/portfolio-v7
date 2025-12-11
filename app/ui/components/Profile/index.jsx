@@ -18,7 +18,7 @@ function Profile(){
 				stiffness: 200,
 				damping: 30
 			}}>
-				<Image width="200" height="200" src="/images/profile.webp" alt="Profile image" />
+				<Image width="200" height="200" src="/images/profile.png" alt="Profile image" />
 			</motion.div>
 		</div>
 	)
