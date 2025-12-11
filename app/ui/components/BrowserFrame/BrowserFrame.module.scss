@@ -1,0 +1,33 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+.browserDesktop, .browserMobile{
+	position: relative;
+	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: auto;
+	@include vars.light-mode-wrapper{
+		box-shadow: none;
+	}
+	svg{
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.browserDesktop{
+	aspect-ratio: 40/28;
+	&.extended{
+		width: 90vw;
+		height: auto;
+		max-width: 1200px;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
+.browserMobile{
+	aspect-ratio: 14.2/28;
+}
