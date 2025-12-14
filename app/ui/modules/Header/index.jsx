@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import styles from "./Header.module.scss";
 import {Icons} from "@/app/ui/misc/Icons";
+import HeaderTitle from './HeaderTitle';
 
 function Header({location}){
 	
@@ -84,7 +85,7 @@ function Header({location}){
 		<header className={styles.header}>
 			<div className="container____toEdgesMobile">
 				<div className={styles.header__inner}>
-					<h1 className={styles.header__sitename}>
+					<HeaderTitle location={location}>
 						<Link className={styles.header__sitename__link} href="/">
 							<span className='highlight-on-link'>
 								{NameTitle.name}
@@ -93,7 +94,7 @@ function Header({location}){
 								{NameTitle.title}
 							</span>
 						</Link>
-					</h1>
+					</HeaderTitle>
 					<nav className={styles.header__nav}>
 						{ navLinks.map((item, index)=>(item)) }
 					</nav>

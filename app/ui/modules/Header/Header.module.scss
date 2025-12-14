@@ -36,7 +36,6 @@
 	}
 	&__sitename{
 		all: unset;
-		padding-left: vars.$gutter-padding;
 		padding-right: vars.$gutter-padding;
 		padding-top: .5em;
 		@include vars.break(tablet){
