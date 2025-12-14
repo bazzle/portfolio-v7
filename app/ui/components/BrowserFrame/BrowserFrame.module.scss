@@ -7,13 +7,14 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	width: auto;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
 	svg{
 		height: 100%;
 		width: 100%;
 		box-shadow: 0 .8rem .8rem rgba(0, 0, 0, 0.2);
 	}
-	display: flex;
-	flex-direction: column;
 }
 
 .browserDesktop{
@@ -28,10 +29,10 @@
 }
 
 .browserMobile{
-	max-width: 280px;
-	@include vars.break(tablet){
-		max-width: 280px;
-	}
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 120px;
+	max-width: 220px;
 }
 
 .browserFrame__caption{
