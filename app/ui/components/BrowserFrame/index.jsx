@@ -37,9 +37,6 @@ const mobileView = (src, alt, caption, extended) => {
 				<mask id="mask0_753_334" style={{maskType:'alpha'}} maskUnits="userSpaceOnUse" x="17" y="74" width="372" height="704">
 					<path d="M17.1426 82.8572C17.1426 78.1233 20.9801 74.2858 25.714 74.2858H380C384.734 74.2858 388.571 78.1233 388.571 82.8572V768.571C388.571 773.305 384.734 777.143 380 777.143H25.714C20.9801 777.143 17.1426 773.305 17.1426 768.571V82.8572Z" fill="white"/>
 				</mask>
-				<g mask="url(#mask0_753_334)">
-					<rect x="14.6377" y="69" width="377.84" height="749" fill="url(#pattern0_753_334)"/>
-				</g>
 				<image
 					href={src}
 					width="100%"
@@ -47,7 +44,7 @@ const mobileView = (src, alt, caption, extended) => {
 					mask="url(#mask0_753_334)"
 					alt={alt}
 					x="0"
-					y="27"
+					y="32"
 				/>
 			</svg>
 			{caption && <figcaption className={styles.browserFrame__caption}>{caption}</figcaption>}

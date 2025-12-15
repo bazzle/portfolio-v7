@@ -29,9 +29,6 @@
 }
 
 .browserMobile{
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 120px;
 	max-width: 220px;
 }
 
@@ -40,5 +37,5 @@
 	text-align: center;
 	width: 100%;
 	padding-top: calc(vars.$block-spacing--text /2);
-	font-size: vars.$font-size-tiny;
+	font-size: vars.$font-size-miniscule;
 }
