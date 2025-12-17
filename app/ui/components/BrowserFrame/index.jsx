@@ -1,7 +1,7 @@
 import styles from "./BrowserFrame.module.scss";
 
 const desktopView = (src, alt, caption, extended) => {
-	const styleString = `${styles.browserDesktop}`
+	const styleString = `${styles.browserDesktop} ${extended && styles.extended}`
 	return(
 		<figure className={styleString}>
 			<svg viewBox="0 0 1202 800" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@ const desktopView = (src, alt, caption, extended) => {
 		</figure>
 	)
 }
-const mobileView = (src, alt, caption, extended) => {
+const mobileView = (src, alt, caption) => {
 	return(
 		<figure className={styles.browserMobile}>
 			<svg width="406" height="800" viewBox="0 0 406 800" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@ const mobileView = (src, alt, caption, extended) => {
 
 function BrowserFrame({src, alt, mobile, caption, extended}){
 	if (mobile){
-		return mobileView(src, alt, caption, extended);
+		return mobileView(src, alt, caption);
 	} else {
 		return desktopView(src, alt, caption, extended);
 	}
