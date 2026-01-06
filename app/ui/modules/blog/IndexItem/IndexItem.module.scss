@@ -3,7 +3,6 @@
 .postIndexItem{
 	display: block;
 	margin-bottom: vars.$block-spacing--shallow;
-	padding-bottom: vars.$block-spacing--shallow;
 	background-color: var(--color-bg-alt-70);
 	position: relative;
 	&:first-of-type{
@@ -14,7 +13,7 @@
 	}
 	&__title{
 		a{
-			@include vars.text-heading--large;
+			@include vars.text-heading;
 			margin-bottom: 0;
 			text-decoration: none;
 			&:hover{
@@ -27,19 +26,9 @@
 		display: flex;
 		align-items: center;
 		gap: .3em;
-		margin-top: calc(vars.$block-spacing--shallow /4);
+		margin-top: calc(vars.$block-spacing--shallow /8);
 	}
 	&__excerpt{
-		margin-top: calc(vars.$block-spacing--shallow /4);
-	}
-	&::after{
-		content: '';
-		display: block;
-		width: 100%;
-		height: 1px;
-		background-color: var(--color-accent-20);
-		position: absolute;
-		bottom: 0;
-		left: 0;
+		margin-top: calc(vars.$block-spacing--shallow /8);
 	}
 }
