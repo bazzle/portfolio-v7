@@ -16,11 +16,11 @@ const desktopView = (src, alt, caption, extended) => {
 				<g mask="url(#mask0_273_297)">
 					<image
 						href={src}
-						width="100%"
-						height="100%"
+						width="1166"
+						height="722"
 						alt={alt}
-						x="0"
-						y="21"
+						x="18"
+						y="60"
 					/>
 				</g>
 			</svg>
@@ -39,12 +39,12 @@ const mobileView = (src, alt, caption) => {
 				</mask>
 				<image
 					href={src}
-					width="100%"
-					height="100%"
+					width="372"
+					height="704"
 					mask="url(#mask0_753_334)"
 					alt={alt}
-					x="0"
-					y="32"
+					x="17"
+					y="74"
 				/>
 			</svg>
 			{caption && <figcaption className={styles.browserFrame__caption}>{caption}</figcaption>}
