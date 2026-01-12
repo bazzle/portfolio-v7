@@ -281,7 +281,7 @@ export const CardGridContent = {
 			imageAlt : "Sat logo",
 			title : "Satoshi Power",
 			description : "Fun project looking at how the price of a satoshi compares to the smallest units of different fiat currencies. Pulling data from blockchain.com",
-			link : "/thoughts/2025-08-21"
+			link : "/thoughts/2025-12-11"
 		},
 		{
 			imageSrc : "/images/cards/exponential.png",
