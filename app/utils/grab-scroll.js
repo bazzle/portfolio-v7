@@ -1,7 +1,11 @@
 export default function enableGrabScroll(el) {
 	if (!el) return;
+	el = el.current;
+	const directChild = el.firstElementChild;
+	if (directChild && directChild.offsetWidth < el.clientWidth) return;
 
-	el = el.current
+	el.style.justifyContent = "left";
+	el.classList.add('scroll');
 
 	const dragThreshold = 10;
 

@@ -1,0 +1,57 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+
+.showcaseViewer{
+	background-color: var(--color-bg);
+	width: 100vw;
+	height: auto;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	padding-top: vars.$block-spacing--text;
+	padding-bottom: vars.$block-spacing--text;
+	margin-bottom: vars.$block-spacing--text;
+	display: flex;
+	justify-content: center;
+	.scroll{
+		overflow-x: scroll;
+		overflow-x: auto;
+		cursor: grab;
+		scroll-behavior: smooth;
+		-webkit-overflow-scrolling: touch;
+		scroll-snap-type: x mandatory;
+		user-select: none;
+		-webkit-user-select: none;
+		&:active {
+			cursor: grabbing;
+		}
+	}
+	.inner{
+		display: flex;
+		flex-direction: row;
+		gap: 2vw;
+		flex-wrap: nowrap;
+		width: max-content;
+		&::before{
+			content: '';
+			height: 100%;
+			width: 4vw;
+			display: block;
+			flex-shrink: 0;
+		}
+		&::after{
+			content: '';
+			height: 100%;
+			width: 4vw;
+			display: block;
+			flex-shrink: 0;
+		}
+	}
+	figure{
+		flex-shrink: 0;
+		margin-bottom: 0;
+		svg{
+			max-height: 480px;
+		}
+	}
+}
