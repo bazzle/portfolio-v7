@@ -11,38 +11,29 @@
 	padding-top: vars.$block-spacing--text;
 	padding-bottom: vars.$block-spacing--text;
 	margin-bottom: vars.$block-spacing--text;
-	display: flex;
-	justify-content: center;
-	.scroll{
-		overflow-x: scroll;
-		overflow-x: auto;
-		cursor: grab;
-		scroll-behavior: smooth;
-		-webkit-overflow-scrolling: touch;
-		scroll-snap-type: x mandatory;
-		user-select: none;
-		-webkit-user-select: none;
-		&:active {
-			cursor: grabbing;
-		}
+	&____noScroll{
+		display: flex;
+		align-items: center;
 	}
-	.inner{
+	&__inner{
 		display: flex;
 		flex-direction: row;
 		gap: 2vw;
 		flex-wrap: nowrap;
 		width: max-content;
+  		min-width: max-content;
+  		max-width: none;
 		&::before{
 			content: '';
 			height: 100%;
-			width: 4vw;
+			width: 2vw;
 			display: block;
 			flex-shrink: 0;
 		}
 		&::after{
 			content: '';
 			height: 100%;
-			width: 4vw;
+			width: 2vw;
 			display: block;
 			flex-shrink: 0;
 		}
