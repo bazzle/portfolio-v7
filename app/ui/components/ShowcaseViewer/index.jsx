@@ -13,22 +13,30 @@ export default function ShowcaseViewer({children}){
 	useEffect(()=>{
 		const p = parent.current
 		const c = child.current
-		console.log('parent width ' + p.offsetWidth);
-		console.log('child width ' + c.offsetWidth);
-		if (c.offsetWidth < p.offsetWidth){
-			console.log('no scroll')
-			setIsScroll(false)
-		} else {
-			console.log('scroll')
-			enableGrabScroll(p);
-			setIsScroll(true)
+		if (!p || !c) return
+
+		const measure = () => {
+			if (c.offsetWidth < p.offsetWidth){
+				setIsScroll(false)
+			} else {
+				enableGrabScroll(p)
+				setIsScroll(true)
+			}
+		}
+		const ro = new ResizeObserver(measure)
+		ro.observe(p)
+		ro.observe(c)
+		measure()
+
+		return () => {
+			ro.disconnect()
 		}
 	},[])
 
 	return (
 		<div className={clsx(
 			styles.showcaseViewer,
-			isScroll && styles.showcaseViewer____noScroll
+			!isScroll && styles.showcaseViewer____noScroll
 		)} ref={parent}>
 			<div className={styles.showcaseViewer__inner} ref={child}>
 				{children}

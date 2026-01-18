@@ -1,5 +1,8 @@
 export default function enableGrabScroll(el) {
 	if (!el) return;
+	// Don't bind twice
+	if (el.dataset.grabScroll === "1") return;
+
 	el.classList.add('scroll');
 	const dragThreshold = 10;
 
@@ -25,15 +28,11 @@ export default function enableGrabScroll(el) {
 		"pointermove",
 		(e) => {
 			if (!isDown) return;
-
 			const dx = e.clientX - startX;
-
 			if (!isDragging && Math.abs(dx) > dragThreshold) {
 				isDragging = true;
 			}
-
 			if (!isDragging) return;
-
 			e.preventDefault();
 			el.scrollLeft = startScrollLeft - dx;
 		},
