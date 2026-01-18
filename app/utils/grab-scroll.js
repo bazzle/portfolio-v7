@@ -1,9 +1,20 @@
 export default function enableGrabScroll(el) {
 	if (!el) return;
 	// Don't bind twice
-	if (el.dataset.grabScroll === "1") return;
+	// if (el.dataset.grabScroll === "1") return;
 
 	el.classList.add('scroll');
+	const isCoarsePointer =
+		typeof window !== "undefined" &&
+		window.matchMedia &&
+		window.matchMedia("(pointer: coarse)").matches;
+
+	// On touch devices, prefer native scrolling with momentum.
+	if (isCoarsePointer) {
+		el.style.touchAction = "auto";
+		return;
+	}
+
 	const dragThreshold = 10;
 
 	let isDown = false;
@@ -11,6 +22,7 @@ export default function enableGrabScroll(el) {
 	let startX = 0;
 	let startScrollLeft = 0;
 
+	// Allow vertical page scroll while we handle horizontal drag.
 	el.style.touchAction = "pan-y";
 
 	el.addEventListener("pointerdown", (e) => {
