@@ -24,26 +24,17 @@
 		width: max-content;
   		min-width: max-content;
   		max-width: none;
-		&::before{
-			content: '';
-			height: 100%;
-			width: 2vw;
-			display: block;
-			flex-shrink: 0;
-		}
-		&::after{
-			content: '';
-			height: 100%;
-			width: 2vw;
-			display: block;
-			flex-shrink: 0;
-		}
+		margin-left: vars.$gutter-padding;
+		margin-right: vars.$gutter-padding;
 	}
 	figure{
 		flex-shrink: 0;
 		margin-bottom: 0;
 		svg{
-			max-height: 480px;
+			max-width: 200px;
+			@include vars.break(tablet){
+				max-width: 240px;
+			}
 		}
 	}
 }
