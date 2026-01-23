@@ -33,6 +33,7 @@ function Home(){
 					title={WelcomeContent.title}
 					bodyContent={WelcomeContent.bodyContent()}
 				/>
+				<Cards line />
 				<TextStandout content={TextStandout1} line deepMbLine textPrefix="What do I call myself?"/>
 				<SkillsAndAbilities/>
 				<TextStandout content={TextStandout2} line deepMbLine/>
@@ -43,7 +44,6 @@ function Home(){
 					title={WhatNextContent.title}
 					bodyContent={WhatNextContent.bodyContent()}
 				/>
-				<Cards/>
 				<StdContentTemplate
 					id="get-in-touch"
 					title={GetInTouchContent.title}

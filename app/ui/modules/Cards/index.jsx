@@ -6,11 +6,18 @@ import { motion } from "motion/react";
 import styles from "./Cards.module.scss";
 const MotionImage = motion.create(Image);
 
-function Cards(){
+function Cards({line, deepMb, deepMbLine}){
 
 	const items = CardGridContent.gridItems;
 
+	const optionalProps = {
+		...(line ? { line } : {}),
+		...(deepMb ? { deepMb } : {}),
+		...(deepMbLine ? { deepMbLine } : {}),
+	}
+
 	function CardGrid(){
+
 		return items.map((item, index) => (
 			<div className={`${styles["cards__grid__card"]} ${styles.card}`} key={index}>
 				<MotionImage
@@ -44,7 +51,8 @@ function Cards(){
 
 	
 	return (
-		<Section heading={CardGridContent.title} moduleClassname={styles.cards} headingTop line deepMbLine layout="extended">
+		<Section
+			heading={CardGridContent.title} moduleClassname={styles.cards} headingTop {...optionalProps} layout="extended">
 			<div className={styles["cards__grid"]}>
 				<CardGrid/>
 			</div>
