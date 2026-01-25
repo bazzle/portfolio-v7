@@ -32,6 +32,11 @@
 			transform: translatey(10%);
 		}
 	}
+	&____basic{
+		.card__image{
+			display: none;
+		}
+	}
 	&__content{
 		padding: 1rem;
 	}

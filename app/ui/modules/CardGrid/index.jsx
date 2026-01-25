@@ -22,6 +22,7 @@ export default function CardGrid({line, deepMb, deepMbLine}){
 		>
 			<div className={styles.cardGrid}>
 				{items.map((item, index) => (
+					
 					<div className={styles.cardGrid__item} key={index}>
 						<Card
 							imageSrc={item.imageSrc} 
@@ -30,6 +31,8 @@ export default function CardGrid({line, deepMb, deepMbLine}){
 							title={item.title} 
 							description={item.description} 
 							index={index}
+							basic={index > 2}
+							extLink={item.extLink}
 						/>
 					</div>
 				)) }
