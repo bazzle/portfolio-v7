@@ -12,9 +12,13 @@
 	padding-top: vars.$block-spacing--text;
 	padding-bottom: vars.$block-spacing--text;
 	margin-bottom: vars.$block-spacing--text;
-	&____noScroll{
+	&__noscroll{
 		display: flex;
 		justify-content: center;
+		max-height: fit-content;
+		transform: translate(-50%);
+		width: 90vw;
+		left: 50%;
 	}
 	&__inner{
 		display: flex;
@@ -22,7 +26,6 @@
 		gap: 2vw;
 		flex-wrap: nowrap;
 		width: max-content;
-  		min-width: max-content;
   		max-width: none;
 		margin-left: vars.$gutter-padding;
 		margin-right: vars.$gutter-padding;
@@ -30,10 +33,22 @@
 	figure{
 		flex-shrink: 0;
 		margin-bottom: 0;
+		height: fit-content;
+		width: 100%;
+		max-width: 200px;
+		@include vars.break(tablet){
+			max-width: 240px;
+		}
 		svg{
-			max-width: 200px;
+			display: block;
+			width: 100%;
+		}
+	}
+	&____desktop{
+		figure{
+			max-width: 300px;
 			@include vars.break(tablet){
-				max-width: 240px;
+				max-width: 1000px;
 			}
 		}
 	}
