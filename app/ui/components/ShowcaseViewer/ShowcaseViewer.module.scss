@@ -12,33 +12,32 @@
 	padding-top: vars.$block-spacing--text;
 	padding-bottom: vars.$block-spacing--text;
 	margin-bottom: vars.$block-spacing--text;
-	&__noscroll{
-		display: flex;
-		justify-content: center;
-		max-height: fit-content;
-		transform: translate(-50%);
-		width: 90vw;
-		left: 50%;
-	}
+	display: flex;
+	justify-content: center;
+	max-height: fit-content;
+	transform: translate(-50%);
+	width: 90vw;
+	height: max-content;
+	left: 50%;
 	&__inner{
 		display: flex;
-		flex-direction: row;
+		flex-flow: row;
 		gap: 2vw;
 		flex-wrap: nowrap;
 		width: max-content;
   		max-width: none;
 		margin-left: vars.$gutter-padding;
 		margin-right: vars.$gutter-padding;
+		height: max-content;
 	}
 	figure{
 		flex-shrink: 0;
 		margin-bottom: 0;
-		height: fit-content;
-		width: 100%;
-		max-width: 200px;
-		@include vars.break(tablet){
-			max-width: 240px;
-		}
+		aspect-ratio: 239 / 472;
+		height: 50vw;
+		max-height: 400px;
+		display: flex;
+		flex-flow: column;
 		svg{
 			display: block;
 			width: 100%;

@@ -2,9 +2,8 @@ export default function enableGrabScroll(el) {
 	console.log('enablescroll');
 	if (!el) return;
 	// Don't bind twice
-	// if (el.dataset.grabScroll === "1") return;
-
-	el.classList.add('scroll');
+	if (el.dataset.grabScroll === "1") return;
+	
 	const isCoarsePointer =
 		typeof window !== "undefined" &&
 		window.matchMedia &&
