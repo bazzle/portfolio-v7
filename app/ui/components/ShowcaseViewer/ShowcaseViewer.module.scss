@@ -43,7 +43,10 @@
 		width: auto!important;
 		svg{
 			aspect-ratio: 406 / 800;
-			height: 50vh;
+			height: auto;
+			@include vars.break(tablet){
+				height: 50vh;
+			}
 			max-height: 400px;
 			display: block;
 			width: 100%;
