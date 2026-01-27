@@ -21,7 +21,7 @@
 	left: 50%;
 	@include vars.scroll;
 	opacity: 0;
-	transition: opacity 0.3s ease;
+	transition: opacity 1s ease;
 	&__inner{
 		display: flex;
 		flex-flow: row;
@@ -39,13 +39,21 @@
 		margin-bottom: 0;
 		display: flex;
 		flex-flow: column;
-		width: max-content;
+		height: max-content;
+		width: auto!important;
 		svg{
 			aspect-ratio: 406 / 800;
-			height: 50vw;
+			height: 50vh;
 			max-height: 400px;
 			display: block;
 			width: 100%;
+		}
+	}
+	&____mobile{
+		figure{
+			svg{
+				max-width: 200px;
+			}
 		}
 	}
 	&____desktop{
@@ -57,8 +65,7 @@
 	}
 }
 
-.isScroll{
-	visibility: visible;
+.scroll{
 	opacity: 1;
 }
 .resetScroll{
