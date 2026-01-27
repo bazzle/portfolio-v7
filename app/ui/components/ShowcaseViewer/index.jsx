@@ -13,10 +13,6 @@ export default function ShowcaseViewer({children, type}){
 		const p = parent.current
 		const c = child.current
 		if (!p || !c) return
-		console.log('child')
-		console.log(c.offsetWidth)
-		console.log('parent')
-		console.log(p.offsetWidth)
 		if (c.offsetWidth < p.offsetWidth){
 			setIsScroll(false)
 		} else {
