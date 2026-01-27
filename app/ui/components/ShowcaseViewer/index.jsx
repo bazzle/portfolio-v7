@@ -29,8 +29,7 @@ export default function ShowcaseViewer({children, type}){
 		<div className={clsx(
 			styles.showcaseViewer,
 			type === 'desktop' && styles.showcaseViewer____desktop,
-			'scroll',
-			(!isScroll) && 'resetCursor'
+			(isScroll) ? styles.scroll : styles.resetScroll
 		)} ref={parent}>
 			<div className={styles.showcaseViewer__inner} ref={child}>
 				{children}

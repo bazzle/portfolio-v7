@@ -13,12 +13,15 @@
 	padding-bottom: vars.$block-spacing--text;
 	margin-bottom: vars.$block-spacing--text;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	max-height: fit-content;
 	transform: translate(-50%);
 	width: 90vw;
 	height: max-content;
 	left: 50%;
+	@include vars.scroll;
+	opacity: 0;
+	transition: opacity 0.3s ease;
 	&__inner{
 		display: flex;
 		flex-flow: row;
@@ -29,26 +32,40 @@
 		margin-left: vars.$gutter-padding;
 		margin-right: vars.$gutter-padding;
 		height: max-content;
+
 	}
 	figure{
 		flex-shrink: 0;
 		margin-bottom: 0;
-		aspect-ratio: 239 / 472;
-		height: 50vw;
-		max-height: 400px;
 		display: flex;
 		flex-flow: column;
+		width: max-content;
 		svg{
+			aspect-ratio: 406 / 800;
+			height: 50vw;
+			max-height: 400px;
 			display: block;
 			width: 100%;
 		}
 	}
 	&____desktop{
 		figure{
-			max-width: 300px;
-			@include vars.break(tablet){
-				max-width: 1000px;
+			svg{
+				aspect-ratio: 1202 / 800;
 			}
 		}
+	}
+}
+
+.isScroll{
+	visibility: visible;
+	opacity: 1;
+}
+.resetScroll{
+	justify-content: center;
+	cursor: unset!important;
+	opacity: 1;
+	&:active {
+		cursor: unset!important;
 	}
 }
