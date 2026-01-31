@@ -1,5 +1,5 @@
 import styles from "./BrowserFrame.module.scss";
-
+const imagePath = "app/posts/images/"
 const desktopView = (src, alt, caption, extended) => {
 	const styleString = `${styles.browserDesktop} ${extended && styles.extended}`
 	return(
@@ -15,7 +15,7 @@ const desktopView = (src, alt, caption, extended) => {
 				</mask>
 				<g mask="url(#mask0_273_297)">
 					<image
-						href={src}
+						href={`${imagePath}${src}`}
 						width="1166"
 						height="722"
 						alt={alt}
@@ -38,7 +38,7 @@ const mobileView = (src, alt, caption) => {
 					<path d="M17.1426 82.8572C17.1426 78.1233 20.9801 74.2858 25.714 74.2858H380C384.734 74.2858 388.571 78.1233 388.571 82.8572V768.571C388.571 773.305 384.734 777.143 380 777.143H25.714C20.9801 777.143 17.1426 773.305 17.1426 768.571V82.8572Z" fill="white"/>
 				</mask>
 				<image
-					href={src}
+					href={`${imagePath}${src}`}
 					width="372"
 					height="704"
 					mask="url(#mask0_753_334)"
