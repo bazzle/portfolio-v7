@@ -8,7 +8,7 @@ import AfterArticle from "@/app/ui/modules/blog/Article/AfterArticle"
 import Header from "@/app/ui/modules/Header"
 
 function getPostContent(slug){
-	const file = `./posts/${slug}.md`;
+	const file = `./posts/${slug}/index.md`;
 	const content = fs.readFileSync(file,'utf8');
 	const matterResult = matter(content);
 	return matterResult;
