@@ -12,6 +12,8 @@ export function PageCheckProvider({children}){
 	useEffect(()=>{
 		if (currentPath === '/'){
 			currentPage = 'home'
+		} else if ( currentPath === '/thoughts' ){
+			currentPage = 'thoughts-index'
 		} else if (currentPath.includes('thoughts')){
 			if (currentPath.includes('tag')){
 				currentPage = 'tag'

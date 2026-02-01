@@ -3,7 +3,6 @@
 .postIndexItem{
 	display: block;
 	margin-bottom: vars.$block-spacing--shallow;
-	background-color: var(--color-bg-alt-70);
 	position: relative;
 	&:first-of-type{
 		margin-top: vars.$block-spacing;
