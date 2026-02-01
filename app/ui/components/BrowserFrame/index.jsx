@@ -2,7 +2,7 @@ import styles from "./BrowserFrame.module.scss";
 
 const imagePath = '/images/posts/'
 const desktopView = (src, alt, caption, extended) => {
-	const styleString = `${styles.browserDesktop} ${extended && styles.extended}`
+	const styleString = `${styles.browserFrame} ${styles.browserDesktop} ${extended && styles.extended}`
 	return(
 		<figure className={styleString}>
 			<svg viewBox="0 0 1202 800" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,8 +30,9 @@ const desktopView = (src, alt, caption, extended) => {
 	)
 }
 const mobileView = (src, alt, caption) => {
+	const styleString = `${styles.browserFrame} ${styles.browserMobile}`
 	return(
-		<figure className={styles.browserMobile}>
+		<figure className={styleString}>
 			<svg width="406" height="800" viewBox="0 0 406 800" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect width="405.714" height="800" rx="8.57143" fill="#353535"/>
 				<rect x="17.1426" y="17.1428" width="371.429" height="42.8571" rx="5.71429" fill="#272727"/>

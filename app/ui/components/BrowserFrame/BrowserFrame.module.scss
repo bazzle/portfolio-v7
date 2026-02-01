@@ -1,6 +1,6 @@
 @use "@/app/assets/styles/style-library/all-vars" as vars;
 
-.browserDesktop, .browserMobile{
+.browserFrame{
 	position: relative;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -8,13 +8,28 @@
 	margin-bottom: 0;
 	width: auto;
 	min-width: 0;
+	flex-shrink: 0;
+	margin-bottom: 0;
+	display: flex;
+	flex-flow: column;
+	height: max-content;
+	width: auto!important;
 	svg{
-		height: 100%;
+		aspect-ratio: 406 / 800;
+		height: auto;
+		max-height: 400px;
+		display: block;
 		width: 100%;
-	}
+		@include vars.break(tablet){
+			height: 50vh;
+		}
+	}	
 }
 
 .browserDesktop{
+	svg{
+		aspect-ratio: 1202 / 800;
+	}
 	&.extended{
 		width: 90vw;
 		height: auto;
@@ -22,6 +37,12 @@
 		position: relative;
 		left: 50%;
 		transform: translate(-50%);
+	}
+}
+
+.browserMobile{
+	svg{
+		max-width: 200px;
 	}
 }
 

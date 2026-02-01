@@ -34,38 +34,6 @@
 		height: max-content;
 		flex-shrink: 0;
 	}
-	figure{
-		flex-shrink: 0;
-		margin-bottom: 0;
-		display: flex;
-		flex-flow: column;
-		height: max-content;
-		width: auto!important;
-		svg{
-			aspect-ratio: 406 / 800;
-			height: auto;
-			@include vars.break(tablet){
-				height: 50vh;
-			}
-			max-height: 400px;
-			display: block;
-			width: 100%;
-		}
-	}
-	&____mobile{
-		figure{
-			svg{
-				max-width: 200px;
-			}
-		}
-	}
-	&____desktop{
-		figure{
-			svg{
-				aspect-ratio: 1202 / 800;
-			}
-		}
-	}
 }
 
 .scroll{
