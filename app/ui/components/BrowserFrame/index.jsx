@@ -16,7 +16,7 @@ const desktopView = (src, alt, caption, extended) => {
 				</mask>
 				<g mask="url(#mask0_273_297)">
 					<image
-						href={`${imagePath}${src}`}  
+						href={`${imagePath}${src}`} 
 						width="1166" 
 						height="722" 
 						alt={alt} 
@@ -53,11 +53,13 @@ const mobileView = (src, alt, caption) => {
 	)
 }
 
-function BrowserFrame({src, alt, mobile, caption, extended}){
-	if (mobile){
+function BrowserFrame({src, alt, type="desktop", caption, extended}){
+	if (type === 'mobile'){
 		return mobileView(src, alt, caption);
-	} else {
+	} else if (type === 'desktop') {
 		return desktopView(src, alt, caption, extended);
+	} else {
+		return
 	}
 }
 
