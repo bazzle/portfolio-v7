@@ -1,16 +1,20 @@
-import fs from 'fs';
-import matter from 'gray-matter';
+import getPostMetadata from './get-post-metadata.js'
 
 export default function getTags(){
-        const folder = './posts';
-        const files = fs.readdirSync(folder);
-        const markdownPosts = files.filter(file => file.endsWith('.md'));
-        const tagSet = new Set();
-        markdownPosts.forEach((fileName)=>{
-                const fileContents = fs.readFileSync(`${folder}/${fileName}`, 'utf8');
-                const matterResult = matter(fileContents);
-                const tags = matterResult.data.tags || [];
-                tags.forEach(tag => tagSet.add(tag));
-        });
-        return Array.from(tagSet);
+	// Check all posts tags, and aggregate them into an array
+	// Use set() to prevent duplication
+
+	const tagSet = new Set()
+	const posts = getPostMetadata('posts')
+
+	posts.forEach((post) => {
+		const { tags } = post
+		if (Array.isArray(tags)) {
+			tags.forEach((tag) => tagSet.add(tag))
+		} else if (typeof tags === 'string' && tags) {
+			tagSet.add(tags)
+		}
+	})
+	
+	return Array.from(tagSet).sort()	
 }
