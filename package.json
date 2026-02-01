@@ -4,8 +4,8 @@
 	"private": true,
 	"homepage": "https://br-web.me",
 	"scripts": {
-		"dev": "next dev --turbopack --inspect",
-		"build": "next build --turbopack",
+		"dev": "cpy \"posts/**/images/**/*\" public/images/posts --flat && next dev --turbopack",
+		"build": "cpy \"posts/**/images/**/*\" public/images/posts --flat && next build --turbopack",
 		"start": "next start",
 		"lint": "next lint"
 	},
@@ -29,6 +29,7 @@
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"cpy-cli": "^6.0.0",
 		"eslint": "^9",
 		"eslint-config-next": "15.5.2",
 		"sass": "^1.91.0",
