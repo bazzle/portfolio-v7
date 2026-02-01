@@ -23,6 +23,7 @@ export function PageCheckProvider({children}){
 		} else {
 			currentPage = 'page'
 		}
+		document.body.className = '';
 		document.body.classList.add(currentPage);
 	}, [currentPath])
 
