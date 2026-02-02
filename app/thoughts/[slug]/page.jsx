@@ -24,9 +24,16 @@ export async function generateMetadata({ params }){
 	const pageName = getPostContent(slug).data.title;
 	const pageTitle = `${pageName} - My Thoughts`;
 	const pageDescription = getPostContent(slug).data.excerpt;
+	const pageNoIndex = getPostContent(slug).data.noindex;
 	return{
 		title: pageTitle,
 		description: pageDescription,
+		...(pageNoIndex && {
+			robots: {
+				index: false,
+				follow: false
+			}
+		})
 	}
 }
 
