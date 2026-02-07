@@ -6,23 +6,17 @@
 	padding-bottom: 0;
 	margin-top: 0;
 	margin-bottom: 0;
-	width: auto;
 	min-width: 0;
 	flex-shrink: 0;
 	margin-bottom: 0;
 	display: flex;
 	flex-flow: column;
 	height: max-content;
-	width: auto!important;
 	svg{
 		aspect-ratio: 406 / 800;
 		height: auto;
-		max-height: 400px;
 		display: block;
 		width: 100%;
-		@include vars.break(tablet){
-			height: 50vh;
-		}
 	}	
 }
 

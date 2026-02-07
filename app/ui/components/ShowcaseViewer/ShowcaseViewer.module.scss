@@ -32,6 +32,15 @@
 		margin-right: vars.$gutter-padding;
 		height: max-content;
 		flex-shrink: 0;
+		figure{
+			width: auto!important;
+			svg{
+				max-height: 400px;
+				@include vars.break(tablet){
+					height: 50vh;
+				}
+			}
+		}
 	}
 }
 
