@@ -24,7 +24,9 @@ function FloatingNav( {sectionNav} ){
 	const sectionLinks = [
 		new SectionLink('who am I', 'who-am-i'),
 		new SectionLink('what am I', 'what-am-i'),
-		new SectionLink('Things I think about', 'about-me'),
+		new SectionLink('What I think about', 'about-me'),
+		new SectionLink('Thinking and working on', 'currently-feed'),
+		new SectionLink('Work samples', 'work-samples'),
 		new SectionLink('Work history', 'work-history'),
 		new SectionLink('Get in Touch', 'get-in-touch')
 	]

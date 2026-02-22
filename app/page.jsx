@@ -17,7 +17,10 @@ import {
 	TextStandout1,
 	TextStandout2,
 	TextStandout3,
-	GetInTouchContent
+	GetInTouchContent,
+	WorkingOnCards,
+	WorkSamplesCards
+
 } from '@/app/content/BodyContent';
 
 
@@ -40,9 +43,9 @@ function Home(){
 
 				<Themes id="things-i-think-about" />
 
-				<CardGrid id="currently-feed" line />
+				<CardGrid id="currently-feed" content={WorkingOnCards} line />
 
-				<CardGrid id="currently-feed" />
+				<CardGrid id="work-samples" content={WorkSamplesCards} />
 
 				<WorkHistory id="work-history" line />
 
