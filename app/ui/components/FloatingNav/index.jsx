@@ -4,16 +4,14 @@ import { useEffect } from 'react';
 import { motion } from "motion/react";
 import styles from "./FloatingNav.module.scss";
 
-const handleClick = () => {
-	window.scrollTo({
-		top: 0,
-		behavior: 'auto'
-	});
-};
-
-
-
 function FloatingNav( {sectionNav} ){
+
+	const handleClick = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'auto'
+		});
+	};
 
 	const navClass = styles["floatingNav__nav"];
 
@@ -41,6 +39,29 @@ function FloatingNav( {sectionNav} ){
 			damping: 30,
 		},
 	};
+
+useEffect(() => {
+	// Init new IntersectionObserver
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			const link = document.querySelector(`.${navClass} a[href="#${entry.target.id}"]`);
+			if (link) {
+				entry.isIntersecting ? link.classList.add("active") : link.classList.remove("active");
+			}
+		});
+	}, { threshold: 0.5 });
+
+	// Create new array of DOM elements from page that match with sectionLinks
+	const menuElements = sectionLinks.map(({ id }) => document.getElementById(id)).filter(Boolean);
+
+	// Run the observer on each one
+	menuElements.forEach((el) => observer.observe(el));
+
+	return () => {
+		menuElements.forEach((el) => observer.unobserve(el));
+		observer.disconnect();
+	};
+}, [navClass]);
 
 	const showSectionNav = sectionNav === true
 
