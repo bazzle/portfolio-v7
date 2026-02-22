@@ -29,33 +29,29 @@ function Home(){
 			<Header location="portfolio" />
 			<main className="main">
 				<Hero/>
-				<StdContentTemplate
-					title={WelcomeContent.title}
-					bodyContent={WelcomeContent.bodyContent()}
-				/>
-				<CardGrid line />
-				<TextStandout content={TextStandout1} line deepMbLine textPrefix="What do I call myself?"/>
-				<SkillsAndAbilities/>
-				<TextStandout content={TextStandout2} line deepMbLine/>
-				<Themes/>
-				<WorkSamples/>
-				<WorkHistory/>
-				<StdContentTemplate
-					title={WhatNextContent.title}
-					bodyContent={WhatNextContent.bodyContent()}
-				/>
-				<StdContentTemplate
-					id="get-in-touch"
-					title={GetInTouchContent.title}
-					bodyContent={GetInTouchContent.bodyContent()}
-					deepMbLine
-				/>
-				<TextStandout content={TextStandout3}>
-					<ShareButtons
-						title={title}
-						excerpt={description}
-						preText={"Share this page"}
-					/>
+
+				<StdContentTemplate title={WelcomeContent.title} bodyContent={WelcomeContent.bodyContent()} id="who-i-am" />
+
+				<CardGrid id="currently-feed" line />
+
+				<TextStandout content={TextStandout1} textPrefix="What do I call myself?" id="what-am-i" line deepMbLine />
+
+				<SkillsAndAbilities id="skills-and-expertise" />
+
+				<TextStandout id="about-me" content={TextStandout2} line deepMbLine />
+
+				<Themes id="things-i-think-abouts"/>
+
+				<WorkSamples id="work-samples" />
+
+				<WorkHistory id="work-history"/>
+
+				<StdContentTemplate id="whats-next" title={WhatNextContent.title} bodyContent={WhatNextContent.bodyContent()} />
+
+				<StdContentTemplate id="get-in-touch" title={GetInTouchContent.title} bodyContent={GetInTouchContent.bodyContent()} deepMbLine />
+
+				<TextStandout id="sign-off" content={TextStandout3} >
+					<ShareButtons title={title} excerpt={description} preText={"Share this page"} />
 				</TextStandout>
 			</main>
 		</>

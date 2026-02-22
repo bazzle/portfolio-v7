@@ -5,7 +5,10 @@ import ContentSheet from "./ContentSheet";
 import { WorkHistoryContent } from '@/app/content/BodyContent';
 import styles from "./WorkHistory.module.scss";
 
-function WorkHistory(){
+function WorkHistory({id}){
+	
+	const optionalId = (id ? { id } : {})
+
 	const mediaQuery = '(min-width: 1340px)';
 	const title = WorkHistoryContent.title
 	const sectionsArray = WorkHistoryContent.workHistoryItems;
@@ -81,7 +84,7 @@ function WorkHistory(){
 		)
 	}
     return (
-		<Section moduleClassname={styles.workHistory} heading={title} id="work-history" layout="2col">
+		<Section moduleClassname={styles.workHistory} heading={title} id="work-history" layout="2col" {...optionalId}>
 			<div className={styles["workHistory__inner"]}>
 				<nav ref={tablistRef} role="tablist" className={styles["workHistory__nav"]}>
 					{ sectionsArray.map((item, index) => navItem(item, index)) }

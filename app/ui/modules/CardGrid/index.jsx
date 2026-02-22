@@ -4,7 +4,7 @@ import Section from '@/app/ui/components/Section';
 import {CardGridContent} from '@/app/content/BodyContent';
 import Card from '@/app/ui/components/Card';
 
-export default function CardGrid({line, deepMb, deepMbLine}){
+export default function CardGrid({line, deepMb, deepMbLine, id}){
 
 	const items = CardGridContent.gridItems;
 
@@ -12,6 +12,7 @@ export default function CardGrid({line, deepMb, deepMbLine}){
 		...(line ? { line } : {}),
 		...(deepMb ? { deepMb } : {}),
 		...(deepMbLine ? { deepMbLine } : {}),
+		...(id ? { id } : {})
 	}
 	
 	return (

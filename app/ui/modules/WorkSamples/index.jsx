@@ -9,7 +9,9 @@ import { motion, useScroll, useTransform, useSpring } from "motion/react";
 import Image from 'next/image';
 import styles from "./WorkSamples.module.scss";
 
-function WorkSamples(){
+function WorkSamples({id}){
+
+	const optionalId = (id ? {id} : {})
 
 	const ref = useRef(null)
 	const { scrollYProgress } = useScroll({
@@ -48,7 +50,7 @@ function WorkSamples(){
 	}
 
     return(
-		<Section heading={WorkSamplesContent.title} moduleClassname={styles.workSamples} layout="toEdges" headingTop line deepMbLine>
+		<Section heading={WorkSamplesContent.title} moduleClassname={styles.workSamples} layout="toEdges" {...optionalId} headingTop line deepMbLine>
 			<div ref={ref}>
 				<div className={styles.workSamples}>
 					<div className={styles["workSamples__main"]}>

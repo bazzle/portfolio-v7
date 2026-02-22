@@ -3,7 +3,8 @@ import Section from '@/app/ui/components/Section';
 import { ThemesContent } from "@/app/content/BodyContent";
 import styles from "./Themes.module.scss";
 
-function Themes(){
+function Themes({id}){
+	const optionalId = (id ? { id } : {})
 	const tiles = () => {
 		const tilesArr = ThemesContent.tiles;
 		return tilesArr.map((item, index) => {
@@ -20,8 +21,13 @@ function Themes(){
 	}
 	
 	return(
-
-		<Section heading={ThemesContent.title} moduleClassname={styles.themes} layout="fullWidth" headingTop headingHidden noLine>
+		<Section 
+		heading={ThemesContent.title} 
+		moduleClassname={styles.themes} 
+		layout="fullWidth" 
+		{...optionalId} 
+		headingTop headingHidden noLine
+		>
 			<div className={styles.tileContainer}>
 				<div className={styles.tileGrid}>
 					{tiles()}
