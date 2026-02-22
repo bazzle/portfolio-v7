@@ -22,7 +22,7 @@ function FloatingNav( {sectionNav} ){
 		}
 	}
 	const sectionLinks = [
-		new SectionLink('who I am', 'who-i-am'),
+		new SectionLink('who am I', 'who-am-i'),
 		new SectionLink('what am I', 'what-am-i'),
 		new SectionLink('Things I think about', 'about-me'),
 		new SectionLink('Work history', 'work-history'),
@@ -40,35 +40,42 @@ function FloatingNav( {sectionNav} ){
 		},
 	};
 
-useEffect(() => {
-	// Init new IntersectionObserver
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			const link = document.querySelector(`.${navClass} a[href="#${entry.target.id}"]`);
-			if (link) {
-				entry.isIntersecting ? link.classList.add("active") : link.classList.remove("active");
+	useEffect(() => {
+		// Init new IntersectionObserver
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				const link = document.querySelector(`.${navClass} a[href="#${entry.target.id}"]`);
+				if (link) {
+					entry.isIntersecting ? link.classList.add("active") : link.classList.remove("active");
+				}
+			});
+		}, { threshold: 0.5 });
+
+		// Create new array of DOM elements from page that match with sectionLinks
+		const menuElements = sectionLinks.map(({ id }) => {
+			const el = document.getElementById(id);
+			if (!el) {
+				console.log(`Floating nav ID mismatch: #${id}`);
+				const link = document.querySelector(`.${navClass} a[href="#${id}"]`);
+				if (link) link.classList.add(styles.unmatched)
 			}
-		});
-	}, { threshold: 0.5 });
+			return el
+		}).filter(Boolean);
 
-	// Create new array of DOM elements from page that match with sectionLinks
-	const menuElements = sectionLinks.map(({ id }) => document.getElementById(id)).filter(Boolean);
+		// Run the observer on each one
+		menuElements.forEach((el) => observer.observe(el));
 
-	// Run the observer on each one
-	menuElements.forEach((el) => observer.observe(el));
-
-	return () => {
-		menuElements.forEach((el) => observer.unobserve(el));
-		observer.disconnect();
-	};
-}, [navClass]);
-
-	const showSectionNav = sectionNav === true
+		// Unobserve on unmount
+		return () => {
+			menuElements.forEach((el) => observer.unobserve(el));
+			observer.disconnect();
+		};
+	}, [navClass]);
 
 	return(
 		<>
 			<motion.div className={styles.floatingNav} {...motionSettings}>
-				{ showSectionNav && (
+				{ sectionNav && (
 					<nav className={navClass}>
 						{sectionLinks.map(({name, id}) => (
 							<a key={id} href={`#${id}`}>{name}</a>
