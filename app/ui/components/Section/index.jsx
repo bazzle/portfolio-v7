@@ -14,8 +14,7 @@ function Section({
 	headingHidden,
 	id,
 	deepMb,
-	deepMbLine,
-	addToNav
+	deepMbLine
 }) {
 
 	const sectionClasses = [
@@ -26,8 +25,7 @@ function Section({
 		headingHidden && styles["section____hidden-heading"],
 		deepMb && styles["section____deep-mb"],
 		deepMbLine && styles["section____deep-mb-line"],
-		lineTop && 'section____line-top',
-		addToNav && 'add-to-nav'
+		lineTop && 'section____line-top'
 	].filter(Boolean).join(' ');
 
 	const topHeadingOutput = (str) => {

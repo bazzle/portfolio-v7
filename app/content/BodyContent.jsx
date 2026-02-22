@@ -10,7 +10,7 @@ export const NameTitle = {
 }
 
 export const WelcomeContent = {
-	title: "Who I am and what I do",
+	title: "Who am I",
 	bodyContent: () => {
 		return(
 			<>
