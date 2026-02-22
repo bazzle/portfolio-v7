@@ -4,7 +4,7 @@ import WorkHistory from "@/app/ui/modules/WorkHistory";
 import WorkSamples from "@/app/ui/modules/WorkSamples";
 import Themes from "@/app/ui/modules/Themes";
 import TextStandout from "@/app/ui/modules/TextStandout";
-import Cards from "@/app/ui/modules/CardGrid";
+import CardGrid from "@/app/ui/modules/CardGrid";
 import StdContentTemplate from "./ui/modules/StdContentTemplate";
 import Header from "@/app/ui/modules/Header";
 import ShareButtons from "@/app/ui/components/blog/ShareButtons";
@@ -33,7 +33,7 @@ function Home(){
 					title={WelcomeContent.title}
 					bodyContent={WelcomeContent.bodyContent()}
 				/>
-				<Cards line />
+				<CardGrid line />
 				<TextStandout content={TextStandout1} line deepMbLine textPrefix="What do I call myself?"/>
 				<SkillsAndAbilities/>
 				<TextStandout content={TextStandout2} line deepMbLine/>

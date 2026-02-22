@@ -19,7 +19,7 @@ function FloatingNav( {sectionNav} ){
 			const sectionElements = Array.from(document.querySelectorAll('section[id]'));
 			const toFilterOut = (item) => {
 					const heading = item.querySelector('h2');
-					return heading && !item.classList.contains('hide-from-nav');
+					return heading && item.classList.contains('add-to-nav');
 			}
 			const toLoop = (item) => {
 					const heading = item.querySelector('h2');

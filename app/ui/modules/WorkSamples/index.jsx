@@ -48,7 +48,7 @@ function WorkSamples(){
 	}
 
     return(
-		<Section heading={WorkSamplesContent.title} moduleClassname={styles.workSamples} layout="toEdges" headingTop line deepMbLine hideFromNav>
+		<Section heading={WorkSamplesContent.title} moduleClassname={styles.workSamples} layout="toEdges" headingTop line deepMbLine>
 			<div ref={ref}>
 				<div className={styles.workSamples}>
 					<div className={styles["workSamples__main"]}>
