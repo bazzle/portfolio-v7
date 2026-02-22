@@ -1,12 +1,14 @@
 'use client';
 import styles from "./CardGrid.module.scss";
 import Section from '@/app/ui/components/Section';
-import {CardGridContent} from '@/app/content/BodyContent';
+import {WorkSamplesCards} from '@/app/content/BodyContent';
 import Card from '@/app/ui/components/Card';
 
-export default function CardGrid({line, deepMb, deepMbLine, id}){
+export default function CardGrid({line, deepMb, deepMbLine, id, content}){
 
-	const items = CardGridContent.gridItems;
+	if (!content) return
+
+	const items = content.gridItems;
 
 	const optionalProps = {
 		...(line ? { line } : {}),
@@ -17,7 +19,7 @@ export default function CardGrid({line, deepMb, deepMbLine, id}){
 	
 	return (
 		<Section
-			heading={CardGridContent.title}
+			heading={content.title}
 			headingTop {...optionalProps}
 			layout="extended" 
 		>

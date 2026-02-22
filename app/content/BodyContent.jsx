@@ -266,8 +266,35 @@ export const WhatNextContent = {
 	}
 }
 
-export const CardGridContent = {
+export const WorkingOnCards = {
 	title: "Working on / thinking about",
+	gridItems : [
+		{
+			imageSrc : "/images/cards/whois.webp",
+			imageAlt : "Figure with a question-mark for a head",
+			title : "Bitcoin Truthbombs",
+			description : "2 minute read articles about Bitcoin I write as I learn about the technology and economics.",
+			link : "/thoughts/2025-08-02"
+		},
+		{
+			imageSrc : "/images/cards/sat-power2.webp",
+			imageAlt : "Sat logo",
+			title : "Satoshi Power",
+			description : "Fun project looking at how the price of a satoshi compares to the smallest units of different fiat currencies. Pulling data from blockchain.com",
+			link : "/thoughts/2025-12-11"
+		},
+		{
+			imageSrc : "/images/cards/exponential.png",
+			imageAlt : "Exponential curve depiction",
+			title : "What is a Web Design Tinkerer?",
+			description : "I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own.",
+			link : "/thoughts/2025-12-05"
+		}
+	]
+}
+
+export const WorkSamplesCards = {
+	title: "Work samples",
 	gridItems : [
 		{
 			imageSrc : "/images/cards/whois.webp",
