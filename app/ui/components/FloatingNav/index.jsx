@@ -1,54 +1,35 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { motion } from "motion/react";
 import styles from "./FloatingNav.module.scss";
 
 const handleClick = () => {
-        window.scrollTo({
-                top: 0,
-                behavior: 'auto'
-        });
+	window.scrollTo({
+		top: 0,
+		behavior: 'auto'
+	});
 };
 
+
+
 function FloatingNav( {sectionNav} ){
-	const [sections, setSections] = useState([]);
+
 	const navClass = styles["floatingNav__nav"];
 
-	useEffect(() => {
-			const sectionElements = Array.from(document.querySelectorAll('section[id]'));
-			const toFilterOut = (item) => {
-					const heading = item.querySelector('h2');
-					return heading && item.classList.contains('add-to-nav');
-			}
-			const toLoop = (item) => {
-					const heading = item.querySelector('h2');
-					return {
-							id: item.id,
-							label: heading.textContent.trim()
-					};
-			}
-			const data = sectionElements.filter(section => toFilterOut(section))
-			.map(section => toLoop(section));
-
-			setSections(data);
-
-			const observer = new IntersectionObserver(entries => {
-					entries.forEach(entry => {
-							const link = document.querySelector(`.${navClass} a[href="#${entry.target.id}"]`);
-							if (link){
-									entry.isIntersecting ? link.classList.add('active') : link.classList.remove('active');
-							}
-					});
-			}, { threshold: 0.5 });
-
-			sectionElements.forEach(section => observer.observe(section));
-
-			return () => {
-					sectionElements.forEach(section => observer.unobserve(section));
-					observer.disconnect();
-			};
-	}, [navClass]);
+	class SectionLink {
+		constructor(name, id) {
+			this.name = name,
+			this.id = id;
+		}
+	}
+	const sectionLinks = [
+		new SectionLink('who I am', 'who-i-am'),
+		new SectionLink('what am I', 'what-am-i'),
+		new SectionLink('Things I think about', 'about-me'),
+		new SectionLink('Work history', 'work-history'),
+		new SectionLink('Get in Touch', 'get-in-touch')
+	]
 
 	const motionSettings = {
 		initial: { opacity: 0 },
@@ -61,15 +42,15 @@ function FloatingNav( {sectionNav} ){
 		},
 	};
 
-	const showSectionNav = sectionNav && sections.length > 0
+	const showSectionNav = sectionNav === true
 
 	return(
 		<>
 			<motion.div className={styles.floatingNav} {...motionSettings}>
 				{ showSectionNav && (
 					<nav className={navClass}>
-						{sections.map(({id, label}) => (
-							<a key={id} href={`#${id}`}>{label}</a>
+						{sectionLinks.map(({name, id}) => (
+							<a key={id} href={`#${id}`}>{name}</a>
 						))}
 					</nav>
 				)}

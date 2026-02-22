@@ -1,17 +1,18 @@
 import Section from '@/app/ui/components/Section';
 import styles from "./TextStandout.module.scss";
 
-function TextStandout({content, line, deepMb, deepMbLine, textPrefix, children, id}){
+function TextStandout({content, line, deepMb, deepMbLine, textPrefix, children, id, addToNav}){
 
 	const optionalProps = {
 		...(line ? { line } : {}),
 		...(deepMb ? { deepMb } : {}),
 		...(deepMbLine ? { deepMbLine } : {}),
-		...(id ? { id } : {})
+		...(id ? { id } : {}),
+		...(addToNav ? { addToNav } : {})
 	}
 
 	const textPrefixElem = (
-		<p className={styles.textStandout__prefix}>{textPrefix}</p>
+		<h2 className={styles.textStandout__prefix}>{textPrefix}</h2>
 	)
 
 	const childrenContainer = (
@@ -22,8 +23,8 @@ function TextStandout({content, line, deepMb, deepMbLine, textPrefix, children, 
 
 	return(
 		<Section
-			moduleClassname={styles.textStandout}
-			layout="fullWidth"
+			moduleClassname={styles.textStandout} 
+			layout="fullWidth" 
 			{...optionalProps}
 			>
 			<div className={styles.textStandout__main}>

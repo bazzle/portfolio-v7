@@ -1,12 +1,13 @@
 import Section from '@/app/ui/components/Section';
 
 
-function StdContentTemplate({title, bodyContent, deepMb, deepMbLine, id}){
+function StdContentTemplate({title, bodyContent, deepMb, deepMbLine, id, addToNav}){
 
 	const optionalProps = {
 		...(deepMb ? { deepMb: true } : {}),
 		...(deepMbLine ? { deepMbLine: true } : {}),
-		...(id ? { id: id } : {})
+		...(id ? { id: id } : {}),
+		...(addToNav ? { addToNav } : {})
 	}
 
 	return(

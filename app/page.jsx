@@ -30,11 +30,11 @@ function Home(){
 			<main className="main">
 				<Hero/>
 
-				<StdContentTemplate title={WelcomeContent.title} bodyContent={WelcomeContent.bodyContent()} id="who-i-am" />
+				<StdContentTemplate title={WelcomeContent.title} bodyContent={WelcomeContent.bodyContent()} id="who-i-am" addToNav />
 
-				<CardGrid id="currently-feed" line />
+				<CardGrid id="currently-feed" line addToNav />
 
-				<TextStandout content={TextStandout1} textPrefix="What do I call myself?" id="what-am-i" line deepMbLine />
+				<TextStandout content={TextStandout1} textPrefix="What do I call myself?" id="what-am-i" line deepMbLine addToNav />
 
 				<SkillsAndAbilities id="skills-and-expertise" />
 

@@ -4,7 +4,7 @@ import Section from '@/app/ui/components/Section';
 import {CardGridContent} from '@/app/content/BodyContent';
 import Card from '@/app/ui/components/Card';
 
-export default function CardGrid({line, deepMb, deepMbLine, id}){
+export default function CardGrid({line, deepMb, deepMbLine, id, addToNav}){
 
 	const items = CardGridContent.gridItems;
 
@@ -12,14 +12,15 @@ export default function CardGrid({line, deepMb, deepMbLine, id}){
 		...(line ? { line } : {}),
 		...(deepMb ? { deepMb } : {}),
 		...(deepMbLine ? { deepMbLine } : {}),
-		...(id ? { id } : {})
+		...(id ? { id } : {}),
+		...(addToNav ? { addToNav } : {})
 	}
 	
 	return (
 		<Section
 			heading={CardGridContent.title}
 			headingTop {...optionalProps}
-			layout="extended"
+			layout="extended" 
 		>
 			<div className={styles.cardGrid}>
 				{items.map((item, index) => (
