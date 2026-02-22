@@ -32,23 +32,23 @@ function Home(){
 
 				<StdContentTemplate title={WelcomeContent.title} bodyContent={WelcomeContent.bodyContent()} id="who-am-i" />
 
-				<CardGrid id="currently-feed" line />
-
-				<TextStandout content={TextStandout1} textPrefix="What do I call myself?" id="what-am-i" line deepMbLine />
+				<TextStandout content={TextStandout1} textPrefix="What am I?" id="what-am-i" line deepMbLine />
 
 				<SkillsAndAbilities id="skills-and-expertise" />
 
 				<TextStandout id="about-me" content={TextStandout2} line deepMbLine />
 
-				<Themes id="things-i-think-abouts"/>
+				<Themes id="things-i-think-about" />
 
-				<WorkSamples id="work-samples" />
+				<CardGrid id="currently-feed" line />
 
-				<WorkHistory id="work-history"/>
+				<CardGrid id="currently-feed" />
+
+				<WorkHistory id="work-history" line />
 
 				<StdContentTemplate id="whats-next" title={WhatNextContent.title} bodyContent={WhatNextContent.bodyContent()} />
 
-				<StdContentTemplate id="get-in-touch" title={GetInTouchContent.title} bodyContent={GetInTouchContent.bodyContent()} deepMbLine />
+				<StdContentTemplate id="get-in-touch" title={GetInTouchContent.title} bodyContent={GetInTouchContent.bodyContent()} deepMbLine line />
 
 				<TextStandout id="sign-off" content={TextStandout3} >
 					<ShareButtons title={title} excerpt={description} preText={"Share this page"} />
