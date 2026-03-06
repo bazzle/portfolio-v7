@@ -9,6 +9,7 @@ import StdContentTemplate from "./ui/modules/StdContentTemplate";
 import Header from "@/app/ui/modules/Header";
 import ShareButtons from "@/app/ui/components/blog/ShareButtons";
 import { metadata } from "./layout";
+import CurrentStatus from "@/app/ui/components/CurrentStatus";
 
 // content import
 import {
