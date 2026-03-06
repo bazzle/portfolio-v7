@@ -15,27 +15,26 @@ export const CurrentStatusContent = {
 	value: () => {
 		return(
 			<>
-				Working with the great people at <a href="https://www.dxw.com/">dxw</a>. Where I design, build and carry out accessibility audits.
+				On the GovPress team at <a href="https://www.dxw.com/">dxw</a>. Where I design public and 3rd sector websites and carry out accessibility audits.
 			</>
 		)
 	}
 }
 
 export const WelcomeContent = {
-	title: "Who am I",
+	title: "Who am I?",
 	bodyContent: () => {
 		return(
 			<>
-				<p>
-					<strong>I’m Barry.</strong> Front-end developer and designer. I design and build websites using languages and tools within my <a href="#skills-and-abilities">skillset</a>.
-				</p>
 				<ul>
-					<ListItem content={'I’m <strong>constantly curious</strong> and always learning new things.'}/>
-					<ListItem content={'I’m a <strong>designer through and through</strong>. Inspired by aesthetics and feel.'}/>
-					<ListItem content={'I’m a <strong>design minimalist</strong>. I believe small changes can make massive differences.'}/>
-					<ListItem content={'I’m a <strong>creative pragmatist</strong>. I like creative freedom aswell as constraints.'}/>
-					<ListItem content={'I love the <strong>impermanence of the web</strong> as a medium to design for. To test on, to rethink and iterate.'}/>
-					<ListItem content={'I love to <strong>problem solve</strong>—figure out how to improve a piece of the interface, or change the look and feel to unlock that elusive missing piece. And I’m sympathetic to client and user needs.'}/>
+					<ListItem content={'I’m a <strong>creative pragmatist.</strong> I embrace creative freedom aswell as constraints'}/>
+					<ListItem content={'I’m a <strong>design minimalist.</strong> I believe small changes can make massive differences'}/>
+					<ListItem content={'I’m <strong>curious</strong> and <strong>tech-agnostic.</strong> always willing to learn relevant things'}/>
+					<ListItem content={'<strong>Accessibility</strong> is my baseline, <strong>visual and interactive flair</strong> is what I strive for to create engaging experiences'}/>
+					<ListItem content={'I’m <strong>receptive to technical implementation</strong>. Designing for developers aswell as users'}/>
+					<ListItem content={'I’m <strong>humble</strong> and <strong>user-centred</strong>. Sympathetic to the client and needs of the user'}/>
+					<ListItem content={'I love the <strong>impermanence of the web</strong> as a medium to design for and build on. To test on, to rethink and iterate'}/>
+					<ListItem content={'I love to <strong>problem solve.</strong> unlock that elusive missing piece '}/>
 				</ul>
 				{CurrentStatus()}
 			</>
@@ -43,7 +42,7 @@ export const WelcomeContent = {
 	}
 }
 
-export const TextStandout1 = "A design engineer. I like to occupy the intersection of visual design and web development. I find the two disciplines equally interesting."
+export const TextStandout1 = "I like to occupy the intersection of visual design and web development. I find the two disciplines equally interesting."
 
 export const TextStandout2 = "I embrace all facets of web design and development. I see them as separate parts of the whole."
 
