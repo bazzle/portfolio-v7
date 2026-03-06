@@ -36,8 +36,8 @@ function HeroMain(){
 						<div className={styles["hero__footSection__intro"]}>
 							<div className={styles["hero__footSection__intro__main"]}>
 								<p>
-									<strong>Hello!</strong> I&apos;m a UK based web designer, developer and accessibility consultant.<br/>
-									<Link href="#who-i-am-and-what-i-do">Read on</Link> to learn more about me, <a href="./files/cv.pdf" target="_blank" rel="noopener noreferrer">download my CV</a> or <Link href="#get-in-touch">Get in touch</Link>!
+									<strong>Hello! I build inclusive digital experiences</strong><br/>
+									Read on to learn more, <a href="./files/cv.pdf" target="_blank" rel="noopener noreferrer">download my CV</a> or <Link href="#get-in-touch">Get in touch</Link>!
 								</p>
 							</div>
 						</div>
