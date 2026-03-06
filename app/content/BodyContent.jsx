@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const NameTitle = {
 	name: "Barry Richards",
-	title: "Design tinkerer"
+	title: "Design Engineer"
 }
 
 export const WelcomeContent = {
@@ -33,7 +33,7 @@ export const WelcomeContent = {
 	}
 }
 
-export const TextStandout1 = "A design engineer / tinkerer. I like to occupy the intersection of visual design and web development. I find the two disciplines equally interesting."
+export const TextStandout1 = "A design engineer / Engineer. I like to occupy the intersection of visual design and web development. I find the two disciplines equally interesting."
 
 export const TextStandout2 = "I embrace all facets of web design and development. I see them as separate parts of the whole."
 
@@ -286,7 +286,7 @@ export const WorkingOnCards = {
 		{
 			imageSrc : "/images/cards/exponential.png",
 			imageAlt : "Exponential curve depiction",
-			title : "What is a Web Design Tinkerer?",
+			title : "What is a Web Design Engineer?",
 			description : "I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own.",
 			link : "/thoughts/2025-12-05"
 		}
@@ -313,7 +313,7 @@ export const WorkSamplesCards = {
 		{
 			imageSrc : "/images/cards/exponential.png",
 			imageAlt : "Exponential curve depiction",
-			title : "What is a Web Design Tinkerer?",
+			title : "What is a Web Design Engineer?",
 			description : "I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own.",
 			link : "/thoughts/2025-12-05"
 		}
@@ -328,7 +328,7 @@ export const ContentSection2 = {
 		return(
 			<>
 				<p>
-					I have experience designing and developing websites, I self-identify as a web design tinkerer.
+					I have experience designing and developing websites, I self-identify as a web design Engineer.
 				</p>
 				<p>
 					What does this mean in practical terms? What can I <em>really</em> do for you? The no-fluff answer as ChatGPT would say.

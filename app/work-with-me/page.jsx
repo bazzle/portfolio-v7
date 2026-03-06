@@ -13,7 +13,7 @@ import {
 } from '@/app/content/WorkWithMeInContent';
 
 export const metadata = {
-  title: "Barry Richards Design tinkerer - Work with me",
+  title: "Barry Richards Design Engineer - Work with me",
 };
 
 function WorkWithMe() {

@@ -3,7 +3,7 @@ import Footer from "@/app/ui/modules/Footer";
 import { PageCheckProvider } from "@/app/context/PageCheck"
 
 export const metadata = {
-  title: "Barry Richards Design tinkerer",
+  title: "Barry Richards Design Engineer",
   description: "Web designer, developer and accessibility consultant from the UK. My philosophy is Web for Everyone but still POP",
 };
 
