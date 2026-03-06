@@ -18,7 +18,6 @@ function SkillsAndAbilities({id}){
 		{...optionalId}
 		noLineMobile
 		>
-			<SkillsList />
 			<div className={styles["skillsAbilities__bodyText"]}>
 				<VennDiagram />
 				{content}
