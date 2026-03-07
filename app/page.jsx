@@ -9,7 +9,6 @@ import StdContentTemplate from "./ui/modules/StdContentTemplate";
 import Header from "@/app/ui/modules/Header";
 import ShareButtons from "@/app/ui/components/blog/ShareButtons";
 import { metadata } from "./layout";
-import CurrentStatus from "@/app/ui/components/CurrentStatus";
 
 // content import
 import {
@@ -36,15 +35,15 @@ function Home(){
 
 				<StdContentTemplate title={WelcomeContent.title} bodyContent={WelcomeContent.bodyContent()} id="who-am-i" />
 
-				<TextStandout content={TextStandout1} textPrefix="What am I?" id="what-am-i" line deepMbLine />
+				<TextStandout content={TextStandout1.content} textPrefix={TextStandout1.prefix} id="what-am-i" line deepMbLine />
 
 				<SkillsAndAbilities id="skills-and-expertise" />
 
-				<TextStandout id="about-me" content={TextStandout2} line deepMbLine />
+				<CardGrid id="currently-feed" content={WorkingOnCards} line />
+
+				<TextStandout id="about-me" content={TextStandout2.content} line deepMbLine />
 
 				<Themes id="things-i-think-about" />
-
-				<CardGrid id="currently-feed" content={WorkingOnCards} line />
 
 				<CardGrid id="work-samples" content={WorkSamplesCards} />
 
@@ -54,7 +53,7 @@ function Home(){
 
 				<StdContentTemplate id="get-in-touch" title={GetInTouchContent.title} bodyContent={GetInTouchContent.bodyContent()} deepMbLine line />
 
-				<TextStandout id="sign-off" content={TextStandout3} >
+				<TextStandout id="sign-off" content={TextStandout3.content} >
 					<ShareButtons title={title} excerpt={description} preText={"Share this page"} />
 				</TextStandout>
 			</main>

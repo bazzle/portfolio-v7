@@ -27,14 +27,15 @@ export const WelcomeContent = {
 		return(
 			<>
 				<ul>
-					<ListItem content={'I’m a <strong>creative pragmatist.</strong> I embrace creative freedom aswell as constraints'}/>
-					<ListItem content={'I’m a <strong>design minimalist.</strong> I believe small changes can make massive differences'}/>
-					<ListItem content={'I’m <strong>curious</strong> and <strong>tech-agnostic.</strong> always willing to learn relevant things'}/>
-					<ListItem content={'<strong>Accessibility</strong> is my baseline, <strong>visual and interactive flair</strong> is what I strive for to create engaging experiences'}/>
-					<ListItem content={'I’m <strong>receptive to technical implementation</strong>. Designing for developers aswell as users'}/>
-					<ListItem content={'I’m <strong>humble</strong> and <strong>user-centred</strong>. Sympathetic to the client and needs of the user'}/>
-					<ListItem content={'I love the <strong>impermanence of the web</strong> as a medium to design for and build on. To test on, to rethink and iterate'}/>
-					<ListItem content={'I love to <strong>problem solve.</strong> unlock that elusive missing piece '}/>
+					<ListItem content={'<strong>I’m a creative pragmatist.</strong> I embrace creative freedom aswell as constraints'}/>
+					<ListItem content={'<strong>I’m a design minimalist.</strong> I believe small changes can make massive differences'}/>
+					<ListItem content={'<strong>I’m tech-agnostic.</strong> Always willing to learn relevant things'}/>
+					<ListItem content={'<strong>I’m receptive to implementation.</strong> Designing for developers aswell as users'}/>
+					<ListItem content={'<strong>I’m humble and user-centred.</strong> Sympathetic to the client and user needs'}/>
+					<ListItem content={'<strong>Accessibility as my baseline.</strong> The foundation to build from'}/>
+					<ListItem content={'<strong>Design principles and conventions</strong> help guide my decisions'}/>
+					<ListItem content={'<strong>I use visual and interactive flair</strong> to create engaging experiences'}/>
+					<ListItem content={'<strong>The impermanence of the web</strong> Is the reason I love it as a medium to build on.'}/>
 				</ul>
 				{CurrentStatus()}
 			</>
@@ -42,11 +43,19 @@ export const WelcomeContent = {
 	}
 }
 
-export const TextStandout1 = "I like to occupy the intersection of visual design and web development. I find the two disciplines equally interesting."
+export const TextStandout1 = {
+	prefix : "Where I like to sit",
+	content : "In the intersection of design and development — I find the two disciplines equally interesting. The less binary my positioning, the more meaningful my contributions"
+}
 
-export const TextStandout2 = "I embrace all facets of web design and development. I see them as separate parts of the whole."
 
-export const TextStandout3 = "Thankyou, have a great day!"
+export const TextStandout2 = {
+	content : "I embrace all facets of web development. I see them as separate pieces of the puzzle"
+}
+
+export const TextStandout3 = {
+	content : "Thankyou, have a great day!"
+}
 
 export const SkillsContent = {
 	title: "Skills and Expertise",
@@ -54,10 +63,13 @@ export const SkillsContent = {
 		return(
 			<>
 				<p>
-					I have experience in many phases of development, with varying levels of involvement within Agile and Kanban development teams. I create wireframes, build mockups and interactive prototypes, assist user research sessions, facilitate collaborative design sessions and work with other developers in production build. I also carry out accessibility audits using automated tools and manual testing. I primarily build websites using WordPress that use either the classic or the Gutenburg block editor.
+					I work on interfaces — from wireframes and interactive prototypes to production code. I work within agile teams, collaborating closely with developers, researchers, content designers and stakeholders to shape products that are usable, inclusive and well-crafted.
 				</p>
 				<p>
-					I‘ve also been exploring building websites and apps using vanilla JS and frameworks such as React + NextJS and Vue + Nuxt.js. I am adaptable and a fast learner to different tech stacks.
+					Accessibility is embedded in my thinking from the start. I audit using both automated tools and manual testing, but my real focus is on getting things right at the design and build stage.
+				</p>
+				<p>
+					I'm comfortable working with content management systems and modern JavaScript frameworks, picking up new tools as the project demands. My depth is in bridging accessible design and technical implementation.
 				</p>
 			</>
 		)
