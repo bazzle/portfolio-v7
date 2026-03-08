@@ -43,6 +43,63 @@ export const WelcomeContent = {
 	}
 }
 
+export const HomepageCards = {
+	title: "Case studies and thought pieces",
+	cards : [
+		{
+			imageSrc : "/images/posts/satoshi-power-featured.png",
+			imageAlt : "Sat logo",
+			title : "Satoshi Power",
+			description : "Fun project looking at how the price of a satoshi compares to the smallest units of different fiat currencies. Pulling data from blockchain.com API",
+			link : "/thoughts/2025-12-11"
+		},
+		{
+			imageSrc : "/images/posts/bfi-featured.png",
+			imageAlt : "BFI Screen Culture logo",
+			title : "BFI Screen Culture 2033",
+			description : "Description about BFI project",
+			link : "/thoughts/2025-01-24"
+		},
+		{
+			imageSrc : "/images/posts/business-case-for-engineer-featured2.png",
+			imageAlt : "3D printer building a browser",
+			title : "The case for a Design Engineer",
+			description : "And why every delivery team should have one on the team",
+			link : "/thoughts/2026-03-07"
+		},
+		{
+			title : "University Alliance",
+			description : "Website redesign and rebuild for University Alliance",
+			link : "/thoughts/2025-01-26"
+		},
+		{
+			title : "Help to Grow",
+			description : "Website redesign for Department for Business and Trade campaign website Help to Grow",
+			link : "/thoughts/2025-01-25"
+		},
+		{
+			title : "The Tinkerer",
+			description : "Shower thought, around the verb _to tinker_, and what this means in a Design Engineer context.",
+			link : "/thoughts/2025-12-05"
+		},
+		{
+			title : "Bitcoin Truthbombs",
+			description : "2 minute read articles about Bitcoin I write as I learn about the technology and economics.",
+			link : "/thoughts/2025-08-02"
+		},
+		{
+			title : "Valuarchy",
+			description : "Design and development for a single page website for a novel new voting system",
+			link : "/thoughts/2026-01-03"
+		},
+		{
+			title : "My relationship with AI",
+			description : "I've been cautious about AI, I've had a strong desire to embrace it to improve my productivity and help my learning but formed some boundaries.",
+			link : "/thoughts/2025-06-01"
+		},
+	]
+}
+
 export const TextStandout1 = {
 	prefix : "Where I like to sit",
 	content : "In the intersection of design and development — I find the two disciplines equally interesting. The less binary my positioning, the more meaningful my contributions"
@@ -285,60 +342,6 @@ export const WhatNextContent = {
 			</>
 		)
 	}
-}
-
-export const WorkingOnCards = {
-	title: "Working on / thinking about",
-	gridItems : [
-		{
-			imageSrc : "/images/cards/whois.webp",
-			imageAlt : "Figure with a question-mark for a head",
-			title : "Bitcoin Truthbombs",
-			description : "2 minute read articles about Bitcoin I write as I learn about the technology and economics.",
-			link : "/thoughts/2025-08-02"
-		},
-		{
-			imageSrc : "/images/cards/sat-power2.webp",
-			imageAlt : "Sat logo",
-			title : "Satoshi Power",
-			description : "Fun project looking at how the price of a satoshi compares to the smallest units of different fiat currencies. Pulling data from blockchain.com",
-			link : "/thoughts/2025-12-11"
-		},
-		{
-			imageSrc : "/images/cards/exponential.png",
-			imageAlt : "Exponential curve depiction",
-			title : "What is a Web Design Engineer?",
-			description : "I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own.",
-			link : "/thoughts/2025-12-05"
-		}
-	]
-}
-
-export const WorkSamplesCards = {
-	title: "Work samples",
-	gridItems : [
-		{
-			imageSrc : "/images/cards/whois.webp",
-			imageAlt : "Figure with a question-mark for a head",
-			title : "Bitcoin Truthbombs",
-			description : "2 minute read articles about Bitcoin I write as I learn about the technology and economics.",
-			link : "/thoughts/2025-08-02"
-		},
-		{
-			imageSrc : "/images/cards/sat-power2.webp",
-			imageAlt : "Sat logo",
-			title : "Satoshi Power",
-			description : "Fun project looking at how the price of a satoshi compares to the smallest units of different fiat currencies. Pulling data from blockchain.com",
-			link : "/thoughts/2025-12-11"
-		},
-		{
-			imageSrc : "/images/cards/exponential.png",
-			imageAlt : "Exponential curve depiction",
-			title : "What is a Web Design Engineer?",
-			description : "I got hung up on what particular job title I can use that best captures me. I found that none of the existing titles which are conventionally recognised really fit. So I invented my own.",
-			link : "/thoughts/2025-12-05"
-		}
-	]
 }
 
 // work with me page
