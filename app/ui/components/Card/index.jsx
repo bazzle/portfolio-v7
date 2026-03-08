@@ -12,8 +12,8 @@ export default function Card({imageSrc, imageAlt, link, title, description, inde
 		</svg>
 	)
 
-	return (
-		<div className={classList}>
+	const cardImage = ()=>{
+		return(
 			<MotionImage
 			className={styles.card__image}
 			src={imageSrc}
@@ -30,6 +30,12 @@ export default function Card({imageSrc, imageAlt, link, title, description, inde
 				stiffness: 200,
 				damping: 30
 			}}/>
+		)
+	}
+
+	return (
+		<div className={classList}>
+			{(imageSrc && imageAlt) && cardImage()}
 			<div className={styles.card__content}>
 				<h2 id={`card-title-${index}`} className={styles.card__header}>
 					<a href={link}>{title}</a>
