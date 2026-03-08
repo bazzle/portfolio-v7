@@ -1,7 +1,6 @@
 import Hero from "@/app/ui/modules/Hero/HeroMain";
 import SkillsAndAbilities from "@/app/ui/modules/SkillsAndAbilities";
 import WorkHistory from "@/app/ui/modules/WorkHistory";
-import WorkSamples from "@/app/ui/modules/WorkSamples";
 import Themes from "@/app/ui/modules/Themes";
 import TextStandout from "@/app/ui/modules/TextStandout";
 import CardGrid from "@/app/ui/modules/CardGrid";
@@ -18,9 +17,7 @@ import {
 	TextStandout2,
 	TextStandout3,
 	GetInTouchContent,
-	WorkingOnCards,
-	WorkSamplesCards
-
+	HomepageCards
 } from '@/app/content/BodyContent';
 
 
@@ -39,13 +36,11 @@ function Home(){
 
 				<SkillsAndAbilities id="skills-and-expertise" />
 
-				<CardGrid id="currently-feed" content={WorkingOnCards} line />
+				<CardGrid id="currently-feed" title={HomepageCards.title} cards={HomepageCards.cards} line />
 
 				<TextStandout id="about-me" content={TextStandout2.content} line deepMbLine />
 
 				<Themes id="things-i-think-about" />
-
-				<CardGrid id="work-samples" content={WorkSamplesCards} />
 
 				<WorkHistory id="work-history" line />
 
