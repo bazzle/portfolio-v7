@@ -1,36 +1,49 @@
 import IndexItem from '@/app/ui/modules/blog/IndexItem';
 import getPostsByTag from '@/app/utils/get-posts-by-tag.js';
 import getTags from '@/app/utils/get-tags.js';
+import SlugifyString from '@/app/utils/slugify-string.js';
 import ArticleHero from '@/app/ui/modules/blog/Hero';
 import AfterArchive from '@/app/ui/modules/blog/AfterArchive';
 import Header from "@/app/ui/modules/Header";
 
-function getPosts(tag){
-	return getPostsByTag(tag);
+function resolveTagFromSlug(tagSlug) {
+	const tags = getTags();
+	return tags.find((tag) => SlugifyString(tag) === tagSlug) ?? tagSlug.replace(/-/g, ' ');
+}
+
+function formatTagTitle(tag) {
+	return tag.toLowerCase();
+}
+
+function getPosts(tagSlug){
+	const resolvedTag = resolveTagFromSlug(tagSlug);
+	return getPostsByTag(resolvedTag);
 }
 
 export const generateStaticParams = async () => {
 	const tags = getTags();
-	return tags.map(tag => ({ tag }));
+	return tags.map((tag) => ({ tag: SlugifyString(tag) }));
 };
 
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }) {
 	const { tag } = await params;
+	const tagTitle = formatTagTitle(resolveTagFromSlug(tag));
 	return {
-			title: `${tag} posts - My Thoughts`
+			title: `${tagTitle} posts - My Thoughts`
 	};
 }
 
 export default async function TagArchivePage({ params }) {
 	const { tag } = await params;
+	const tagTitle = formatTagTitle(resolveTagFromSlug(tag));
 	const posts = getPosts(tag);
 	return (
 		<>
 			<Header location="tag-single" />
 			<main className="main">
-				<ArticleHero title={`Tag — ${tag}`} />
+				<ArticleHero title={`Tag — ${tagTitle}`} />
 				<div>
 				{posts.map((post, index) => (
 					<IndexItem key={index} post={post} />

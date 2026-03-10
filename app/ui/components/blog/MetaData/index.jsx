@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from './MetaData.module.scss';
 import { format } from "date-fns"
+import SlugifyString from '@/app/utils/slugify-string.js';
 
 
 function MetaData({tags = [], date}){
@@ -9,7 +10,7 @@ function MetaData({tags = [], date}){
 	function tagsList(){
 		const tagItems = tags.map((tag, index)=> (
 			<li key={index} className={styles.tagList__item}>
-					<Link href={`/thoughts/tag/${tag}`}>{tag}</Link>
+					<Link href={`/thoughts/tag/${SlugifyString(tag)}`}>{tag}</Link>
 					<span className={styles.dash}>/</span>
 			</li>
 		));
