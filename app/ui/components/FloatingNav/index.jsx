@@ -22,11 +22,10 @@ function FloatingNav( {sectionNav} ){
 		}
 	}
 	const sectionLinks = [
-		new SectionLink('who am I', 'who-am-i'),
-		new SectionLink('what am I', 'what-am-i'),
-		new SectionLink('What I think about', 'about-me'),
-		new SectionLink('Thinking and working on', 'currently-feed'),
-		new SectionLink('Work samples', 'work-samples'),
+		new SectionLink('Who am I', 'who-am-i'),
+		new SectionLink('What am I', 'what-am-i'),
+		new SectionLink('Case studies and thought pieces', 'case-studies-thought-pieces'),
+		new SectionLink('What I think about', 'what-i-think-about'),
 		new SectionLink('Work history', 'work-history'),
 		new SectionLink('Get in Touch', 'get-in-touch')
 	]

@@ -36,7 +36,7 @@ function Home(){
 
 				<SkillsAndAbilities id="skills-and-expertise" />
 
-				<CardGrid id="currently-feed" title={HomepageCards.title} cards={HomepageCards.cards} line />
+				<CardGrid id="case-studies-thought-pieces" title={HomepageCards.title} cards={HomepageCards.cards} line />
 
 				<TextStandout id="about-me" content={TextStandout2.content} line deepMbLine />
 
