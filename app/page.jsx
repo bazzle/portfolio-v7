@@ -38,9 +38,9 @@ function Home(){
 
 				<CardGrid id="case-studies-thought-pieces" title={HomepageCards.title} cards={HomepageCards.cards} line />
 
-				<TextStandout id="about-me" content={TextStandout2.content} line deepMbLine />
+				<TextStandout id="things-i-think-about" textPrefix={TextStandout2.prefix} content={TextStandout2.content} line deepMbLine />
 
-				<Themes id="things-i-think-about" />
+				<Themes id="themes" />
 
 				<WorkHistory id="work-history" line />
 
