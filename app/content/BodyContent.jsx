@@ -44,7 +44,7 @@ export const WelcomeContent = {
 }
 
 export const HomepageCards = {
-	title: "Case studies and thought pieces",
+	title: "Showcase and thought pieces",
 	cards : [
 		{
 			imageSrc : "/images/posts/satoshi-power-featured.png",
