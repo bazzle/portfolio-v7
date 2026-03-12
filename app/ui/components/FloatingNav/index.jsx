@@ -42,14 +42,32 @@ function FloatingNav( {sectionNav} ){
 	};
 
 	useEffect(() => {
+		const activeIntersections = new Map();
+		const getLink = (id) => document.querySelector(`.${navClass} a[href="#${id}"]`);
+		const updateActiveLink = () => {
+			const activeId = [...activeIntersections.entries()]
+				.sort(([, previousTime], [, nextTime]) => nextTime - previousTime)[0]?.[0];
+
+			sectionLinks.forEach(({ id }) => {
+				const link = getLink(id);
+				if (!link) return;
+
+				link.classList.toggle("active", id === activeId);
+			});
+		};
+
 		// Init new IntersectionObserver
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
-				const link = document.querySelector(`.${navClass} a[href="#${entry.target.id}"]`);
-				if (link) {
-					entry.isIntersecting ? link.classList.add("active") : link.classList.remove("active");
+				if (entry.isIntersecting) {
+					activeIntersections.set(entry.target.id, entry.time);
+					return;
 				}
+
+				activeIntersections.delete(entry.target.id);
 			});
+
+			updateActiveLink();
 		}, { threshold: 0.5 });
 
 		// Create new array of DOM elements from page that match with sectionLinks
