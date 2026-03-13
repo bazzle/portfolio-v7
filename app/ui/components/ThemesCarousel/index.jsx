@@ -1,29 +1,18 @@
+'use client'
+
 import { Carousel } from '@ark-ui/react/carousel'
 import {Icons} from "@/app/ui/misc/Icons";
 import styles from './ThemesCarousel.module.scss'
 import { ThemesContent } from '@/app/content/BodyContent'
 import CarouselItem from './CarouselItem';
 
-const {themesItems} = ThemesContent;
-
 export default function ThemesCarousel(){
+	const {themesItems} = ThemesContent;
 	return (
-		<Carousel.Root className={styles.Root} slideCount={themesItems.length}>
-			<div className={styles.ControlsContainer}>
-				<Carousel.PrevTrigger className={styles.Trigger}>
-					{Icons.arrow}
-				</Carousel.PrevTrigger>
-				<div>
-					<Carousel.IndicatorGroup className={styles.IndicatorGroup}>
-						{themesItems.map((_, index) => (
-							<Carousel.Indicator className={styles.Indicator} key={index} index={index} />
-						))}
-					</Carousel.IndicatorGroup>
-				</div>
-				<Carousel.NextTrigger className={styles.Trigger}>
-					{Icons.arrow}
-				</Carousel.NextTrigger>
-			</div>
+		<Carousel.Root
+			className={styles.Root} 
+			slideCount={themesItems.length}
+		>
 			<Carousel.Control className={styles.Control}>
 				<Carousel.ItemGroup className={styles.ItemGroup}>
 					{themesItems.map((item, index) => (
@@ -33,6 +22,14 @@ export default function ThemesCarousel(){
 					))}
 				</Carousel.ItemGroup>
 			</Carousel.Control>
+			<div className={styles.ControlsContainer}>
+				<Carousel.PrevTrigger className={styles.Trigger}>
+					{Icons.arrowLeft}
+				</Carousel.PrevTrigger>
+				<Carousel.NextTrigger className={styles.Trigger}>
+					{Icons.arrowRight}
+				</Carousel.NextTrigger>
+			</div>
 		</Carousel.Root>
   	)
 }

@@ -53,5 +53,15 @@ export const Icons = {
 	arrow:
 		<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M9.80002 5.82399H2.01602L5.89402 9.43599L5.01202 10.332L1.76132e-05 5.54399V4.77399L5.01202 -6.19888e-06L5.89402 0.895994L1.98802 4.53599H9.80002V5.82399Z" fill="white"/>
+		</svg>,
+	arrowLeft : 
+		<svg width="41" height="27" viewBox="0 0 41 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M40.9895 12.0205L40.9895 14.0205L0.989502 14.0205L0.989502 12.0205L40.9895 12.0205Z" fill="#9AF3FF"/>
+		<path d="M13.0105 0L13.0105 13.0104L13.0105 26.0208L0.000120419 13.0104L13.0105 0Z" fill="#9AF3FF"/>
+		</svg>,
+	arrowRight :
+		<svg width="41" height="27" viewBox="0 0 41 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0.000124345 14.0002L0.00012417 12.0002L40.0001 12.0002L40.0001 14.0002L0.000124345 14.0002Z" fill="#9AF3FF"/>
+			<path d="M27.9791 26.0208L27.9791 13.0104L27.9791 1.08391e-06L40.9895 13.0104L27.9791 26.0208Z" fill="#9AF3FF"/>
 		</svg>
 }

@@ -1,8 +1,9 @@
 @use "@/app/assets/styles/style-library/all-vars" as vars;
 
 .carouselItem{
+	max-width: 60rem;
 	&__graphic{
-		height: 140px;
+		height: 10rem;
 		margin-bottom: vars.$block-spacing--shallow;
 		width: auto;
 		svg{
@@ -10,9 +11,14 @@
 			width: auto;
 		}
 	}
-	h3{
+	&__title{
 		@include vars.text-heading--chunky;
 		color: var(--color-foreground);
+		align-items: center;
+		margin-bottom: vars.$block-spacing--text;
+		span{
+			display: inline-block;
+		}
 	}
 	&__description{
 			margin-bottom: vars.$block-spacing--text;
