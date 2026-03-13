@@ -55,13 +55,13 @@ export const Icons = {
 			<path d="M9.80002 5.82399H2.01602L5.89402 9.43599L5.01202 10.332L1.76132e-05 5.54399V4.77399L5.01202 -6.19888e-06L5.89402 0.895994L1.98802 4.53599H9.80002V5.82399Z" fill="white"/>
 		</svg>,
 	arrowLeft : 
-		<svg width="41" height="27" viewBox="0 0 41 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M40.9895 12.0205L40.9895 14.0205L0.989502 14.0205L0.989502 12.0205L40.9895 12.0205Z" fill="#9AF3FF"/>
-		<path d="M13.0105 0L13.0105 13.0104L13.0105 26.0208L0.000120419 13.0104L13.0105 0Z" fill="#9AF3FF"/>
+		<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M9.00001 0L9 18L5.50763e-06 9L9.00001 0Z" fill="#9AF3FF"/>
+		<path d="M21.5002 8.49952L21.5002 9.49952L1.50025 9.49951L1.50025 8.49951L21.5002 8.49952Z" fill="#9AF3FF"/>
 		</svg>,
 	arrowRight :
-		<svg width="41" height="27" viewBox="0 0 41 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M0.000124345 14.0002L0.00012417 12.0002L40.0001 12.0002L40.0001 14.0002L0.000124345 14.0002Z" fill="#9AF3FF"/>
-			<path d="M27.9791 26.0208L27.9791 13.0104L27.9791 1.08391e-06L40.9895 13.0104L27.9791 26.0208Z" fill="#9AF3FF"/>
+		<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M12.5002 18L12.5002 0L21.5002 9L12.5002 18Z" fill="#9AF3FF"/>
+		<path d="M1.57361e-06 9.50049L1.48619e-06 8.50049L20 8.50049L20 9.50049L1.57361e-06 9.50049Z" fill="#9AF3FF"/>
 		</svg>
 }
