@@ -1,0 +1,89 @@
+.ItemGroup {
+	display: flex;
+	flex: 1;
+	min-width: 0;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	scrollbar-width: none;
+	-webkit-scrollbar-width: none;
+	-ms-overflow-style: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.Item {
+	width: 100%;
+	min-width: 0;
+}
+
+.Control {
+	display: block;
+}
+
+.Trigger {
+	color: var(--color-accent);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	svg{
+		width: 1.4rem;
+		height: 1.4rem;
+		display: block;
+  	}
+	&:hover:not(:disabled, [data-disabled]) {
+		svg{
+			width: 1.4rem;
+			height: 1.4rem;
+		}
+  	}
+	
+	&:focus-visible {
+    	outline: 2px solid var(--color-accent);
+    	outline-offset: -1px;
+  	}
+
+	&:is(:disabled, [data-disabled]) {
+    	opacity: 0.5;
+    	cursor: not-allowed;
+  	}
+	&:nth-of-type(2){
+		svg{
+			position: relative;
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.IndicatorGroup {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	&[data-orientation='vertical'] {
+    	flex-direction: column;
+  	}
+}
+
+.Indicator {
+	width: 2.4rem;
+	height: 2.4rem;
+	background: var(--color-accent);
+	border-radius: 9999px;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	&:focus-visible {
+		outline: 2px solid var(--color-accent);
+		outline-offset: 2px;
+	}
+		&[data-current] {
+			background: var(--color-accent);
+		}
+}
+
+.ControlsContainer{
+	display: flex;
+	justify-content: flex-start;
+}

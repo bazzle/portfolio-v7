@@ -1,0 +1,23 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+.carouselItem{
+	&__graphic{
+		height: 140px;
+		margin-bottom: vars.$block-spacing--shallow;
+		width: auto;
+		svg{
+			height: 100%;
+			width: auto;
+		}
+	}
+	h3{
+		@include vars.text-heading--chunky;
+		color: var(--color-foreground);
+	}
+	&__description{
+			margin-bottom: vars.$block-spacing--text;
+		p{
+			margin-bottom: 0;
+		}
+	}
+}

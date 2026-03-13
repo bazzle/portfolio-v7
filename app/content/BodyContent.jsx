@@ -156,7 +156,7 @@ export const SkillsContent = {
 
 export const ThemesContent = {
 	title: 'Things I think about',
-	tiles: [
+	themesItems: [
 		{
 			component: IconThemes.IconGlass,
 			nameFirstLine: "Responsive web",
