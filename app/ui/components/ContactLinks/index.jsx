@@ -1,7 +1,32 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import styles from "./ContactLinks.module.scss";
 import { Icons } from "@/app/ui/misc/Icons";
 
 export default function ContactLinks(){
+	const emailAddress = "barry@br-web.me";
+	const [didCopyEmail, setDidCopyEmail] = useState(false);
+
+	useEffect(() => {
+		if(!didCopyEmail){
+			return;
+		}
+
+		const resetTimer = setTimeout(() => setDidCopyEmail(false), 1600);
+		return () => clearTimeout(resetTimer);
+	}, [didCopyEmail]);
+
+	async function handleCopyEmail(){
+		try{
+			await navigator.clipboard.writeText(emailAddress);
+			setDidCopyEmail(true);
+		}
+		catch(error){
+			console.log("Failed to copy email address.", error);
+		}
+	}
+
 	return(
 		<ul className={styles.contactLinks}>
 			<li>
@@ -18,7 +43,9 @@ export default function ContactLinks(){
 			</li>
 			<li>
 				{Icons.email}
-				<a href="#">email (copy)</a>
+				<button type="button" onClick={handleCopyEmail}>
+					{didCopyEmail ? "email (copied)" : "email (copy)"}
+				</button>
 			</li>
 		</ul>
 	)
