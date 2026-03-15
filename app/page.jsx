@@ -6,8 +6,8 @@ import TextStandout from "@/app/ui/modules/TextStandout";
 import CardGrid from "@/app/ui/modules/CardGrid";
 import StdContentTemplate from "./ui/modules/StdContentTemplate";
 import Header from "@/app/ui/modules/Header";
-import ShareButtons from "@/app/ui/components/blog/ShareButtons";
 import { metadata } from "./layout";
+import ContactLinks from "@/app/ui/components/ContactLinks";
 
 // content import
 import {
@@ -49,7 +49,7 @@ function Home(){
 				<StdContentTemplate id="get-in-touch" title={GetInTouchContent.title} bodyContent={GetInTouchContent.bodyContent()} deepMbLine line />
 
 				<TextStandout id="sign-off" content={TextStandout3.content} >
-					<ShareButtons title={title} excerpt={description} preText={"Share this page"} />
+					<ContactLinks />
 				</TextStandout>
 			</main>
 		</>
