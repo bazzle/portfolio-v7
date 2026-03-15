@@ -57,7 +57,7 @@ export const HomepageCards = {
 			imageSrc : "/images/posts/bfi-featured.png",
 			imageAlt : "BFI Screen Culture logo",
 			title : "BFI Screen Culture 2033",
-			description : "Description about BFI project",
+			description : "Website for BFI's 10 year strategy",
 			link : "/thoughts/2025-01-24"
 		},
 		{
