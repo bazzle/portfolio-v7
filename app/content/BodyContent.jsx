@@ -112,7 +112,7 @@ export const TextStandout2 = {
 }
 
 export const TextStandout3 = {
-	content : "Thankyou, have a great day!"
+	content : "Thankyou, please get in touch if you’d like to know more!"
 }
 
 export const SkillsContent = {
