@@ -63,7 +63,7 @@ export const HomepageCards = {
 		{
 			imageSrc : "/images/posts/business-case-for-engineer-featured2.png",
 			imageAlt : "3D printer building a browser",
-			title : "The case for a Design Engineer",
+			title : "The case for the Design Engineer",
 			description : "And why every delivery team should have one on the team",
 			link : "/thoughts/2026-03-07"
 		},
@@ -108,7 +108,7 @@ export const TextStandout1 = {
 
 export const TextStandout2 = {
 	prefix : "Things I think about",
-	content : "I embrace all facets of web development. I see them as separate pieces of the puzzle"
+	content : "I embrace all facets of the front-end of a website or interface. I see them as separate pieces of the overall puzzle"
 }
 
 export const TextStandout3 = {
@@ -120,14 +120,14 @@ export const SkillsContent = {
 	bodyContent: () => {
 		return(
 			<>
-				<p>
-					I work on interfaces — from wireframes and interactive prototypes to production code. I work within agile teams, collaborating closely with developers, researchers, content designers and stakeholders to shape products that are usable, inclusive and well-crafted.
-				</p>
-				<p>
-					Accessibility is embedded in my thinking from the start. I audit using both automated tools and manual testing, but my real focus is on getting things right at the design and build stage.
+				<p className="text-intro">
+					Through my process of web design and development, I meet the functional needs of the product, while keeping in mind accessibility and adding some visual and interactive flourish — Which I call <a href="/">the Subtle art of making things POP.</a>
 				</p>
 				<p>
 					I'm comfortable working with content management systems and modern JavaScript frameworks, picking up new tools as the project demands. My depth is in bridging accessible design and technical implementation.
+				</p>
+				<p>
+					I work on interfaces — delivering wireframes, mockups and production code. I work within agile teams, collaborating closely with content designers, developers, researchers and stakeholders to shape products that are usable and inclusive.
 				</p>
 			</>
 		)
@@ -157,20 +157,21 @@ export const SkillsContent = {
 export const ThemesContent = {
 	title: 'Things I think about',
 	themesItems: [
-		{
-			component: IconThemes.IconGlass,
-			nameFirstLine: "Responsive web",
-			description: "Throughout every stage of the design and development process, I think about how the interface will appear in different size viewports."
-		},
+
 		{
 			component: IconThemes.IconDoor,
 			nameFirstLine: "Accessibility",
 			description: "I design with inclusivity in mind, ensuring digital experiences are usable for everyone, including those with disabilities, by following WCAG guidelines."
 		},
 		{
-			component: IconThemes.IconTag,
-			nameFirstLine: "Semantics",
-			description: "I strive to build with clean, meaningful HTML structure to enhance SEO, accessibility, and maintainability, ensuring content is understood by users and machines."
+			component: IconThemes.IconFingerprint,
+			nameFirstLine: "User-centered design",
+			description: "I appreciate how design should be guided by user needs and behaviour. I use esdtablished and tested design patterns and seek to validate design choices with user research when possible."
+		},
+		{
+			component: IconThemes.IconBalance,
+			nameFirstLine: "Hierarchy, Balance, White-space",
+			description: "I carefully structure layouts using visual hierarchy, balance, and white space to guide attention, improve readability, and create a refined user experience."
 		},
 		{
 			component: IconThemes.IconPieces,
@@ -178,39 +179,34 @@ export const ThemesContent = {
 			description: "I appreciate the value of good typographical choices. Something often overlooked in more tech focussed teams. And I stay up to date with new techniques such Variable and Opentype features."
 		},
 		{
-			component: IconThemes.IconFingerprint,
-			nameFirstLine: "User-Centered",
-			nameSecondLine: "Design",
-			description: "I appreciate how design should be guided by user needs and behaviour. I use esdtablished and tested design patterns and seek to validate design choices with user research when possible."
-		},
-		{
-			component: IconThemes.IconShapes,
-			nameFirstLine: "Brand",
-			nameSecondLine: "integration",
-			description: "I have extensive experience collaborating with brand designers and guardians, ensuring that visual identities and messaging are accurately and effectively translated into the digital products."
-		},
-		{
-			component: IconThemes.IconBalance,
-			nameFirstLine: "Hierarchy, Balance,",
-			nameSecondLine: "White-Space",
-			description: "I carefully structure layouts using visual hierarchy, balance, and white space to guide attention, improve readability, and create a refined user experience."
-		},
-		{
-			component: IconThemes.IconMagGlass,
-			nameFirstLine: "Search Engine",
-			nameSecondLine: "Optimisation",
-			description: "I build websites with SEO in mind. Semantic structure, performance optimisation, and meaningful content—to improve visibility and engagement."
-		},
-		{
-			component: IconThemes.IconAi,
-			nameFirstLine: "Integrating AI",
-			nameSecondLine: "in My Workflow",
-			description: "I leverage AI tools to enhance efficiency in my workflow, automate repetitive tasks, assist my learning and ensuring smarter design and development decisions."
-		},
-		{
 			component: IconThemes.IconGrid,
 			nameFirstLine: "Layout/Grid",
 			description: "I have experience utilising advanced layout systems in CSS, including flexbox and grid. I know the advantages and drawbacks of different techniques and can identify the best approach for each."
+		},
+		{
+			component: IconThemes.IconGlass,
+			nameFirstLine: "Responsive web",
+			description: "Throughout every stage of the design and development process, I think about how the interface will appear in different size viewports."
+		},
+		{
+			component: IconThemes.IconTag,
+			nameFirstLine: "Semantics",
+			description: "I strive to build with clean, meaningful HTML structure to enhance SEO, accessibility, and maintainability, ensuring content is understood by users and machines."
+		},
+		{
+			component: IconThemes.IconAi,
+			nameFirstLine: "Integrating AI in My Workflow",
+			description: "I leverage AI tools to enhance efficiency in my workflow, automate repetitive tasks, assist my learning and ensuring smarter design and development decisions."
+		},
+		{
+			component: IconThemes.IconShapes,
+			nameFirstLine: "Brand Integration",
+			description: "I have extensive experience collaborating with brand designers and guardians, ensuring that visual identities and messaging are accurately and effectively translated into the digital products."
+		},
+		{
+			component: IconThemes.IconMagGlass,
+			nameFirstLine: "Search Engine Optimisation",
+			description: "I build websites with SEO in mind. Semantic structure, performance optimisation, and meaningful content—to improve visibility and engagement."
 		}
 	]
 }

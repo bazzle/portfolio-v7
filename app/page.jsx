@@ -46,9 +46,7 @@ function Home(){
 
 				<StdContentTemplate id="whats-next" title={WhatNextContent.title} bodyContent={WhatNextContent.bodyContent()} />
 
-				<StdContentTemplate id="get-in-touch" title={GetInTouchContent.title} bodyContent={GetInTouchContent.bodyContent()} deepMbLine line />
-
-				<TextStandout id="sign-off" content={TextStandout3.content} >
+				<TextStandout id="get-in-touch" content={TextStandout3.content} line>
 					<ContactLinks />
 				</TextStandout>
 			</main>
