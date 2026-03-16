@@ -107,7 +107,6 @@ export const TextStandout1 = {
 
 
 export const TextStandout2 = {
-	prefix : "Things I think about",
 	content : "I embrace all facets of the front-end of a website or interface. I see them as separate pieces of the overall puzzle"
 }
 
