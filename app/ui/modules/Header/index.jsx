@@ -37,7 +37,7 @@ function Header({location}){
 			),
 			(
 				<Link className={styles.header__nav__link} href="/thoughts" key="2">
-					<span>Thoughts index</span>
+					<span>Showcase and thoughts index</span>
 				</Link>
 			)
 		]
@@ -53,7 +53,7 @@ function Header({location}){
 			),
 			(
 				<Link className={styles.header__nav__link} href="/thoughts" key="2">
-					<span>Thoughts index</span>
+					<span>Showcase and thoughts index</span>
 				</Link>
 			)
 		]
@@ -61,7 +61,7 @@ function Header({location}){
 		navLinks = [
 			(
 				<Link className={styles.header__nav__link} href="/thoughts" key="1">
-					<span>Thoughts</span>
+					<span>Showcase and thoughts</span>
 					<span className={styles.arrow}>
 						{Icons.arrow}
 					</span>
