@@ -121,7 +121,7 @@ export const SkillsContent = {
 		return(
 			<>
 				<p className="text-intro">
-					Through my process of web design and development, I meet the functional needs of the product, while keeping in mind accessibility and adding some visual and interactive flourish — Which I call <a href="/">the Subtle art of making things POP.</a>
+					Through my process of web design and development, I meet the functional needs of the product, while keeping in mind accessibility and adding some visual and interactive flourish — Which I call <a href="/thoughts/2026-03-16">The Subtle Art of Making things POP</a>.
 				</p>
 				<p>
 					I'm comfortable working with content management systems and modern JavaScript frameworks, picking up new tools as the project demands. My depth is in bridging accessible design and technical implementation.
