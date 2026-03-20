@@ -43,7 +43,7 @@ export default async function TagArchivePage({ params }) {
 		<>
 			<Header location="tag-single" />
 			<main className="main">
-				<ArticleHero title={`Tag — ${tagTitle}`} />
+				<ArticleHero title={tagTitle} />
 				<div>
 				{posts.map((post, index) => (
 					<IndexItem key={index} post={post} />
