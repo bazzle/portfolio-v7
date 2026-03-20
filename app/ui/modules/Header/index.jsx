@@ -37,7 +37,7 @@ function Header({location}){
 			),
 			(
 				<Link className={styles.header__nav__link} href="/thoughts" key="2">
-					<span>Showcase and thoughts index</span>
+					<span>Showcase and thoughts</span>
 				</Link>
 			)
 		]
