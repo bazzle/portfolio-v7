@@ -12,14 +12,18 @@
 		align-items: center;
 		flex-shrink: 0;
 		.callToAction__button{
-			border-right: 0;
+			@include vars.break-under(tablet){
+				border-right: 0;
+			}
 		}
 		&:last-of-type{
 			.divider{
 				display: none;
 			}
 			.callToAction__button{
-				border-right: 1px solid var(--color-foreground);
+				@include vars.break-under(tablet){
+					border-right: 1px solid var(--color-foreground);
+				}
 			}
 		}
 	}
@@ -32,12 +36,11 @@
 		flex-shrink: 0;
 	}
 	.divider{
-		display: none;
-		@include vars.break(tablet){
-			display: block;
-			height: 1px;
-			width: clamp(.5rem, 2.5vw, 50px);
-			background-color: var(--color-accent-50);
+		height: 1px;
+		width: clamp(.5rem, 2.5vw, 50px);
+		background-color: var(--color-accent-50);
+		@include vars.break-under(tablet){
+			display: none;
 		}
 	}
 }
