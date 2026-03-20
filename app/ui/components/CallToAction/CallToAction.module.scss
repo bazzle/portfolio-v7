@@ -11,9 +11,15 @@
 		justify-content: center;
 		align-items: center;
 		flex-shrink: 0;
+		.callToAction__button{
+			border-right: 0;
+		}
 		&:last-of-type{
 			.divider{
 				display: none;
+			}
+			.callToAction__button{
+				border-right: 1px solid var(--color-foreground);
 			}
 		}
 	}
