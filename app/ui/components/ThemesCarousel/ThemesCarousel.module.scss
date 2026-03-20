@@ -68,6 +68,7 @@
 	outline: 4px solid var(--color-accent);
 	outline-offset: -12px;
 	margin-bottom: 0;
+	position: relative;
 }
 
 .ControlsContainer{
@@ -93,9 +94,24 @@
 			50% 100%,
 			0% 50%
 		);
+		.overlay{
+			content: '';
+			width: 2rem;
+			height: 2rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			opacity: 1;
+		}
 		&.active{
-			background: linear-gradient(90deg, var(--color-accent), var(--color-accent-alt));
 			z-index: 1;
+			position: relative;
+			background: var(--color-accent);
+			.overlay{
+				background: var(--color-accent-alt);
+				opacity: var(--opacity);
+			}
 		}
 	}
 	&::after{

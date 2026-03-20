@@ -5,7 +5,7 @@ function AfterArchive(){
 	return(
 		<div className={styles.afterArchive}>
 			<div className="content-container">
-				<Link href="/thoughts">Back to index</Link>
+				<Link href="/thoughts">Index</Link>
 			</div>
 		</div>
 	)

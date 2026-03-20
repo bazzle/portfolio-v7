@@ -8,7 +8,6 @@ function AfterArticle({ title, excerpt }) {
     return (
         <div className={styles.afterArticle}>
             <div className="content-container">
-								<Link href="/">Homepage</Link>
 				<Link href="/thoughts">Index</Link>
 				<ShareButtons title={title} excerpt={excerpt} />
             </div>

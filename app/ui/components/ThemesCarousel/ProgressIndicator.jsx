@@ -1,3 +1,4 @@
+'use client'
 import styles from './ThemesCarousel.module.scss'
 import clsx from 'clsx'
 
@@ -12,15 +13,18 @@ export default function ProgressIndicator({totalItems, currentItemIndex}){
 
 	const itemArray = Array.from(iterations, (_, i) => {
 		const percentage = getPercentage(currentItemIndex, totalItems)
-		const variableColour = {
-			background: '#386a71, #af4a4a'
-		}
 		const classes = clsx(
 			styles.progressIndicator__item,
 			currentItemIndex === i + 1 && styles.active
 		)
 		return (
-			<div style={variableColour} className={classes} key={i}></div>
+			<div className={classes} key={i}>
+				<span
+					className={styles.overlay}
+					style={{ '--opacity' : percentage / 100 }}
+				>
+				</span>
+			</div>
 		)
 	})
 
