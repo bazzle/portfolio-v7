@@ -30,8 +30,8 @@
 		@include vars.break(tablet){
 			display: block;
 			height: 1px;
-			width: clamp(.5rem, 2.5vw, 50px);	
-			background-color: var(--color-accent-alt);
+			width: clamp(.5rem, 2.5vw, 50px);
+			background-color: var(--color-accent-50);
 		}
 	}
 }
