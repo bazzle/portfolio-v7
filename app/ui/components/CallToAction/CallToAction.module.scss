@@ -1,0 +1,37 @@
+@use "@/app/assets/styles/style-library/all-vars" as vars;
+
+.callToAction{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: vars.$block-spacing;
+	&__item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		&:last-of-type{
+			.divider{
+				display: none;
+			}
+		}
+	}
+	&__button{
+		background: transparent;
+		border: 1px solid var(--color-foreground);
+		color: var(--color-accent);
+		text-decoration: none;
+		padding: .8em 1.2em;
+		flex-shrink: 0;
+	}
+	.divider{
+		display: none;
+		@include vars.break(tablet){
+			display: block;
+			height: 1px;
+			width: clamp(.5rem, 2.5vw, 50px);	
+			background-color: var(--color-accent-alt);
+		}
+	}
+}

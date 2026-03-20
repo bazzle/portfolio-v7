@@ -8,6 +8,7 @@ import StdContentTemplate from "./ui/modules/StdContentTemplate";
 import Header from "@/app/ui/modules/Header";
 import { metadata } from "./layout";
 import ContactLinks from "@/app/ui/components/ContactLinks";
+import CallToAction from "@/app/ui/components/CallToAction";
 
 // content import
 import {
@@ -36,7 +37,13 @@ function Home(){
 
 				<SkillsAndAbilities id="skills-and-expertise" />
 
-				<CardGrid id="showcase-thought-pieces" title={HomepageCards.title} cards={HomepageCards.cards} line />
+				<CardGrid id="showcase-thought-pieces" title={HomepageCards.title} cards={HomepageCards.cards} line>
+					<CallToAction buttons={[
+						{link : "thoughts/tag/showcase", linkText : "View All Showcase" },
+						{link : "thoughts/tag/thoughts", linkText : "View All Thoughts" }
+					]}/>
+					<CallToAction />
+				</CardGrid>
 
 				<TextStandout id="things-i-think-about" textPrefix={TextStandout2.prefix} content={TextStandout2.content} line deepMbLine />
 
