@@ -1,6 +1,6 @@
 import '@/app/assets/styles/main.scss'
 import Footer from '@/app/ui/modules/Footer'
-import { PageCheckProvider } from '@/app/context/PageCheck'
+import { ColourThemeProvider } from '@/app/context/ColourTheme'
 
 export const metadata = {
 	title: 'Barry Richards Design Engineer',
@@ -22,12 +22,12 @@ export default function RootLayout({ children }) {
 					href="https://use.typekit.net/sqp3jyo.css"
 				></link>
 			</head>
-			<PageCheckProvider>
-				<body className="body">
+			<body className="body">
+				<ColourThemeProvider>
 					{children}
 					<Footer />
-				</body>
-			</PageCheckProvider>
+				</ColourThemeProvider>
+			</body>
 		</html>
 	)
 }
