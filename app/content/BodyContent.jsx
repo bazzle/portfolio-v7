@@ -107,6 +107,7 @@ export const TextStandout1 = {
 
 
 export const TextStandout2 = {
+	prefix : "Things I think about",
 	content : "I embrace all facets of the front-end of a website or interface. I see them as separate pieces of the overall puzzle"
 }
 
@@ -154,58 +155,48 @@ export const SkillsContent = {
 }
 
 export const ThemesContent = {
-	title: 'Things I think about',
+	title: 'On repeat',
 	themesItems: [
 
 		{
 			component: IconThemes.IconDoor,
 			nameFirstLine: "Accessibility",
-			description: "I design with inclusivity in mind, ensuring digital experiences are usable for everyone, including those with disabilities, by following WCAG guidelines."
+			description: "Accessibility is my baseline. The web is for all. Designing and developing for disabilities makes the experience better for everyone. I keep up to date with the latest guidelines and best practices."
 		},
 		{
 			component: IconThemes.IconFingerprint,
 			nameFirstLine: "User-centered design",
-			description: "I appreciate how design should be guided by user needs and behaviour. I use esdtablished and tested design patterns and seek to validate design choices with user research when possible."
+			description: "I believe in designing for the user, the beneficiary of the product. Leaning on recognised conventions can only get you so far. A good product is informed by the user."
 		},
 		{
 			component: IconThemes.IconBalance,
-			nameFirstLine: "Hierarchy, Balance, White-space",
-			description: "I carefully structure layouts using visual hierarchy, balance, and white space to guide attention, improve readability, and create a refined user experience."
+			nameFirstLine: "Hierarchy, balance, white-space and grid",
+			description: "The often overlooked principles of design. I put a lot of attention into the balance of elements, the flow and rhythm of content on a page, and the visual cues that communicate hierarchy."
 		},
 		{
 			component: IconThemes.IconPieces,
-			nameFirstLine: "Typography",
-			description: "I appreciate the value of good typographical choices. Something often overlooked in more tech focussed teams. And I stay up to date with new techniques such Variable and Opentype features."
-		},
-		{
-			component: IconThemes.IconGrid,
-			nameFirstLine: "Layout/Grid",
-			description: "I have experience utilising advanced layout systems in CSS, including flexbox and grid. I know the advantages and drawbacks of different techniques and can identify the best approach for each."
+			nameFirstLine: "Typography and iconography",
+			description: "Interfaces are made up of text and graphic elements yet the importance of these choices can be downplayed. I see them as fundamental. Amidst the trend towards homogeneity, experimenting makes a huge difference."
 		},
 		{
 			component: IconThemes.IconGlass,
-			nameFirstLine: "Responsive web",
-			description: "Throughout every stage of the design and development process, I think about how the interface will appear in different size viewports."
+			nameFirstLine: "Responsive, intrinsic web",
+			description: 'As Bruce Lee once said "Be like water". Content and components should be constrained by the container. I outsource responsive behaviour to modern CSS techniques like flexbox, grid and text-wrap. I see fixed widths and the notion of pixel perfection as relics of the past.'
 		},
 		{
 			component: IconThemes.IconTag,
 			nameFirstLine: "Semantics",
-			description: "I strive to build with clean, meaningful HTML structure to enhance SEO, accessibility, and maintainability, ensuring content is understood by users and machines."
+			description: "Attaching names to things is fundamental to how we interpret things in the physical world. Writing semantic HTML that's legible to browsers, assistive tech and search engines, commands the same importance within the digital world."
 		},
 		{
 			component: IconThemes.IconAi,
 			nameFirstLine: "Integrating AI in My Workflow",
-			description: "I leverage AI tools to enhance efficiency in my workflow, automate repetitive tasks, assist my learning and ensuring smarter design and development decisions."
-		},
-		{
-			component: IconThemes.IconShapes,
-			nameFirstLine: "Brand Integration",
-			description: "I have extensive experience collaborating with brand designers and guardians, ensuring that visual identities and messaging are accurately and effectively translated into the digital products."
+			description: "AI is a multiplier, my second brain, not a replacement for my current one. I use it to accelerate research, explore ideas faster and handle the repetitive parts of development — freeing me to focus on the decisions that actually need a human eye."
 		},
 		{
 			component: IconThemes.IconMagGlass,
 			nameFirstLine: "Search Engine Optimisation",
-			description: "I build websites with SEO in mind. Semantic structure, performance optimisation, and meaningful content—to improve visibility and engagement."
+			description: "Good SEO starts with good engineering. Semantic markup, performance, accessibility — most of what matters for search is what I'd be doing anyway. I focus on the technical foundations that give content the best chance of being found."
 		}
 	]
 }
