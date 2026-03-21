@@ -30,9 +30,6 @@
 		@include vars.text-display-medium;
 		display: block;
 		color: var(--color-accent);
-		@include vars.light-mode-wrapper{
-			color: var(--color-accent);
-		}
 	}
 	&__metadata{
 		display: block;

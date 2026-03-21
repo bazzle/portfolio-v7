@@ -61,9 +61,6 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 	width: auto;
 	min-height: 16rem;
 	max-height: 20rem;
-	@include vars.light-mode-wrapper{
-		box-shadow: none;
-	}
 	svg{
 		height: 100%;
 		width: 100%;

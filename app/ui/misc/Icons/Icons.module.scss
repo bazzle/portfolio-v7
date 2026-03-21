@@ -18,9 +18,6 @@
 
 .dark_mode_hide{
 	visibility:hidden;
-	@include vars.light-mode-wrapper{
-		visibility:visible;
-	}
 	@media print{
 		visibility:visible;
 	}

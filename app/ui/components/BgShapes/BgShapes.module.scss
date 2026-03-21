@@ -27,9 +27,6 @@
 			aspect-ratio: 1/1;
 			border-radius: 50%;
 			mix-blend-mode: color-dodge;
-			@include vars.light-mode-wrapper{
-				mix-blend-mode:color-burn;
-			}
 		}
 		// filled bg shape
 		&:nth-of-type(2){
@@ -37,9 +34,6 @@
 			opacity: .05;
 			border-radius: 50%;
 			mix-blend-mode: color-dodge;
-			@include vars.light-mode-wrapper{
-				mix-blend-mode: color-burn;
-			}
 		}
 		// stroke shape
 			&:nth-of-type(3){
@@ -50,9 +44,6 @@
 				mix-blend-mode: color-dodge;
 				border-width: .5px;
 				border-style: solid;
-				@include vars.light-mode-wrapper{
-					mix-blend-mode: color-burn;
-				}
 			}
 		}
 		&--1{
@@ -64,10 +55,6 @@
 				background-color: rgba(110, 3, 3, 0.8);
 				bottom: 0;
 				left: 0;
-				@include vars.light-mode-wrapper{
-					background-color: var(--color-accent-alt);
-					opacity: .4;
-				}
 			}
 			&:nth-of-type(2){
 				width: 80vw;
@@ -77,9 +64,6 @@
 				opacity: .1;
 				top: 0;
 				right: -20vw;
-				@include vars.light-mode-wrapper{
-					background-color: var(--color-accent);
-				}
 			}
 			&:nth-of-type(3){
 				width: auto;
@@ -89,9 +73,6 @@
 				top: 0;
 				right: 25vw;
 				border-color: var(--color-accent);
-				@include vars.light-mode-wrapper{
-					opacity: .5;
-				}
 			}
 		}
 	}
@@ -104,10 +85,6 @@
 					background-color: rgba(110, 3, 3, 0.6);
 					bottom: 0;
 					left: 0;
-					@include vars.light-mode-wrapper{
-						background-color: var(--color-accent);
-						opacity: .5;
-					}
 				}
 				&:nth-of-type(2){
 					width: 80vw;
@@ -117,10 +94,6 @@
 					opacity: .05;
 					bottom: 0;
 					right: -20vw;
-					@include vars.light-mode-wrapper{
-						background-color: var(--color-accent-alt);
-						opacity: .1;
-					}
 				}
 				&:nth-of-type(3){
 					width: auto;
@@ -142,10 +115,6 @@
 					background-color: rgba(110, 3, 3, 0.6);
 					bottom: 0;
 					left: 0;
-					@include vars.light-mode-wrapper{
-						background-color: var(--color-accent);
-						opacity: .5;
-					}
 				}
 				&:nth-of-type(2){
 					width: 80vw;
@@ -155,10 +124,6 @@
 					opacity: .05;
 					top: 0;
 					right: -20vw;
-					@include vars.light-mode-wrapper{
-						background-color: var(--color-accent-alt);
-						opacity: .1;
-					}
 				}
 				&:nth-of-type(3){
 					width: auto;
@@ -180,10 +145,6 @@
 					background-color: rgba(110, 3, 3, 0.6);
 					bottom: 0;
 					left: 0;
-					@include vars.light-mode-wrapper{
-						background-color: var(--color-accent);
-						opacity: .5;
-					}
 				}
 				&:nth-of-type(2){
 					width: 80vw;
@@ -193,10 +154,6 @@
 					opacity: .05;
 					top: 0;
 					right: -20vw;
-					@include vars.light-mode-wrapper{
-						background-color: var(--color-accent-alt);
-						opacity: .1;
-					}
 				}
 				&:nth-of-type(3){
 					width: auto;

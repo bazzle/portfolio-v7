@@ -54,9 +54,6 @@
 		@include vars.break-under(tablet){
 			display: none;
 		}
-		@include vars.light-mode-wrapper{
-			display: none;
-		}
 	}
 	&__name{
 		@include vars.text-heading-small;
@@ -69,10 +66,7 @@
 			position: relative;
 			padding-right: .3em;
 			display: inline-block;
-			@include vars.light-mode-wrapper{
-				background: var(--color-bg-off-solid);
 			}
-		}
 	}
 	&__description{
 		@include vars.text-tiny;
