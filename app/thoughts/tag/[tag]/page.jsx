@@ -14,10 +14,6 @@ function resolveTagFromSlug(tagSlug) {
 	)
 }
 
-function formatTagTitle(tag) {
-	return tag.toLowerCase()
-}
-
 function getPosts(tagSlug) {
 	const resolvedTag = resolveTagFromSlug(tagSlug)
 	return getPostsByTag(resolvedTag)
@@ -32,7 +28,7 @@ export const dynamicParams = false
 
 export async function generateMetadata({ params }) {
 	const { tag } = await params
-	const tagTitle = formatTagTitle(resolveTagFromSlug(tag))
+	const tagTitle = resolveTagFromSlug(tag)
 	return {
 		title: `${tagTitle} posts - My Thoughts`,
 	}
@@ -40,13 +36,14 @@ export async function generateMetadata({ params }) {
 
 export default async function TagArchivePage({ params }) {
 	const { tag } = await params
-	const tagTitle = formatTagTitle(resolveTagFromSlug(tag))
+	const tagTitle = resolveTagFromSlug(tag)
 	const posts = getPosts(tag)
 	return (
 		<>
 			<Header location="tag-single" />
 			<main className="main">
 				<ArticleHero title={tagTitle} />
+				<h1>{tagTitle}</h1>
 				<div>
 					{posts.map((post, index) => (
 						<IndexItem key={index} post={post} />
