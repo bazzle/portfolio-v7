@@ -74,7 +74,7 @@ function Header({ location }) {
 			{location === 'home' ? (
 				<FloatingNav sectionLinks={sectionLinksHome} />
 			) : (
-				<FloatingNav sectionLinks={sectionLinksHome} />
+				<FloatingNav />
 			)}
 		</header>
 	)
