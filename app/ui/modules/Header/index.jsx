@@ -37,10 +37,10 @@ function Header({ location }) {
 				<span>Homepage</span>
 			</Link>,
 			<Link className={styles.header__nav__link} href="/thoughts" key="2">
-				<span>Showcase and thoughts index</span>
+				<span>Showcase and thoughts</span>
 			</Link>,
 		]
-	} else if (location === 'portfolio') {
+	} else if (location === 'home') {
 		navLinks = [
 			<Link className={styles.header__nav__link} href="/thoughts" key="1">
 				<span>Showcase and thoughts</span>

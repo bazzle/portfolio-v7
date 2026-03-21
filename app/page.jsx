@@ -26,7 +26,7 @@ function Home() {
 	const description = metadata.description
 	return (
 		<>
-			<Header location="portfolio" />
+			<Header location="home" />
 			<main className="main">
 				<Hero />
 
