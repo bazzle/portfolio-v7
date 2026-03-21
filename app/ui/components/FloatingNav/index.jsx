@@ -5,6 +5,8 @@ import { motion } from 'motion/react'
 import styles from './FloatingNav.module.scss'
 
 function FloatingNav({ sectionLinks }) {
+	if (!sectionLinks) return false
+
 	const handleClick = () => {
 		window.scrollTo({
 			top: 0,
