@@ -11,38 +11,30 @@ export function ColourThemeProvider({ children }) {
 	const applyLightMode = () => {
 		document.body.classList.add('light-mode')
 		document.body.classList.remove('dark-mode')
-		localStorage.setItem('colourMode', 'light')
 		setColourMode('light')
 		setIsLoading(false)
 	}
 	const applyDarkMode = () => {
 		document.body.classList.add('dark-mode')
 		document.body.classList.remove('light-mode')
-		localStorage.setItem('colourMode', 'dark')
 		setColourMode('dark')
 		setIsLoading(false)
 	}
-	useEffect(() => {
-		const storedMode = localStorage.getItem('colourMode')
-		const osModeChecker = window.matchMedia('(prefers-color-scheme: dark)')
-
-		if (storedMode) {
-			if (storedMode === 'light') {
-				applyLightMode()
-			} else {
-				applyDarkMode()
-			}
+	const applyMode = (e) => {
+		if (e.matches) {
+			applyLightMode()
 		} else {
 			applyDarkMode()
 		}
+	}
+	useEffect(() => {
+		const osModeChecker = window.matchMedia('(prefers-color-scheme: light)')
+		console.log(osModeChecker)
 
 		osModeChecker.addEventListener('change', (e) => {
-			if (e.matches) {
-				applyDarkMode()
-			} else {
-				applyLightMode()
-			}
+			applyMode(e)
 		})
+		applyMode(osModeChecker)
 	}, [])
 
 	const modeSwitch = () =>
