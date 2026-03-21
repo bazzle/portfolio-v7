@@ -1,19 +1,19 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.clients{
+.clients {
 	@include vars.svgColor(var(--color-foreground));
 	width: 100%;
-	@include vars.break(tablet){
+	@include vars.break(tablet) {
 		padding-top: vars.$block-spacing--shallow;
 		padding-bottom: vars.$block-spacing--shallow;
 	}
-	&__logos{
+	&__logos {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 3rem;
 		align-items: baseline;
-		&__line{
+		&__line {
 			display: flex;
 			flex-direction: row;
 			gap: 3rem;
@@ -21,11 +21,11 @@
 			flex-wrap: wrap;
 		}
 	}
-	.logo_nao{
+	.logo_nao {
 		position: relative;
 		top: 5px;
 	}
-	@media print{
+	@media print {
 		display: none;
 	}
 }

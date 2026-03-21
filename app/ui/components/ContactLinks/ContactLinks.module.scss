@@ -1,35 +1,36 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.contactLinks{
+.contactLinks {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 2rem;
 	flex-wrap: wrap;
 
-	@mixin itemDefaults{
+	@mixin itemDefaults {
 		list-style: none;
 		flex-shrink: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		a, button{
+		a,
+		button {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			gap: .5em;
+			gap: 0.5em;
 		}
 	}
-	&__item{
+	&__item {
 		@include itemDefaults;
 	}
-	&__item____fullWidth{
+	&__item____fullWidth {
 		@include itemDefaults;
 		width: 100%;
 	}
 }
 
-.trigger{
+.trigger {
 	position: relative;
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -39,9 +40,9 @@
 .tooltip {
 	position: absolute;
 	display: block;
-	padding: .5em .7em;
+	padding: 0.5em 0.7em;
 	top: 50%;
-	right: -.8em;
+	right: -0.8em;
 	transform: translate(100%, -50%);
 	background: black;
 	@include vars.text-miniscule;

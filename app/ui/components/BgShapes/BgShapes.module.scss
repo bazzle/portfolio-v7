@@ -1,4 +1,4 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
 .shapes {
 	position: absolute;
@@ -20,7 +20,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		opacity: .6;
+		opacity: 0.6;
 	}
 
 	div {
@@ -36,7 +36,7 @@
 		// filled bg shape
 		&:nth-of-type(2) {
 			aspect-ratio: 1/1;
-			opacity: .05;
+			opacity: 0.05;
 			border-radius: 50%;
 			mix-blend-mode: color-dodge;
 		}
@@ -44,11 +44,11 @@
 		// stroke shape
 		&:nth-of-type(3) {
 			aspect-ratio: 1/1;
-			opacity: .2;
+			opacity: 0.2;
 			border-radius: 50%;
 			transform: translate(50%, -25%);
 			mix-blend-mode: color-dodge;
-			border-width: .5px;
+			border-width: 0.5px;
 			border-style: solid;
 		}
 	}
@@ -69,7 +69,7 @@
 				height: auto;
 				aspect-ratio: 1/1;
 				background-color: var(--color-accent);
-				opacity: .1;
+				opacity: 0.1;
 				top: 0;
 				right: -20vw;
 			}
@@ -102,7 +102,7 @@
 				height: auto;
 				aspect-ratio: 1/1;
 				background-color: var(--color-accent);
-				opacity: .05;
+				opacity: 0.05;
 				bottom: 0;
 				right: -20vw;
 			}
@@ -110,7 +110,7 @@
 			&:nth-of-type(3) {
 				width: auto;
 				height: 200%;
-				opacity: .4;
+				opacity: 0.4;
 				transform: translate(50%, -25%);
 				top: 0;
 				right: 25vw;
@@ -135,7 +135,7 @@
 				height: auto;
 				aspect-ratio: 1/1;
 				background-color: var(--color-accent);
-				opacity: .05;
+				opacity: 0.05;
 				top: 0;
 				right: -20vw;
 			}
@@ -143,7 +143,7 @@
 			&:nth-of-type(3) {
 				width: auto;
 				height: 200%;
-				opacity: .4;
+				opacity: 0.4;
 				transform: translate(50%, -25%);
 				top: 0;
 				right: 25vw;
@@ -168,7 +168,7 @@
 				height: auto;
 				aspect-ratio: 1/1;
 				background-color: var(--color-accent);
-				opacity: .05;
+				opacity: 0.05;
 				top: 0;
 				right: -20vw;
 			}
@@ -176,7 +176,7 @@
 			&:nth-of-type(3) {
 				width: auto;
 				height: 600%;
-				opacity: .4;
+				opacity: 0.4;
 				transform: translate(50%, -25%);
 				bottom: 0;
 				left: 0;

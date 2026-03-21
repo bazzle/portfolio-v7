@@ -1,41 +1,41 @@
 'use client'
-import Link from "next/link";
-import styles from './MetaData.module.scss';
-import { format } from "date-fns"
-import SlugifyString from '@/app/utils/slugify-string.js';
+import Link from 'next/link'
+import styles from './MetaData.module.scss'
+import { format } from 'date-fns'
+import SlugifyString from '@/app/utils/slugify-string.js'
 
-
-function MetaData({tags = [], date}){
-
-	function tagsList(){
-		const tagItems = tags.map((tag, index)=> (
+function MetaData({ tags = [], date }) {
+	function tagsList() {
+		const tagItems = tags.map((tag, index) => (
 			<li key={index} className={styles.tagList__item}>
-					<Link href={`/thoughts/tag/${SlugifyString(tag)}`}>{tag}</Link>
-					<span className={styles.dash}>/</span>
+				<Link href={`/thoughts/tag/${SlugifyString(tag)}`}>{tag}</Link>
+				<span className={styles.dash}>/</span>
 			</li>
-		));
+		))
 		return (
 			<>
 				<span className={styles.divider}></span>
-				<ul className={styles.tagList}>
-					{tagItems}
-				</ul>
+				<ul className={styles.tagList}>{tagItems}</ul>
 			</>
 		)
 	}
 
-	function postDate(rawDate){
+	function postDate(rawDate) {
 		let dateOutput
-		if (rawDate != null){
-			const formattedDate = format(new Date(rawDate), 'MMMM dd, yyyy');
-			dateOutput = <time className={styles.postDate} dateTime={rawDate}>{formattedDate}</time>;
+		if (rawDate != null) {
+			const formattedDate = format(new Date(rawDate), 'MMMM dd, yyyy')
+			dateOutput = (
+				<time className={styles.postDate} dateTime={rawDate}>
+					{formattedDate}
+				</time>
+			)
 		} else {
-			dateOutput = "Unknown date"
+			dateOutput = 'Unknown date'
 		}
-		return dateOutput;
+		return dateOutput
 	}
 
-	return(
+	return (
 		<div className={styles.metadata}>
 			{postDate(date)} {tags && tagsList()}
 		</div>

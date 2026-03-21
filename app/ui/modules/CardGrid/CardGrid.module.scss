@@ -1,8 +1,8 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.cardGrid{
+.cardGrid {
 	$gridGap: clamp(1rem, 5vw, 100px);
-	$gridGapHalf: clamp(.5rem, 2.5vw, 50px);
+	$gridGapHalf: clamp(0.5rem, 2.5vw, 50px);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -10,21 +10,21 @@
 	gap: 2rem;
 	padding-left: vars.$gutter-padding;
 	padding-right: vars.$gutter-padding;
-	@include vars.break(tablet){
+	@include vars.break(tablet) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 2rem $gridGapHalf;
 	}
-	@include vars.break(desktop-mini){
+	@include vars.break(desktop-mini) {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	&__item{
+	&__item {
 		position: relative;
 		max-width: 300px;
-		@include vars.break(tablet){
+		@include vars.break(tablet) {
 			max-width: unset;
 		}
-		&::before{
+		&::before {
 			content: '';
 			background-color: var(--color-accent-50);
 			display: block;
@@ -33,7 +33,7 @@
 			height: 2rem;
 			bottom: -2rem;
 			right: 50%;
-			@include vars.break(tablet){
+			@include vars.break(tablet) {
 				width: $gridGapHalf;
 				height: 1px;
 				top: 50%;
@@ -41,21 +41,21 @@
 				transform: translate(100%);
 			}
 		}
-		&:last-child{
-			&::before{
+		&:last-child {
+			&::before {
 				display: none;
 			}
 		}
-		&:nth-of-type(2n){
-			@include vars.break-between(tablet, desktop-mini){
-				&::before{
+		&:nth-of-type(2n) {
+			@include vars.break-between(tablet, desktop-mini) {
+				&::before {
 					display: none;
 				}
 			}
 		}
-		&:nth-of-type(3n){
-			@include vars.break(desktop-mini){
-				&::before{
+		&:nth-of-type(3n) {
+			@include vars.break(desktop-mini) {
+				&::before {
 					display: none;
 				}
 			}

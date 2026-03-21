@@ -1,36 +1,36 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.sectionHead{
+.sectionHead {
 	position: relative;
 	width: 100%;
 	margin-top: 10px;
-	&__title{
+	&__title {
 		margin: 0;
 		padding-left: 0;
 		padding-bottom: 2rem;
-		padding-top: .5em;
+		padding-top: 0.5em;
 		@include vars.text-heading--chunky;
 		color: var(--color-accent-alt);
-		@include vars.break(tablet){
-		padding-left: calc(1.5vw + 1.1em);
+		@include vars.break(tablet) {
+			padding-left: calc(1.5vw + 1.1em);
 		}
-		@media print{
+		@media print {
 			padding-left: 0;
-			font-size:4rem;
+			font-size: 4rem;
 			margin-top: 2rem;
 			margin-top: 4rem;
 			padding-bottom: 2rem;
 		}
 	}
 }
-.sectionHead__title____no_indent_mobile{
+.sectionHead__title____no_indent_mobile {
 	@extend .sectionHead__title;
-	@include vars.break-under(tablet){
+	@include vars.break-under(tablet) {
 		padding-left: 0;
 	}
 }
 
-.sectionHead__title____no_separator{
+.sectionHead__title____no_separator {
 	@extend .sectionHead__title;
 	margin: 0;
 }

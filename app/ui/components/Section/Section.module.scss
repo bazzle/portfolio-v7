@@ -1,60 +1,64 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
-@use "@/app/assets/styles/style-library/utils" as *;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
+@use '@/app/assets/styles/style-library/utils' as *;
 
 $spacingunit: clamp(4rem, 8vw, 28rem);
 
-.section{
+.section {
 	margin-top: vars.$block-spacing--shallow;
 	margin-bottom: $spacingunit;
 	position: relative;
 	background-color: var(--color-bg-alt-70);
-	&__heading-top{
+	&__heading-top {
 		text-align: center;
 		margin-bottom: vars.$block-spacing--shallow;
 		@include vars.text-heading--chunky;
 		color: var(--color-accent-alt);
 	}
-	&____no-spacing{
+	&____no-spacing {
 		margin-bottom: 0;
 		border-bottom: 0;
 	}
-	&____line{
+	&____line {
 		border-top: 1px solid transparent;
-		border-image: linear-gradient(90deg, var(--color-accent) 85%, var(--color-accent-alt) 85%) 1;
+		border-image: linear-gradient(
+				90deg,
+				var(--color-accent) 85%,
+				var(--color-accent-alt) 85%
+			)
+			1;
 		padding-top: $spacingunit;
-			&::before{
-				position: absolute;
-				display: block;
-				right: 15%;
-				top: 0;
-				transform: translate(50%, -50%);
-				content: '';
-				width: 30px;
-				aspect-ratio: 1/1;
-				background: linear-gradient(to right, var(--color-accent), var(--color-accent-alt));
-				clip-path: polygon(
-					50% 0%,
-					100% 50%,
-					50% 100%,
-					0% 50%
-				);
-			}
+		&::before {
+			position: absolute;
+			display: block;
+			right: 15%;
+			top: 0;
+			transform: translate(50%, -50%);
+			content: '';
+			width: 30px;
+			aspect-ratio: 1/1;
+			background: linear-gradient(
+				to right,
+				var(--color-accent),
+				var(--color-accent-alt)
+			);
+			clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+		}
 	}
-	&_____no-min-height{
+	&_____no-min-height {
 		min-height: unset;
 	}
-	&____hidden-heading{
-		.section__heading-top{
+	&____hidden-heading {
+		.section__heading-top {
 			@extend .visually-hidden;
 		}
 	}
-	&____deep-mb{
-		margin-bottom: calc($spacingunit *2);
+	&____deep-mb {
+		margin-bottom: calc($spacingunit * 2);
 	}
-	&____deep-mb-line{
+	&____deep-mb-line {
 		margin-bottom: $spacingunit;
 		padding-bottom: $spacingunit;
-		&::after{
+		&::after {
 			content: '';
 			display: block;
 			width: 100%;

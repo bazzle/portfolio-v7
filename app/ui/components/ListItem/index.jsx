@@ -1,16 +1,18 @@
-import styles from "./ListItem.module.scss";
+import styles from './ListItem.module.scss'
 
-function ListItem({content, blocky}){
+function ListItem({ content, blocky }) {
 	const className = [
 		styles.listItem,
-		blocky ? styles["listItem____blocky"] : undefined
-	].filter(Boolean).join(' ');
+		blocky ? styles['listItem____blocky'] : undefined,
+	]
+		.filter(Boolean)
+		.join(' ')
 
-	return(
+	return (
 		<li className={className}>
 			<span dangerouslySetInnerHTML={{ __html: content }} />
 		</li>
 	)
 }
 
-export default ListItem;
+export default ListItem

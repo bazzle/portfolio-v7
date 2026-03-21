@@ -1,39 +1,39 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.articleHero{
+.articleHero {
 	position: relative;
 	height: auto;
 	flex-direction: column;
 	padding-top: vars.$block-spacing--deep;
 	padding-bottom: vars.$block-spacing--deep;
-	@media print{
+	@media print {
 		background-image: none;
 	}
-	&__main{
+	&__main {
 		display: block;
 		position: relative;
 		z-index: 1;
 	}
-	&__lockup{
+	&__lockup {
 		flex-grow: 1;
 		display: block;
 		width: 100%;
 		position: relative;
 		margin-bottom: 0;
 		max-width: unset;
-		@media print{
+		@media print {
 			padding-top: 1em;
 			padding-bottom: vars.$block-spacing--shallow;
 		}
 	}
-	&__title{
+	&__title {
 		@include vars.text-display-medium;
 		display: block;
 		color: var(--color-accent);
 	}
-	&__metadata{
+	&__metadata {
 		display: block;
 		@include vars.text-blocky;
-		margin-top: calc(vars.$block-spacing--shallow /2);
+		margin-top: calc(vars.$block-spacing--shallow / 2);
 	}
 }

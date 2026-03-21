@@ -1,24 +1,22 @@
-'use client';
+'use client'
 
-import { useEffect } from 'react';
-import { motion } from "motion/react";
-import styles from "./FloatingNav.module.scss";
+import { useEffect } from 'react'
+import { motion } from 'motion/react'
+import styles from './FloatingNav.module.scss'
 
-function FloatingNav( {sectionNav} ){
-
+function FloatingNav({ sectionNav }) {
 	const handleClick = () => {
 		window.scrollTo({
 			top: 0,
-			behavior: 'auto'
-		});
-	};
+			behavior: 'auto',
+		})
+	}
 
-	const navClass = styles["floatingNav__nav"];
+	const navClass = styles['floatingNav__nav']
 
 	class SectionLink {
 		constructor(name, id) {
-			this.name = name,
-			this.id = id;
+			;((this.name = name), (this.id = id))
 		}
 	}
 	const sectionLinks = [
@@ -27,7 +25,7 @@ function FloatingNav( {sectionNav} ){
 		new SectionLink('Showcase and thoughts', 'showcase-thought-pieces'),
 		new SectionLink('Things I think about', 'things-i-think-about'),
 		new SectionLink('Work history', 'work-history'),
-		new SectionLink('Get in Touch', 'get-in-touch')
+		new SectionLink('Get in Touch', 'get-in-touch'),
 	]
 
 	const motionSettings = {
@@ -35,82 +33,107 @@ function FloatingNav( {sectionNav} ){
 		animate: { opacity: 1 },
 		transition: {
 			duration: 0.01,
-			type: "spring",
+			type: 'spring',
 			stiffness: 200,
 			damping: 30,
 		},
-	};
+	}
 
 	useEffect(() => {
-		const activeIntersections = new Map();
-		const getLink = (id) => document.querySelector(`.${navClass} a[href="#${id}"]`);
+		const activeIntersections = new Map()
+		const getLink = (id) =>
+			document.querySelector(`.${navClass} a[href="#${id}"]`)
 		const updateActiveLink = () => {
-			const activeId = [...activeIntersections.entries()]
-				.sort(([, previousTime], [, nextTime]) => nextTime - previousTime)[0]?.[0];
+			const activeId = [...activeIntersections.entries()].sort(
+				([, previousTime], [, nextTime]) => nextTime - previousTime,
+			)[0]?.[0]
 
 			sectionLinks.forEach(({ id }) => {
-				const link = getLink(id);
-				if (!link) return;
+				const link = getLink(id)
+				if (!link) return
 
-				link.classList.toggle("active", id === activeId);
-			});
-		};
+				link.classList.toggle('active', id === activeId)
+			})
+		}
 
 		// Init new IntersectionObserver
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					activeIntersections.set(entry.target.id, entry.time);
-					return;
-				}
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						activeIntersections.set(entry.target.id, entry.time)
+						return
+					}
 
-				activeIntersections.delete(entry.target.id);
-			});
+					activeIntersections.delete(entry.target.id)
+				})
 
-			updateActiveLink();
-		}, { threshold: 0.5 });
+				updateActiveLink()
+			},
+			{ threshold: 0.5 },
+		)
 
 		// Create new array of DOM elements from page that match with sectionLinks
-		const menuElements = sectionLinks.map(({ id }) => {
-			const el = document.getElementById(id);
-			if (!el) {
-				console.log(`Floating nav ID mismatch: #${id}`);
-				const link = document.querySelector(`.${navClass} a[href="#${id}"]`);
-				if (link) link.classList.add(styles.unmatched)
-			}
-			return el
-		}).filter(Boolean);
+		const menuElements = sectionLinks
+			.map(({ id }) => {
+				const el = document.getElementById(id)
+				if (!el) {
+					console.log(`Floating nav ID mismatch: #${id}`)
+					const link = document.querySelector(`.${navClass} a[href="#${id}"]`)
+					if (link) link.classList.add(styles.unmatched)
+				}
+				return el
+			})
+			.filter(Boolean)
 
 		// Run the observer on each one
-		menuElements.forEach((el) => observer.observe(el));
+		menuElements.forEach((el) => observer.observe(el))
 
 		// Unobserve on unmount
 		return () => {
-			menuElements.forEach((el) => observer.unobserve(el));
-			observer.disconnect();
-		};
-	}, [navClass]);
+			menuElements.forEach((el) => observer.unobserve(el))
+			observer.disconnect()
+		}
+	}, [navClass])
 
-	return(
+	return (
 		<>
 			<motion.div className={styles.floatingNav} {...motionSettings}>
-				{ sectionNav && (
+				{sectionNav && (
 					<nav className={navClass}>
-						{sectionLinks.map(({name, id}) => (
-							<a key={id} href={`#${id}`}>{name}</a>
+						{sectionLinks.map(({ name, id }) => (
+							<a key={id} href={`#${id}`}>
+								{name}
+							</a>
 						))}
 					</nav>
 				)}
-				<button aria-label='Back to top' className={styles["floatingNav__backTop"]} onClick={handleClick}>
-					<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path className="fill-bg" d="M3 0.5H30C31.3807 0.5 32.5 1.61929 32.5 3V32.5H0.5V3C0.5 1.61929 1.61929 0.5 3 0.5Z"/>
-						<path className="stroke-accent" strokeWidth="1" d="M23.5 19.5002L16.5 13.5002L9.50024 19.4998"/>
+				<button
+					aria-label="Back to top"
+					className={styles['floatingNav__backTop']}
+					onClick={handleClick}
+				>
+					<svg
+						width="33"
+						height="33"
+						viewBox="0 0 33 33"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							className="fill-bg"
+							d="M3 0.5H30C31.3807 0.5 32.5 1.61929 32.5 3V32.5H0.5V3C0.5 1.61929 1.61929 0.5 3 0.5Z"
+						/>
+						<path
+							className="stroke-accent"
+							strokeWidth="1"
+							d="M23.5 19.5002L16.5 13.5002L9.50024 19.4998"
+						/>
 					</svg>
 				</button>
 			</motion.div>
 		</>
 	)
-
 }
 
-export default FloatingNav;
+export default FloatingNav

@@ -1,60 +1,60 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.spacer{
+.spacer {
 	display: block;
 	@include vars.ridged-line;
 	margin-top: vars.$block-spacing;
 	margin-bottom: vars.$block-spacing;
-	@include vars.break(tablet){
+	@include vars.break(tablet) {
 		margin-top: clamp(10rem, 15vw, 13rem);
 		margin-bottom: clamp(10rem, 15vw, 13rem);
 	}
-	&_mobile{
+	&_mobile {
 		display: block;
-		@include vars.break(tablet){
+		@include vars.break(tablet) {
 			display: none;
 		}
-		@media print{
+		@media print {
 			display: none;
 		}
 	}
-	&_nomobile{
+	&_nomobile {
 		display: none;
-		@include vars.break(tablet){
+		@include vars.break(tablet) {
 			display: block;
 		}
 	}
-	&_shallow{
+	&_shallow {
 		margin-top: vars.$block-spacing--shallow;
 		margin-bottom: vars.$block-spacing--shallow;
-		@include vars.break(tablet){
+		@include vars.break(tablet) {
 			margin-top: clamp(5rem, 3.75vw, 8.5rem);
 			margin-bottom: clamp(5rem, 3.75vw, 8.5rem);
 		}
 	}
-	&_noline{
+	&_noline {
 		background-color: transparent;
 		border-bottom: 0;
 	}
-	&_nolinemobile{
-		@include vars.break-under(tablet){
+	&_nolinemobile {
+		@include vars.break-under(tablet) {
 			background-color: transparent;
 			border-bottom: 0;
 		}
 	}
-	&_nomargin_top{
+	&_nomargin_top {
 		margin-top: 0;
 	}
-	&_nomargin_bottom{
+	&_nomargin_bottom {
 		margin-bottom: 0;
 	}
-	&_shallow_top{
-		@include vars.break(tablet){
+	&_shallow_top {
+		@include vars.break(tablet) {
 			margin-top: vars.$block-spacing;
 		}
 	}
 
-	@media print{
+	@media print {
 		margin-top: vars.$block-spacing--shallow--static;
 		margin-bottom: vars.$block-spacing--shallow--static;
 	}

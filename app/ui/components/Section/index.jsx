@@ -1,12 +1,12 @@
-import SectionHead from '@/app/ui/components/SectionHead';
-import styles from "./Section.module.scss";
+import SectionHead from '@/app/ui/components/SectionHead'
+import styles from './Section.module.scss'
 
 function Section({
 	children,
-	moduleClassname = "module",
+	moduleClassname = 'module',
 	heading,
 	headingTop,
-	layout = "normal",
+	layout = 'normal',
 	line,
 	lineTop,
 	noSpacing,
@@ -14,91 +14,73 @@ function Section({
 	headingHidden,
 	id,
 	deepMb,
-	deepMbLine
+	deepMbLine,
 }) {
-
 	const sectionClasses = [
 		styles.section,
-		line && styles["section____line"],
-		noSpacing && styles["section____no-spacing"],
-		noMinHeight && styles["section_____no-min-height"],
-		headingHidden && styles["section____hidden-heading"],
-		deepMb && styles["section____deep-mb"],
-		deepMbLine && styles["section____deep-mb-line"],
-		lineTop && 'section____line-top'
-	].filter(Boolean).join(' ');
+		line && styles['section____line'],
+		noSpacing && styles['section____no-spacing'],
+		noMinHeight && styles['section_____no-min-height'],
+		headingHidden && styles['section____hidden-heading'],
+		deepMb && styles['section____deep-mb'],
+		deepMbLine && styles['section____deep-mb-line'],
+		lineTop && 'section____line-top',
+	]
+		.filter(Boolean)
+		.join(' ')
 
 	const topHeadingOutput = (str) => {
-		return (
-			<h2 className={styles["section__heading-top"]}>{str}</h2>
-		)
+		return <h2 className={styles['section__heading-top']}>{str}</h2>
 	}
 
 	const mainSectionOutput = (layout) => {
-		if(layout === '2col'){
-			return(
+		if (layout === '2col') {
+			return (
 				<div className="container">
 					<div className="inner-2col">
 						<div className="col-1">
 							<SectionHead titleString={heading} separator />
 						</div>
-						<div className="col-2">
-							{children}
-						</div>
+						<div className="col-2">{children}</div>
 					</div>
 				</div>
 			)
 		} else if (layout === 'fullWidth') {
-			return(
-				<div className="container____extended">
-					{children}
-				</div>
-			)
+			return <div className="container____extended">{children}</div>
 		} else if (layout === 'toEdges') {
-			return(
-				<div className="container____toEdges">
-					{children}
-				</div>
-			)
+			return <div className="container____toEdges">{children}</div>
 		} else if (layout === 'extended') {
-			return(
-				<div className="container____extended">
-					{children}
-				</div>
-			)
+			return <div className="container____extended">{children}</div>
 		} else {
-			return(
-				<div className="container">
-					{children}
-				</div>
-			)
+			return <div className="container">{children}</div>
 		}
 	}
 
-	const sectionId = ()=>{
+	const sectionId = () => {
 		let str
-		if (id){
+		if (id) {
 			str = id
 		} else if (heading) {
-			str = heading.toLowerCase().trim().replace(/[\s\W-]+/g, '-').replace(/^-+|-+$/g, '');
+			str = heading
+				.toLowerCase()
+				.trim()
+				.replace(/[\s\W-]+/g, '-')
+				.replace(/^-+|-+$/g, '')
 		}
 		return str
 	}
 
-	const computedId = sectionId();
-	const optionalProps = computedId ? { id: computedId } : {};
-	
+	const computedId = sectionId()
+	const optionalProps = computedId ? { id: computedId } : {}
+
 	return (
-		<section
-		className={sectionClasses}
-		{...optionalProps}
-		>
+		<section className={sectionClasses} {...optionalProps}>
 			<div className={moduleClassname}>
-				{headingTop && topHeadingOutput(heading) }
+				{headingTop && topHeadingOutput(heading)}
 				{mainSectionOutput(layout)}
 			</div>
 		</section>
-  	);
+	)
 }
 
-export default Section;
+export default Section

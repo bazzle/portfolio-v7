@@ -1,53 +1,53 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.vennDiagram{
+.vennDiagram {
 	width: 100%;
 	max-width: 400px;
 	margin-bottom: vars.$block-spacing;
 	display: flex;
 	justify-content: center;
-	@include vars.break(desktop){
+	@include vars.break(desktop) {
 		max-width: 300px;
 		min-width: 250px;
 		float: right;
 		width: 22vw;
-		margin-bottom: calc(vars.$block-spacing--shallow /2);
-		margin-left: calc(vars.$block-spacing--shallow /2);
+		margin-bottom: calc(vars.$block-spacing--shallow / 2);
+		margin-left: calc(vars.$block-spacing--shallow / 2);
 	}
-	&__inner{
+	&__inner {
 		position: relative;
 		display: block;
 		height: auto;
 		width: 80%;
 	}
-	&__textOverlay{
+	&__textOverlay {
 		position: absolute;
-		top: calc(50% + .5em);
+		top: calc(50% + 0.5em);
 		left: 50%;
 		transform: translate(-50%, -50%);
 		@include vars.text-miniscule;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		span{
+		span {
 			color: var(--color-accent-alt);
 			text-align: center;
-			padding: .3em;
+			padding: 0.3em;
 			display: block;
-			&.loopingText{
+			&.loopingText {
 				color: var(--color-foreground);
 				max-width: 90px;
 			}
 		}
 	}
-	svg{
+	svg {
 		width: 100%;
 		height: auto;
-		text{
+		text {
 			@include vars.text-miniscule;
 		}
-		circle{
-			fill: none!important;
+		circle {
+			fill: none !important;
 		}
 	}
 }

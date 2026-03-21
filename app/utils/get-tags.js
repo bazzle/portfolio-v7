@@ -1,6 +1,6 @@
 import getPostMetadata from './get-post-metadata.js'
 
-export default function getTags(){
+export default function getTags() {
 	// Check all posts tags, and aggregate them into an array
 	// Use set() to prevent duplication
 
@@ -15,6 +15,6 @@ export default function getTags(){
 			tagSet.add(tags)
 		}
 	})
-	
-	return Array.from(tagSet).sort()	
+
+	return Array.from(tagSet).sort()
 }

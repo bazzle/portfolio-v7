@@ -1,5 +1,5 @@
-.main{
-	&::after{
+.main {
+	&::after {
 		content: '';
 		top: 0;
 		height: 100%;
@@ -12,8 +12,8 @@
 	}
 }
 
-.thoughts-index .main{
-	&::after{
+.thoughts-index .main {
+	&::after {
 		display: none;
 	}
 }

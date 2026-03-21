@@ -1,13 +1,20 @@
-import Section from '@/app/ui/components/Section';
-import styles from "./TextStandout.module.scss";
+import Section from '@/app/ui/components/Section'
+import styles from './TextStandout.module.scss'
 
-function TextStandout({content, line, deepMb, deepMbLine, textPrefix, children, id}){
-
+function TextStandout({
+	content,
+	line,
+	deepMb,
+	deepMbLine,
+	textPrefix,
+	children,
+	id,
+}) {
 	const optionalProps = {
 		...(line ? { line } : {}),
 		...(deepMb ? { deepMb } : {}),
 		...(deepMbLine ? { deepMbLine } : {}),
-		...(id ? { id } : {})
+		...(id ? { id } : {}),
 	}
 
 	const textPrefixElem = (
@@ -15,26 +22,22 @@ function TextStandout({content, line, deepMb, deepMbLine, textPrefix, children, 
 	)
 
 	const childrenContainer = (
-		<div className={styles.textStandout__children}>
-			{children}
-		</div>
+		<div className={styles.textStandout__children}>{children}</div>
 	)
 
-	return(
+	return (
 		<Section
-			moduleClassname={styles.textStandout} 
-			layout="fullWidth" 
+			moduleClassname={styles.textStandout}
+			layout="fullWidth"
 			{...optionalProps}
-			>
+		>
 			<div className={styles.textStandout__main}>
 				{textPrefix && textPrefixElem}
-				<p className={styles.textStandout__text}>
-					{content}
-				</p>
+				<p className={styles.textStandout__text}>{content}</p>
 				{children && childrenContainer}
 			</div>
 		</Section>
 	)
 }
 
-export default TextStandout;
+export default TextStandout

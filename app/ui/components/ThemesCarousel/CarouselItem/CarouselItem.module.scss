@@ -1,28 +1,28 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.carouselItem{
+.carouselItem {
 	max-width: 60rem;
-	&__graphic{
+	&__graphic {
 		height: 10rem;
 		margin-bottom: vars.$block-spacing--shallow;
 		width: auto;
-		svg{
+		svg {
 			height: 100%;
 			width: auto;
 		}
 	}
-	&__title{
+	&__title {
 		@include vars.text-heading--chunky;
 		color: var(--color-foreground);
 		align-items: center;
 		margin-bottom: vars.$block-spacing--text;
-		span{
+		span {
 			display: inline-block;
 		}
 	}
-	&__description{
-			margin-bottom: vars.$block-spacing--text;
-		p{
+	&__description {
+		margin-bottom: vars.$block-spacing--text;
+		p {
 			margin-bottom: 0;
 		}
 	}

@@ -1,55 +1,59 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.textStandout{
+.textStandout {
 	position: relative;
 	background-size: auto;
 	background-repeat: repeat;
 	// border-top: 1px solid var(--color-accent-alt);
-	@media print{
+	@media print {
 		border-top: 0;
 		border-bottom: 0;
-		background: none!important;
+		background: none !important;
 	}
-	&__prefix{
+	&__prefix {
 		@include vars.text-blocky;
 		color: var(--color-accent-alt);
-		margin-bottom: calc(vars.$block-spacing /2);
+		margin-bottom: calc(vars.$block-spacing / 2);
 	}
-	&__main{
+	&__main {
 		margin-block-start: unset;
 		margin-block-end: unset;
 		display: block;
 		text-align: center;
-    	margin: 0 auto;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		max-width: 80vw;
-		@include vars.break(tablet){
+		@include vars.break(tablet) {
 			max-width: 60vw;
 		}
-		@media print{
+		@media print {
 			padding-top: unset;
 			padding-bottom: unset;
 			text-align: left;
 			margin-left: unset;
 		}
 	}
-	&__text{
+	&__text {
 		position: relative;
 		margin-bottom: 0;
 		color: transparent;
-		background: linear-gradient(180deg, var(--color-foreground) 75%, var(--color-accent) 100% );
+		background: linear-gradient(
+			180deg,
+			var(--color-foreground) 75%,
+			var(--color-accent) 100%
+		);
 		background-clip: text;
 		-webkit-background-clip: text;
 		@include vars.text-display-small;
 		max-width: unset;
-		@media print{
+		@media print {
 			background: none;
 			color: var(--color-foreground);
 		}
 	}
-	&__children{
+	&__children {
 		display: flex;
 		align-items: center;
 		justify-content: center;

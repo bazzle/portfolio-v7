@@ -1,6 +1,6 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-@mixin headerlinkDefaults{
+@mixin headerlinkDefaults {
 	height: auto;
 	position: relative;
 	margin: 0;
@@ -10,81 +10,86 @@
 	text-decoration: none;
 	display: flex;
 	align-items: center;
-	@include vars.break(mobile){
+	@include vars.break(mobile) {
 		line-height: 2;
 	}
-	&:hover{
+	&:hover {
 		color: var(--color-foreground);
 	}
 }
 
-.header{
+.header {
 	z-index: 2;
 	position: relative;
 	background-color: var(--color-bg-solid);
 	border-top: 1px solid;
 	border-bottom: 1px solid;
-	border-image: linear-gradient(to right, var(--color-accent), var(--color-accent-alt)) 1;
-	&__inner{
+	border-image: linear-gradient(
+			to right,
+			var(--color-accent),
+			var(--color-accent-alt)
+		)
+		1;
+	&__inner {
 		display: flex;
 		flex-direction: column;
-		@include vars.break(tablet){
+		@include vars.break(tablet) {
 			flex-direction: row;
 			width: 100%;
 			justify-content: space-between;
 		}
 	}
-	&__sitename{
+	&__sitename {
 		all: unset;
 		padding-left: vars.$gutter-padding;
 		padding-right: vars.$gutter-padding;
-		padding-top: .5em;
-		@include vars.break(tablet){
+		padding-top: 0.5em;
+		@include vars.break(tablet) {
 			padding-left: 0;
 			padding-top: 1em;
 			border: none;
 		}
-		&__link{
+		&__link {
 			@include headerlinkDefaults;
 			display: flex;
 			align-items: center;
 			flex-direction: row;
 			flex-wrap: wrap;
-			gap: 0 .5em;
+			gap: 0 0.5em;
 			color: var(--color-accent-alt);
-			span{
+			span {
 				display: block;
 			}
 		}
 	}
-	&__nav{
+	&__nav {
 		gap: 0 1em;
 		padding-left: vars.$gutter-padding;
 		padding-right: vars.$gutter-padding;
-		padding-bottom: .5em;
+		padding-bottom: 0.5em;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		@include vars.break(tablet){
+		@include vars.break(tablet) {
 			padding-top: 1em;
 			padding-bottom: 1em;
 			padding-left: unset;
 			padding-right: unset;
 		}
-		&__link{
+		&__link {
 			@include headerlinkDefaults;
-			gap: .5em;
-			span{
+			gap: 0.5em;
+			span {
 				display: block;
 			}
-			@mixin svgDefaults{
+			@mixin svgDefaults {
 				fill: currentColor;
 			}
-			.arrow{
+			.arrow {
 				@include svgDefaults;
 				transform: rotate(180deg);
 			}
-			.arrow____reverse{
+			.arrow____reverse {
 				@include svgDefaults;
 			}
 		}

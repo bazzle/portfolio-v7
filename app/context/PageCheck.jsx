@@ -1,21 +1,20 @@
 'use client'
-import { createContext, useEffect } from "react";
+import { createContext, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 
-export const pageCheckContext = createContext();
+export const pageCheckContext = createContext()
 
-export function PageCheckProvider({children}){
+export function PageCheckProvider({ children }) {
+	const currentPath = usePathname()
+	let currentPage = 'page'
 
-	const currentPath = usePathname();
-	let currentPage = 'page';
-	
-	useEffect(()=>{
-		if (currentPath === '/'){
+	useEffect(() => {
+		if (currentPath === '/') {
 			currentPage = 'home'
-		} else if ( currentPath === '/thoughts' ){
+		} else if (currentPath === '/thoughts') {
 			currentPage = 'thoughts-index'
-		} else if (currentPath.includes('thoughts')){
-			if (currentPath.includes('tag')){
+		} else if (currentPath.includes('thoughts')) {
+			if (currentPath.includes('tag')) {
 				currentPage = 'tag'
 			} else {
 				currentPage = 'single'
@@ -23,11 +22,11 @@ export function PageCheckProvider({children}){
 		} else {
 			currentPage = 'page'
 		}
-		document.body.className = '';
-		document.body.classList.add(currentPage);
+		document.body.className = ''
+		document.body.classList.add(currentPage)
 	}, [currentPath])
 
-	return(
+	return (
 		<pageCheckContext.Provider value={{ currentPage }}>
 			{children}
 		</pageCheckContext.Provider>

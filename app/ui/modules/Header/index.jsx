@@ -1,110 +1,79 @@
-'use client';
+'use client'
 
-import { NameTitle } from '@/app/content/BodyContent';
-import FloatingNav from '@/app/ui/components/FloatingNav';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import styles from "./Header.module.scss";
-import {Icons} from "@/app/ui/misc/Icons";
-import HeaderTitle from './HeaderTitle';
+import { NameTitle } from '@/app/content/BodyContent'
+import FloatingNav from '@/app/ui/components/FloatingNav'
+import { usePathname } from 'next/navigation'
+import Link from 'next/link'
+import styles from './Header.module.scss'
+import { Icons } from '@/app/ui/misc/Icons'
+import HeaderTitle from './HeaderTitle'
 
-function Header({location}){
-	
-	const pathname = usePathname();
+function Header({ location }) {
+	const pathname = usePathname()
 
 	let navLinks
 
-	if (location === 'blog'){
+	if (location === 'blog') {
 		navLinks = [
-			(
-				<Link className={styles.header__nav__link} href="/" key="1">
-					<span className={styles.arrow____reverse}>
-						{Icons.arrow}
-					</span>
-					<span>Homepage</span>
-				</Link>
-			)
+			<Link className={styles.header__nav__link} href="/" key="1">
+				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
+				<span>Homepage</span>
+			</Link>,
 		]
-	} else if (location === 'blog-single'){
+	} else if (location === 'blog-single') {
 		navLinks = [
-			(
-				<Link className={styles.header__nav__link} href="/" key="1">
-					<span className={styles.arrow____reverse}>
-						{Icons.arrow}
-					</span>
-					<span>Homepage</span>
-				</Link>
-			),
-			(
-				<Link className={styles.header__nav__link} href="/thoughts" key="2">
-					<span>Showcase and thoughts</span>
-				</Link>
-			)
+			<Link className={styles.header__nav__link} href="/" key="1">
+				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
+				<span>Homepage</span>
+			</Link>,
+			<Link className={styles.header__nav__link} href="/thoughts" key="2">
+				<span>Showcase and thoughts</span>
+			</Link>,
 		]
-	} else if (location === 'tag-single'){
+	} else if (location === 'tag-single') {
 		navLinks = [
-			(
-				<Link className={styles.header__nav__link} href="/" key="1">
-					<span className={styles.arrow____reverse}>
-						{Icons.arrow}
-					</span>
-					<span>Homepage</span>
-				</Link>
-			),
-			(
-				<Link className={styles.header__nav__link} href="/thoughts" key="2">
-					<span>Showcase and thoughts index</span>
-				</Link>
-			)
+			<Link className={styles.header__nav__link} href="/" key="1">
+				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
+				<span>Homepage</span>
+			</Link>,
+			<Link className={styles.header__nav__link} href="/thoughts" key="2">
+				<span>Showcase and thoughts index</span>
+			</Link>,
 		]
-	} else if (location === 'portfolio'){
+	} else if (location === 'portfolio') {
 		navLinks = [
-			(
-				<Link className={styles.header__nav__link} href="/thoughts" key="1">
-					<span>Showcase and thoughts</span>
-					<span className={styles.arrow}>
-						{Icons.arrow}
-					</span>
-				</Link>
-			)
+			<Link className={styles.header__nav__link} href="/thoughts" key="1">
+				<span>Showcase and thoughts</span>
+				<span className={styles.arrow}>{Icons.arrow}</span>
+			</Link>,
 		]
 	} else {
 		navLinks = [
-			(
-				<Link className={styles.header__nav__link} href="/" key="1">
-					<span className={styles.arrow}>
-						{Icons.arrow}
-					</span>
-					<span>Homepage</span>
-				</Link>
-			)
+			<Link className={styles.header__nav__link} href="/" key="1">
+				<span className={styles.arrow}>{Icons.arrow}</span>
+				<span>Homepage</span>
+			</Link>,
 		]
 	}
 
-	return(
+	return (
 		<header className={styles.header}>
 			<div className="container____toEdgesMobile">
 				<div className={styles.header__inner}>
 					<HeaderTitle location={location}>
 						<Link className={styles.header__sitename__link} href="/">
-							<span className='highlight-on-link'>
-								{NameTitle.name}
-							</span>
-							<span>
-								{NameTitle.title}
-							</span>
+							<span className="highlight-on-link">{NameTitle.name}</span>
+							<span>{NameTitle.title}</span>
 						</Link>
 					</HeaderTitle>
 					<nav className={styles.header__nav}>
-						{ navLinks.map((item, index)=>(item)) }
+						{navLinks.map((item, index) => item)}
 					</nav>
 				</div>
 			</div>
-			{
-				location === 'portfolio' ? <FloatingNav sectionNav /> : <FloatingNav/>
-			}
+			{location === 'portfolio' ? <FloatingNav sectionNav /> : <FloatingNav />}
 		</header>
 	)
 }
 
-export default Header;
+export default Header

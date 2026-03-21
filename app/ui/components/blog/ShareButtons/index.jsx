@@ -1,6 +1,6 @@
 'use client'
-import { useEffect, useState } from "react";
-import styles from "./ShareButtons.module.scss";
+import { useEffect, useState } from 'react'
+import styles from './ShareButtons.module.scss'
 import {
 	TwitterShareButton,
 	XIcon,
@@ -9,20 +9,22 @@ import {
 	TelegramShareButton,
 	TelegramIcon,
 	EmailShareButton,
-	EmailIcon
-} from "react-share";
+	EmailIcon,
+} from 'react-share'
 
-function ShareButtons({title, excerpt, preText}){
-	const [shareUrl, setShareUrl] = useState("");
+function ShareButtons({ title, excerpt, preText }) {
+	const [shareUrl, setShareUrl] = useState('')
 	const emailBody = shareUrl
-	const mailtoHref = shareUrl ? `mailto:?subject=${encodeURIComponent(title)}&body=${emailBody}` : undefined;
+	const mailtoHref = shareUrl
+		? `mailto:?subject=${encodeURIComponent(title)}&body=${emailBody}`
+		: undefined
 
 	useEffect(() => {
-		if (typeof window !== "undefined") {
-			setShareUrl(window.location.href);
+		if (typeof window !== 'undefined') {
+			setShareUrl(window.location.href)
 		}
-	}, []);
-	return(
+	}, [])
+	return (
 		<div className={styles.shareButtons}>
 			<div className={styles.shareButtons__label}>
 				{preText ? preText : 'Share this post'}
@@ -30,16 +32,16 @@ function ShareButtons({title, excerpt, preText}){
 			<div className={styles.shareButtons__divider}></div>
 			<div className={styles.shareButtons__list}>
 				<TwitterShareButton
-					url={shareUrl} 
-					htmlTitle="Share on X" 
-					title={title} 
+					url={shareUrl}
+					htmlTitle="Share on X"
+					title={title}
 					resetButtonStyle
 				>
 					<XIcon
 						round={false}
 						size={36}
 						iconFillColor="var(--color-foreground)"
-						bgStyle={{fill: 'var(--color-bg-alt)'}}
+						bgStyle={{ fill: 'var(--color-bg-alt)' }}
 					/>
 				</TwitterShareButton>
 
@@ -52,7 +54,7 @@ function ShareButtons({title, excerpt, preText}){
 						round={false}
 						size={36}
 						iconFillColor="var(--color-foreground)"
-						bgStyle={{fill: 'var(--color-bg-alt)'}}
+						bgStyle={{ fill: 'var(--color-bg-alt)' }}
 					/>
 				</TelegramShareButton>
 
@@ -67,7 +69,7 @@ function ShareButtons({title, excerpt, preText}){
 						round={false}
 						size={36}
 						iconFillColor="var(--color-foreground)"
-						bgStyle={{fill: 'var(--color-bg-alt)'}}
+						bgStyle={{ fill: 'var(--color-bg-alt)' }}
 					/>
 				</LinkedinShareButton>
 
@@ -82,13 +84,12 @@ function ShareButtons({title, excerpt, preText}){
 						round={false}
 						size={36}
 						iconFillColor="var(--color-foreground)"
-						bgStyle={{ fill: "var(--color-bg-alt)" }}
+						bgStyle={{ fill: 'var(--color-bg-alt)' }}
 					/>
 				</a>
-
 			</div>
 		</div>
 	)
 }
 
-export default ShareButtons;
+export default ShareButtons

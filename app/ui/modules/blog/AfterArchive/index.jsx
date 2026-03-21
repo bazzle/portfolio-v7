@@ -1,8 +1,8 @@
-import Link from "next/link";
-import styles from './AfterArchive.module.scss';
+import Link from 'next/link'
+import styles from './AfterArchive.module.scss'
 
-function AfterArchive(){
-	return(
+function AfterArchive() {
+	return (
 		<div className={styles.afterArchive}>
 			<div className="content-container">
 				<Link href="/thoughts">Index</Link>
@@ -11,4 +11,4 @@ function AfterArchive(){
 	)
 }
 
-export default AfterArchive;
+export default AfterArchive

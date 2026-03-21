@@ -1,49 +1,49 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.contentSheet{
-	&__main{
+.contentSheet {
+	&__main {
 		padding-top: vars.$block-spacing--shallow;
 	}
-	&_hidden{
+	&_hidden {
 		display: none;
-		@media print{
+		@media print {
 			display: block;
 		}
 	}
-	&__name{
+	&__name {
 		@include vars.text-heading;
-		@media print{
-			font-size:4rem;
+		@media print {
+			font-size: 4rem;
 			margin-top: 2rem;
 			margin-bottom: 2rem;
 		}
 	}
-	&__dates{
+	&__dates {
 		margin-bottom: vars.$block-spacing--tiny;
 		@include vars.text-blocky;
-		@include vars.break(desktop-wider){
+		@include vars.break(desktop-wider) {
 			display: none;
 		}
 	}
-	&__metadata{
-		&__duration{
+	&__metadata {
+		&__duration {
 			@include vars.text-blocky;
 			margin-bottom: vars.$block-spacing--text;
 		}
 	}
-	&__clients_list{
+	&__clients_list {
 		padding-left: 0;
 		gap: 6rem;
 		column-count: 1;
 		margin-bottom: 0;
-		@include vars.break(desktop){
+		@include vars.break(desktop) {
 			column-count: 2;
 		}
-		@media print{
+		@media print {
 			column-count: 2;
 		}
 	}
-	&__intro{
+	&__intro {
 		@include vars.text-intro;
 		margin-bottom: vars.$block-spacing--text;
 		max-width: vars.$content-width;

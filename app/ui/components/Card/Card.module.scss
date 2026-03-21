@@ -1,23 +1,23 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.card{
+.card {
 	position: relative;
 	border: 1px solid var(--color-accent-alt-70);
 	padding: 1rem;
 	padding-bottom: 2rem;
-	&__image{
+	&__image {
 		width: 100%;
 		height: auto;
 	}
-	&__header{
+	&__header {
 		margin-top: 0;
-		margin-bottom: .4em;
-		a{
+		margin-bottom: 0.4em;
+		a {
 			@include vars.text-heading-small;
 			color: var(--color-accent);
-			gap: .1em;
+			gap: 0.1em;
 			align-items: baseline;
-			&::after{
+			&::after {
 				content: '';
 				position: absolute;
 				top: 0;
@@ -26,25 +26,25 @@
 				height: 100%;
 			}
 		}
-		svg{
-			height: .7em;
+		svg {
+			height: 0.7em;
 			width: auto;
-			padding-left: .2em;
+			padding-left: 0.2em;
 			transform: translatey(10%);
 		}
 	}
-	&____basic{
-		.card__image{
+	&____basic {
+		.card__image {
 			display: none;
 		}
-		.card__content{
+		.card__content {
 			padding: 0 1rem;
 		}
 	}
-	&__content{
+	&__content {
 		padding: 1rem;
 	}
-	&__description{
+	&__description {
 		@include vars.text-tiny;
 	}
 }

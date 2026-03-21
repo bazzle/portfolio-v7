@@ -1,9 +1,8 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-
-.showcaseViewer{
-	border-top: .5px solid var(--color-accent-10);
-	border-bottom: .5px solid var(--color-accent-10);
+.showcaseViewer {
+	border-top: 0.5px solid var(--color-accent-10);
+	border-bottom: 0.5px solid var(--color-accent-10);
 	width: 100vw;
 	height: auto;
 	position: relative;
@@ -21,22 +20,22 @@
 	@include vars.scroll;
 	opacity: 0;
 	transition: opacity 1s ease;
-	&__inner{
+	&__inner {
 		display: flex;
 		flex-flow: row;
 		gap: 2vw;
 		flex-wrap: nowrap;
 		width: max-content;
-  		max-width: none;
+		max-width: none;
 		margin-left: vars.$gutter-padding;
 		margin-right: vars.$gutter-padding;
 		height: max-content;
 		flex-shrink: 0;
-		figure{
-			width: auto!important;
-			svg{
+		figure {
+			width: auto !important;
+			svg {
 				max-height: 400px;
-				@include vars.break(tablet){
+				@include vars.break(tablet) {
 					height: 50vh;
 				}
 			}
@@ -44,14 +43,14 @@
 	}
 }
 
-.scroll{
+.scroll {
 	opacity: 1;
 }
-.resetScroll{
+.resetScroll {
 	justify-content: center;
-	cursor: unset!important;
+	cursor: unset !important;
 	opacity: 1;
 	&:active {
-		cursor: unset!important;
+		cursor: unset !important;
 	}
 }

@@ -1,12 +1,12 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.articleMain{
+.articleMain {
 	display: block;
 	margin-top: vars.$block-spacing;
 	background-color: var(--color-bg-alt-70);
-	&__body{
+	&__body {
 		@include vars.text-editorial;
-		figure{
+		figure {
 			margin-bottom: vars.$block-spacing--text;
 		}
 		& > figure:first-child {

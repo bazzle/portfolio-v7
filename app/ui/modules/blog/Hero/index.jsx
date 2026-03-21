@@ -1,9 +1,8 @@
-import BgShapes from "@/app/ui/components/BgShapes/index.jsx";
-import MetaData from "@/app/ui/components/blog/MetaData";
-import styles from './ArticleHero.module.scss';
+import BgShapes from '@/app/ui/components/BgShapes/index.jsx'
+import MetaData from '@/app/ui/components/blog/MetaData'
+import styles from './ArticleHero.module.scss'
 
-function ArticleHero({title, date, tags}){
-
+function ArticleHero({ title, date, tags }) {
 	return (
 		<div className={styles.articleHero}>
 			<div className={styles.articleHero__main}>
@@ -21,7 +20,6 @@ function ArticleHero({title, date, tags}){
 			</div>
 		</div>
 	)
-
 }
 
 export default ArticleHero

@@ -1,29 +1,29 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-@mixin defaults{
+@mixin defaults {
 	position: relative;
 	left: 0;
 	top: 0;
 	height: auto;
-	max-width:100%;
+	max-width: 100%;
 	transform: scale(0.8);
 }
 
-.icon{
+.icon {
 	@include defaults;
-	&____glass{
+	&____glass {
 		left: -1.5rem;
 	}
 }
 
-.dark_mode_hide{
-	visibility:hidden;
-	@media print{
-		visibility:visible;
+.dark_mode_hide {
+	visibility: hidden;
+	@media print {
+		visibility: visible;
 	}
 }
-.dark_mode_nobg{
-	:global(body.dark-mode) &{
+.dark_mode_nobg {
+	:global(body.dark-mode) & {
 		fill: none;
 	}
 }

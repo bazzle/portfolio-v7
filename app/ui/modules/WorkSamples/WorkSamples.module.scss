@@ -1,20 +1,20 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-$gap: clamp(.8rem, 2vw, 1.2rem);
+$gap: clamp(0.8rem, 2vw, 1.2rem);
 
-.workSamples{
+.workSamples {
 	position: relative;
-	@media print{
+	@media print {
 		display: none;
 	}
-	&__titleSection{
+	&__titleSection {
 		position: relative;
 		border-radius: 6px;
-		padding: .6em 1em;
+		padding: 0.6em 1em;
 		border-radius: 2px;
 		text-align: center;
 		z-index: 1;
-		h2{
+		h2 {
 			margin-bottom: 0;
 			text-align: center;
 			display: inline-block;
@@ -24,7 +24,7 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 		}
 	}
 
-	&__main{
+	&__main {
 		width: 100%;
 		position: relative;
 		padding: 1rem 0;
@@ -35,7 +35,7 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 		overflow-x: hidden;
 	}
 
-	&__strip{
+	&__strip {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -50,7 +50,8 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 	}
 }
 
-.browserDesktop, .browserMobile{
+.browserDesktop,
+.browserMobile {
 	position: relative;
 	height: 100%;
 	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
@@ -61,16 +62,16 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 	width: auto;
 	min-height: 16rem;
 	max-height: 20rem;
-	svg{
+	svg {
 		height: 100%;
 		width: 100%;
 	}
 }
 
-.browserDesktop{
+.browserDesktop {
 	aspect-ratio: 40/28;
 }
-.browserMobile{
+.browserMobile {
 	aspect-ratio: 14.2/28;
 }
 
@@ -84,4 +85,4 @@ $gap: clamp(.8rem, 2vw, 1.2rem);
 	background: red;
 	transform-origin: 0%;
 	z-index: 4;
-  }
+}

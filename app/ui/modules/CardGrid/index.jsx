@@ -1,42 +1,44 @@
-'use client';
-import styles from "./CardGrid.module.scss";
-import Section from '@/app/ui/components/Section';
-import Card from '@/app/ui/components/Card';
-import CallToAction from "@/app/ui/components/CallToAction";
+'use client'
+import styles from './CardGrid.module.scss'
+import Section from '@/app/ui/components/Section'
+import Card from '@/app/ui/components/Card'
+import CallToAction from '@/app/ui/components/CallToAction'
 
-export default function CardGrid({line, deepMb, deepMbLine, id, title, cards, children}){
-
+export default function CardGrid({
+	line,
+	deepMb,
+	deepMbLine,
+	id,
+	title,
+	cards,
+	children,
+}) {
 	if (!cards) return
 
 	const optionalProps = {
 		...(line ? { line } : {}),
 		...(deepMb ? { deepMb } : {}),
 		...(deepMbLine ? { deepMbLine } : {}),
-		...(id ? { id } : {})
+		...(id ? { id } : {}),
 	}
-	
+
 	return (
-		<Section
-			heading={title}
-			headingTop {...optionalProps}
-			layout="extended" 
-		>
+		<Section heading={title} headingTop {...optionalProps} layout="extended">
 			<div className={styles.cardGrid}>
 				{cards.map((item, index) => (
-					
 					<div className={styles.cardGrid__item} key={index}>
 						<Card
-							imageSrc={item.imageSrc} 
-							imageAlt={item.imageAlt} 
-							link={item.link} 
-							title={item.title} 
-							description={item.description} 
-							index={index} 
-							basic={index > 2} 
+							imageSrc={item.imageSrc}
+							imageAlt={item.imageAlt}
+							link={item.link}
+							title={item.title}
+							description={item.description}
+							index={index}
+							basic={index > 2}
 							extLink={item.extLink}
 						/>
 					</div>
-				)) }
+				))}
 			</div>
 			{children}
 		</Section>

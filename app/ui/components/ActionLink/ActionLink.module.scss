@@ -1,9 +1,9 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
 .actionLink {
 	display: flex;
 	align-items: center;
-	gap: .4em;
+	gap: 0.4em;
 	@media print {
 		&::after {
 			content: attr(data-label);

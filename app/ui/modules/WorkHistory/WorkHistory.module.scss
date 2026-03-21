@@ -1,16 +1,16 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.workHistory{
+.workHistory {
 	position: relative;
-	:global(.sectionHead){
-		@include vars.break(desktop-wider){
+	:global(.sectionHead) {
+		@include vars.break(desktop-wider) {
 			margin-top: 9rem;
 		}
 	}
-	&__inner{
+	&__inner {
 		position: relative;
 	}
-	&__nav{
+	&__nav {
 		display: inline-flex;
 		flex-direction: row;
 		gap: 1rem;
@@ -19,9 +19,9 @@
 		justify-content: flex-end;
 		width: 100%;
 		position: relative;
-		.extending_line{
+		.extending_line {
 			display: none;
-			@include vars.break(desktop-wider){
+			@include vars.break(desktop-wider) {
 				display: block;
 				width: 0%;
 				height: 1px;
@@ -29,7 +29,7 @@
 				position: absolute;
 				bottom: 0;
 				left: 0;
-				&::after{
+				&::after {
 					content: '';
 					width: 1px;
 					height: 3rem;
@@ -41,24 +41,24 @@
 				}
 			}
 		}
-		@media print{
+		@media print {
 			display: none;
 		}
 	}
 }
 
-.workHistoryItem{
+.workHistoryItem {
 	flex-grow: 0;
 	margin-bottom: 0;
 	position: relative;
 	max-width: 10em;
-	@include vars.break(desktop-wider){
+	@include vars.break(desktop-wider) {
 		flex-shrink: 2;
 		padding-bottom: 3rem;
 	}
-	&__inner{
+	&__inner {
 		position: relative;
-		@include vars.break(desktop-wider){
+		@include vars.break(desktop-wider) {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -67,60 +67,61 @@
 			padding-bottom: 2rem;
 		}
 	}
-	&__title{
+	&__title {
 		display: block;
 		text-align: center;
 		white-space: nowrap;
-		.is_active &{
+		.is_active & {
 			color: var(--color-foreground);
 			line-height: 1.2;
 			@include vars.text-heading--chunky;
-			@include vars.break-under(desktop-wider){
+			@include vars.break-under(desktop-wider) {
 				font-size: inherit;
 			}
 		}
-		.not_active &{
+		.not_active & {
 			@include vars.standalone-link;
 		}
 	}
-	&__dates{
+	&__dates {
 		@include vars.text-miniscule;
 		display: none;
-		@include vars.break(desktop-wider){
+		@include vars.break(desktop-wider) {
 			display: block;
 		}
 	}
-	&.is_active{
+	&.is_active {
 		position: relative;
 		display: block;
 		cursor: default;
 		text-decoration: none;
-		@include vars.break(desktop-wider){
+		@include vars.break(desktop-wider) {
 			flex-grow: 1;
 			display: block;
 			width: auto;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		.indicator{
-			@include vars.break(desktop-wider){
+		.indicator {
+			@include vars.break(desktop-wider) {
 				position: absolute;
 				left: 50%;
 			}
 		}
 	}
-	&.not_active{}
+	&.not_active {
+	}
 
-	&:first-of-type{
-		&.is_active{
-			@include vars.break(desktop-wider){
+	&:first-of-type {
+		&.is_active {
+			@include vars.break(desktop-wider) {
 				margin-right: 0;
 			}
 		}
 	}
-	&:last-of-type{
-		&.is_active{
-			@include vars.break(desktop-wider){
+	&:last-of-type {
+		&.is_active {
+			@include vars.break(desktop-wider) {
 				margin-left: 0;
 			}
 		}

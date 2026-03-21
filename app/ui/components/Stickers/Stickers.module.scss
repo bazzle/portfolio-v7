@@ -1,4 +1,4 @@
-.btc-sticker{
+.btc-sticker {
 	position: absolute;
 	top: clamp(-2rem, -4vw, -16rem);
 	bottom: 0;
@@ -9,7 +9,7 @@
 	z-index: -1;
 	display: block;
 	transform: translate(0, 110%);
-	svg{
+	svg {
 		transform: rotate(4deg);
 		width: 100%;
 		height: auto;

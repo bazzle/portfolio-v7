@@ -1,72 +1,76 @@
 'use client'
-import { useState, useEffect, useRef } from "react";
-import Section from '@/app/ui/components/Section';
-import ContentSheet from "./ContentSheet";
-import { WorkHistoryContent } from '@/app/content/BodyContent';
-import styles from "./WorkHistory.module.scss";
+import { useState, useEffect, useRef } from 'react'
+import Section from '@/app/ui/components/Section'
+import ContentSheet from './ContentSheet'
+import { WorkHistoryContent } from '@/app/content/BodyContent'
+import styles from './WorkHistory.module.scss'
 
-function WorkHistory({id, line}){
-	
+function WorkHistory({ id, line }) {
 	const optionalProps = {
 		...(id ? { id } : {}),
-		...(line ? { line } : {})
+		...(line ? { line } : {}),
 	}
 
-	const mediaQuery = '(min-width: 1340px)';
+	const mediaQuery = '(min-width: 1340px)'
 	const title = WorkHistoryContent.title
-	const sectionsArray = WorkHistoryContent.workHistoryItems;
+	const sectionsArray = WorkHistoryContent.workHistoryItems
 
-	const [activeSection, setActiveSection] = useState(sectionsArray[0]);
+	const [activeSection, setActiveSection] = useState(sectionsArray[0])
 
-	const tablistRef = useRef(null);
-	const currentItemRef = useRef(null);
-	const extendingLineRef = useRef(null);
+	const tablistRef = useRef(null)
+	const currentItemRef = useRef(null)
+	const extendingLineRef = useRef(null)
 
-	function getTablistPercentage(){
-		const elem = tablistRef.current;
-		if(elem){
-			const width = Math.round(elem.getBoundingClientRect().width);
-			const start = Math.round(elem.getBoundingClientRect().x);
-			const activeItemPosition = Math.round(currentItemRef.current.getBoundingClientRect().x);
-			const percentage = Math.min(100, Math.max(0, ((activeItemPosition - start) / width) * 100));
-			return percentage;
+	function getTablistPercentage() {
+		const elem = tablistRef.current
+		if (elem) {
+			const width = Math.round(elem.getBoundingClientRect().width)
+			const start = Math.round(elem.getBoundingClientRect().x)
+			const activeItemPosition = Math.round(
+				currentItemRef.current.getBoundingClientRect().x,
+			)
+			const percentage = Math.min(
+				100,
+				Math.max(0, ((activeItemPosition - start) / width) * 100),
+			)
+			return percentage
 		}
 	}
 
 	useEffect(() => {
-		const mql = window.matchMedia(mediaQuery);
+		const mql = window.matchMedia(mediaQuery)
 		const handleChange = () => {
-			if (mql.matches){
-				extendLine(getTablistPercentage());
+			if (mql.matches) {
+				extendLine(getTablistPercentage())
 			}
-		};
-		handleChange();
-		mql.addEventListener('change',handleChange);
-		
-		return () => {
-			mql.removeEventListener('change', handleChange);
 		}
-	},[] );
+		handleChange()
+		mql.addEventListener('change', handleChange)
 
-	function extendLine(inputWidth){
-		const elem = extendingLineRef.current;
-		if(elem){
+		return () => {
+			mql.removeEventListener('change', handleChange)
+		}
+	}, [])
+
+	function extendLine(inputWidth) {
+		const elem = extendingLineRef.current
+		if (elem) {
 			elem.style.width = `${inputWidth}%`
 		}
 	}
 
 	function handleClick(evt, section) {
-		setActiveSection(section);
-		evt.preventDefault();
-		const mql = window.matchMedia(mediaQuery);
+		setActiveSection(section)
+		evt.preventDefault()
+		const mql = window.matchMedia(mediaQuery)
 		if (mql.matches) {
 			setTimeout(() => {
-				extendLine(getTablistPercentage());
-			}, 1);
+				extendLine(getTablistPercentage())
+			}, 1)
 		}
 	}
 
-	function navItem(item, index){
+	function navItem(item, index) {
 		const isActive = activeSection.id === item.id
 		const conditionalClass = isActive ? styles.is_active : styles.not_active
 		return (
@@ -74,40 +78,55 @@ function WorkHistory({id, line}){
 				key={index}
 				role="tab"
 				onClick={(evt) => handleClick(evt, item)}
-				className={[styles.workHistoryItem, conditionalClass].filter(Boolean).join(' ')}
+				className={[styles.workHistoryItem, conditionalClass]
+					.filter(Boolean)
+					.join(' ')}
 				aria-controls={`panel-${item.id}`}
 				aria-selected={isActive ? 'true' : 'false'}
 			>
-				<span className={styles["workHistoryItem__inner"]}>
-					<span className={styles["workHistoryItem__title"]}>{item.name}</span>
-					<span className={styles["workHistoryItem__dates"]}>{item.startDate} – {item.endDate}</span>
+				<span className={styles['workHistoryItem__inner']}>
+					<span className={styles['workHistoryItem__title']}>{item.name}</span>
+					<span className={styles['workHistoryItem__dates']}>
+						{item.startDate} – {item.endDate}
+					</span>
 				</span>
-				{isActive && <span className={styles.indicator} ref={currentItemRef}></span> }
+				{isActive && (
+					<span className={styles.indicator} ref={currentItemRef}></span>
+				)}
 			</button>
 		)
 	}
-    return (
-		<Section 
-		moduleClassname={styles.workHistory} 
-		heading={title} id="work-history" 
-		layout="2col" 
-		{...optionalProps}
+	return (
+		<Section
+			moduleClassname={styles.workHistory}
+			heading={title}
+			id="work-history"
+			layout="2col"
+			{...optionalProps}
 		>
-			<div className={styles["workHistory__inner"]}>
-				<nav ref={tablistRef} role="tablist" className={styles["workHistory__nav"]}>
-					{ sectionsArray.map((item, index) => navItem(item, index)) }
-					<div role="presentation" className={styles.extending_line} ref={extendingLineRef}></div>
+			<div className={styles['workHistory__inner']}>
+				<nav
+					ref={tablistRef}
+					role="tablist"
+					className={styles['workHistory__nav']}
+				>
+					{sectionsArray.map((item, index) => navItem(item, index))}
+					<div
+						role="presentation"
+						className={styles.extending_line}
+						ref={extendingLineRef}
+					></div>
 				</nav>
 				{sectionsArray.map((item, index) => (
 					<ContentSheet
 						key={index}
-						contentSheetObj = {item}
-						isHidden = {item === activeSection ? false : true}
+						contentSheetObj={item}
+						isHidden={item === activeSection ? false : true}
 					/>
 				))}
 			</div>
-        </Section>
-    )
+		</Section>
+	)
 }
 
-export default WorkHistory;
+export default WorkHistory

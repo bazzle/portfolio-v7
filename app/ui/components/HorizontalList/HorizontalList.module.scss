@@ -1,23 +1,23 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.horizontalList{
+.horizontalList {
 	margin-bottom: 4rem;
-	&__heading{
+	&__heading {
 		@include vars.text-blocky;
-		padding-bottom: .6em;
+		padding-bottom: 0.6em;
 	}
-	ul{
+	ul {
 		display: inline-flex;
-		gap: .3em;
+		gap: 0.3em;
 		flex-wrap: wrap;
 		width: 100%;
 		flex-direction: column;
 		margin-bottom: 0;
-		@include vars.break(tablet){
+		@include vars.break(tablet) {
 			flex-direction: row;
 			align-items: center;
 		}
-		li{
+		li {
 			margin-bottom: 0;
 			list-style-type: none;
 			max-width: vars.$content-width;
@@ -25,29 +25,29 @@
 			padding-bottom: 0.3em;
 			list-style: none;
 			position: relative;
-			@include vars.break-under(tablet){
+			@include vars.break-under(tablet) {
 				padding-left: 1em;
 			}
-			&::before{
-				@include vars.break-under(tablet){
+			&::before {
+				@include vars.break-under(tablet) {
 					position: absolute;
-					content: "◆";
-					font-size: .8em;
+					content: '◆';
+					font-size: 0.8em;
 					color: var(--color-accent-alt);
-					left: -.2em;
-					top: .3em;
+					left: -0.2em;
+					top: 0.3em;
 				}
 			}
-			p{
+			p {
 				margin-bottom: 0;
 			}
-			@include vars.break(tablet){
+			@include vars.break(tablet) {
 				display: flex;
 				align-items: center;
-				gap: .3em;
+				gap: 0.3em;
 				flex-direction: row;
-				margin-bottom: .6rem!important;
-				&::after{
+				margin-bottom: 0.6rem !important;
+				&::after {
 					content: '';
 					display: block;
 					flex-grow: 1;
@@ -58,12 +58,12 @@
 					top: 2px;
 				}
 			}
-			a{
+			a {
 				display: inline-block;
 			}
-			
-			&:last-of-type{
-				&::after{
+
+			&:last-of-type {
+				&::after {
 					display: none;
 				}
 			}

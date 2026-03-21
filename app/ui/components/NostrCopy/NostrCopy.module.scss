@@ -1,27 +1,27 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.copyText{
+.copyText {
 	display: inline-block;
 	position: relative;
-	button{
+	button {
 		color: var(--color-accent);
 		margin-bottom: 0;
-		gap: .4em;
+		gap: 0.4em;
 		align-items: center;
 		display: inline-flex;
 		@include vars.text-link-defaults;
-		svg{
+		svg {
 			width: 10px;
 		}
 	}
-	&__popupMessage{
+	&__popupMessage {
 		color: white;
 		background: black;
 		@include vars.text-miniscule;
 		text-transform: uppercase;
 		position: absolute;
-		right: -.5em;
-		padding: .1em .5em .2em;
+		right: -0.5em;
+		padding: 0.1em 0.5em 0.2em;
 		border-radius: 2px;
 		display: inline-block;
 		top: 50%;

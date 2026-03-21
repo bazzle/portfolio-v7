@@ -1,36 +1,36 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.tileContainer{
+.tileContainer {
 	position: relative;
 	overflow: hidden;
 }
-.tileGrid{
+.tileGrid {
 	position: relative;
 	display: grid;
-	@include vars.break(tablet){
+	@include vars.break(tablet) {
 		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
 	}
-	@include vars.break(desktop-med){
+	@include vars.break(desktop-med) {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	@include vars.break(desktop-wide){
+	@include vars.break(desktop-wide) {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
-	@media print{
+	@media print {
 		display: grid;
 		grid-template-rows: auto;
 		width: 100%;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
 }
-.tile{
+.tile {
 	$indent: 18px;
 	position: relative;
 	height: auto;
 	overflow: hidden;
 	border-bottom-left-radius: 2px;
-	&__inner{
+	&__inner {
 		width: 100%;
 		display: flex;
 		position: relative;
@@ -39,45 +39,45 @@
 		justify-content: center;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
-		@include vars.break(tablet){
+		@include vars.break(tablet) {
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: center;
 			padding: 2rem 1rem;
 		}
 	}
-	&__icon{
+	&__icon {
 		width: 20%;
 		flex-shrink: 0;
 		height: 120px;
 		width: 100%;
-		@include vars.break-under(tablet){
+		@include vars.break-under(tablet) {
 			display: none;
 		}
 	}
-	&__name{
+	&__name {
 		@include vars.text-heading-small;
 		color: var(--color-accent-alt);
 		text-align: left;
 		border-top: 1px solid var(--color-accent-20);
-		span{
+		span {
 			background: var(--color-bg-alt);
-			top: -.65em;
+			top: -0.65em;
 			position: relative;
-			padding-right: .3em;
+			padding-right: 0.3em;
 			display: inline-block;
-			}
+		}
 	}
-	&__description{
+	&__description {
 		@include vars.text-tiny;
 		text-align: left;
 		margin-bottom: 0;
 	}
 }
-.tile____noicon{
+.tile____noicon {
 	@extend .tile;
-	.tile__inner{
-		:global(body.dark-mode) &{
+	.tile__inner {
+		:global(body.dark-mode) & {
 			padding: 2rem;
 		}
 	}

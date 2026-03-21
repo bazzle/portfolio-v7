@@ -1,27 +1,27 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.footer{
-	padding: vars.$block-spacing 0 calc(vars.$block-spacing--shallow *2);
+.footer {
+	padding: vars.$block-spacing 0 calc(vars.$block-spacing--shallow * 2);
 	background-repeat: repeat;
 	position: relative;
 	border-top: 1px solid var(--color-accent);
-	&__line{
+	&__line {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		z-index: 1;
 		position: relative;
-		p{
-			padding: .5em 1em .65em 1em;
+		p {
+			padding: 0.5em 1em 0.65em 1em;
 			display: inline;
-			border-radius: .4em;
+			border-radius: 0.4em;
 			@include vars.text-blocky;
 			text-align: center;
 			margin-bottom: 0;
 			color: var(--color-foreground);
 		}
 	}
-	@media print{
+	@media print {
 		background-image: none;
 	}
 }

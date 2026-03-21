@@ -1,52 +1,52 @@
-@use "@/app/assets/styles/style-library/all-vars" as vars;
+@use '@/app/assets/styles/style-library/all-vars' as vars;
 
-.skillsAbilities{
-	&__bodyText{
+.skillsAbilities {
+	&__bodyText {
 		width: 100%;
-		&>:last-child {
+		& > :last-child {
 			margin-bottom: 0;
 		}
 	}
 }
 
-.skillsList{
+.skillsList {
 	list-style: none;
 	padding: 0;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-column-gap: 1rem;
-	grid-row-gap: .5rem;
+	grid-row-gap: 0.5rem;
 	margin-bottom: 0;
 	margin-bottom: vars.$block-spacing--deep;
-	@include vars.break(mobile){
+	@include vars.break(mobile) {
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 2rem;
 	}
-	@include vars.break(desktop){
+	@include vars.break(desktop) {
 		width: 100%;
 		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 2rem;
-		grid-row-gap: .5rem;
+		grid-row-gap: 0.5rem;
 	}
-	@media print{
+	@media print {
 		width: 100%;
 		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 2rem;
-		grid-row-gap: .5rem;
+		grid-row-gap: 0.5rem;
 	}
-	&__item{
+	&__item {
 		display: flex;
 		gap: 1em;
 		@include vars.text-blocky;
-		&__name{
+		&__name {
 			width: 100%;
 			flex-grow: 1;
 			max-width: 12ch;
-			@media print{
+			@media print {
 				font-size: 1.7rem;
 			}
 		}
-		&__rating{
+		&__rating {
 			color: var(--color-accent-alt);
 			width: 5ch;
 			text-align: left;

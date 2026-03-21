@@ -1,11 +1,11 @@
-import MetaData from "@/app/ui/components/blog/MetaData";
-import Link from "next/link";
-import styles from './IndexItem.module.scss';
+import MetaData from '@/app/ui/components/blog/MetaData'
+import Link from 'next/link'
+import styles from './IndexItem.module.scss'
 
-function IndexItem({ post, location }){
-	const date = post.date;
-	const tags = post.tags;
-	
+function IndexItem({ post, location }) {
+	const date = post.date
+	const tags = post.tags
+
 	return (
 		<div className={styles.postIndexItem}>
 			<div className="content-container">
