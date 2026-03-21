@@ -37,11 +37,8 @@ export function ColourThemeProvider({ children }) {
 		applyMode(osModeChecker)
 	}, [])
 
-	const modeSwitch = () =>
-		colourMode === 'light' ? applyDarkMode() : applyLightMode()
-
 	return (
-		<colourThemeContext.Provider value={{ colourMode, modeSwitch }}>
+		<colourThemeContext.Provider value={{ colourMode }}>
 			{!isLoading && children}
 		</colourThemeContext.Provider>
 	)
