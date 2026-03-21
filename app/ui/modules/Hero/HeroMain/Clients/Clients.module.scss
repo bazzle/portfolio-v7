@@ -4,8 +4,8 @@
 	@include vars.svgColor(var(--color-foreground));
 	width: 100%;
 	@include vars.break(tablet) {
-		padding-top: vars.$block-spacing--shallow;
-		padding-bottom: vars.$block-spacing--shallow;
+		padding-top: var(--block-spacing--shallow);
+		padding-bottom: var(--block-spacing--shallow);
 	}
 	&__logos {
 		display: flex;

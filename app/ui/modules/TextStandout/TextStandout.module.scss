@@ -13,7 +13,7 @@
 	&__prefix {
 		@include vars.text-blocky;
 		color: var(--color-accent-alt);
-		margin-bottom: calc(vars.$block-spacing / 2);
+		margin-bottom: calc(var(--block-spacing) / 2);
 	}
 	&__main {
 		margin-block-start: unset;
@@ -57,6 +57,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-top: vars.$block-spacing;
+		margin-top: var(--block-spacing);
 	}
 }

@@ -2,13 +2,13 @@
 
 .postIndexItem {
 	display: block;
-	margin-bottom: vars.$block-spacing--shallow;
+	margin-bottom: var(--block-spacing--shallow);
 	position: relative;
 	&:first-of-type {
-		margin-top: vars.$block-spacing;
+		margin-top: var(--block-spacing);
 	}
 	&:last-of-type {
-		margin-bottom: vars.$block-spacing;
+		margin-bottom: var(--block-spacing);
 	}
 	&__title {
 		a {
@@ -25,9 +25,9 @@
 		display: flex;
 		align-items: center;
 		gap: 0.3em;
-		margin-top: calc(vars.$block-spacing--shallow / 8);
+		margin-top: calc(var(--block-spacing--shallow) / 8);
 	}
 	&__excerpt {
-		margin-top: calc(vars.$block-spacing--shallow / 8);
+		margin-top: calc(var(--block-spacing--shallow) / 8);
 	}
 }

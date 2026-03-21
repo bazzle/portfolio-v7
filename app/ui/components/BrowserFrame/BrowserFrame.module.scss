@@ -44,6 +44,6 @@
 	display: block;
 	text-align: center;
 	width: 100%;
-	padding-top: calc(vars.$block-spacing--text / 2);
-	font-size: vars.$font-size-miniscule;
+	padding-top: calc(var(--block-spacing--text) / 2);
+	font-size: var(--font-size-miniscule);
 }

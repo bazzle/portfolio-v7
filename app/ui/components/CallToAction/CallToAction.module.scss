@@ -5,7 +5,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: vars.$block-spacing;
+	margin-top: var(--block-spacing);
 	&__item {
 		display: flex;
 		justify-content: center;

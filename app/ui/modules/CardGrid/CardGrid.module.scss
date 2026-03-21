@@ -8,8 +8,8 @@
 	align-items: center;
 	flex-direction: column;
 	gap: 2rem;
-	padding-left: vars.$gutter-padding;
-	padding-right: vars.$gutter-padding;
+	padding-left: var(--gutter-padding);
+	padding-right: var(--gutter-padding);
 	@include vars.break(tablet) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;

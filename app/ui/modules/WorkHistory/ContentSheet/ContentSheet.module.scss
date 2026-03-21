@@ -2,7 +2,7 @@
 
 .contentSheet {
 	&__main {
-		padding-top: vars.$block-spacing--shallow;
+		padding-top: var(--block-spacing--shallow);
 	}
 	&_hidden {
 		display: none;
@@ -19,7 +19,7 @@
 		}
 	}
 	&__dates {
-		margin-bottom: vars.$block-spacing--tiny;
+		margin-bottom: var(--block-spacing--tiny);
 		@include vars.text-blocky;
 		@include vars.break(desktop-wider) {
 			display: none;
@@ -28,7 +28,7 @@
 	&__metadata {
 		&__duration {
 			@include vars.text-blocky;
-			margin-bottom: vars.$block-spacing--text;
+			margin-bottom: var(--block-spacing--text);
 		}
 	}
 	&__clients_list {
@@ -45,7 +45,7 @@
 	}
 	&__intro {
 		@include vars.text-intro;
-		margin-bottom: vars.$block-spacing--text;
-		max-width: vars.$content-width;
+		margin-bottom: var(--block-spacing--text);
+		max-width: var(--content-width);
 	}
 }

@@ -8,8 +8,8 @@
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
-	padding-top: vars.$block-spacing--text;
-	margin-bottom: vars.$block-spacing--text;
+	padding-top: var(--block-spacing--text);
+	margin-bottom: var(--block-spacing--text);
 	display: flex;
 	justify-content: flex-start;
 	max-height: fit-content;
@@ -27,8 +27,8 @@
 		flex-wrap: nowrap;
 		width: max-content;
 		max-width: none;
-		margin-left: vars.$gutter-padding;
-		margin-right: vars.$gutter-padding;
+		margin-left: var(--gutter-padding);
+		margin-right: var(--gutter-padding);
 		height: max-content;
 		flex-shrink: 0;
 		figure {

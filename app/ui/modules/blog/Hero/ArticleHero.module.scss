@@ -4,8 +4,8 @@
 	position: relative;
 	height: auto;
 	flex-direction: column;
-	padding-top: vars.$block-spacing--deep;
-	padding-bottom: vars.$block-spacing--deep;
+	padding-top: var(--block-spacing--deep);
+	padding-bottom: var(--block-spacing--deep);
 	@media print {
 		background-image: none;
 	}
@@ -23,7 +23,7 @@
 		max-width: unset;
 		@media print {
 			padding-top: 1em;
-			padding-bottom: vars.$block-spacing--shallow;
+			padding-bottom: var(--block-spacing--shallow);
 		}
 	}
 	&__title {
@@ -34,6 +34,6 @@
 	&__metadata {
 		display: block;
 		@include vars.text-blocky;
-		margin-top: calc(vars.$block-spacing--shallow / 2);
+		margin-top: calc(var(--block-spacing--shallow) / 2);
 	}
 }

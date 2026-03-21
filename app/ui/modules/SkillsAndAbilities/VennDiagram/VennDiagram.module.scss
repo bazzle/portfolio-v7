@@ -3,7 +3,7 @@
 .vennDiagram {
 	width: 100%;
 	max-width: 400px;
-	margin-bottom: vars.$block-spacing;
+	margin-bottom: var(--block-spacing);
 	display: flex;
 	justify-content: center;
 	@include vars.break(desktop) {
@@ -11,8 +11,8 @@
 		min-width: 250px;
 		float: right;
 		width: 22vw;
-		margin-bottom: calc(vars.$block-spacing--shallow / 2);
-		margin-left: calc(vars.$block-spacing--shallow / 2);
+		margin-bottom: calc(var(--block-spacing--shallow) / 2);
+		margin-left: calc(var(--block-spacing--shallow) / 2);
 	}
 	&__inner {
 		position: relative;

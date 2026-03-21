@@ -2,15 +2,15 @@
 
 .articleMain {
 	display: block;
-	margin-top: vars.$block-spacing;
+	margin-top: var(--block-spacing);
 	background-color: var(--color-bg-alt-70);
 	&__body {
 		@include vars.text-editorial;
 		figure {
-			margin-bottom: vars.$block-spacing--text;
+			margin-bottom: var(--block-spacing--text);
 		}
 		& > figure:first-child {
-			top: calc(-4 * #{vars.$block-spacing--text});
+			top: calc(-4 * var(--block-spacing--text));
 			margin-bottom: 0;
 		}
 	}

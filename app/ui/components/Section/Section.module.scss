@@ -4,13 +4,13 @@
 $spacingunit: clamp(4rem, 8vw, 28rem);
 
 .section {
-	margin-top: vars.$block-spacing--shallow;
+	margin-top: var(--block-spacing--shallow);
 	margin-bottom: $spacingunit;
 	position: relative;
 	background-color: var(--color-bg-alt-70);
 	&__heading-top {
 		text-align: center;
-		margin-bottom: vars.$block-spacing--shallow;
+		margin-bottom: var(--block-spacing--shallow);
 		@include vars.text-heading--chunky;
 		color: var(--color-accent-alt);
 	}
