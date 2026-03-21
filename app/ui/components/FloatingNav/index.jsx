@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { motion } from 'motion/react'
 import styles from './FloatingNav.module.scss'
 
-function FloatingNav({ sectionNav }) {
+function FloatingNav({ sectionLinks }) {
 	const handleClick = () => {
 		window.scrollTo({
 			top: 0,
@@ -13,20 +13,6 @@ function FloatingNav({ sectionNav }) {
 	}
 
 	const navClass = styles['floatingNav__nav']
-
-	class SectionLink {
-		constructor(name, id) {
-			;((this.name = name), (this.id = id))
-		}
-	}
-	const sectionLinks = [
-		new SectionLink('Who am I', 'who-am-i'),
-		new SectionLink('What am I', 'what-am-i'),
-		new SectionLink('Showcase and thoughts', 'showcase-thought-pieces'),
-		new SectionLink('Things I think about', 'things-i-think-about'),
-		new SectionLink('Work history', 'work-history'),
-		new SectionLink('Get in Touch', 'get-in-touch'),
-	]
 
 	const motionSettings = {
 		initial: { opacity: 0 },
@@ -41,8 +27,11 @@ function FloatingNav({ sectionNav }) {
 
 	useEffect(() => {
 		const activeIntersections = new Map()
-		const getLink = (id) =>
-			document.querySelector(`.${navClass} a[href="#${id}"]`)
+
+		const getLink = (id) => {
+			return document.querySelector(`.${navClass} a[href="#${id}"]`)
+		}
+
 		const updateActiveLink = () => {
 			const activeId = [...activeIntersections.entries()].sort(
 				([, previousTime], [, nextTime]) => nextTime - previousTime,
@@ -99,15 +88,13 @@ function FloatingNav({ sectionNav }) {
 	return (
 		<>
 			<motion.div className={styles.floatingNav} {...motionSettings}>
-				{sectionNav && (
-					<nav className={navClass}>
-						{sectionLinks.map(({ name, id }) => (
-							<a key={id} href={`#${id}`}>
-								{name}
-							</a>
-						))}
-					</nav>
-				)}
+				<nav className={navClass}>
+					{sectionLinks.map(({ name, id }) => (
+						<a key={id} href={`#${id}`}>
+							{name}
+						</a>
+					))}
+				</nav>
 				<button
 					aria-label="Back to top"
 					className={styles['floatingNav__backTop']}

@@ -1,6 +1,6 @@
 'use client'
 
-import { NameTitle } from '@/app/content/BodyContent'
+import { NameTitle, sectionLinksHome } from '@/app/content/BodyContent'
 import FloatingNav from '@/app/ui/components/FloatingNav'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
@@ -71,7 +71,11 @@ function Header({ location }) {
 					</nav>
 				</div>
 			</div>
-			{location === 'portfolio' ? <FloatingNav sectionNav /> : <FloatingNav />}
+			{location === 'home' ? (
+				<FloatingNav sectionLinks={sectionLinksHome} />
+			) : (
+				<FloatingNav sectionLinks={sectionLinksHome} />
+			)}
 		</header>
 	)
 }
