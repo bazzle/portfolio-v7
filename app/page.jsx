@@ -39,8 +39,8 @@ function Home(){
 
 				<CardGrid id="showcase-thought-pieces" title={HomepageCards.title} cards={HomepageCards.cards} line>
 					<CallToAction buttons={[
-						{link : "thoughts/tag/showcase", linkText : "View All Showcase" },
-						{link : "thoughts/tag/thoughts", linkText : "View All Thoughts" }
+						{link : "thoughts/tag/showcase", linkText : "View all Showcase" },
+						{link : "thoughts/tag/thoughts", linkText : "View all Thoughts" }
 					]}/>
 					<CallToAction />
 				</CardGrid>
