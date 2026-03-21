@@ -2,7 +2,7 @@ import getPostMetadata from '@/app/utils/get-post-metadata'
 import React from 'react'
 import fs from 'fs'
 import matter from 'gray-matter'
-import ArticleHero from '@/app/ui/modules/blog/Hero'
+import HeroArticle from '@/app/ui/modules/HeroArticle'
 import ArticleMain from '@/app/ui/modules/blog/Article/ArticleMain'
 import AfterArticle from '@/app/ui/modules/blog/Article/AfterArticle'
 import Header from '@/app/ui/modules/Header'
@@ -53,7 +53,7 @@ export default async function postPage({ params }) {
 			<Header location="blog-single" />
 			<main className="main">
 				<article>
-					<ArticleHero title={title} date={rawDate} tags={postTags} />
+					<HeroArticle title={title} date={rawDate} tags={postTags} />
 					<ArticleMain bodyContent={bodyContent} />
 				</article>
 				<AfterArticle title={title} excerpt={excerpt} />

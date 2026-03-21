@@ -1,4 +1,4 @@
-import Hero from '@/app/ui/modules/Hero/HeroMain'
+import Hero from '@/app/ui/modules/HeroHomepage'
 import SkillsAndAbilities from '@/app/ui/modules/SkillsAndAbilities'
 import WorkHistory from '@/app/ui/modules/WorkHistory'
 import Themes from '@/app/ui/modules/Themes'

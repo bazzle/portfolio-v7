@@ -2,7 +2,7 @@ import IndexItem from '@/app/ui/modules/blog/IndexItem'
 import getPostsByTag from '@/app/utils/get-posts-by-tag.js'
 import getTags from '@/app/utils/get-tags.js'
 import SlugifyString from '@/app/utils/slugify-string.js'
-import ArticleHero from '@/app/ui/modules/blog/Hero'
+import HeroArticle from '@/app/ui/modules/HeroArticle'
 import AfterArchive from '@/app/ui/modules/blog/AfterArchive'
 import Header from '@/app/ui/modules/Header'
 
@@ -42,7 +42,7 @@ export default async function TagArchivePage({ params }) {
 		<>
 			<Header location="tag-single" />
 			<main className="main">
-				<ArticleHero title={tagTitle} />
+				<HeroArticle title={tagTitle} />
 				<h1>{tagTitle}</h1>
 				<div>
 					{posts.map((post, index) => (

@@ -1,11 +1,11 @@
-import Clients from '@/app/ui/modules/Hero/HeroMain/Clients'
+import Clients from './Clients'
 import BgShapes from '@/app/ui/components/BgShapes'
 import Spacer from '@/app/ui/components/Spacer'
 import Profile from '@/app/ui/components/Profile'
 import Link from 'next/link'
-import styles from '../Hero.module.scss'
+import styles from './HeroHomepage.module.scss'
 
-function HeroMain() {
+function HeroHomepage() {
 	return (
 		<div className={styles.hero}>
 			<div className={styles['hero__mainSection']}>
@@ -60,4 +60,4 @@ function HeroMain() {
 	)
 }
 
-export default HeroMain
+export default HeroHomepage
