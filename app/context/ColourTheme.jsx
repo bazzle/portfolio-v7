@@ -29,7 +29,6 @@ export function ColourThemeProvider({ children }) {
 	}
 	useEffect(() => {
 		const osModeChecker = window.matchMedia('(prefers-color-scheme: light)')
-		console.log(osModeChecker)
 
 		osModeChecker.addEventListener('change', (e) => {
 			applyMode(e)
