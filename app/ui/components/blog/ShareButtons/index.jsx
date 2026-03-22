@@ -40,7 +40,7 @@ function ShareButtons({ title, excerpt, preText }) {
 					<XIcon
 						round={false}
 						size={36}
-						iconFillColor="var(--color-foreground)"
+						iconFillColor="var(--color-fg)"
 						bgStyle={{ fill: 'var(--color-bg-alt)' }}
 					/>
 				</TwitterShareButton>
@@ -53,7 +53,7 @@ function ShareButtons({ title, excerpt, preText }) {
 					<TelegramIcon
 						round={false}
 						size={36}
-						iconFillColor="var(--color-foreground)"
+						iconFillColor="var(--color-fg)"
 						bgStyle={{ fill: 'var(--color-bg-alt)' }}
 					/>
 				</TelegramShareButton>
@@ -68,7 +68,7 @@ function ShareButtons({ title, excerpt, preText }) {
 					<LinkedinIcon
 						round={false}
 						size={36}
-						iconFillColor="var(--color-foreground)"
+						iconFillColor="var(--color-fg)"
 						bgStyle={{ fill: 'var(--color-bg-alt)' }}
 					/>
 				</LinkedinShareButton>
@@ -83,7 +83,7 @@ function ShareButtons({ title, excerpt, preText }) {
 					<EmailIcon
 						round={false}
 						size={36}
-						iconFillColor="var(--color-foreground)"
+						iconFillColor="var(--color-fg)"
 						bgStyle={{ fill: 'var(--color-bg-alt)' }}
 					/>
 				</a>

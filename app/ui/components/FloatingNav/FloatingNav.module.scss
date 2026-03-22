@@ -58,10 +58,10 @@
 				height: calc(100% - 2px);
 			}
 			&:hover {
-				color: var(--color-foreground);
+				color: var(--color-fg);
 			}
 			&:focus-visible {
-				color: var(--color-foreground);
+				color: var(--color-fg);
 			}
 			&:global(.active) {
 				border-color: var(--color-accent);

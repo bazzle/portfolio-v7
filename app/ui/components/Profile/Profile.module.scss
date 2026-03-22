@@ -21,7 +21,7 @@ $outlinewidth: 3px;
 		var(--color-accent-alt)
 	);
 	@include vars.light-mode-wrapper {
-		background: var(--color-foreground-static);
+		background: var(--color-fg-static);
 	}
 	&__inner {
 		@include profileDefaults;

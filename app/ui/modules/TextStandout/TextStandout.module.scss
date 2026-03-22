@@ -41,7 +41,7 @@
 		color: transparent;
 		background: linear-gradient(
 			180deg,
-			var(--color-foreground) 75%,
+			var(--color-fg) 75%,
 			var(--color-accent) 100%
 		);
 		background-clip: text;
@@ -50,7 +50,7 @@
 		max-width: unset;
 		@media print {
 			background: none;
-			color: var(--color-foreground);
+			color: var(--color-fg);
 		}
 	}
 	&__children {

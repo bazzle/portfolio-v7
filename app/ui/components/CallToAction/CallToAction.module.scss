@@ -22,14 +22,14 @@
 			}
 			.callToAction__button {
 				@include vars.break-under(tablet) {
-					border-right: 1px solid var(--color-foreground);
+					border-right: 1px solid var(--color-fg);
 				}
 			}
 		}
 	}
 	&__button {
 		background: transparent;
-		border: 1px solid var(--color-foreground);
+		border: 1px solid var(--color-fg);
 		color: var(--color-accent);
 		text-decoration: none;
 		padding: 0.8em 1.2em;

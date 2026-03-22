@@ -18,7 +18,7 @@
 			@include vars.text-blocky;
 			text-align: center;
 			margin-bottom: 0;
-			color: var(--color-foreground);
+			color: var(--color-fg);
 		}
 	}
 	@media print {

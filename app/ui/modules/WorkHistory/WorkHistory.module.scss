@@ -72,7 +72,7 @@
 		text-align: center;
 		white-space: nowrap;
 		.is_active & {
-			color: var(--color-foreground);
+			color: var(--color-fg);
 			line-height: 1.2;
 			@include vars.text-heading--chunky;
 			@include vars.break-under(desktop-wider) {
