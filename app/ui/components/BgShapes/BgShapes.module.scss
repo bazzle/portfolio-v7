@@ -9,6 +9,9 @@
 	overflow: hidden;
 	background-blend-mode: darken;
 	background-color: var(--color-bg);
+	@include vars.light-mode-wrapper {
+		background-color: var(--color-bg);
+	}
 	@media print {
 		display: none;
 	}
@@ -71,9 +74,12 @@
 				height: auto;
 				aspect-ratio: 1/1;
 				background-color: var(--color-accent);
-				opacity: 0.1;
 				top: 0;
 				right: -20vw;
+				opacity: 0.05;
+				@include vars.light-mode-wrapper {
+					opacity: 0.2;
+				}
 			}
 
 			&:nth-of-type(3) {

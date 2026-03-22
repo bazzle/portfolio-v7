@@ -12,14 +12,12 @@ function HeroHomepage() {
 				<div className="container container--vertical-fill">
 					<div className={styles['hero__mainSection__inner']}>
 						<p className={styles['hero__mainSection__message']}>
-							<span className={styles['hero__mainSection__message__sub']}>
-								My philosophy is
-							</span>
+							<span className={styles['hero__mainSection__message__sub']}>My philosophy is</span>
 							<span className={styles['hero__mainSection__message__main']}>
 								Web for <span>Everyone</span>
 							</span>
 							<span className={styles['hero__mainSection__message__sub']}>
-								... But still <span className="highlight">POP &#128165;</span>
+								... But still <span className={styles['hero__mainSection__message__highlight']}>POP &#128165;</span>
 							</span>
 						</p>
 					</div>
@@ -35,16 +33,10 @@ function HeroHomepage() {
 						<div className={styles['hero__footSection__intro']}>
 							<div className={styles['hero__footSection__intro__main']}>
 								<p>
-									<strong>
-										Hello! I design and build inclusive digital experiences
-									</strong>
+									<strong>Hello! I design and build inclusive digital experiences</strong>
 									<br />
 									Read on to learn more,{' '}
-									<a
-										href="./files/cv.pdf"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
+									<a href="./files/cv.pdf" target="_blank" rel="noopener noreferrer">
 										download my CV
 									</a>{' '}
 									or <Link href="#get-in-touch">Get in touch</Link>!

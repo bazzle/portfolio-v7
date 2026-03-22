@@ -21,15 +21,10 @@
 .header {
 	z-index: 2;
 	position: relative;
-	background-color: var(--color-bg-solid);
+	background-color: var(--color-bg);
 	border-top: 1px solid;
 	border-bottom: 1px solid;
-	border-image: linear-gradient(
-			to right,
-			var(--color-accent),
-			var(--color-accent-alt)
-		)
-		1;
+	border-image: linear-gradient(to right, var(--color-accent), var(--color-accent-alt)) 1;
 	&__inner {
 		display: flex;
 		flex-direction: column;
@@ -56,7 +51,7 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 			gap: 0 0.5em;
-			color: var(--color-accent-alt);
+			color: var(--color-accent);
 			span {
 				display: block;
 			}
