@@ -23,7 +23,7 @@
 	}
 }
 .dark_mode_nobg {
-	:global(body.dark-mode) & {
+	:global([data-theme="dark"]) & {
 		fill: none;
 	}
 }

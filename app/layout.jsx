@@ -1,6 +1,6 @@
 import '@/app/assets/styles/main.scss'
 import Footer from '@/app/ui/modules/Footer'
-import { ColourThemeProvider } from '@/app/context/ColourTheme'
+import AppThemeProvider from '@/app/context/ThemeProvider'
 
 export const metadata = {
 	title: 'Barry Richards Design Engineer',
@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" data-scroll-behaviour="smooth">
+		<html lang="en" data-scroll-behaviour="smooth" suppressHydrationWarning>
 			<head>
 				<link
 					rel="preconnect"
@@ -23,10 +23,10 @@ export default function RootLayout({ children }) {
 				></link>
 			</head>
 			<body className="body">
-				<ColourThemeProvider disable>
+				<AppThemeProvider>
 					{children}
 					<Footer />
-				</ColourThemeProvider>
+				</AppThemeProvider>
 			</body>
 		</html>
 	)

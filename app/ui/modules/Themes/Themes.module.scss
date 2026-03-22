@@ -77,7 +77,7 @@
 .tile____noicon {
 	@extend .tile;
 	.tile__inner {
-		:global(body.dark-mode) & {
+		:global([data-theme="dark"]) & {
 			padding: 2rem;
 		}
 	}
