@@ -78,6 +78,7 @@
 		}
 		&__link {
 			@include headerlinkDefaults;
+			color: var(--color-accent);
 			gap: 0.5em;
 			span {
 				display: block;
