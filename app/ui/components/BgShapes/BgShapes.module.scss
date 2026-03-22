@@ -8,7 +8,7 @@
 	left: 0;
 	overflow: hidden;
 	background-blend-mode: darken;
-
+	background-color: var(--color-bg);
 	@media print {
 		display: none;
 	}
@@ -48,6 +48,10 @@
 			transform: translate(50%, -25%);
 			border-width: 0.5px;
 			border-style: solid;
+			border-color: var(--color-accent);
+			@include vars.light-mode-wrapper {
+				border-color: var(--color-accent-static);
+			}
 		}
 	}
 
@@ -79,7 +83,6 @@
 				transform: translate(50%, -25%);
 				top: 0;
 				right: 25vw;
-				border-color: var(--color-accent);
 			}
 		}
 	}
@@ -112,7 +115,6 @@
 				transform: translate(50%, -25%);
 				top: 0;
 				right: 25vw;
-				border-color: var(--color-accent);
 			}
 		}
 	}
@@ -145,7 +147,6 @@
 				transform: translate(50%, -25%);
 				top: 0;
 				right: 25vw;
-				border-color: var(--color-accent);
 			}
 		}
 	}
@@ -178,7 +179,6 @@
 				transform: translate(50%, -25%);
 				bottom: 0;
 				left: 0;
-				border-color: var(--color-accent);
 			}
 		}
 	}

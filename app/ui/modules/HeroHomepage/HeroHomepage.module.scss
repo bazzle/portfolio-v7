@@ -14,8 +14,8 @@
 	border-bottom: 1px solid;
 	border-image: linear-gradient(
 			90deg,
-			var(--color-accent) 90%,
-			var(--color-accent-alt) 90%
+			var(--color-accent-static) 90%,
+			var(--color-accent-alt-static) 90%
 		)
 		1;
 	display: flex;
@@ -58,16 +58,15 @@
 			display: block;
 			padding-top: 0.1em;
 			padding-bottom: 0.3em;
-			@media (prefers-color-scheme: light) {
-				color: var(--color-foreground);
-			}
+			color: var(--color-foreground-static);
 			span {
-				color: var(--color-accent-alt);
+				color: var(--color-accent-alt-static);
 			}
 		}
 		&__sub {
 			display: block;
 			@include vars.text-medium;
+			color: var(--color-foreground-static);
 		}
 	}
 }
