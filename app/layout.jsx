@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
 				></link>
 			</head>
 			<body className="body">
-				<ColourThemeProvider>
+				<ColourThemeProvider disable>
 					{children}
 					<Footer />
 				</ColourThemeProvider>

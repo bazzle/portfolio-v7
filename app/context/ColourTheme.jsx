@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from 'react'
 
 export const colourThemeContext = createContext()
 
-export function ColourThemeProvider({ children }) {
+export function ColourThemeProvider({ disable, children }) {
 	const [colourMode, setColourMode] = useState()
 	const [isLoading, setIsLoading] = useState(true)
 
@@ -21,7 +21,7 @@ export function ColourThemeProvider({ children }) {
 		setIsLoading(false)
 	}
 	const applyMode = (e) => {
-		if (e.matches) {
+		if (e.matches && !disable) {
 			applyLightMode()
 		} else {
 			applyDarkMode()
