@@ -4,9 +4,6 @@
 	display: block;
 	margin-bottom: var(--block-spacing--shallow);
 	position: relative;
-	&:first-of-type {
-		margin-top: var(--block-spacing);
-	}
 	&:last-of-type {
 		margin-bottom: var(--block-spacing);
 	}

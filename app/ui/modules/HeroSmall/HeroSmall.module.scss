@@ -1,0 +1,19 @@
+@use '@/app/assets/styles/style-library/all-vars' as vars;
+
+.heroSmall {
+	position: relative;
+	height: auto;
+	flex-direction: column;
+	padding-top: var(--block-spacing--shallow);
+	padding-bottom: var(--block-spacing--shallow);
+	&__main {
+		display: block;
+		position: relative;
+		z-index: 1;
+	}
+	&__title {
+		@include vars.text-blocky;
+		display: block;
+		color: var(--color-accent-alt);
+	}
+}
