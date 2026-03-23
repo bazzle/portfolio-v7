@@ -5,6 +5,9 @@
 	border: 1px solid var(--color-accent-alt-70);
 	padding: 1rem;
 	padding-bottom: 2rem;
+	@include vars.light-mode-wrapper {
+		border: 1px solid var(--color-accent-alt);
+	}
 	&__image {
 		width: 100%;
 		height: auto;
