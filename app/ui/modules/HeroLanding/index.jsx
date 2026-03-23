@@ -2,7 +2,7 @@ import BgShapes from '@/app/ui/components/BgShapes'
 import ActionLink from '@/app/ui/components/ActionLink'
 import Spacer from '@/app/ui/components/Spacer'
 import Profile from '@/app/ui/components/Profile'
-import styles from './Hero.module.scss'
+import styles from './HeroLanding.module.scss'
 
 function HeroLanding() {
 	return (
