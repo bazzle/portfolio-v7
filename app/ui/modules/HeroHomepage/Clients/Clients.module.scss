@@ -1,7 +1,7 @@
 @use '@/app/assets/styles/style-library/all-vars' as vars;
 
 .clients {
-	@include vars.svgColor(var(--color-foreground));
+	@include vars.svgColor(var(--color-fg));
 	width: 100%;
 	@include vars.break(tablet) {
 		padding-top: var(--block-spacing--shallow);

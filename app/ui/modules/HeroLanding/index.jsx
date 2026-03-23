@@ -28,15 +28,11 @@ function HeroLanding() {
 						<div className={styles['hero__footSection__intro']}>
 							<div className={styles['hero__footSection__intro__main']}>
 								<p>
-									<strong>Hello!</strong> I’m a UK based web designer, developer
-									and accessibility consultant.
+									<strong>Hello!</strong> I’m a UK based web designer, developer and accessibility consultant.
 								</p>
 							</div>
 							<div className={styles['hero__footSection__contacts']}>
-								<ActionLink
-									linkString="#get-in-touch"
-									textString="Get in touch"
-								/>
+								<ActionLink linkString="#get-in-touch" textString="Get in touch" />
 								<ActionLink linkString="/" textString="Read more about me" />
 							</div>
 						</div>

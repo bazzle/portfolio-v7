@@ -34,7 +34,3 @@
 	@extend .sectionHead__title;
 	margin: 0;
 }
-
-:global([data-theme="dark"]) .title {
-	color: var(--color-foreground);
-}

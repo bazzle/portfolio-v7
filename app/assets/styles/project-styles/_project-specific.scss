@@ -1,3 +1,5 @@
+@use '@/app/assets/styles/style-library/all-vars' as vars;
+
 .main {
 	&::after {
 		content: '';
@@ -5,15 +7,42 @@
 		height: 100%;
 		position: fixed;
 		z-index: 10;
-		width: 1px;
-		background-color: var(--color-accent-20);
 		right: 15%;
 		z-index: -1;
+		width: 2px;
+		background-color: var(--color-accent-20);
+		@include vars.light-mode-wrapper {
+			width: 2px;
+			background-color: rgba($color: #000000, $alpha: 0.2);
+			border-right: 1px solid rgba($color: #fff, $alpha: 1);
+			transform: translatex(1px);
+		}
 	}
 }
 
 .thoughts-index .main {
 	&::after {
 		display: none;
+	}
+}
+
+body {
+	&::before,
+	&::after {
+		content: '';
+		top: 0;
+		height: 100%;
+		position: fixed;
+		z-index: 10;
+	}
+	&::before {
+		left: 0;
+		width: 1px;
+		background-color: var(--color-accent);
+	}
+	&::after {
+		right: 0;
+		width: 1px;
+		background-color: var(--color-accent-alt);
 	}
 }
