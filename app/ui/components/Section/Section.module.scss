@@ -17,7 +17,7 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 		@include vars.text-heading--chunky;
 		color: var(--color-accent-alt);
 		@include vars.light-mode-wrapper {
-			color: var(--color-accent);
+			color: var(--color-accent-alt);
 		}
 	}
 	&____no-spacing {

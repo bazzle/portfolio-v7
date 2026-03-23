@@ -56,20 +56,20 @@
 			display: block;
 			padding-top: 0.1em;
 			padding-bottom: 0.3em;
-			color: var(--color-fg-static);
+			color: var(--color-fg);
 			span {
-				color: var(--color-accent-alt-static);
+				color: var(--color-accent-alt);
 			}
 		}
 		&__sub {
 			display: block;
 			@include vars.text-medium;
-			color: var(--color-fg-static);
+			color: var(--color-fg);
 		}
 		&__highlight {
 			@include vars.highlight;
 			@include vars.light-mode-wrapper {
-				color: var(--color-accent-static);
+				color: var(--color-accent-alt);
 			}
 		}
 	}
