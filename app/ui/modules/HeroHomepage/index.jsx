@@ -1,3 +1,5 @@
+'use client'
+
 import Clients from './Clients'
 import BgShapes from '@/app/ui/components/BgShapes'
 import Spacer from '@/app/ui/components/Spacer'
@@ -14,7 +16,7 @@ function HeroHomepage() {
 						<p className={styles['hero__mainSection__message']}>
 							<span className={styles['hero__mainSection__message__sub']}>My philosophy is</span>
 							<span className={styles['hero__mainSection__message__main']}>
-								Web for <span>Everyone</span>
+								Web for <span className={styles.messageHighlight}> Everyone</span>
 							</span>
 							<span className={styles['hero__mainSection__message__sub']}>
 								... But still <span className={styles['hero__mainSection__message__highlight']}>POP &#128165;</span>

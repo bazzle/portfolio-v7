@@ -9,7 +9,7 @@
 		z-index: 10;
 		right: 15%;
 		z-index: -1;
-		width: 2px;
+		width: 1px;
 		background-color: var(--color-accent-20);
 		@include vars.light-mode-wrapper {
 			width: 2px;
