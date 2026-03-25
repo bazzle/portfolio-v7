@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Clients from './Clients'
 import BgShapes from '@/app/ui/components/BgShapes'
 import Spacer from '@/app/ui/components/Spacer'
@@ -8,6 +9,13 @@ import Link from 'next/link'
 import styles from './HeroHomepage.module.scss'
 
 function HeroHomepage() {
+	const [popped, setPopped] = useState(false)
+
+	useEffect(() => {
+		const timer = setTimeout(() => setPopped(true), 1000)
+		return () => clearTimeout(timer)
+	}, [])
+
 	return (
 		<div className={styles.hero}>
 			<div className={styles['hero__mainSection']}>
@@ -19,7 +27,7 @@ function HeroHomepage() {
 								Web for <span className={styles.messageHighlight}> Everyone</span>
 							</span>
 							<span className={styles['hero__mainSection__message__sub']}>
-								... But still <span className={styles['hero__mainSection__message__highlight']}>POP &#128165;</span>
+								... But still <span className={styles['pop']}>POP {popped ? '\uD83D\uDCA5' : '\uD83C\uDF88'}</span>
 							</span>
 						</p>
 					</div>

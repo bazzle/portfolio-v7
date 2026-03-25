@@ -88,6 +88,9 @@
 			display: block;
 			@include vars.text-medium;
 			color: var(--color-fg);
+			.pop {
+				color: var(--color-accent-alt);
+			}
 		}
 	}
 }
