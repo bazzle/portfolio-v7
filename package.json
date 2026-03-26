@@ -1,5 +1,6 @@
 {
 	"name": "portfolio-v7",
+	"type": "module",
 	"version": "7.0.0",
 	"private": true,
 	"homepage": "https://br-web.me",
@@ -27,7 +28,8 @@
 		"sass-loader": "^16.0.1"
 	},
 	"devDependencies": {
-		"@eslint/eslintrc": "^3",
+		"@eslint/eslintrc": "^3.3.5",
+		"@stylistic/eslint-plugin": "^5.10.0",
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",

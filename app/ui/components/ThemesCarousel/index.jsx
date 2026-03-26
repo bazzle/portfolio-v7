@@ -23,8 +23,10 @@ export default function ThemesCarousel() {
 				</Carousel.ItemGroup>
 			</Carousel.Control>
 			<div className={styles.ControlsContainer}>
-		<Carousel.PrevTrigger className={styles.Trigger}>{Icons.arrowLeft}</Carousel.PrevTrigger>
-		<ProgressIndicator totalItems={totalItems} currentItemIndex={currentPage} />
+				<Carousel.PrevTrigger className={styles.Trigger}>
+					{Icons.arrowLeft}
+				</Carousel.PrevTrigger>
+				<ProgressIndicator totalItems={totalItems} currentItemIndex={currentPage} />
 				<Carousel.NextTrigger className={styles.Trigger}>
 					{Icons.arrowRight}
 				</Carousel.NextTrigger>
