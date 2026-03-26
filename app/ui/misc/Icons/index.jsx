@@ -255,13 +255,13 @@ export const Icons = {
 	),
 	arrowLeft: (
 		<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M9.00001 0L9 18L5.50763e-06 9L9.00001 0Z" fill="#9AF3FF" />
+			<path d="M9.00001 0L9 18L5.50763e-06 9L9.00001 0Z" fill="currentColor" />
 			<path d="M21.5002 8.49952L21.5002 9.49952L1.50025 9.49951L1.50025 8.49951L21.5002 8.49952Z" fill="currentColor" />
 		</svg>
 	),
 	arrowRight: (
 		<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M12.5002 18L12.5002 0L21.5002 9L12.5002 18Z" fill="#9AF3FF" />
+			<path d="M12.5002 18L12.5002 0L21.5002 9L12.5002 18Z" fill="currentColor" />
 			<path d="M1.57361e-06 9.50049L1.48619e-06 8.50049L20 8.50049L20 9.50049L1.57361e-06 9.50049Z" fill="currentColor" />
 		</svg>
 	),
