@@ -20,7 +20,7 @@ function HeroHomepage() {
 							<span className={styles['hero__mainSection__message__sub']}>
 								... But still{' '}
 								<span className={styles['pop']}>
-									POP <EmojiSwap initial="\uD83C\uDF88" after="\uD83D\uDCA5" delay={1000} />
+									POP <EmojiSwap initial="🎈" after="💥" delay={1000} />
 								</span>
 							</span>
 						</p>
