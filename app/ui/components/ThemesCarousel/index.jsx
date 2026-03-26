@@ -12,11 +12,7 @@ export default function ThemesCarousel() {
 	const totalItems = themesItems.length
 	const [currentPage, setCurrentPage] = useState(1)
 	return (
-		<Carousel.Root
-			className={styles.Root}
-			slideCount={themesItems.length}
-			onPageChange={(details) => setCurrentPage(details.page + 1)}
-		>
+		<Carousel.Root className={styles.Root} slideCount={themesItems.length} onPageChange={(details) => setCurrentPage(details.page + 1)}>
 			<Carousel.Control className={styles.Control}>
 				<Carousel.ItemGroup className={styles.ItemGroup}>
 					{themesItems.map((item, index) => (
@@ -27,13 +23,8 @@ export default function ThemesCarousel() {
 				</Carousel.ItemGroup>
 			</Carousel.Control>
 			<div className={styles.ControlsContainer}>
-				<Carousel.PrevTrigger className={styles.Trigger}>
-					{Icons.arrowLeft}
-				</Carousel.PrevTrigger>
-				<ProgressIndicator
-					totalItems={totalItems}
-					currentItemIndex={currentPage}
-				/>
+		<Carousel.PrevTrigger className={styles.Trigger}>{Icons.arrowLeft}</Carousel.PrevTrigger>
+		<ProgressIndicator totalItems={totalItems} currentItemIndex={currentPage} />
 				<Carousel.NextTrigger className={styles.Trigger}>
 					{Icons.arrowRight}
 				</Carousel.NextTrigger>
