@@ -5,7 +5,7 @@ import FloatingNav from '@/app/ui/components/FloatingNav'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import styles from './Header.module.scss'
-import { Icons } from '@/app/ui/misc/Icons'
+import Icons from '@/app/ui/misc/Icons'
 import HeaderTitle from './HeaderTitle'
 
 function Header({ location }) {

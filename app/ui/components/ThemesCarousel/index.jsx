@@ -1,6 +1,6 @@
 'use client'
 import { Carousel } from '@ark-ui/react/carousel'
-import { Icons } from '@/app/ui/misc/Icons'
+import Icons from '@/app/ui/misc/Icons'
 import styles from './ThemesCarousel.module.scss'
 import { ThemesContent } from '@/app/content/BodyContent'
 import CarouselItem from './CarouselItem'

@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import { motion } from 'motion/react'
 import styles from './FloatingNav.module.scss'
-import { Icons } from '@/app/ui/misc/Icons'
+import Icons from '@/app/ui/misc/Icons'
 
 function FloatingNav({ sectionLinks }) {
 	const handleClick = () => {

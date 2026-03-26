@@ -1,5 +1,5 @@
 import styles from './ContactLinks.module.scss'
-import { Icons } from '@/app/ui/misc/Icons'
+import Icons from '@/app/ui/misc/Icons'
 import CopyEmail from './CopyEmail'
 
 export default function ContactLinks() {
