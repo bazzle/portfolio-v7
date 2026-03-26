@@ -66,7 +66,6 @@ function Home() {
 					textPrefix={TextStandout2.prefix}
 					content={TextStandout2.content}
 					line
-					deepMbLine
 				/>
 
 				<Themes id="themes" />
