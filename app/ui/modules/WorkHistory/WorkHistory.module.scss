@@ -72,12 +72,13 @@
 		text-align: center;
 		white-space: nowrap;
 		.is_active & {
-			color: var(--color-fg);
 			line-height: 1.2;
 			@include vars.text-heading--chunky;
 			@include vars.break-under(desktop-wider) {
 				font-size: inherit;
 			}
+			color: var(--color-fg);
+			color: var(--color-accent-alt);
 		}
 		.not_active & {
 			@include vars.standalone-link;
@@ -108,8 +109,6 @@
 				left: 50%;
 			}
 		}
-	}
-	&.not_active {
 	}
 
 	&:first-of-type {
