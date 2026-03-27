@@ -30,7 +30,6 @@ $padding: 1rem;
 		right: 4rem;
 		gap: 1rem;
 		flex-direction: row;
-		justify-content: flex-end;
 		max-width: calc(100vw - (var(--gutter-padding) * 2));
 	}
 	&__backTop {
@@ -48,6 +47,7 @@ $padding: 1rem;
 			display: block;
 			text-align: end;
 			text-wrap: balance;
+			padding-left: $padding;
 		}
 		a {
 			@include floating-nav-text-style;
@@ -61,6 +61,7 @@ $padding: 1rem;
 				margin-left: 0.2em;
 				margin-right: 0.2em;
 				height: calc(100% - 2px);
+				height: 5vh;
 			}
 			&:hover {
 				color: var(--color-fg);
