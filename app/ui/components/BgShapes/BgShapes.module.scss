@@ -22,9 +22,8 @@
 		height: 100%;
 		opacity: 0.6;
 		@include vars.light-mode-wrapper {
-			opacity: 1;
 			mix-blend-mode: difference;
-			opacity: 0.6;
+			opacity: 0.5;
 		}
 	}
 

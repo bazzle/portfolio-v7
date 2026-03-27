@@ -13,7 +13,7 @@
 	}
 	&__title {
 		@include vars.text-heading--chunky;
-		color: var(--color-fg);
+		color: var(--color-accent-alt);
 		align-items: center;
 		margin-bottom: var(--block-spacing--text);
 		span {
