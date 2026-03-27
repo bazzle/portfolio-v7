@@ -35,9 +35,6 @@
 			width: auto !important;
 			svg {
 				max-height: 400px;
-				@include vars.break(tablet) {
-					height: 50vh;
-				}
 			}
 		}
 	}

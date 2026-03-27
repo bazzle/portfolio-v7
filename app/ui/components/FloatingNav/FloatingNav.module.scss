@@ -4,6 +4,8 @@
 	@include vars.text-tiny;
 }
 
+$padding: 1rem;
+
 .floatingNav {
 	position: fixed;
 	right: var(--gutter-padding);
@@ -17,8 +19,8 @@
 	gap: 0;
 	overflow: hidden;
 	width: auto;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	padding-left: $padding;
+	padding-right: $padding;
 	border-bottom: 0;
 	background-color: var(--color-bg);
 	@include vars.light-mode-wrapper {
@@ -36,8 +38,8 @@
 		display: flex;
 		align-items: center;
 		svg {
-			height: 4rem;
-			width: 4rem;
+			height: 5rem;
+			width: calc(5rem - $padding - $padding);
 		}
 	}
 	&__nav {

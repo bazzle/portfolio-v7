@@ -2,10 +2,11 @@
 
 .contactLinks {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	text-align: left;
 	gap: 2rem;
 	flex-wrap: wrap;
+	justify-content: space-between;
 
 	@mixin itemDefaults {
 		list-style: none;

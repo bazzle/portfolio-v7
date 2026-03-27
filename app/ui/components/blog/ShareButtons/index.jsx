@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import styles from './ShareButtons.module.scss'
 import {
-	TwitterShareButton,
+	XShareButton,
 	XIcon,
 	LinkedinShareButton,
 	LinkedinIcon,
@@ -31,7 +31,7 @@ function ShareButtons({ title, excerpt, preText }) {
 			</div>
 			<div className={styles.shareButtons__divider}></div>
 			<div className={styles.shareButtons__list}>
-				<TwitterShareButton
+				<XShareButton
 					url={shareUrl}
 					htmlTitle="Share on X"
 					title={title}
@@ -41,9 +41,9 @@ function ShareButtons({ title, excerpt, preText }) {
 						round={false}
 						size={36}
 						iconFillColor="var(--color-fg)"
-						bgStyle={{ fill: 'var(--color-bg-alt)' }}
+						bgStyle={{ fill: 'var(--color-bg-solid)' }}
 					/>
-				</TwitterShareButton>
+				</XShareButton>
 
 				<TelegramShareButton
 					url={shareUrl}
@@ -54,7 +54,7 @@ function ShareButtons({ title, excerpt, preText }) {
 						round={false}
 						size={36}
 						iconFillColor="var(--color-fg)"
-						bgStyle={{ fill: 'var(--color-bg-alt)' }}
+						bgStyle={{ fill: 'var(--color-bg-solid)' }}
 					/>
 				</TelegramShareButton>
 
@@ -69,7 +69,7 @@ function ShareButtons({ title, excerpt, preText }) {
 						round={false}
 						size={36}
 						iconFillColor="var(--color-fg)"
-						bgStyle={{ fill: 'var(--color-bg-alt)' }}
+						bgStyle={{ fill: 'var(--color-bg-solid)' }}
 					/>
 				</LinkedinShareButton>
 
@@ -84,7 +84,7 @@ function ShareButtons({ title, excerpt, preText }) {
 						round={false}
 						size={36}
 						iconFillColor="var(--color-fg)"
-						bgStyle={{ fill: 'var(--color-bg-alt)' }}
+						bgStyle={{ fill: 'var(--color-bg-solid)' }}
 					/>
 				</a>
 			</div>

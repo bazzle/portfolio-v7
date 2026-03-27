@@ -3,11 +3,13 @@
 .articleMain {
 	display: block;
 	margin-top: var(--block-spacing);
-	background-color: var(--color-bg-alt-70);
 	&__body {
 		@include vars.text-editorial;
 		figure {
 			margin-bottom: var(--block-spacing--text);
+			> img, > svg{
+				box-shadow: 0 8px 12px 4px rgba($color: #000000, $alpha: 0.1);
+			}
 		}
 		& > figure:first-child {
 			top: calc(-4 * var(--block-spacing--text));
