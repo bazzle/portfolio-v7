@@ -5,7 +5,6 @@
 	position: relative;
 	margin: 0;
 	padding: 0;
-	@include vars.text-blocky;
 	font-size: 1.6rem;
 	text-decoration: none;
 	display: flex;
@@ -53,6 +52,7 @@
 		}
 		&__link {
 			@include headerlinkDefaults;
+			@include vars.text-blocky;
 			display: flex;
 			align-items: center;
 			flex-direction: row;

@@ -8,10 +8,10 @@ function Themes({ id }) {
 
 	return (
 		<Section
+			{...optionalId}
 			heading={ThemesContent.title}
 			moduleClassname={styles.themes}
 			layout="2col"
-			{...optionalId}
 			headingTop
 			headingHidden
 			noLine
