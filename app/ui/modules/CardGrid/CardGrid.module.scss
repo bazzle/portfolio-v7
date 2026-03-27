@@ -20,10 +20,6 @@
 	}
 	&__item {
 		position: relative;
-		max-width: 300px;
-		@include vars.break(tablet) {
-			max-width: unset;
-		}
 		&::before {
 			content: '';
 			background-color: var(--color-accent-50);
