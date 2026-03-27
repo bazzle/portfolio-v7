@@ -1,7 +1,6 @@
 @use '@/app/assets/styles/style-library/all-vars' as vars;
 
 .carouselItem {
-	max-width: 60rem;
 	&__graphic {
 		height: 10rem;
 		margin-bottom: var(--block-spacing--shallow);
@@ -22,6 +21,7 @@
 	}
 	&__description {
 		margin-bottom: var(--block-spacing--text);
+		height: 4lh;
 		p {
 			margin-bottom: 0;
 		}

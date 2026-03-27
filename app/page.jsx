@@ -17,7 +17,6 @@ import {
 	TextStandout1,
 	TextStandout2,
 	TextStandout3,
-	GetInTouchContent,
 	HomepageCards,
 } from '@/app/content/BodyContent'
 
