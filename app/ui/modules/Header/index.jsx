@@ -7,9 +7,11 @@ import Link from 'next/link'
 import styles from './Header.module.scss'
 import Icons from '@/app/ui/misc/Icons'
 import HeaderTitle from './HeaderTitle'
+import { useTheme } from 'next-themes'
 
 function Header({ location }) {
 	const pathname = usePathname()
+	const { resolvedTheme, setTheme } = useTheme()
 
 	let navLinks
 
@@ -69,6 +71,9 @@ function Header({ location }) {
 					<nav className={styles.header__nav}>
 						{navLinks.map((item, index) => item)}
 					</nav>
+					<button className={styles.header__modeSwitcher} onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
+						{Icons.modeSwitcher}
+					</button>
 				</div>
 			</div>
 			{location === 'home' ? (
