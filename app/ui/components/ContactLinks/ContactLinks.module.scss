@@ -7,6 +7,9 @@
 	gap: 2rem;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	@include vars.break(tablet){
+		justify-content: center;
+	}
 
 	@mixin itemDefaults {
 		list-style: none;
