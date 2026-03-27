@@ -21,7 +21,8 @@
 	}
 	&__description {
 		margin-bottom: var(--block-spacing--text);
-		height: 4lh;
+		height: auto;
+		min-height: 4lh;
 		p {
 			margin-bottom: 0;
 		}
