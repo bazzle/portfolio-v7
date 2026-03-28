@@ -1,4 +1,4 @@
-@use '@/app/ui/style-library/global/all-vars' as vars;
+@use '@/app/ui/style-library/global/tokens/mixins' as vars;
 
 .actionLink {
 	display: flex;

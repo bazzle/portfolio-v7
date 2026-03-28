@@ -1,4 +1,4 @@
-@use '@/app/ui/style-library/global/all-vars' as vars;
+@use '@/app/ui/style-library/global/tokens/mixins' as vars;
 @use '@/app/ui/style-library/global/utils' as *;
 
 $spacingunit: clamp(4rem, 8vw, 28rem);

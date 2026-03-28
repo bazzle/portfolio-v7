@@ -1,4 +1,4 @@
-@use '@/app/ui/style-library/global/all-vars' as vars;
+@use '@/app/ui/style-library/global/tokens/mixins' as vars;
 
 .footer {
 	padding: var(--block-spacing) 0 calc(var(--block-spacing--shallow) * 2);
