@@ -1,10 +1,10 @@
-import IndexItem from '@/app/ui/modules/blog/IndexItem'
+import IndexItem from '@/app/ui/project/modules/blog/IndexItem'
 import getPostsByTag from '@/app/utils/get-posts-by-tag.js'
 import getTags from '@/app/utils/get-tags.js'
 import SlugifyString from '@/app/utils/slugify-string.js'
-import HeroSmall from '@/app/ui/modules/HeroSmall'
-import AfterArchive from '@/app/ui/modules/blog/AfterArchive'
-import Header from '@/app/ui/modules/Header'
+import HeroSmall from '@/app/ui/project/modules/HeroSmall'
+import AfterArchive from '@/app/ui/project/modules/blog/AfterArchive'
+import Header from '@/app/ui/project/modules/Header'
 
 function resolveTagFromSlug(tagSlug) {
 	const tags = getTags()

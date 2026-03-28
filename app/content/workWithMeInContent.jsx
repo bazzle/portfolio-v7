@@ -1,7 +1,7 @@
-import ListItem from '@/app/ui/components/ListItem'
-import { BtcAcceptedHere } from '@/app/ui/components/Stickers'
-import NostrCopy from '@/app/ui/components/NostrCopy'
-import HorizontalList from '@/app/ui/components/HorizontalList'
+import ListItem from '@/app/ui/project/components/ListItem'
+import { BtcAcceptedHere } from '@/app/ui/project/components/Stickers'
+import NostrCopy from '@/app/ui/project/components/NostrCopy'
+import HorizontalList from '@/app/ui/project/components/HorizontalList'
 import Link from 'next/link'
 
 // work with me page
@@ -71,7 +71,7 @@ export const ContentSection1 = {
 }
 
 export const TextStandout1 =
-	"I'm a generalist who nerds out on everything from web typography to accessibility, to the subtle art of making things POP."
+	'I\'m a generalist who nerds out on everything from web typography to accessibility, to the subtle art of making things POP.'
 export const TextStandout2 = 'Thankyou, have a great day!'
 
 export const ContentSection2 = {

@@ -1,9 +1,9 @@
-import ListItem from '@/app/ui/components/ListItem'
-import IconThemes from '@/app/ui/misc/Icons/IconThemes'
-import NostrCopy from '@/app/ui/components/NostrCopy'
-import HorizontalList from '@/app/ui/components/HorizontalList'
+import ListItem from '@/app/ui/project/components/ListItem'
+import IconThemes from '@/app/ui/project/misc/Icons/IconThemes'
+import NostrCopy from '@/app/ui/project/components/NostrCopy'
+import HorizontalList from '@/app/ui/project/components/HorizontalList'
 import Link from 'next/link'
-import CurrentStatus from '@/app/ui/components/CurrentStatus'
+import CurrentStatus from '@/app/ui/project/components/CurrentStatus'
 
 export const NameTitle = {
 	name: 'Barry Richards',
@@ -110,7 +110,7 @@ export const HomepageCards = {
 			imageSrc: '/images/posts/bfi-featured.png',
 			imageAlt: 'BFI Screen Culture logo',
 			title: 'BFI Screen Culture 2033',
-			description: "Website for BFI's 10 year strategy",
+			description: 'Website for BFI\'s 10 year strategy',
 			link: '/thoughts/2025-01-24',
 		},
 		{
@@ -152,7 +152,7 @@ export const HomepageCards = {
 		{
 			title: 'My relationship with AI',
 			description:
-				"I've been cautious about AI, I've had a strong desire to embrace it to improve my productivity and help my learning but formed some boundaries.",
+				'I\'ve been cautious about AI, I\'ve had a strong desire to embrace it to improve my productivity and help my learning but formed some boundaries.',
 			link: '/thoughts/2025-06-01',
 		},
 	],
@@ -259,7 +259,7 @@ export const ThemesContent = {
 			component: IconThemes.IconTag,
 			nameFirstLine: 'Semantics',
 			description:
-				"Attaching names to things is fundamental to how we interpret things in the physical world. Writing semantic HTML that's legible to browsers, assistive tech and search engines, commands the same importance within the digital world.",
+				'Attaching names to things is fundamental to how we interpret things in the physical world. Writing semantic HTML that\'s legible to browsers, assistive tech and search engines, commands the same importance within the digital world.',
 		},
 		{
 			component: IconThemes.IconAi,
@@ -271,7 +271,7 @@ export const ThemesContent = {
 			component: IconThemes.IconMagGlass,
 			nameFirstLine: 'Search Engine Optimisation',
 			description:
-				"Good SEO starts with good engineering. Semantic markup, performance, accessibility — most of what matters for search is what I'd be doing anyway. I focus on the technical foundations that give content the best chance of being found.",
+				'Good SEO starts with good engineering. Semantic markup, performance, accessibility — most of what matters for search is what I\'d be doing anyway. I focus on the technical foundations that give content the best chance of being found.',
 		},
 	],
 }
@@ -434,7 +434,7 @@ export const WorkHistoryContent = {
 }
 
 export const WhatNextContent = {
-	title: "What's next?",
+	title: 'What\'s next?',
 	bodyContent: () => {
 		return (
 			<>

@@ -1,0 +1,88 @@
+'use client'
+
+import { NameTitle, sectionLinksHome } from '@/app/content/BodyContent'
+import FloatingNav from '@/app/ui/project/components/FloatingNav'
+import { usePathname } from 'next/navigation'
+import Link from 'next/link'
+import styles from './Header.module.scss'
+import Icons from '@/app/ui/project/misc/Icons'
+import HeaderTitle from './HeaderTitle'
+import { useTheme } from 'next-themes'
+
+function Header({ location }) {
+	const pathname = usePathname()
+	const { resolvedTheme, setTheme } = useTheme()
+
+	let navLinks
+
+	if (location === 'blog') {
+		navLinks = [
+			<Link className={styles.header__nav__link} href="/" key="1">
+				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
+				<span>Homepage</span>
+			</Link>,
+		]
+	} else if (location === 'blog-single') {
+		navLinks = [
+			<Link className={styles.header__nav__link} href="/" key="1">
+				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
+				<span>Homepage</span>
+			</Link>,
+			<Link className={styles.header__nav__link} href="/thoughts" key="2">
+				<span>Showcase and thoughts</span>
+			</Link>,
+		]
+	} else if (location === 'tag-single') {
+		navLinks = [
+			<Link className={styles.header__nav__link} href="/" key="1">
+				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
+				<span>Homepage</span>
+			</Link>,
+			<Link className={styles.header__nav__link} href="/thoughts" key="2">
+				<span>Showcase and thoughts</span>
+			</Link>,
+		]
+	} else if (location === 'home') {
+		navLinks = [
+			<Link className={styles.header__nav__link} href="/thoughts" key="1">
+				<span>Showcase and thoughts</span>
+				<span className={styles.arrow}>{Icons.arrow}</span>
+			</Link>,
+		]
+	} else {
+		navLinks = [
+			<Link className={styles.header__nav__link} href="/" key="1">
+				<span className={styles.arrow}>{Icons.arrow}</span>
+				<span>Homepage</span>
+			</Link>,
+		]
+	}
+
+	return (
+		<header className={styles.header}>
+			<div className="container____toEdgesMobile">
+				<div className={styles.header__inner}>
+					<HeaderTitle location={location}>
+						<Link className={styles.header__sitename__link} href="/">
+							<span className="highlight-on-link">{NameTitle.name}</span>
+							<span>{NameTitle.title}</span>
+						</Link>
+					</HeaderTitle>
+					<nav className={styles.header__nav}>
+						{navLinks.map((item, index) => item)}
+					</nav>
+					<button className={styles.header__modeSwitcher} onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
+						{Icons.modeSwitcher}
+					</button>
+				</div>
+			</div>
+			{location === 'home' ? (
+				<FloatingNav sectionLinks={sectionLinksHome} />
+			) : (
+				<FloatingNav />
+			)}
+		</header>
+	)
+}
+
+export default Header

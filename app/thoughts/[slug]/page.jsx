@@ -2,10 +2,10 @@ import getPostMetadata from '@/app/utils/get-post-metadata'
 import React from 'react'
 import fs from 'fs'
 import matter from 'gray-matter'
-import HeroArticle from '@/app/ui/modules/HeroArticle'
-import ArticleMain from '@/app/ui/modules/blog/Article/ArticleMain'
-import AfterArticle from '@/app/ui/modules/blog/Article/AfterArticle'
-import Header from '@/app/ui/modules/Header'
+import HeroArticle from '@/app/ui/project/modules/HeroArticle'
+import ArticleMain from '@/app/ui/project/modules/blog/Article/ArticleMain'
+import AfterArticle from '@/app/ui/project/modules/blog/Article/AfterArticle'
+import Header from '@/app/ui/project/modules/Header'
 
 function getPostContent(slug) {
 	const file = `./posts/${slug}/index.md`

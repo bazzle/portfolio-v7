@@ -1,7 +1,7 @@
-import HeroLanding from '@/app/ui/modules/HeroLanding'
-import StdContentTemplate from '@/app/ui/modules/StdContentTemplate'
-import TextStandout from '@/app/ui/modules/TextStandout'
-import Header from '@/app/ui/modules/Header'
+import HeroLanding from '@/app/ui/project/modules/HeroLanding'
+import StdContentTemplate from '@/app/ui/project/modules/StdContentTemplate'
+import TextStandout from '@/app/ui/project/modules/TextStandout'
+import Header from '@/app/ui/project/modules/Header'
 
 // content import
 import {

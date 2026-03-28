@@ -1,0 +1,19 @@
+import BgShapes from '@/app/ui/project/components/BgShapes'
+import styles from './Footer.module.scss'
+
+function Footer() {
+	const currentYear = new Date().getFullYear()
+
+	return (
+		<footer className={`${styles.footer} hide-print`}>
+			<div className="container">
+				<div className={styles['footer__line']}>
+					<p>&copy; Barry Richards – {currentYear}</p>
+				</div>
+			</div>
+			<BgShapes variant="4" />
+		</footer>
+	)
+}
+
+export default Footer
