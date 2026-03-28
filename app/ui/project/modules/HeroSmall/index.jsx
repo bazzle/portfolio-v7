@@ -1,4 +1,3 @@
-import MetaData from '@/app/ui/project/components/blog/MetaData'
 import styles from './HeroSmall.module.scss'
 
 function HeroSmall({ title }) {

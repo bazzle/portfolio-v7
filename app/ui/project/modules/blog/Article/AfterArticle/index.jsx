@@ -1,7 +1,6 @@
 'use client'
 import styles from './AfterArticle.module.scss'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
 import ShareButtons from '@/app/ui/project/components/blog/ShareButtons'
 
 function AfterArticle({ title, excerpt }) {

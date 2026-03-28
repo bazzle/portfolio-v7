@@ -5,7 +5,7 @@ import BrowserDesktop from './BrowserDesktop'
 import Section from '@/app/ui/project/components/Section'
 import { WorkSamplesContent } from '@/app/content/BodyContent'
 import { useRef } from 'react'
-import { motion, useScroll, useTransform, useSpring } from 'motion/react'
+import { motion, useScroll, useTransform } from 'motion/react'
 import Image from 'next/image'
 import styles from './WorkSamples.module.scss'
 

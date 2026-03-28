@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import styles from './PostImage.module.scss'
-import { useEffect, useRef, useState } from 'react'
 
 export default function PostImage({ src, alt, caption, extended }) {
 	const classString = `${styles.postImage} ${extended && styles.extended}`

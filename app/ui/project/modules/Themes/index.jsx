@@ -1,5 +1,4 @@
 import Section from '@/app/ui/project/components/Section'
-import { ThemesContent } from '@/app/content/BodyContent'
 import styles from './Themes.module.scss'
 import ThemesCarousel from '@/app/ui/project/components/ThemesCarousel'
 
