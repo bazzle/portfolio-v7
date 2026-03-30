@@ -5,9 +5,14 @@ import HeroSmall from '@/app/ui/project/modules/HeroSmall'
 
 export default function Home() {
 	const postMetaData = getPostMetadata('posts')
+	const headerLinks = [{
+		'text': 'Homepage',
+		'target': '/',
+		'arrowDirection': 'reverse',
+	}]
 	return (
 		<>
-			<Header location="blog" />
+			<Header navLinks={headerLinks} />
 			<main className="main">
 				<HeroSmall title="Articles" />
 				{postMetaData.map((post, postIndex) => (

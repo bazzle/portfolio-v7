@@ -48,9 +48,19 @@ export default async function postPage({ params }) {
 	const bodyContent = post.content
 	const postTags = post.data.tags
 
+	const headerLinks = [{
+		'text': 'Homepage',
+		'target': '/',
+		'arrowDirection': 'reverse',
+	}, {
+		'text': 'Showcase and Thoughts',
+		'target': '/thoughts',
+		'arrowDirection': false,
+	}]
+
 	return (
 		<>
-			<Header location="blog-single" />
+			<Header navLinks={headerLinks} />
 			<main className="main">
 				<article>
 					<HeroArticle title={title} date={rawDate} tags={postTags} />

@@ -38,9 +38,18 @@ export default async function TagArchivePage({ params }) {
 	const { tag } = await params
 	const tagTitle = resolveTagFromSlug(tag)
 	const posts = getPosts(tag)
+	const headerLinks = [{
+		'text': 'Homepage',
+		'target': '/',
+		'arrowDirection': 'reverse',
+	}, {
+		'text': 'Showcase and Thoughts',
+		'target': '/thoughts',
+		'arrowDirection': false,
+	}]
 	return (
 		<>
-			<Header location="tag-single" />
+			<Header navLinks={headerLinks} />
 			<main className="main">
 				<HeroSmall title={`Posts tagged with: ${tagTitle}`} />
 				<div>
