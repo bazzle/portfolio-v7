@@ -9,53 +9,29 @@ import Icons from '@/app/ui/project/misc/Icons'
 import HeaderTitle from './HeaderTitle'
 import { useTheme } from 'next-themes'
 
-function Header({ location }) {
+function Header({ navLinks, arrowDirection }) {
 	const pathname = usePathname()
 	const { resolvedTheme, setTheme } = useTheme()
 
-	let navLinks
+	const arrowOutput = (direction) => {
+		if (direction === 'backwards')(
+			<span className={styles.arrow____reverse}>{Icons.arrow}</span>
+		)
+		else (
+			<span className={styles.arrow}>{Icons.arrow}</span>
+		)
+	}
 
-	if (location === 'blog') {
-		navLinks = [
-			<Link className={styles.header__nav__link} href="/" key="1">
+	const linkOutput = (item, index, arrowDirection) => {
+		return (
+			<Link className={styles.header__nav__link} href={item.target} key={index}>
+				{
+					arrowDirection && arrowOutput(arrowDirection)
+				}
 				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
-				<span>Homepage</span>
-			</Link>,
-		]
-	} else if (location === 'blog-single') {
-		navLinks = [
-			<Link className={styles.header__nav__link} href="/" key="1">
-				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
-				<span>Homepage</span>
-			</Link>,
-			<Link className={styles.header__nav__link} href="/thoughts" key="2">
-				<span>Showcase and thoughts</span>
-			</Link>,
-		]
-	} else if (location === 'tag-single') {
-		navLinks = [
-			<Link className={styles.header__nav__link} href="/" key="1">
-				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
-				<span>Homepage</span>
-			</Link>,
-			<Link className={styles.header__nav__link} href="/thoughts" key="2">
-				<span>Showcase and thoughts</span>
-			</Link>,
-		]
-	} else if (location === 'home') {
-		navLinks = [
-			<Link className={styles.header__nav__link} href="/thoughts" key="1">
-				<span>Showcase and thoughts</span>
-				<span className={styles.arrow}>{Icons.arrow}</span>
-			</Link>,
-		]
-	} else {
-		navLinks = [
-			<Link className={styles.header__nav__link} href="/" key="1">
-				<span className={styles.arrow}>{Icons.arrow}</span>
-				<span>Homepage</span>
-			</Link>,
-		]
+				<span>{item.text}</span>
+			</Link>
+		)
 	}
 
 	return (
@@ -68,9 +44,11 @@ function Header({ location }) {
 							<span>{NameTitle.title}</span>
 						</Link>
 					</HeaderTitle>
-					<nav className={styles.header__nav}>
-						{navLinks.map((item, index) => item)}
-					</nav>
+					{navLinks && (
+						<nav className={styles.header__nav}>
+							{navLinks.map((item, index) => linkOutput(item, index))}
+						</nav>
+					)}
 					<button className={styles.header__modeSwitcher} onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
 						{Icons.modeSwitcher}
 					</button>

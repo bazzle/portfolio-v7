@@ -23,9 +23,14 @@ import {
 function Home() {
 	const title = metadata.title
 	const description = metadata.description
+	const headerLinks = [{
+		'text': 'Showcase and thoughts',
+		'target': '/thoughts',
+		'arrowDirection': 'forward',
+	}]
 	return (
 		<>
-			<Header location="home" />
+			<Header navLinks={headerLinks} />
 			<main className="main">
 				<Hero />
 
