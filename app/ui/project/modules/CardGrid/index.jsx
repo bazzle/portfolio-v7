@@ -1,7 +1,7 @@
 'use client'
 import styles from './CardGrid.module.scss'
 import Section from '@/app/ui/project/components/Section'
-import Card from '@/app/ui/style-library/components/Card'
+import Card from '@/style-library/components/Card'
 import CallToAction from '@/app/ui/project/components/CallToAction'
 
 export default function CardGrid({
