@@ -47,7 +47,6 @@
 		flex-grow: 1;
 		width: 100%;
 		border-bottom: 1px solid;
-		border-image: linear-gradient(to right, var(--color-accent), var(--color-accent-alt)) 1;
 		@include vars.break(tablet) {
 			padding-left: 0;
 			border: none;

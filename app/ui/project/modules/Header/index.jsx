@@ -8,39 +8,45 @@ import { useTheme } from 'next-themes'
 function Header({ headerTitle, headingLevel, navLinks }) {
 	const { resolvedTheme, setTheme } = useTheme()
 
-	const arrowOutput = (direction) => {
+	const arrowOutput = (direction, item) => {
+		if (!direction) return <span>{item.text}</span>
 		if (direction === 'reverse'){
 			return (
-				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
+				<>
+					<span className={styles.arrow____reverse}>{Icons.arrow}</span>
+					<span>{item.text}</span>
+				</>
 			)
 		} else {
-			<span className={styles.arrow}>{Icons.arrow}</span>
+			return (
+				<>
+					<span>{item.text}</span>
+					<span className={styles.arrow}>{Icons.arrow}</span>
+				</>
+			)
 		}
 	}
 
 	const linkOutput = (item, index) => {
 		return (
 			<Link className={styles.header__nav__link} href={item.target} key={index}>
-				{
-					item.arrowDirection && arrowOutput(item.arrowDirection)
-				}
-				<span>{item.text}</span>
+				{arrowOutput(item.arrowDirection, item)}
 			</Link>
 		)
 	}
 
-	const h1Heading = <h1 className={styles.header__sitename}>{headerTitle}</h1>
-	const h2Heading = <h2 className={styles.header__sitename}>{headerTitle}</h2>
+	const headerInner = <Link className={styles.header__sitename__link} href="/">{headerTitle}</Link>
 
-	const headingOutput = () => {
-		(headingLevel && headingLevel === 1) ? h1Heading : h2Heading
-	}
+	const h1Heading = <h1 className={styles.header__sitename}>{headerInner}</h1>
+	const h2Heading = <h2 className={styles.header__sitename}>{headerInner}</h2>
+
+	const headingOutput = headingLevel && headingLevel === 1 ? h1Heading : h2Heading
 
 	return (
 		<header className={styles.header}>
 			<div className="container____toEdgesMobile">
 				<div className={styles.header__inner}>
-					{headingOutput()}
+					{headingOutput}
 					{navLinks && (
 						<nav className={styles.header__nav}>
 							{navLinks.map((item, index) => linkOutput(item, index))}
