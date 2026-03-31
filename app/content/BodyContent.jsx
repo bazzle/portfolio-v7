@@ -10,6 +10,13 @@ export const nameTitle = {
 	title: 'Design Engineer',
 }
 
+export const headerTitle = (
+	<>
+		<span className="highlight-on-link">{nameTitle.name}</span>
+		<span>{nameTitle.title}</span>
+	</>
+)
+
 class SectionLink {
 	constructor(name, id) {
 		;((this.name = name), (this.id = id))

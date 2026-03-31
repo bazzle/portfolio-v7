@@ -6,6 +6,7 @@ import HeroArticle from '@/app/ui/project/modules/HeroArticle'
 import ArticleMain from '@/app/ui/project/modules/blog/Article/ArticleMain'
 import AfterArticle from '@/app/ui/project/modules/blog/Article/AfterArticle'
 import Header from '@/app/ui/project/modules/Header'
+import { headerTitle } from '@/app/content/BodyContent'
 
 function getPostContent(slug) {
 	const file = `./posts/${slug}/index.md`
@@ -49,18 +50,22 @@ export default async function postPage({ params }) {
 	const postTags = post.data.tags
 
 	const headerLinks = [{
-		'text': 'Homepage',
-		'target': '/',
-		'arrowDirection': 'reverse',
-	}, {
 		'text': 'Showcase and Thoughts',
 		'target': '/thoughts',
+		'arrowDirection': 'reverse',
+	}, {
+		'text': 'Homepage',
+		'target': '/',
 		'arrowDirection': false,
 	}]
 
 	return (
 		<>
-			<Header navLinks={headerLinks} />
+			<Header
+				headerTitle={headerTitle}
+				headingLevel={2}
+				navLinks={headerLinks}
+			/>
 			<main className="main">
 				<article>
 					<HeroArticle title={title} date={rawDate} tags={postTags} />

@@ -9,7 +9,7 @@ import Header from '@/app/ui/project/modules/Header'
 import { metadata } from './layout'
 import ContactLinks from '@/app/ui/project/components/ContactLinks'
 import CallToAction from '@/app/ui/project/components/CallToAction'
-import { nameTitle, sectionLinksHome } from '@/app/content/BodyContent'
+import { headerTitle, sectionLinksHome } from '@/app/content/BodyContent'
 
 // content import
 import {
@@ -29,12 +29,6 @@ function Home() {
 		'target': '/thoughts',
 		'arrowDirection': 'forward',
 	}]
-	const headerTitle = (
-		<>
-			<span className="highlight-on-link">{nameTitle.name}</span>
-			<span>{nameTitle.title}</span>
-		</>
-	)
 
 	return (
 		<>

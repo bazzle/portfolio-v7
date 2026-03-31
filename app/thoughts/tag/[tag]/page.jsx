@@ -5,6 +5,7 @@ import SlugifyString from '@/app/utils/slugify-string.js'
 import HeroSmall from '@/app/ui/project/modules/HeroSmall'
 import AfterArchive from '@/app/ui/project/modules/blog/AfterArchive'
 import Header from '@/app/ui/project/modules/Header'
+import { headerTitle } from '@/app/content/BodyContent'
 
 function resolveTagFromSlug(tagSlug) {
 	const tags = getTags()
@@ -39,17 +40,21 @@ export default async function TagArchivePage({ params }) {
 	const tagTitle = resolveTagFromSlug(tag)
 	const posts = getPosts(tag)
 	const headerLinks = [{
-		'text': 'Homepage',
-		'target': '/',
-		'arrowDirection': 'reverse',
-	}, {
 		'text': 'Showcase and Thoughts',
 		'target': '/thoughts',
+		'arrowDirection': 'reverse',
+	}, {
+		'text': 'Homepage',
+		'target': '/',
 		'arrowDirection': false,
 	}]
 	return (
 		<>
-			<Header navLinks={headerLinks} />
+			<Header
+				headerTitle={headerTitle}
+				headingLevel={2}
+				navLinks={headerLinks}
+			/>
 			<main className="main">
 				<HeroSmall title={`Posts tagged with: ${tagTitle}`} />
 				<div>
