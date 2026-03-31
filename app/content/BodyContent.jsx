@@ -190,11 +190,11 @@ export const SkillsContent = {
 					Through my process of web design and development, I meet the
 					functional needs of the product, while keeping in mind accessibility
 					and adding some visual and interactive flourish — Which I call{' '}
-					<a href="/thoughts/2026-03-16">The Subtle Art of Making things POP</a>
+					<Link href="/thoughts/2026-03-16">The Subtle Art of Making things POP</Link>
 					.
 				</p>
 				<p>
-					I'm comfortable working with content management systems and modern
+					I&apos;m comfortable working with content management systems and modern
 					JavaScript frameworks, picking up new tools as the project demands. My
 					depth is in bridging accessible design and technical implementation.
 				</p>
@@ -458,7 +458,7 @@ export const WhatNextContent = {
 				</p>
 				<p>
 					If you want to chat, please{' '}
-					<a href="mailto:barry@br-web.me">drop me an email!</a>
+					<Link href="mailto:barry@br-web.me">drop me an email!</Link>
 				</p>
 			</>
 		)
