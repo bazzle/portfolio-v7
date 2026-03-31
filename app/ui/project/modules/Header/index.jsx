@@ -1,32 +1,20 @@
 'use client'
 
-import { NameTitle, sectionLinksHome } from '@/app/content/BodyContent'
-import FloatingNav from '@/app/ui/project/components/FloatingNav'
-import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import styles from './Header.module.scss'
 import Icons from '@/app/ui/project/misc/Icons'
-import HeaderTitle from './HeaderTitle'
 import { useTheme } from 'next-themes'
 
-function Header({ navLinks }) {
+function Header({ headerTitle, headingLevel, navLinks }) {
 	const { resolvedTheme, setTheme } = useTheme()
 
 	const arrowOutput = (direction) => {
-		console.log('ok')
 		if (direction === 'reverse'){
 			return (
 				<span className={styles.arrow____reverse}>{Icons.arrow}</span>
 			)
-		} else if (direction === 'forward'){
-			return (
-				<span className={styles.arrow}>{Icons.arrow}</span>
-			)
-		}
-		else {
-			return (
-				<span className={styles.arrow}>{Icons.arrow}</span>
-			)
+		} else {
+			<span className={styles.arrow}>{Icons.arrow}</span>
 		}
 	}
 
@@ -41,10 +29,18 @@ function Header({ navLinks }) {
 		)
 	}
 
+	const h1Heading = <h1 className={styles.header__sitename}>{headerTitle}</h1>
+	const h2Heading = <h2 className={styles.header__sitename}>{headerTitle}</h2>
+
+	const headingOutput = () => {
+		(headingLevel && headingLevel === 1) ? h1Heading : h2Heading
+	}
+
 	return (
 		<header className={styles.header}>
 			<div className="container____toEdgesMobile">
 				<div className={styles.header__inner}>
+					{headingOutput()}
 					{navLinks && (
 						<nav className={styles.header__nav}>
 							{navLinks.map((item, index) => linkOutput(item, index))}

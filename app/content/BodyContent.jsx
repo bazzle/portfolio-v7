@@ -5,7 +5,7 @@ import HorizontalList from '@/app/ui/project/components/HorizontalList'
 import Link from 'next/link'
 import CurrentStatus from '@/app/ui/project/components/CurrentStatus'
 
-export const NameTitle = {
+export const nameTitle = {
 	name: 'Barry Richards',
 	title: 'Design Engineer',
 }
