@@ -10,6 +10,7 @@ import { metadata } from './layout'
 import ContactLinks from '@/app/ui/project/components/ContactLinks'
 import CallToAction from '@/app/ui/project/components/CallToAction'
 import { headerTitle, sectionLinksHome } from '@/app/content/BodyContent'
+import FloatingNav from '@/app/ui/project/components/FloatingNav'
 
 // content import
 import {
@@ -37,6 +38,9 @@ function Home() {
 				headingLevel={1}
 				navLinks={headerLinks}
 			/>
+
+			<FloatingNav sectionLinks={sectionLinksHome} />
+
 			<main className="main">
 				<Hero />
 

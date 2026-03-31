@@ -13,16 +13,6 @@ function FloatingNav({ sectionLinks }) {
 		})
 	}
 
-	if (!sectionLinks) {
-		return (
-			<div className={styles.floatingNav}>
-				<button aria-label="Back to top" className={styles['floatingNav__backTop']} onClick={handleClick}>
-					{Icons.chevron}
-				</button>
-			</div>
-		)
-	}
-
 	const navClass = styles['floatingNav__nav']
 
 	const motionSettings = {
@@ -37,6 +27,7 @@ function FloatingNav({ sectionLinks }) {
 	}
 
 	useEffect(() => {
+		if (!sectionLinks) return
 		const activeIntersections = new Map()
 
 		const getLink = (id) => {
@@ -92,7 +83,17 @@ function FloatingNav({ sectionLinks }) {
 			menuElements.forEach((el) => observer.unobserve(el))
 			observer.disconnect()
 		}
-	}, [navClass])
+	}, [navClass, sectionLinks])
+
+	if (!sectionLinks) {
+		return (
+			<div className={styles.floatingNav}>
+				<button aria-label="Back to top" className={styles['floatingNav__backTop']} onClick={handleClick}>
+					{Icons.chevron}
+				</button>
+			</div>
+		)
+	}
 
 	return (
 		<>

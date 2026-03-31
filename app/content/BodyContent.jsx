@@ -17,18 +17,13 @@ export const headerTitle = (
 	</>
 )
 
-class SectionLink {
-	constructor(name, id) {
-		;((this.name = name), (this.id = id))
-	}
-}
 export const sectionLinksHome = [
-	new SectionLink('Who am I', 'who-am-i'),
-	new SectionLink('What am I', 'what-am-i'),
-	new SectionLink('Showcase and thoughts', 'showcase-thought-pieces'),
-	new SectionLink('Things I think about', 'things-i-think-about'),
-	new SectionLink('Work history', 'work-history'),
-	new SectionLink('Get in Touch', 'get-in-touch'),
+	{ name: 'Who am I', id: 'who-am-i' },
+	{ name: 'What am I', id: 'what-am-i' },
+	{ name: 'Showcase and thoughts', id: 'showcase-thought-pieces' },
+	{ name: 'Things I think about', id: 'things-i-think-about' },
+	{ name: 'Work history', id: 'work-history' },
+	{ name: 'Get in Touch', id: 'get-in-touch' },
 ]
 
 export const CurrentStatusContent = {
