@@ -5,7 +5,7 @@ import matter from 'gray-matter'
 import HeroArticle from '@/app/ui/project/modules/HeroArticle'
 import ArticleMain from '@/app/ui/project/modules/blog/Article/ArticleMain'
 import AfterArticle from '@/app/ui/project/modules/blog/Article/AfterArticle'
-import Header from '@/app/ui/project/modules/Header'
+import Header from '@/app/ui/style-library/components/Header'
 import { headerTitle } from '@/app/content/BodyContent'
 
 function getPostContent(slug) {

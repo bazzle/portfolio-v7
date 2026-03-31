@@ -1,6 +1,6 @@
 import IndexItem from '@/app/ui/project/modules/blog/IndexItem'
 import getPostMetadata from '@/app/utils/get-post-metadata'
-import Header from '@/app/ui/project/modules/Header'
+import Header from '@/app/ui/style-library/components/Header'
 import HeroSmall from '@/app/ui/project/modules/HeroSmall'
 import { headerTitle } from '@/app/content/BodyContent'
 
