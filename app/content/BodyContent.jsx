@@ -1,5 +1,5 @@
 import ListItem from '@/app/ui/project/components/ListItem'
-import IconThemes from '@/app/ui/project/misc/Icons/IconThemes'
+import IconThemes from '@/app/ui/style-library/misc/Icons/IconThemes'
 import NostrCopy from '@/app/ui/project/components/NostrCopy'
 import HorizontalList from '@/app/ui/project/components/HorizontalList'
 import Link from 'next/link'

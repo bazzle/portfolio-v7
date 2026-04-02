@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import styles from './ContactLinks.module.scss'
-import Icons from '@/app/ui/project/misc/Icons'
+import Icons from '@/app/ui/style-library/misc/Icons'
 
 export default function CopyEmail({ text }) {
 	const emailAddress = 'barry@br-web.me'
