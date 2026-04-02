@@ -1,6 +1,6 @@
 import '@/app/assets/styles/main.scss'
 import Footer from '@/app/ui/project/modules/Footer'
-import AppThemeProvider from '@/app/context/ThemeProvider'
+import AppThemeProvider from '@/app/ui/style-library/context/ThemeProvider'
 
 export const metadata = {
 	title: 'Barry Richards Design Engineer',
