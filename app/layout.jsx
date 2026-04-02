@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" data-scroll-behaviour="smooth" suppressHydrationWarning>
+		<html lang="en" suppressHydrationWarning>
 			<head>
 				<link
 					rel="preconnect"
