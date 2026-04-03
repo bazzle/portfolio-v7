@@ -8,9 +8,10 @@ import StdContentTemplate from './ui/project/modules/StdContentTemplate'
 import Header from '@/app/ui/style-library/components/Header'
 import { metadata } from './layout'
 import ContactLinks from '@/app/ui/project/components/ContactLinks'
-import CallToAction from '@/app/ui/style-library/components/CallToAction'
+import Buttons from '@/app/ui/style-library/components/Buttons'
 import { headerTitle, sectionLinksHome } from '@/app/content/BodyContent'
 import FloatingNav from '@/app/ui/project/components/FloatingNav'
+import Icons from '@/style-library/misc/Icons'
 
 // content import
 import {
@@ -66,13 +67,13 @@ function Home() {
 					cards={HomepageCards.cards}
 					line
 				>
-					<CallToAction
+					<Buttons
 						buttons={[
 							{ link: 'thoughts/tag/showcase', linkText: 'View all Showcase' },
 							{ link: 'thoughts/tag/thoughts', linkText: 'View all Thoughts' },
 						]}
 					/>
-					<CallToAction />
+					<Buttons />
 				</CardGrid>
 
 				<TextStandout
