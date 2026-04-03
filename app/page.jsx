@@ -8,7 +8,7 @@ import StdContentTemplate from './ui/project/modules/StdContentTemplate'
 import Header from '@/app/ui/style-library/components/Header'
 import { metadata } from './layout'
 import ContactLinks from '@/app/ui/project/components/ContactLinks'
-import CallToAction from '@/app/ui/project/components/CallToAction'
+import CallToAction from '@/app/ui/style-library/components/CallToAction'
 import { headerTitle, sectionLinksHome } from '@/app/content/BodyContent'
 import FloatingNav from '@/app/ui/project/components/FloatingNav'
 

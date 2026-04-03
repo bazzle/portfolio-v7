@@ -2,7 +2,7 @@
 import styles from './CardGrid.module.scss'
 import Section from '@/app/ui/project/components/Section'
 import Card from '@/style-library/components/Card'
-import CallToAction from '@/app/ui/project/components/CallToAction'
+import CallToAction from '@/app/ui/style-library/components/CallToAction'
 
 export default function CardGrid({
 	line,
