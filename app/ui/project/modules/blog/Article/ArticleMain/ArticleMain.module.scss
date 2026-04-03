@@ -3,6 +3,7 @@
 .articleMain {
 	display: block;
 	margin-top: var(--block-spacing);
+	margin-bottom: var(--block-spacing--shallow);
 	&__body {
 		@include vars.text-editorial;
 		figure {

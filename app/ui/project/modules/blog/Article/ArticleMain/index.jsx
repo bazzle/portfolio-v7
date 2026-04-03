@@ -4,9 +4,11 @@ import styles from './ArticleMain.module.scss'
 import PostImage from '../PostImage'
 import BrowserFrame from '@/app/ui/project/components/BrowserFrame'
 import ShowcaseViewer from '@/app/ui/project/components/ShowcaseViewer'
+import Buttons from '@/app/ui/style-library/components/Buttons'
+import Icons from '@/app/ui/style-library/misc/Icons'
 
 function ArticleMain({ bodyContent }) {
-	const elems = { Link, PostImage, BrowserFrame, ShowcaseViewer }
+	const elems = { Link, PostImage, BrowserFrame, ShowcaseViewer, Buttons, Icons }
 	return (
 		<div className={styles.articleMain}>
 			<div className="content-container">
