@@ -152,10 +152,10 @@ export const HomepageCards = {
 			link: '/thoughts/2026-01-03',
 		},
 		{
-			title: 'My relationship with AI',
+			title: 'MegaTabs',
 			description:
-				'I\'ve been cautious about AI, I\'ve had a strong desire to embrace it to improve my productivity and help my learning but formed some boundaries.',
-			link: '/thoughts/2025-06-01',
+				'Reimagining how browser tabs work',
+			link: '/thoughts/2026-04-03',
 		},
 	],
 }
