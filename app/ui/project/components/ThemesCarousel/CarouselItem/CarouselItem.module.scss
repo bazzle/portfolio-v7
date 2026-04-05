@@ -5,6 +5,8 @@
 		height: 10rem;
 		margin-bottom: var(--block-spacing--shallow);
 		width: auto;
+		display: flex;
+		justify-content: flex-end;
 		svg {
 			height: 100%;
 			width: auto;
@@ -23,6 +25,7 @@
 		margin-bottom: var(--block-spacing--text);
 		height: auto;
 		min-height: 4lh;
+		max-width: 50rem;
 		p {
 			margin-bottom: 0;
 		}
