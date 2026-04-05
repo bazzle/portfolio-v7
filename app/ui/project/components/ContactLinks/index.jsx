@@ -23,6 +23,12 @@ export default function ContactLinks() {
 					<span>LinkedIn</span>
 				</a>
 			</li>
+			<li className={styles.contactLinks__item}>
+				<a href="https://github.com/bazzle/">
+					{Icons.github}
+					<span>GitHub</span>
+				</a>
+			</li>
 			<li className={styles.contactLinks__item____fullWidth}>
 				<CopyEmail text="Email (copy address to clipboard)" />
 			</li>
