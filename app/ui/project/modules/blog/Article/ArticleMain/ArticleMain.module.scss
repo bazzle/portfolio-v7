@@ -16,5 +16,8 @@
 			top: calc(-4 * var(--block-spacing--text));
 			margin-bottom: 0;
 		}
+		a:global(.button){
+			margin-bottom: 2rem;
+		}
 	}
 }
