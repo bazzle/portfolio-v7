@@ -9,7 +9,7 @@
 		gap: 0.4em;
 		align-items: center;
 		display: inline-flex;
-		@include vars.text-link-defaults;
+		@include vars.text-link;
 		svg {
 			width: 10px;
 		}
