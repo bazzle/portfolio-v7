@@ -5,11 +5,9 @@
 	align-items: flex-start;
 	text-align: left;
 	gap: 2rem;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	@include vars.break(tablet){
-		justify-content: center;
-	}
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 	@mixin itemDefaults {
 		list-style: none;
