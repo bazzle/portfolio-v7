@@ -4,7 +4,7 @@
     "allow": [
       "Read",
       "Glob",
-      "Grep",
+      "Grep"
     ]
   }
 }
