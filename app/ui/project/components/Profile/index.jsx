@@ -13,7 +13,7 @@ function Profile() {
 
 	const src = mounted && resolvedTheme === 'dark'
 		? '/images/profile-alt-exp.png'
-		: '/images/profile-alt-exp-inv.png'
+		: '/images/profile.png'
 
 	return (
 		<div className={styles.profile}>

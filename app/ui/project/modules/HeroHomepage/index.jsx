@@ -39,7 +39,11 @@ function HeroHomepage() {
 							>
 								... But still{' '}
 								<span className={styles['pop']}>
-									POP <EmojiSwap initial="🎈" after="💥" delay={3000} />
+									<motion.span
+										initial={{ opacity: 0 }}
+										animate={{ opacity: 1 }}
+										transition={{ duration: 0.6, delay: 3 }}
+									>POP</motion.span> <EmojiSwap initial="🎈" after="💥" delay={3000} />
 								</span>
 							</motion.span>
 						</p>
