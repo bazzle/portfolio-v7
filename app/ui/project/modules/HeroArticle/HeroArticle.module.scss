@@ -30,6 +30,10 @@
 		@include vars.text-display-medium;
 		display: block;
 		color: var(--color-accent-alt);
+		text-shadow: 0 1px 1px white;
+		@include vars.light-mode-wrapper{
+			text-shadow: 0 2px 2px white;
+		}
 	}
 	&__metadata {
 		display: block;
