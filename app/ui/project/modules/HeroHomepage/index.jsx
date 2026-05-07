@@ -3,6 +3,7 @@ import BgShapes from '@/app/ui/project/components/BgShapes'
 import Spacer from '@/app/ui/project/components/Spacer'
 import Profile from '@/app/ui/project/components/Profile'
 import EmojiSwap from '@/app/ui/project/components/EmojiSwap'
+import MessageHighlight from './MessageHighlight'
 import Link from 'next/link'
 import styles from './HeroHomepage.module.scss'
 
@@ -15,7 +16,7 @@ function HeroHomepage() {
 						<p className={styles['hero__mainSection__message']}>
 							<span className={styles['hero__mainSection__message__sub']}>My philosophy is</span>
 							<span className={styles['hero__mainSection__message__main']}>
-								Web for <span className={styles.messageHighlight}> Everyone</span>
+								Web for <MessageHighlight> Everyone</MessageHighlight>
 							</span>
 							<span className={styles['hero__mainSection__message__sub']}>
 								... But still{' '}
