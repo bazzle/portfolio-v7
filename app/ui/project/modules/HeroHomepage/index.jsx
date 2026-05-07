@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from 'motion/react'
 import Clients from './Clients'
 import BgShapes from '@/app/ui/project/components/BgShapes'
 import Spacer from '@/app/ui/project/components/Spacer'
@@ -14,16 +17,31 @@ function HeroHomepage() {
 				<div className="container container--vertical-fill">
 					<div className={styles['hero__mainSection__inner']}>
 						<p className={styles['hero__mainSection__message']}>
-							<span className={styles['hero__mainSection__message__sub']}>My philosophy is</span>
-							<span className={styles['hero__mainSection__message__main']}>
+							<motion.span
+								className={styles['hero__mainSection__message__sub']}
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ duration: 0.6, delay: 0.5 }}
+							>My philosophy is</motion.span>
+							<motion.span
+								className={styles['hero__mainSection__message__main']}
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ duration: 0.6, delay: 1.2 }}
+							>
 								Web for <MessageHighlight> Everyone</MessageHighlight>
-							</span>
-							<span className={styles['hero__mainSection__message__sub']}>
+							</motion.span>
+							<motion.span
+								className={styles['hero__mainSection__message__sub']}
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ duration: 0.6, delay: 1.9 }}
+							>
 								... But still{' '}
 								<span className={styles['pop']}>
-									POP <EmojiSwap initial="🎈" after="💥" delay={1000} />
+									POP <EmojiSwap initial="🎈" after="💥" delay={3000} />
 								</span>
-							</span>
+							</motion.span>
 						</p>
 					</div>
 				</div>
