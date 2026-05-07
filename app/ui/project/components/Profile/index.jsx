@@ -3,8 +3,18 @@
 import Image from 'next/image'
 import { motion } from 'motion/react'
 import styles from './Profile.module.scss'
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
 
 function Profile() {
+	const { resolvedTheme } = useTheme()
+	const [mounted, setMounted] = useState(false)
+	useEffect(() => setMounted(true), [])
+
+	const src = mounted && resolvedTheme === 'dark'
+		? '/images/profile-alt-exp.png'
+		: '/images/profile-alt-exp-inv.png'
+
 	return (
 		<div className={styles.profile}>
 			<motion.div
@@ -23,7 +33,7 @@ function Profile() {
 				<Image
 					width="200"
 					height="200"
-					src="/images/profile.png"
+					src={src}
 					alt="Profile image"
 				/>
 			</motion.div>
