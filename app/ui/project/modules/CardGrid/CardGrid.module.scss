@@ -3,58 +3,8 @@
 .cardGrid {
 	$gridGap: clamp(1rem, 5vw, 10rem);
 	$gridGapHalf: clamp(0.5rem, 2.5vw, 5rem);
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	flex-direction: column;
-	gap: 2rem;
-	padding-left: var(--gutter-padding);
-	padding-right: var(--gutter-padding);
-	@include vars.break(tablet) {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem $gridGapHalf;
-	}
-	@include vars.break(desktop-mini) {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
 	&__item {
 		position: relative;
-		&::before {
-			content: '';
-			background-color: var(--color-accent-50);
-			display: block;
-			position: absolute;
-			width: 1px;
-			height: 2rem;
-			bottom: -2rem;
-			right: 50%;
-			@include vars.break(tablet) {
-				width: $gridGapHalf;
-				height: 1px;
-				top: 50%;
-				right: 0;
-				transform: translate(100%);
-			}
-		}
-		&:last-child {
-			&::before {
-				display: none;
-			}
-		}
-		&:nth-of-type(2n) {
-			@include vars.break-between(tablet, desktop-mini) {
-				&::before {
-					display: none;
-				}
-			}
-		}
-		&:nth-of-type(3n) {
-			@include vars.break(desktop-mini) {
-				&::before {
-					display: none;
-				}
-			}
-		}
+		width: 100%;
 	}
 }
