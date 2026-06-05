@@ -19,11 +19,8 @@ export const headerTitle = (
 
 export const sectionLinksHome = [
 	{ name: 'Who am I', id: 'who-am-i' },
-	{ name: 'What am I', id: 'what-am-i' },
-	{ name: 'Showcase and thoughts', id: 'showcase-thought-pieces' },
-	{ name: 'Things I think about', id: 'things-i-think-about' },
-	{ name: 'Work history', id: 'work-history' },
-	{ name: 'Get in Touch', id: 'get-in-touch' },
+	{ name: 'Work History', id: 'work-history' },
+	{ name: 'Skills and expertise', id: 'what-am-i' },
 ]
 
 export const CurrentStatusContent = {

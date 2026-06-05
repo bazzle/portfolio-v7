@@ -51,7 +51,10 @@ function Home() {
 					title={WelcomeContent.title}
 					bodyContent={WelcomeContent.bodyContent()}
 					id="who-am-i"
+					deepMbLine
 				/>
+
+				<WorkHistory id="work-history" />
 
 				<TextStandout
 					content={TextStandout1.content}
@@ -61,7 +64,15 @@ function Home() {
 					deepMbLine
 				/>
 
-				<SkillsAndAbilities id="skills-and-expertise" />
+				<SkillsAndAbilities id="skills-and-expertise" deepMbLine />
+
+				<TextStandout
+					id="things-i-think-about"
+					textPrefix={TextStandout2.prefix}
+					content={TextStandout2.content}
+				/>
+
+				<Themes id="themes" />
 
 				<CardGrid
 					id="showcase-thought-pieces"
@@ -78,26 +89,10 @@ function Home() {
 					<Buttons />
 				</CardGrid>
 
-				<TextStandout
-					id="things-i-think-about"
-					textPrefix={TextStandout2.prefix}
-					content={TextStandout2.content}
-					line
-				/>
-
-				<Themes id="themes" />
-
-				<WorkHistory id="work-history" line />
-
-				<StdContentTemplate
-					id="whats-next"
-					title={WhatNextContent.title}
-					bodyContent={WhatNextContent.bodyContent()}
-				/>
-
 				<TextStandout id="get-in-touch" content={TextStandout3.content} line>
 					<ContactLinks />
 				</TextStandout>
+
 			</main>
 		</>
 	)
