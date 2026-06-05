@@ -140,13 +140,9 @@ function WorkSamples({ id }) {
 
 	return (
 		<Section
-			heading={WorkSamplesContent.title}
 			moduleClassname={styles.workSamples}
 			layout="toEdges"
 			{...optionalId}
-			headingTop
-			line
-			deepMbLine
 		>
 			<div ref={ref}>
 				<div className={styles.workSamples}>

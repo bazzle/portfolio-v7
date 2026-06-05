@@ -11,6 +11,7 @@ import ContactLinks from '@/app/ui/project/components/ContactLinks'
 import Buttons from '@/app/ui/style-library/components/Buttons'
 import { headerTitle, sectionLinksHome } from '@/app/content/BodyContent'
 import FloatingNav from '@/app/ui/project/components/FloatingNav'
+import WorkSamples from '@/app/ui/project/modules/WorkSamples'
 import Icons from '@/style-library/misc/Icons'
 
 // content import
@@ -44,6 +45,7 @@ function Home() {
 
 			<main className="main">
 				<Hero />
+				<WorkSamples />
 
 				<StdContentTemplate
 					title={WelcomeContent.title}
