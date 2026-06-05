@@ -1,9 +1,10 @@
 import propTypes from 'prop-types'
+import Link from 'next/link'
 import styles from './WorkSamples.module.scss'
 
-function BrowserDesktop({ src, alt }) {
-	return (
-		<div className={styles.browserDesktop}>
+function BrowserDesktop({ src, alt, slug }) {
+	const inner = (
+		<>
 			<div className={styles.browserOverlay}></div>
 			<svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect width="400" height="280" rx="3" className="fill-bg" />
@@ -42,13 +43,22 @@ function BrowserDesktop({ src, alt }) {
 					y="30"
 				/>
 			</svg>
-		</div>
+		</>
+	)
+
+	return slug ? (
+		<Link href={`/thoughts/${slug}`} className={styles.browserDesktop}>
+			{inner}
+		</Link>
+	) : (
+		<div className={styles.browserDesktop}>{inner}</div>
 	)
 }
 
 BrowserDesktop.propTypes = {
 	src: propTypes.string.isRequired,
 	alt: propTypes.string.isRequired,
+	slug: propTypes.string,
 }
 
 export default BrowserDesktop

@@ -1,9 +1,10 @@
 import propTypes from 'prop-types'
+import Link from 'next/link'
 import styles from './WorkSamples.module.scss'
 
-function BrowserMobile({ src, alt }) {
-	return (
-		<div className={styles.browserMobile}>
+function BrowserMobile({ src, alt, slug }) {
+	const inner = (
+		<>
 			<div className={styles.browserOverlay}></div>
 			<svg viewBox="0 0 142 280" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect width="142" height="280" rx="3" className="fill-bg" />
@@ -40,13 +41,22 @@ function BrowserMobile({ src, alt }) {
 					y="10"
 				/>
 			</svg>
-		</div>
+		</>
+	)
+
+	return slug ? (
+		<Link href={`/thoughts/${slug}`} className={styles.browserMobile}>
+			{inner}
+		</Link>
+	) : (
+		<div className={styles.browserMobile}>{inner}</div>
 	)
 }
 
 BrowserMobile.propTypes = {
 	src: propTypes.string.isRequired,
 	alt: propTypes.string.isRequired,
+	slug: propTypes.string,
 }
 
 export default BrowserMobile
