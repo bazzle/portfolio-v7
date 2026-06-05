@@ -22,8 +22,8 @@
 	&__inner {
 		z-index: 1;
 		position: relative;
-		padding-top: clamp(6rem, 8vw, 10rem);
-		padding-bottom: clamp(6rem, 8vw, 10rem);
+		padding-top: clamp(8rem, 10vw, 12rem);
+		padding-bottom: clamp(8rem, 10vw, 12rem);
 		@include vars.break(tablet) {
 			height: 100%;
 			width: 100%;
@@ -52,7 +52,7 @@
 			padding-bottom: var(--block-spacing--shallow);
 		}
 		&__main {
-			@include vars.text-display-large;
+			@include vars.text-display;
 			display: block;
 			padding-top: 0.1em;
 			padding-bottom: 0.3em;
