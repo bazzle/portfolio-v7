@@ -4,6 +4,7 @@ import styles from './WorkSamples.module.scss'
 function BrowserDesktop({ src, alt }) {
 	return (
 		<div className={styles.browserDesktop}>
+			<div className={styles.browserOverlay}></div>
 			<svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect width="400" height="280" rx="3" className="fill-bg" />
 				<circle cx="10" cy="13.5" r="4" fill="#FFAAAA" />
