@@ -184,7 +184,6 @@ function WorkSamples({ id }) {
 		<Section
 			moduleClassname={styles.workSamples}
 			layout="toEdges"
-			{...optionalId}
 		>
 			<div ref={ref}>
 				<div className={styles.workSamples}>

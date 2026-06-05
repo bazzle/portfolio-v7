@@ -4,6 +4,8 @@ $gap: clamp(0.8rem, 2vw, 1.2rem);
 
 .workSamples {
 	position: relative;
+	border-top: .5px solid var(--color-accent-20);
+	border-bottom: .5px solid var(--color-accent-20);
 	@media print {
 		display: none;
 	}
