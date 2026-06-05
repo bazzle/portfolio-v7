@@ -60,7 +60,7 @@ function HeroHomepage() {
 						<div className={styles['hero__footSection__intro']}>
 							<div className={styles['hero__footSection__intro__main']}>
 								<p>
-									<strong>Hello! I design and build inclusive digital experiences</strong> Read on to learn more,{' '}
+									<strong>Hello! I design and build inclusive digital experiences</strong> — Read on to learn more,{' '}
 									<a href="./files/cv.pdf" target="_blank" rel="noopener noreferrer">
 										download my CV
 									</a>{' '}
