@@ -1,10 +1,7 @@
 import Hero from '@/app/ui/project/modules/HeroHomepage'
-import SkillsAndAbilities from '@/app/ui/project/modules/SkillsAndAbilities'
 import WorkHistory from '@/app/ui/project/modules/WorkHistory'
-import Themes from '@/app/ui/project/modules/Themes'
 import TextStandout from '@/app/ui/project/modules/TextStandout'
 import CardGrid from '@/app/ui/project/modules/CardGrid'
-import StdContentTemplate from './ui/project/modules/StdContentTemplate'
 import Header from '@/app/ui/style-library/components/Header'
 import { metadata } from './layout'
 import ContactLinks from '@/app/ui/project/components/ContactLinks'
@@ -15,16 +12,21 @@ import WorkSamples from '@/app/ui/project/modules/WorkSamples'
 import Icons from '@/style-library/misc/Icons'
 
 // content import
-import { home, WhoAmI } from '@/app/content/home'
+import { home } from '@/app/content/home'
 
 function Home() {
 	const title = metadata.title
 	const description = metadata.description
-	const headerLinks = [{
-		'text': 'Showcase and thoughts',
-		'target': '/thoughts',
-		'arrowDirection': 'forward',
-	}]
+	const headerLinks = [
+		{
+			'text': 'About me',
+			'target': '/about-me',
+		},
+		{
+			'text': 'Showcase and thoughts',
+			'target': '/thoughts',
+		},
+	]
 
 	return (
 		<>
@@ -40,32 +42,7 @@ function Home() {
 				<Hero />
 				<WorkSamples />
 
-				<StdContentTemplate
-					title={home.welcome.title}
-					bodyContent={<WhoAmI />}
-					id="who-am-i"
-					deepMbLine
-				/>
-
 				<WorkHistory id="work-history" />
-
-				<TextStandout
-					content={home.standouts.whereISit.content}
-					textPrefix={home.standouts.whereISit.prefix}
-					id="what-am-i"
-					line
-					deepMbLine
-				/>
-
-				<SkillsAndAbilities id="skills-and-expertise" deepMbLine />
-
-				<TextStandout
-					id="things-i-think-about"
-					textPrefix={home.standouts.thingsIThinkAbout.prefix}
-					content={home.standouts.thingsIThinkAbout.content}
-				/>
-
-				<Themes id="themes" />
 
 				<CardGrid
 					id="showcase-thought-pieces"

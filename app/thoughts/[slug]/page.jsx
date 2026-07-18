@@ -49,15 +49,18 @@ export default async function postPage({ params }) {
 	const bodyContent = post.content
 	const postTags = post.data.tags
 
-	const headerLinks = [{
-		'text': 'Showcase and Thoughts',
-		'target': '/thoughts',
-		'arrowDirection': 'reverse',
-	}, {
-		'text': 'Homepage',
-		'target': '/',
-		'arrowDirection': false,
-	}]
+	const headerLinks = [
+		{
+			'text': 'Showcase and Thoughts',
+			'target': '/thoughts',
+			'arrowDirection': 'reverse',
+		}
+		, {
+			'text': 'About me',
+			'target': '/about-me',
+			'arrowDirection': false,
+		},
+	]
 
 	return (
 		<>

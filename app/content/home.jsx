@@ -5,9 +5,7 @@ import IconThemes from '@/app/ui/style-library/misc/Icons/IconThemes'
 
 export const home = {
 	sectionLinks: [
-		{ name: 'Who am I', id: 'who-am-i' },
 		{ name: 'Work History', id: 'work-history' },
-		{ name: 'Skills and Expertise', id: 'what-am-i' },
 		{ name: 'Get in Touch', id: 'get-in-touch' },
 	],
 
@@ -233,6 +231,11 @@ export const home = {
 		title: 'What\'s next?',
 	},
 }
+
+export const aboutSectionLinks = [
+	{ name: 'Who am I', id: 'who-am-i' },
+	{ name: 'Skills and Expertise', id: 'what-am-i' },
+]
 
 export const themeIcons = {
 	door: IconThemes.IconDoor,

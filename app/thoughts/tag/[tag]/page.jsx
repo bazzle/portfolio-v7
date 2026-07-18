@@ -39,15 +39,17 @@ export default async function TagArchivePage({ params }) {
 	const { tag } = await params
 	const tagTitle = resolveTagFromSlug(tag)
 	const posts = getPosts(tag)
-	const headerLinks = [{
-		'text': 'Showcase and Thoughts',
-		'target': '/thoughts',
-		'arrowDirection': 'reverse',
-	}, {
-		'text': 'Homepage',
-		'target': '/',
-		'arrowDirection': false,
-	}]
+	const headerLinks = [
+		{
+			'text': 'Showcase and thoughts',
+			'target': '/thoughts',
+			'arrowDirection': 'reverse',
+		},
+		{
+			'text': 'About me',
+			'target': '/about-me',
+		},
+	]
 	return (
 		<>
 			<Header

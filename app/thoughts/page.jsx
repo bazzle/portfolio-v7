@@ -6,11 +6,13 @@ import { headerTitle } from '@/app/content/site'
 
 export default function Home() {
 	const postMetaData = getPostMetadata('posts')
-	const headerLinks = [{
-		'text': 'Homepage',
-		'target': '/',
-		'arrowDirection': 'reverse',
-	}]
+	const headerLinks = [
+		{
+			'text': 'About me',
+			'target': '/about-me',
+			'arrowDirection': false,
+		},
+	]
 	return (
 		<>
 			<Header
