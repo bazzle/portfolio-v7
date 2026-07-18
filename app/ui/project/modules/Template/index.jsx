@@ -1,19 +1,16 @@
-import { WelcomeContent } from '@/app/content/BodyContent'
+import { home, WhoAmI } from '@/app/content/home'
 import Section from '@/app/ui/project/components/Section'
 import textStandoutStyles from '../TextStandout/TextStandout.module.scss'
 
 function Welcome() {
-	const title = WelcomeContent.title
-	const content = WelcomeContent.bodyContent()
-
 	return (
 		<Section
-			heading={WelcomeContent.title}
+			heading={home.welcome.title}
 			layout="2col"
 			moduleClassname={textStandoutStyles.textStandout}
 			noMinHeight
 		>
-			{content}
+			<WhoAmI />
 		</Section>
 	)
 }

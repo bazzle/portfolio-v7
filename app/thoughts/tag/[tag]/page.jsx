@@ -5,7 +5,7 @@ import SlugifyString from '@/app/utils/slugify-string.js'
 import HeroSmall from '@/app/ui/project/modules/HeroSmall'
 import AfterArchive from '@/app/ui/project/modules/blog/AfterArchive'
 import Header from '@/app/ui/style-library/components/Header'
-import { headerTitle } from '@/app/content/BodyContent'
+import { headerTitle } from '@/app/content/site'
 
 function resolveTagFromSlug(tagSlug) {
 	const tags = getTags()

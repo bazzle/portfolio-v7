@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
-import { SkillsContent } from '@/app/content/BodyContent'
+import { home } from '@/app/content/home'
 
 function LoopActions() {
-	const actions = SkillsContent.skillsActions
+	const actions = home.skills.actions
 	const [currentIndex, setCurrentIndex] = useState(0)
 
 	useEffect(() => {

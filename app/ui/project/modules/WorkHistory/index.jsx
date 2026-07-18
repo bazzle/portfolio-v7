@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Section from '@/app/ui/project/components/Section'
 import ContentSheet from './ContentSheet'
-import { WorkHistoryContent } from '@/app/content/BodyContent'
+import { home } from '@/app/content/home'
 import styles from './WorkHistory.module.scss'
 
 function WorkHistory({ id, line }) {
@@ -12,8 +12,8 @@ function WorkHistory({ id, line }) {
 	}
 
 	const mediaQuery = '(min-width: 1340px)'
-	const title = WorkHistoryContent.title
-	const sectionsArray = WorkHistoryContent.workHistoryItems
+	const title = home.workHistory.title
+	const sectionsArray = home.workHistory.items
 
 	const [activeSection, setActiveSection] = useState(sectionsArray[0])
 

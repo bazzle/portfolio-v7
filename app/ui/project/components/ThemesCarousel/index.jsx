@@ -2,13 +2,13 @@
 import { Carousel } from '@ark-ui/react/carousel'
 import Icons from '@/app/ui/style-library/misc/Icons'
 import styles from './ThemesCarousel.module.scss'
-import { ThemesContent } from '@/app/content/BodyContent'
+import { home, themeIcons } from '@/app/content/home'
 import CarouselItem from './CarouselItem'
 import { useState } from 'react'
 import ProgressIndicator from './ProgressIndicator.jsx'
 
 export default function ThemesCarousel() {
-	const { themesItems } = ThemesContent
+	const themesItems = home.themes.items
 	const totalItems = themesItems.length
 	const [currentPage, setCurrentPage] = useState(1)
 	return (
@@ -17,7 +17,9 @@ export default function ThemesCarousel() {
 				<Carousel.ItemGroup className={styles.ItemGroup}>
 					{themesItems.map((item, index) => (
 						<Carousel.Item className={styles.Item} key={index} index={index}>
-							<CarouselItem itemObj={item} />
+							<CarouselItem
+								itemObj={{ ...item, component: themeIcons[item.icon] }}
+							/>
 						</Carousel.Item>
 					))}
 				</Carousel.ItemGroup>

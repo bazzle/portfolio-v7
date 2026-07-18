@@ -3,7 +3,6 @@
 import BrowserMobile from './BrowserMobile'
 import BrowserDesktop from './BrowserDesktop'
 import Section from '@/app/ui/project/components/Section'
-import { WorkSamplesContent } from '@/app/content/BodyContent'
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'motion/react'
 import Image from 'next/image'

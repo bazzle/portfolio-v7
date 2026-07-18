@@ -9,20 +9,13 @@ import Header from '@/app/ui/style-library/components/Header'
 import { metadata } from './layout'
 import ContactLinks from '@/app/ui/project/components/ContactLinks'
 import Buttons from '@/app/ui/style-library/components/Buttons'
-import { headerTitle, sectionLinksHome } from '@/app/content/BodyContent'
+import { headerTitle } from '@/app/content/site'
 import FloatingNav from '@/app/ui/project/components/FloatingNav'
 import WorkSamples from '@/app/ui/project/modules/WorkSamples'
 import Icons from '@/style-library/misc/Icons'
 
 // content import
-import {
-	WelcomeContent,
-	WhatNextContent,
-	TextStandout1,
-	TextStandout2,
-	TextStandout3,
-	HomepageCards,
-} from '@/app/content/BodyContent'
+import { home, WhoAmI } from '@/app/content/home'
 
 function Home() {
 	const title = metadata.title
@@ -41,15 +34,15 @@ function Home() {
 				navLinks={headerLinks}
 			/>
 
-			<FloatingNav sectionLinks={sectionLinksHome} />
+			<FloatingNav sectionLinks={home.sectionLinks} />
 
 			<main className="main">
 				<Hero />
 				<WorkSamples />
 
 				<StdContentTemplate
-					title={WelcomeContent.title}
-					bodyContent={WelcomeContent.bodyContent()}
+					title={home.welcome.title}
+					bodyContent={<WhoAmI />}
 					id="who-am-i"
 					deepMbLine
 				/>
@@ -57,8 +50,8 @@ function Home() {
 				<WorkHistory id="work-history" />
 
 				<TextStandout
-					content={TextStandout1.content}
-					textPrefix={TextStandout1.prefix}
+					content={home.standouts.whereISit.content}
+					textPrefix={home.standouts.whereISit.prefix}
 					id="what-am-i"
 					line
 					deepMbLine
@@ -68,16 +61,16 @@ function Home() {
 
 				<TextStandout
 					id="things-i-think-about"
-					textPrefix={TextStandout2.prefix}
-					content={TextStandout2.content}
+					textPrefix={home.standouts.thingsIThinkAbout.prefix}
+					content={home.standouts.thingsIThinkAbout.content}
 				/>
 
 				<Themes id="themes" />
 
 				<CardGrid
 					id="showcase-thought-pieces"
-					title={HomepageCards.title}
-					cards={HomepageCards.cards}
+					title={home.cards.title}
+					cards={home.cards.items}
 					line
 				>
 					<Buttons
@@ -89,7 +82,7 @@ function Home() {
 					<Buttons />
 				</CardGrid>
 
-				<TextStandout id="get-in-touch" content={TextStandout3.content} line>
+				<TextStandout id="get-in-touch" content={home.standouts.thankyou.content} line>
 					<ContactLinks />
 				</TextStandout>
 

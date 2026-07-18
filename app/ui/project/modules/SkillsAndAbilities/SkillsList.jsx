@@ -1,8 +1,8 @@
-import { SkillsContent } from '@/app/content/BodyContent'
+import { home } from '@/app/content/home'
 import styles from './SkillsAndAbilities.module.scss'
 
 function SkillsList() {
-	const skillsItems = SkillsContent.skillsItems
+	const skillsItems = home.skills.items
 	skillsItems.sort((a, b) => b.rating - a.rating)
 
 	const ratingsAdd = (number) => {

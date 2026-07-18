@@ -1,10 +1,9 @@
-import { CurrentStatusContent } from '@/app/content/BodyContent'
+import { CurrentStatusValue } from '@/app/content/home'
 
 export default function CurrentStatus() {
 	return (
 		<p>
-			<strong>{CurrentStatusContent.label}:</strong>{' '}
-			{CurrentStatusContent.value()}
+			<strong>Currently:</strong> <CurrentStatusValue />
 		</p>
 	)
 }

@@ -1,12 +1,11 @@
 import VennDiagram from './VennDiagram'
 import SkillsList from './SkillsList'
 import Section from '@/app/ui/project/components/Section'
-import { SkillsContent } from '@/app/content/BodyContent'
+import { home, SkillsIntro } from '@/app/content/home'
 import styles from './SkillsAndAbilities.module.scss'
 
 function SkillsAndAbilities({ id, deepMbLine, line, deepMb }) {
-	const title = SkillsContent.title
-	const content = SkillsContent.bodyContent()
+	const title = home.skills.title
 	const optionalId = id ? { id } : {}
 
 	const optionalProps = {
@@ -26,7 +25,7 @@ function SkillsAndAbilities({ id, deepMbLine, line, deepMb }) {
 		>
 			<div className={styles['skillsAbilities__bodyText']}>
 				<VennDiagram />
-				{content}
+				<SkillsIntro />
 			</div>
 		</Section>
 	)

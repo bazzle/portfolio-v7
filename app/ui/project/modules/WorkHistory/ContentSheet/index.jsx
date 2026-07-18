@@ -1,4 +1,5 @@
 import ListItem from '@/app/ui/project/components/ListItem'
+import { workHistoryEntries } from '@/app/content/home'
 import styles from './ContentSheet.module.scss'
 
 function ContentSheet({ contentSheetObj, isHidden }) {
@@ -8,7 +9,7 @@ function ContentSheet({ contentSheetObj, isHidden }) {
 	const endDate = contentSheetObj.endDate
 	const clients = contentSheetObj.clients
 	const intro = contentSheetObj.intro
-	const bodyContent = contentSheetObj.content()
+	const bodyContent = workHistoryEntries[id]
 
 	const ongoingYear = (startDate) => {
 		const currentYear = new Date().getFullYear()
