@@ -57,6 +57,9 @@ $spacingunit: clamp(4rem, 8vw, 28rem);
 	&____deep-mb {
 		margin-bottom: calc($spacingunit * 2);
 	}
+	&____deep-mt {
+		margin-top: calc($spacingunit);
+	}
 	&____deep-mb-line {
 		margin-bottom: $spacingunit;
 		padding-bottom: $spacingunit;

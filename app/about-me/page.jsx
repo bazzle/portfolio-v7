@@ -35,7 +35,7 @@ function AboutMe() {
 					title={home.welcome.title}
 					bodyContent={<WhoAmI />}
 					id="who-am-i"
-					deepMbLine
+					deepMt
 				/>
 
 				<TextStandout

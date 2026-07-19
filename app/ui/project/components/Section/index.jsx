@@ -13,6 +13,7 @@ function Section({
 	noMinHeight,
 	headingHidden,
 	id,
+	deepMt,
 	deepMb,
 	deepMbLine,
 }) {
@@ -23,6 +24,7 @@ function Section({
 		noMinHeight && styles['section_____no-min-height'],
 		headingHidden && styles['section____hidden-heading'],
 		deepMb && styles['section____deep-mb'],
+		deepMt && styles['section____deep-mt'],
 		deepMbLine && styles['section____deep-mb-line'],
 		lineTop && 'section____line-top',
 	]
