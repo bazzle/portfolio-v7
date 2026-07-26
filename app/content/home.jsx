@@ -5,7 +5,9 @@ import IconThemes from '@/app/ui/style-library/misc/Icons/IconThemes'
 
 export const home = {
 	sectionLinks: [
-		{ name: 'Work History', id: 'work-history' },
+		{ name: 'My story so far', id: 'work-history' },
+		{ name: 'Showcase and Thought Pieces', id: 'showcase-thought-pieces' },
+		{ name: 'About me', id: 'who-am-i' },
 		{ name: 'Get in Touch', id: 'get-in-touch' },
 	],
 
@@ -298,7 +300,6 @@ export function WhoAmI() {
 					}
 				/>
 			</ul>
-			<CurrentStatus />
 		</>
 	)
 }

@@ -56,8 +56,8 @@ export default async function postPage({ params }) {
 			'arrowDirection': 'reverse',
 		}
 		, {
-			'text': 'About me',
-			'target': '/about-me',
+			'text': 'Home',
+			'target': '/',
 			'arrowDirection': false,
 		},
 	]

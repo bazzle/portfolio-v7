@@ -21,12 +21,9 @@ function Home() {
 	const description = metadata.description
 	const headerLinks = [
 		{
-			'text': 'About me',
-			'target': '/about-me',
-		},
-		{
 			'text': 'Showcase and thoughts',
 			'target': '/thoughts',
+			'arrowDirection': 'forward',
 		},
 	]
 
