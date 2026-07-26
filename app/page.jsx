@@ -9,10 +9,12 @@ import Buttons from '@/app/ui/style-library/components/Buttons'
 import { headerTitle } from '@/app/content/site'
 import FloatingNav from '@/app/ui/project/components/FloatingNav'
 import WorkSamples from '@/app/ui/project/modules/WorkSamples'
-import Icons from '@/style-library/misc/Icons'
+import StdContentTemplate from '@/app/ui/project/modules/StdContentTemplate'
+import SkillsAndAbilities from '@/app/ui/project/modules/SkillsAndAbilities'
+import Themes from '@/app/ui/project/modules/Themes'
 
 // content import
-import { home } from '@/app/content/home'
+import { home, WhoAmI } from '@/app/content/home'
 
 function Home() {
 	const title = metadata.title
@@ -42,13 +44,15 @@ function Home() {
 				<Hero />
 				<WorkSamples />
 
-				<WorkHistory id="work-history" />
+				<WorkHistory
+					id="work-history"
+					deepMbLine
+				/>
 
 				<CardGrid
 					id="showcase-thought-pieces"
 					title={home.cards.title}
 					cards={home.cards.items}
-					line
 				>
 					<Buttons
 						buttons={[
@@ -58,6 +62,31 @@ function Home() {
 					/>
 					<Buttons />
 				</CardGrid>
+
+				<StdContentTemplate
+					title={home.welcome.title}
+					bodyContent={<WhoAmI />}
+					id="who-am-i"
+					deepMt
+					deepMbLine
+					line
+				/>
+
+				<TextStandout
+					content={home.standouts.whereISit.content}
+					textPrefix={home.standouts.whereISit.prefix}
+					id="what-am-i"
+				/>
+
+				<SkillsAndAbilities id="skills-and-expertise" deepMbLine />
+
+				<TextStandout
+					id="things-i-think-about"
+					textPrefix={home.standouts.thingsIThinkAbout.prefix}
+					content={home.standouts.thingsIThinkAbout.content}
+				/>
+
+				<Themes id="themes" />
 
 				<TextStandout id="get-in-touch" content={home.standouts.thankyou.content} line>
 					<ContactLinks />
