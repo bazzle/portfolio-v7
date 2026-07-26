@@ -1,0 +1,12 @@
+@use '@/app/ui/style-library/global/tokens/mixins' as vars;
+
+.currentStatus {
+	&__heading {
+		margin-bottom: var(--block-spacing--tiny);
+		@include vars.text-blocky-tiny;
+	}
+
+	&__list {
+		padding-left: 1em;
+	}
+}

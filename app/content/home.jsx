@@ -234,6 +234,11 @@ export const home = {
 	},
 }
 
+export const CurrentStatusValue = [
+	'On the GovPress team at <a href="https://www.dxw.com/">dxw</a>. Where I design public and 3rd sector websites and carry out accessibility audits.',
+	'Taking my Web Accessibility Specialist course (WAS)',
+]
+
 export const aboutSectionLinks = [
 	{ name: 'Who am I', id: 'who-am-i' },
 	{ name: 'Skills and Expertise', id: 'what-am-i' },
@@ -300,15 +305,6 @@ export function WhoAmI() {
 					}
 				/>
 			</ul>
-		</>
-	)
-}
-
-export function CurrentStatusValue() {
-	return (
-		<>
-			On the GovPress team at <a href="https://www.dxw.com/">dxw</a>. Where I
-			design public and 3rd sector websites and carry out accessibility audits.
 		</>
 	)
 }

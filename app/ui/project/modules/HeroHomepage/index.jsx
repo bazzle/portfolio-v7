@@ -67,7 +67,7 @@ function HeroHomepage() {
 										download my CV
 									</a>{' '}
 									or <Link href="#get-in-touch">Get in touch</Link>
-								</p><br/>
+								</p>
 								<CurrentStatus />
 							</div>
 						</div>
