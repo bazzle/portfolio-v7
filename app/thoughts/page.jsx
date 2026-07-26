@@ -8,9 +8,9 @@ export default function Home() {
 	const postMetaData = getPostMetadata('posts')
 	const headerLinks = [
 		{
-			'text': 'About me',
-			'target': '/about-me',
-			'arrowDirection': false,
+			'text': 'Home',
+			'target': '/',
+			'arrowDirection': 'reverse',
 		},
 	]
 	return (

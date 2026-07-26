@@ -12,7 +12,7 @@
 	flex-grow: 1;
 	position: relative;
 	border-bottom: 1px solid;
-	border-image: linear-gradient(90deg, var(--color-accent-static) 90%, var(--color-accent-alt-static) 90%) 1;
+	border-image: linear-gradient(90deg, var(--color-accent) 90%, var(--color-accent-alt) 90%) 1;
 	@include vars.light-mode-wrapper {
 		border-image: unset;
 		border-bottom: 2px solid var(--color-bg-solid);
@@ -60,10 +60,10 @@
 			text-shadow: 0 2px 2px var(--color-bg-solid);
 			.messageHighlight {
 				@include vars.highlight;
-				--highlight-border: var(--color-accent-20);
+				--highlight-border: var(--color-feint-line);
 				border: 1px solid transparent;
 				@include vars.light-mode-wrapper {
-					--highlight-border: var(--color-accent-50);
+					--highlight-border: var(--color-accent-moderate);
 					border: 1px solid transparent;
 				}
 				padding: 0 0.4em 0.2em;
@@ -77,9 +77,9 @@
 					content: '';
 					width: 100vw;
 					height: 1px;
-					background-color: var(--color-accent-20);
+					background-color: var(--color-feint-line);
 					@include vars.light-mode-wrapper {
-						background-color: var(--color-accent-50);
+						background-color: var(--color-accent-moderate);
 					}
 					position: absolute;
 					top: 50%;
@@ -140,7 +140,6 @@
 			}
 			p {
 				max-width: unset;
-				margin-bottom: 0;
 			}
 		}
 		a {

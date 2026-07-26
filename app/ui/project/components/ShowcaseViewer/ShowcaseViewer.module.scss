@@ -1,8 +1,8 @@
 @use '@/app/ui/style-library/global/tokens/mixins' as vars;
 
 .showcaseViewer {
-	border-top: 0.5px solid var(--color-accent-10);
-	border-bottom: 0.5px solid var(--color-accent-10);
+	border-top: 0.5px solid var(--color-accent-subtle);
+	border-bottom: 0.5px solid var(--color-accent-subtle);
 	width: 100vw;
 	height: auto;
 	position: relative;

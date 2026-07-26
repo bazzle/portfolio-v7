@@ -9,22 +9,21 @@ import Buttons from '@/app/ui/style-library/components/Buttons'
 import { headerTitle } from '@/app/content/site'
 import FloatingNav from '@/app/ui/project/components/FloatingNav'
 import WorkSamples from '@/app/ui/project/modules/WorkSamples'
-import Icons from '@/style-library/misc/Icons'
+import StdContentTemplate from '@/app/ui/project/modules/StdContentTemplate'
+import SkillsAndAbilities from '@/app/ui/project/modules/SkillsAndAbilities'
+import Themes from '@/app/ui/project/modules/Themes'
 
 // content import
-import { home } from '@/app/content/home'
+import { home, WhoAmI } from '@/app/content/home'
 
 function Home() {
 	const title = metadata.title
 	const description = metadata.description
 	const headerLinks = [
 		{
-			'text': 'About me',
-			'target': '/about-me',
-		},
-		{
 			'text': 'Showcase and thoughts',
 			'target': '/thoughts',
+			'arrowDirection': 'forward',
 		},
 	]
 
@@ -42,7 +41,9 @@ function Home() {
 				<Hero />
 				<WorkSamples />
 
-				<WorkHistory id="work-history" />
+				<WorkHistory
+					id="work-history"
+				/>
 
 				<CardGrid
 					id="showcase-thought-pieces"
@@ -58,6 +59,32 @@ function Home() {
 					/>
 					<Buttons />
 				</CardGrid>
+
+				<StdContentTemplate
+					title={home.welcome.title}
+					bodyContent={<WhoAmI />}
+					id="who-am-i"
+					deepMt
+					deepMbLine
+					line
+				/>
+
+				<TextStandout
+					content={home.standouts.whereISit.content}
+					textPrefix={home.standouts.whereISit.prefix}
+					id="what-am-i"
+				/>
+
+				<SkillsAndAbilities id="skills-and-expertise" />
+
+				<TextStandout
+					id="things-i-think-about"
+					textPrefix={home.standouts.thingsIThinkAbout.prefix}
+					content={home.standouts.thingsIThinkAbout.content}
+					line
+				/>
+
+				<Themes id="themes" />
 
 				<TextStandout id="get-in-touch" content={home.standouts.thankyou.content} line>
 					<ContactLinks />

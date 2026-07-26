@@ -41,13 +41,14 @@ export default async function TagArchivePage({ params }) {
 	const posts = getPosts(tag)
 	const headerLinks = [
 		{
-			'text': 'Showcase and thoughts',
+			'text': 'Showcase and Thoughts',
 			'target': '/thoughts',
 			'arrowDirection': 'reverse',
-		},
-		{
-			'text': 'About me',
-			'target': '/about-me',
+		}
+		, {
+			'text': 'Home',
+			'target': '/',
+			'arrowDirection': false,
 		},
 	]
 	return (

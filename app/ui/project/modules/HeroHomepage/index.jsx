@@ -8,8 +8,8 @@ import Profile from '@/app/ui/project/components/Profile'
 import EmojiSwap from '@/app/ui/project/components/EmojiSwap'
 import MessageHighlight from './MessageHighlight'
 import Link from 'next/link'
+import CurrentStatus from '../../components/CurrentStatus'
 import styles from './HeroHomepage.module.scss'
-import WorkSamples from '../WorkSamples'
 
 function HeroHomepage() {
 	return (
@@ -66,8 +66,9 @@ function HeroHomepage() {
 									<a href="./files/cv.pdf" target="_blank" rel="noopener noreferrer">
 										download my CV
 									</a>{' '}
-									or <Link href="#get-in-touch">Get in touch</Link>!
+									or <Link href="#get-in-touch">Get in touch</Link>
 								</p>
+								<CurrentStatus />
 							</div>
 						</div>
 						<Spacer mobile />

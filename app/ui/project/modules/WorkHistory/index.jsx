@@ -5,10 +5,11 @@ import ContentSheet from './ContentSheet'
 import { home } from '@/app/content/home'
 import styles from './WorkHistory.module.scss'
 
-function WorkHistory({ id, line }) {
+function WorkHistory({ id, line, deepMbLine }) {
 	const optionalProps = {
 		...(id ? { id } : {}),
 		...(line ? { line } : {}),
+		...(deepMbLine ? { deepMbLine } : {}),
 	}
 
 	const mediaQuery = '(min-width: 1340px)'

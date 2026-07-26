@@ -5,7 +5,9 @@ import IconThemes from '@/app/ui/style-library/misc/Icons/IconThemes'
 
 export const home = {
 	sectionLinks: [
-		{ name: 'Work History', id: 'work-history' },
+		{ name: 'My story so far', id: 'work-history' },
+		{ name: 'Showcase and Thought Pieces', id: 'showcase-thought-pieces' },
+		{ name: 'About me', id: 'who-am-i' },
 		{ name: 'Get in Touch', id: 'get-in-touch' },
 	],
 
@@ -232,6 +234,11 @@ export const home = {
 	},
 }
 
+export const CurrentStatusValue = [
+	'On the GovPress team at <a href="https://www.dxw.com/">dxw</a>. Where I design public and 3rd sector websites and carry out accessibility audits.',
+	'Taking my Web Accessibility Specialist course (WAS)',
+]
+
 export const aboutSectionLinks = [
 	{ name: 'Who am I', id: 'who-am-i' },
 	{ name: 'Skills and Expertise', id: 'what-am-i' },
@@ -298,16 +305,6 @@ export function WhoAmI() {
 					}
 				/>
 			</ul>
-			<CurrentStatus />
-		</>
-	)
-}
-
-export function CurrentStatusValue() {
-	return (
-		<>
-			On the GovPress team at <a href="https://www.dxw.com/">dxw</a>. Where I
-			design public and 3rd sector websites and carry out accessibility audits.
 		</>
 	)
 }

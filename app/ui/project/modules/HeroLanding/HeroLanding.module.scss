@@ -12,7 +12,7 @@
 	flex-grow: 1;
 	position: relative;
 	border-bottom: 1px solid;
-	border-image: linear-gradient(90deg, var(--color-accent-static) 90%, var(--color-accent-alt-static) 90%) 1;
+	border-image: linear-gradient(90deg, var(--color-accent) 90%, var(--color-accent-alt) 90%) 1;
 	@include vars.light-mode-wrapper {
 		border-image: unset;
 		border-bottom: 2px solid var(--color-bg-solid);
