@@ -46,13 +46,13 @@ function Home() {
 
 				<WorkHistory
 					id="work-history"
-					deepMbLine
 				/>
 
 				<CardGrid
 					id="showcase-thought-pieces"
 					title={home.cards.title}
 					cards={home.cards.items}
+					line
 				>
 					<Buttons
 						buttons={[
@@ -78,12 +78,13 @@ function Home() {
 					id="what-am-i"
 				/>
 
-				<SkillsAndAbilities id="skills-and-expertise" deepMbLine />
+				<SkillsAndAbilities id="skills-and-expertise" />
 
 				<TextStandout
 					id="things-i-think-about"
 					textPrefix={home.standouts.thingsIThinkAbout.prefix}
 					content={home.standouts.thingsIThinkAbout.content}
+					line
 				/>
 
 				<Themes id="themes" />
