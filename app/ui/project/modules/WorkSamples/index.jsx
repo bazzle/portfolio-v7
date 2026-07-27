@@ -26,7 +26,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/bdo-dt.webp"
 					alt="BDO"
 					width="350"
@@ -38,7 +37,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/bdo-mob.webp"
 					alt="NAO"
 					width="142"
@@ -50,7 +48,6 @@ function WorkSamples({ id }) {
 			slug: '2025-01-24',
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/bfi-dt.webp"
 					alt="NAO"
 					width="350"
@@ -62,7 +59,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/chevening-dt.webp"
 					alt="NAO"
 					width="350"
@@ -74,7 +70,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/chevening2-dt.webp"
 					alt="NAO"
 					width="350"
@@ -86,7 +81,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/nao-dt.webp"
 					alt="NAO"
 					width="350"
@@ -98,7 +92,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/nao-mob.webp"
 					alt="NAO"
 					width="142"
@@ -110,7 +103,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/nao2-mob.webp"
 					alt="NAO"
 					width="142"
@@ -122,7 +114,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/nao2-dt.webp"
 					alt="NAO"
 					width="350"
@@ -134,7 +125,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/nao3-dt.webp"
 					alt="NAO"
 					width="350"
@@ -146,7 +136,6 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/ons-dt.webp"
 					alt="BDO"
 					width="350"
@@ -158,7 +147,6 @@ function WorkSamples({ id }) {
 			slug: '2025-01-26',
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/ua-dt.webp"
 					alt="NAO"
 					width="350"
@@ -170,7 +158,6 @@ function WorkSamples({ id }) {
 			slug: '2025-01-26',
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/ua2-dt.webp"
 					alt="NAO"
 					width="350"
@@ -182,7 +169,6 @@ function WorkSamples({ id }) {
 			slug: '2025-01-26',
 			element: (
 				<Image
-					className={styles.workSamples__sample}
 					src="/images/samples/ua-mob.webp"
 					alt="NAO"
 					width="142"
@@ -204,34 +190,56 @@ function WorkSamples({ id }) {
 							className={styles.workSamples__strip}
 							style={{ left }}
 						>
-							{images.image_bdo_dt.element}
-							{images.image_bdo_mob.element}
+							<div className={styles.workSamples__sample}>
+								{images.image_bdo_dt.element}
+							</div>
+							<div className={styles.workSamples__sample}>
+								{images.image_bdo_mob.element}
+							</div>
 							<Link
 								href={`/thoughts/${images.image_bfi_dt.slug}`}
 								className={styles.workSamples__sample}
 							>
 								{images.image_bfi_dt.element}
 							</Link>
-							{images.image_chevening_dt.element}
-							{images.image_chevening2_dt.element}
-							{images.image_nao_dt.element}
+							<div className={styles.workSamples__sample}>
+								{images.image_chevening_dt.element}
+							</div>
+							<div className={styles.workSamples__sample}>
+								{images.image_chevening2_dt.element}
+							</div>
+							<div className={styles.workSamples__sample}>
+								{images.image_nao_dt.element}
+							</div>
 							<Link
 								href={`/thoughts/${images.image_bfi_dt.slug}`}
 								className={styles.workSamples__sample}
 							>
 								{images.image_bfi_dt.element}
 							</Link>
-							{images.image_chevening_dt.element}
+							<div className={styles.workSamples__sample}>
+								{images.image_chevening_dt.element}
+							</div>
 						</motion.div>
 						<motion.div
 							className={styles.workSamples__strip}
 							style={{ right }}
 						>
-							{images.image_nao2_dt.element}
-							{images.image_nao2_mob.element}
-							{images.image_nao3_dt.element}
-							{images.image_nao_mob.element}
-							{images.image_ons_dt.element}
+							<div className={styles.workSamples__sample}>
+								{images.image_nao2_dt.element}
+							</div>
+							<div className={styles.workSamples__sample}>
+								{images.image_nao2_mob.element}
+							</div>
+							<div className={styles.workSamples__sample}>
+								{images.image_nao3_dt.element}
+							</div>
+							<div className={styles.workSamples__sample}>
+								{images.image_nao_mob.element}
+							</div>
+							<div className={styles.workSamples__sample}>
+								{images.image_ons_dt.element}
+							</div>
 							<Link
 								href={`/thoughts/${images.image_ua_dt.slug}`}
 								className={styles.workSamples__sample}
@@ -244,8 +252,12 @@ function WorkSamples({ id }) {
 							>
 								{images.image_ua2_dt.element}
 							</Link>
-							{images.image_nao2_mob.element}
-							{images.image_nao_mob.element}
+							<div className={styles.workSamples__sample}>
+								{images.image_nao2_mob.element}
+							</div>
+							<div className={styles.workSamples__sample}>
+								{images.image_nao_mob.element}
+							</div>
 						</motion.div>
 					</div>
 				</div>
