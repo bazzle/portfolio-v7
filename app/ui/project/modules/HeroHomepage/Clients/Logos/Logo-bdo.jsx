@@ -36,6 +36,7 @@ function LogoBDO() {
 					/>
 				</clipPath>
 			</defs>
+			<span className="visually-hidden">BDO</span>
 		</svg>
 	)
 }

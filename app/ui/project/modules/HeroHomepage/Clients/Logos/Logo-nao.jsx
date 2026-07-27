@@ -19,6 +19,7 @@ function LogoNao() {
 					<rect width="100" height="39.2561" />
 				</clipPath>
 			</defs>
+			<span className="visually-hidden">National Audit Office</span>
 		</svg>
 	)
 }

@@ -17,6 +17,7 @@ function LogoBFI() {
 					<rect width="35" height="35.9589" transform="translate(0 0.648682)" />
 				</clipPath>
 			</defs>
+			<span className="visually-hidden">BFI</span>
 		</svg>
 	)
 }
