@@ -50,40 +50,11 @@ $gap: clamp(0.8rem, 2vw, 1.2rem);
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-}
 
-.browserDesktop,
-.browserMobile {
-	position: relative;
-	height: 100%;
-	padding-top: 0;
-	padding-bottom: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-	width: auto;
-	min-height: 16rem;
-	max-height: 20rem;
-	svg {
-		height: 100%;
-		width: 100%;
-		image{
-			@include vars.dark-mode-wrapper{
-				filter: grayscale(100%);
-			}
-		}
-	}
-	&:hover{
-		svg image{
-			@include vars.dark-mode-wrapper{
-				transition: filter 0.3s ease;
-				filter: none;
-			}
-		}
-		.browserOverlay{
-			@include vars.dark-mode-wrapper{
-				transition: opacity 0.3s ease;
-				opacity: 0;
-			}
+	&__sample{
+		display: block;
+		img{
+			max-width: unset;
 		}
 	}
 }

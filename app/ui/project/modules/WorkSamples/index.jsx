@@ -1,11 +1,10 @@
 'use client'
 
-import BrowserMobile from './BrowserMobile'
-import BrowserDesktop from './BrowserDesktop'
 import Section from '@/app/ui/project/components/Section'
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'motion/react'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './WorkSamples.module.scss'
 
 function WorkSamples({ id }) {
@@ -27,10 +26,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/bdo-dt.webp"
 					alt="BDO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -38,10 +38,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/bdo-mob.webp"
 					alt="NAO"
-					width="284"
-					height="500"
+					width="142"
+					height="250"
 				/>
 			),
 		},
@@ -49,10 +50,11 @@ function WorkSamples({ id }) {
 			slug: '2025-01-24',
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/bfi-dt.webp"
 					alt="NAO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -60,10 +62,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/chevening-dt.webp"
 					alt="NAO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -71,10 +74,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/chevening2-dt.webp"
 					alt="NAO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -82,10 +86,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/nao-dt.webp"
 					alt="NAO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -93,10 +98,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/nao-mob.webp"
 					alt="NAO"
-					width="284"
-					height="500"
+					width="142"
+					height="250"
 				/>
 			),
 		},
@@ -104,10 +110,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/nao2-mob.webp"
 					alt="NAO"
-					width="284"
-					height="500"
+					width="142"
+					height="250"
 				/>
 			),
 		},
@@ -115,10 +122,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/nao2-dt.webp"
 					alt="NAO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -126,10 +134,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/nao3-dt.webp"
 					alt="NAO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -137,10 +146,11 @@ function WorkSamples({ id }) {
 			slug: null,
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/ons-dt.webp"
 					alt="BDO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -148,10 +158,11 @@ function WorkSamples({ id }) {
 			slug: '2025-01-26',
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/ua-dt.webp"
 					alt="NAO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -159,10 +170,11 @@ function WorkSamples({ id }) {
 			slug: '2025-01-26',
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/ua2-dt.webp"
 					alt="NAO"
-					width="700"
-					height="500"
+					width="350"
+					height="250"
 				/>
 			),
 		},
@@ -170,10 +182,11 @@ function WorkSamples({ id }) {
 			slug: '2025-01-26',
 			element: (
 				<Image
+					className={styles.workSamples__sample}
 					src="/images/samples/ua-mob.webp"
 					alt="NAO"
-					width="284"
-					height="500"
+					width="142"
+					height="250"
 				/>
 			),
 		},
@@ -186,101 +199,53 @@ function WorkSamples({ id }) {
 		>
 			<div ref={ref}>
 				<div className={styles.workSamples}>
-					<div className={styles['workSamples__main']}>
+					<div className={styles.workSamples__main}>
 						<motion.div
-							className={styles['workSamples__strip']}
+							className={styles.workSamples__strip}
 							style={{ left }}
 						>
-							<BrowserDesktop
-								src={images.image_bdo_dt.element.props.src}
-								alt={images.image_bdo_dt.element.props.alt}
-								slug={images.image_bdo_dt.slug}
-							/>
-							<BrowserMobile
-								src={images.image_bdo_mob.element.props.src}
-								alt={images.image_bdo_mob.element.props.alt}
-								slug={images.image_bdo_mob.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_bfi_dt.element.props.src}
-								alt={images.image_bfi_dt.element.props.alt}
-								slug={images.image_bfi_dt.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_chevening_dt.element.props.src}
-								alt={images.image_chevening_dt.element.props.alt}
-								slug={images.image_chevening_dt.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_chevening2_dt.element.props.src}
-								alt={images.image_chevening2_dt.element.props.alt}
-								slug={images.image_chevening2_dt.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_nao_dt.element.props.src}
-								alt={images.image_nao_dt.element.props.alt}
-								slug={images.image_nao_dt.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_bfi_dt.element.props.src}
-								alt={images.image_bfi_dt.element.props.alt}
-								slug={images.image_bfi_dt.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_chevening_dt.element.props.src}
-								alt={images.image_chevening_dt.element.props.alt}
-								slug={images.image_chevening_dt.slug}
-							/>
+							{images.image_bdo_dt.element}
+							{images.image_bdo_mob.element}
+							<Link
+								href={`/thoughts/${images.image_bfi_dt.slug}`}
+								className={styles.workSamples__sample}
+							>
+								{images.image_bfi_dt.element}
+							</Link>
+							{images.image_chevening_dt.element}
+							{images.image_chevening2_dt.element}
+							{images.image_nao_dt.element}
+							<Link
+								href={`/thoughts/${images.image_bfi_dt.slug}`}
+								className={styles.workSamples__sample}
+							>
+								{images.image_bfi_dt.element}
+							</Link>
+							{images.image_chevening_dt.element}
 						</motion.div>
 						<motion.div
-							className={styles['workSamples__strip']}
+							className={styles.workSamples__strip}
 							style={{ right }}
 						>
-							<BrowserDesktop
-								src={images.image_nao2_dt.element.props.src}
-								alt={images.image_nao2_dt.element.props.alt}
-								slug={images.image_nao2_dt.slug}
-							/>
-							<BrowserMobile
-								src={images.image_nao2_mob.element.props.src}
-								alt={images.image_nao2_mob.element.props.alt}
-								slug={images.image_nao2_mob.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_nao3_dt.element.props.src}
-								alt={images.image_nao3_dt.element.props.alt}
-								slug={images.image_nao3_dt.slug}
-							/>
-							<BrowserMobile
-								src={images.image_nao_mob.element.props.src}
-								alt={images.image_nao_mob.element.props.alt}
-								slug={images.image_nao_mob.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_ons_dt.element.props.src}
-								alt={images.image_ons_dt.element.props.alt}
-								slug={images.image_ons_dt.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_ua_dt.element.props.src}
-								alt={images.image_ua_dt.element.props.alt}
-								slug={images.image_ua_dt.slug}
-							/>
-							<BrowserDesktop
-								src={images.image_ua2_dt.element.props.src}
-								alt={images.image_ua2_dt.element.props.alt}
-								slug={images.image_ua2_dt.slug}
-							/>
-							<BrowserMobile
-								src={images.image_nao2_mob.element.props.src}
-								alt={images.image_nao2_mob.element.props.alt}
-								slug={images.image_nao2_mob.slug}
-							/>
-							<BrowserMobile
-								src={images.image_nao_mob.element.props.src}
-								alt={images.image_nao_mob.element.props.alt}
-								slug={images.image_nao_mob.slug}
-							/>
+							{images.image_nao2_dt.element}
+							{images.image_nao2_mob.element}
+							{images.image_nao3_dt.element}
+							{images.image_nao_mob.element}
+							{images.image_ons_dt.element}
+							<Link
+								href={`/thoughts/${images.image_ua_dt.slug}`}
+								className={styles.workSamples__sample}
+							>
+								{images.image_ua_dt.element}
+							</Link>
+							<Link
+								href={`/thoughts/${images.image_ua2_dt.slug}`}
+								className={styles.workSamples__sample}
+							>
+								{images.image_ua2_dt.element}
+							</Link>
+							{images.image_nao2_mob.element}
+							{images.image_nao_mob.element}
 						</motion.div>
 					</div>
 				</div>
