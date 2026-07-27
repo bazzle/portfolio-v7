@@ -58,7 +58,7 @@ $gap: clamp(0.8rem, 2vw, 1.2rem);
 			max-width: unset;
 			margin-bottom: 0;
 		}
-		&::after{
+		&:not(a)::after{
 			@include vars.dark-mode-wrapper{
 				content: '';
 				background-color: var(--color-accent-moderate);
@@ -69,12 +69,6 @@ $gap: clamp(0.8rem, 2vw, 1.2rem);
 				position: absolute;
 				top: 0;
 				left: 0;
-				transition: opacity 0.3s ease;
-			}
-		}
-		&:hover::after{
-			@include vars.dark-mode-wrapper{
-				opacity: 0;
 			}
 		}
 	}
