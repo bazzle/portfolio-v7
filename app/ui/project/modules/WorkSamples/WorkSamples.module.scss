@@ -57,6 +57,10 @@ $gap: clamp(0.8rem, 2vw, 1.2rem);
 		img{
 			max-width: unset;
 			margin-bottom: 0;
+			@include vars.break-under(tablet) {
+				height: 125px;
+				width: auto;
+			}
 		}
 		&:not(a)::after{
 			@include vars.dark-mode-wrapper{
